@@ -1,0 +1,22 @@
+# secrets : jamais dans le dépôt
+.env
+.env.*
+!.env.example
+_secrets/
+*.pem
+*.key
+# générés
+__pycache__/
+*.py[cod]
+.pytest_cache/
+runs/
+media/
+*.mp4
+*.wav
+*.mp3
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.pdf
