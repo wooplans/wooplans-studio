@@ -1,0 +1,89 @@
+name: visite-render
+# Rendu de la visite guidée d'un plan : segments rendus EN PARALLÈLE, puis assemblage (voix + sous-titres).
+# Lancer : Actions > visite-render > Run workflow (job = dossier visite_plan/jobs/<job>), ou modifier visite_plan/jobs/<job>/RENDER.
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Dossier du job (visite_plan/jobs/<job>)"
+        required: true
+        default: "V3-003"
+  push:
+    branches: [main]
+    paths: ["visite_plan/jobs/*/RENDER"]
+permissions:
+  contents: write
+concurrency:
+  group: visite-render-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      job: ${{ steps.j.outputs.job }}
+      matrix: ${{ steps.j.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - id: j
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD~1 HEAD | grep 'visite_plan/jobs/.*/RENDER' | head -1 | cut -d/ -f3); fi
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"
+          N=$(python3 -c "import json;print(len(json.load(open('visite_plan/jobs/$JOB/segments.json'))))")
+          echo "matrix=$(python3 -c "print(list(range($N)))")" >> "$GITHUB_OUTPUT"
+  render:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        seg: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dépendances
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq mesa-vulkan-drivers libvulkan1 fonts-noto-core ffmpeg
+          pip install --quiet uv
+          uv tool install manimgx
+      - name: Rendu du segment ${{ matrix.seg }}
+        env:
+          JOB: visite_plan/jobs/${{ needs.plan.outputs.job }}
+          SEG: ${{ matrix.seg }}
+        run: |
+          export PATH="$PATH:$HOME/.local/bin"
+          cd visite_plan
+          JOB="$GITHUB_WORKSPACE/$JOB" manimgx render scene_visite.py VisitePlan -r 1080x1920 --fps 30 --preset veryfast --crf 18 -o "$GITHUB_WORKSPACE/seg${{ matrix.seg }}.mp4"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seg${{ matrix.seg }}
+          path: seg${{ matrix.seg }}.mp4
+          retention-days: 2
+  assemble:
+    needs: [plan, render]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: segs
+          merge-multiple: true
+      - name: Assemblage (voix + sous-titres)
+        run: |
+          sudo apt-get install -y -qq ffmpeg libass9 >/dev/null
+          python3 visite_plan/assemble.py visite_plan/jobs/${{ needs.plan.outputs.job }} segs "${{ needs.plan.outputs.job }}.mp4"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ needs.plan.outputs.job }}
+          path: ${{ needs.plan.outputs.job }}.mp4
+          retention-days: 14
+      - name: Publier dans visite_plan/out/
+        run: |
+          mkdir -p visite_plan/out
+          cp "${{ needs.plan.outputs.job }}.mp4" "visite_plan/out/${{ needs.plan.outputs.job }}.mp4"
+          git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
+          git add visite_plan/out
+          git commit -m "visite: vidéo ${{ needs.plan.outputs.job }}" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main

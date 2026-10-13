@@ -1,0 +1,104 @@
+{
+ "total": 64.632,
+ "items": [
+  {
+   "name": "Terrasse 1",
+   "zoom": true,
+   "start": 0.4,
+   "dur": 10.342,
+   "arrive": 8.379,
+   "zout_start": 9.829,
+   "end": 10.742
+  },
+  {
+   "name": "Séjour",
+   "zoom": true,
+   "start": 10.892,
+   "dur": 6.61,
+   "arrive": 14.072,
+   "zout_start": 16.302,
+   "end": 17.502
+  },
+  {
+   "name": "Cuisine",
+   "zoom": false,
+   "start": 17.652,
+   "dur": 5.558,
+   "arrive": 19.829,
+   "zout_start": 22.71,
+   "end": 23.21
+  },
+  {
+   "name": "Terrasse 2",
+   "zoom": true,
+   "start": 23.36,
+   "dur": 6.702,
+   "arrive": 25.83,
+   "zout_start": 28.862,
+   "end": 30.062
+  },
+  {
+   "name": "Couloir",
+   "zoom": false,
+   "start": 30.212,
+   "dur": 2.881,
+   "arrive": 31.412,
+   "zout_start": 32.593,
+   "end": 33.093
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": true,
+   "start": 33.243,
+   "dur": 3.599,
+   "arrive": 35.328,
+   "zout_start": 36.778,
+   "end": 36.843
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": false,
+   "start": 37.265,
+   "dur": 3.587,
+   "arrive": 39.278,
+   "zout_start": 40.352,
+   "end": 40.852
+  },
+  {
+   "name": "SDB 2",
+   "zoom": true,
+   "start": 41.002,
+   "dur": 3.923,
+   "arrive": 42.956,
+   "zout_start": 44.406,
+   "end": 44.925
+  },
+  {
+   "name": "Chambre P.",
+   "zoom": true,
+   "start": 45.075,
+   "dur": 4.419,
+   "arrive": 47.513,
+   "zout_start": 48.963,
+   "end": 49.494
+  },
+  {
+   "name": "SDB 1",
+   "zoom": false,
+   "start": 49.644,
+   "dur": 3.165,
+   "arrive": 51.79,
+   "zout_start": 52.49,
+   "end": 52.809
+  },
+  {
+   "name": "Final",
+   "start": 52.99,
+   "dur": 10.642,
+   "end": 63.632,
+   "final": true,
+   "dim1": 55.421,
+   "dim2": 58.001
+  }
+ ]
+}
