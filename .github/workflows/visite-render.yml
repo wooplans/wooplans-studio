@@ -44,8 +44,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Dépendances
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq mesa-vulkan-drivers libvulkan1 fonts-noto-core ffmpeg
+          sudo apt-get install -y -qq --no-install-recommends mesa-vulkan-drivers libvulkan1
           pip install --quiet uv
           uv tool install manimgx
       - name: Rendu du segment ${{ matrix.seg }}

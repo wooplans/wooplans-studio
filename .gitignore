@@ -20,3 +20,5 @@ media/
 *.jpeg
 *.webp
 *.pdf
+
+!visite_plan/jobs/**
