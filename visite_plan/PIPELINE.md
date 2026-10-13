@@ -8,7 +8,7 @@ Standard validé par Tao (V6 + remarques du 13 oct. 2026). Source de vérité de
 3. **Image du haut** : rendu du dossier, sinon extrait du PDF.
 4. **Script de voix off** proposé à Tao (style conversationnel, surfaces arrondies à l'entier, aucune valeur absente du PDF, aucun prix, jamais « l'offre expire »). Chaque pièce est marquée « zoom » ou « sans zoom » (varier, ne pas zoomer partout). Tao corrige.
 5. **Préparation (cloud Claude, léger)** : `make_paths.py` (pièces + trajets par les portes, à contrôler visuellement), `make_sync.py` (voix Piper « tom » en test, calage), `align.py` (Whisper, mots), `build_final.py prep` (voix mixée + sous-titres), `mkseg.py` (segments). Tout va dans `jobs/<id>/`.
-6. **Rendu : JAMAIS dans le cloud Claude (trop lent)**. GitHub Actions `visite-render` : segments en parallèle (≈ 1 job par 2 pièces) puis assemblage. Alternative : Colab / PC de Tao.
+6. **Rendu : sur le PC de Tao (méthode par défaut, ≈ 75 s)**. Jamais dans le cloud Claude. Un guetteur Windows surveille `C:\Users\Dell\Documents\VIDEO AUTO\WOOPLANS\_rendu_auto\jobs\`. Claude dépose `jobs/<id>/` (plan.png, facade.png, paths.json, sync.json, segments.json, meta.json, voice_mix.m4a, subs.ass) puis un fichier `RENDER_PC` en dernier : la vidéo `<id>.mp4` sort toute seule dans ce dossier (marqueurs `DONE` / `ERREUR`, journal `watch.log`). Réglage clé : **2 rendus simultanés maximum** (le PC a 7,7 Go de RAM ; 6 en parallèle = 523 s, 2 = 73 s). Un `<id>` déjà rendu (`DONE`) ne se relance pas : utiliser un nouvel id. Secours : GitHub Actions `visite-render` (10 à 18 min, lent).
 7. **Livraison** : copier dans le dossier de Tao ET envoyer dans la conversation.
 
 ## Standard visuel
@@ -19,8 +19,10 @@ Standard validé par Tao (V6 + remarques du 13 oct. 2026). Source de vérité de
 - Sous-titres : un mot à la fois, surfaces en deux mots (« 27 m² », en orange), Poppins Bold blanc, contour vert #0F5B59.
 
 ## Job (`jobs/<id>/`)
-`plan.png` (plan amélioré + marges pour les cotes), `facade.png`, `paths.json`, `sync.json`, `segments.json`, `meta.json` (bande, ratio façade, murs extérieurs en px, cotes), `voice_mix.m4a`, `subs.ass`, `RENDER` (modifier ce fichier et pousser = lance le rendu).
-Sortie : artefact `video-<id>` + `visite_plan/out/<id>.mp4`.
+`plan.png` (plan amélioré + marges pour les cotes), `facade.png`, `paths.json`, `sync.json`, `segments.json`, `meta.json` (bande, ratio façade, murs extérieurs en px, cotes), `voice_mix.m4a`, `subs.ass`, `RENDER_PC` (PC) ou `RENDER` (GitHub).
 
 ## Voix
 Tests : Piper `fr_FR-tom-medium` (gratuit, téléchargé depuis huggingface.co/rhasspy/piper-voices). Production : ElevenLabs « LeTao » uniquement.
+
+## Code
+Dépôt wooplans/wooplans-studio, dossier `visite_plan/` (scène ManimGX, sync, sous-titres). Pack local : `visite_plan/local/` (installateur + guetteur Windows, déjà installé sur le PC de Tao).
