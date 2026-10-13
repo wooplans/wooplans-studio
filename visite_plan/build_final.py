@@ -13,9 +13,9 @@ def dur(f):
 if MODE == "burn":
     video, out, job = sys.argv[2], sys.argv[3], Path(sys.argv[4])
     total = dur(job / "voice_mix.m4a")
-    Path("final").mkdir(exist_ok=True); shutil.copy(job / "subs.ass", "final/subs.ass")
+    Path("final").mkdir(exist_ok=True); shutil.copy(job / "subs.ass", "final/subs.ass"); shutil.copytree(FONTS, "final/fonts", dirs_exist_ok=True)
     subprocess.run(["ffmpeg","-y","-hide_banner","-loglevel","error","-i",video,"-i",str(job / "voice_mix.m4a"),
-        "-filter_complex", f"[0:v]tpad=stop_mode=clone:stop_duration=10,subtitles=final/subs.ass:fontsdir={FONTS}[v]",
+        "-filter_complex", f"[0:v]tpad=stop_mode=clone:stop_duration=10,subtitles=final/subs.ass:fontsdir=final/fonts[v]",
         "-map","[v]","-map","1:a","-c:v","libx264","-preset","veryfast","-crf","20","-pix_fmt","yuv420p",
         "-c:a","copy","-t",f"{total:.2f}",out], check=True)
     print("OK", out, total); sys.exit(0)
