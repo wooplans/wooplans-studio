@@ -15,16 +15,24 @@ def ff(*a, cwd=None):
 
 
 def build_body(job: Path, B, work: Path, VP: Path) -> Path:
-    """corps = silent_all (visite v4) + sous-titres remontés + bande basse + voix, coupé entre cut et end."""
+    """corps = silent_all (visite v4) + sous-titres remontés + bande basse + voix (+ musique), coupé entre cut et end."""
     cut, end = B["body_cut"], B["body_end"]; D = end - cut
     shutil.copy(job / "subs_body.ass", work / "subs.ass")
     shutil.copytree(VP / "fonts", work / "fonts", dirs_exist_ok=True)
     out = work / "body.mp4"
+    music = job / "music.mp3"
     fc = (f"[0:v]fps=30,subtitles=subs.ass:fontsdir=fonts[s];[s][2:v]overlay=0:{1920 - BAND_H}[o];"
-          f"[o]trim=start={cut}:end={end},setpts=PTS-STARTPTS[v];"
-          f"[1:a]atrim=start={cut}:end={end},asetpts=PTS-STARTPTS,afade=t=out:st={D - 0.1:.3f}:d=0.1[a]")
-    ff("-i", job / "body_silent.mp4", "-i", job / "voice_mix.m4a", "-i", job / "band_bottom.png",
-       "-filter_complex", fc, "-map", "[v]", "-map", "[a]", *ENC, out, cwd=work)
+          f"[o]trim=start={cut}:end={end},setpts=PTS-STARTPTS[v];")
+    inputs = ["-i", job / "body_silent.mp4", "-i", job / "voice_mix.m4a", "-i", job / "band_bottom.png"]
+    if music.exists():       # musique de fond (Mixkit « Pop Two »), baisse automatique sous la voix
+        inputs += ["-i", music]
+        fc += (f"[1:a]atrim=start={cut}:end={end},asetpts=PTS-STARTPTS,asplit[v1][v2];"
+               f"[3:a]atrim=0:{D:.3f},loudnorm=I=-24:TP=-2:LRA=7,afade=t=in:d=1.5,afade=t=out:st={D - 0.6:.3f}:d=0.6[m];"
+               f"[m][v2]sidechaincompress=threshold=0.03:ratio=5:attack=30:release=500[md];"
+               f"[v1][md]amix=inputs=2:normalize=0:weights='1 1',loudnorm=I=-17:TP=-1.5,afade=t=out:st={D - 0.1:.3f}:d=0.1[a]")
+    else:
+        fc += f"[1:a]atrim=start={cut}:end={end},asetpts=PTS-STARTPTS,afade=t=out:st={D - 0.1:.3f}:d=0.1[a]"
+    ff(*inputs, "-filter_complex", fc, "-map", "[v]", "-map", "[a]", *ENC, out, cwd=work)
     return out
 
 
@@ -47,7 +55,8 @@ def run(job: Path, VP: Path):
     for part in SCENES:
         total = B[part]["total"]; dst = work / f"{part}.mp4"
         ff("-i", work / f"{part}_raw.mp4", "-i", job / f"{part}.m4a",
-           "-vf", "fps=30,tpad=stop_mode=clone:stop_duration=3", "-t", f"{total:.3f}", *ENC, dst)
+           "-vf", "fps=30,tpad=stop_mode=clone:stop_duration=3", "-af", "apad,loudnorm=I=-17:TP=-1.5:LRA=7" if part == "cta" else "anull",
+           "-t", f"{total:.3f}", *ENC, dst)
         parts[part] = dst
     parts["body"] = build_body(job, B, work, VP)
     print(f"corps ok ({time.time()-t0:.0f}s)", flush=True)
