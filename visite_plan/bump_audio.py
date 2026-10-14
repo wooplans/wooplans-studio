@@ -8,15 +8,21 @@ from audio_as_code import Song, Track, Note, render, Reverb, Filter
 
 SR = 44100
 PIPER = ["python3", "-m", "piper", "-m", "voix/fr_FR-tom-medium.onnx", "--length-scale", "1.05"]
-os.makedirs("aud2", exist_ok=True)
+os.makedirs("aud2", exist_ok=True); os.makedirs("out6", exist_ok=True)
 
 def dur(f):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f],
                                 capture_output=True, text=True).stdout)
 
+VOIX_DIR = os.environ.get("VOIX_DIR", "")      # dossier de voix de production (ElevenLabs « John Mala ») : <nom>.mp3
+
 def tts(text, name):
     raw, w = f"aud2/{name}_r.wav", f"aud2/{name}.wav"
-    subprocess.run(PIPER + ["-f", raw], input=text, text=True, check=True, capture_output=True)
+    prod = os.path.join(VOIX_DIR, f"{name}.mp3") if VOIX_DIR else ""
+    if prod and os.path.exists(prod):
+        raw = prod                                  # voix de production déjà générée
+    else:
+        subprocess.run(PIPER + ["-f", raw], input=text, text=True, check=True, capture_output=True)   # voix de test
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af",
                     "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,loudnorm=I=-16:TP=-1.5:LRA=11",
                     "-ar", str(SR), "-ac", "1", w], check=True)
@@ -98,7 +104,7 @@ def mix(name, total, voices, music, sfx_events, music_gain=-13, music_fade=None)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-c:a", "aac", "-b:a", "192k", "-ar", str(SR), "-ac", "2",
                     f"out6/{name}.m4a"], check=True)
 
-B = {"band": "Duplex D5-016  ·  5 chambres", "start_pos": [396.40625, 812.328125], "body_cut": 8.48, "body_end": 111.70}
+B = {"band": "Duplex D5-016  ·  5 chambres", "start_pos": [396.40625, 812.328125], "body_cut": float(os.environ.get("BODY_CUT", 8.48)), "body_end": float(os.environ.get("BODY_END", 111.70))}
 
 # ================================================================= HOOK
 h1, d1 = tts("Combien faut-il pour construire cette maison de cinq chambres ?", "hook0")
@@ -125,7 +131,7 @@ mix("hook", total, [(h1, v1s), (h2, v2s)], music, [
 e1, d1 = tts("Selon le devis de ce plan, comptez quarante-trois millions huit cent soixante-quatre mille francs, clé en main.", "estim0")
 e2, d2 = tts("Le coût réel dépend du terrain, des techniciens et des matériaux.", "estim1")
 v1s = 0.6; v2s = round(v1s + d1 + 0.25, 3); total = round(v2s + d2 + 0.12, 3)
-cs, ce = 1.1, 5.6
+cs, ce = 1.1, float(os.environ.get("ESTIM_CE", 5.6))   # fin du compteur = l'instant où la voix dit « francs »
 cue = {"sheet": 0.0, "lab": 0.7, "count0": cs, "count1": ce, "pill": 2.3, "bar": 3.0, "impact": round(ce + 0.1, 3), "note": v2s}
 B["estim"] = {"items": [{"start": v1s, "dur": round(d1, 3)}, {"start": v2s, "dur": round(d2, 3)}], "total": total, "cues": cue}
 ticks = []
@@ -135,8 +141,8 @@ for i in range(int((ce - cs) * 100)):
     if k > k_prev:
         ticks.append(round(cs + x * (ce - cs), 3)); k_prev = k
 music = aac("estim", total, [
-    Track(name="Pad", instrument="wavetable_pad", gain=0.4, notes=(N("F2", 0, 5.6, 0.45), N("C3", 0, 5.6, 0.4), N("A3", 0, 5.6, 0.35),
-                                                                  N("C3", 5.7, total - 5.7, 0.45), N("G3", 5.7, total - 5.7, 0.4), N("E4", 5.7, total - 5.7, 0.35))),
+    Track(name="Pad", instrument="wavetable_pad", gain=0.4, notes=(N("F2", 0, ce, 0.45), N("C3", 0, ce, 0.4), N("A3", 0, ce, 0.35),
+                                                                  N("C3", ce + 0.1, total - ce - 0.1, 0.45), N("G3", ce + 0.1, total - ce - 0.1, 0.4), N("E4", ce + 0.1, total - ce - 0.1, 0.35))),
     Track(name="Ticks", instrument="metal_hat", gain=0.3, notes=tuple(N(42, t, 0.04, 0.6) for t in ticks)),
     Track(name="Accents", instrument="marimba", gain=0.55, notes=(N("C5", cue["lab"], 0.4), N("G5", cue["pill"], 0.4), N("E5", 4.1, 0.4, 0.5), N("C5", cue["note"], 0.5, 0.5))),
     Track(name="Impact", instrument="kick_808", gain=0.75, notes=(N(36, cue["impact"], 0.7, 0.95),)),
