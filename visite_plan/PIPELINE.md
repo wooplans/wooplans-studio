@@ -26,3 +26,11 @@ Tests : Piper `fr_FR-tom-medium` (gratuit, téléchargé depuis huggingface.co/r
 
 ## Code
 Dépôt wooplans/wooplans-studio, dossier `visite_plan/` (scène ManimGX, sync, sous-titres). Pack local : `visite_plan/local/` (installateur + guetteur Windows, déjà installé sur le PC de Tao).
+
+## Hook + estimation + CTA + marque (V7 de D5-016 validée le 14 oct. 2026)
+Voir le doc de projet « 02_PIPELINE_VISITE_PLAN.md ». Code :
+- `scene_bumpers.py` : HookScene / EstimScene / CtaScene (ManimGX, zones sûres : tout texte important au-dessus de ≈ 1500 px).
+- `local/bump_local.py` (appelé par `local/run_local.py` si le job contient `bump.json`) : rend les 3 scènes, reconstruit le corps (`body_silent.mp4` + `subs_body.ass` remontés + bande basse, coupe `body_cut` → `body_end`), concatène, applique filigranes + badge wooplans.com.
+- `bump_audio.py` : voix (Piper en test), musique Audio as Code, bruitages synthétisés, écrit `bump.json` (repères partagés avec la scène).
+- `bump_assets.py` : génère band_bottom.png, badge_url.png, wm_logo.png, wm_tile.png depuis le logo du brand kit (les PNG ne sont pas versionnés).
+- `local/RELANCER_GUETTEUR.bat` : relance le guetteur Windows s'il est arrêté.
