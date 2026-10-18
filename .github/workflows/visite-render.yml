@@ -52,7 +52,7 @@ jobs:
         run: |
           sudo apt-get install -y -qq --no-install-recommends mesa-vulkan-drivers libvulkan1
           pip install --quiet uv
-          uv tool install manimgx
+          uv tool install --force manimgx   # --force : recrée le lien ~/.local/bin/manimgx quand le cache uv est restauré
       - name: Rendu du segment ${{ matrix.seg }}
         env:
           JOB: visite_plan/jobs/${{ needs.plan.outputs.job }}
