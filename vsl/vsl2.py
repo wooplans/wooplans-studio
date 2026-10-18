@@ -141,7 +141,7 @@ class VSL2(m.Scene):
         cup = m.VMobject(stroke_color=GOLD, stroke_width=10)
         cup.set_points_as_corners([[-2.0, ART_Y + 3.0, 0], [-2.0, ART_Y + 0.8, 0], [2.0, ART_Y + 0.8, 0], [2.0, ART_Y + 3.0, 0]])
         cup_l = T("Ton budget", 40, GOLD).next_to(cup, m.DOWN, buff=0.2)
-        hs = house(2.4).move_to([0, ART_Y + 6, 0])
+        hs = house(2.4).move_to([0, ART_Y + 9, 0])
         ok = check(0.8).move_to([2.4, ART_Y + 3.0, 0])
         me = person(ORANGE, 1.1).move_to([-2.2, ART_Y - 1.6, 0])
         pro = helmet_person(GREEN_LIGHT, 1.1).move_to([2.2, ART_Y - 1.6, 0])

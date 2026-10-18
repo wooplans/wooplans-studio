@@ -7,7 +7,7 @@ Voix LeTao  : VSL_VOICE=letao (clé ELEVENLABS_API_KEY dans l'environnement)
 import numpy as np
 import manimgx as m
 
-from motion import (ART_Y, CAP_Y, GOLD, GREEN_LIGHT, ORANGE, RED, VOICE, T, background, caption, card, check,
+from motion import (ART_Y, burst, CAP_Y, GOLD, GREEN_LIGHT, ORANGE, RED, VOICE, T, background, caption, card, check,
                     chip, clear, coin, counter, cross, cta_beat, fan, house, icon_cube, icon_doc, icon_plan,
                     icon_ruler, mark, offer_beat, person, rise, sad_face, script, slam, tile, underline, wipe)
 
@@ -63,14 +63,14 @@ class VSL1(m.Scene):
         room = m.Rectangle(width=1.4, height=hs.body.height * 0.75, fill_color=GOLD, fill_opacity=1,
                            stroke_color=m.WHITE, stroke_width=4)
         room.next_to(hs.body, m.RIGHT, buff=0).align_to(hs.body, m.DOWN)
-        new_roof = hs.roof.copy().set_fill(GREEN_LIGHT).shift(4 * m.UP)
+        new_roof = hs.roof.copy().set_fill(GREEN_LIGHT).shift(9 * m.UP)
         labels = [chip(t, size=36) for t in B[2]["ecran"]]
         for i, lab in enumerate(labels):
             lab.move_to([0, CAP_Y + 0.4 - i * 0.95, 0])
         coins = m.VGroup(*[coin(0.3).move_to(hs.get_center()) for _ in range(9)])
         rng = np.random.default_rng(3)
-        flights = [m.FadeOut(c, shift=[rng.uniform(-3.5, 3.5), rng.uniform(1.5, 5), 0], run_time=1.2,
-                             rate_func=m.ease_out_cubic) for c in coins]
+        flights = [m.UpdateFromAlphaFunc(c, burst(c, [rng.uniform(-3.5, 3.5), rng.uniform(1.5, 5), 0]), run_time=1.2,
+                                         rate_func=m.ease_out_cubic) for c in coins]
         cost = T("coûte cher", 110, ORANGE).move_to([0, ART_Y + 3.9, 0])
         self.add(hs)
         self.say(mark(v, "Et ensuite ?", "casse un mur", "rajoute une chambre", "refait la toiture", "coûte cher"),
@@ -78,9 +78,10 @@ class VSL1(m.Scene):
                  m.AnimationGroup(m.Create(crack, run_time=0.5), m.Wiggle(hs, run_time=0.6), rise(labels[0])),
                  m.AnimationGroup(m.GrowFromEdge(room, m.LEFT, rate_func=m.ease_out_back), rise(labels[1])),
                  m.AnimationGroup(m.FadeOut(hs.roof, shift=3 * m.UP), new_roof.animate(rate_func=m.ease_out_bounce, run_time=0.9)
-                                  .shift(4 * m.DOWN), rise(labels[2])),
+                                  .shift(9 * m.DOWN), rise(labels[2])),
                  m.AnimationGroup(m.LaggedStart(*flights, lag_ratio=0.08), slam(cost)))
         clear(self, hs, crack, room, new_roof, *labels, cost)
+        self.remove(coins)
 
         # 4. Le regret : la petite maison triste face à celle du voisin
         v = B[3]["voix"]

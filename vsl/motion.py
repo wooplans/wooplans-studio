@@ -334,11 +334,23 @@ def fan(n=7, radius=4.2, spread=0.9):
     return cards, pivot
 
 
+def burst(mob, vec):
+    """Animation d'envol : invisible avant son mot, puis part dans la direction `vec` en s'effaçant."""
+    start = mob.get_center().copy()
+    mob.set_opacity(0)
+
+    def upd(x, a):
+        x.move_to(start + a * np.array(vec))
+        x.set_opacity(0 if a == 0 else 1 - a)
+    return upd
+
+
 def counter(target, suffix="", size=120, color=GOLD):
-    holder = T(f"0{suffix}", size, color)
+    holder = T(f"0{suffix}", size, color).set_opacity(0)      # invisible jusqu'à son mot
 
     def upd(mob, a):
-        mob.become(T(f"{int(round(target * a))}{suffix}", size, color).move_to(mob))
+        if a > 0:
+            mob.become(T(f"{int(round(target * a))}{suffix}", size, color).move_to(mob))
     return holder, upd
 
 
