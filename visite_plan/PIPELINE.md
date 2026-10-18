@@ -26,3 +26,17 @@ Tests : Piper `fr_FR-tom-medium` (gratuit, téléchargé depuis huggingface.co/r
 
 ## Code
 Dépôt wooplans/wooplans-studio, dossier `visite_plan/` (scène ManimGX, sync, sous-titres). Pack local : `visite_plan/local/` (installateur + guetteur Windows, déjà installé sur le PC de Tao).
+
+## Format « visite sans 3D » (validé par Tao le 18 oct. 2026, job modèle : `jobs/V2-2CH-01`)
+Pour un plan seul (image 2D, sans rendu 3D ni PDF). Vidéo 9:16 d'environ 53 s.
+
+1. **Plan** : image fournie par Tao. Retouche locale (pas de Poyo, pour garder la géométrie exacte) : fond blanc, objets parasites retirés (règle…), étiquettes en français en Poppins Bold bleu. Tao valide le plan.
+2. **Script** (Tao valide) : une phrase par pièce, champ `zoom` alterné, **aucun chiffre sans PDF** (ni surface, ni cote, ni prix). « WC » se dit « toilette ». Ordre : entrée par la véranda, pièces de jour, service, chambres. La visite **s'arrête à la chambre parentale**, puis segment `CTA` : « Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com ! ».
+3. **Trajets** : `jobs/<id>/make_paths.py` (polygones + trajets par les portes) → `paths_check.png` à contrôler.
+4. **Voix** : ElevenLabs, une prise par segment (`eleven_multilingual_v2`). LeTao est refusée par l'abonnement actuel (voix clonée) : **Diba** (`CHivAFig5q0FuNMEEmFi`), choisie par Tao, en attendant.
+5. **Synchro sans Whisper** (Hugging Face bloqué dans le cloud Claude) : dans le dossier de travail, `voix/sync/NN.wav` (silences de bord retirés) + `voix/script.json` (champ `sub` = texte des sous-titres, vide pour le CTA), puis
+   `python visite_plan/sync_audio.py` → `python visite_plan/build_final.py prep --wm --band` ; copier `voix/sync.json`, `final/voice_mix.m4a`, `final/subs.ass` dans le job ; `python visite_plan/mkseg.py jobs/<id>`.
+6. **Job** : `meta.json` = `{"band": "Villa · 2 chambres", "facade": false, "plan_px": [w, h], "bottom_px": 440}` ; `cta_logo.png` (logo blanc), `wm_logo.png` (filigrane fixe, vert ~19 %), `band.png` (bande du bas 1080×440 : logo + « Tous nos plans sur » + bouton wooplans.com, contenu dans les 200 px du haut pour rester visible sous l'interface Reels/Shorts/TikTok).
+7. **Rendu** : GitHub Actions `visite-render`, déclenché en poussant `jobs/<id>/RENDER` sur une branche `ccr-*` (≈ 5 min, la vidéo revient dans `visite_plan/out/<id>.mp4`). Le PC de Tao n'a pas encore la version « sans 3D » de la scène.
+8. **Montage** (automatique au rendu) : filigrane fixe en fond, « wooplans.com » qui défile, bande verte du bas, sous-titres au-dessus de la bande ; tout disparaît pendant le CTA (fond vert, logo, accroche, bouton cliqué, « Lien en description »).
+9. **Publication** (après accord de Tao) : `jobs/<id>/PUBLISH.json` (date locale + `timezone`, légende Facebook, titre/description YouTube, lien wooplans.com avec UTM via `wooplans.utm.build_link(..., base="https://wooplans.com/")`), poussé → workflow `publish-zernio` (`tools/publish_zernio.py` : comptes WooPlans seulement, `check_copy`, registre). **Prérequis manquants au 18 oct.** : secret GitHub `ZERNIO_API_KEY` (et `ZERNIO_PROFILE_ID`), TikTok @wooplans à connecter dans Zernio. Facebook Story : à ajouter (`contentType: "story"`, sans légende).

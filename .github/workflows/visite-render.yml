@@ -9,7 +9,7 @@ on:
         required: true
         default: "V3-003"
   push:
-    branches: [main]
+    branches: [main, "ccr-*"]
     paths: ["visite_plan/jobs/*/RENDER"]
 permissions:
   contents: write
@@ -52,7 +52,7 @@ jobs:
         run: |
           sudo apt-get install -y -qq --no-install-recommends mesa-vulkan-drivers libvulkan1
           pip install --quiet uv
-          uv tool install manimgx
+          uv tool install --force manimgx   # --force : recrée le lien ~/.local/bin/manimgx quand le cache uv est restauré
       - name: Rendu du segment ${{ matrix.seg }}
         env:
           JOB: visite_plan/jobs/${{ needs.plan.outputs.job }}
@@ -89,6 +89,6 @@ jobs:
           mkdir -p visite_plan/out
           cp "${{ needs.plan.outputs.job }}.mp4" "visite_plan/out/${{ needs.plan.outputs.job }}.mp4"
           git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
-          git add visite_plan/out
+          git add -f visite_plan/out
           git commit -m "visite: vidéo ${{ needs.plan.outputs.job }}" || exit 0
-          git pull --rebase origin main && git push origin HEAD:main
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

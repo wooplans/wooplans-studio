@@ -1,0 +1,77 @@
+[
+ {
+  "rooms": [
+   "Véranda",
+   "Séjour"
+  ],
+  "t0": 0.0,
+  "t1": 10.205,
+  "start_pos": [
+   280,
+   1120
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Salle à manger",
+   "Cuisine"
+  ],
+  "t0": 10.205,
+  "t1": 21.632,
+  "start_pos": [
+   260,
+   650
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Sortie de service",
+   "Buanderie"
+  ],
+  "t0": 21.632,
+  "t1": 31.527,
+  "start_pos": [
+   710,
+   345
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Chambre 2",
+   "WC"
+  ],
+  "t0": 31.527,
+  "t1": 41.561,
+  "start_pos": [
+   915,
+   340
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Chambre parentale"
+  ],
+  "t0": 41.561,
+  "t1": 46.848,
+  "start_pos": [
+   515,
+   190
+  ],
+  "final": false
+ },
+ {
+  "rooms": [],
+  "t0": 46.848,
+  "t1": 52.951,
+  "start_pos": [
+   680,
+   755
+  ],
+  "final": true,
+  "cta": true
+ }
+]

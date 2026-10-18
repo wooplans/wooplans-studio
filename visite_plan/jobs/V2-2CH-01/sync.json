@@ -1,0 +1,93 @@
+{
+ "total": 52.951,
+ "items": [
+  {
+   "name": "Véranda",
+   "zoom": false,
+   "start": 0.4,
+   "dur": 4.412,
+   "arrive": 1.556,
+   "zout_start": 4.312,
+   "end": 4.812
+  },
+  {
+   "name": "Séjour",
+   "zoom": true,
+   "start": 4.962,
+   "dur": 5.243,
+   "arrive": 6.583,
+   "zout_start": 9.005,
+   "end": 10.205
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": false,
+   "start": 10.355,
+   "dur": 5.669,
+   "arrive": 12.04,
+   "zout_start": 15.524,
+   "end": 16.024
+  },
+  {
+   "name": "Cuisine",
+   "zoom": true,
+   "start": 16.174,
+   "dur": 5.458,
+   "arrive": 18.569,
+   "zout_start": 20.432,
+   "end": 21.632
+  },
+  {
+   "name": "Sortie de service",
+   "zoom": false,
+   "start": 21.782,
+   "dur": 4.647,
+   "arrive": 23.701,
+   "zout_start": 25.929,
+   "end": 26.429
+  },
+  {
+   "name": "Buanderie",
+   "zoom": false,
+   "start": 26.797,
+   "dur": 4.73,
+   "arrive": 27.729,
+   "zout_start": 31.027,
+   "end": 31.527
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": true,
+   "start": 31.677,
+   "dur": 7.114,
+   "arrive": 34.589,
+   "zout_start": 37.591,
+   "end": 38.791
+  },
+  {
+   "name": "WC",
+   "zoom": false,
+   "start": 39.08,
+   "dur": 2.481,
+   "arrive": 40.091,
+   "zout_start": 41.061,
+   "end": 41.561
+  },
+  {
+   "name": "Chambre parentale",
+   "zoom": true,
+   "start": 41.711,
+   "dur": 5.137,
+   "arrive": 43.125,
+   "zout_start": 45.648,
+   "end": 46.848
+  },
+  {
+   "name": "CTA",
+   "start": 46.998,
+   "dur": 3.952,
+   "end": 50.951,
+   "cta": true
+  }
+ ]
+}
