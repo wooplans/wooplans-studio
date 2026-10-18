@@ -14,7 +14,9 @@ ROOT = Path(__file__).resolve().parent.parent
 OFFER_URL = "https://cpbook.wooplans.com/digital"
 OFFER_PRICE_FCFA = 39000
 OFFER_PROMISE = "50+ plans avec leurs vrais devis"
-PIXEL_ID = "1651374605332302"
+# Plans complets personnalisés, prix fixes (FAQ wooplans.com) ; le prix du catalogue est déduit
+FULL_PLANS_FCFA = {"villa": 149000, "duplex": 249000}
+PIXEL_ID ="1651374605332302"
 
 # Pages sociales WooPlans (distinctes de Kilabi et de « Secrets D'ébène Studios »)
 PAGES = {

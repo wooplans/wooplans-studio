@@ -1,0 +1,31 @@
+{
+  "id": "VSL2",
+  "titre": "Combien coûte vraiment ta maison ?",
+  "angle": "Budget et devis : connaître l'ordre de grandeur avant de parler à un entrepreneur.",
+  "beats": [
+    {"type": "hook",
+     "voix": "Si tu ne sais pas combien coûte ta maison avant de voir l'entrepreneur, c'est lui qui va fixer ton budget. Pas toi.",
+     "ecran": ["Qui fixe ton budget ?", "Toi… ou l'entrepreneur ?"], "accent": "budget"},
+    {"type": "point",
+     "voix": "Le problème, c'est que la plupart des gens arrivent au chantier sans aucun repère. Pas de plan comparé, pas de devis, rien.",
+     "ecran": ["Aucun repère", "pas de plan, pas de devis"], "accent": "Aucun repère"},
+    {"type": "liste",
+     "voix": "Résultat : le budget gonfle, les travaux s'arrêtent à mi-chemin, et on ne sait même pas si le prix annoncé était juste.",
+     "ecran": ["Le budget gonfle", "Le chantier s'arrête", "Prix juste ? Aucune idée"], "accent": "gonfle"},
+    {"type": "solution",
+     "voix": "Avec le Catalogue Premium WooPlans, tu vois plus de cinquante modèles, et pour chacun, un devis estimatif détaillé par lot.",
+     "ecran": ["50+ modèles", "un devis estimatif par lot"], "accent": "devis", "image": "catalogue"},
+    {"type": "point",
+     "voix": "Les estimations sont faites à partir de ratios professionnels et de prix au mètre carré actualisés. Elles te donnent un ordre de grandeur pour choisir, à affiner selon ta ville et tes matériaux.",
+     "ecran": ["Ratios professionnels", "prix au m² actualisés"], "accent": "ordre de grandeur"},
+    {"type": "liste",
+     "voix": "Tu sais quelle maison rentre dans ton budget, tu poses les bonnes questions, et tu négocies avec des chiffres en main.",
+     "ecran": ["Le bon modèle pour ton budget", "Les bonnes questions", "Tu négocies chiffres en main"], "accent": "chiffres en main"},
+    {"type": "offre",
+     "voix": "Prix actuel : 39 000 FCFA, une seule fois, avec accès à vie. Sept jours satisfait ou remboursé.",
+     "ecran": ["Prix actuel : 39 000 FCFA", "Accès à vie", "Garantie 7 jours"], "accent": "39 000 FCFA"},
+    {"type": "cta",
+     "voix": "Clique sur le lien et reprends le contrôle de ton budget avant de poser la première brique.",
+     "ecran": ["Clique sur le lien", "avant la première brique"], "accent": "lien"}
+  ]
+}

@@ -22,3 +22,6 @@ media/
 *.pdf
 
 !visite_plan/jobs/**
+
+vsl/out/
+vsl/assets/

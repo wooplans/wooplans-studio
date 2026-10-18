@@ -1,0 +1,31 @@
+{
+  "id": "VSL3",
+  "titre": "Du rêve au vrai projet en 3 étapes",
+  "angle": "Le parcours complet : catalogue, échange avec les architectes, plans complets (prix du catalogue déduit).",
+  "beats": [
+    {"type": "hook",
+     "voix": "Tu rêves de ta maison depuis des années, mais tu ne sais pas par où commencer ? Voici le chemin, en trois étapes.",
+     "ecran": ["Ta maison :", "par où commencer ?"], "accent": "commencer"},
+    {"type": "etape", "numero": 1,
+     "voix": "Étape un : tu ouvres le Catalogue Premium. Plus de cinquante villas et duplex, avec rendus 3D, distributions cotées et devis estimatifs.",
+     "ecran": ["Le Catalogue Premium", "50+ villas et duplex"], "accent": "50+", "image": "catalogue"},
+    {"type": "point",
+     "voix": "Tu les montres à ta famille, vous comparez ensemble, et vous choisissez le modèle qui vous ressemble.",
+     "ecran": ["Vous comparez ensemble", "vous choisissez"], "accent": "ensemble"},
+    {"type": "etape", "numero": 2,
+     "voix": "Étape deux : tu nous écris sur WhatsApp avec le modèle choisi, et tu nous dis ce que tu veux changer.",
+     "ecran": ["Écris-nous sur WhatsApp", "les modifications que tu veux"], "accent": "WhatsApp"},
+    {"type": "etape", "numero": 3,
+     "voix": "Étape trois : on te prépare les plans complets, adaptés à ton terrain. Prix fixe : 149 000 FCFA pour une villa, 249 000 FCFA pour un duplex.",
+     "ecran": ["Plans complets adaptés", "Villa : 149 000 FCFA", "Duplex : 249 000 FCFA"], "accent": "Plans complets"},
+    {"type": "point",
+     "voix": "Et le prix du catalogue est déduit. Tu paies seulement la différence : 110 000 FCFA pour une villa, 210 000 FCFA pour un duplex.",
+     "ecran": ["Catalogue déduit", "Villa : 110 000 FCFA", "Duplex : 210 000 FCFA"], "accent": "déduit"},
+    {"type": "offre",
+     "voix": "Tout commence par le catalogue. Prix actuel : 39 000 FCFA, accès à vie, et sept jours satisfait ou remboursé.",
+     "ecran": ["Prix actuel : 39 000 FCFA", "Accès à vie", "Garantie 7 jours"], "accent": "39 000 FCFA"},
+    {"type": "cta",
+     "voix": "Clique sur le lien, et fais le premier pas vers ta maison dès maintenant.",
+     "ecran": ["Clique sur le lien", "le premier pas, c'est ici"], "accent": "lien"}
+  ]
+}
