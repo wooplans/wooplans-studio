@@ -1,0 +1,71 @@
+[
+ {
+  "name": "Entrée",
+  "zoom": false,
+  "prefix": "On entre par l'entrée principale,",
+  "spoken": "On entre par l'entrée principale, au centre de la maison.",
+  "sub": "On entre par l'entrée principale, au centre de la maison."
+ },
+ {
+  "name": "Salon",
+  "zoom": true,
+  "prefix": "À gauche, le salon,",
+  "spoken": "À gauche, le salon, avec un grand canapé d'angle.",
+  "sub": "À gauche, le salon, avec un grand canapé d'angle."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Juste derrière, la salle à manger,",
+  "spoken": "Juste derrière, la salle à manger, près de l'escalier.",
+  "sub": "Juste derrière, la salle à manger, près de l'escalier."
+ },
+ {
+  "name": "Entrée latérale",
+  "zoom": false,
+  "prefix": "Puis une seconde entrée,",
+  "spoken": "Puis une seconde entrée, sur le côté de la maison.",
+  "sub": "Puis une seconde entrée, sur le côté de la maison."
+ },
+ {
+  "name": "Salle de bain",
+  "zoom": false,
+  "prefix": "À côté, une salle de bain,",
+  "spoken": "À côté, une salle de bain, avec ses rangements.",
+  "sub": "À côté, une salle de bain, avec ses rangements."
+ },
+ {
+  "name": "Chambre 1",
+  "zoom": true,
+  "prefix": "Voici la chambre une,",
+  "spoken": "Voici la chambre une, avec sa propre toilette.",
+  "sub": "Voici la chambre une, avec sa propre toilette."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": false,
+  "prefix": "En face, la chambre deux,",
+  "spoken": "En face, la chambre deux, elle aussi avec sa toilette.",
+  "sub": "En face, la chambre deux, elle aussi avec sa toilette."
+ },
+ {
+  "name": "Salle de bain 2",
+  "zoom": false,
+  "prefix": "Près de l'entrée, une autre salle de bain,",
+  "spoken": "Près de l'entrée, une autre salle de bain, pour les invités.",
+  "sub": "Près de l'entrée, une autre salle de bain, pour les invités."
+ },
+ {
+  "name": "Chambre 3",
+  "zoom": true,
+  "prefix": "Enfin, la chambre trois,",
+  "spoken": "Enfin, la chambre trois, la plus grande, avec bureau et rangement.",
+  "sub": "Enfin, la chambre trois, la plus grande, avec bureau et rangement."
+ },
+ {
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
+ }
+]

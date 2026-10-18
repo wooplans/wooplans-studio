@@ -20,18 +20,27 @@ jobs:
   plan:
     runs-on: ubuntu-24.04
     outputs:
-      job: ${{ steps.j.outputs.job }}
+      jobs: ${{ steps.j.outputs.jobs }}
       matrix: ${{ steps.j.outputs.matrix }}
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 2 }
+        with: { fetch-depth: 0 }
       - id: j
+        # tous les jobs dont le fichier RENDER a changé dans ce push (ou celui demandé à la main)
         run: |
-          JOB="${{ github.event.inputs.job }}"
-          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD~1 HEAD | grep 'visite_plan/jobs/.*/RENDER' | head -1 | cut -d/ -f3); fi
-          echo "job=$JOB" >> "$GITHUB_OUTPUT"
-          N=$(python3 -c "import json;print(len(json.load(open('visite_plan/jobs/$JOB/segments.json'))))")
-          echo "matrix=$(python3 -c "print(list(range($N)))")" >> "$GITHUB_OUTPUT"
+          JOBS="${{ github.event.inputs.job }}"
+          if [ -z "$JOBS" ]; then
+            BASE="${{ github.event.before }}"
+            git cat-file -e "$BASE" 2>/dev/null || BASE=HEAD~1
+            JOBS=$(git diff --name-only "$BASE" HEAD | grep 'visite_plan/jobs/.*/RENDER$' | cut -d/ -f3 | sort -u | tr '\n' ' ')
+          fi
+          python3 - "$JOBS" >> "$GITHUB_OUTPUT" <<'PY'
+          import json, sys
+          jobs = sys.argv[1].split()
+          m = [{"job": j, "seg": k} for j in jobs
+               for k in range(len(json.load(open(f"visite_plan/jobs/{j}/segments.json"))))]
+          print("jobs=" + json.dumps(jobs)); print("matrix=" + json.dumps(m))
+          PY
   render:
     needs: plan
     runs-on: ubuntu-24.04
@@ -39,7 +48,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        seg: ${{ fromJSON(needs.plan.outputs.matrix) }}
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
@@ -53,9 +62,9 @@ jobs:
           sudo apt-get install -y -qq --no-install-recommends mesa-vulkan-drivers libvulkan1
           pip install --quiet uv
           uv tool install --force manimgx   # --force : recrée le lien ~/.local/bin/manimgx quand le cache uv est restauré
-      - name: Rendu du segment ${{ matrix.seg }}
+      - name: Rendu ${{ matrix.job }} segment ${{ matrix.seg }}
         env:
-          JOB: visite_plan/jobs/${{ needs.plan.outputs.job }}
+          JOB: visite_plan/jobs/${{ matrix.job }}
           SEG: ${{ matrix.seg }}
         run: |
           export PATH="$PATH:$HOME/.local/bin"
@@ -63,32 +72,38 @@ jobs:
           JOB="$GITHUB_WORKSPACE/$JOB" manimgx render scene_visite.py VisitePlan -r 1080x1920 --fps 30 --preset veryfast --crf 18 -o "$GITHUB_WORKSPACE/seg${{ matrix.seg }}.mp4"
       - uses: actions/upload-artifact@v4
         with:
-          name: seg${{ matrix.seg }}
+          name: ${{ matrix.job }}-seg${{ matrix.seg }}
           path: seg${{ matrix.seg }}.mp4
           retention-days: 2
   assemble:
     needs: [plan, render]
     runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      max-parallel: 1          # un seul push à la fois vers la branche
+      matrix:
+        job: ${{ fromJSON(needs.plan.outputs.jobs) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           path: segs
+          pattern: ${{ matrix.job }}-seg*
           merge-multiple: true
       - name: Assemblage (voix + sous-titres)
         run: |
           sudo apt-get install -y -qq ffmpeg libass9 >/dev/null
-          python3 visite_plan/assemble.py visite_plan/jobs/${{ needs.plan.outputs.job }} segs "${{ needs.plan.outputs.job }}.mp4"
+          python3 visite_plan/assemble.py visite_plan/jobs/${{ matrix.job }} segs "${{ matrix.job }}.mp4"
       - uses: actions/upload-artifact@v4
         with:
-          name: video-${{ needs.plan.outputs.job }}
-          path: ${{ needs.plan.outputs.job }}.mp4
+          name: video-${{ matrix.job }}
+          path: ${{ matrix.job }}.mp4
           retention-days: 14
       - name: Publier dans visite_plan/out/
         run: |
           mkdir -p visite_plan/out
-          cp "${{ needs.plan.outputs.job }}.mp4" "visite_plan/out/${{ needs.plan.outputs.job }}.mp4"
+          cp "${{ matrix.job }}.mp4" "visite_plan/out/${{ matrix.job }}.mp4"
           git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
           git add -f visite_plan/out
-          git commit -m "visite: vidéo ${{ needs.plan.outputs.job }}" || exit 0
+          git commit -m "visite: vidéo ${{ matrix.job }}" || exit 0
           git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

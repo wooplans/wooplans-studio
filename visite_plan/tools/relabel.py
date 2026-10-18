@@ -52,3 +52,24 @@ def relabel(im, labels, color):
         erase(im, cx, cy, hw, hh, opt.get("dark", 120))
         write(im, cx, cy, lines, color, opt.get("size", 18), opt.get("rot", 0), opt.get("maxw"))
     return im
+
+
+def erase_text(im, cx, cy, hw, hh, dark=150, maxh=12, grow=3):
+    """Efface seulement les lettres (petites composantes sombres) dans la fenêtre, par inpainting :
+    les traits longs (murs, meubles) sont conservés."""
+    import cv2
+    a = np.asarray(im.convert("RGB")).copy()
+    x0, y0, x1, y1 = max(0, cx - hw), max(0, cy - hh), cx + hw, cy + hh
+    win = a[y0:y1, x0:x1]
+    m = (win.mean(-1) < dark).astype(np.uint8)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(m, 8)
+    keep = np.zeros_like(m)
+    for i in range(1, n):
+        x, y, w, h, area = st[i]
+        if h <= maxh and w <= maxh * 1.8:
+            keep[lab == i] = 1
+    mask = np.zeros(a.shape[:2], np.uint8)
+    mask[y0:y1, x0:x1] = keep
+    mask = cv2.dilate(mask, np.ones((grow, grow), np.uint8))
+    out = cv2.inpaint(a, mask * 255, 3, cv2.INPAINT_TELEA)
+    return Image.fromarray(out)

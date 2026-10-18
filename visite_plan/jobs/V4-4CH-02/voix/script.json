@@ -1,0 +1,78 @@
+[
+ {
+  "name": "Porche d'entrée",
+  "zoom": false,
+  "prefix": "On arrive par le porche d'entrée,",
+  "spoken": "On arrive par le porche d'entrée, avec ses marches.",
+  "sub": "On arrive par le porche d'entrée, avec ses marches."
+ },
+ {
+  "name": "Salon",
+  "zoom": true,
+  "prefix": "On entre dans le salon,",
+  "spoken": "On entre dans le salon, au cœur de la maison.",
+  "sub": "On entre dans le salon, au cœur de la maison."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Derrière, la salle à manger,",
+  "spoken": "Derrière, la salle à manger, ouverte sur le salon.",
+  "sub": "Derrière, la salle à manger, ouverte sur le salon."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "À gauche, la cuisine,",
+  "spoken": "À gauche, la cuisine, avec un grand rangement.",
+  "sub": "À gauche, la cuisine, avec un grand rangement."
+ },
+ {
+  "name": "Porche arrière",
+  "zoom": false,
+  "prefix": "Elle donne sur le porche arrière,",
+  "spoken": "Elle donne sur le porche arrière, à l'extérieur.",
+  "sub": "Elle donne sur le porche arrière, à l'extérieur."
+ },
+ {
+  "name": "Chambre 1",
+  "zoom": false,
+  "prefix": "Côté gauche, la chambre une,",
+  "spoken": "Côté gauche, la chambre une, avec un bureau.",
+  "sub": "Côté gauche, la chambre une, avec un bureau."
+ },
+ {
+  "name": "WC",
+  "zoom": false,
+  "prefix": "Entre les chambres, les toilettes,",
+  "spoken": "Entre les chambres, les toilettes, dont deux avec douche.",
+  "sub": "Entre les chambres, les toilettes, dont deux avec douche."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": true,
+  "prefix": "Puis la chambre deux,",
+  "spoken": "Puis la chambre deux, avec un grand lit.",
+  "sub": "Puis la chambre deux, avec un grand lit."
+ },
+ {
+  "name": "Chambre 3",
+  "zoom": false,
+  "prefix": "De l'autre côté, la chambre trois,",
+  "spoken": "De l'autre côté, la chambre trois, avec sa toilette et sa douche.",
+  "sub": "De l'autre côté, la chambre trois, avec sa toilette et sa douche."
+ },
+ {
+  "name": "Chambre parentale",
+  "zoom": true,
+  "prefix": "Enfin, la chambre parentale,",
+  "spoken": "Enfin, la chambre parentale, avec dressing et salle de bain.",
+  "sub": "Enfin, la chambre parentale, avec dressing et salle de bain."
+ },
+ {
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
+ }
+]

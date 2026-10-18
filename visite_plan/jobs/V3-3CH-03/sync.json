@@ -1,0 +1,93 @@
+{
+ "total": 38.603,
+ "items": [
+  {
+   "name": "Entrée",
+   "zoom": false,
+   "start": 0.4,
+   "dur": 3.32,
+   "arrive": 1.905,
+   "zout_start": 3.22,
+   "end": 3.72
+  },
+  {
+   "name": "Salon",
+   "zoom": true,
+   "start": 3.87,
+   "dur": 3.197,
+   "arrive": 5.486,
+   "zout_start": 6.936,
+   "end": 7.067
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": false,
+   "start": 7.637,
+   "dur": 3.208,
+   "arrive": 9.436,
+   "zout_start": 10.344,
+   "end": 10.844
+  },
+  {
+   "name": "Entrée latérale",
+   "zoom": false,
+   "start": 11.236,
+   "dur": 2.758,
+   "arrive": 12.144,
+   "zout_start": 13.495,
+   "end": 13.995
+  },
+  {
+   "name": "Salle de bain",
+   "zoom": false,
+   "start": 14.248,
+   "dur": 2.449,
+   "arrive": 15.295,
+   "zout_start": 16.197,
+   "end": 16.697
+  },
+  {
+   "name": "Chambre 1",
+   "zoom": true,
+   "start": 17.025,
+   "dur": 2.756,
+   "arrive": 17.997,
+   "zout_start": 19.447,
+   "end": 19.78
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": false,
+   "start": 20.228,
+   "dur": 4.008,
+   "arrive": 21.947,
+   "zout_start": 23.736,
+   "end": 24.236
+  },
+  {
+   "name": "Salle de bain 2",
+   "zoom": false,
+   "start": 24.386,
+   "dur": 3.474,
+   "arrive": 26.381,
+   "zout_start": 27.36,
+   "end": 27.86
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": true,
+   "start": 28.01,
+   "dur": 4.491,
+   "arrive": 29.263,
+   "zout_start": 31.301,
+   "end": 32.501
+  },
+  {
+   "name": "CTA",
+   "start": 32.651,
+   "dur": 3.952,
+   "end": 36.603,
+   "cta": true
+  }
+ ]
+}
