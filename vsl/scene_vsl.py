@@ -120,18 +120,20 @@ class VSL(m.Scene):
             for j, s in enumerate(beat["ecran"]):
                 ln = text(s, size if j == 0 else size - 10, line_color(s, beat))
                 ln.move_to([0, top - ln.height / 2, 0])
-                top -= ln.height + 0.45
+                if j == 0 and beat["type"] in ("offre", "cta"):
+                    top -= 0.35              # place pour la carte / le bouton
+                top -= ln.height + 0.6
                 lines.append(ln)
 
             extra = []
             if beat["type"] == "offre":                 # carte blanche derrière le prix
-                card = m.Rectangle(width=TEXT_W + 0.4, height=lines[0].height + 0.7, fill_color=m.WHITE,
+                card = m.Rectangle(width=TEXT_W + 0.4, height=lines[0].height + 0.9, fill_color=m.WHITE,
                                    fill_opacity=1, stroke_color=ORANGE, stroke_width=6)
                 card.move_to(lines[0].get_center()).set_z_index(-1)
                 lines[0].set_color(GREEN)
                 extra.append(card)
             if beat["type"] == "cta":                   # bouton orange + flèche vers le lien
-                btn = m.Rectangle(width=TEXT_W + 0.2, height=lines[0].height + 0.8, fill_color=ORANGE,
+                btn = m.Rectangle(width=TEXT_W + 0.4, height=lines[0].height + 0.9, fill_color=ORANGE,
                                   fill_opacity=1, stroke_width=0)
                 btn.move_to(lines[0].get_center()).set_z_index(-1)
                 lines[0].set_color(m.WHITE)
@@ -154,8 +156,13 @@ class VSL(m.Scene):
             for ln in lines:
                 play(m.FadeIn(ln), run_time=step, rate_func=m.ease_in_out_cubic)
             if beat["type"] in ("hook", "cta"):         # petit battement pour accrocher l'œil
-                play(lines[0].animate.scale(1.06), run_time=0.2)
-                play(lines[0].animate.scale(1 / 1.06), run_time=0.2)
+                head = m.Group(*extra[:1], lines[0]) if beat["type"] == "cta" else lines[0]
+                play(head.animate.scale(1.05), run_time=0.2)
+                play(head.animate.scale(1 / 1.05), run_time=0.2)
+            # pendant que la voix continue : zoom lent, l'image ne reste jamais figée
+            hold = (TIMING["starts"][i + 1] if i + 1 < len(BEATS) else total) - t[0] - 0.3
+            if hold > 0.5:
+                play(group.animate.scale(1.04), run_time=hold, rate_func=m.linear)
             shown = group
 
         wait_until(total)
