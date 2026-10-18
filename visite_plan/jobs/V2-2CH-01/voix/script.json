@@ -1,0 +1,79 @@
+[
+ {
+  "name": "Véranda",
+  "zoom": false,
+  "prefix": "On commence par la véranda,",
+  "spoken": "On commence par la véranda, avec ses marches d'accès : c'est l'entrée de la maison.",
+  "sub": "On commence par la véranda, avec ses marches d'accès: c'est l'entrée de la maison."
+ },
+ {
+  "name": "Séjour",
+  "zoom": true,
+  "prefix": "On entre directement dans le séjour.",
+  "spoken": "On entre directement dans le séjour. Grand salon d'angle, et des fenêtres sur deux côtés.",
+  "sub": "On entre directement dans le séjour. Grand salon d'angle, et des fenêtres sur deux côtés."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Juste à côté, la salle à manger,",
+  "spoken": "Juste à côté, la salle à manger, au centre de la maison : elle dessert toutes les pièces.",
+  "sub": "Juste à côté, la salle à manger, au centre de la maison: elle dessert toutes les pièces."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "Derrière, la cuisine,",
+  "spoken": "Derrière, la cuisine, avec un îlot central, l'évier et la cuisson le long des murs.",
+  "sub": "Derrière, la cuisine, avec un îlot central, l'évier et la cuisson le long des murs."
+ },
+ {
+  "name": "Sortie de service",
+  "zoom": false,
+  "prefix": "Sur le côté, une sortie de service,",
+  "spoken": "Sur le côté, une sortie de service, avec son escalier vers l'extérieur.",
+  "sub": "Sur le côté, une sortie de service, avec son escalier vers l'extérieur."
+ },
+ {
+  "name": "Buanderie",
+  "zoom": false,
+  "prefix": "Et voici la buanderie,",
+  "spoken": "Et voici la buanderie, séparée de la cuisine : le linge reste à part.",
+  "sub": "Et voici la buanderie, séparée de la cuisine: le linge reste à part."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": true,
+  "prefix": "On repasse par la salle à manger pour la chambre deux.",
+  "spoken": "On repasse par la salle à manger pour la chambre deux. Lit double, placard et fenêtres sur deux façades.",
+  "sub": "On repasse par la salle à manger pour la chambre deux. Lit double, placard et fenêtres sur deux façades."
+ },
+ {
+  "name": "WC",
+  "zoom": false,
+  "prefix": "Elle a sa propre toilette,",
+  "spoken": "Elle a sa propre toilette, avec lavabo.",
+  "sub": "Elle a sa propre toilette, avec lavabo."
+ },
+ {
+  "name": "Chambre parentale",
+  "zoom": true,
+  "prefix": "Enfin, la chambre parentale.",
+  "spoken": "Enfin, la chambre parentale. Grand lit, rangement mural et dressing.",
+  "sub": "Enfin, la chambre parentale. Grand lit, rangement mural et dressing."
+ },
+ {
+  "name": "WC privé",
+  "zoom": false,
+  "prefix": "Et sa toilette privée,",
+  "spoken": "Et sa toilette privée, rien que pour les parents.",
+  "sub": "Et sa toilette privée, rien que pour les parents."
+ },
+ {
+  "name": "Final",
+  "prefix": "Voilà la maison complète :",
+  "prefix2": "deux chambres,",
+  "spoken": "Voilà la maison complète : deux chambres, une vraie cuisine avec buanderie, et un séjour ouvert sur la véranda. Les plans complets sont dans le Catalogue Premium. Lien en description.",
+  "sub": "Voilà la maison complète: deux chambres, une vraie cuisine avec buanderie, et un séjour ouvert sur la véranda. Les plans complets sont dans le Catalogue Premium. Lien en description."
+ }
+]

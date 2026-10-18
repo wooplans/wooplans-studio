@@ -89,6 +89,6 @@ jobs:
           mkdir -p visite_plan/out
           cp "${{ needs.plan.outputs.job }}.mp4" "visite_plan/out/${{ needs.plan.outputs.job }}.mp4"
           git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
-          git add visite_plan/out
+          git add -f visite_plan/out
           git commit -m "visite: vidéo ${{ needs.plan.outputs.job }}" || exit 0
-          git pull --rebase origin main && git push origin HEAD:main
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"
