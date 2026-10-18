@@ -26,7 +26,7 @@ ROOMS = [
     dict(name="Chambre 2", label="Chambre 2", seed=(830, 180), label_xy=(858, 239), stop=(830, 200)),
     dict(name="SDB", label="SDB", poly=R(762, 300, 900, 560), label_xy=(830, 378), size=21, stop=(800, 380)),
     dict(name="SDB 2", label="SDB", seed=(830, 506), size=21),
-    dict(name="Chambre parentale", label="Chambre\nparentale", seed=(860, 780), label_xy=(867, 732), stop=(820, 760)),
+    dict(name="Chambre parentale", label="Chambre\nparentale", seed=(860, 780), box=(675, 640, 952, 892), label_xy=(867, 732), stop=(820, 760)),
     dict(name="Porche arrière", label="Porche\narrière", seed=(350, 477), label_xy=(350, 477), size=18),
     dict(name="Terrasse", poly=R(950, 640, 1030, 885)),
     dict(name="Dégagement", poly=R(242, 572, 392, 656)),
