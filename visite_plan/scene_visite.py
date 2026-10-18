@@ -85,7 +85,7 @@ def transit_time(pts):
 class VisitePlan(m.Scene):
     def construct(self) -> None:
         start = SEG["start_pos"] if SEG else PATHS["start"]
-        rooms = [r for r in PATHS["rooms"] if (SEG is None or r["name"] in SEG["rooms"])]
+        rooms = [r for r in PATHS["rooms"] if r["name"] in SYNC and (SEG is None or r["name"] in SEG["rooms"])]
 
         # ---- Plan (zone du bas) ------------------------------------------------
         plan_img = m.ImageMobject(PLAN_IMG)
@@ -208,6 +208,10 @@ class VisitePlan(m.Scene):
             wait_until(SEG["t1"])
             return
 
+        if "CTA" in SYNC:                           # la visite s'arrête net : séquence CTA wooplans.com
+            self.cta(t, wait_until)
+            return
+
         # ---- Final : zoom arrière sur toute la maison, puis cotes globales (longueur / largeur) ----
         fin = SYNC["Final"]
         wait_until(fin["start"])
@@ -245,5 +249,72 @@ class VisitePlan(m.Scene):
         wait_until(fin["dim2"])
         play(m.Create(h_ln), m.Create(h_a), m.Create(h_b), m.FadeIn(h_txt), run_time=0.9)
 
+        if SYNC_TOTAL > t[0]:
+            self.wait(SYNC_TOTAL - t[0])
+
+    def cta(self, t, wait_until) -> None:
+        """CTA motion design (fond vert WooPlans) : logo, accroche, bouton « wooplans.com » cliqué."""
+        cta = SYNC["CTA"]
+        wait_until(cta["start"])
+        S = cta["start"]
+
+        def play(*a, run_time, **k):
+            self.play(*a, run_time=run_time, **k)
+            t[0] += run_time
+
+        Z = 40
+        bg = m.Rectangle(width=FRAME_W + 0.4, height=FRAME_H + 0.4, fill_color=GREEN, fill_opacity=1,
+                         stroke_width=0).set_z_index(Z)
+        bg.move_to([0, -FRAME_H - 0.2, 0])
+        stripe = m.Rectangle(width=FRAME_W + 0.4, height=0.35, fill_color=ORANGE, fill_opacity=1,
+                             stroke_width=0).set_z_index(Z + 1)
+        stripe.move_to([0, -FRAME_H / 2 - 0.4, 0])
+        self.add(bg, stripe)
+        play(bg.animate.move_to([0, 0, 0]), stripe.animate.move_to([0, FRAME_H / 2 + 0.4, 0]),
+             run_time=0.6, rate_func=m.ease_in_out_cubic)
+
+        logo = m.ImageMobject(str(JOB / "cta_logo.png")).set_z_index(Z + 2)
+        logo.scale_to_fit_width(5.6).move_to([0, 4.3, 0])
+        play(m.FadeIn(logo, scale=0.6), run_time=0.5, rate_func=m.ease_out_back)
+
+        def txt(s_, size, color=m.WHITE):
+            return m.Text(s_, color=color, font="Noto Sans", weight=m.BOLD, font_size=size).set_z_index(Z + 2)
+        l1 = txt("Envie d'autres", 64).move_to([0, 2.0, 0])
+        l2 = txt("plans de maison ?", 64).move_to([0, 1.0, 0])
+        sub = txt("Villas et duplex · plans complets", 34, GOLD).move_to([0, -0.05, 0])
+        for x in (l1, l2, sub):
+            if x.width > FRAME_W - 0.8:
+                x.scale_to_fit_width(FRAME_W - 0.8)
+        play(m.LaggedStart(m.FadeIn(l1, shift=0.5 * m.UP), m.FadeIn(l2, shift=0.5 * m.UP), lag_ratio=0.35),
+             run_time=0.8, rate_func=m.ease_out_cubic)
+        play(m.FadeIn(sub, shift=0.3 * m.UP), run_time=0.4)
+
+        btn = m.RoundedRectangle(corner_radius=0.65, width=6.6, height=1.35, fill_color=ORANGE, fill_opacity=1,
+                                 stroke_color=m.WHITE, stroke_width=5).set_z_index(Z + 2)
+        btn.move_to([0, -1.9, 0])
+        url = txt("wooplans.com", 62).move_to(btn.get_center()).set_z_index(Z + 3)
+        if url.width > 5.8:
+            url.scale_to_fit_width(5.8)
+        button = m.Group(btn, url)
+        play(m.GrowFromCenter(button), run_time=0.6, rate_func=m.ease_out_back)
+
+        cursor = m.Polygon([0, 0, 0], [0, -0.9, 0], [0.24, -0.66, 0], [0.42, -1.05, 0], [0.56, -0.98, 0],
+                           [0.38, -0.6, 0], [0.7, -0.6, 0], fill_color=m.WHITE, fill_opacity=1,
+                           stroke_color="#1E2933", stroke_width=4).set_z_index(Z + 4)
+        cursor.move_to([2.6, -4.6, 0])
+        self.add(cursor)
+        play(cursor.animate.move_to([1.1, -2.25, 0]), run_time=0.7, rate_func=m.ease_in_out_cubic)
+        play(button.animate.scale(0.92), cursor.animate.scale(0.85), run_time=0.12)
+        play(button.animate.scale(1 / 0.92), cursor.animate.scale(1 / 0.85),
+             m.Flash(btn.get_center(), color=GOLD, line_length=0.5, num_lines=14, flash_radius=3.6),
+             run_time=0.5)
+
+        foot = txt("Lien en description", 34).move_to([0, -4.3, 0])
+        play(m.FadeIn(foot, shift=0.3 * m.UP), run_time=0.4)
+        while t[0] + 1.0 < SYNC_TOTAL:                     # le bouton respire jusqu'à la fin
+            play(button.animate.scale(1.06), run_time=0.5, rate_func=m.there_and_back)
+            if t[0] + 0.5 < SYNC_TOTAL:
+                self.wait(0.5)
+                t[0] += 0.5
         if SYNC_TOTAL > t[0]:
             self.wait(SYNC_TOTAL - t[0])

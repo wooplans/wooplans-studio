@@ -38,6 +38,11 @@ for i, s in enumerate(segs, 1):
     ws = words_of(s["spoken"], d, pauses(f)); words[s["name"]] = ws
     np_ = len(s["prefix"].replace(" :", ":").split())
     p = ws[np_ - 1][2]                    # fin du préfixe (nom de la pièce)
+    if s["name"] == "CTA":                                      # séquence CTA : enchaîne dès la fin du dernier zoom arrière
+        start = max(S_prev_end + GAP, T_free)
+        items.append({"name": "CTA", "start": round(start,3), "dur": round(d,3), "end": round(start+d,3), "cta": True})
+        S_prev_end = start + d
+        continue
     if s["name"] == "Final":
         start = max(S_prev_end + GAP, T_free)
         item = {"name": "Final", "start": round(start,3), "dur": round(d,3), "end": round(start+d,3), "final": True,
@@ -55,7 +60,7 @@ for i, s in enumerate(segs, 1):
     items.append({"name": s["name"], "zoom": bool(s.get("zoom")), "start": round(start,3), "dur": round(d,3), "arrive": round(A,3),
                   "zout_start": round(zout_start,3), "end": round(E,3)})
     print(f'{s["name"]:18s} zoom={s.get("zoom")!s:5} start {start:6.2f} arrive {A:6.2f} fin {E:6.2f}')
-total = items[-1]["end"] + 1.0
+total = items[-1]["end"] + (2.0 if items[-1].get("cta") else 1.0)
 json.dump({"total": total, "items": items}, open("voix/sync.json","w",encoding="utf-8"), ensure_ascii=False, indent=1)
 json.dump(words, open("words.json","w",encoding="utf-8"), ensure_ascii=False, indent=1)
 print("total", round(total, 2))

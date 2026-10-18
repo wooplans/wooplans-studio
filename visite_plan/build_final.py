@@ -14,8 +14,15 @@ if MODE == "burn":
     video, out, job = sys.argv[2], sys.argv[3], Path(sys.argv[4])
     total = dur(job / "voice_mix.m4a")
     Path("final").mkdir(exist_ok=True); shutil.copy(job / "subs.ass", "final/subs.ass"); shutil.copytree(FONTS, "final/fonts", dirs_exist_ok=True)
-    subprocess.run(["ffmpeg","-y","-hide_banner","-loglevel","error","-i",video,"-i",str(job / "voice_mix.m4a"),
-        "-filter_complex", f"[0:v]tpad=stop_mode=clone:stop_duration=10,subtitles=final/subs.ass:fontsdir=final/fonts[v]",
+    vf = "[0:v]tpad=stop_mode=clone:stop_duration=10"
+    extra = []
+    if (job / "wm_logo.png").exists():               # filigrane fixe en fond (masqué pendant le CTA)
+        cta = [i for i in json.loads((job / "sync.json").read_text(encoding="utf-8"))["items"] if i.get("cta")]
+        stop = cta[0]["start"] + 0.6 if cta else total + 10
+        extra = ["-loop", "1", "-i", str(job / "wm_logo.png")]
+        vf += f"[base];[base][2:v]overlay=(W-w)/2:(H-h)/2+50:shortest=1:enable='lt(t,{stop:.2f})'"
+    subprocess.run(["ffmpeg","-y","-hide_banner","-loglevel","error","-i",video,"-i",str(job / "voice_mix.m4a")] + extra + [
+        "-filter_complex", f"{vf},subtitles=final/subs.ass:fontsdir=final/fonts[v]",
         "-map","[v]","-map","1:a","-c:v","libx264","-preset","veryfast","-crf","20","-pix_fmt","yuv420p",
         "-c:a","copy","-t",f"{total:.2f}",out], check=True)
     print("OK", out, total); sys.exit(0)
@@ -86,6 +93,8 @@ for it, seg in zip(tl["items"], segs):
     for t, (s, e) in zip(toks, pos):
         events.append((it["start"] + s, it["start"] + e, t))
 events.sort()
+WM = "--wm" in sys.argv                         # filigrane « wooplans.com » qui défile (jusqu'au CTA)
+cta_start = next((i["start"] for i in tl["items"] if i.get("cta")), tl["total"])
 lines = []
 for k, (s, e, t) in enumerate(events):
     nxt = events[k+1][0] if k+1 < len(events) else e + 0.3
@@ -104,9 +113,18 @@ WrapStyle: 2
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
 Style: Hormozi,Poppins,76,{WHITE},{WHITE},{GREEN},&H80000000&,-1,0,0,0,100,100,0,0,1,9,3,2,60,60,120,1
+Style: WM,Poppins,58,&H80595B0F,&H80595B0F,&HA0FFFFFF,&HFF000000,-1,0,0,0,100,100,2,0,1,3,0,5,0,0,0,1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
 """ + "\n".join(lines) + "\n"
+if WM:                                          # traverse l'écran de droite à gauche, hauteur alternée
+    k, t0, P = 0, 0.8, 7.0
+    while t0 < cta_start - 3.0:
+        y = (520, 1250, 880, 1500)[k % 4]
+        t1 = min(t0 + P, cta_start)
+        x1 = 1500 - (1500 + 420) * (t1 - t0) / P
+        ass += f"Dialogue: 1,{ts(t0)},{ts(t1)},WM,,0,0,0,,{{\\move(1500,{y},{x1:.0f},{y})}}wooplans.com\n"
+        k += 1; t0 += P + 2.0
 Path("final/subs.ass").write_text(ass, encoding="utf-8")
 print("prep OK :", len(events), "mots, total", tl["total"])

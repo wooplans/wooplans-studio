@@ -53,11 +53,10 @@
  },
  {
   "rooms": [
-   "Chambre parentale",
-   "WC privé"
+   "Chambre parentale"
   ],
   "t0": 41.561,
-  "t1": 50.116,
+  "t1": 46.848,
   "start_pos": [
    515,
    190
@@ -66,12 +65,13 @@
  },
  {
   "rooms": [],
-  "t0": 50.116,
-  "t1": 62.862,
+  "t0": 46.848,
+  "t1": 52.951,
   "start_pos": [
-   520,
-   885
+   680,
+   755
   ],
-  "final": true
+  "final": true,
+  "cta": true
  }
 ]

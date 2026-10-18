@@ -1,5 +1,5 @@
 {
- "total": 62.862,
+ "total": 52.951,
  "items": [
   {
    "name": "Véranda",
@@ -83,22 +83,11 @@
    "end": 46.848
   },
   {
-   "name": "WC privé",
-   "zoom": false,
-   "start": 47.174,
-   "dur": 2.941,
-   "arrive": 48.148,
-   "zout_start": 49.616,
-   "end": 50.116
-  },
-  {
-   "name": "Final",
-   "start": 50.266,
-   "dur": 11.597,
-   "end": 61.862,
-   "final": true,
-   "dim1": 51.086,
-   "dim2": 52.178
+   "name": "CTA",
+   "start": 46.998,
+   "dur": 3.952,
+   "end": 50.951,
+   "cta": true
   }
  ]
 }

@@ -63,17 +63,9 @@
   "sub": "Enfin, la chambre parentale. Grand lit, rangement mural et dressing."
  },
  {
-  "name": "WC privé",
-  "zoom": false,
-  "prefix": "Et sa toilette privée,",
-  "spoken": "Et sa toilette privée, rien que pour les parents.",
-  "sub": "Et sa toilette privée, rien que pour les parents."
- },
- {
-  "name": "Final",
-  "prefix": "Voilà la maison complète :",
-  "prefix2": "deux chambres,",
-  "spoken": "Voilà la maison complète : deux chambres, une vraie cuisine avec buanderie, et un séjour ouvert sur la véranda. Les plans complets sont dans le Catalogue Premium. Lien en description.",
-  "sub": "Voilà la maison complète: deux chambres, une vraie cuisine avec buanderie, et un séjour ouvert sur la véranda. Les plans complets sont dans le Catalogue Premium. Lien en description."
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
  }
 ]
