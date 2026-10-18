@@ -8,5 +8,7 @@ Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun c
 - Rien n'est programmé sans l'accord de Tao. Il relit la voix off et les scripts du format B avant GitHub.
 - Clés API uniquement dans .env / secrets GitHub. Avant tout commit : `python tools/secret_scan.py` (« Aucune fuite »).
 - Voix : ElevenLabs « LeTao » uniquement, aucune nouvelle voix. Images : Poyo gpt-image 2.5, low, 1K.
+  Exception validée par Tao (18 oct. 2026) : tant que l'abonnement ElevenLabs refuse LeTao (voix clonée), voix « Diba » (CHivAFig5q0FuNMEEmFi) pour les visites.
+- Visites guidées de plan (avec ou sans 3D) : suivre visite_plan/PIPELINE.md (format « visite sans 3D » = job modèle V2-2CH-01).
 - Réponses à Tao en français, concises.
 Tests : `python -m pytest -q tests`.
