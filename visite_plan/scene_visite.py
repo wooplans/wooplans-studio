@@ -310,7 +310,7 @@ class VisitePlan(m.Scene):
              run_time=0.5)
 
         foot = txt("Lien en description", 34).move_to([0, -4.3, 0])
-        play(m.FadeIn(foot, shift=0.3 * m.UP), run_time=0.4)
+        play(m.FadeIn(foot, shift=0.3 * m.UP), m.FadeOut(cursor), run_time=0.4)
         while t[0] + 1.0 < SYNC_TOTAL:                     # le bouton respire jusqu'à la fin
             play(button.animate.scale(1.06), run_time=0.5, rate_func=m.there_and_back)
             if t[0] + 0.5 < SYNC_TOTAL:
