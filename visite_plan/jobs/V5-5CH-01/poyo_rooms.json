@@ -1,0 +1,20 @@
+{"crop": [30, 25, 1110, 1350], "start": [680, 1320],
+ "order": ["Véranda", "Entrée", "Séjour", "Salle à manger", "Cuisine", "Hall", "Chambre 5", "Chambre 4", "Chambre 3", "Chambre 2", "Chambre parentale"],
+ "free": [[[300, 300], [720, 300], [720, 800], [300, 800]], [[700, 300], [800, 300], [800, 500], [700, 500]], [[200, 740], [500, 740], [500, 830], [200, 830]]],
+ "rooms": [
+  {"name": "Véranda", "label": "Véranda", "rect": [520, 1100, 840, 1300], "stop": [680, 1200], "label_xy": [680, 1160]},
+  {"name": "Entrée", "label": "Entrée", "rect": [500, 800, 620, 1095], "stop": [560, 950], "label_xy": [560, 880], "size": 22},
+  {"name": "Séjour", "label": "Séjour", "rect": [630, 800, 1005, 1085], "stop": [660, 900], "label_xy": [820, 1060]},
+  {"name": "Salle à manger", "label": "Salle à manger", "rect": [455, 470, 710, 740], "stop": [500, 620], "label_xy": [582, 715], "size": 22},
+  {"name": "Cuisine", "label": "Cuisine", "rect": [710, 490, 975, 735], "stop": [760, 560], "label_xy": [850, 545]},
+  {"name": "Hall", "label": "Hall", "rect": [300, 320, 710, 465], "stop": [420, 390], "label_xy": [430, 430]},
+  {"name": "Chambre 5", "label": "Chambre 5", "rect": [720, 60, 1005, 300], "stop": [760, 260], "label_xy": [870, 270]},
+  {"name": "Chambre 4", "label": "Chambre 4", "poly": [[470, 60], [700, 60], [700, 310], [370, 310], [370, 200], [470, 200]], "stop": [580, 260], "label_xy": [600, 245]},
+  {"name": "Chambre 3", "label": "Chambre 3", "rect": [80, 60, 300, 310], "stop": [240, 280], "label_xy": [170, 270]},
+  {"name": "Chambre 2", "label": "Chambre 2", "rect": [105, 480, 385, 740], "stop": [300, 680], "label_xy": [245, 715]},
+  {"name": "Chambre parentale", "label": "Chambre parentale", "rect": [75, 830, 330, 1145], "stop": [260, 880], "label_xy": [195, 1120], "size": 22},
+  {"name": "Buanderie", "label": "Buanderie", "rect": [80, 320, 290, 455], "label_xy": [185, 360], "size": 20},
+  {"name": "Magasin", "label": "Magasin", "rect": [790, 410, 1000, 490], "label_xy": [895, 440], "size": 19},
+  {"name": "Sortie", "label": "Sortie", "rect": [980, 500, 1050, 700], "label_xy": [1010, 520], "size": 17},
+  {"name": "Dressing", "label": "Dressing", "rect": [350, 830, 500, 980], "label_xy": [425, 900], "size": 17}
+ ]}

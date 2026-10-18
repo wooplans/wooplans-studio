@@ -299,9 +299,20 @@ def run_job(here, src, ink, rooms, order, start, crop, wall_px=13, label_boxes=(
         polys = {}
         for r in rooms:
             if "seed" in r:                   # pièce fermée : remplissage exact entre les murs
-                m = room_region(wall_fill, r["seed"], kw.get("close_px", 28), r.get("box"))
+                try:
+                    m = room_region(wall_fill, r["seed"], kw.get("close_px", 28), r.get("box"))
+                except ValueError:
+                    if "poly_fallback" not in r:
+                        raise
+                    m = np.zeros(raw.shape, bool)
                 if m.mean() > 0.15:              # fuite probable : la pièce déborde sur ses voisines
                     print("ATTENTION fuite", r["name"], round(float(m.mean()), 2))
+                fb = r.get("poly_fallback")
+                if fb is not None:                # remplissage trop petit (porte non fermée, mur manquant) : position reportée
+                    fa = cv2.contourArea(np.array(fb, np.float32))
+                    if m.sum() < 0.45 * fa or m.sum() > 1.6 * fa:
+                        print("  repli", r["name"], int(m.sum()), int(fa))
+                        polys[r["name"]] = [tuple(q) for q in fb]; continue
                 polys[r["name"]] = [tuple(q) for q in polygon(m, 4)]
             else:
                 polys[r["name"]] = [tuple(q) for q in r["poly"]]
