@@ -35,7 +35,8 @@ FACADE_IMG = str(JOB / "facade.png")
 # --- Géométrie de l'écran (cadre 9:16 = 8 x 14.222 unités) -------------------
 FRAME_W = 8.0
 FRAME_H = 8.0 * 1920 / 1080
-FACADE_H = FRAME_W * META.get("facade_ratio", 0.5625)                 # façade pleine largeur
+HAS_FACADE = META.get("facade", True)          # False : visite sans 3D (pas de façade en haut)
+FACADE_H = FRAME_W * META.get("facade_ratio", 0.5625) if HAS_FACADE else 0.0
 BAND_H = 0.95                                   # bande de titre (une ligne de texte)
 BAND_TEXT = META["band"]
 PANEL_TOP = FRAME_H / 2 - FACADE_H - BAND_H     # haut de la zone plan animée
@@ -44,7 +45,7 @@ PANEL_BOTTOM = -FRAME_H / 2
 PANEL_H = PANEL_TOP - PANEL_BOTTOM
 PANEL_CENTER = (0.0, (PANEL_TOP + PANEL_BOTTOM) / 2)
 
-PLAN_W_PX, PLAN_H_PX = 1000, 1072
+PLAN_W_PX, PLAN_H_PX = META.get("plan_px", (1000, 1072))
 U = min(FRAME_W / PLAN_W_PX, PANEL_H / PLAN_H_PX)                          # unités écran par pixel du plan
 
 
@@ -98,8 +99,10 @@ class VisitePlan(m.Scene):
         cover = m.Rectangle(width=FRAME_W + 1, height=top_h + 6, fill_color=BG,
                             fill_opacity=1, stroke_width=0)
         cover.move_to([0, PANEL_TOP + (top_h + 6) / 2, 0]).set_z_index(10)
-        facade = m.ImageMobject(FACADE_IMG)
-        facade.scale_to_fit_width(FRAME_W).move_to([0, FRAME_H / 2 - FACADE_H / 2, 0]).set_z_index(11)
+        facade = m.Group()
+        if HAS_FACADE:
+            facade = m.ImageMobject(FACADE_IMG)
+            facade.scale_to_fit_width(FRAME_W).move_to([0, FRAME_H / 2 - FACADE_H / 2, 0]).set_z_index(11)
         band_y = FRAME_H / 2 - FACADE_H - BAND_H / 2
         band = m.Rectangle(width=FRAME_W + 0.2, height=BAND_H, fill_color=GREEN,
                            fill_opacity=1, stroke_width=0).move_to([0, band_y, 0]).set_z_index(11)
@@ -110,7 +113,7 @@ class VisitePlan(m.Scene):
         band_text.move_to([0, band_y, 0]).set_z_index(12)
         divider = m.Line([-FRAME_W / 2, FRAME_H / 2 - FACADE_H, 0],
                          [FRAME_W / 2, FRAME_H / 2 - FACADE_H, 0],
-                         color=ORANGE, stroke_width=6).set_z_index(13)
+                         color=ORANGE, stroke_width=6 if HAS_FACADE else 0).set_z_index(13)
 
         # ---- Point pulsant + traînée ------------------------------------------
         core = m.Dot(point=scr(start), radius=0.14, color=GREEN, stroke_color=m.WHITE,
@@ -213,6 +216,10 @@ class VisitePlan(m.Scene):
         play(m.FadeOut(core), m.FadeOut(halo), plan.animate.scale(ZF, about_point=cf),
              run_time=1.0, rate_func=m.ease_in_out_cubic)
         core.clear_updaters(); halo.clear_updaters()
+        if "walls" not in META:                     # pas de cotes sans PDF : zoom arrière seul
+            if SYNC_TOTAL > t[0]:
+                self.wait(SYNC_TOTAL - t[0])
+            return
         DIM = "#C75B3A"
         def PT(x, y):            # coordonnées plan.png (px) -> écran, après zoom arrière
             p = scr((x, y))
