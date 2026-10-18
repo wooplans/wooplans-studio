@@ -41,7 +41,7 @@ BAND_H = 0.95                                   # bande de titre (une ligne de t
 BAND_TEXT = META["band"]
 PANEL_TOP = FRAME_H / 2 - FACADE_H - BAND_H     # haut de la zone plan animée
 ZOOM_RATIO = 0.5                                # 1 = zoom d'origine, 0.5 = moitié moins serré
-PANEL_BOTTOM = -FRAME_H / 2
+PANEL_BOTTOM = -FRAME_H / 2 + META.get("bottom_px", 0) * FRAME_H / 1920   # réserve pour la bande du bas (ajoutée au montage)
 PANEL_H = PANEL_TOP - PANEL_BOTTOM
 PANEL_CENTER = (0.0, (PANEL_TOP + PANEL_BOTTOM) / 2)
 
