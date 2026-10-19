@@ -1,0 +1,41 @@
+{
+ "band": "Villa 3 chambres  ·  plain-pied",
+ "start_pos": [
+  698.4,
+  892.0
+ ],
+ "body_cut": 0.0,
+ "body_end": 55.301,
+ "hook": {
+  "items": [],
+  "cues": {
+   "draw1": 1.9,
+   "t1": 0.2,
+   "t2": 5.86,
+   "t3": 6.41,
+   "pulse": 7.83,
+   "trans": 8.64,
+   "dot": 9.64
+  },
+  "total": 11.41,
+  "t1_text": "3 CHAMBRES, 3 SALLES D'EAU",
+  "t2_text": "VOUS LA PRENDRIEZ ?"
+ },
+ "cta": {
+  "items": [],
+  "cues": {
+   "logo": 0.0,
+   "h1": 0.3,
+   "h2": 0.85,
+   "button": 2.04,
+   "cursor": 2.49,
+   "tap": 4.44,
+   "bar": 4.84,
+   "s1": 4.99,
+   "s2": 5.34
+  },
+  "total": 5.94,
+  "h1_text": "DÉCOUVREZ",
+  "h2_text": "D'AUTRES MODÈLES"
+ }
+}

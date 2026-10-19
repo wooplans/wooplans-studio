@@ -1,0 +1,140 @@
+{
+ "total": 55.301,
+ "items": [
+  {
+   "name": "Porche d'entrée",
+   "zoom": false,
+   "start": 0.4,
+   "dur": 1.639,
+   "arrive": 1.812,
+   "zout_start": 2.512,
+   "end": 2.039
+  },
+  {
+   "name": "Salon",
+   "zoom": true,
+   "start": 2.574,
+   "dur": 4.429,
+   "arrive": 4.312,
+   "zout_start": 5.803,
+   "end": 7.003
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": false,
+   "start": 7.153,
+   "dur": 5.054,
+   "arrive": 9.028,
+   "zout_start": 11.707,
+   "end": 12.207
+  },
+  {
+   "name": "Cuisine",
+   "zoom": true,
+   "start": 12.357,
+   "dur": 2.526,
+   "arrive": 13.707,
+   "zout_start": 15.157,
+   "end": 14.884
+  },
+  {
+   "name": "Porche arrière",
+   "zoom": false,
+   "start": 16.682,
+   "dur": 2.514,
+   "arrive": 17.657,
+   "zout_start": 18.697,
+   "end": 19.197
+  },
+  {
+   "name": "Couloir",
+   "zoom": false,
+   "start": 19.347,
+   "dur": 4.497,
+   "arrive": 21.759,
+   "zout_start": 23.343,
+   "end": 23.843
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": true,
+   "start": 23.993,
+   "dur": 1.982,
+   "arrive": 25.681,
+   "zout_start": 27.131,
+   "end": 25.976
+  },
+  {
+   "name": "Salle de bain 2",
+   "zoom": false,
+   "start": 28.968,
+   "dur": 2.242,
+   "arrive": 29.631,
+   "zout_start": 30.71,
+   "end": 31.21
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": false,
+   "start": 31.36,
+   "dur": 3.715,
+   "arrive": 33.01,
+   "zout_start": 34.574,
+   "end": 35.074
+  },
+  {
+   "name": "Salle de bain 1",
+   "zoom": false,
+   "start": 35.224,
+   "dur": 2.351,
+   "arrive": 36.774,
+   "zout_start": 37.474,
+   "end": 37.576
+  },
+  {
+   "name": "Chambre parentale",
+   "zoom": true,
+   "start": 37.726,
+   "dur": 3.202,
+   "arrive": 40.663,
+   "zout_start": 42.113,
+   "end": 40.928
+  },
+  {
+   "name": "Coin bureau",
+   "zoom": false,
+   "start": 43.875,
+   "dur": 2.257,
+   "arrive": 44.613,
+   "zout_start": 45.632,
+   "end": 46.132
+  },
+  {
+   "name": "Dressing",
+   "zoom": false,
+   "start": 46.557,
+   "dur": 1.16,
+   "arrive": 47.432,
+   "zout_start": 48.132,
+   "end": 47.717
+  },
+  {
+   "name": "Salle de bain 3",
+   "zoom": false,
+   "start": 49.294,
+   "dur": 2.252,
+   "arrive": 49.932,
+   "zout_start": 51.045,
+   "end": 51.545
+  },
+  {
+   "name": "Final",
+   "start": 51.695,
+   "dur": 2.606,
+   "end": 54.301,
+   "final": true,
+   "dim1": 52.057,
+   "dim2": 52.683
+  }
+ ]
+}

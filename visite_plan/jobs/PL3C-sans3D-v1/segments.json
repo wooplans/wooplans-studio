@@ -1,0 +1,111 @@
+[
+ {
+  "rooms": [
+   "Porche d'entrée",
+   "Salon"
+  ],
+  "t0": 0.0,
+  "t1": 7.003,
+  "start_pos": [
+   698.4,
+   892.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Salle à manger",
+   "Cuisine"
+  ],
+  "t0": 7.003,
+  "t1": 16.357,
+  "start_pos": [
+   579.2,
+   532.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Porche arrière",
+   "Couloir"
+  ],
+  "t0": 16.357,
+  "t1": 23.843,
+  "start_pos": [
+   330.4,
+   801.6
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Chambre 2",
+   "Salle de bain 2"
+  ],
+  "t0": 23.843,
+  "t1": 31.21,
+  "start_pos": [
+   366.4,
+   360.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Chambre 3",
+   "Salle de bain 1"
+  ],
+  "t0": 31.21,
+  "t1": 37.974,
+  "start_pos": [
+   246.4,
+   472.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Chambre parentale",
+   "Coin bureau"
+  ],
+  "t0": 37.974,
+  "t1": 46.132,
+  "start_pos": [
+   262.4,
+   352.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Dressing",
+   "Salle de bain 3"
+  ],
+  "t0": 46.132,
+  "t1": 51.545,
+  "start_pos": [
+   782.4,
+   352.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [],
+  "t0": 51.545,
+  "t1": 55.301,
+  "start_pos": [
+   526.4,
+   96.0
+  ],
+  "final": true,
+  "level": 0
+ }
+]
