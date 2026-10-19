@@ -24,3 +24,4 @@ media/
 !visite_plan/jobs/**
 
 !assets/**
+!batches/images/**

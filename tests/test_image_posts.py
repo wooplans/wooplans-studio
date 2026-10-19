@@ -51,6 +51,13 @@ def test_guardrail_catches_a_wrong_amount():
     assert check_copy(text, [p["estimate_total"]])                    # montant non sourcé → refusé
 
 
+def test_french_agreement():
+    villa = next(p for p in PLANS if p["category"] == "villa")
+    duplex = next(p for p in PLANS if p["category"] == "duplex")
+    assert "Cette villa de" in caption(villa, 1)[1] and "vous la construiriez" in caption(villa, 1)[1]
+    assert "Ce duplex de" in caption(duplex, 1)[1] and "vous le construiriez" in caption(duplex, 1)[1]
+
+
 def test_terrain_template_skipped_without_land():
     p = next(p for p in PLANS if not p["land_area"])
     assert all(caption(p, i)[0] != "terrain" for i in range(len(TEMPLATES)))

@@ -60,7 +60,8 @@ def _link(p: dict) -> str:
 
 def _ctx(p: dict) -> dict:
     return {
-        "name": p["name"], "type": p["category"], "ch": p["bedrooms"], "surf": p["surface"],
+        "name": p["name"], "type": p["category"],
+        "this": "Cette villa" if p["category"] == "villa" else "Ce duplex", "it": "la" if p["category"] == "villa" else "le", "ch": p["bedrooms"], "surf": p["surface"],
         "land": p.get("land_area"), "est": fcfa(p["estimate_total"]), "link": _link(p), "tags": _tags(p),
         "promise": OFFER_PROMISE, "price": fcfa(OFFER_PRICE_FCFA),
     }
@@ -71,7 +72,7 @@ TEMPLATES = [
      "🏡 {name} · {ch} chambres · {surf} m²\nEstimation indicative : {est} FCFA.\n\n"
      "📲 Plan complet + devis détaillé dans le Catalogue Premium ({promise}), prix actuel : {price} FCFA.\n👉 {link}\n\n{tags}"),
     ("question", False,
-     "Ce {type} de {ch} chambres, vous le construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\n"
+     "{this} de {ch} chambres, vous {it} construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\n"
      "{name} · {surf} m² · estimation indicative : {est} FCFA\n\n👉 Tous nos plans avec leurs vrais devis : {link}\n\n{tags}"),
     ("terrain", True,
      "Quel plan pour un terrain de {land} m² ? 📐\n{name} : {ch} chambres, {surf} m², terrain prévu : {land} m².\n"
