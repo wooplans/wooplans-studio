@@ -1,0 +1,71 @@
+[
+ {
+  "name": "Porche",
+  "zoom": false,
+  "prefix": "On arrive par le porche,",
+  "spoken": "On arrive par le porche, à l'avant de la maison.",
+  "sub": "On arrive par le porche, à l'avant de la maison."
+ },
+ {
+  "name": "Séjour",
+  "zoom": true,
+  "prefix": "On entre dans le séjour :",
+  "spoken": "On entre dans le séjour : un grand salon avec deux canapés face à face.",
+  "sub": "On entre dans le séjour: un grand salon avec deux canapés face à face."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Juste à côté, la salle à manger,",
+  "spoken": "Juste à côté, la salle à manger, ouverte sur le séjour.",
+  "sub": "Juste à côté, la salle à manger, ouverte sur le séjour."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "Derrière, la cuisine en L,",
+  "spoken": "Derrière, la cuisine en L, avec de grands plans de travail.",
+  "sub": "Derrière, la cuisine en L, avec de grands plans de travail."
+ },
+ {
+  "name": "Buanderie",
+  "zoom": false,
+  "prefix": "Au fond, la buanderie,",
+  "spoken": "Au fond, la buanderie, avec sa toilette.",
+  "sub": "Au fond, la buanderie, avec sa toilette."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": true,
+  "prefix": "On passe à la chambre deux :",
+  "spoken": "On passe à la chambre deux : lit double, bureau et grand placard.",
+  "sub": "On passe à la chambre deux: lit double, bureau et grand placard."
+ },
+ {
+  "name": "WC",
+  "zoom": false,
+  "prefix": "Entre les deux chambres, la toilette,",
+  "spoken": "Entre les deux chambres, la toilette, avec lavabo.",
+  "sub": "Entre les deux chambres, la toilette, avec lavabo."
+ },
+ {
+  "name": "Chambre 1",
+  "zoom": false,
+  "prefix": "Voici la chambre une,",
+  "spoken": "Voici la chambre une, elle aussi avec bureau et placard.",
+  "sub": "Voici la chambre une, elle aussi avec bureau et placard."
+ },
+ {
+  "name": "Chambre principale",
+  "zoom": true,
+  "prefix": "Enfin, la chambre principale,",
+  "spoken": "Enfin, la chambre principale, avec son dressing et sa salle de bain privée.",
+  "sub": "Enfin, la chambre principale, avec son dressing et sa salle de bain privée."
+ },
+ {
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
+ }
+]

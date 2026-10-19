@@ -1,0 +1,111 @@
+{
+ "total": 49.515,
+ "items": [
+  {
+   "name": "Porche d'entrée",
+   "zoom": false,
+   "start": 0.4,
+   "dur": 3.349,
+   "arrive": 1.789,
+   "zout_start": 3.249,
+   "end": 3.749
+  },
+  {
+   "name": "Entrée",
+   "zoom": false,
+   "start": 4.213,
+   "dur": 2.869,
+   "arrive": 5.049,
+   "zout_start": 6.582,
+   "end": 7.082
+  },
+  {
+   "name": "Séjour",
+   "zoom": true,
+   "start": 7.804,
+   "dur": 3.821,
+   "arrive": 8.382,
+   "zout_start": 10.425,
+   "end": 11.625
+  },
+  {
+   "name": "Hall",
+   "zoom": false,
+   "start": 11.775,
+   "dur": 3.143,
+   "arrive": 13.031,
+   "zout_start": 14.418,
+   "end": 14.918
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": false,
+   "start": 15.068,
+   "dur": 3.417,
+   "arrive": 17.141,
+   "zout_start": 17.985,
+   "end": 18.485
+  },
+  {
+   "name": "Cuisine",
+   "zoom": true,
+   "start": 18.635,
+   "dur": 5.17,
+   "arrive": 19.884,
+   "zout_start": 22.605,
+   "end": 23.805
+  },
+  {
+   "name": "Bureau",
+   "zoom": false,
+   "start": 23.955,
+   "dur": 2.212,
+   "arrive": 25.25,
+   "zout_start": 25.95,
+   "end": 26.167
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": true,
+   "start": 26.317,
+   "dur": 3.081,
+   "arrive": 28.475,
+   "zout_start": 29.925,
+   "end": 29.397
+  },
+  {
+   "name": "Chambre 4",
+   "zoom": false,
+   "start": 30.913,
+   "dur": 3.092,
+   "arrive": 32.425,
+   "zout_start": 33.505,
+   "end": 34.005
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": true,
+   "start": 34.155,
+   "dur": 2.537,
+   "arrive": 35.622,
+   "zout_start": 37.072,
+   "end": 36.692
+  },
+  {
+   "name": "Chambre parentale",
+   "zoom": true,
+   "start": 37.944,
+   "dur": 5.469,
+   "arrive": 39.572,
+   "zout_start": 42.213,
+   "end": 43.413
+  },
+  {
+   "name": "CTA",
+   "start": 43.563,
+   "dur": 3.952,
+   "end": 47.515,
+   "cta": true
+  }
+ ]
+}

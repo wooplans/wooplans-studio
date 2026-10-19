@@ -40,3 +40,13 @@ Pour un plan seul (image 2D, sans rendu 3D ni PDF). Vidéo 9:16 d'environ 53 s.
 7. **Rendu** : GitHub Actions `visite-render`, déclenché en poussant `jobs/<id>/RENDER` sur une branche `ccr-*` (≈ 5 min, la vidéo revient dans `visite_plan/out/<id>.mp4`). Le PC de Tao n'a pas encore la version « sans 3D » de la scène.
 8. **Montage** (automatique au rendu) : filigrane fixe en fond, « wooplans.com » qui défile, bande verte du bas, sous-titres au-dessus de la bande ; tout disparaît pendant le CTA (fond vert, logo, accroche, bouton cliqué, « Lien en description »).
 9. **Publication** (après accord de Tao) : `jobs/<id>/PUBLISH.json` (date locale + `timezone`, légende Facebook, titre/description YouTube, lien wooplans.com avec UTM via `wooplans.utm.build_link(..., base="https://wooplans.com/")`), poussé → workflow `publish-zernio` (`tools/publish_zernio.py` : comptes WooPlans seulement, `check_copy`, registre). **Prérequis manquants au 18 oct.** : secret GitHub `ZERNIO_API_KEY` (et `ZERNIO_PROFILE_ID`), TikTok @wooplans à connecter dans Zernio. Facebook Story : à ajouter (`contentType: "story"`, sans légende).
+
+### Plans « style WooPlans » et pièces précises (19 oct. 2026)
+Chaque job a un `redraw_job.py` (relancer après toute retouche) qui produit `plan.png`, `paths.json` et `paths_check.png` :
+- `tools/redraw.py` : plan **redessiné** (fond blanc, murs noirs d'épaisseur constante, fenêtres bleues en façade, portes avec battant,
+  sols par type de pièce, mobilier du plan source en gris, étiquettes Inter Bold) à partir des polygones des pièces et des portes
+  relevés sur le plan source (`auto_gaps=False` + `portes=` pour les captures floues ou les croquis) ; ou plan source **conservé**
+  (`keep_src=True`) quand il est déjà au style (rendu réaliste), avec étiquettes refaites et pièces détectées par remplissage
+  entre les murs (`seed`, `box` pour les pièces ouvertes, `closures` / `openings` pour les murs mal détectés).
+- Trajet du point : plus court chemin dans la maison, hors des murs, donc par les portes (`tools/restyle.shortest_path`).
+- Contrôler `paths_check.png` : un voile par pièce collé aux murs, aucun trajet à travers un mur.

@@ -1,0 +1,85 @@
+[
+ {
+  "name": "Véranda",
+  "zoom": false,
+  "prefix": "On arrive par la véranda,",
+  "spoken": "On arrive par la véranda, avec ses marches d'entrée.",
+  "sub": "On arrive par la véranda, avec ses marches d'entrée."
+ },
+ {
+  "name": "Entrée",
+  "zoom": false,
+  "prefix": "On passe par l'entrée,",
+  "spoken": "On passe par l'entrée, avec une toilette pour les invités.",
+  "sub": "On passe par l'entrée, avec une toilette pour les invités."
+ },
+ {
+  "name": "Séjour",
+  "zoom": true,
+  "prefix": "À droite, le séjour :",
+  "spoken": "À droite, le séjour : grand canapé d'angle et coin télé.",
+  "sub": "À droite, le séjour: grand canapé d'angle et coin télé."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Au centre, la salle à manger,",
+  "spoken": "Au centre, la salle à manger, ouverte de tous les côtés.",
+  "sub": "Au centre, la salle à manger, ouverte de tous les côtés."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "Puis la cuisine,",
+  "spoken": "Puis la cuisine, avec un îlot central, un magasin et une sortie de service.",
+  "sub": "Puis la cuisine, avec un îlot central, un magasin et une sortie de service."
+ },
+ {
+  "name": "Hall",
+  "zoom": false,
+  "prefix": "Derrière, le hall,",
+  "spoken": "Derrière, le hall, qui dessert les chambres et la buanderie.",
+  "sub": "Derrière, le hall, qui dessert les chambres et la buanderie."
+ },
+ {
+  "name": "Chambre 5",
+  "zoom": true,
+  "prefix": "Voici la chambre cinq,",
+  "spoken": "Voici la chambre cinq, avec sa propre toilette.",
+  "sub": "Voici la chambre cinq, avec sa propre toilette."
+ },
+ {
+  "name": "Chambre 4",
+  "zoom": false,
+  "prefix": "La chambre quatre,",
+  "spoken": "La chambre quatre, avec sa toilette privée.",
+  "sub": "La chambre quatre, avec sa toilette privée."
+ },
+ {
+  "name": "Chambre 3",
+  "zoom": true,
+  "prefix": "Puis la chambre trois,",
+  "spoken": "Puis la chambre trois, elle aussi avec sa toilette.",
+  "sub": "Puis la chambre trois, elle aussi avec sa toilette."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": false,
+  "prefix": "La chambre deux,",
+  "spoken": "La chambre deux, avec un grand placard.",
+  "sub": "La chambre deux, avec un grand placard."
+ },
+ {
+  "name": "Chambre parentale",
+  "zoom": true,
+  "prefix": "Enfin, la chambre parentale,",
+  "spoken": "Enfin, la chambre parentale, avec son dressing et sa toilette privée.",
+  "sub": "Enfin, la chambre parentale, avec son dressing et sa toilette privée."
+ },
+ {
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
+ }
+]
