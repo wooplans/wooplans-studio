@@ -38,7 +38,7 @@ jobs:
       - name: Programmation
         run: |
           JOB="${{ github.event.inputs.job }}"
-          if [ -n "$JOB" ]; then JOB="visite_plan/jobs/$JOB"; else JOB=$(git diff --name-only HEAD~1 HEAD | grep 'visite_plan/jobs/.*/PUBLISH.json' | head -1 | xargs dirname); fi
+          if [ -n "$JOB" ]; then JOB="visite_plan/jobs/$JOB"; else JOB=$(git diff --name-only HEAD^1 HEAD | grep -E '^visite_plan/jobs/[^/]+/PUBLISH.json$' | head -1 | xargs dirname); fi
           python tools/publish_zernio.py "$JOB"
       - name: Registre
         run: |

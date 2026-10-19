@@ -31,7 +31,8 @@ jobs:
       - id: j
         run: |
           JOB="${{ github.event.inputs.job }}"
-          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD~1 HEAD | grep 'visite_plan/jobs/.*/RENDER' | head -1 | cut -d/ -f3); fi
+          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD^1 HEAD | grep -E '^visite_plan/jobs/[^/]+/RENDER$' | head -1 | cut -d/ -f3); fi
+          if [ -z "$JOB" ]; then echo "Aucun fichier RENDER dans ce push : rien à rendre."; echo "job=" >> "$GITHUB_OUTPUT"; echo 'include=[]' >> "$GITHUB_OUTPUT"; exit 0; fi
           [ -d "visite_plan/jobs/$JOB" ] || { echo "job introuvable : $JOB"; exit 1; }
           PLAN=$(python3 visite_plan/render_job.py plan "visite_plan/jobs/$JOB")
           echo "job=$JOB" >> "$GITHUB_OUTPUT"
@@ -40,6 +41,7 @@ jobs:
           echo "Job $JOB — $PLAN"
   render:
     needs: plan
+    if: needs.plan.outputs.job != ''
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     strategy:
@@ -83,6 +85,7 @@ jobs:
           retention-days: 2
   assemble:
     needs: [plan, render]
+    if: needs.plan.outputs.job != ''
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
