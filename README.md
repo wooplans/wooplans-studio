@@ -3,3 +3,4 @@ Pipeline de contenu (vidéos de visite guidée de plans) pour Facebook, TikTok e
 
 Tout tourne sur GitHub : rendu (`visite-render`), vignette, publication programmée (`publish-zernio`), contrôle (`check-setup`). Le PC n'est pas nécessaire.
 Procédure : `visite_plan/PIPELINE.md` · règles : `CLAUDE.md` · secrets : `SECRETS.md`.
+Posts images Facebook (2 à 3 par jour) : lot hebdomadaire `batches/images/<lot>/` (`PLAN` → aperçu, `APPROVED` → programmation), voir la fin de `visite_plan/PIPELINE.md`.

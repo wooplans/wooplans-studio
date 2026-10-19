@@ -4,7 +4,8 @@ from urllib.parse import urlencode
 from wooplans.settings import OFFER_URL
 
 PLATFORMS = ("facebook", "tiktok", "youtube")
-FORMATS = {"A": "visite", "B": "cout"}
+FORMATS = {"A": "visite", "B": "cout", "I": "image"}
+MEDIUMS = {"I": "image_organique"}              # les autres formats sont des vidéos
 CAMPAIGN = "wooplans_contenu"
 
 
@@ -15,7 +16,7 @@ def build_link(platform: str, fmt: str, video_id: str, base: str = OFFER_URL) ->
         raise ValueError(f"format inconnu : {fmt}")
     params = {
         "utm_source": platform,
-        "utm_medium": "video_organique",
+        "utm_medium": MEDIUMS.get(fmt, "video_organique"),
         "utm_campaign": CAMPAIGN,
         "utm_content": f"{FORMATS[fmt]}_{video_id}",
     }
