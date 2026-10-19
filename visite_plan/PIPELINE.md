@@ -1,5 +1,27 @@
 # Pipeline « visite guidée de plan » (Reels / TikTok / Shorts, 9:16)
 
+Mis à jour le 19 oct. 2026 : **tout tourne sur GitHub, le PC de Tao peut être éteint.**
+
+## Production sans le PC (vue d'ensemble)
+```
+Claude (cloud)                         GitHub Actions                              Zernio
+plan 2D amélioré (PoYo) ─┐
+script validé par Tao ───┤  push visite_plan/jobs/<id>/ + RENDER ─▶ visite-render ─▶ visite_plan/out/<id>.mp4 + <id>_thumb.jpg
+voix (ElevenLabs) ───────┘                                                          │
+                          accord de Tao ─▶ push PUBLISH.json ─────▶ publish-zernio ─▶ Facebook Reel + YouTube Short (programmés)
+```
+1. **Préparation (Claude, dans le cloud)** : plan amélioré, script, voix, `make_paths`, `sync`, `build_final prep`, `mkseg` → `visite_plan/jobs/<id>/`.
+   Fichiers de marque communs (`assets/brand/*.png`, musique « Pop Two » `assets/music/`) : copiés automatiquement dans le job au rendu.
+2. **Rendu** : pousser `visite_plan/jobs/<id>/RENDER` (n'importe quel contenu) ou lancer le workflow à la main. Le mode est détecté :
+   - `nf.json` → visite sans 3D + hook + CTA (`scene_visite_nf.py`, `scene_bumpers_nf.py`, `bump_local_nf.py`) ;
+   - `bump.json` → visite avec 3D + hook + estimation + CTA (`scene_visite.py`, `scene_bumpers.py`, `bump_local.py`) ; le job contient en plus `hook.m4a`, `estim.m4a`, `cta.m4a`, `subs_body.ass` ;
+   - sinon → visite simple / format « sans 3D » cloud (segment `CTA` éventuel, `assemble.py`).
+   Chaque segment, le hook, l'estimation et le CTA sont rendus **en parallèle** (un job GitHub chacun), puis `render_job.py build` assemble : voix, musique (baisse sous la voix), sous-titres, bande basse, 2 logos filigranes qui se promènent en continu, badge wooplans.com. Sortie : `visite_plan/out/<id>.mp4` + `<id>_thumb.jpg` (vignette 9:16).
+3. **Contrôle** (Claude, avant toute publication) : télécharger la vidéo, extraire des images (étage d'un duplex : le plan de l'étage doit s'afficher pendant la visite de l'étage, puis retour au RDC pour les cotes), vérifier sous-titres, zones masquées, valeurs sourcées, aucun « expire ». **Tao valide.**
+4. **Publication (seulement sur ordre de Tao)** : pousser `jobs/<id>/PUBLISH.json` → `publish-zernio` : vignette (si absente), vidéo + vignette envoyées à Zernio, post **programmé** (`scheduled_for` + `timezone`) sur Facebook (Reel, couverture = vignette) et YouTube (Short). Idempotent (registre + clé d'idempotence). Les textes passent par `check_copy` ; le lien du catalogue est `https://wooplans.com/catalogue-premium` avec UTM par plateforme (`wooplans/utm.py`).
+   **TikTok @wooplans** est connecté à WoopSocial, pas à Zernio : tant qu'il n'est pas reconnecté à Zernio, Claude le publie depuis une session cloud avec le connecteur WoopSocial (la vidéo vient du dépôt, pas du PC).
+5. **Vérifier la configuration** : workflow `check-setup` (secrets présents, comptes Zernio, tests).
+
 Standard validé par Tao (V6 + remarques du 13 oct. 2026). Source de vérité des chiffres : le PDF plans + devis du plan.
 
 ## Étapes
@@ -8,7 +30,7 @@ Standard validé par Tao (V6 + remarques du 13 oct. 2026). Source de vérité de
 3. **Image du haut** : rendu du dossier, sinon extrait du PDF.
 4. **Script de voix off** proposé à Tao (style conversationnel, surfaces arrondies à l'entier, aucune valeur absente du PDF, aucun prix, jamais « l'offre expire »). Chaque pièce est marquée « zoom » ou « sans zoom » (varier, ne pas zoomer partout). Tao corrige.
 5. **Préparation (cloud Claude, léger)** : `make_paths.py` (pièces + trajets par les portes, à contrôler visuellement), `make_sync.py` (voix Piper « tom » en test, calage), `align.py` (Whisper, mots), `build_final.py prep` (voix mixée + sous-titres), `mkseg.py` (segments). Tout va dans `jobs/<id>/`.
-6. **Rendu : sur le PC de Tao (méthode par défaut, ≈ 75 s)**. Jamais dans le cloud Claude. Un guetteur Windows surveille `C:\Users\Dell\Documents\VIDEO AUTO\WOOPLANS\_rendu_auto\jobs\`. Claude dépose `jobs/<id>/` (plan.png, facade.png, paths.json, sync.json, segments.json, meta.json, voice_mix.m4a, subs.ass) puis un fichier `RENDER_PC` en dernier : la vidéo `<id>.mp4` sort toute seule dans ce dossier (marqueurs `DONE` / `ERREUR`, journal `watch.log`). Réglage clé : **2 rendus simultanés maximum** (le PC a 7,7 Go de RAM ; 6 en parallèle = 523 s, 2 = 73 s). Un `<id>` déjà rendu (`DONE`) ne se relance pas : utiliser un nouvel id. Secours : GitHub Actions `visite-render` (10 à 18 min, lent).
+6. **Rendu : GitHub Actions `visite-render` (aucun PC nécessaire, ≈ 8-16 min)**. Voir « Production sans le PC » ci-dessous. Le PC de Tao n'est plus qu'un secours (`visite_plan/local/`, `python visite_plan/render_job.py local <job> <sortie.mp4>`).
 7. **Livraison** : copier dans le dossier de Tao ET envoyer dans la conversation.
 
 ## Standard visuel
@@ -22,10 +44,10 @@ Standard validé par Tao (V6 + remarques du 13 oct. 2026). Source de vérité de
 `plan.png` (plan amélioré + marges pour les cotes), `facade.png`, `paths.json`, `sync.json`, `segments.json`, `meta.json` (bande, ratio façade, murs extérieurs en px, cotes), `voice_mix.m4a`, `subs.ass`, `RENDER_PC` (PC) ou `RENDER` (GitHub).
 
 ## Voix
-Tests : Piper `fr_FR-tom-medium` (gratuit, téléchargé depuis huggingface.co/rhasspy/piper-voices). Production : ElevenLabs « LeTao » uniquement.
+Tests : Piper `fr_FR-tom-medium` ou Edge TTS (gratuit). Production : ElevenLabs — « John Mala » (`MLsC4mBTBgYmNigbHkou`, eleven_v4) pour les visites avec 3D, « Diba » (`CHivAFig5q0FuNMEEmFi`) pour les visites sans 3D ; « LeTao » = voix de Tao (avatar). Aucune nouvelle voix (limite de 10).
 
 ## Code
-Dépôt wooplans/wooplans-studio, dossier `visite_plan/` (scène ManimGX, sync, sous-titres). Pack local : `visite_plan/local/` (installateur + guetteur Windows, déjà installé sur le PC de Tao).
+Dépôt wooplans/wooplans-studio, dossier `visite_plan/` (scène ManimGX, sync, sous-titres). Secours local : `visite_plan/local/` (installateur + guetteur Windows) — plus nécessaire en fonctionnement normal.
 
 ## Format « visite sans 3D » (validé par Tao le 18 oct. 2026, job modèle : `jobs/V2-2CH-01`)
 Pour un plan seul (image 2D, sans rendu 3D ni PDF). Vidéo 9:16 d'environ 53 s.
@@ -50,3 +72,11 @@ Chaque job a un `redraw_job.py` (relancer après toute retouche) qui produit `pl
   entre les murs (`seed`, `box` pour les pièces ouvertes, `closures` / `openings` pour les murs mal détectés).
 - Trajet du point : plus court chemin dans la maison, hors des murs, donc par les portes (`tools/restyle.shortest_path`).
 - Contrôler `paths_check.png` : un voile par pièce collé aux murs, aucun trajet à travers un mur.
+
+## Hook + estimation + CTA + marque (V7 de D5-016 validée le 14 oct. 2026)
+Voir le doc de projet « 02_PIPELINE_VISITE_PLAN.md ». Code :
+- `scene_bumpers.py` : HookScene / EstimScene / CtaScene (ManimGX, zones sûres : tout texte important au-dessus de ≈ 1500 px).
+- `local/bump_local.py` (appelé par `local/run_local.py` si le job contient `bump.json`) : rend les 3 scènes, reconstruit le corps (`body_silent.mp4` + `subs_body.ass` remontés + bande basse, coupe `body_cut` → `body_end`), concatène, applique filigranes + badge wooplans.com.
+- `bump_audio.py` : voix (Piper en test), musique Audio as Code, bruitages synthétisés, écrit `bump.json` (repères partagés avec la scène).
+- `bump_assets.py` : génère band_bottom.png, badge_url.png, wm_logo.png, wm_tile.png depuis le logo du brand kit (les PNG ne sont pas versionnés).
+- `local/RELANCER_GUETTEUR.bat` : relance le guetteur Windows s'il est arrêté.

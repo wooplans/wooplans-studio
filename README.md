@@ -1,8 +1,5 @@
-# wooplans-studio
-Pipeline de contenu WooPlans. Voir CLAUDE.md pour les règles.
+# WooPlans Studio
+Pipeline de contenu (vidéos de visite guidée de plans) pour Facebook, TikTok et YouTube Shorts → Catalogue Premium https://wooplans.com/catalogue-premium.
 
-- `wooplans/utm.py` : liens /digital par plateforme et par vidéo (UTM).
-- `wooplans/guardrails.py` : interdit les phrases d'expiration et les montants non sourcés.
-- `wooplans/registry.py` : anti-doublon des vidéos.
-- `wooplans/zernio_client.py` / `zernio_check.py` : publication et vérification des 3 pages.
-- `data/plans.json` : fiches plans (étape 2).
+Tout tourne sur GitHub : rendu (`visite-render`), vignette, publication programmée (`publish-zernio`), contrôle (`check-setup`). Le PC n'est pas nécessaire.
+Procédure : `visite_plan/PIPELINE.md` · règles : `CLAUDE.md` · secrets : `SECRETS.md`.

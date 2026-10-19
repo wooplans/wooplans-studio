@@ -31,6 +31,7 @@ m.config.pixel_width, m.config.pixel_height = 1080, 1920
 
 PLAN_IMG = str(JOB / "plan.png")
 FACADE_IMG = str(JOB / "facade.png")
+PLAN_IMG2 = JOB / "plan_etage.png"           # duplex : plan de l'étage (même canevas que plan.png)
 
 # --- Géométrie de l'écran (cadre 9:16 = 8 x 14.222 unités) -------------------
 FRAME_W = 8.0
@@ -88,10 +89,15 @@ class VisitePlan(m.Scene):
         rooms = [r for r in PATHS["rooms"] if r["name"] in SYNC and (SEG is None or r["name"] in SEG["rooms"])]
 
         # ---- Plan (zone du bas) ------------------------------------------------
-        plan_img = m.ImageMobject(PLAN_IMG)
-        plan_img.scale_to_fit_height(PLAN_H_PX * U).move_to([*PANEL_CENTER, 0])
-        plan_img.set_z_index(0)
+        def load_plan(level):
+            im = m.ImageMobject(PLAN_IMG if level == 0 else str(PLAN_IMG2))
+            im.scale_to_fit_height(PLAN_H_PX * U).move_to([*PANEL_CENTER, 0])
+            im.set_z_index(0)
+            return im
+        level = [SEG.get("level", 0) if SEG else 0]      # niveau affiché (0 = RDC, 1 = étage)
+        plan_img = load_plan(level[0])
         plan = m.Group(plan_img)
+        cur_img = [plan_img]
         plan_rect_pts = [scr(p) for p in rect(0, 0, PLAN_W_PX, PLAN_H_PX)]
 
         # ---- Bandeau du haut : façade fixe, couvre tout débordement du zoom ----
@@ -157,6 +163,20 @@ class VisitePlan(m.Scene):
             name = room["name"]
             poly = POLYS[name]
 
+            sw = room.get("switch_to")                   # montée / descente d'étage
+
+            def end_veil():
+                """retire le voile ; si la pièce est un escalier, bascule vers l'autre niveau."""
+                if sw is None:
+                    play(m.FadeOut(veil), run_time=T_VEIL_OUT)
+                    return
+                old, new = cur_img[0], load_plan(sw)
+                plan.add(new)
+                play(m.FadeOut(veil), m.FadeOut(old), m.FadeIn(new),
+                     core.animate.move_to(scr(room["jump_to"])), run_time=0.8)
+                plan.remove(old); self.remove(old)
+                cur_img[0] = new; level[0] = sw
+
             # 1) le point se promène jusqu'à la pièce, par les portes
             path = m.VMobject()
             path.set_points_as_corners([scr(p) for p in room["path"]])
@@ -193,14 +213,14 @@ class VisitePlan(m.Scene):
                      run_time=T_ZOOM, rate_func=m.ease_in_out_cubic)
                 # 4) pièce présentée, point pulsant immobile pendant que la voix continue
                 wait_until(sy["zout_start"])
-                play(m.FadeOut(veil), run_time=T_VEIL_OUT)
+                end_veil()
                 # 6) retour au plan complet
                 play(plan.animate.shift([-d[0], -d[1], 0]).scale(1 / k, about_point=c),
                      core.animate.move_to(p0), run_time=T_ZOOM_OUT, rate_func=m.ease_in_out_cubic)
             else:
                 # pièce sans zoom : voile seul (évite l'effet monotone)
                 wait_until(sy["zout_start"])
-                play(m.FadeOut(veil), run_time=T_VEIL_OUT)
+                end_veil()
             plan.remove(veil)
             self.remove(veil)
 
@@ -217,7 +237,16 @@ class VisitePlan(m.Scene):
         wait_until(fin["start"])
         ZF = 0.84                                   # zoom arrière : la maison + les cotes restent bien dans l'écran
         cf = [PANEL_CENTER[0], PANEL_CENTER[1], 0.0]
-        play(m.FadeOut(core), m.FadeOut(halo), plan.animate.scale(ZF, about_point=cf),
+        if level[0] != 0:                            # duplex : on redescend, les cotes se font sur le plan du RDC
+            old, new = cur_img[0], load_plan(0)
+            plan.add(new)
+            play(m.FadeOut(core), m.FadeOut(halo), m.FadeOut(old), m.FadeIn(new), run_time=0.7)
+            plan.remove(old); self.remove(old)
+            cur_img[0] = new; level[0] = 0
+            fade_pt = []
+        else:
+            fade_pt = [m.FadeOut(core), m.FadeOut(halo)]
+        play(*fade_pt, plan.animate.scale(ZF, about_point=cf),
              run_time=1.0, rate_func=m.ease_in_out_cubic)
         core.clear_updaters(); halo.clear_updaters()
         if "walls" not in META:                     # pas de cotes sans PDF : zoom arrière seul
@@ -245,9 +274,12 @@ class VisitePlan(m.Scene):
         h_txt.move_to(PT((L + R) / 2, hy - 30)).set_z_index(6)
 
         wait_until(fin["dim1"])
-        play(m.Create(v_ln), m.Create(v_a), m.Create(v_b), m.FadeIn(v_txt), run_time=0.9)
+        anim_v = (m.Create(v_ln), m.Create(v_a), m.Create(v_b), m.FadeIn(v_txt))
+        anim_h = (m.Create(h_ln), m.Create(h_a), m.Create(h_b), m.FadeIn(h_txt))
+        first, second = (anim_h, anim_v) if META.get("dims_first") == "front" else (anim_v, anim_h)
+        play(*first, run_time=0.9)
         wait_until(fin["dim2"])
-        play(m.Create(h_ln), m.Create(h_a), m.Create(h_b), m.FadeIn(h_txt), run_time=0.9)
+        play(*second, run_time=0.9)
 
         if SYNC_TOTAL > t[0]:
             self.wait(SYNC_TOTAL - t[0])

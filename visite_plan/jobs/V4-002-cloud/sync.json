@@ -1,0 +1,131 @@
+{
+ "total": 84.245,
+ "items": [
+  {
+   "name": "Terrasse 1",
+   "zoom": false,
+   "start": 0.4,
+   "dur": 2.488,
+   "arrive": 1.74,
+   "zout_start": 2.44,
+   "end": 2.888
+  },
+  {
+   "name": "Salon",
+   "zoom": true,
+   "start": 3.038,
+   "dur": 8.7,
+   "arrive": 5.698,
+   "zout_start": 10.538,
+   "end": 11.738
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": false,
+   "start": 11.888,
+   "dur": 7.764,
+   "arrive": 14.468,
+   "zout_start": 19.152,
+   "end": 19.652
+  },
+  {
+   "name": "Cuisine",
+   "zoom": true,
+   "start": 19.802,
+   "dur": 6.404,
+   "arrive": 21.962,
+   "zout_start": 25.006,
+   "end": 26.206
+  },
+  {
+   "name": "Réserve",
+   "zoom": false,
+   "start": 26.746,
+   "dur": 3.664,
+   "arrive": 27.506,
+   "zout_start": 29.91,
+   "end": 30.41
+  },
+  {
+   "name": "Terrasse 2",
+   "zoom": false,
+   "start": 30.56,
+   "dur": 5.726,
+   "arrive": 33.04,
+   "zout_start": 35.786,
+   "end": 36.286
+  },
+  {
+   "name": "Couloir",
+   "zoom": false,
+   "start": 36.436,
+   "dur": 3.726,
+   "arrive": 38.276,
+   "zout_start": 39.663,
+   "end": 40.163
+  },
+  {
+   "name": "Chambre 4",
+   "zoom": true,
+   "start": 40.313,
+   "dur": 4.987,
+   "arrive": 41.893,
+   "zout_start": 44.1,
+   "end": 45.3
+  },
+  {
+   "name": "SDB 2",
+   "zoom": false,
+   "start": 45.45,
+   "dur": 4.245,
+   "arrive": 46.89,
+   "zout_start": 49.195,
+   "end": 49.695
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": false,
+   "start": 49.845,
+   "dur": 4.93,
+   "arrive": 51.085,
+   "zout_start": 54.275,
+   "end": 54.775
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": true,
+   "start": 54.925,
+   "dur": 4.922,
+   "arrive": 56.145,
+   "zout_start": 58.647,
+   "end": 59.847
+  },
+  {
+   "name": "Chambre P.",
+   "zoom": true,
+   "start": 59.997,
+   "dur": 9.822,
+   "arrive": 62.817,
+   "zout_start": 68.619,
+   "end": 69.819
+  },
+  {
+   "name": "SDB 1",
+   "zoom": true,
+   "start": 69.969,
+   "dur": 5.882,
+   "arrive": 71.469,
+   "zout_start": 74.651,
+   "end": 75.851
+  },
+  {
+   "name": "Final",
+   "start": 76.001,
+   "dur": 7.244,
+   "end": 83.245,
+   "final": true,
+   "dim1": 79.631,
+   "dim2": 82.671
+  }
+ ]
+}

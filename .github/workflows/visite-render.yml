@@ -1,13 +1,15 @@
 name: visite-render
-# Rendu de la visite guidée d'un plan : segments rendus EN PARALLÈLE, puis assemblage (voix + sous-titres).
-# Lancer : Actions > visite-render > Run workflow (job = dossier visite_plan/jobs/<job>), ou modifier visite_plan/jobs/<job>/RENDER.
+# Rendu COMPLET d'une visite guidée sur GitHub (sans le PC de Tao) : segments + hook / estimation / CTA rendus EN PARALLÈLE,
+# puis assemblage (voix, musique, sous-titres, bande basse, filigranes) et vignette. La vidéo revient dans visite_plan/out/<job>.mp4.
+# Lancer : Actions > visite-render > Run workflow (job = dossier visite_plan/jobs/<job>), ou pousser visite_plan/jobs/<job>/RENDER.
+# Le mode est détecté dans le job : nf.json (sans 3D + hook/CTA), bump.json (avec 3D + hook/estimation/CTA), sinon visite simple.
 on:
   workflow_dispatch:
     inputs:
       job:
         description: "Dossier du job (visite_plan/jobs/<job>)"
         required: true
-        default: "V3-003"
+        default: "V2-2CH-01"
   push:
     branches: [main, "ccr-*"]
     paths: ["visite_plan/jobs/*/RENDER"]
@@ -20,35 +22,30 @@ jobs:
   plan:
     runs-on: ubuntu-24.04
     outputs:
-      jobs: ${{ steps.j.outputs.jobs }}
-      matrix: ${{ steps.j.outputs.matrix }}
+      job: ${{ steps.j.outputs.job }}
+      mode: ${{ steps.j.outputs.mode }}
+      include: ${{ steps.j.outputs.include }}
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
+        with: { fetch-depth: 2 }
       - id: j
-        # tous les jobs dont le fichier RENDER a changé dans ce push (ou celui demandé à la main)
         run: |
-          JOBS="${{ github.event.inputs.job }}"
-          if [ -z "$JOBS" ]; then
-            BASE="${{ github.event.before }}"
-            git cat-file -e "$BASE" 2>/dev/null || BASE=HEAD~1
-            JOBS=$(git diff --name-only "$BASE" HEAD | grep 'visite_plan/jobs/.*/RENDER$' | cut -d/ -f3 | sort -u | tr '\n' ' ')
-          fi
-          python3 - "$JOBS" >> "$GITHUB_OUTPUT" <<'PY'
-          import json, sys
-          jobs = sys.argv[1].split()
-          m = [{"job": j, "seg": k} for j in jobs
-               for k in range(len(json.load(open(f"visite_plan/jobs/{j}/segments.json"))))]
-          print("jobs=" + json.dumps(jobs)); print("matrix=" + json.dumps(m))
-          PY
+          JOB="${{ github.event.inputs.job }}"
+          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD~1 HEAD | grep 'visite_plan/jobs/.*/RENDER' | head -1 | cut -d/ -f3); fi
+          [ -d "visite_plan/jobs/$JOB" ] || { echo "job introuvable : $JOB"; exit 1; }
+          PLAN=$(python3 visite_plan/render_job.py plan "visite_plan/jobs/$JOB")
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"
+          echo "mode=$(echo "$PLAN" | python3 -c 'import json,sys;print(json.load(sys.stdin)["mode"])')" >> "$GITHUB_OUTPUT"
+          echo "include=$(echo "$PLAN" | python3 -c 'import json,sys;print(json.dumps(json.load(sys.stdin)["include"]))')" >> "$GITHUB_OUTPUT"
+          echo "Job $JOB — $PLAN"
   render:
     needs: plan
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
-        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+        include: ${{ fromJSON(needs.plan.outputs.include) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
@@ -59,51 +56,69 @@ jobs:
           key: uv-manimgx-0.1.1-${{ runner.os }}
       - name: Dépendances
         run: |
-          sudo apt-get install -y -qq --no-install-recommends mesa-vulkan-drivers libvulkan1
+          sudo apt-get install -y -qq --no-install-recommends mesa-vulkan-drivers libvulkan1 fonts-noto-core
           pip install --quiet uv
           uv tool install --force manimgx   # --force : recrée le lien ~/.local/bin/manimgx quand le cache uv est restauré
-      - name: Rendu ${{ matrix.job }} segment ${{ matrix.seg }}
+      - name: Fichiers de marque communs
+        run: |
+          python3 - <<'PY'
+          import sys; sys.path.insert(0, "visite_plan")
+          from pathlib import Path
+          import render_job
+          render_job.prepare_assets(Path("visite_plan/jobs/${{ needs.plan.outputs.job }}"))
+          PY
+      - name: Rendu de ${{ matrix.part }}
         env:
-          JOB: visite_plan/jobs/${{ matrix.job }}
+          JOB: visite_plan/jobs/${{ needs.plan.outputs.job }}
           SEG: ${{ matrix.seg }}
         run: |
           export PATH="$PATH:$HOME/.local/bin"
+          mkdir -p "$GITHUB_WORKSPACE/parts"
           cd visite_plan
-          JOB="$GITHUB_WORKSPACE/$JOB" manimgx render scene_visite.py VisitePlan -r 1080x1920 --fps 30 --preset veryfast --crf 18 -o "$GITHUB_WORKSPACE/seg${{ matrix.seg }}.mp4"
+          JOB="$GITHUB_WORKSPACE/$JOB" manimgx render ${{ matrix.scene }} ${{ matrix.cls }} -r 1080x1920 --fps 30 --preset veryfast --crf 18 -o "$GITHUB_WORKSPACE/parts/${{ matrix.part }}.mp4"
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.job }}-seg${{ matrix.seg }}
-          path: seg${{ matrix.seg }}.mp4
+          name: part-${{ matrix.part }}
+          path: parts/${{ matrix.part }}.mp4
           retention-days: 2
   assemble:
     needs: [plan, render]
     runs-on: ubuntu-24.04
-    strategy:
-      fail-fast: false
-      max-parallel: 1          # un seul push à la fois vers la branche
-      matrix:
-        job: ${{ fromJSON(needs.plan.outputs.jobs) }}
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          path: segs
-          pattern: ${{ matrix.job }}-seg*
+          pattern: part-*
+          path: parts
           merge-multiple: true
-      - name: Assemblage (voix + sous-titres)
+      - name: Assemblage (voix, musique, sous-titres, bande basse, filigranes)
         run: |
-          sudo apt-get install -y -qq ffmpeg libass9 >/dev/null
-          python3 visite_plan/assemble.py visite_plan/jobs/${{ matrix.job }} segs "${{ matrix.job }}.mp4"
+          sudo apt-get install -y -qq ffmpeg libass9 fonts-noto-core >/dev/null
+          pip install -q pillow requests python-dotenv
+          mkdir -p visite_plan/out
+          python3 visite_plan/render_job.py build "visite_plan/jobs/${{ needs.plan.outputs.job }}" parts "visite_plan/out/${{ needs.plan.outputs.job }}.mp4"
+      - name: Vignette (obligatoire avant publication)
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python3 tools/make_thumbnail.py "visite_plan/jobs/${{ needs.plan.outputs.job }}" "visite_plan/out/${{ needs.plan.outputs.job }}_thumb.jpg"
+      - name: Contrôle de la vidéo
+        run: |
+          F="visite_plan/out/${{ needs.plan.outputs.job }}.mp4"
+          ffprobe -v error -show_entries stream=codec_type,width,height,duration -of compact "$F"
+          ffmpeg -v error -i "$F" -vf "fps=1/10,scale=270:-1,tile=6x2" -frames:v 1 -y visite_plan/out/${{ needs.plan.outputs.job }}_contact.jpg
       - uses: actions/upload-artifact@v4
         with:
-          name: video-${{ matrix.job }}
-          path: ${{ matrix.job }}.mp4
+          name: video-${{ needs.plan.outputs.job }}
+          path: |
+            visite_plan/out/${{ needs.plan.outputs.job }}.mp4
+            visite_plan/out/${{ needs.plan.outputs.job }}_thumb.jpg
+            visite_plan/out/${{ needs.plan.outputs.job }}_contact.jpg
           retention-days: 14
-      - name: Publier dans visite_plan/out/
+      - name: Enregistrer dans visite_plan/out/
         run: |
-          mkdir -p visite_plan/out
-          cp "${{ matrix.job }}.mp4" "visite_plan/out/${{ matrix.job }}.mp4"
+          rm -f visite_plan/out/${{ needs.plan.outputs.job }}_contact.jpg
           git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
           git add -f visite_plan/out
-          git commit -m "visite: vidéo ${{ matrix.job }}" || exit 0
+          git commit -m "visite: vidéo ${{ needs.plan.outputs.job }}" || exit 0
           git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

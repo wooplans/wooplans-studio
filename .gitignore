@@ -22,3 +22,5 @@ media/
 *.pdf
 
 !visite_plan/jobs/**
+
+!assets/**

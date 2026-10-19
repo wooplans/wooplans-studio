@@ -1,4 +1,4 @@
-"""Copie les secrets du .env de lumo-studio (VIDEO AUTO\\.env) vers les secrets GitHub de wooplans-studio.
+"""Copie ZERNIO_API_KEY du .env de VIDEO AUTO (+ ELEVENLABS/POYO avec --all) vers les secrets GitHub de wooplans-studio.
 
 À lancer une seule fois, sur ton ordinateur, avec la CLI GitHub connectée (`gh auth login`) :
   python tools/set_github_secrets.py            # envoie
@@ -12,11 +12,9 @@ import sys
 from pathlib import Path
 
 REPO = "wooplans/wooplans-studio"
-FROM_ENV = [
-    "POYO_API_KEY", "ELEVENLABS_API_KEY",
-    "R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY", "R2_BUCKET_NAME",
-    "ZERNIO_API_KEY", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID",
-]
+FROM_ENV = ["ZERNIO_API_KEY"]                                    # indispensable pour publier
+OPTIONAL = ["ELEVENLABS_API_KEY", "POYO_API_KEY"]                # avec --all (génération hors session Claude)
+# R2 / Telegram du .env sont ceux de Kilabi : NE PAS les copier (bucket et bot dédiés WooPlans si besoin un jour)
 FIXED = {"ZERNIO_PROFILE_ID": "6aca547f2791f56cd0b63f4a"}
 
 
@@ -33,12 +31,15 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--env", default=str(Path(__file__).resolve().parents[2].parent / ".env"))
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--all", action="store_true", help="copie aussi ELEVENLABS_API_KEY et POYO_API_KEY")
     a = ap.parse_args()
     env_path = Path(a.env)
     if not env_path.is_file():
         print(f"Fichier introuvable : {env_path} (utiliser --env)", file=sys.stderr)
         return 2
     env = read_env(env_path)
+    if a.all:
+        FROM_ENV.extend(OPTIONAL)
     todo = {k: env[k] for k in FROM_ENV if env.get(k)}
     todo.update(FIXED)
     missing = [k for k in FROM_ENV if not env.get(k)]

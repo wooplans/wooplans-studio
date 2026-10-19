@@ -1,0 +1,48 @@
+name: check-setup
+# Vérifie que le dépôt est prêt à produire et publier sans le PC : secrets présents (NOMS seulement, jamais les valeurs),
+# comptes Zernio WooPlans connectés, outils de rendu disponibles. Lancer : Actions > check-setup > Run workflow.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, "ccr-*"]
+    paths: [".github/check-setup.trigger"]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_PROFILE_ID: ${{ secrets.ZERNIO_PROFILE_ID }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      POYO_API_KEY: ${{ secrets.POYO_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r requirements.txt pillow
+      - name: Secrets (présence seulement)
+        run: |
+          for n in ZERNIO_API_KEY ZERNIO_PROFILE_ID ELEVENLABS_API_KEY POYO_API_KEY; do
+            if [ -n "${!n}" ]; then echo "OK       $n"; else echo "MANQUANT $n"; fi
+          done
+          echo "Requis pour publier : ZERNIO_API_KEY, ZERNIO_PROFILE_ID. Optionnels (génération hors Claude) : ELEVENLABS_API_KEY, POYO_API_KEY."
+      - name: Comptes Zernio WooPlans
+        if: env.ZERNIO_API_KEY != ''
+        run: |
+          python - <<'PY'
+          from wooplans.zernio_client import ZernioClient
+          from tools.publish_zernio import wooplans_accounts
+          acc = wooplans_accounts(ZernioClient())
+          print("comptes WooPlans connectés :", sorted(acc))
+          for p in ("facebook", "youtube", "tiktok"):
+              print(("OK       " if p in acc else "MANQUANT ") + p)
+          PY
+      - name: Tests et moteur de rendu
+        run: |
+          pip install -q pytest
+          python -m pytest -q tests
+          python tools/secret_scan.py
+          python -m py_compile visite_plan/*.py

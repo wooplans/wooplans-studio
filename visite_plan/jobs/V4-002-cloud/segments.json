@@ -1,0 +1,110 @@
+[
+ {
+  "rooms": [
+   "Terrasse 1",
+   "Salon"
+  ],
+  "t0": 0.0,
+  "t1": 11.738,
+  "start_pos": [
+   679.5,
+   903.2
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Salle à manger",
+   "Cuisine"
+  ],
+  "t0": 11.738,
+  "t1": 26.206,
+  "start_pos": [
+   586.0,
+   601.5
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Réserve",
+   "Terrasse 2"
+  ],
+  "t0": 26.206,
+  "t1": 36.286,
+  "start_pos": [
+   807.0,
+   329.5
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Couloir",
+   "Chambre 4"
+  ],
+  "t0": 36.286,
+  "t1": 45.3,
+  "start_pos": [
+   832.5,
+   172.2
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "SDB 2",
+   "Chambre 3"
+  ],
+  "t0": 45.3,
+  "t1": 54.775,
+  "start_pos": [
+   552.0,
+   227.5
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Chambre 2",
+   "Chambre P."
+  ],
+  "t0": 54.775,
+  "t1": 69.819,
+  "start_pos": [
+   237.5,
+   236.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "SDB 1"
+  ],
+  "t0": 69.819,
+  "t1": 75.851,
+  "start_pos": [
+   280.0,
+   737.5
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [],
+  "t0": 75.851,
+  "t1": 84.245,
+  "start_pos": [
+   212.0,
+   580.2
+  ],
+  "final": true,
+  "level": 0
+ }
+]
