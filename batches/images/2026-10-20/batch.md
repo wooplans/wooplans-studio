@@ -2,7 +2,7 @@
 
 ## mar. 20/10 · 07:30 · Villa V3-004 · 1 image
 
-Ce villa de 3 chambres, vous le construiriez ? 😍
+Cette villa de 3 chambres, vous la construiriez ? 😍
 Dites-nous en commentaire ce que vous modifieriez.
 
 Villa V3-004 · 110 m² · estimation indicative : 17 600 000 FCFA
@@ -61,7 +61,7 @@ Estimation indicative : 58 680 000 FCFA.
 
 ## jeu. 22/10 · 07:30 · Villa V4-001 · 1 image
 
-Ce villa de 4 chambres, vous le construiriez ? 😍
+Cette villa de 4 chambres, vous la construiriez ? 😍
 Dites-nous en commentaire ce que vous modifieriez.
 
 Villa V4-001 · 116 m² · estimation indicative : 18 560 000 FCFA
@@ -120,7 +120,7 @@ Estimation indicative : 92 160 000 FCFA.
 
 ## sam. 24/10 · 07:30 · Villa V4-005 · 1 image
 
-Ce villa de 4 chambres, vous le construiriez ? 😍
+Cette villa de 4 chambres, vous la construiriez ? 😍
 Dites-nous en commentaire ce que vous modifieriez.
 
 Villa V4-005 · 201 m² · estimation indicative : 32 160 000 FCFA
@@ -179,7 +179,7 @@ Estimation indicative : 36 720 000 FCFA.
 
 ## lun. 26/10 · 07:30 · Villa V4-042 · 1 image
 
-Ce villa de 4 chambres, vous le construiriez ? 😍
+Cette villa de 4 chambres, vous la construiriez ? 😍
 Dites-nous en commentaire ce que vous modifieriez.
 
 Villa V4-042 · 177 m² · estimation indicative : 28 320 000 FCFA
