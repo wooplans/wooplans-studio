@@ -25,6 +25,7 @@ from wooplans.registry import claim, key, set_state, _load, REGISTRY
 
 SITE = "https://www.wooplans.com"
 UA = {"User-Agent": "Mozilla/5.0 (compatible; WooPlansStudio/1.0)"}
+WATERMARK = False                                  # les rendus du catalogue portent déjà le filigrane wooplans.com : pas de second filigrane
 PAGE = 6                                           # posts par planche d'aperçu (3 colonnes × 2 lignes)
 
 
@@ -100,7 +101,7 @@ def schedule_batch(lot: Path, client, fb_account: str, fetch=download, post=_pos
             with tempfile.TemporaryDirectory() as tmp:
                 for i, u in enumerate(p["images"]):
                     f = Path(tmp) / f"{p['id']}-{i}.jpg"
-                    f.write_bytes(prepare_image(fetch(u)))
+                    f.write_bytes(prepare_image(fetch(u), watermark=WATERMARK))
                     media.append({"type": "image", "url": client.upload_media(f, "image/jpeg")})
             body = {"content": p["caption"], "mediaItems": media, "scheduledFor": p["when"], "timezone": p["timezone"],
                     "platforms": [{"platform": "facebook", "accountId": fb_account}]}
