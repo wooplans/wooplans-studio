@@ -93,3 +93,11 @@ Objectif : 2 à 3 posts images par jour sur la page Facebook WooPlans, sans trav
   2. Tao relit ; retirer un post = `"skip": true` dans `batch.json`, corriger une légende = éditer `caption`.
   3. Après l'accord explicite de Tao : pousser `batches/images/<lot>/APPROVED` → programmation sur Zernio (Facebook), enregistrée dans `registry/videos.json` (format `I`, anti-doublon et idempotent).
 - Code : `wooplans/image_posts.py` (choix, légendes), `wooplans/image_tools.py` (JPEG, filigrane, planches), `tools/image_batch.py` (commandes `plan` et `schedule`), tests dans `tests/test_image_posts.py`.
+
+## Format « rendus 3D en vidéo » (prototype du 20 oct. 2026, à valider par Tao)
+Reel 9:16 d'environ 24 s fait des rendus du catalogue : plein écran avec travelling lent, musique de fond, **sans voix off**, sous-titres animés (pop, mot clé orange, prix qui s'incrémente), fin « wooplans.com ».
+- **Commande** : `python tools/make_reel.py <code> sortie.mp4` (ex. `D4-026`), environ 3 min de calcul. Rendus lus sur la fiche publique ; textes et chiffres de `data/plans.json` (`check_copy`).
+- **Scénario** (`wooplans/reel3d.py`) : accroche « Cette maison coûte combien ? », type et chambres, surface et niveaux, terrain (si connu), plan complet + devis, suspense, **estimation indicative** (compteur), « tout est dans le Catalogue Premium », carte finale (prix actuel 39 000 FCFA, lien en description).
+- **Musique** : coupes calées sur les mesures (4 temps) de `assets/music/tracks.json`, produit par `tools/analyze_music.py` (librosa, une seule fois par morceau). Un seul morceau pour l'instant (Pop Two, Mixkit) ; pour en ajouter, déposer le MP3 dans `assets/music/`, lancer l'analyse, noter la licence.
+- Filigrane anti-piratage « wooplans.com » qui défile du début à la fin (comme les visites), badge en haut à gauche, bande de marque en bas.
+
