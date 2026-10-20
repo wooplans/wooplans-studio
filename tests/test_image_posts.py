@@ -74,7 +74,7 @@ def test_batch_shape_and_rules():
     for d in {p["when"][:10] for p in posts}:
         day = [p for p in posts if p["when"].startswith(d)]
         assert len(day) == 3 and len({p["code"] for p in day}) == 3
-        assert [p["when"][11:16] for p in day] == ["07:30", "12:30", "17:30"]
+        assert [p["when"][11:16] for p in day] == ["07:30", "12:30", "19:00"]
         assert [p["kind"] for p in day] == ["single", "album", "single"]
     for p in posts:
         assert p["kind"] == "single" and len(p["images"]) == 1 or 2 <= len(p["images"]) <= ALBUM_SIZE

@@ -3,7 +3,7 @@
   python tools/image_batch.py plan     batches/images/<lot>    # lit <lot>/PLAN, écrit batch.json, batch.md, apercu-N.jpg
   python tools/image_batch.py schedule batches/images/<lot>    # lit <lot>/batch.json, programme sur Zernio (page Facebook WooPlans)
 
-<lot>/PLAN : {"start": "2026-10-20", "days": 7, "slots": ["07:30","12:30","17:30"], "seed": 1}   (slots, seed optionnels)
+<lot>/PLAN : {"start": "2026-10-20", "days": 7, "slots": ["07:30","12:30","19:00"], "seed": 1}   (slots, seed optionnels)
 `plan` ne programme RIEN. `schedule` n'est lancé (workflow image-batch, fichier <lot>/APPROVED) qu'après l'accord explicite de Tao.
 Pour retirer ou corriger un post avant l'accord : mettre "skip": true ou éditer "caption" dans batch.json.
 Les rendus viennent de la fiche publique du plan (https://www.wooplans.com/catalogue/<slug>) ; chaque légende passe par check_copy.

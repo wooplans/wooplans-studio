@@ -18,7 +18,7 @@ from wooplans.utm import build_link
 PLANS = ROOT / "data" / "plans.json"
 FMT = "I"                                     # format « image » dans le registre anti-doublon
 TZ = "Africa/Douala"
-DEFAULT_SLOTS = ["07:30", "12:30", "17:30"]   # laisse le soir (19 h et après) aux vidéos
+DEFAULT_SLOTS = ["07:30", "12:30", "19:00"]   # décision de Tao du 20 oct. : 7 h 30, 12 h 30, 19 h
 PATTERNS = ["single", "album", "single"]      # par créneau : 1 rendu, 4 rendus, 1 rendu
 ALBUM_SIZE = 4
 DAYS_FR = ["lun.", "mar.", "mer.", "jeu.", "ven.", "sam.", "dim."]

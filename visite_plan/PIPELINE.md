@@ -85,7 +85,7 @@ Voir le doc de projet « 02_PIPELINE_VISITE_PLAN.md ». Code :
 Objectif : 2 à 3 posts images par jour sur la page Facebook WooPlans, sans travail manuel par post.
 - **Source** : `data/plans.json` (55 plans publiés du catalogue au 19 oct. 2026 : chambres, surface, terrain, estimation indicative). À resynchroniser avec le catalogue quand des plans sont ajoutés ou archivés.
   Les rendus sont lus sur la fiche publique `https://www.wooplans.com/catalogue/<slug>` (dossier `/media/public/<code>/`), convertis en JPEG (côté long ≤ 1600 px). Ils portent déjà le filigrane `wooplans.com` du catalogue : aucun second filigrane n'est ajouté (`WATERMARK` dans `tools/image_batch.py`).
-- **Rythme** : 3 créneaux par jour (7 h 30, 12 h 30, 17 h 30, fuseau Africa/Douala) : 1 image, 1 album de 4 rendus, 1 image. Le soir reste libre pour les vidéos. Modifiable via `slots` dans `PLAN`.
+- **Rythme** : 3 créneaux par jour (7 h 30, 12 h 30, 19 h, fuseau Africa/Douala) : 1 image, 1 album de 4 rendus, 1 image. Modifiable via `slots` dans `PLAN`.
 - **Variété** : les plans les moins publiés passent d'abord, alternance villa / duplex, jamais deux fois le même plan le même jour, un rendu n'est repris qu'après avoir fait le tour du plan, 6 modèles de légende (fiche, question, terrain, budget, enregistrer, partager).
 - **Garde-fous** : chaque légende passe par `check_copy` ; seuls les montants de `plans.json` et le prix actuel 39 000 FCFA sont autorisés (libellé « estimation indicative ») ; lien `https://wooplans.com/catalogue-premium` avec UTM `utm_medium=image_organique`, `utm_content=image_<code>`.
 - **Procédure** (aucun PC nécessaire) :
