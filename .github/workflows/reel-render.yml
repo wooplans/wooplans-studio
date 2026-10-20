@@ -1,0 +1,59 @@
+name: reel-render
+# Rend des Reels « rendus 3D en vidéo » (musique + sous-titres, sans voix off) sur GitHub, un job par plan, en parallèle.
+# Lancer : pousser reels/BATCH.txt (une ligne par vidéo : « CODE » ou « CODE fichier_musique.mp3 »), ou Actions > reel-render > Run workflow.
+# Les vidéos sont dans les artefacts du run (reel-<CODE>), à relire par Tao avant toute publication.
+on:
+  workflow_dispatch:
+    inputs:
+      codes:
+        description: "Codes de plans séparés par des espaces (ex: D4-034 V4-006)"
+        required: true
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["reels/BATCH.txt"]
+permissions:
+  contents: read
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      include: ${{ steps.p.outputs.include }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          inp = """${{ github.event.inputs.codes }}""".split()
+          rows = [{"code": c, "music": ""} for c in inp]
+          if not rows:
+              for l in open("reels/BATCH.txt", encoding="utf-8"):
+                  p = l.split("#")[0].split()
+                  if p:
+                      rows.append({"code": p[0], "music": p[1] if len(p) > 1 else ""})
+          print("include=" + json.dumps(rows))
+          PY
+  render:
+    needs: plan
+    if: needs.plan.outputs.include != '[]'
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.plan.outputs.include) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: |
+          MUSIC="${{ matrix.music }}"
+          ARGS=""; [ -n "$MUSIC" ] && ARGS="--music assets/music/$MUSIC"
+          mkdir -p out && python -m tools.make_reel "${{ matrix.code }}" "out/${{ matrix.code }}.mp4" $ARGS
+          ffmpeg -loglevel error -ss 3 -i "out/${{ matrix.code }}.mp4" -frames:v 1 "out/${{ matrix.code }}.jpg"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ matrix.code }}
+          path: out/*
+          retention-days: 30

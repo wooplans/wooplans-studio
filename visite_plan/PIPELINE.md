@@ -101,3 +101,6 @@ Reel 9:16 d'environ 24 s fait des rendus du catalogue : plein écran avec travel
 - **Musique** : coupes calées sur les mesures (4 temps) de `assets/music/tracks.json`, produit par `tools/analyze_music.py` (librosa, une seule fois par morceau). Un seul morceau pour l'instant (Pop Two, Mixkit) ; pour en ajouter, déposer le MP3 dans `assets/music/`, lancer l'analyse, noter la licence.
 - Filigrane anti-piratage « wooplans.com » qui défile du début à la fin (comme les visites), badge en haut à gauche, bande de marque en bas.
 
+
+### Rendre des reels 3D sur GitHub (sans le PC de Tao)
+Pousser `reels/BATCH.txt` (une ligne par plan : `CODE` ou `CODE fichier_musique.mp3`) ou lancer le workflow `reel-render` avec les codes. Un job par plan ; les vidéos sont dans les artefacts du run (`gh run download`). Musique par défaut : « Let's Play Africa » ; « Africa » (Arulo) est aussi installée (tempo plus régulier). Rien n'est programmé sans l'accord de Tao.
