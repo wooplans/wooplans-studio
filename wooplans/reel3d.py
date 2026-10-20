@@ -17,7 +17,7 @@ W, H = 1080, 1920
 FPS = 30
 OVERLAP = 0.20                                 # durée du fondu entre deux plans (s)
 BEATS_PER_BAR = 4
-CAP_DY = 200                                   # textes décalés vers le bas pour laisser voir le plan
+CAP_DY = 0                                   # textes décalés vers le bas pour laisser voir le plan
 ORANGE, GREEN, WHITE = "&H2E8AF0&", "&H595B0F&", "&HFFFFFF&"      # ASS : BGR (orange #F08A2E, vert #0F5B59)
 
 
@@ -51,7 +51,7 @@ def scenes(plan: dict) -> List[Scene]:
     cat = plan["category"].upper()
     ch = plan["bedrooms"]
     lv = "DE PLAIN-PIED" if plan["levels"] == 1 else f"SUR {plan['levels']} NIVEAUX"
-    Y1, Y2 = 980, 1165
+    Y1, Y2 = 1260, 1415                           # tout le texte dans la zone sous l'image : un seul fond
     out = [
         Scene(0, 1, [Line("CETTE MAISON", y=Y1, size=136), Line("COÛTE *COMBIEN* ?", y=Y2, size=136, delay=0.6)]),
         Scene(1, 1, [Line(cat, y=Y1, size=140), Line(f"*{ch}* CHAMBRES", y=Y2, size=136, delay=0.6)]),
@@ -63,8 +63,8 @@ def scenes(plan: dict) -> List[Scene]:
     out += [
         Scene(b, 1, [Line("PLAN COMPLET", y=Y1, size=134), Line("+ *DEVIS* DÉTAILLÉ", y=Y2, size=124, delay=0.6)]),
         Scene(b + 1, 1, [Line("ET LE *BUDGET*", y=Y1, size=136), Line("POUR CONSTRUIRE ?", y=Y2, size=122, delay=0.6)]),
-        Scene(b + 2, 2, [Line("ESTIMATION", y=930, size=84), Line("{n}", y=1095, size=184, delay=0.0),
-                         Line("FCFA", y=1250, size=112), Line("estimation indicative", y=1350, size=58, delay=1.3)],
+        Scene(b + 2, 2, [Line("ESTIMATION", y=1205, size=80), Line("{n}", y=1315, size=170, delay=0.0),
+                         Line("FCFA", y=1420, size=96), Line("estimation indicative", y=1495, size=48, delay=1.3)],
               count_to=plan["estimate_total"]),
         Scene(b + 4, 1, [Line("TOUT EST DANS LE", y=Y1, size=108), Line("*CATALOGUE PREMIUM*", y=Y2, size=118, delay=0.6)]),
         Scene(b + 5, 1, [], end_card=True),

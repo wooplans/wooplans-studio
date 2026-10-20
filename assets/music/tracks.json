@@ -25,5 +25,14 @@
   "max_drift_s": 0.249,
   "window_s": 26.0,
   "best_start": 15.307
+ },
+ "Africa_Arulo_mixkit-218.mp3": {
+  "file": "Africa_Arulo_mixkit-218.mp3",
+  "duration": 102.49,
+  "beat_interval": 0.484,
+  "bpm": 124.0,
+  "max_drift_s": 0.027,
+  "window_s": 26.0,
+  "best_start": 31.479
  }
 }

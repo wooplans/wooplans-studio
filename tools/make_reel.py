@@ -24,10 +24,10 @@ from wooplans.settings import OFFER_PRICE_FCFA, ROOT
 BRAND = ROOT / "assets" / "brand"
 FONT = ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf"
 TRANSITIONS = ["fade", "slideleft", "fade", "zoomin", "fade", "slideleft", "fade", "zoomin", "fade", "fade"]
-DEFAULT_MUSIC = ROOT / "assets" / "music" / "C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3"
+DEFAULT_MUSIC = ROOT / "assets" / "music" / "Let-s-Play-Africa_Michael-Ramir-C_mixkit-x.mp3"
 MAX_IMAGES = 8
 FG_H = 1080                                    # hauteur de l'image à l'écran
-IMG_Y = 110                                    # haut de l'image (le texte est décalé vers le bas, voir CAP_DY)
+IMG_Y = 30                                    # haut de l'image (le texte est décalé vers le bas, voir CAP_DY)
 
 
 def run(cmd, **kw):
