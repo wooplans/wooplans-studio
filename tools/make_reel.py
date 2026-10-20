@@ -26,7 +26,8 @@ FONT = ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf"
 TRANSITIONS = ["fade", "slideleft", "fade", "zoomin", "fade", "slideleft", "fade", "zoomin", "fade", "fade"]
 DEFAULT_MUSIC = ROOT / "assets" / "music" / "C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3"
 MAX_IMAGES = 8
-IMG_Y = 150                                    # haut de l'image (le texte est décalé vers le bas, voir CAP_DY)
+FG_H = 1080                                    # hauteur de l'image à l'écran
+IMG_Y = 110                                    # haut de l'image (le texte est décalé vers le bas, voir CAP_DY)
 
 
 def run(cmd, **kw):
@@ -40,10 +41,12 @@ def clip_cmd(img: Path, size, mode: str, idx: int, dur: float, out: Path, blur: 
     a, b = pan(idx)
     w, h = size
     ff = ["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(FPS), "-t", f"{dur:.3f}", "-i", str(img)]
-    # plan entier visible : image à pleine largeur sur fond flou, zoom très léger (jamais de recadrage serré)
-    z = f"trunc({W}*(1+0.05*t/{dur:.3f})/2)*2"
+    # image à hauteur fixe (FG_H) : assez grande pour apprécier le plan ; si elle déborde en largeur, travelling lent
+    fh = f"trunc({FG_H}*(1+0.04*t/{dur:.3f})/2)*2"
+    a, b = pan(idx)
     fc = (f"[0:v]split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},gblur=sigma=30,eq=brightness=-0.15[bg];"
-          f"[b]scale=w='{z}':h=-2:eval=frame[fg];[bg][fg]overlay=x='(W-w)/2':y='{IMG_Y}+(W-w)/8',format=yuv420p")
+          f"[b]scale=w=-2:h='{fh}':eval=frame[fg];"
+          f"[bg][fg]overlay=x='if(gt(w,{W}),({W}-w)*({a}+({b}-{a})*t/{dur:.3f}),({W}-w)/2)':y={IMG_Y},format=yuv420p")
     if blur:
         fc += ",gblur=sigma=12,eq=brightness=-0.12"
     return ff + ["-filter_complex", fc, "-r", str(FPS), "-c:v", "libx264", "-crf", "16", "-preset", "veryfast", str(out)]
