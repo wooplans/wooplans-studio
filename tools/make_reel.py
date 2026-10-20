@@ -170,7 +170,7 @@ def main(argv=None) -> int:
     ap.add_argument("--music", default=str(DEFAULT_MUSIC))
     ap.add_argument("--keep", default=None)
     a = ap.parse_args(argv)
-    build(a.code, Path(a.out), Path(a.music), a.keep)
+    build(a.code, Path(a.out), Path(a.music).resolve(), a.keep)
     return 0
 
 
