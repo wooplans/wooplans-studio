@@ -85,6 +85,22 @@ def end_card_png(path: Path):
     im.save(path)
 
 
+def make_cover(plan: dict, facade: Path, tmp: Path) -> Path:
+    """Vignette 9:16 (tools/make_thumbnail.py) qui sert aussi de PREMIER FRAME de la vidéo : les plateformes
+    qui prennent le premier frame comme vignette (YouTube Shorts, TikTok, aperçus) affichent ainsi la bonne image."""
+    job = tmp / "cover_job"
+    job.mkdir(exist_ok=True)
+    shutil.copy(facade, job / "facade.png")
+    kind = "cette villa" if plan["category"].lower().startswith("villa") else "ce duplex"
+    (job / "bump.json").write_text(json.dumps({"target": plan["estimate_total"]}), encoding="utf-8")
+    (job / "PUBLISH.json").write_text(json.dumps({"thumbnail": {
+        "title": f"Combien coûte {kind} ?", "badge": fcfa(plan["estimate_total"]) + " FCFA",
+        "chip": f"{plan['bedrooms']} chambres · {plan['surface']} m²"}}), encoding="utf-8")
+    out = tmp / "cover.jpg"
+    run([sys.executable, str(ROOT / "tools" / "make_thumbnail.py"), str(job), str(out)])
+    return out
+
+
 def end_card_texts():
     return ["Plan complet", "+ devis détaillé", "wooplans.com", "Catalogue Premium",
             f"prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA", "Lien en description"]
@@ -118,6 +134,8 @@ def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None) 
         imgs.append(p)
         sizes.append(im.size)
     plan_imgs = assign_images(nb, sizes)
+    best = max(range(len(imgs)), key=lambda i: sizes[i][0] * sizes[i][1])        # rendu le plus net pour la vignette
+    cover = make_cover(plan, imgs[best], tmp)
 
     clips = []
     for k in range(nb):
@@ -148,12 +166,13 @@ def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None) 
            f"[v2][3:v]overlay=30:50:enable='lt(t,{t_end:.2f})'[v3];"
            f"[4:v]format=rgba,fade=t=in:st={t_end:.2f}:d=0.35:alpha=1[ec];"
            f"[v3][ec]overlay=0:0[v4];"
-           f"[v4]subtitles=reel.ass:fontsdir=fonts[v]")
+           f"[v4]subtitles=reel.ass:fontsdir=fonts[v5];"
+           f"[v5][6:v]overlay=0:0:enable='lt(t,0.12)'[v]")          # premier frame = vignette
     audio = f"afade=t=in:d=0.25,afade=t=out:st={total - 1.4:.2f}:d=1.4,loudnorm=I=-14:TP=-1.5:LRA=7"
     out = Path(out).resolve()
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(base), "-i", str(grad), "-i", str(BRAND / "band_bottom.png"),
          "-i", str(BRAND / "badge_url.png"), "-loop", "1", "-t", f"{total:.2f}", "-i", str(card),
-         "-ss", f"{tr['best_start']:.3f}", "-t", f"{total:.2f}", "-i", str(music),
+         "-ss", f"{tr['best_start']:.3f}", "-t", f"{total:.2f}", "-i", str(music), "-i", str(cover),
          "-filter_complex", fcx, "-map", "[v]", "-map", "5:a", "-af", audio, "-t", f"{total:.2f}",
          "-c:v", "libx264", "-crf", "19", "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
          "-movflags", "+faststart", str(out)], cwd=tmp)
