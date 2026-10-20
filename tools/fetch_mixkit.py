@@ -17,6 +17,12 @@ def get(url: str) -> bytes:
 def main(specs):
     OUT.mkdir(parents=True, exist_ok=True)
     html = get("https://mixkit.co/free-stock-music/discover/africa/").decode("utf-8", "replace")
+    for u in ("https://mixkit.co/free-stock-music/?q=Africa", "https://mixkit.co/free-stock-music/?q=Africa&page=2",
+              "https://mixkit.co/free-stock-music/contemporary-r-and-b/", "https://mixkit.co/free-stock-music/pop/"):
+        try:
+            html += get(u).decode("utf-8", "replace")
+        except Exception:
+            pass
     for pg in (2, 3):
         try:
             html += get(f"https://mixkit.co/free-stock-music/discover/africa/?page={pg}").decode("utf-8", "replace")
