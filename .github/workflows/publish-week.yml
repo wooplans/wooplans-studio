@@ -1,0 +1,34 @@
+name: publish-week
+# Programme sur Zernio (Facebook Reel + YouTube Short) les vidéos de week/SCHEDULE.json (reels 3D 13h, visites 20h).
+# Déclenché par la poussée de week/SCHEDULE.json — SEULEMENT après l'accord de Tao. Idempotent (registre + clé d'idempotence).
+on:
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["week/SCHEDULE.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-week-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_PROFILE_ID: ${{ secrets.ZERNIO_PROFILE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r requirements.txt pillow
+      - run: python tools/publish_week.py
+      - name: Registre
+        if: always()
+        run: |
+          git config user.name "wooplans-publish"; git config user.email "publish@users.noreply.github.com"
+          git add registry/videos.json
+          git commit -m "registre: semaine programmée" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

@@ -4,7 +4,7 @@ from urllib.parse import urlencode
 from wooplans.settings import OFFER_URL
 
 PLATFORMS = ("facebook", "tiktok", "youtube")
-FORMATS = {"A": "visite", "B": "cout", "I": "image"}
+FORMATS = {"A": "visite", "B": "cout", "I": "image", "R": "reel3d"}
 MEDIUMS = {"I": "image_organique"}              # les autres formats sont des vidéos
 CAMPAIGN = "wooplans_contenu"
 

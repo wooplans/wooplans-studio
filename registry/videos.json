@@ -271,5 +271,122 @@
     "images": [
       "1792070254582-af_htXBl.webp"
     ]
+  },
+  "R:V3-001:-": {
+    "format": "R",
+    "plan": "V3-001",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729bae2e2043de7235bb5",
+    "quand": "2026-10-20T13:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "A:V2-2CH-01:-": {
+    "format": "A",
+    "plan": "V2-2CH-01",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729c0e2e2043de7235bc5",
+    "quand": "2026-10-20T20:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "R:V4-004:-": {
+    "format": "R",
+    "plan": "V4-004",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729c6e2e2043de7235bd8",
+    "quand": "2026-10-21T13:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "A:V3-3CH-01:-": {
+    "format": "A",
+    "plan": "V3-3CH-01",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729cbe2e2043de7235bf2",
+    "quand": "2026-10-21T20:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "R:D4-006:-": {
+    "format": "R",
+    "plan": "D4-006",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729d13423266055ddd1f8",
+    "quand": "2026-10-22T13:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "A:V3-3CH-02:-": {
+    "format": "A",
+    "plan": "V3-3CH-02",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729d56b853fd27cbafe47",
+    "quand": "2026-10-22T20:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "R:V4-010:-": {
+    "format": "R",
+    "plan": "V4-010",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729dc73f412ed1d88cca4",
+    "quand": "2026-10-23T13:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "A:V4-4CH-01:-": {
+    "format": "A",
+    "plan": "V4-4CH-01",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729e273f412ed1d88ccb4",
+    "quand": "2026-10-23T20:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "R:D5-016:-": {
+    "format": "R",
+    "plan": "D5-016",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729e87ce022031060cc35",
+    "quand": "2026-10-24T13:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "A:V4-4CH-02:-": {
+    "format": "A",
+    "plan": "V4-4CH-02",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729ed7ce022031060cc46",
+    "quand": "2026-10-24T20:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "R:V3-025:-": {
+    "format": "R",
+    "plan": "V3-025",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729f4e2e2043de7237557",
+    "quand": "2026-10-25T13:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "A:V5-5CH-01:-": {
+    "format": "A",
+    "plan": "V5-5CH-01",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729f973f412ed1d88cceb",
+    "quand": "2026-10-25T20:00:00",
+    "fuseau": "Africa/Douala"
+  },
+  "R:D4-026:-": {
+    "format": "R",
+    "plan": "D4-026",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ad729ff7ce022031060cc62",
+    "quand": "2026-10-26T13:00:00",
+    "fuseau": "Africa/Douala"
   }
 }
