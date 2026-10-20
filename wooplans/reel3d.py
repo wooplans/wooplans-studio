@@ -17,6 +17,7 @@ W, H = 1080, 1920
 FPS = 30
 OVERLAP = 0.20                                 # durée du fondu entre deux plans (s)
 BEATS_PER_BAR = 4
+CAP_DY = 200                                   # textes décalés vers le bas pour laisser voir le plan
 ORANGE, GREEN, WHITE = "&H2E8AF0&", "&H595B0F&", "&HFFFFFF&"      # ASS : BGR (orange #F08A2E, vert #0F5B59)
 
 
@@ -166,13 +167,13 @@ Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
                 dt = 0.065
                 for j, v in enumerate(vals[:-1]):
                     ev.append(f"Dialogue: 1,{ts(a + j * dt)},{ts(a + (j + 1) * dt)},Cap,,0,0,0,,"
-                              f"{{\\an5\\pos({W // 2},{l.y}){fs}\\c{ORANGE}}}{fcfa(v)}")
+                              f"{{\\an5\\pos({W // 2},{l.y + CAP_DY}){fs}\\c{ORANGE}}}{fcfa(v)}")
                 a2 = a + (len(vals) - 1) * dt
                 ev.append(f"Dialogue: 1,{ts(a2)},{ts(t1)},Cap,,0,0,0,,"
-                          f"{{\\pos({W // 2},{l.y}){fs}\\an5\\c{ORANGE}\\fscx118\\fscy118\\t(0,180,\\fscx100\\fscy100)"
+                          f"{{\\pos({W // 2},{l.y + CAP_DY}){fs}\\an5\\c{ORANGE}\\fscx118\\fscy118\\t(0,180,\\fscx100\\fscy100)"
                           f"\\t({max(300, int((t1 - a2) * 1000) - 140)},{int((t1 - a2) * 1000)},\\alpha&HFF&)}}{fcfa(vals[-1])}")
                 continue
-            ev.append(f"Dialogue: 1,{ts(a)},{ts(t1)},Cap,,0,0,0,,{{\\pos({W // 2},{l.y}){fs}{_pop(dur_ms)}}}{_runs(l.text, WHITE)}")
+            ev.append(f"Dialogue: 1,{ts(a)},{ts(t1)},Cap,,0,0,0,,{{\\pos({W // 2},{l.y + CAP_DY}){fs}{_pop(dur_ms)}}}{_runs(l.text, WHITE)}")
     # filigrane anti-piratage : « wooplans.com » semi-transparent qui défile, du début à la fin
     k, a = 0, 0.3
     while a < total:

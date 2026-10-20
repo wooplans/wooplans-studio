@@ -26,6 +26,7 @@ FONT = ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf"
 TRANSITIONS = ["fade", "slideleft", "fade", "zoomin", "fade", "slideleft", "fade", "zoomin", "fade", "fade"]
 DEFAULT_MUSIC = ROOT / "assets" / "music" / "C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3"
 MAX_IMAGES = 8
+IMG_Y = 150                                    # haut de l'image (le texte est décalé vers le bas, voir CAP_DY)
 
 
 def run(cmd, **kw):
@@ -39,15 +40,10 @@ def clip_cmd(img: Path, size, mode: str, idx: int, dur: float, out: Path, blur: 
     a, b = pan(idx)
     w, h = size
     ff = ["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(FPS), "-t", f"{dur:.3f}", "-i", str(img)]
-    if mode == "cover":
-        base_w = int(2000 * w / h)
-        vf = (f"scale=w='trunc({base_w}*(1+0.08*t/{dur:.3f})/2)*2':h=-2:eval=frame,"
-              f"crop={W}:{H}:x='(in_w-{W})*({a}+({b}-{a})*t/{dur:.3f})':y='(in_h-{H})/2'")
-        if blur:
-            vf += ",gblur=sigma=16,eq=brightness=-0.12"
-        return ff + ["-vf", vf + ",format=yuv420p", "-r", str(FPS), "-c:v", "libx264", "-crf", "16", "-preset", "veryfast", str(out)]
+    # plan entier visible : image à pleine largeur sur fond flou, zoom très léger (jamais de recadrage serré)
+    z = f"trunc({W}*(1+0.05*t/{dur:.3f})/2)*2"
     fc = (f"[0:v]split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},gblur=sigma=30,eq=brightness=-0.15[bg];"
-          f"[b]scale={W}:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p")
+          f"[b]scale=w='{z}':h=-2:eval=frame[fg];[bg][fg]overlay=x='(W-w)/2':y='{IMG_Y}+(W-w)/8',format=yuv420p")
     if blur:
         fc += ",gblur=sigma=12,eq=brightness=-0.12"
     return ff + ["-filter_complex", fc, "-r", str(FPS), "-c:v", "libx264", "-crf", "16", "-preset", "veryfast", str(out)]
