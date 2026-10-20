@@ -1,1 +1,8 @@
-# Un plan par ligne : CODE [fichier_musique.mp3]
+# Un plan par ligne : CODE [fichier_musique.mp3]   — semaine du 21 oct.
+V3-001 Let-s-Play-Africa_Michael-Ramir-C_mixkit-x.mp3
+V4-004 Africa_Arulo_mixkit-218.mp3
+D4-006 Let-s-Play-Africa_Michael-Ramir-C_mixkit-x.mp3
+V4-010 Africa_Arulo_mixkit-218.mp3
+D5-016 Let-s-Play-Africa_Michael-Ramir-C_mixkit-x.mp3
+V3-025 Africa_Arulo_mixkit-218.mp3
+D4-026 Let-s-Play-Africa_Michael-Ramir-C_mixkit-x.mp3
