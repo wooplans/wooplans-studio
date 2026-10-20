@@ -35,13 +35,24 @@ def download(url: str) -> bytes:
     return r.content
 
 
-def fetch_page_images(plan: dict) -> list:
-    """URL des rendus publics d'un plan, dans l'ordre de la fiche (le premier est la couverture)."""
-    html = requests.get(f"{SITE}/catalogue/{plan['slug']}", headers=UA, timeout=60)
-    html.raise_for_status()
-    folder = plan["code"].lower()
-    found = re.findall(r"(?:https?://(?:www\.)?wooplans\.com)?(/media/public/%s/[A-Za-z0-9_\-.]+?\.(?:webp|jpe?g|png))" % re.escape(folder), html.text)
+THUMB = re.compile(r'aria-label="Voir l(?:\'|&#x27;)image \d+"[^>]*><img[^>]*?src="(/media/[^"]+)"')
+
+
+def parse_gallery(html: str, code: str) -> list:
+    """Rendus de la galerie d'une fiche, dans l'ordre (le premier est la couverture).
+    Les miniatures « Voir l'image N » listent exactement les images du plan ; les plans récents sont sous
+    /media/public/<code>/, les plus anciens sous /media/upload-framer-<hash>.webp. Repli : dossier du plan."""
+    found = THUMB.findall(html)
+    if not found:
+        found = re.findall(r"(/media/public/%s/[A-Za-z0-9_\-.]+?\.(?:webp|jpe?g|png))" % re.escape(code.lower()), html)
     return list(dict.fromkeys(SITE + p for p in found))
+
+
+def fetch_page_images(plan: dict) -> list:
+    """URL des rendus publics d'un plan (https://www.wooplans.com/catalogue/<slug>), couverture en premier."""
+    r = requests.get(f"{SITE}/catalogue/{plan['slug']}", headers=UA, timeout=60)
+    r.raise_for_status()
+    return parse_gallery(r.text, plan["code"])
 
 
 def cmd_plan(lot: Path, fetch_images=fetch_page_images, fetch=download) -> int:

@@ -1,0 +1,11 @@
+{
+ "C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3": {
+  "file": "C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3",
+  "duration": 140.4,
+  "beat_interval": 0.6001,
+  "bpm": 100.0,
+  "max_drift_s": 0.033,
+  "window_s": 26.0,
+  "best_start": 34.234
+ }
+}

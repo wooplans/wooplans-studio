@@ -181,3 +181,24 @@ def test_schedule_failure_is_reported_and_retryable(tmp_path):
     assert image_batch.schedule_batch(lot, FakeClient(), "FB", fetch=lambda u: png_bytes(),
                                       post=lambda c, b, i: ok.append(1) or {"_id": "x"}, registry=reg) == 0
     assert ok == [1]
+
+
+HTML_NEW = ('<button aria-label="Voir l&#x27;image 1"><img src="/media/public/v4-001/a1.webp" alt="" /></button>'
+            '<button aria-label="Voir l&#x27;image 2"><img src="/media/public/v4-001/a2.webp" alt="" /></button>'
+            '<img src="/media/public/d5-011/autre-plan-suggere.webp" alt="Duplex">')
+HTML_OLD = ('<button aria-label="Voir l&#x27;image 1" class="x"><img src="/media/upload-framer-aaa111.jpg" alt="" /></button>'
+            '<button aria-label="Voir l&#x27;image 2" class="x"><img src="/media/upload-framer-bbb222.webp" alt="" /></button>'
+            '<img src="/media/public/d5-011/autre-plan-suggere.webp" alt="Duplex">')
+
+
+def test_parse_gallery_both_storage_styles_and_ignores_suggested_plans():
+    new = image_batch.parse_gallery(HTML_NEW, "V4-001")
+    old = image_batch.parse_gallery(HTML_OLD, "D4-026")
+    assert new == ["https://www.wooplans.com/media/public/v4-001/a1.webp", "https://www.wooplans.com/media/public/v4-001/a2.webp"]
+    assert old == ["https://www.wooplans.com/media/upload-framer-aaa111.jpg", "https://www.wooplans.com/media/upload-framer-bbb222.webp"]
+    assert all("d5-011" not in u for u in new + old)                                # jamais les images d'un plan suggéré
+
+
+def test_parse_gallery_fallback_to_plan_folder():
+    html = '<img src="/media/public/v4-001/z9.webp"><img src="/media/public/d5-011/x.webp">'
+    assert image_batch.parse_gallery(html, "V4-001") == ["https://www.wooplans.com/media/public/v4-001/z9.webp"]
