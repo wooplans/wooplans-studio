@@ -80,3 +80,16 @@ Voir le doc de projet « 02_PIPELINE_VISITE_PLAN.md ». Code :
 - `bump_audio.py` : voix (Piper en test), musique Audio as Code, bruitages synthétisés, écrit `bump.json` (repères partagés avec la scène).
 - `bump_assets.py` : génère band_bottom.png, badge_url.png, wm_logo.png, wm_tile.png depuis le logo du brand kit (les PNG ne sont pas versionnés).
 - `local/RELANCER_GUETTEUR.bat` : relance le guetteur Windows s'il est arrêté.
+
+## Posts images Facebook : lot hebdomadaire (mis en place le 19 oct. 2026)
+Objectif : 2 à 3 posts images par jour sur la page Facebook WooPlans, sans travail manuel par post.
+- **Source** : `data/plans.json` (55 plans publiés du catalogue au 19 oct. 2026 : chambres, surface, terrain, estimation indicative). À resynchroniser avec le catalogue quand des plans sont ajoutés ou archivés.
+  Les rendus sont lus sur la fiche publique `https://www.wooplans.com/catalogue/<slug>` (dossier `/media/public/<code>/`), convertis en JPEG (côté long ≤ 1600 px). Ils portent déjà le filigrane `wooplans.com` du catalogue : aucun second filigrane n'est ajouté (`WATERMARK` dans `tools/image_batch.py`).
+- **Rythme** : 3 créneaux par jour (7 h 30, 12 h 30, 19 h, fuseau Africa/Douala) : 1 image, 1 album de 4 rendus, 1 image. Modifiable via `slots` dans `PLAN`.
+- **Variété** : les plans les moins publiés passent d'abord, alternance villa / duplex, jamais deux fois le même plan le même jour, un rendu n'est repris qu'après avoir fait le tour du plan, 6 modèles de légende (fiche, question, terrain, budget, enregistrer, partager).
+- **Garde-fous** : chaque légende passe par `check_copy` ; seuls les montants de `plans.json` et le prix actuel 39 000 FCFA sont autorisés (libellé « estimation indicative ») ; lien `https://wooplans.com/catalogue-premium` avec UTM `utm_medium=image_organique`, `utm_content=image_<code>`.
+- **Procédure** (aucun PC nécessaire) :
+  1. Pousser `batches/images/<lot>/PLAN` (`{"start": "2026-10-20", "days": 7, "seed": 1}`) → workflow `image-batch` : `batch.json`, `batch.md` (toutes les légendes), `apercu-N.jpg` (planches). **Rien n'est programmé.**
+  2. Tao relit ; retirer un post = `"skip": true` dans `batch.json`, corriger une légende = éditer `caption`.
+  3. Après l'accord explicite de Tao : pousser `batches/images/<lot>/APPROVED` → programmation sur Zernio (Facebook), enregistrée dans `registry/videos.json` (format `I`, anti-doublon et idempotent).
+- Code : `wooplans/image_posts.py` (choix, légendes), `wooplans/image_tools.py` (JPEG, filigrane, planches), `tools/image_batch.py` (commandes `plan` et `schedule`), tests dans `tests/test_image_posts.py`.

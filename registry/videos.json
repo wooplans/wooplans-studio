@@ -1,1 +1,275 @@
-{}
+{
+  "I:V3-004:a3e50354": {
+    "format": "I",
+    "plan": "V3-004",
+    "angle": "single:1792094306373-zCuw1EWm.webp",
+    "etat": "programme",
+    "post_id": "6ad70ebb6ad0b8ed5fcf8d30",
+    "quand": "2026-10-20T08:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792094306373-zCuw1EWm.webp"
+    ]
+  },
+  "I:D4-002:926b22f8": {
+    "format": "I",
+    "plan": "D4-002",
+    "angle": "album:1792064008489-v6gY4RwK.webp+1792064010164-psZtW-pa.webp+1792064011639-scOGEKPU.webp+1792064013089-gApXUr7a.webp",
+    "etat": "programme",
+    "post_id": "6ad70ebf6ad0b8ed5fcf8d51",
+    "quand": "2026-10-20T12:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792064008489-v6gY4RwK.webp",
+      "1792064010164-psZtW-pa.webp",
+      "1792064011639-scOGEKPU.webp",
+      "1792064013089-gApXUr7a.webp"
+    ]
+  },
+  "I:V3-003:6c27e3e8": {
+    "format": "I",
+    "plan": "V3-003",
+    "angle": "single:1792063996600-BMSnaOcY.webp",
+    "etat": "programme",
+    "post_id": "6ad70ec26ad0b8ed5fcf8d5d",
+    "quand": "2026-10-20T19:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792063996600-BMSnaOcY.webp"
+    ]
+  },
+  "I:D4-036:09588eca": {
+    "format": "I",
+    "plan": "D4-036",
+    "angle": "single:1792050524303-XMg2Zk78.jpg",
+    "etat": "programme",
+    "post_id": "6ad70ec46ad0b8ed5fcf8d65",
+    "quand": "2026-10-21T07:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792050524303-XMg2Zk78.jpg"
+    ]
+  },
+  "I:V3-039:7acbecaa": {
+    "format": "I",
+    "plan": "V3-039",
+    "angle": "album:1792050477867-3FTjNBex.jpg+1792050479989-bsMNd-QI.jpg+1792050481779-uM43HMRV.jpg+1792050483288-ZflzThNW.jpg",
+    "etat": "programme",
+    "post_id": "6ad70ec86ad0b8ed5fcf8d71",
+    "quand": "2026-10-21T12:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792050477867-3FTjNBex.jpg",
+      "1792050479989-bsMNd-QI.jpg",
+      "1792050481779-uM43HMRV.jpg",
+      "1792050483288-ZflzThNW.jpg"
+    ]
+  },
+  "I:D5-011:c7550eff": {
+    "format": "I",
+    "plan": "D5-011",
+    "angle": "single:1792422285595-8aQj6TyE.webp",
+    "etat": "programme",
+    "post_id": "6ad70ecc6ad0b8ed5fcf8d83",
+    "quand": "2026-10-21T19:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792422285595-8aQj6TyE.webp"
+    ]
+  },
+  "I:V4-001:6e439547": {
+    "format": "I",
+    "plan": "V4-001",
+    "angle": "single:1792070304985-IaVB69c3.webp",
+    "etat": "programme",
+    "post_id": "6ad70ecd6ad0b8ed5fcf8d8c",
+    "quand": "2026-10-22T07:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792070304985-IaVB69c3.webp"
+    ]
+  },
+  "I:D5-001:0920844f": {
+    "format": "I",
+    "plan": "D5-001",
+    "angle": "album:1792070438630-7RHeARgU.webp+1792070444849-UnH1LD_7.webp+1792070446487-Z7xtMh1o.webp+1792070448444-dccfEItZ.webp",
+    "etat": "programme",
+    "post_id": "6ad70ed16ad0b8ed5fcf8dad",
+    "quand": "2026-10-22T12:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792070438630-7RHeARgU.webp",
+      "1792070444849-UnH1LD_7.webp",
+      "1792070446487-Z7xtMh1o.webp",
+      "1792070448444-dccfEItZ.webp"
+    ]
+  },
+  "I:V4-006:4cfe3fbe": {
+    "format": "I",
+    "plan": "V4-006",
+    "angle": "single:1792274280693-5FC7LkKf.webp",
+    "etat": "programme",
+    "post_id": "6ad70ed46ad0b8ed5fcf8dc2",
+    "quand": "2026-10-22T19:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792274280693-5FC7LkKf.webp"
+    ]
+  },
+  "I:D5-012:a8036382": {
+    "format": "I",
+    "plan": "D5-012",
+    "angle": "single:1792422368986-H7XDix3F.webp",
+    "etat": "programme",
+    "post_id": "6ad70ed76ad0b8ed5fcf8dc7",
+    "quand": "2026-10-23T07:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792422368986-H7XDix3F.webp"
+    ]
+  },
+  "I:V3-005:e52a0fcd": {
+    "format": "I",
+    "plan": "V3-005",
+    "angle": "album:1792094320756-Y9yiY0HL.webp+1792094322426-Vo_wlLG8.webp+1792094323810-15TPHkqS.webp+1792094325153-UMOK3bmI.webp",
+    "etat": "programme",
+    "post_id": "6ad70edb122e5c7269885de8",
+    "quand": "2026-10-23T12:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792094320756-Y9yiY0HL.webp",
+      "1792094322426-Vo_wlLG8.webp",
+      "1792094323810-15TPHkqS.webp",
+      "1792094325153-UMOK3bmI.webp"
+    ]
+  },
+  "I:D5-005:62153bb6": {
+    "format": "I",
+    "plan": "D5-005",
+    "angle": "single:1792064020260-vhO3fWCh.webp",
+    "etat": "programme",
+    "post_id": "6ad70ede6ad0b8ed5fcf8de2",
+    "quand": "2026-10-23T19:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792064020260-vhO3fWCh.webp"
+    ]
+  },
+  "I:V4-005:b7a7ef34": {
+    "format": "I",
+    "plan": "V4-005",
+    "angle": "single:1792274272178--TgaDkj7.webp",
+    "etat": "programme",
+    "post_id": "6ad70edf16bd8a7d693306d0",
+    "quand": "2026-10-24T07:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792274272178--TgaDkj7.webp"
+    ]
+  },
+  "I:D5-016:a832edc1": {
+    "format": "I",
+    "plan": "D5-016",
+    "angle": "album:1792422509245-kemeu9BJ.webp+1792422533013-WTapSAk2.webp+1792422550708-55IDWiFv.webp+1792422581268-oRdpV2XE.webp",
+    "etat": "programme",
+    "post_id": "6ad70ee716bd8a7d693306e6",
+    "quand": "2026-10-24T12:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792422509245-kemeu9BJ.webp",
+      "1792422533013-WTapSAk2.webp",
+      "1792422550708-55IDWiFv.webp",
+      "1792422581268-oRdpV2XE.webp"
+    ]
+  },
+  "I:V4-003:2794804a": {
+    "format": "I",
+    "plan": "V4-003",
+    "angle": "single:1792094333415-inlfK5Uh.webp",
+    "etat": "programme",
+    "post_id": "6ad70ee96ad0b8ed5fcf8e06",
+    "quand": "2026-10-24T19:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792094333415-inlfK5Uh.webp"
+    ]
+  },
+  "I:D4-001:18d99140": {
+    "format": "I",
+    "plan": "D4-001",
+    "angle": "single:1792070401022-JHixieQE.webp",
+    "etat": "programme",
+    "post_id": "6ad70eeb16bd8a7d693306f8",
+    "quand": "2026-10-25T07:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792070401022-JHixieQE.webp"
+    ]
+  },
+  "I:V3-025:e9da5c21": {
+    "format": "I",
+    "plan": "V3-025",
+    "angle": "album:1792422737507-BZT0VvzH.webp+1792422758261-ELHnRxxA.webp+1792422785592-9-AHh8--.webp+1792422811010-DGd7Sb1r.webp",
+    "etat": "programme",
+    "post_id": "6ad70ef16ad0b8ed5fcf8e2a",
+    "quand": "2026-10-25T12:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792422737507-BZT0VvzH.webp",
+      "1792422758261-ELHnRxxA.webp",
+      "1792422785592-9-AHh8--.webp",
+      "1792422811010-DGd7Sb1r.webp"
+    ]
+  },
+  "I:D4-002:32ab2137": {
+    "format": "I",
+    "plan": "D4-002",
+    "angle": "single:1792064014519-Z4FIF0wL.webp",
+    "etat": "programme",
+    "post_id": "6ad70ef36ad0b8ed5fcf8e32",
+    "quand": "2026-10-25T19:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792064014519-Z4FIF0wL.webp"
+    ]
+  },
+  "I:V4-042:cd89c1ae": {
+    "format": "I",
+    "plan": "V4-042",
+    "angle": "single:1792063698957-k0Sf40tv.webp",
+    "etat": "programme",
+    "post_id": "6ad70ef516bd8a7d69330715",
+    "quand": "2026-10-26T07:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792063698957-k0Sf40tv.webp"
+    ]
+  },
+  "I:D4-001:0782e4eb": {
+    "format": "I",
+    "plan": "D4-001",
+    "angle": "album:1792070403324-djGOB5HN.webp+1792070404896-sH2SS038.webp+1792070406933-us7LmhwD.webp+1792070408855-TliJDspO.webp",
+    "etat": "programme",
+    "post_id": "6ad70ef916bd8a7d6933071a",
+    "quand": "2026-10-26T12:30:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792070403324-djGOB5HN.webp",
+      "1792070404896-sH2SS038.webp",
+      "1792070406933-us7LmhwD.webp",
+      "1792070408855-TliJDspO.webp"
+    ]
+  },
+  "I:V3-001:e96a4da0": {
+    "format": "I",
+    "plan": "V3-001",
+    "angle": "single:1792070254582-af_htXBl.webp",
+    "etat": "programme",
+    "post_id": "6ad70efc6ad0b8ed5fcf8e5c",
+    "quand": "2026-10-26T19:00:00",
+    "fuseau": "Africa/Douala",
+    "images": [
+      "1792070254582-af_htXBl.webp"
+    ]
+  }
+}
