@@ -1,0 +1,29 @@
+name: publish-carousel
+# Publie un carrousel d'images sur la page Facebook WooPlans (Zernio). À pousser SEULEMENT après l'accord explicite de Tao.
+on:
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["batches/carousel/*/GO"]
+permissions:
+  contents: read
+concurrency:
+  group: publish-carousel-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_PROFILE_ID: ${{ secrets.ZERNIO_PROFILE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r requirements.txt pillow
+      - name: Publication
+        run: |
+          D=$(git diff --name-only HEAD^1 HEAD | grep -E '^batches/carousel/[^/]+/GO$' | head -1 | xargs dirname)
+          python tools/publish_carousel.py "$D"
