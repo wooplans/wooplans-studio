@@ -1,9 +1,13 @@
+import os
 """Hook / Estimation / CTA animés (9:16) pour les visites guidées WooPlans.
 Rendu : manimgx render scene_bumpers.py HookScene|EstimScene|CtaScene -r 1080x1920 --fps 30
 Variables : JOB = dossier du job (bump.json, plan.png, facade.png, logo_white.png)."""
 import json, math, os
 from pathlib import Path
 import manimgx as m
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+import slides
 
 JOB = Path(os.environ["JOB"])
 B = json.loads((JOB / "bump.json").read_text(encoding="utf-8"))
@@ -37,6 +41,9 @@ def T(txt, size=60, color=WHITE_, width=None):
 def scr(p):
     return [(p[0] - PLAN_W_PX / 2) * U, -(p[1] - PLAN_H_PX / 2) * U + PANEL_CY, 0.0]
 
+
+_WP = os.path.exists(os.path.join(os.environ.get("JOB", ""), "cta_wp.flag"))
+_BTN = "VISITEZ LE SITE"
 
 class Base(m.Scene):
     def setup_clock(self):
@@ -86,6 +93,9 @@ class Base(m.Scene):
     def top_block(self, band_text):
         facade = m.ImageMobject(str(JOB / "facade.png"))
         facade.scale_to_fit_width(FRAME_W).move_to([0, FACADE_SLOT_Y, 0]).set_z_index(30)
+        _SL = slides.make(m, JOB, FRAME_W, FACADE_SLOT_Y, FACADE_H, t_start=0.0, z0=24)
+        if _SL is not None:
+            facade = _SL
         band_y = FRAME_H / 2 - FACADE_H - BAND_H / 2
         band = m.Rectangle(width=FRAME_W + 0.2, height=BAND_H, fill_color=GREEN, fill_opacity=1,
                            stroke_width=0).move_to([0, band_y, 0]).set_z_index(31)
@@ -116,7 +126,7 @@ class HookScene(Base):
         self.until(C["tag"]); self.pop(tag, 0.3)
         w1 = T("COMBIEN", 72, WHITE_, width=4.9).move_to([0, -0.6, 0]).set_z_index(10)
         w2 = T("COÛTE", 72, ORANGE, width=5.2).move_to([0, -2.0, 0]).set_z_index(10)
-        w3 = T("CETTE MAISON ?", 72, WHITE_, width=6.9).move_to([0, -3.4, 0]).set_z_index(10)
+        w3 = T(B.get("hook_w3", "CETTE MAISON ?"), 72, WHITE_, width=(5.4 if "hook_w3" in B else 6.9)).move_to([0, -3.4, 0]).set_z_index(10)
         chip_bg = m.RoundedRectangle(corner_radius=0.3, width=6.2, height=0.85, stroke_color=GOLD,
                                      stroke_width=4, fill_color=GREEN, fill_opacity=0.6).move_to([0, -5.2, 0]).set_z_index(10)
         chip_tx = T(B.get("chip", "5 CHAMBRES · 2 NIVEAUX"), 36, GOLD, width=5.6).move_to([0, -5.2, 0]).set_z_index(11)
@@ -198,6 +208,9 @@ class EstimScene(Base):
         # grille limitée au panneau : on la recouvre en haut par la façade (z 30) ; OK visuellement
         lab = T("ESTIMATION · DEVIS DU PLAN", 40, GOLD, width=6.4).move_to([0, 1.05, 0]).set_z_index(10)
         self.pop(lab, 0.35)
+        if "range" in B:
+            self.range_block(E)
+            return
 
         TARGET = B.get("target", 43864000)
         GROS, FIN = B.get("gros", 19738800), B.get("fin", 24125200)
@@ -257,6 +270,59 @@ class EstimScene(Base):
         self.until(E["total"])
 
 
+    def range_block(self, E):
+        """devis : intervalle de prix (source : site WooPlans, budget min / max)."""
+        C = E["cues"]; v2 = E["items"][1]
+        lo, hi = B["range"]
+        def fmt(n): return f"{int(n):,}".replace(",", " ")
+        probe = m.Text(fmt(hi), color=WHITE_, font=FONT, weight=m.BOLD, font_size=100)
+        fs = 100 * 5.3 / probe.width
+        def counter(target, y, t0, t1):
+            clk = [0.0]
+            num = m.Text("0", color=WHITE_, font=FONT, weight=m.BOLD, font_size=fs).move_to([0, y, 0]).set_z_index(10)
+            def up(mob, dt):
+                clk[0] += dt
+                p = min(1.0, max(0.0, clk[0] / max(0.3, t1 - t0)))
+                p = 1 - (1 - p) ** 3
+                new = m.Text(fmt(target * p), color=WHITE_, font=FONT, weight=m.BOLD, font_size=fs)
+                new.move_to([0, y, 0]).set_z_index(10)
+                mob.become(new)
+            return num, up
+        s1 = T("ENTRE", 42, GOLD, width=1.8).move_to([0, 0.45, 0]).set_z_index(10)
+        num1, up1 = counter(lo, -0.4, C["count0"], C["count1"])
+        s2 = T("ET", 42, GOLD, width=0.8).move_to([0, -1.25, 0]).set_z_index(10)
+        num2, up2 = counter(hi, -2.05, C["count2"], C["count3"])
+        fc = T("FCFA", 52, ORANGE, width=2.0).move_to([0, -2.95, 0]).set_z_index(10)
+        pill_bg = m.RoundedRectangle(corner_radius=0.32, width=3.6, height=0.8, fill_color=ORANGE, fill_opacity=1,
+                                     stroke_width=0).move_to([0, -3.8, 0]).set_z_index(10)
+        pill_tx = T("CLÉ EN MAIN", 36, WHITE_, width=3.0).move_to([0, -3.8, 0]).set_z_index(11)
+        pill = m.Group(pill_bg, pill_tx)
+        self.until(C["count0"] - 0.3); self.pop(s1, 0.3)
+        self.until(C["count0"]); self.add(num1); num1.add_updater(up1)
+        self.until(C["count2"] - 0.25); self.pop(s2, 0.25)
+        self.until(C["count2"]); self.add(num2); num2.add_updater(up2)
+        self.until(C["count3"]); self.pop(fc, 0.35)
+        self.until(C["pill"]); self.pop(pill, 0.35)
+        if "split" in B:                      # répartition gros œuvre / finitions (source : lots du devis du site)
+            sp = B["split"]; BWd, BX0d, BYd = 7.0, -3.5, -3.8
+            gw = BWd * sp[0] / 100
+            self.until(C["split"])
+            self.go(m.FadeOut(pill), rt=0.25)
+            bg_ = m.Rectangle(width=gw, height=0.7, fill_color=ORANGE, fill_opacity=1, stroke_width=0).move_to([BX0d + gw / 2, BYd, 0]).set_z_index(10)
+            bf_ = m.Rectangle(width=BWd - gw, height=0.7, fill_color=GOLD, fill_opacity=1, stroke_width=0).move_to([BX0d + gw + (BWd - gw) / 2, BYd, 0]).set_z_index(10)
+            tg_ = T(f"GROS ŒUVRE {sp[0]} %", 28, WHITE_, width=gw - 0.3).move_to([BX0d + gw / 2, BYd, 0]).set_z_index(11)
+            tf_ = T(f"FINITIONS {sp[1]} %", 28, WHITE_, width=BWd - gw - 0.3).move_to([BX0d + gw + (BWd - gw) / 2, BYd, 0]).set_z_index(11)
+            mk_ = m.Rectangle(width=BWd + 0.2, height=0.9, fill_color=GREEN, fill_opacity=1, stroke_width=0).move_to([BX0d + (BWd + 0.2) / 2, BYd, 0]).set_z_index(12)
+            self.add(bg_, bf_, tg_, tf_, mk_)
+            self.go(mk_.animate.shift([BWd + 0.4, 0, 0]), rt=0.9, rate=INOUT)
+        n1 = T("Le coût réel dépend du terrain,", 34, WHITE_, width=6.6)
+        n2 = T("des techniciens et des matériaux", 34, WHITE_, width=6.6)
+        n1.move_to([0, -4.7, 0]).set_z_index(10); n2.move_to([0, -5.12, 0]).set_z_index(10)
+        note = m.Group(n1, n2)
+        self.until(v2["start"]); self.pop(note, 0.4, 0.9)
+        self.until(E["total"])
+
+
 # =============================================================== CTA
 class CtaScene(Base):
     def construct(self):
@@ -291,7 +357,7 @@ class CtaScene(Base):
         BY, BW_, BH_ = 1.4, 7.0, 1.9
         btn = m.RoundedRectangle(corner_radius=0.55, width=BW_, height=BH_, fill_color=ORANGE, fill_opacity=1,
                                  stroke_width=0).move_to([0, BY, 0]).set_z_index(10)
-        t1 = T("ABONNEZ-VOUS", 64, WHITE_, width=5.9).move_to([0, BY, 0]).set_z_index(11)
+        t1 = T(_BTN if _WP else "ABONNEZ-VOUS", 64, WHITE_, width=5.9).move_to([0, BY, 0]).set_z_index(11)
         group = m.Group(btn, t1)
         self.until(C["button"]); self.pop(group, 0.3, 0.5)
         halo = m.RoundedRectangle(corner_radius=0.55, width=BW_, height=BH_, color=ORANGE, stroke_width=5,
@@ -322,8 +388,8 @@ class CtaScene(Base):
         # slogan, affiché seulement (pas prononcé)
         bar = m.Rectangle(width=1.6, height=0.09, fill_color=ORANGE, fill_opacity=1, stroke_width=0)
         bar.move_to([0, -0.3, 0]).set_z_index(10)
-        s1 = T("Tout projet", 64, WHITE_, width=4.6).move_to([0, -1.25, 0]).set_z_index(10)
-        s2 = T("commence par un plan", 64, GOLD, width=6.8).move_to([0, -2.3, 0]).set_z_index(10)
+        s1 = T("Voir plus de modèles" if _WP else "Tout projet", 64, WHITE_, width=(6.8 if _WP else 4.6)).move_to([0, -1.25, 0]).set_z_index(10)
+        s2 = T("sur wooplans.com" if _WP else "commence par un plan", 64, GOLD, width=6.8).move_to([0, -2.3, 0]).set_z_index(10)
         self.until(C["bar"]); self.pop(bar, 0.25, 0.3)
         self.until(C["s1"]); self.pop(s1, 0.33)
         self.until(C["s2"]); self.pop(s2, 0.35)

@@ -1,0 +1,13 @@
+{
+ "band": "Duplex D5-020  ·  5 chambres",
+ "facade_ratio": 0.5625,
+ "walls": [
+  120,
+  946,
+  130,
+  787
+ ],
+ "dim_depth": "13,5 m",
+ "dim_front": "17 m",
+ "dims_first": "front"
+}

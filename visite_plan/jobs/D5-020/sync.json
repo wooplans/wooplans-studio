@@ -1,0 +1,158 @@
+{
+ "total": 100.747,
+ "items": [
+  {
+   "name": "Séjour",
+   "zoom": true,
+   "start": 0.4,
+   "dur": 7.483,
+   "arrive": 6.461,
+   "zout_start": 7.911,
+   "end": 7.883
+  },
+  {
+   "name": "Terrasse 2",
+   "zoom": false,
+   "start": 8.033,
+   "dur": 4.815,
+   "arrive": 10.56,
+   "zout_start": 12.348,
+   "end": 12.848
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": true,
+   "start": 12.998,
+   "dur": 5.864,
+   "arrive": 14.825,
+   "zout_start": 17.662,
+   "end": 18.862
+  },
+  {
+   "name": "Cuisine",
+   "zoom": false,
+   "start": 19.064,
+   "dur": 4.838,
+   "arrive": 20.162,
+   "zout_start": 23.402,
+   "end": 23.902
+  },
+  {
+   "name": "Magasin",
+   "zoom": true,
+   "start": 24.052,
+   "dur": 5.717,
+   "arrive": 25.58,
+   "zout_start": 28.569,
+   "end": 29.769
+  },
+  {
+   "name": "Toilette",
+   "zoom": false,
+   "start": 29.919,
+   "dur": 3.613,
+   "arrive": 32.679,
+   "zout_start": 33.379,
+   "end": 33.532
+  },
+  {
+   "name": "Chambre 4",
+   "zoom": true,
+   "start": 33.682,
+   "dur": 5.586,
+   "arrive": 35.65,
+   "zout_start": 38.068,
+   "end": 39.268
+  },
+  {
+   "name": "Chambre 5",
+   "zoom": true,
+   "start": 39.418,
+   "dur": 5.014,
+   "arrive": 41.361,
+   "zout_start": 43.232,
+   "end": 44.432
+  },
+  {
+   "name": "Escalier",
+   "zoom": false,
+   "start": 44.582,
+   "dur": 3.292,
+   "arrive": 46.56,
+   "zout_start": 47.375,
+   "end": 47.875
+  },
+  {
+   "name": "Salon privé",
+   "zoom": true,
+   "start": 48.025,
+   "dur": 6.775,
+   "arrive": 50.112,
+   "zout_start": 53.6,
+   "end": 54.8
+  },
+  {
+   "name": "Bureau",
+   "zoom": false,
+   "start": 54.95,
+   "dur": 4.274,
+   "arrive": 56.128,
+   "zout_start": 58.724,
+   "end": 59.224
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": true,
+   "start": 59.374,
+   "dur": 5.937,
+   "arrive": 62.285,
+   "zout_start": 64.112,
+   "end": 65.312
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": true,
+   "start": 66.187,
+   "dur": 4.067,
+   "arrive": 66.612,
+   "zout_start": 69.054,
+   "end": 70.254
+  },
+  {
+   "name": "Chambre principale",
+   "zoom": true,
+   "start": 70.404,
+   "dur": 4.148,
+   "arrive": 72.995,
+   "zout_start": 74.445,
+   "end": 74.551
+  },
+  {
+   "name": "Salle de bain",
+   "zoom": false,
+   "start": 75.944,
+   "dur": 3.803,
+   "arrive": 76.945,
+   "zout_start": 79.247,
+   "end": 79.747
+  },
+  {
+   "name": "Dressing",
+   "zoom": true,
+   "start": 80.113,
+   "dur": 2.358,
+   "arrive": 81.047,
+   "zout_start": 82.497,
+   "end": 82.472
+  },
+  {
+   "name": "Final",
+   "start": 83.697,
+   "dur": 16.051,
+   "end": 99.747,
+   "final": true,
+   "dim1": 90.428,
+   "dim2": 92.205
+  }
+ ]
+}

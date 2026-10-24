@@ -10,7 +10,11 @@ import json
 import math
 from pathlib import Path
 
+import sys
 import manimgx as m
+
+sys.path.insert(0, str(Path(__file__).parent))
+import slides
 
 HERE = Path(__file__).parent
 import os
@@ -92,12 +96,17 @@ class VisitePlan(m.Scene):
         def load_plan(level):
             im = m.ImageMobject(PLAN_IMG if level == 0 else str(PLAN_IMG2))
             im.scale_to_fit_height(PLAN_H_PX * U).move_to([*PANEL_CENTER, 0])
-            im.set_z_index(0)
+            im.set_z_index(1)
             return im
         level = [SEG.get("level", 0) if SEG else 0]      # niveau affiché (0 = RDC, 1 = étage)
         plan_img = load_plan(level[0])
         plan = m.Group(plan_img)
         cur_img = [plan_img]
+        BGL = JOB / "bg_logo.png"
+        bg_list = []
+        if BGL.exists():                              # logo WooPlans en filigrane dans la zone blanche
+            bglogo = m.ImageMobject(str(BGL)); bglogo.scale_to_fit_width(5.6).move_to([PANEL_CENTER[0], PANEL_CENTER[1], 0]).set_z_index(0)
+            bg_list = [bglogo]
         plan_rect_pts = [scr(p) for p in rect(0, 0, PLAN_W_PX, PLAN_H_PX)]
 
         # ---- Bandeau du haut : façade fixe, couvre tout débordement du zoom ----
@@ -109,17 +118,20 @@ class VisitePlan(m.Scene):
         if HAS_FACADE:
             facade = m.ImageMobject(FACADE_IMG)
             facade.scale_to_fit_width(FRAME_W).move_to([0, FRAME_H / 2 - FACADE_H / 2, 0]).set_z_index(11)
+            _SL = slides.make(m, JOB, FRAME_W, FRAME_H / 2 - FACADE_H / 2, FACADE_H, t_start=(SEG["t0"] if SEG else 0.0), z0=11)
+            if _SL is not None:
+                facade = _SL
         band_y = FRAME_H / 2 - FACADE_H - BAND_H / 2
         band = m.Rectangle(width=FRAME_W + 0.2, height=BAND_H, fill_color=GREEN,
-                           fill_opacity=1, stroke_width=0).move_to([0, band_y, 0]).set_z_index(11)
+                           fill_opacity=1, stroke_width=0).move_to([0, band_y, 0]).set_z_index(21)
         band_text = m.Text(BAND_TEXT, color=m.WHITE, font="Noto Sans", weight=m.BOLD,
                            font_size=44)
         if band_text.width > FRAME_W - 0.7:          # reste sur une seule ligne
             band_text.scale_to_fit_width(FRAME_W - 0.7)
-        band_text.move_to([0, band_y, 0]).set_z_index(12)
+        band_text.move_to([0, band_y, 0]).set_z_index(22)
         divider = m.Line([-FRAME_W / 2, FRAME_H / 2 - FACADE_H, 0],
                          [FRAME_W / 2, FRAME_H / 2 - FACADE_H, 0],
-                         color=ORANGE, stroke_width=6 if HAS_FACADE else 0).set_z_index(13)
+                         color=ORANGE, stroke_width=6 if HAS_FACADE else 0).set_z_index(23)
 
         # ---- Point pulsant + traînée ------------------------------------------
         core = m.Dot(point=scr(start), radius=0.14, color=GREEN, stroke_color=m.WHITE,
@@ -146,7 +158,7 @@ class VisitePlan(m.Scene):
         core.add_updater(core_up)
         halo.add_updater(halo_up)
 
-        self.add(plan, cover, facade, band, band_text, divider, halo, core)
+        self.add(*bg_list, plan, cover, facade, band, band_text, divider, halo, core)
         t = [SEG["t0"] if SEG else 0.0]          # horloge de la scène (secondes, temps absolu de la vidéo)
         timeline = []
 

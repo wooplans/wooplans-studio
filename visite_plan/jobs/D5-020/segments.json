@@ -1,0 +1,125 @@
+[
+ {
+  "rooms": [
+   "Séjour",
+   "Terrasse 2"
+  ],
+  "t0": 0.0,
+  "t1": 12.848,
+  "start_pos": [
+   640,
+   812
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Salle à manger",
+   "Cuisine"
+  ],
+  "t0": 12.848,
+  "t1": 23.902,
+  "start_pos": [
+   195,
+   590
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Magasin",
+   "Toilette"
+  ],
+  "t0": 23.902,
+  "t1": 33.879,
+  "start_pos": [
+   450,
+   335
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Chambre 4",
+   "Chambre 5"
+  ],
+  "t0": 33.879,
+  "t1": 44.432,
+  "start_pos": [
+   655,
+   540
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Escalier",
+   "Salon privé"
+  ],
+  "t0": 44.432,
+  "t1": 54.8,
+  "start_pos": [
+   765,
+   240
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Bureau",
+   "Chambre 2"
+  ],
+  "t0": 54.8,
+  "t1": 65.312,
+  "start_pos": [
+   510,
+   520
+  ],
+  "final": false,
+  "level": 1
+ },
+ {
+  "rooms": [
+   "Chambre 3",
+   "Chambre principale"
+  ],
+  "t0": 65.312,
+  "t1": 75.645,
+  "start_pos": [
+   230,
+   325
+  ],
+  "final": false,
+  "level": 1
+ },
+ {
+  "rooms": [
+   "Salle de bain",
+   "Dressing"
+  ],
+  "t0": 75.645,
+  "t1": 83.697,
+  "start_pos": [
+   842,
+   605
+  ],
+  "final": false,
+  "level": 1
+ },
+ {
+  "rooms": [],
+  "t0": 83.697,
+  "t1": 100.747,
+  "start_pos": [
+   765,
+   240
+  ],
+  "final": true,
+  "level": 1
+ }
+]
