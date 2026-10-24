@@ -56,26 +56,33 @@ def main() -> int:
     out = Path(sys.argv[2]) if len(sys.argv) > 2 else job / "thumb.jpg"
     title, badge, chip, target = load_job(job)
     from wooplans.guardrails import check_copy
-    problems = check_copy(" ".join([title, badge, chip]), allowed_amounts=[target] if target else [])
+    bump = json.loads((job / "bump.json").read_text(encoding="utf-8")) if (job / "bump.json").exists() else {}
+    allowed = [v for v in [target, *bump.get("range", [])] if v]          # devis = fourchette (source : bump.json)
+    problems = check_copy(" ".join([title, badge, chip]), allowed_amounts=allowed)
     if problems:
         print("Texte de vignette refusé :", problems)
         return 1
     img = Image.new("RGB", (W, H), (255, 255, 255))
     src = job / "facade.png"
+    house_bottom = None
     if src.exists():
+        # la maison entière (sans recadrage) : façade pleine largeur sous le titre, sur fond vert
+        img = Image.new("RGB", (W, H), GREEN)
         bg = Image.open(src).convert("RGB")
-        k = H / bg.height
-        bg = bg.resize((round(bg.width * k), H), Image.LANCZOS)
-        img.paste(bg, ((W - bg.width) // 2, 0))
+        hw = W - 80
+        bg = bg.resize((hw, round(bg.height * hw / bg.width)), Image.LANCZOS)
+        img.paste(bg, (40, 520))
+        house_bottom = 520 + bg.height
     else:
         bg = Image.open(job / "plan.png").convert("RGB")
         k = min(W * 0.96 / bg.width, 1050 / bg.height)
         bg = bg.resize((round(bg.width * k), round(bg.height * k)), Image.LANCZOS)
         img.paste(bg, ((W - bg.width) // 2, 520))
-    # dégradés pour la lisibilité
+    # dégradés pour la lisibilité (haut et bas)
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
-    for y in range(760):
-        od.line([(0, y), (W, y)], fill=(8, 40, 40, int(215 * (1 - y / 760))))
+    if house_bottom is None:
+        for y in range(760):
+            od.line([(0, y), (W, y)], fill=(8, 40, 40, int(215 * (1 - y / 760))))
     for y in range(H - 640, H):
         od.line([(0, y), (W, y)], fill=(8, 40, 40, int(225 * ((y - (H - 640)) / 640))))
     img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
@@ -85,6 +92,8 @@ def main() -> int:
         f = fit_font(d, line, 92, W - 140)
         d.text((W // 2, y), line, font=f, fill="white", anchor="ma", stroke_width=7, stroke_fill=GREEN)
         y += 112
+    if house_bottom is not None:
+        y = house_bottom + 20                                # sous la maison
     if badge:                                                # prix du devis (clé en main)
         f = fit_font(d, badge, 96, W - 200)
         tw = d.textlength(badge, font=f); bx0, by0 = (W - tw) / 2 - 44, y + 24
@@ -93,7 +102,8 @@ def main() -> int:
         y = by0 + 150
     if chip:                                                 # sous le centre, au-dessus de la bande du bas
         f = fit_font(d, chip.upper(), 52, W - 160)
-        d.text((W // 2, 1610), chip.upper(), font=f, fill=(231, 195, 108), anchor="ma", stroke_width=4, stroke_fill=GREEN)
+        chip_y = y + 40 if house_bottom is not None else 1610        # juste sous le prix (visite avec 3D)
+        d.text((W // 2, chip_y), chip.upper(), font=f, fill=(231, 195, 108), anchor="ma", stroke_width=4, stroke_fill=GREEN)
     d.rectangle([0, 1730, W, H], fill=GREEN)                 # bande wooplans.com
     d.rectangle([0, 1730, W, 1738], fill=ORANGE)
     logo = ROOT / "assets" / "brand" / "logo_white.png"
