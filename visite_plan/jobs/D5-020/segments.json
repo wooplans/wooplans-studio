@@ -15,14 +15,26 @@
  },
  {
   "rooms": [
-   "Salle à manger",
-   "Cuisine"
+   "Salle à manger"
   ],
   "t0": 12.848,
-  "t1": 23.902,
+  "t1": 18.862,
   "start_pos": [
    195,
    590
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Cuisine"
+  ],
+  "t0": 18.862,
+  "t1": 23.902,
+  "start_pos": [
+   235,
+   340
   ],
   "final": false,
   "level": 0
