@@ -1,0 +1,80 @@
+{
+ "band": "Villa V4-002  ·  4 chambres",
+ "tag": "VILLA V4-002",
+ "chip": "4 CHAMBRES · PLAIN-PIED",
+ "target": 31170020,
+ "gros": 14026510,
+ "fin": 17143510,
+ "start_pos": [
+  679.5,
+  903.2
+ ],
+ "body_cut": 0.0,
+ "body_end": 84.245,
+ "hook": {
+  "items": [
+   {
+    "start": 0.35,
+    "dur": 3.105
+   },
+   {
+    "start": 3.905,
+    "dur": 1.921
+   }
+  ],
+  "total": 6.426,
+  "cues": {
+   "facade": 0.0,
+   "tag": 0.45,
+   "w1": 0.8,
+   "w2": 1.2,
+   "w3": 1.99,
+   "chip": 2.7,
+   "pulse": 3.1,
+   "trans": 3.805,
+   "dot": 4.655
+  }
+ },
+ "estim": {
+  "items": [
+   {
+    "start": 0.6,
+    "dur": 10.452
+   },
+   {
+    "start": 11.302,
+    "dur": 4.043
+   }
+  ],
+  "total": 15.465,
+  "cues": {
+   "sheet": 0.0,
+   "lab": 0.7,
+   "count0": 2.0,
+   "count1": 5.0,
+   "pill": 5.7,
+   "bar": 6.7,
+   "impact": 5.15,
+   "note": 11.302
+  }
+ },
+ "cta": {
+  "items": [
+   {
+    "start": 0.2,
+    "dur": 2.137
+   }
+  ],
+  "total": 4.05,
+  "cues": {
+   "logo": 0.0,
+   "button": 0.1,
+   "cursor": 0.75,
+   "tap": 1.3,
+   "bar": 1.75,
+   "s1": 1.95,
+   "s2": 2.3,
+   "url": 2.75
+  }
+ }
+}

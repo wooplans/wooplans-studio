@@ -1,0 +1,4 @@
+Musiques Mixkit (licence "Mixkit Stock Music Free License", https://mixkit.co/license/#musicFree)
+562 Wyungamesh - Eugenio Mininni (5:00) | 22 Piano Reflections - Ahjay Stelino (3:19) | 697 Pop Two - Grigoriy Nuzhny (2:20)
+Telechargees le 14 oct. 2026 depuis assets.mixkit.co/music/<id>/<id>.mp3
+Fichiers *_demo / .m4a : voix du corps de D5-016 (8,5 s a 63 s) + musique en fond avec baisse automatique sous la voix.

@@ -1,0 +1,77 @@
+[
+ {
+  "rooms": [
+   "Terrasse 1",
+   "Séjour"
+  ],
+  "t0": 0.0,
+  "t1": 17.502,
+  "start_pos": [
+   530,
+   932
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Cuisine",
+   "Terrasse 2"
+  ],
+  "t0": 17.502,
+  "t1": 30.062,
+  "start_pos": [
+   650,
+   700
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Couloir",
+   "Chambre 3"
+  ],
+  "t0": 30.062,
+  "t1": 37.978,
+  "start_pos": [
+   785,
+   132
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Chambre 2",
+   "SDB 2"
+  ],
+  "t0": 37.978,
+  "t1": 45.606,
+  "start_pos": [
+   460,
+   260
+  ],
+  "final": false
+ },
+ {
+  "rooms": [
+   "Chambre P.",
+   "SDB 1"
+  ],
+  "t0": 45.606,
+  "t1": 52.99,
+  "start_pos": [
+   235,
+   432
+  ],
+  "final": false
+ },
+ {
+  "rooms": [],
+  "t0": 52.99,
+  "t1": 64.632,
+  "start_pos": [
+   225,
+   560
+  ],
+  "final": true
+ }
+]

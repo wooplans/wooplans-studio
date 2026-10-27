@@ -1,0 +1,85 @@
+[
+ {
+  "name": "Porche d'entrée",
+  "zoom": false,
+  "prefix": "On arrive par le porche d'entrée,",
+  "spoken": "On arrive par le porche d'entrée, avec son coin d'attente.",
+  "sub": "On arrive par le porche d'entrée, avec son coin d'attente."
+ },
+ {
+  "name": "Entrée",
+  "zoom": false,
+  "prefix": "On passe par l'entrée,",
+  "spoken": "On passe par l'entrée, qui ouvre sur le séjour.",
+  "sub": "On passe par l'entrée, qui ouvre sur le séjour."
+ },
+ {
+  "name": "Séjour",
+  "zoom": true,
+  "prefix": "Voici le séjour,",
+  "spoken": "Voici le séjour, avec ses grands canapés et un coin télé.",
+  "sub": "Voici le séjour, avec ses grands canapés et un coin télé."
+ },
+ {
+  "name": "Hall",
+  "zoom": false,
+  "prefix": "Derrière, le hall,",
+  "spoken": "Derrière, le hall, qui dessert toute la maison.",
+  "sub": "Derrière, le hall, qui dessert toute la maison."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Au fond, la salle à manger,",
+  "spoken": "Au fond, la salle à manger, entre la cuisine et les chambres.",
+  "sub": "Au fond, la salle à manger, entre la cuisine et les chambres."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "La cuisine,",
+  "spoken": "La cuisine, avec un îlot, un cellier, une buanderie et un porche arrière.",
+  "sub": "La cuisine, avec un îlot, un cellier, une buanderie et un porche arrière."
+ },
+ {
+  "name": "Bureau",
+  "zoom": false,
+  "prefix": "Près de l'entrée, le bureau,",
+  "spoken": "Près de l'entrée, le bureau, au calme.",
+  "sub": "Près de l'entrée, le bureau, au calme."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": true,
+  "prefix": "Côté nuit, la chambre deux,",
+  "spoken": "Côté nuit, la chambre deux, avec un coin salon.",
+  "sub": "Côté nuit, la chambre deux, avec un coin salon."
+ },
+ {
+  "name": "Chambre 4",
+  "zoom": false,
+  "prefix": "À côté, la chambre quatre,",
+  "spoken": "À côté, la chambre quatre, avec sa salle d'eau.",
+  "sub": "À côté, la chambre quatre, avec sa salle d'eau."
+ },
+ {
+  "name": "Chambre 3",
+  "zoom": true,
+  "prefix": "En face, la chambre trois,",
+  "spoken": "En face, la chambre trois, avec deux lits.",
+  "sub": "En face, la chambre trois, avec deux lits."
+ },
+ {
+  "name": "Chambre parentale",
+  "zoom": true,
+  "prefix": "Enfin, la chambre parentale,",
+  "spoken": "Enfin, la chambre parentale, avec son dressing, sa salle de bain et sa terrasse.",
+  "sub": "Enfin, la chambre parentale, avec son dressing, sa salle de bain et sa terrasse."
+ },
+ {
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
+ }
+]

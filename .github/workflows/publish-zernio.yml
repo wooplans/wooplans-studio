@@ -1,0 +1,48 @@
+name: publish-zernio
+# Programme une vidéo de visite sur les pages WooPlans (Facebook Reel + YouTube Shorts via Zernio ; TikTok si @wooplans est connecté à Zernio).
+# Déclenché par l'ajout / la modification de visite_plan/jobs/<job>/PUBLISH.json — à pousser SEULEMENT après l'accord explicite de Tao.
+# Aucun PC nécessaire : la vidéo (visite_plan/out/<job>.mp4) vient du workflow visite-render ; la publication est programmée chez Zernio.
+# Secrets requis : ZERNIO_API_KEY, ZERNIO_PROFILE_ID (voir SECRETS.md). Contrôle : workflow « check-setup ».
+on:
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["visite_plan/jobs/*/PUBLISH.json"]
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Dossier du job déjà rendu (visite_plan/jobs/<job>, avec PUBLISH.json)"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: publish-zernio-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_PROFILE_ID: ${{ secrets.ZERNIO_PROFILE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r requirements.txt pillow
+      - name: Secrets présents ?
+        run: |
+          [ -n "$ZERNIO_API_KEY" ] || { echo "::error::Secret ZERNIO_API_KEY absent (Settings > Secrets and variables > Actions, voir SECRETS.md)"; exit 1; }
+          [ -n "$ZERNIO_PROFILE_ID" ] || { echo "::error::Secret ZERNIO_PROFILE_ID absent"; exit 1; }
+      - name: Programmation
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          if [ -n "$JOB" ]; then JOB="visite_plan/jobs/$JOB"; else JOB=$(git diff --name-only HEAD^1 HEAD | grep -E '^visite_plan/jobs/[^/]+/PUBLISH.json$' | head -1 | xargs dirname); fi
+          python tools/publish_zernio.py "$JOB"
+      - name: Registre
+        run: |
+          git config user.name "wooplans-publish"; git config user.email "publish@users.noreply.github.com"
+          git add registry/videos.json
+          git commit -m "registre: vidéo programmée" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

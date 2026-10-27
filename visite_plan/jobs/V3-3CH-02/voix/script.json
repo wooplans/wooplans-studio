@@ -1,0 +1,78 @@
+[
+ {
+  "name": "Porche d'entrée",
+  "zoom": false,
+  "prefix": "On arrive par le porche d'entrée,",
+  "spoken": "On arrive par le porche d'entrée, sur le côté du séjour.",
+  "sub": "On arrive par le porche d'entrée, sur le côté du séjour."
+ },
+ {
+  "name": "Séjour",
+  "zoom": true,
+  "prefix": "On entre dans un grand séjour,",
+  "spoken": "On entre dans un grand séjour, avec trois canapés et un meuble télé.",
+  "sub": "On entre dans un grand séjour, avec trois canapés et un meuble télé."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Juste derrière, la salle à manger,",
+  "spoken": "Juste derrière, la salle à manger, avec une grande table.",
+  "sub": "Juste derrière, la salle à manger, avec une grande table."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "À côté, la cuisine,",
+  "spoken": "À côté, la cuisine, ouverte sur la salle à manger.",
+  "sub": "À côté, la cuisine, ouverte sur la salle à manger."
+ },
+ {
+  "name": "Buanderie",
+  "zoom": false,
+  "prefix": "Au fond, la buanderie,",
+  "spoken": "Au fond, la buanderie, tout près de la cuisine.",
+  "sub": "Au fond, la buanderie, tout près de la cuisine."
+ },
+ {
+  "name": "Garage",
+  "zoom": true,
+  "prefix": "Puis le garage,",
+  "spoken": "Puis le garage, assez grand pour deux voitures.",
+  "sub": "Puis le garage, assez grand pour deux voitures."
+ },
+ {
+  "name": "Chambre 3",
+  "zoom": false,
+  "prefix": "Côté nuit, la chambre trois,",
+  "spoken": "Côté nuit, la chambre trois, avec son placard.",
+  "sub": "Côté nuit, la chambre trois, avec son placard."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": true,
+  "prefix": "En face, la chambre deux,",
+  "spoken": "En face, la chambre deux, avec son placard aussi.",
+  "sub": "En face, la chambre deux, avec son placard aussi."
+ },
+ {
+  "name": "SDB",
+  "zoom": false,
+  "prefix": "Puis les salles de bain,",
+  "spoken": "Puis les salles de bain, une pour chaque chambre.",
+  "sub": "Puis les salles de bain, une pour chaque chambre."
+ },
+ {
+  "name": "Chambre parentale",
+  "zoom": true,
+  "prefix": "Enfin, la chambre parentale,",
+  "spoken": "Enfin, la chambre parentale, avec sa terrasse privée.",
+  "sub": "Enfin, la chambre parentale, avec sa terrasse privée."
+ },
+ {
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
+ }
+]

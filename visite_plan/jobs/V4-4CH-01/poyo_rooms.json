@@ -1,0 +1,22 @@
+{"crop": [10, 40, 1275, 1215], "start": [700, 1150],
+ "order": ["Porche d'entrée", "Entrée", "Séjour", "Hall", "Salle à manger", "Cuisine", "Bureau", "Chambre 2", "Chambre 4", "Chambre 3", "Chambre parentale"],
+ "free": [[[550, 1060], [880, 1060], [880, 1200], [550, 1200]], [[1000, 540], [1110, 540], [1110, 650], [1000, 650]], [[180, 450], [350, 450], [350, 660], [180, 660]]],
+ "rooms": [
+  {"name": "Porche d'entrée", "label": "Porche d'entrée", "rect": [500, 935, 935, 1060], "stop": [560, 980], "label_xy": [660, 1010], "size": 21},
+  {"name": "Entrée", "label": "Entrée", "rect": [510, 560, 620, 930], "stop": [565, 850], "label_xy": [565, 700], "size": 21},
+  {"name": "Séjour", "label": "Séjour", "rect": [620, 560, 935, 925], "stop": [650, 640], "label_xy": [780, 675]},
+  {"name": "Hall", "label": "Hall", "rect": [250, 455, 1100, 545], "stop": [430, 500], "label_xy": [430, 500]},
+  {"name": "Salle à manger", "label": "Salle à manger", "rect": [545, 230, 735, 450], "stop": [600, 430], "label_xy": [640, 250], "size": 20},
+  {"name": "Cuisine", "label": "Cuisine", "rect": [265, 195, 530, 450], "stop": [470, 380], "label_xy": [330, 290]},
+  {"name": "Bureau", "label": "Bureau", "rect": [350, 550, 500, 800], "stop": [380, 620], "label_xy": [425, 640], "size": 21},
+  {"name": "Chambre 2", "label": "Chambre 2", "rect": [745, 100, 955, 460], "stop": [880, 420], "label_xy": [850, 375]},
+  {"name": "Chambre 4", "label": "Chambre 4", "rect": [965, 180, 1200, 460], "stop": [1010, 420], "label_xy": [1100, 360]},
+  {"name": "Chambre 3", "label": "Chambre 3", "rect": [940, 650, 1200, 920], "stop": [990, 700], "label_xy": [1060, 890]},
+  {"name": "Chambre parentale", "label": "Chambre parentale", "rect": [55, 610, 345, 885], "stop": [280, 660], "label_xy": [165, 630], "size": 21},
+  {"name": "Buanderie", "label": "Buanderie", "rect": [60, 100, 250, 180], "label_xy": [155, 140], "size": 18},
+  {"name": "Cellier", "label": "Cellier", "rect": [60, 200, 250, 300], "label_xy": [155, 280], "size": 18},
+  {"name": "SDB", "label": "SDB", "rect": [60, 320, 250, 450], "label_xy": [180, 420], "size": 18},
+  {"name": "Dressing", "label": "Dressing", "rect": [30, 460, 190, 600], "label_xy": [105, 530], "size": 17},
+  {"name": "Terrasse", "label": "Terrasse", "rect": [60, 900, 340, 990], "label_xy": [200, 945], "size": 18},
+  {"name": "Porche arrière", "label": "Porche arrière", "rect": [270, 60, 540, 180], "label_xy": [400, 160], "size": 18}
+ ]}

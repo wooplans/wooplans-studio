@@ -1,0 +1,70 @@
+name: image-batch
+# Posts images Facebook de la semaine (page WooPlans, via Zernio). Aucun PC nécessaire.
+#  1) Pousser batches/images/<lot>/PLAN   → prépare le lot : batch.json, batch.md (légendes), apercu-N.jpg (planches). NE PROGRAMME RIEN.
+#  2) Pousser batches/images/<lot>/APPROVED → programme les posts non « skip » sur Zernio.
+#     À pousser SEULEMENT après l'accord explicite de Tao (règle du projet).
+# Secrets pour l'étape 2 : ZERNIO_API_KEY, ZERNIO_PROFILE_ID (voir SECRETS.md). Contrôle : workflow « check-setup ».
+on:
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["batches/images/*/PLAN", "batches/images/*/APPROVED"]
+  workflow_dispatch:
+    inputs:
+      lot:
+        description: "Dossier du lot (batches/images/<lot>)"
+        required: true
+      action:
+        description: "plan ou schedule (schedule = programmer, seulement après accord de Tao)"
+        required: true
+        default: plan
+permissions:
+  contents: write
+concurrency:
+  group: image-batch-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  batch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_PROFILE_ID: ${{ secrets.ZERNIO_PROFILE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r requirements.txt pillow
+      - name: Quel lot, quelle action ?
+        id: what
+        run: |
+          if [ -n "${{ github.event.inputs.lot }}" ]; then
+            LOT="${{ github.event.inputs.lot }}"; ACTION="${{ github.event.inputs.action }}"
+          else
+            CHANGED=$(git diff --name-only HEAD^1 HEAD | grep -E '^batches/images/[^/]+/(PLAN|APPROVED)$' || true)
+            if echo "$CHANGED" | grep -q '/APPROVED$'; then F=$(echo "$CHANGED" | grep '/APPROVED$' | head -1); ACTION=schedule
+            else F=$(echo "$CHANGED" | head -1); ACTION=plan; fi
+            LOT=$(dirname "$F")
+          fi
+          [ -d "$LOT" ] || { echo "::error::Lot introuvable : $LOT"; exit 1; }
+          echo "lot=$LOT" >> "$GITHUB_OUTPUT"; echo "action=$ACTION" >> "$GITHUB_OUTPUT"
+          echo "Lot $LOT · action $ACTION"
+      - name: Secrets présents (programmation seulement)
+        if: steps.what.outputs.action == 'schedule'
+        run: |
+          [ -n "$ZERNIO_API_KEY" ] || { echo "::error::Secret ZERNIO_API_KEY absent (voir SECRETS.md)"; exit 1; }
+          [ -n "$ZERNIO_PROFILE_ID" ] || { echo "::error::Secret ZERNIO_PROFILE_ID absent"; exit 1; }
+      - name: Préparer le lot (aperçu, rien n'est programmé)
+        if: steps.what.outputs.action == 'plan'
+        run: python tools/image_batch.py plan "${{ steps.what.outputs.lot }}"
+      - name: Programmer le lot (accord de Tao donné)
+        if: steps.what.outputs.action == 'schedule'
+        run: python tools/image_batch.py schedule "${{ steps.what.outputs.lot }}"
+      - name: Enregistrer le résultat
+        if: always()
+        run: |
+          git config user.name "wooplans-images"; git config user.email "images@users.noreply.github.com"
+          git add "${{ steps.what.outputs.lot }}" registry/videos.json
+          git commit -m "images: ${{ steps.what.outputs.action }} ${{ steps.what.outputs.lot }}" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

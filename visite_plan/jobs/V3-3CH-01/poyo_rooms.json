@@ -1,0 +1,16 @@
+{"crop": [20, 30, 1255, 1190], "start": [735, 1150],
+ "order": ["Porche", "Séjour", "Salle à manger", "Cuisine", "Buanderie", "Chambre 2", "WC", "Chambre 1", "Chambre principale"],
+ "free": [[[360, 400], [1000, 400], [1000, 530], [360, 530]], [[880, 230], [1000, 230], [1000, 660], [880, 660]]],
+ "rooms": [
+  {"name": "Porche", "label": "Porche", "rect": [535, 960, 940, 1170], "stop": [735, 1060], "label_xy": [737, 1110]},
+  {"name": "Séjour", "label": "Séjour", "rect": [455, 540, 880, 960], "stop": [560, 700], "label_xy": [645, 690]},
+  {"name": "Salle à manger", "label": "Salle à manger", "rect": [880, 650, 1145, 935], "stop": [920, 770], "label_xy": [1010, 905], "size": 21},
+  {"name": "Cuisine", "label": "Cuisine", "rect": [1000, 385, 1215, 640], "stop": [1080, 500], "label_xy": [1090, 525]},
+  {"name": "Buanderie", "label": "Buanderie", "rect": [995, 250, 1215, 365], "stop": [1060, 330], "label_xy": [1105, 235], "size": 20},
+  {"name": "Chambre 2", "label": "Chambre 2", "rect": [570, 75, 880, 415], "stop": [720, 330], "label_xy": [770, 320]},
+  {"name": "WC", "label": "WC", "rect": [445, 75, 555, 295], "stop": [500, 250], "label_xy": [500, 60], "size": 20},
+  {"name": "Chambre 1", "label": "Chambre 1", "rect": [130, 75, 430, 395], "stop": [300, 340], "label_xy": [270, 330]},
+  {"name": "Chambre principale", "label": "Chambre principale", "poly": [[95, 710], [360, 710], [360, 560], [430, 560], [430, 1055], [95, 1055]], "stop": [330, 780], "label_xy": [265, 965], "size": 22},
+  {"name": "Salle de bain", "label": "Salle de bain", "rect": [60, 425, 345, 560], "label_xy": [200, 410], "size": 20},
+  {"name": "Dressing", "label": "Dressing", "rect": [60, 580, 345, 700], "label_xy": [200, 640], "size": 18}
+ ]}

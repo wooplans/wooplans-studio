@@ -1,0 +1,18 @@
+{"crop": [40, 45, 1200, 1235], "start": [780, 1195],
+ "order": ["Porche d'entrée", "Séjour", "Salle à manger", "Cuisine", "Buanderie", "Garage", "Chambre 3", "Chambre 2", "SDB", "Chambre parentale"],
+ "free": [[[765, 220], [865, 220], [865, 760], [765, 760]], [[270, 640], [450, 640], [450, 740], [270, 740]], [[500, 60], [555, 60], [555, 200], [500, 200]]],
+ "rooms": [
+  {"name": "Porche d'entrée", "label": "Porche d'entrée", "poly": [[780, 1010], [890, 1010], [890, 1110], [960, 1110], [960, 1220], [600, 1220], [600, 1110], [780, 1110]], "stop": [835, 1060], "label_xy": [700, 1165], "size": 21},
+  {"name": "Séjour", "label": "Séjour", "rect": [450, 645, 770, 1105], "stop": [520, 700], "label_xy": [612, 990]},
+  {"name": "Salle à manger", "label": "Salle à manger", "rect": [450, 340, 765, 630], "stop": [520, 580], "label_xy": [650, 360], "size": 22},
+  {"name": "Cuisine", "label": "Cuisine", "rect": [300, 185, 555, 430], "stop": [450, 280], "label_xy": [440, 330]},
+  {"name": "Buanderie", "label": "Buanderie", "rect": [350, 70, 500, 165], "stop": [440, 140], "label_xy": [425, 95], "size": 19},
+  {"name": "Garage", "label": "Garage", "rect": [65, 740, 435, 1105], "stop": [330, 790], "label_xy": [250, 1080]},
+  {"name": "Chambre 3", "label": "Chambre 3", "rect": [565, 70, 775, 330], "stop": [720, 280], "label_xy": [650, 270]},
+  {"name": "Chambre 2", "label": "Chambre 2", "rect": [825, 70, 1085, 330], "stop": [880, 280], "label_xy": [960, 270]},
+  {"name": "SDB", "label": "SDB", "rect": [865, 345, 1040, 630], "stop": [890, 450], "label_xy": [950, 480], "size": 20},
+  {"name": "Chambre parentale", "label": "Chambre parentale", "rect": [780, 740, 1080, 1000], "stop": [820, 790], "label_xy": [960, 805], "size": 21},
+  {"name": "Porche arrière", "label": "Porche\narrière", "rect": [345, 430, 440, 625], "label_xy": [393, 500], "size": 17},
+  {"name": "WC garage", "label": "WC", "rect": [60, 645, 260, 720], "label_xy": [140, 690], "size": 18},
+  {"name": "Terrasse", "label": "Terrasse", "rect": [1090, 730, 1190, 1000], "label_xy": [1140, 880], "size": 16}
+ ]}
