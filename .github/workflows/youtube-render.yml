@@ -1,0 +1,97 @@
+name: youtube-render
+# Rendu COMPLET d'une vidéo YouTube « Présentation de plan » (16:9, ~8 min) sur GitHub, sans le PC de Tao :
+# les images sont rendues en parallèle (shards de chunks), puis assemblage (jingle, segment catalogue, voix, musique, effets) + planche-contact.
+# Lancer : Actions > youtube-render > Run workflow (job = dossier youtube_plan/jobs/<job>), ou pousser youtube_plan/jobs/<job>/RENDER.
+# Résultat : artefact « youtube-<job> » (mp4 + planche-contact), conservé 14 jours. AUCUNE publication ici (publication = après l'accord de Tao).
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Dossier du job (youtube_plan/jobs/<job>)"
+        required: true
+        default: "D4-004"
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["youtube_plan/jobs/*/RENDER"]
+permissions:
+  contents: read
+concurrency:
+  group: youtube-render-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  SHARDS: 10
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      job: ${{ steps.j.outputs.job }}
+      shards: ${{ steps.j.outputs.shards }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - id: j
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD^1 HEAD | grep -E '^youtube_plan/jobs/[^/]+/RENDER$' | head -1 | cut -d/ -f3); fi
+          if [ -z "$JOB" ]; then echo "job=" >> "$GITHUB_OUTPUT"; echo 'shards=[]' >> "$GITHUB_OUTPUT"; exit 0; fi
+          [ -d "youtube_plan/jobs/$JOB" ] || { echo "job introuvable : $JOB"; exit 1; }
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"
+          echo "shards=$(python3 -c "import json,os;n=int(os.environ['SHARDS']);print(json.dumps(list(range(n))))")" >> "$GITHUB_OUTPUT"
+  render:
+    needs: plan
+    if: needs.plan.outputs.job != ''
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dépendances
+        run: |
+          sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q pillow numpy
+      - name: Rendu des chunks (shard ${{ matrix.shard }})
+        env:
+          YT_JOB: ${{ github.workspace }}/youtube_plan/jobs/${{ needs.plan.outputs.job }}
+          YT_OUT: ${{ github.workspace }}/chunks
+        run: |
+          mkdir -p chunks
+          python3 youtube_plan/engine/drive.py run --shard ${{ matrix.shard }} --of ${{ env.SHARDS }} --workers $(nproc)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunks-${{ matrix.shard }}
+          path: chunks/*.mp4
+          retention-days: 2
+  assemble:
+    needs: [plan, render]
+    if: needs.plan.outputs.job != ''
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunks-*
+          path: chunks
+          merge-multiple: true
+      - name: Dépendances
+        run: |
+          sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q pillow numpy
+      - name: Audio (voix, musique, effets) + assemblage + planche-contact
+        env:
+          YT_JOB: ${{ github.workspace }}/youtube_plan/jobs/${{ needs.plan.outputs.job }}
+          YT_OUT: ${{ github.workspace }}/chunks
+        run: |
+          mkdir -p out
+          python3 youtube_plan/engine/mix.py
+          python3 youtube_plan/engine/assemble.py "out/${{ needs.plan.outputs.job }}_visite_youtube.mp4"
+          ffprobe -v error -show_entries format=duration:stream=codec_type,width,height -of compact "out/${{ needs.plan.outputs.job }}_visite_youtube.mp4"
+          ffmpeg -i "out/${{ needs.plan.outputs.job }}_visite_youtube.mp4" -af ebur128 -f null - 2>&1 | grep -A2 "Integrated loudness" | head -3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: youtube-${{ needs.plan.outputs.job }}
+          path: out/*
+          retention-days: 14
