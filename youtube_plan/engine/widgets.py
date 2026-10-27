@@ -1,5 +1,5 @@
 from common import *
-FA = '/usr/share/fonts/truetype/font-awesome/fontawesome-webfont.ttf'
+FA = A + 'fontawesome-webfont.ttf'
 @lru_cache(None)
 def fa(sz): return ImageFont.truetype(FA, sz)
 
