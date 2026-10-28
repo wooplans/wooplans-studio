@@ -3,7 +3,7 @@
 Sélection (`resolve`) : mots séparés par des espaces ou des virgules, sans tenir compte des majuscules :
   « D4-004 V3-022 »  codes précis
   « villa », « duplex »  toute une catégorie (pluriel accepté)
-  « V4 », « D5 »  type : catégorie + nombre de chambres (V4 = villas 4 chambres)
+  « V4 », « D5 »  famille de codes (D4 = tous les D4-xxx)
   « tous »  tout le catalogue publié
   « nouveaux »  (en plus) : seulement les modèles qui n'ont encore aucun short
 Modèles : catalogue publié du site (list_plans) si le jeton est disponible, sinon data/plans.json.
@@ -72,9 +72,8 @@ def resolve(selection: str, plans: Optional[List[dict]] = None) -> List[str]:
             found = [p["code"] for p in plans if p["category"] == cat]
         elif CODE.match(uw):
             found = [uw] if any(p["code"] == uw for p in plans) else []
-        elif re.match(r"^[VD]\d+$", uw):
-            cat = "villa" if uw[0] == "V" else "duplex"
-            found = [p["code"] for p in plans if p["category"] == cat and p["bedrooms"] == int(uw[1:])]
+        elif re.match(r"^[VD]\d+$", uw):                    # famille de codes : D4 = D4-001, D4-002...
+            found = [p["code"] for p in plans if p["code"].startswith(uw + "-")]
         else:
             found = []
         if not found:

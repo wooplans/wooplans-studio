@@ -1,3 +1,3 @@
 # Sélection du prochain lot de shorts (codes, villa / duplex, V4 / D5, tous ; « nouveaux » = sans short ; « inventaire »)
-# 2026-10-28T14:06:51Z
-inventaire
+# vague du 2026-10-28T14:36:14Z : tous les D4 (demande de Tao)
+D4
