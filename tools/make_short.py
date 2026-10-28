@@ -5,12 +5,15 @@
 Inspiré des shorts « Small House Design » : la maison entière d'abord, puis zoom et travelling, mouvement continu, coupes sur
 le temps de la musique, texte réduit au minimum. Job : shorts/jobs/<id>/short.json
   {"code": "D4-004", "images": ["youtube_plan/jobs/D4-004/assets/R0.png", ...],
-   "music": "assets/music/Africa_Arulo_mixkit-218.mp3", "beats": 8,
+   "music": "mixkit:218", "beats": 7,
    "thumbnail": {"title": "...", "chip": "..."}}
+« music » (facultatif) : « mixkit:<id> » ou chemin ; absent = rotation dans la base Mixkit (wooplans/music.py).
+« beats » (facultatif) : temps par rendu ; absent = le plus proche de 3,4 s. Journal : shorts/out/<id>.json.
 Rendus d'origine (1920x1080 ou plus, sans filigrane du site). Textes : data/plans.json, passés par check_copy.
 Marque : 2 logos semi-transparents qui se promènent du début à la fin, fin « wooplans.com ».
 """
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -20,6 +23,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from wooplans import music as music_lib  # noqa: E402
 from wooplans.guardrails import check_copy  # noqa: E402
 
 W, H, FPS = 1080, 1920, 30
@@ -28,6 +32,7 @@ BRAND = ROOT / "assets" / "brand"
 GREEN, ORANGE, GOLD = (15, 91, 89), (240, 138, 46), (231, 195, 108)
 XFADE = 0.4                        # fondu entre deux rendus (s)
 END = 2.6                          # carte de fin (s)
+SEG = 3.4                          # durée visée d'un rendu (s), arrondie au nombre de temps le plus proche
 
 
 def ff(*args):
@@ -141,10 +146,12 @@ def main() -> int:
     if problems:
         print("Texte refusé :", problems)
         return 1
-    tracks = json.loads((ROOT / "assets" / "music" / "tracks.json").read_text(encoding="utf-8"))
-    music = ROOT / cfg["music"]
-    tr = tracks[music.name]
-    seg = tr["beat_interval"] * cfg.get("beats", 8)          # chaque rendu dure N temps
+    # musique : imposée par le lot (SHORT_MUSIC, voir short-render.yml) ou par le job, sinon rotation dans la base Mixkit
+    spec = os.environ.get("SHORT_MUSIC") or cfg.get("music") or music_lib.pick(job.name)
+    music = music_lib.resolve(spec)
+    tr = music_lib.tracks()[music.name]
+    beats = cfg.get("beats") or max(4, round(SEG / tr["beat_interval"]))
+    seg = tr["beat_interval"] * beats                       # chaque rendu dure un nombre entier de temps
     images = [ROOT / i for i in cfg["images"]]
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
@@ -187,7 +194,9 @@ def main() -> int:
            "-crf", "18", "-pix_fmt", "yuv420p", "-r", FPS, "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
            "-movflags", "+faststart", "-metadata", "comment=© WooPlans - wooplans.com", "-metadata",
            "copyright=© WooPlans", out)
-    print(f"short : {out} ({total:.1f} s)")
+    log = {**music_lib.describe(spec), "code": cfg["code"], "duration": round(total, 1)}
+    out.with_suffix(".json").write_text(json.dumps(log, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"short : {out} ({total:.1f} s) ; musique : {log['title']} - {log['artist']}")
     return 0
 
 

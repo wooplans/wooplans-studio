@@ -26,3 +26,6 @@ media/
 !assets/**
 !batches/images/**
 !youtube_plan/jobs/**
+
+# musiques Mixkit téléchargées à la demande (wooplans/music.py)
+assets/music/mixkit-*.mp3

@@ -1,0 +1,11460 @@
+{
+ "license": "Mixkit Stock Music Free License (https://mixkit.co/license/#musicFree)",
+ "source": "https://mixkit.co/free-stock-music/",
+ "tracks": [
+  {
+   "id": 1,
+   "title": "Lullaby",
+   "artist": "Ahjay Stelino",
+   "duration": 157,
+   "tags": [
+    "Children",
+    "Relaxed",
+    "Warm",
+    "Drums",
+    "Keyboard",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 2,
+   "title": "Comical",
+   "artist": "Ahjay Stelino",
+   "duration": 114,
+   "tags": [
+    "Children",
+    "Humorous",
+    "Playful",
+    "Drums",
+    "Mallets",
+    "Comedy"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 3,
+   "title": "Dance with Me",
+   "artist": "Ahjay Stelino",
+   "duration": 142,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Happy",
+    "Friendly",
+    "Acoustic Guitar",
+    "Drums",
+    "Melodic",
+    "Motivational"
+   ],
+   "sources": [
+    "dance",
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 5,
+   "title": "Feeling Happy",
+   "artist": "Ahjay Stelino",
+   "duration": 148,
+   "tags": [
+    "Children",
+    "Happy",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Comedy"
+   ],
+   "sources": [
+    "pop",
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 7,
+   "title": "Fun Times",
+   "artist": "Ahjay Stelino",
+   "duration": 138,
+   "tags": [
+    "Children",
+    "Humorous",
+    "Lighthearted",
+    "Bass",
+    "Drums",
+    "Comedy"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 8,
+   "title": "Jumping Around",
+   "artist": "Ahjay Stelino",
+   "duration": 143,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Homes"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 11,
+   "title": "Just Kidding",
+   "artist": "Ahjay Stelino",
+   "duration": 179,
+   "tags": [
+    "Children",
+    "Humorous",
+    "Double Bass",
+    "Drums",
+    "Homes",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 12,
+   "title": "Playground Fun",
+   "artist": "Ahjay Stelino",
+   "duration": 182,
+   "tags": [
+    "Children",
+    "Contemporary Folk",
+    "Relaxed",
+    "Double Bass",
+    "Mallets",
+    "Lifestyle",
+    "Homes"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 13,
+   "title": "Summer Fun",
+   "artist": "Ahjay Stelino",
+   "duration": 139,
+   "tags": [
+    "Folk Pop",
+    "Relaxed",
+    "Friendly",
+    "Acoustic Guitar",
+    "Bass",
+    "Cinematic",
+    "Summer"
+   ],
+   "sources": [
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 14,
+   "title": "Swings and Slides",
+   "artist": "Ahjay Stelino",
+   "duration": 134,
+   "tags": [
+    "Happy",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Motivational"
+   ],
+   "sources": [
+    "pop",
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 15,
+   "title": "Keep Smiling",
+   "artist": "Ahjay Stelino",
+   "duration": 106,
+   "tags": [
+    "Children",
+    "Ballroom Dance",
+    "Humorous",
+    "Silly",
+    "Brass",
+    "Drums",
+    "Comedy",
+    "Cartoons"
+   ],
+   "sources": [
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 16,
+   "title": "Just Chill",
+   "artist": "Ahjay Stelino",
+   "duration": 125,
+   "tags": [
+    "Atmospheric",
+    "Meditative",
+    "Bass",
+    "Harp",
+    "Meditation",
+    "Nature"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 17,
+   "title": "Pan Pipes Magic",
+   "artist": "Ahjay Stelino",
+   "duration": 129,
+   "tags": [
+    "Atmospheric",
+    "Relaxed",
+    "Acoustic Guitar",
+    "Bass",
+    "Nature",
+    "Relaxation"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 21,
+   "title": "Indian Meditations",
+   "artist": "Ahjay Stelino",
+   "duration": 168,
+   "tags": [
+    "Traditional",
+    "Atmospheric",
+    "Mystical",
+    "Flute",
+    "Percussion",
+    "Travel",
+    "History"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 31,
+   "title": "Dreaming Big",
+   "artist": "Ahjay Stelino",
+   "duration": 110,
+   "tags": [
+    "Film Score",
+    "Triumphant",
+    "Piano",
+    "Strings",
+    "Family",
+    "Fantasy"
+   ],
+   "sources": [
+    "mood/uplifting",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 32,
+   "title": "Driving Ambition",
+   "artist": "Ahjay Stelino",
+   "duration": 102,
+   "tags": [
+    "Film Score",
+    "Hopeful",
+    "Brass",
+    "Drums",
+    "Background",
+    "Motivational"
+   ],
+   "sources": [
+    "mood/uplifting",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 33,
+   "title": "Motivating Mornings",
+   "artist": "Ahjay Stelino",
+   "duration": 96,
+   "tags": [
+    "Corporate Music",
+    "Propulsive",
+    "Driving",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "corporate",
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 34,
+   "title": "Raising Me Higher",
+   "artist": "Ahjay Stelino",
+   "duration": 98,
+   "tags": [
+    "Corporate Music",
+    "Relaxed",
+    "Lighthearted",
+    "Bass",
+    "Drums",
+    "Intro"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 35,
+   "title": "Uplift Me",
+   "artist": "Ahjay Stelino",
+   "duration": 105,
+   "tags": [
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Cars"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 37,
+   "title": "Love is Eternal",
+   "artist": "Ahjay Stelino",
+   "duration": 104,
+   "tags": [
+    "Atmospheric",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Love",
+    "Instrumental"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 45,
+   "title": "Dancing Fit",
+   "artist": "Ahjay Stelino",
+   "duration": 105,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Showbiz"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": true
+  },
+  {
+   "id": 47,
+   "title": "Punked Up Fun",
+   "artist": "Ahjay Stelino",
+   "duration": 100,
+   "tags": [
+    "Rock",
+    "Aggressive",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 48,
+   "title": "Ride the Waves",
+   "artist": "Ahjay Stelino",
+   "duration": 114,
+   "tags": [
+    "Rock",
+    "Surf",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Western",
+    "Sports"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 50,
+   "title": "Rought and Ready",
+   "artist": "Ahjay Stelino",
+   "duration": 110,
+   "tags": [
+    "Metal",
+    "Rock",
+    "Aggressive",
+    "Dramatic",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 51,
+   "title": "Sports Highlights",
+   "artist": "Ahjay Stelino",
+   "duration": 96,
+   "tags": [
+    "Rock",
+    "Hard Rock",
+    "Aggressive",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 56,
+   "title": "Couture",
+   "artist": "Ahjay Stelino",
+   "duration": 102,
+   "tags": [
+    "Weird",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 61,
+   "title": "Showcase Me",
+   "artist": "Ahjay Stelino",
+   "duration": 104,
+   "tags": [
+    "Friendly",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": true
+  },
+  {
+   "id": 66,
+   "title": "Experimental Fabric",
+   "artist": "Ahjay Stelino",
+   "duration": 105,
+   "tags": [
+    "Humorous",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Horror Comedy"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 67,
+   "title": "Nature's Fabric",
+   "artist": "Ahjay Stelino",
+   "duration": 101,
+   "tags": [
+    "Atmospheric",
+    "Melancholic",
+    "Bass",
+    "Drums",
+    "Nature",
+    "Wildlife"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 71,
+   "title": "Slow Trail",
+   "artist": "Ahjay Stelino",
+   "duration": 103,
+   "tags": [
+    "Reflective",
+    "Melancholic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Human Drama"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 72,
+   "title": "Stripped Bare",
+   "artist": "Ahjay Stelino",
+   "duration": 102,
+   "tags": [
+    "Tension",
+    "Suspenseful",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Melodic"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 73,
+   "title": "Torn Threads",
+   "artist": "Ahjay Stelino",
+   "duration": 116,
+   "tags": [
+    "Mysterious",
+    "Eerie",
+    "Bass",
+    "Drums",
+    "Drama",
+    "Investigation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 77,
+   "title": "Running Out of Time",
+   "artist": "Ahjay Stelino",
+   "duration": 97,
+   "tags": [
+    "Corporate Music",
+    "Confident",
+    "Positive",
+    "Bass",
+    "Electric Guitar",
+    "Motivational"
+   ],
+   "sources": [
+    "corporate",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 78,
+   "title": "Sports Rock",
+   "artist": "Ahjay Stelino",
+   "duration": 102,
+   "tags": [
+    "Rock",
+    "Blues Rock",
+    "Driving",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Cars"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 80,
+   "title": "Daredevil",
+   "artist": "Ahjay Stelino",
+   "duration": 104,
+   "tags": [
+    "Metal",
+    "Aggressive",
+    "Dramatic",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 87,
+   "title": "Holiday Fun",
+   "artist": "Ahjay Stelino",
+   "duration": 95,
+   "tags": [
+    "Contemporary Folk",
+    "Carefree",
+    "Relaxed",
+    "Acoustic Guitar",
+    "Double Bass",
+    "Melodic",
+    "Relaxation"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 91,
+   "title": "Summer's Here",
+   "artist": "Ahjay Stelino",
+   "duration": 96,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 93,
+   "title": "Tinsel and Mistletoe",
+   "artist": "Ahjay Stelino",
+   "duration": 95,
+   "tags": [
+    "Corporate Music",
+    "Euphoric",
+    "Festive",
+    "Brass",
+    "Mallets",
+    "Cinematic",
+    "Christmas"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 94,
+   "title": "Traveling Along",
+   "artist": "Ahjay Stelino",
+   "duration": 100,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Travel",
+    "Relaxation"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 96,
+   "title": "Digging Them Grooves",
+   "artist": "Ahjay Stelino",
+   "duration": 102,
+   "tags": [
+    "Chillout",
+    "Atmospheric",
+    "Meditative",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Melodic"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 100,
+   "title": "Phat Moves",
+   "artist": "Ahjay Stelino",
+   "duration": 94,
+   "tags": [
+    "Film & Orchestral",
+    "Insistent",
+    "Bass",
+    "Brass",
+    "Cinematic",
+    "City"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 101,
+   "title": "Smooth Grooves",
+   "artist": "Ahjay Stelino",
+   "duration": 97,
+   "tags": [
+    "Quirky",
+    "Positive",
+    "Bass",
+    "Brass",
+    "Melodic",
+    "Technology"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 102,
+   "title": "Stylz",
+   "artist": "Ahjay Stelino",
+   "duration": 100,
+   "tags": [
+    "Corporate Music",
+    "Electronic",
+    "Atmospheric",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Technology"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 105,
+   "title": "See Line Funk",
+   "artist": "Alejandro Magaña",
+   "duration": 133,
+   "tags": [
+    "Chillout",
+    "Lounge",
+    "Sensual",
+    "Sexy",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Beach"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 106,
+   "title": "Deep Techno",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 154,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Technology"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 107,
+   "title": "Atoms in Peace",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 227,
+   "tags": [
+    "Electronic",
+    "Atmospheric",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 108,
+   "title": "Chillstep House",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 111,
+   "tags": [
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 110,
+   "title": "Departure",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 151,
+   "tags": [
+    "Ambient",
+    "Atmospheric",
+    "Sombre",
+    "Bass",
+    "Drums",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 111,
+   "title": "Down the River",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 133,
+   "tags": [
+    "Chillout",
+    "Atmospheric",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 112,
+   "title": "Hip Latin Jazz Groove",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 109,
+   "tags": [
+    "Electronic",
+    "Insistent",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 113,
+   "title": "House Fest",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 136,
+   "tags": [
+    "EDM",
+    "Powerful",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Workout",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 115,
+   "title": "Kraft Twerk",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 130,
+   "tags": [
+    "Electronic",
+    "Mechanical",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 116,
+   "title": "La La Land",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 101,
+   "tags": [
+    "Downtempo",
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Investigation",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 118,
+   "title": "No Turning Back",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 226,
+   "tags": [
+    "Disturbing",
+    "Ominous",
+    "Bass",
+    "Drums",
+    "City",
+    "Drama"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 121,
+   "title": "Slow Dive",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 95,
+   "tags": [
+    "Atmospheric",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 122,
+   "title": "Slow Rain",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 129,
+   "tags": [
+    "Weird",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "Slow",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 123,
+   "title": "Slow Trance Morning",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 116,
+   "tags": [
+    "Tech House",
+    "Driving",
+    "Glamorous",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 124,
+   "title": "Techno Fest Vibes",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 134,
+   "tags": [
+    "EDM",
+    "Powerful",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Workout",
+    "Sports"
+   ],
+   "sources": [
+    "house",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 126,
+   "title": "Trap Electro Vibes",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 116,
+   "tags": [
+    "Electronic",
+    "Drum & Bass",
+    "Aggressive",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Extreme Sports",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 129,
+   "title": "House Vibes",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 114,
+   "tags": [
+    "EDM",
+    "Sexy",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Parties"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 130,
+   "title": "Tech House vibes",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 102,
+   "tags": [
+    "Sexy",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Background",
+    "Intro"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 132,
+   "title": "Hazy After Hours",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 127,
+   "tags": [
+    "Sexy",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Technology"
+   ],
+   "sources": [
+    "electronica",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 134,
+   "title": "Deep Techno Ambience",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 123,
+   "tags": [
+    "Techno",
+    "Relaxed",
+    "Hypnotic",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Technology"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 136,
+   "title": "Infected Mushroom Vibes",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 90,
+   "tags": [
+    "EDM",
+    "Electronic",
+    "Dramatic",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Nightlife",
+    "Extreme Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 137,
+   "title": "Goa Trance Mantra",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 104,
+   "tags": [
+    "Trance",
+    "EDM",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Drums",
+    "Nightlife",
+    "Workout"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 140,
+   "title": "Cyberpunk City",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 100,
+   "tags": [
+    "Ambient",
+    "Mysterious",
+    "Eerie",
+    "Drums",
+    "Sound Effects",
+    "Cinematic",
+    "Relaxation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 145,
+   "title": "Reflections on the Shore",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 101,
+   "tags": [
+    "Electropop",
+    "Atmospheric",
+    "Sensual",
+    "Bass",
+    "Drums",
+    "Drama",
+    "Soft"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 146,
+   "title": "Goals are Ahead",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 107,
+   "tags": [
+    "Sensual",
+    "Reflective",
+    "Bass",
+    "Drums",
+    "Drama",
+    "Relaxation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 149,
+   "title": "Trip Hop Vibes",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 114,
+   "tags": [
+    "Relaxed",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "City",
+    "Investigation"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 152,
+   "title": "Dystopia",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 105,
+   "tags": [
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 155,
+   "title": "ET Sightings",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 102,
+   "tags": [
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 157,
+   "title": "Infected Vibes",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 91,
+   "tags": [
+    "Trance",
+    "EDM",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Drums",
+    "Nightlife",
+    "Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 158,
+   "title": "Happy Times",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 100,
+   "tags": [
+    "Indie Pop",
+    "Uplifting",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Sports"
+   ],
+   "sources": [
+    "pop",
+    "mood/uplifting",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 159,
+   "title": "Lonerism",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 105,
+   "tags": [
+    "Synthpop",
+    "Synthwave",
+    "Atmospheric",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Technology"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 160,
+   "title": "Minimal Emotion",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 120,
+   "tags": [
+    "Techno",
+    "EDM",
+    "Disturbing",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Industry",
+    "Technology"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 161,
+   "title": "Minimal Techno 02",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 94,
+   "tags": [
+    "Rhythmic Underscore",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "house",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 162,
+   "title": "Minimal Techno 01",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 124,
+   "tags": [
+    "Tech House",
+    "Techno",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Drums",
+    "Nightlife",
+    "Industry"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 163,
+   "title": "Niro",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 103,
+   "tags": [
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "City",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 164,
+   "title": "Ode to Synths",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 103,
+   "tags": [
+    "Electronica",
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Corporate"
+   ],
+   "sources": [
+    "pop",
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 167,
+   "title": "Brainiac",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 106,
+   "tags": [
+    "Electronic",
+    "Mechanical",
+    "Futuristic",
+    "Drums",
+    "Sound Effects",
+    "City",
+    "Investigation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 169,
+   "title": "Zanarkand Forest",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 113,
+   "tags": [
+    "Ambient",
+    "Atmospheric",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Science"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 171,
+   "title": "Techno Fights",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 109,
+   "tags": [
+    "Electronica",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "house",
+    "electronica",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 173,
+   "title": "Better Times are Coming",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 100,
+   "tags": [
+    "Synthpop",
+    "Synthwave",
+    "Confident",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Technology"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 175,
+   "title": "Digital Clouds",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 101,
+   "tags": [
+    "Chillout",
+    "Electronic",
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 178,
+   "title": "Ixta",
+   "artist": "Alejandro Magaña (A. M.)",
+   "duration": 109,
+   "tags": [
+    "Mysterious",
+    "Atmospheric",
+    "Piano",
+    "Relaxation",
+    "Soft"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 180,
+   "title": "Gear",
+   "artist": "Andrew Ev",
+   "duration": 246,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Aerobics",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "corporate",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 181,
+   "title": "Pop",
+   "artist": "Andrew Ev",
+   "duration": 265,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": true
+  },
+  {
+   "id": 184,
+   "title": "Vastness",
+   "artist": "Andrew Ev",
+   "duration": 230,
+   "tags": [
+    "Ambient",
+    "Atmospheric",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Relaxation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 186,
+   "title": "Savana",
+   "artist": "Andrew Ev",
+   "duration": 296,
+   "tags": [
+    "Lively",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Technology"
+   ],
+   "sources": [
+    "house",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 187,
+   "title": "Mountains",
+   "artist": "Andrew Ev",
+   "duration": 277,
+   "tags": [
+    "Uplifting",
+    "Hopeful",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Corporate"
+   ],
+   "sources": [
+    "electronica",
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 190,
+   "title": "Electro Dreams",
+   "artist": "Arulo",
+   "duration": 116,
+   "tags": [
+    "Powerful",
+    "Hypnotic",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Parties"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 194,
+   "title": "Blindfolded",
+   "artist": "Arulo",
+   "duration": 185,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 196,
+   "title": "Deep House",
+   "artist": "Arulo",
+   "duration": 157,
+   "tags": [
+    "Powerful",
+    "Mechanical",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Technology"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 197,
+   "title": "Hard Techno",
+   "artist": "Arulo",
+   "duration": 192,
+   "tags": [
+    "Powerful",
+    "Hypnotic",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Parties"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 199,
+   "title": "Loner",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "EDM",
+    "Powerful",
+    "Hypnotic",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Fashion"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 200,
+   "title": "Oh Lord",
+   "artist": "Arulo",
+   "duration": 143,
+   "tags": [
+    "Dance-Pop",
+    "Carefree",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Fashion"
+   ],
+   "sources": [
+    "pop",
+    "dance",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 205,
+   "title": "India",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Quirky",
+    "Drums",
+    "Sound Effects",
+    "Fashion",
+    "Parties"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 207,
+   "title": "Winter Breeze",
+   "artist": "Arulo",
+   "duration": 140,
+   "tags": [
+    "EDM",
+    "Sexy",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Parties"
+   ],
+   "sources": [
+    "house",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 218,
+   "title": "Africa",
+   "artist": "Arulo",
+   "duration": 103,
+   "tags": [
+    "Contemporary R&B",
+    "Pop",
+    "Uplifting",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Modern Christmas"
+   ],
+   "sources": [
+    "discover/africa",
+    "pop",
+    "mood/uplifting"
+   ],
+   "use": true,
+   "force": true
+  },
+  {
+   "id": 222,
+   "title": "Love Slave",
+   "artist": "Arulo",
+   "duration": 116,
+   "tags": [
+    "Downtempo",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Bells",
+    "Relaxation",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 224,
+   "title": "RnB",
+   "artist": "Arulo",
+   "duration": 115,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 226,
+   "title": "RnB 2",
+   "artist": "Arulo",
+   "duration": 108,
+   "tags": [
+    "Reflective",
+    "Calm",
+    "Drums",
+    "Percussion",
+    "Melodic",
+    "Soft"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 227,
+   "title": "J.B. R&B Music",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Indie Pop",
+    "Sensual",
+    "Reflective",
+    "Bass",
+    "Drums",
+    "Love",
+    "Relaxation"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 228,
+   "title": "Fashion",
+   "artist": "Arulo",
+   "duration": 144,
+   "tags": [
+    "Contemporary R&B",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Reality TV",
+    "City"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 231,
+   "title": "Funky Hip Hop",
+   "artist": "Arulo",
+   "duration": 131,
+   "tags": [
+    "Relaxed",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 233,
+   "title": "Seduction",
+   "artist": "Arulo",
+   "duration": 104,
+   "tags": [
+    "Insistent",
+    "Positive",
+    "Banjo",
+    "Drums",
+    "Arabic",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 235,
+   "title": "Try Me",
+   "artist": "Arulo",
+   "duration": 110,
+   "tags": [
+    "Trap",
+    "Confident",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 239,
+   "title": "Be This Way",
+   "artist": "Arulo",
+   "duration": 111,
+   "tags": [
+    "Reggaeton",
+    "Relaxed",
+    "Positive",
+    "Drums",
+    "Keyboard",
+    "Travel",
+    "Beach"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 244,
+   "title": "Tom",
+   "artist": "Arulo",
+   "duration": 132,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 247,
+   "title": "B minor",
+   "artist": "Arulo",
+   "duration": 108,
+   "tags": [
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Drama"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 249,
+   "title": "How Can I Love You",
+   "artist": "Arulo",
+   "duration": 104,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Reflective",
+    "Acoustic Guitar",
+    "Bass",
+    "Relaxation",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 250,
+   "title": "Island Beat",
+   "artist": "Arulo",
+   "duration": 102,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "City"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 256,
+   "title": "Chill Trap",
+   "artist": "Arulo",
+   "duration": 159,
+   "tags": [
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 257,
+   "title": "Eyes in the Puddle",
+   "artist": "Arulo",
+   "duration": 119,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 258,
+   "title": "Find Me Outside",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Soft",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 260,
+   "title": "Molly Hip Hop Beat",
+   "artist": "Arulo",
+   "duration": 99,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Serious",
+    "Bass",
+    "Bells",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 261,
+   "title": "Nav Type 3",
+   "artist": "Arulo",
+   "duration": 119,
+   "tags": [
+    "Chillout",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 262,
+   "title": "Praise the Lord",
+   "artist": "Arulo",
+   "duration": 99,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 263,
+   "title": "Run Away",
+   "artist": "Arulo",
+   "duration": 122,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 264,
+   "title": "Trap Beat 6",
+   "artist": "Arulo",
+   "duration": 98,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 266,
+   "title": "Trap Sad",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Soft"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 267,
+   "title": "Trap Hamza",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Bells",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 271,
+   "title": "Bailando Slower",
+   "artist": "Arulo",
+   "duration": 125,
+   "tags": [
+    "Children",
+    "Emotional",
+    "Piano",
+    "Cinematic",
+    "Wedding"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 272,
+   "title": "Wedding Music",
+   "artist": "Arulo",
+   "duration": 129,
+   "tags": [
+    "Orchestral Pop",
+    "Hopeful",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Wedding"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 275,
+   "title": "Nav Trap",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Travel"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 281,
+   "title": "Complicated",
+   "artist": "Arulo",
+   "duration": 109,
+   "tags": [
+    "Trap",
+    "Serious",
+    "Tension",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 282,
+   "title": "Sweet September",
+   "artist": "Arulo",
+   "duration": 99,
+   "tags": [
+    "Chillout",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Relaxation"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 283,
+   "title": "Trapanomics",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Mysterious",
+    "Disturbing",
+    "Bass",
+    "Bells",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 288,
+   "title": "One More Dance",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Dance-Pop",
+    "Carefree",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Beach"
+   ],
+   "sources": [
+    "pop",
+    "dance",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 289,
+   "title": "Sensual Pop",
+   "artist": "Arulo",
+   "duration": 101,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Lifestyle",
+    "Beach"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 293,
+   "title": "Lord Knows",
+   "artist": "Arulo",
+   "duration": 103,
+   "tags": [
+    "Trap",
+    "Serious",
+    "Determined",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 295,
+   "title": "Dreamy Trap",
+   "artist": "Arulo",
+   "duration": 108,
+   "tags": [
+    "Humorous",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Documentary"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 296,
+   "title": "Future Heartbreak City",
+   "artist": "Arulo",
+   "duration": 95,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "City",
+    "Technology"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 297,
+   "title": "Headlight Vision",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 299,
+   "title": "Lil Sky Beats",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Reflective",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 300,
+   "title": "Mustard Beat",
+   "artist": "Arulo",
+   "duration": 108,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 301,
+   "title": "Never Going Broke",
+   "artist": "Arulo",
+   "duration": 133,
+   "tags": [
+    "Trap",
+    "Serious",
+    "Humorous",
+    "Bass",
+    "Drums",
+    "Horror Comedy",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 302,
+   "title": "Ocrian Beat",
+   "artist": "Arulo",
+   "duration": 103,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 303,
+   "title": "Party",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 304,
+   "title": "Torey",
+   "artist": "Arulo",
+   "duration": 121,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Ominous",
+    "Bass",
+    "Drums",
+    "City",
+    "Investigation"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 305,
+   "title": "Trap",
+   "artist": "Arulo",
+   "duration": 107,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Ominous",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 306,
+   "title": "Trill Beat",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Tension",
+    "Bass",
+    "Bells",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 313,
+   "title": "Highklassified",
+   "artist": "Arulo",
+   "duration": 118,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Ominous",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 318,
+   "title": "Thunder",
+   "artist": "Arulo",
+   "duration": 101,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Ominous",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 327,
+   "title": "Aerobic Fashion",
+   "artist": "Arulo",
+   "duration": 98,
+   "tags": [
+    "House",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Fashion"
+   ],
+   "sources": [
+    "pop",
+    "house"
+   ],
+   "use": true
+  },
+  {
+   "id": 330,
+   "title": "Hippidi Hop",
+   "artist": "Arulo",
+   "duration": 101,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Humorous",
+    "Bass",
+    "Drums",
+    "City",
+    "Lifestyle"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 333,
+   "title": "Wine Pon Me",
+   "artist": "Arulo",
+   "duration": 36,
+   "tags": [
+    "Electronica",
+    "Relaxed",
+    "Positive",
+    "Drums",
+    "Keyboard",
+    "Technology"
+   ],
+   "sources": [
+    "hip-hop",
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 349,
+   "title": "Basketball Training",
+   "artist": "Arulo",
+   "duration": 112,
+   "tags": [
+    "Hip Hop",
+    "Confident",
+    "Powerful",
+    "Brass",
+    "Drums",
+    "Showbiz",
+    "Celebration"
+   ],
+   "sources": [
+    "pop",
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 350,
+   "title": "Follow Me Home",
+   "artist": "Arulo",
+   "duration": 74,
+   "tags": [
+    "Uplifting",
+    "Confident",
+    "Bass",
+    "Electric Guitar",
+    "Cinematic",
+    "Soft"
+   ],
+   "sources": [
+    "pop",
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 352,
+   "title": "21 Years",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Folktronica",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Wedding",
+    "Reality TV"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 355,
+   "title": "Drugs",
+   "artist": "Arulo",
+   "duration": 101,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 357,
+   "title": "Head Bang",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 358,
+   "title": "House Party",
+   "artist": "Arulo",
+   "duration": 104,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Relaxed",
+    "Bass",
+    "Bells",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 359,
+   "title": "Just Breath",
+   "artist": "Arulo",
+   "duration": 114,
+   "tags": [
+    "Contemporary R&B",
+    "Reflective",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 364,
+   "title": "Waka Floka Type",
+   "artist": "Arulo",
+   "duration": 103,
+   "tags": [
+    "Trap",
+    "Mysterious",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 366,
+   "title": "Kid Ink Type",
+   "artist": "Arulo",
+   "duration": 113,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 367,
+   "title": "Paranoia",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Technology"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 369,
+   "title": "Need for speed",
+   "artist": "Arulo",
+   "duration": 98,
+   "tags": [
+    "Trap",
+    "Serious",
+    "Determined",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 370,
+   "title": "Sparta",
+   "artist": "Arulo",
+   "duration": 104,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Drama"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 371,
+   "title": "Cat Walk",
+   "artist": "Arulo",
+   "duration": 124,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Technology"
+   ],
+   "sources": [
+    "house",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 373,
+   "title": "Don't Forget Me",
+   "artist": "Arulo",
+   "duration": 102,
+   "tags": [
+    "Trap",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 375,
+   "title": "Remember Me",
+   "artist": "Arulo",
+   "duration": 102,
+   "tags": [
+    "Trap",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "City",
+    "Lifestyle"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 389,
+   "title": "Wedding Song 03",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Chillout",
+    "Relaxed",
+    "Warm",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Motivational"
+   ],
+   "sources": [
+    "hip-hop",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 390,
+   "title": "Bene Gisserit",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Contemporary R&B",
+    "Serious",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 391,
+   "title": "Grinding Hard",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "City"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 399,
+   "title": "Billy the Kid",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Dark",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 400,
+   "title": "C.B.P.D",
+   "artist": "Arulo",
+   "duration": 99,
+   "tags": [
+    "Trap",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Travel",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 403,
+   "title": "G Eazy NBA type",
+   "artist": "Arulo",
+   "duration": 104,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 407,
+   "title": "K. K.",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Trap",
+    "Humorous",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 408,
+   "title": "Lean and Pills",
+   "artist": "Arulo",
+   "duration": 102,
+   "tags": [
+    "Trap",
+    "Mysterious",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 409,
+   "title": "Leave it to Me",
+   "artist": "Arulo",
+   "duration": 98,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 410,
+   "title": "Lil Pump Type",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 411,
+   "title": "Nike Fly",
+   "artist": "Arulo",
+   "duration": 107,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Bells",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 412,
+   "title": "OVO",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 413,
+   "title": "P.D.",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "Melodic"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 414,
+   "title": "Regret",
+   "artist": "Arulo",
+   "duration": 103,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Drama"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 416,
+   "title": "Young Trizzy",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Contemporary R&B",
+    "Trap",
+    "Relaxed",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Fashion"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 418,
+   "title": "Carti Bih",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Aerobics",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 419,
+   "title": "Pilates and Yoga",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Ambient",
+    "Futuristic",
+    "Calm",
+    "Piano",
+    "Synth",
+    "Relaxation",
+    "Medical"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 420,
+   "title": "Acid Party",
+   "artist": "Arulo",
+   "duration": 101,
+   "tags": [
+    "Trap",
+    "Atmospheric",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "City",
+    "Investigation"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 426,
+   "title": "Kid's Pop",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 428,
+   "title": "Space Goddess",
+   "artist": "Arulo",
+   "duration": 102,
+   "tags": [
+    "Blues",
+    "Relaxed",
+    "Positive",
+    "Drums",
+    "Electric Guitar",
+    "Lifestyle",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 429,
+   "title": "State of Mind",
+   "artist": "Arulo",
+   "duration": 104,
+   "tags": [
+    "Humorous",
+    "Quirky",
+    "Acoustic Guitar",
+    "Bass",
+    "Comedy"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 430,
+   "title": "Take it Easy",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Chillout",
+    "Sensual",
+    "Relaxed",
+    "Drums",
+    "Electric Guitar",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 431,
+   "title": "Young Trizzy 02",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Bells",
+    "Melodic",
+    "Lifestyle"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 432,
+   "title": "Angel Watching Me",
+   "artist": "Arulo",
+   "duration": 101,
+   "tags": [
+    "Contemporary R&B",
+    "Carefree",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Beach",
+    "Travel"
+   ],
+   "sources": [
+    "pop",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 434,
+   "title": "Sun-Kissed Skin",
+   "artist": "Arulo",
+   "duration": 96,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 440,
+   "title": "Infinity",
+   "artist": "Arulo",
+   "duration": 103,
+   "tags": [
+    "Corporate Music",
+    "Electronic",
+    "Atmospheric",
+    "Relaxed",
+    "Bass",
+    "Piano",
+    "Relaxation",
+    "Medical"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 441,
+   "title": "Meditation",
+   "artist": "Arulo",
+   "duration": 118,
+   "tags": [
+    "Ambient",
+    "Atmospheric",
+    "Meditative",
+    "Synth",
+    "Background",
+    "Relaxation"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 445,
+   "title": "21",
+   "artist": "Arulo",
+   "duration": 100,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 446,
+   "title": "Find Me",
+   "artist": "Arulo",
+   "duration": 94,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 447,
+   "title": "G Eazy Type",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 448,
+   "title": "Gotta Get It",
+   "artist": "Arulo",
+   "duration": 101,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 449,
+   "title": "I'm Working",
+   "artist": "Arulo",
+   "duration": 109,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 452,
+   "title": "Playboi",
+   "artist": "Arulo",
+   "duration": 97,
+   "tags": [
+    "Trap",
+    "Mysterious",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "City",
+    "Drama"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 453,
+   "title": "Purple J's",
+   "artist": "Arulo",
+   "duration": 94,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 455,
+   "title": "Through The Struggle",
+   "artist": "Arulo",
+   "duration": 104,
+   "tags": [
+    "Trap",
+    "Relaxed",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 460,
+   "title": "Arab Nights",
+   "artist": "Arulo",
+   "duration": 105,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 465,
+   "title": "Watch Me Breezy",
+   "artist": "Arulo",
+   "duration": 118,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Quirky",
+    "Bass",
+    "Brass",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 466,
+   "title": "Games Worldbeat",
+   "artist": "Bernardo R.",
+   "duration": 107,
+   "tags": [
+    "Medieval",
+    "Friendly",
+    "Humorous",
+    "Flute",
+    "Cinematic",
+    "Motivational"
+   ],
+   "sources": [
+    "world",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 468,
+   "title": "Expressive Courage",
+   "artist": "Diego Nava",
+   "duration": 96,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 469,
+   "title": "Getting Older",
+   "artist": "Diego Nava",
+   "duration": 111,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Workout"
+   ],
+   "sources": [
+    "house",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 470,
+   "title": "Golden Storm",
+   "artist": "Diego Nava",
+   "duration": 95,
+   "tags": [
+    "EDM",
+    "Elegant",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 471,
+   "title": "Rising Forest",
+   "artist": "Diego Nava",
+   "duration": 99,
+   "tags": [
+    "EDM",
+    "Propulsive",
+    "Hypnotic",
+    "Bass",
+    "Drums",
+    "Aerobics",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 473,
+   "title": "Talent in the Air",
+   "artist": "Diego Nava",
+   "duration": 114,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 474,
+   "title": "What About Action?",
+   "artist": "Diego Nava",
+   "duration": 117,
+   "tags": [
+    "Dance-Pop",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Aerobics",
+    "Motivational"
+   ],
+   "sources": [
+    "house",
+    "dance",
+    "corporate",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 476,
+   "title": "Baileys",
+   "artist": "Diego Nava",
+   "duration": 97,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 477,
+   "title": "Emperor",
+   "artist": "Diego Nava",
+   "duration": 107,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Fashion"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 480,
+   "title": "Curiosity",
+   "artist": "Diego Nava",
+   "duration": 100,
+   "tags": [
+    "Chillout",
+    "Corporate Music",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Fashion"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 483,
+   "title": "Soul Damage",
+   "artist": "Diego Nava",
+   "duration": 104,
+   "tags": [
+    "Chillout",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Relaxation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": true
+  },
+  {
+   "id": 484,
+   "title": "Love Layout",
+   "artist": "Diego Nava",
+   "duration": 107,
+   "tags": [
+    "Trap",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Bells",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 486,
+   "title": "Alone",
+   "artist": "Diego Nava",
+   "duration": 101,
+   "tags": [
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 487,
+   "title": "Peace",
+   "artist": "Diego Nava",
+   "duration": 99,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "City"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 488,
+   "title": "Don't Look Back",
+   "artist": "Diego Nava",
+   "duration": 102,
+   "tags": [
+    "Country Rap",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Fashion"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 489,
+   "title": "Golden Beach",
+   "artist": "Diego Nava",
+   "duration": 101,
+   "tags": [
+    "Contemporary R&B",
+    "Dramatic",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 496,
+   "title": "Don't Go",
+   "artist": "Diego Nava",
+   "duration": 167,
+   "tags": [
+    "Relaxed",
+    "Melancholic",
+    "Bass",
+    "Drums",
+    "Modern Christmas"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 499,
+   "title": "Red Moon",
+   "artist": "Diego Nava",
+   "duration": 104,
+   "tags": [
+    "Lounge",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Cocktail Lounge"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 504,
+   "title": "Cold Day",
+   "artist": "Diego Nava",
+   "duration": 108,
+   "tags": [
+    "Ballroom Dance",
+    "Children",
+    "Friendly",
+    "Innocent",
+    "Bells",
+    "Harp",
+    "Traditional Christmas",
+    "Modern Christmas"
+   ],
+   "sources": [
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 505,
+   "title": "Golden Freezer",
+   "artist": "Diego Nava",
+   "duration": 96,
+   "tags": [
+    "Ballroom Dance",
+    "Children",
+    "Humorous",
+    "Cheerful",
+    "Brass",
+    "Mallets",
+    "Melodic",
+    "Traditional Christmas"
+   ],
+   "sources": [
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 507,
+   "title": "Long Day",
+   "artist": "Diego Nava",
+   "duration": 156,
+   "tags": [
+    "Ballroom Dance",
+    "Friendly",
+    "Nostalgic",
+    "Double Bass",
+    "Piano",
+    "Motivational"
+   ],
+   "sources": [
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 509,
+   "title": "Holiday / Seasonal 2",
+   "artist": "Diego Nava",
+   "duration": 95,
+   "tags": [
+    "Film Score",
+    "Humorous",
+    "Playful",
+    "Brass",
+    "Flute",
+    "Fairytale"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 511,
+   "title": "Holiday / Seasonal 4",
+   "artist": "Diego Nava",
+   "duration": 130,
+   "tags": [
+    "Jazz Rock",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Brass",
+    "Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 515,
+   "title": "Ideas and Experiments",
+   "artist": "Diego Nava",
+   "duration": 106,
+   "tags": [
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Beach",
+    "Fashion"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 517,
+   "title": "Jungle Voices",
+   "artist": "Diego Nava",
+   "duration": 98,
+   "tags": [
+    "Electronic",
+    "Atmospheric",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 519,
+   "title": "Motivation Gets in the Way",
+   "artist": "Diego Nava",
+   "duration": 183,
+   "tags": [
+    "Rock",
+    "Driving",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 522,
+   "title": "Relaxing in Nature",
+   "artist": "Diego Nava",
+   "duration": 97,
+   "tags": [
+    "Ethereal",
+    "Reflective",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Drama"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 525,
+   "title": "Spiritual Moment",
+   "artist": "Diego Nava",
+   "duration": 119,
+   "tags": [
+    "Mysterious",
+    "Atmospheric",
+    "Bass",
+    "Drums",
+    "Background",
+    "Space"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 527,
+   "title": "Vocal Percussions",
+   "artist": "Diego Nava",
+   "duration": 105,
+   "tags": [
+    "Rhythmic Underscore",
+    "Hypnotic",
+    "Quirky",
+    "Drums",
+    "Percussion",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 529,
+   "title": "Walking in the Park",
+   "artist": "Diego Nava",
+   "duration": 95,
+   "tags": [
+    "Folk Pop",
+    "Carefree",
+    "Relaxed",
+    "Acoustic Guitar",
+    "Bass",
+    "Relaxation",
+    "Lifestyle"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 532,
+   "title": "A Happy Child",
+   "artist": "Diego Nava",
+   "duration": 112,
+   "tags": [
+    "Folk Pop",
+    "Indie Folk",
+    "Hopeful",
+    "Acoustic Guitar",
+    "Double Bass",
+    "Lifestyle",
+    "Homes"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 535,
+   "title": "Happy Spring",
+   "artist": "Diego Nava",
+   "duration": 95,
+   "tags": [
+    "Film Score",
+    "Humorous",
+    "Playful",
+    "Brass",
+    "Flute",
+    "Cinematic",
+    "Motivational"
+   ],
+   "sources": [
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 537,
+   "title": "Christmas Night",
+   "artist": "Diego Nava",
+   "duration": 130,
+   "tags": [
+    "Jazz Rock",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Brass",
+    "Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 539,
+   "title": "Nield Grohm Hanging 2",
+   "artist": "Eugenio Mininni",
+   "duration": 231,
+   "tags": [
+    "Traditional",
+    "Soothing",
+    "Peaceful",
+    "Percussion",
+    "Synth",
+    "Wildlife",
+    "Corporate"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 540,
+   "title": "Nield Grohm Hanging 3",
+   "artist": "Eugenio Mininni",
+   "duration": 255,
+   "tags": [
+    "Mysterious",
+    "Disturbing",
+    "Percussion",
+    "Investigation"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 541,
+   "title": "Nield Grohm Hanging 4",
+   "artist": "Eugenio Mininni",
+   "duration": 231,
+   "tags": [
+    "Traditional",
+    "Mystical",
+    "Meditative",
+    "Percussion",
+    "Wildlife",
+    "Meditation"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 547,
+   "title": "West Side Of Flo'",
+   "artist": "Eugenio Mininni",
+   "duration": 236,
+   "tags": [
+    "Country",
+    "Relaxed",
+    "Reflective",
+    "Acoustic Guitar",
+    "Bass",
+    "Instrumental"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 548,
+   "title": "A Voice from The Past",
+   "artist": "Eugenio Mininni",
+   "duration": 224,
+   "tags": [
+    "Disturbing",
+    "Tension",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Investigation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 550,
+   "title": "Falling Inversus",
+   "artist": "Eugenio Mininni",
+   "duration": 248,
+   "tags": [
+    "Restless",
+    "Tension",
+    "Bass",
+    "Synth",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 552,
+   "title": "Masking the Masters",
+   "artist": "Eugenio Mininni",
+   "duration": 220,
+   "tags": [
+    "Orchestral Hybrid",
+    "Hypnotic",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Science"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 553,
+   "title": "Shame",
+   "artist": "Eugenio Mininni",
+   "duration": 128,
+   "tags": [
+    "Electronica",
+    "Mysterious",
+    "Disturbing",
+    "Bass",
+    "Drums",
+    "Crime",
+    "City"
+   ],
+   "sources": [
+    "pop",
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 554,
+   "title": "Sonnor",
+   "artist": "Eugenio Mininni",
+   "duration": 232,
+   "tags": [
+    "Underscore",
+    "Atmospheric",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 555,
+   "title": "South Waves",
+   "artist": "Eugenio Mininni",
+   "duration": 184,
+   "tags": [
+    "Synthpop",
+    "Electropop",
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 556,
+   "title": "Xceed Thru Johann",
+   "artist": "Eugenio Mininni",
+   "duration": 232,
+   "tags": [
+    "Serious",
+    "Tension",
+    "Bass",
+    "Drums",
+    "Investigation",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 557,
+   "title": "The 3rd Day",
+   "artist": "Eugenio Mininni",
+   "duration": 184,
+   "tags": [
+    "Atmospheric",
+    "Serious",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 558,
+   "title": "Sonor 01",
+   "artist": "Eugenio Mininni",
+   "duration": 299,
+   "tags": [
+    "Mysterious",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 559,
+   "title": "Spring",
+   "artist": "Eugenio Mininni",
+   "duration": 284,
+   "tags": [
+    "Relaxed",
+    "Friendly",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 563,
+   "title": "Red Lights Adhafera",
+   "artist": "Eugenio Mininni",
+   "duration": 299,
+   "tags": [
+    "Ambient",
+    "Atmospheric",
+    "Meditative",
+    "Synth",
+    "Cinematic",
+    "Space"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 568,
+   "title": "Focus on Yourself",
+   "artist": "Eugenio Mininni",
+   "duration": 286,
+   "tags": [
+    "Electronic",
+    "Disturbing",
+    "Tension",
+    "Bass",
+    "Sound Effects",
+    "Technology",
+    "Medical"
+   ],
+   "sources": [
+    "electronica",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 569,
+   "title": "Miles Away",
+   "artist": "Eugenio Mininni",
+   "duration": 222,
+   "tags": [
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 571,
+   "title": "Voxscape",
+   "artist": "Eugenio Mininni",
+   "duration": 300,
+   "tags": [
+    "Ambient",
+    "Atmospheric",
+    "Mystical",
+    "Bass",
+    "Synth",
+    "Background",
+    "Relaxation"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 572,
+   "title": "Punctus XII",
+   "artist": "Eugenio Mininni",
+   "duration": 289,
+   "tags": [
+    "Restless",
+    "Mechanical",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Science"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 574,
+   "title": "Cancion Oeste",
+   "artist": "Eugenio Mininni",
+   "duration": 197,
+   "tags": [
+    "Mysterious",
+    "Atmospheric",
+    "Drums",
+    "Percussion",
+    "Drama",
+    "Relaxation"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 575,
+   "title": "Cancion Norte",
+   "artist": "Eugenio Mininni",
+   "duration": 297,
+   "tags": [
+    "Atmospheric",
+    "Reflective",
+    "Strings",
+    "Synth",
+    "Arthouse",
+    "Drama"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 578,
+   "title": "Gold Virginia",
+   "artist": "Eugenio Mininni",
+   "duration": 267,
+   "tags": [
+    "Mysterious",
+    "Atmospheric",
+    "Percussion",
+    "Sound Effects",
+    "History",
+    "Religion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 580,
+   "title": "Sun and His Daughter",
+   "artist": "Eugenio Mininni",
+   "duration": 168,
+   "tags": [
+    "Atmospheric",
+    "Reflective",
+    "Percussion",
+    "Synth",
+    "Arthouse",
+    "Drama"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 593,
+   "title": "Opalescent",
+   "artist": "Eugenio Mininni",
+   "duration": 284,
+   "tags": [
+    "Ambient",
+    "Atmospheric",
+    "Meditative",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Relaxation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 594,
+   "title": "River Flow",
+   "artist": "Eugenio Mininni",
+   "duration": 270,
+   "tags": [
+    "Disturbing",
+    "Reflective",
+    "Strings",
+    "Synth",
+    "Cinematic",
+    "Relaxation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 603,
+   "title": "A Memory  Of Louis",
+   "artist": "Eugenio Mininni",
+   "duration": 254,
+   "tags": [
+    "Atmospheric",
+    "Reflective",
+    "Bass",
+    "Drums",
+    "Corporate",
+    "Medical"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 607,
+   "title": "Forest Walk",
+   "artist": "Eugenio Mininni",
+   "duration": 174,
+   "tags": [
+    "Ambient",
+    "Mysterious",
+    "Atmospheric",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Meditation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 609,
+   "title": "Moon Walk",
+   "artist": "Eugenio Mininni",
+   "duration": 205,
+   "tags": [
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Synth",
+    "Cinematic",
+    "Medical"
+   ],
+   "sources": [
+    "electronica",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 610,
+   "title": "Peenzee O'Traak",
+   "artist": "Eugenio Mininni",
+   "duration": 181,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Lifestyle"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 611,
+   "title": "Penta Groove",
+   "artist": "Eugenio Mininni",
+   "duration": 214,
+   "tags": [
+    "Serious",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Travel"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 617,
+   "title": "Wind Leaves",
+   "artist": "Eugenio Mininni",
+   "duration": 205,
+   "tags": [
+    "Country",
+    "Relaxed",
+    "Friendly",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Wedding"
+   ],
+   "sources": [
+    "corporate",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 621,
+   "title": "BRIDGE N° 98",
+   "artist": "Eugenio Mininni",
+   "duration": 146,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Friendly",
+    "Acoustic Guitar",
+    "Bass",
+    "Intro",
+    "Motivational"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 623,
+   "title": "Deep Urban",
+   "artist": "Eugenio Mininni",
+   "duration": 289,
+   "tags": [
+    "Tech House",
+    "Hypnotic",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Corporate"
+   ],
+   "sources": [
+    "house",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 624,
+   "title": "Echoes Of You",
+   "artist": "Eugenio Mininni",
+   "duration": 266,
+   "tags": [
+    "Relaxed",
+    "Warm",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Travel"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 628,
+   "title": "Summer Dream",
+   "artist": "Eugenio Mininni",
+   "duration": 176,
+   "tags": [
+    "EDM",
+    "Propulsive",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Workout"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 629,
+   "title": "Skeeomaver Sound",
+   "artist": "Eugenio Mininni",
+   "duration": 234,
+   "tags": [
+    "EDM",
+    "Propulsive",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Sports"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 632,
+   "title": "Whill Chake",
+   "artist": "Eugenio Mininni",
+   "duration": 216,
+   "tags": [
+    "Indie Pop",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Lifestyle",
+    "Fashion"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 634,
+   "title": "Your Breath",
+   "artist": "Eugenio Mininni",
+   "duration": 236,
+   "tags": [
+    "Corporate Music",
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 635,
+   "title": "Adone",
+   "artist": "Eugenio Mininni",
+   "duration": 182,
+   "tags": [
+    "Lighthearted",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Lifestyle",
+    "Travel"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 636,
+   "title": "Knobs",
+   "artist": "Eugenio Mininni",
+   "duration": 220,
+   "tags": [
+    "Lively",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Technology"
+   ],
+   "sources": [
+    "pop",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 637,
+   "title": "Wounds",
+   "artist": "Eugenio Mininni",
+   "duration": 236,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Reflective",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 641,
+   "title": "Brazil Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 141,
+   "tags": [
+    "Humorous",
+    "Whimsical",
+    "Bass",
+    "Double Bass",
+    "Comedy"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 642,
+   "title": "Latin Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 139,
+   "tags": [
+    "Mysterious",
+    "Cautious",
+    "Double Bass",
+    "Drums",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 643,
+   "title": "Funk Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 136,
+   "tags": [
+    "Lounge",
+    "Relaxed",
+    "Lighthearted",
+    "Bass",
+    "Drums",
+    "Lifestyle",
+    "Travel"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 644,
+   "title": "Upbeat Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 110,
+   "tags": [
+    "Jazz",
+    "Humorous",
+    "Bass",
+    "Drums",
+    "Comedy"
+   ],
+   "sources": [
+    "mood/lively",
+    "mood/upbeat"
+   ],
+   "use": false
+  },
+  {
+   "id": 647,
+   "title": "Fun Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 141,
+   "tags": [
+    "Lounge",
+    "Humorous",
+    "Stealth",
+    "Clarinet",
+    "Double Bass",
+    "Comedy"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 648,
+   "title": "Electronic Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 154,
+   "tags": [
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 650,
+   "title": "Indie Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 117,
+   "tags": [
+    "Corporate Music",
+    "Friendly",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 651,
+   "title": "Minimalist Jazz",
+   "artist": "Francisco Alvear",
+   "duration": 164,
+   "tags": [
+    "Mysterious",
+    "Serious",
+    "Double Bass",
+    "Drums",
+    "Cinematic",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 656,
+   "title": "Workout",
+   "artist": "Francisco Alvear",
+   "duration": 154,
+   "tags": [
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Investigation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 661,
+   "title": "Fashion 01",
+   "artist": "Francisco Alvear",
+   "duration": 132,
+   "tags": [
+    "Hypnotic",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": true
+  },
+  {
+   "id": 662,
+   "title": "House One",
+   "artist": "Francisco Alvear",
+   "duration": 116,
+   "tags": [
+    "Chillout",
+    "Nu Jazz",
+    "Carefree",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Beach"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 668,
+   "title": "Space Game",
+   "artist": "Francisco Alvear",
+   "duration": 121,
+   "tags": [
+    "Insistent",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "City"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": true
+  },
+  {
+   "id": 670,
+   "title": "Uplifting",
+   "artist": "Francisco Alvear",
+   "duration": 149,
+   "tags": [
+    "Children",
+    "Carefree",
+    "Humorous",
+    "Bass",
+    "Clarinet",
+    "Melodic"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 673,
+   "title": "Cuban Flavor",
+   "artist": "Francisco Alvear",
+   "duration": 119,
+   "tags": [
+    "Humorous",
+    "Quirky",
+    "Double Bass",
+    "Percussion",
+    "Melodic",
+    "Comedy"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 674,
+   "title": "House",
+   "artist": "Francisco Alvear",
+   "duration": 137,
+   "tags": [
+    "Sexy",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 677,
+   "title": "Epical Drums 02",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 123,
+   "tags": [
+    "Percussion Trailer",
+    "Sound Elements",
+    "Restless",
+    "Dramatic",
+    "Drums",
+    "Percussion",
+    "Cinematic"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 678,
+   "title": "Epical Drums 03",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 183,
+   "tags": [
+    "Orchestral Hybrid",
+    "Mysterious",
+    "Disturbing",
+    "Drums",
+    "Percussion",
+    "Cinematic"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 679,
+   "title": "Epical Drums 04",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 121,
+   "tags": [
+    "Orchestral Hybrid",
+    "Restless",
+    "Dramatic",
+    "Brass",
+    "Percussion",
+    "Cinematic",
+    "Arabic"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 680,
+   "title": "Epical Drums 05",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 102,
+   "tags": [
+    "Orchestral Hybrid",
+    "Film Score",
+    "Restless",
+    "Dramatic",
+    "Brass",
+    "Drums",
+    "Cinematic"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 682,
+   "title": "Classical vibes 2",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 113,
+   "tags": [
+    "Film Score",
+    "Children",
+    "Hopeful",
+    "Piano",
+    "Slow",
+    "Love"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 684,
+   "title": "Classical vibes 4",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 137,
+   "tags": [
+    "Film Score",
+    "Hopeful",
+    "Piano",
+    "Strings",
+    "Instrumental",
+    "Documentary"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 685,
+   "title": "R&B vibes 1",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 181,
+   "tags": [
+    "Chillout",
+    "Electronic",
+    "Relaxed",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 687,
+   "title": "R&B vibes 2",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 146,
+   "tags": [
+    "Country",
+    "Country Rap",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Reality TV",
+    "Travel"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 689,
+   "title": "Classical Jazz",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 161,
+   "tags": [
+    "Carefree",
+    "Relaxed",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Soft"
+   ],
+   "sources": [
+    "world",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 690,
+   "title": "Hollidays",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 127,
+   "tags": [
+    "Indie Pop",
+    "Hopeful",
+    "Drums",
+    "Electric Guitar",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 691,
+   "title": "Holidays 2",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 108,
+   "tags": [
+    "Film Score",
+    "Magical",
+    "Mallets",
+    "Piano",
+    "Melodic",
+    "Traditional Christmas"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 692,
+   "title": "Pop 01",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 156,
+   "tags": [
+    "Indie Pop",
+    "Folk Pop",
+    "Hopeful",
+    "Reflective",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 694,
+   "title": "House Two",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 172,
+   "tags": [
+    "Electropop",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 696,
+   "title": "Pop 04",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 190,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Brass",
+    "Fashion",
+    "Lifestyle"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": true
+  },
+  {
+   "id": 697,
+   "title": "Pop Two",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 140,
+   "tags": [
+    "Corporate Music",
+    "Relaxed",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Lifestyle"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 699,
+   "title": "Pop 07",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 131,
+   "tags": [
+    "Chillout",
+    "Sensual",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Beach",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 702,
+   "title": "Pop 09",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 68,
+   "tags": [
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Technology"
+   ],
+   "sources": [
+    "electronica",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 703,
+   "title": "Pop 10",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 111,
+   "tags": [
+    "Hip Hop",
+    "Serious",
+    "Determined",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 704,
+   "title": "Pop 11",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 175,
+   "tags": [
+    "Chillout",
+    "Relaxed",
+    "Warm",
+    "Bass",
+    "Drums",
+    "Lifestyle"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 706,
+   "title": "Games Music",
+   "artist": "Grigoriy Nuzhny",
+   "duration": 118,
+   "tags": [
+    "Trailer Music",
+    "Breakbeat",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Drums",
+    "Extreme Sports",
+    "Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 707,
+   "title": "Hiding Under",
+   "artist": "House",
+   "duration": 106,
+   "tags": [
+    "EDM",
+    "Electro House",
+    "Powerful",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Fashion"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 708,
+   "title": "Classical 1",
+   "artist": "Jonny S.",
+   "duration": 111,
+   "tags": [
+    "Film Score",
+    "Hopeful",
+    "Reflective",
+    "Piano",
+    "Strings",
+    "Documentary"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 720,
+   "title": "New Bass 01",
+   "artist": "Lily J",
+   "duration": 96,
+   "tags": [
+    "Underscore",
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 721,
+   "title": "New Bass 02",
+   "artist": "Lily J",
+   "duration": 96,
+   "tags": [
+    "Electronic",
+    "Hypnotic",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 722,
+   "title": "Odd Beats 01",
+   "artist": "Lily J",
+   "duration": 95,
+   "tags": [
+    "Electronic",
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 723,
+   "title": "Other World",
+   "artist": "Lily J",
+   "duration": 96,
+   "tags": [
+    "Chillout",
+    "Tension",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Arabic"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 724,
+   "title": "PlaceIt World 01",
+   "artist": "Lily J",
+   "duration": 96,
+   "tags": [
+    "Corporate Music",
+    "Film & Orchestral",
+    "Disturbing",
+    "Neutral",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Melodic"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 725,
+   "title": "PlaceIt World 02",
+   "artist": "Lily J",
+   "duration": 96,
+   "tags": [
+    "Minimalism",
+    "Hopeful",
+    "Emotional",
+    "Electric Guitar",
+    "Piano",
+    "Cinematic",
+    "Melodic"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 726,
+   "title": "Uplifting Bass",
+   "artist": "Lily J",
+   "duration": 96,
+   "tags": [
+    "Ambient",
+    "Electronic",
+    "Atmospheric",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Technology"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 729,
+   "title": "Pop Track 03",
+   "artist": "Lily J",
+   "duration": 97,
+   "tags": [
+    "Electronic",
+    "Corporate Music",
+    "Playful",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Technology"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 730,
+   "title": "Pop Track 04",
+   "artist": "Lily J",
+   "duration": 100,
+   "tags": [
+    "Friendly",
+    "Lighthearted",
+    "Acoustic Guitar",
+    "Bass",
+    "Melodic",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 732,
+   "title": "Pop Track 06",
+   "artist": "Lily J",
+   "duration": 114,
+   "tags": [
+    "Corporate Music",
+    "Hypnotic",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Instrumental",
+    "Relaxation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 733,
+   "title": "Percussions 01",
+   "artist": "Lily J",
+   "duration": 102,
+   "tags": [
+    "Rhythmic Underscore",
+    "Insistent",
+    "Lively",
+    "Drums",
+    "Percussion",
+    "Art",
+    "Travel"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 734,
+   "title": "Percussions 02",
+   "artist": "Lily J",
+   "duration": 97,
+   "tags": [
+    "Hypnotic",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 735,
+   "title": "Percussions 03",
+   "artist": "Lily J",
+   "duration": 108,
+   "tags": [
+    "Hypnotic",
+    "Insistent",
+    "Mallets",
+    "Percussion",
+    "Cinematic",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 736,
+   "title": "Percussions 04",
+   "artist": "Lily J",
+   "duration": 106,
+   "tags": [
+    "Neutral",
+    "Insistent",
+    "Drums",
+    "Mallets",
+    "Cinematic",
+    "Documentary"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 738,
+   "title": "Hip Hop 02",
+   "artist": "Lily J",
+   "duration": 115,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "City"
+   ],
+   "sources": [
+    "hip-hop",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 739,
+   "title": "Hip Hop 03",
+   "artist": "Lily J",
+   "duration": 112,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Sexy",
+    "Bass",
+    "Drums",
+    "City",
+    "Lifestyle"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 740,
+   "title": "Dance Zero",
+   "artist": "Lily J",
+   "duration": 93,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Lifestyle"
+   ],
+   "sources": [
+    "house",
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 742,
+   "title": "Holiday 02",
+   "artist": "Lily J",
+   "duration": 97,
+   "tags": [
+    "Humorous",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Wedding",
+    "Comedy"
+   ],
+   "sources": [
+    "hip-hop",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 743,
+   "title": "Holiday 01",
+   "artist": "Lily J",
+   "duration": 105,
+   "tags": [
+    "Film & Orchestral",
+    "Mysterious",
+    "Disturbing",
+    "Bass",
+    "Bells",
+    "Cinematic"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 744,
+   "title": "House 02",
+   "artist": "Lily J",
+   "duration": 113,
+   "tags": [
+    "Deep House",
+    "Hypnotic",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 745,
+   "title": "House Vibez",
+   "artist": "Lily J",
+   "duration": 111,
+   "tags": [
+    "EDM",
+    "Relaxed",
+    "Hypnotic",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Fashion"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 748,
+   "title": "Relaxation 06",
+   "artist": "Lily J",
+   "duration": 122,
+   "tags": [
+    "Mysterious",
+    "Atmospheric",
+    "Synth",
+    "Relaxation",
+    "Medical"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 754,
+   "title": "Romantic 03",
+   "artist": "Lily J",
+   "duration": 102,
+   "tags": [
+    "Traditional",
+    "Driving",
+    "Lively",
+    "Acoustic Guitar",
+    "Bass",
+    "Cinematic",
+    "Motivational"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 755,
+   "title": "Workout 01",
+   "artist": "Lily J",
+   "duration": 99,
+   "tags": [
+    "Driving",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Fashion"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 756,
+   "title": "Workout 03",
+   "artist": "Lily J",
+   "duration": 120,
+   "tags": [
+    "Driving",
+    "Futuristic",
+    "Bass",
+    "Bells",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 757,
+   "title": "Workout 02",
+   "artist": "Lily J",
+   "duration": 105,
+   "tags": [
+    "Insistent",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Fashion"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 759,
+   "title": "Romantic 05",
+   "artist": "Lily J",
+   "duration": 112,
+   "tags": [
+    "Underscore",
+    "Corporate Music",
+    "Relaxed",
+    "Calm",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Relaxation"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 762,
+   "title": "Dance 02",
+   "artist": "Lily J",
+   "duration": 108,
+   "tags": [
+    "EDM",
+    "Propulsive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 763,
+   "title": "Lo-Fi 01",
+   "artist": "Lily J",
+   "duration": 102,
+   "tags": [
+    "Chillout",
+    "Relaxed",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Arabic"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 768,
+   "title": "Hip-Hop Beat",
+   "artist": "Mauro Urbina",
+   "duration": 142,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 770,
+   "title": "Autofahren",
+   "artist": "Mauro Urbina",
+   "duration": 284,
+   "tags": [
+    "Deep House",
+    "Hypnotic",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Technology"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 771,
+   "title": "Kickin' Heart",
+   "artist": "Mauro Urbina",
+   "duration": 148,
+   "tags": [
+    "Quirky",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Melodic"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 772,
+   "title": "Macario",
+   "artist": "Mauro Urbina",
+   "duration": 125,
+   "tags": [
+    "Synthpop",
+    "Reflective",
+    "Positive",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 773,
+   "title": "Aquella Tarde en Yelapa",
+   "artist": "Mauro Urbina",
+   "duration": 217,
+   "tags": [
+    "Relaxed",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Technology"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 774,
+   "title": "Blue Monday",
+   "artist": "Mauro Urbina",
+   "duration": 258,
+   "tags": [
+    "Driving",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Motivational"
+   ],
+   "sources": [
+    "electronica",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 775,
+   "title": "Do You Know God's Name?",
+   "artist": "Mauro Urbina",
+   "duration": 294,
+   "tags": [
+    "Hypnotic",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Beach"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 778,
+   "title": "Oh Barcelona",
+   "artist": "Michael Ramir C.",
+   "duration": 146,
+   "tags": [
+    "Lively",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 779,
+   "title": "Oh",
+   "artist": "Michael Ramir C.",
+   "duration": 126,
+   "tags": [
+    "Folk",
+    "Driving",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "mood/lively",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 780,
+   "title": "Okay",
+   "artist": "Michael Ramir C.",
+   "duration": 120,
+   "tags": [
+    "Ska",
+    "Playful",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Beach"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 781,
+   "title": "Dance Away",
+   "artist": "Michael Ramir C.",
+   "duration": 146,
+   "tags": [
+    "EDM",
+    "Propulsive",
+    "Restless",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Sports"
+   ],
+   "sources": [
+    "dance",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 782,
+   "title": "Hey",
+   "artist": "Michael Ramir C.",
+   "duration": 120,
+   "tags": [
+    "EDM",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Aerobics",
+    "Motivational"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 783,
+   "title": "Babe",
+   "artist": "Michael Ramir C.",
+   "duration": 114,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Romantic Comedy",
+    "Melodic"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 786,
+   "title": "Kids",
+   "artist": "Michael Ramir C.",
+   "duration": 89,
+   "tags": [
+    "Children",
+    "Driving",
+    "Humorous",
+    "Banjo",
+    "Bass",
+    "Comedy",
+    "Chasing"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 787,
+   "title": "Love",
+   "artist": "Michael Ramir C.",
+   "duration": 71,
+   "tags": [
+    "Jazz Funk",
+    "Positive",
+    "Dynamic",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Showbiz"
+   ],
+   "sources": [
+    "funk",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 789,
+   "title": "At the Barn",
+   "artist": "Michael Ramir C.",
+   "duration": 164,
+   "tags": [
+    "Country",
+    "Cowboy Western",
+    "Driving",
+    "Humorous",
+    "Banjo",
+    "Bass",
+    "Motivational",
+    "Comedy"
+   ],
+   "sources": [
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 791,
+   "title": "Birthday Gift",
+   "artist": "Michael Ramir C.",
+   "duration": 91,
+   "tags": [
+    "Folk",
+    "Lighthearted",
+    "Acoustic Guitar",
+    "Banjo",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 798,
+   "title": "Francisco",
+   "artist": "Michael Ramir C.",
+   "duration": 154,
+   "tags": [
+    "Relaxed",
+    "Friendly",
+    "Acoustic Guitar",
+    "Bass",
+    "Melodic",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 801,
+   "title": "Happy Home",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "Happy",
+    "Relaxed",
+    "Acoustic Guitar",
+    "Bass",
+    "Melodic",
+    "Motivational"
+   ],
+   "sources": [
+    "pop",
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": true
+  },
+  {
+   "id": 802,
+   "title": "Here Comes The Train",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Folk",
+    "Folk Pop",
+    "Driving",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "mood/lively",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 803,
+   "title": "Hey Billy",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Country",
+    "Blues",
+    "Driving",
+    "Humorous",
+    "Bass",
+    "Brass",
+    "Comedy",
+    "Western"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 804,
+   "title": "I Love You Grandma",
+   "artist": "Michael Ramir C.",
+   "duration": 114,
+   "tags": [
+    "Folk Pop",
+    "Indie Pop",
+    "Playful",
+    "Acoustic Guitar",
+    "Drums",
+    "Melodic",
+    "Homes"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 805,
+   "title": "I Will Marry That Cowgirl",
+   "artist": "Michael Ramir C.",
+   "duration": 94,
+   "tags": [
+    "Country",
+    "Folk",
+    "Fun",
+    "Bass",
+    "Drums",
+    "Comedy",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 808,
+   "title": "I'm Hungry!",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "Jazz",
+    "Swing",
+    "Propulsive",
+    "Driving",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Travel"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 813,
+   "title": "Magical moment",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Folk Pop",
+    "Children",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Summer"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 814,
+   "title": "My Last Mojito",
+   "artist": "Michael Ramir C.",
+   "duration": 122,
+   "tags": [
+    "Reggae",
+    "Relaxed",
+    "Lighthearted",
+    "Bass",
+    "Drums",
+    "Travel"
+   ],
+   "sources": [
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 817,
+   "title": "The Duel",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Country Rock",
+    "Rock",
+    "Relaxed",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Soft"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 820,
+   "title": "Where Are My Boots?",
+   "artist": "Michael Ramir C.",
+   "duration": 162,
+   "tags": [
+    "Country",
+    "Jazz",
+    "Lighthearted",
+    "Acoustic Guitar",
+    "Banjo",
+    "Motivational",
+    "Travel"
+   ],
+   "sources": [
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 821,
+   "title": "At the Playhouse",
+   "artist": "Michael Ramir C.",
+   "duration": 91,
+   "tags": [
+    "Happy",
+    "Carefree",
+    "Bass",
+    "Bells",
+    "Melodic",
+    "Motivational"
+   ],
+   "sources": [
+    "pop",
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 822,
+   "title": "Banjo Man in Africa",
+   "artist": "Michael Ramir C.",
+   "duration": 90,
+   "tags": [
+    "Children",
+    "Happy",
+    "Humorous",
+    "Banjo",
+    "Bass",
+    "Motivational",
+    "Comedy"
+   ],
+   "sources": [
+    "discover/africa",
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 823,
+   "title": "Be Happy 2",
+   "artist": "Michael Ramir C.",
+   "duration": 84,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Friendly",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Summer"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 824,
+   "title": "Bob",
+   "artist": "Michael Ramir C.",
+   "duration": 122,
+   "tags": [
+    "Humorous",
+    "Lively",
+    "Bass",
+    "Brass",
+    "Comedy"
+   ],
+   "sources": [
+    "funk",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 825,
+   "title": "Brother's Love",
+   "artist": "Michael Ramir C.",
+   "duration": 155,
+   "tags": [
+    "Relaxed",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Bass",
+    "Melodic",
+    "Wedding"
+   ],
+   "sources": [
+    "pop",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 827,
+   "title": "Clumsy Daddy",
+   "artist": "Michael Ramir C.",
+   "duration": 93,
+   "tags": [
+    "Happy",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop",
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": true
+  },
+  {
+   "id": 828,
+   "title": "Don't Worry",
+   "artist": "Michael Ramir C.",
+   "duration": 136,
+   "tags": [
+    "Carefree",
+    "Cheerful",
+    "Percussion",
+    "Synth",
+    "Cinematic",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 829,
+   "title": "Feast From The East",
+   "artist": "Michael Ramir C.",
+   "duration": 121,
+   "tags": [
+    "Restless",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "Technology"
+   ],
+   "sources": [
+    "house",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 830,
+   "title": "Goin' Back to Alabama",
+   "artist": "Michael Ramir C.",
+   "duration": 88,
+   "tags": [
+    "Bluegrass",
+    "Folk",
+    "Driving",
+    "Acoustic Guitar",
+    "Banjo",
+    "Travel",
+    "Western"
+   ],
+   "sources": [
+    "mood/happy",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 831,
+   "title": "I Love You Mommy",
+   "artist": "Michael Ramir C.",
+   "duration": 92,
+   "tags": [
+    "Children",
+    "Happy",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Melodic",
+    "Motivational"
+   ],
+   "sources": [
+    "pop",
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 832,
+   "title": "I'm Going Home",
+   "artist": "Michael Ramir C.",
+   "duration": 151,
+   "tags": [
+    "Folk Pop",
+    "Playful",
+    "Acoustic Guitar",
+    "Banjo",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 834,
+   "title": "It's Love",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "Corporate Music",
+    "Uplifting",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Corporate"
+   ],
+   "sources": [
+    "electronica",
+    "corporate",
+    "mood/uplifting",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 835,
+   "title": "Just Forget About It",
+   "artist": "Michael Ramir C.",
+   "duration": 135,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 836,
+   "title": "Let's Move",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Glamorous",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Lifestyle"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 837,
+   "title": "Life is a Dream",
+   "artist": "Michael Ramir C.",
+   "duration": 99,
+   "tags": [
+    "Disco",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Beach"
+   ],
+   "sources": [
+    "pop",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 838,
+   "title": "Stay With Me",
+   "artist": "Michael Ramir C.",
+   "duration": 127,
+   "tags": [
+    "Rhythmic Underscore",
+    "Corporate Music",
+    "Friendly",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Beach"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 839,
+   "title": "Tears of Joy",
+   "artist": "Michael Ramir C.",
+   "duration": 140,
+   "tags": [
+    "Folk Pop",
+    "Uplifting",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Travel"
+   ],
+   "sources": [
+    "mood/happy",
+    "mood/uplifting",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 840,
+   "title": "That's the Way of Life",
+   "artist": "Michael Ramir C.",
+   "duration": 148,
+   "tags": [
+    "Folk Pop",
+    "Children",
+    "Driving",
+    "Acoustic Guitar",
+    "Banjo",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "mood/lively",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 841,
+   "title": "Tonight",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Driving",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "City",
+    "Travel"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 843,
+   "title": "Baila mi Amor",
+   "artist": "Michael Ramir C.",
+   "duration": 91,
+   "tags": [
+    "Lighthearted",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 844,
+   "title": "Down the Hill",
+   "artist": "Michael Ramir C.",
+   "duration": 105,
+   "tags": [
+    "Country",
+    "Lighthearted",
+    "Acoustic Guitar",
+    "Banjo",
+    "Motivational",
+    "Western"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 847,
+   "title": "It's April",
+   "artist": "Michael Ramir C.",
+   "duration": 92,
+   "tags": [
+    "Children",
+    "Fun",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Homes"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 848,
+   "title": "Let's Win the Race",
+   "artist": "Michael Ramir C.",
+   "duration": 134,
+   "tags": [
+    "Country",
+    "Folk",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Banjo",
+    "Motivational",
+    "Travel"
+   ],
+   "sources": [
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 849,
+   "title": "Light it Up Boy",
+   "artist": "Michael Ramir C.",
+   "duration": 94,
+   "tags": [
+    "Jazz Funk",
+    "Lively",
+    "Positive",
+    "Bass",
+    "Brass",
+    "Game Show",
+    "Showbiz"
+   ],
+   "sources": [
+    "funk",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 850,
+   "title": "Marcus",
+   "artist": "Michael Ramir C.",
+   "duration": 125,
+   "tags": [
+    "Insistent",
+    "Positive",
+    "Bass",
+    "Drums",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 851,
+   "title": "Me and You",
+   "artist": "Michael Ramir C.",
+   "duration": 157,
+   "tags": [
+    "Rock",
+    "Driving",
+    "Energetic",
+    "Bass",
+    "Drums",
+    "Sports"
+   ],
+   "sources": [
+    "pop",
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 852,
+   "title": "Music and Life",
+   "artist": "Michael Ramir C.",
+   "duration": 143,
+   "tags": [
+    "Folk Pop",
+    "Friendly",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 853,
+   "title": "Night Patrol",
+   "artist": "Michael Ramir C.",
+   "duration": 89,
+   "tags": [
+    "Rhythmic Underscore",
+    "Insistent",
+    "Positive",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 854,
+   "title": "Old Letter",
+   "artist": "Michael Ramir C.",
+   "duration": 165,
+   "tags": [
+    "Romantic",
+    "Emotional",
+    "Acoustic Guitar",
+    "Electric Guitar",
+    "Love",
+    "Nature"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 856,
+   "title": "Salty and Sweet",
+   "artist": "Michael Ramir C.",
+   "duration": 83,
+   "tags": [
+    "Rock and Roll",
+    "Rockabilly",
+    "Driving",
+    "Lighthearted",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Homes"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 858,
+   "title": "Too Hot",
+   "artist": "Michael Ramir C.",
+   "duration": 108,
+   "tags": [
+    "Funk",
+    "Humorous",
+    "Lively",
+    "Bass",
+    "Brass",
+    "Travel"
+   ],
+   "sources": [
+    "world",
+    "funk",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 859,
+   "title": "Under the Sun",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Country",
+    "Cowboy Western",
+    "Lively",
+    "Acoustic Guitar",
+    "Banjo",
+    "Motivational",
+    "Comedy"
+   ],
+   "sources": [
+    "mood/happy",
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 860,
+   "title": "Year 2001",
+   "artist": "Michael Ramir C.",
+   "duration": 111,
+   "tags": [
+    "Funk Rock",
+    "Energetic",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Road Trip"
+   ],
+   "sources": [
+    "funk",
+    "mood/energetic",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 861,
+   "title": "Yo Chucky",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "Rock and Roll",
+    "Jazz",
+    "Propulsive",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 862,
+   "title": "Christmas Gifts",
+   "artist": "Michael Ramir C.",
+   "duration": 132,
+   "tags": [
+    "Children",
+    "Carefree",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Modern Christmas"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 863,
+   "title": "A Decade in Beijing",
+   "artist": "Michael Ramir C.",
+   "duration": 117,
+   "tags": [
+    "Traditional",
+    "Lighthearted",
+    "Cheerful",
+    "Bass",
+    "Drums",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 864,
+   "title": "A Night to Remember",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Travel",
+    "Melodic"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 866,
+   "title": "Christmas Stars",
+   "artist": "Michael Ramir C.",
+   "duration": 95,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Friendly",
+    "Acoustic Guitar",
+    "Drums",
+    "Modern Christmas",
+    "Traditional Christmas"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 868,
+   "title": "Dry Gin",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Acid Jazz",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Lifestyle"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 870,
+   "title": "Forbidden Apple",
+   "artist": "Michael Ramir C.",
+   "duration": 112,
+   "tags": [
+    "Electropop",
+    "Powerful",
+    "Positive",
+    "Bass",
+    "Drums",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 872,
+   "title": "Gimme that Groove!",
+   "artist": "Michael Ramir C.",
+   "duration": 88,
+   "tags": [
+    "Insistent",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Fashion"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 874,
+   "title": "It Hurts to Fight",
+   "artist": "Michael Ramir C.",
+   "duration": 135,
+   "tags": [
+    "Insistent",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 875,
+   "title": "It's Christmas Day!",
+   "artist": "Michael Ramir C.",
+   "duration": 111,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Lifestyle",
+    "Motivational"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 876,
+   "title": "Like a Loop Machine",
+   "artist": "Michael Ramir C.",
+   "duration": 129,
+   "tags": [
+    "Serious",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Travel"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 877,
+   "title": "Memories",
+   "artist": "Michael Ramir C.",
+   "duration": 95,
+   "tags": [
+    "Atmospheric",
+    "Ethereal",
+    "Strings",
+    "Cinematic",
+    "Religion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 879,
+   "title": "Papa",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "Jazz",
+    "Corporate Music",
+    "Friendly",
+    "Lighthearted",
+    "Organ",
+    "Cinematic",
+    "Religion"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 880,
+   "title": "Sleepless Nights",
+   "artist": "Michael Ramir C.",
+   "duration": 96,
+   "tags": [
+    "Ethereal",
+    "Friendly",
+    "Organ",
+    "Cinematic",
+    "Religion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 882,
+   "title": "Temptations",
+   "artist": "Michael Ramir C.",
+   "duration": 102,
+   "tags": [
+    "Atmospheric",
+    "Positive",
+    "Organ",
+    "Cinematic",
+    "Religion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 883,
+   "title": "The Barber",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Hypnotic",
+    "Quirky",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Travel"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 886,
+   "title": "Tonight I Pray",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Ethereal",
+    "Positive",
+    "Organ",
+    "Synth",
+    "Cinematic",
+    "Religion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 891,
+   "title": "Until Then",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "Relaxed",
+    "Insistent",
+    "Acoustic Guitar",
+    "Bass",
+    "Melodic",
+    "Beach"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 893,
+   "title": "Walking Dead",
+   "artist": "Michael Ramir C.",
+   "duration": 122,
+   "tags": [
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 896,
+   "title": "A Christmas Carol",
+   "artist": "Michael Ramir C.",
+   "duration": 107,
+   "tags": [
+    "Children",
+    "Carefree",
+    "Keyboard",
+    "Mallets",
+    "Modern Christmas",
+    "Traditional Christmas"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 897,
+   "title": "A Very Happy Christmas",
+   "artist": "Michael Ramir C.",
+   "duration": 130,
+   "tags": [
+    "Folk Pop",
+    "Children",
+    "Carefree",
+    "Relaxed",
+    "Acoustic Guitar",
+    "Mallets",
+    "Cooking"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 898,
+   "title": "Away from you",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Indie Pop",
+    "Contented",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 899,
+   "title": "Christmas in the Guetto",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Bells",
+    "Motivational",
+    "Modern Christmas"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 900,
+   "title": "Dop Dop",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Confident",
+    "Sexy",
+    "Synth",
+    "Reality TV",
+    "Parties"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 901,
+   "title": "Do Tur Teh",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Sexy",
+    "Futuristic",
+    "Synth",
+    "Drama"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 903,
+   "title": "Farewell to You",
+   "artist": "Michael Ramir C.",
+   "duration": 112,
+   "tags": [
+    "Folk Pop",
+    "Carefree",
+    "Bass",
+    "Drums",
+    "Nursery Rhymes",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 905,
+   "title": "Getting High on Love",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Chillout",
+    "Sensual",
+    "Sexy",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 906,
+   "title": "Glory of Christmas",
+   "artist": "Michael Ramir C.",
+   "duration": 104,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Fairytale"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 907,
+   "title": "Ho Ho Ho",
+   "artist": "Michael Ramir C.",
+   "duration": 96,
+   "tags": [
+    "Folk Pop",
+    "Indie Folk",
+    "Carefree",
+    "Acoustic Guitar",
+    "Percussion",
+    "Modern Christmas",
+    "Christmas"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 908,
+   "title": "Howling Under the Moon",
+   "artist": "Michael Ramir C.",
+   "duration": 125,
+   "tags": [
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 911,
+   "title": "Let's All Dance This Christmas",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Disco",
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Brass",
+    "Fashion",
+    "Parties"
+   ],
+   "sources": [
+    "funk",
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 914,
+   "title": "Priest and Nuns",
+   "artist": "Michael Ramir C.",
+   "duration": 117,
+   "tags": [
+    "Atmospheric",
+    "Dreamy",
+    "Synth",
+    "Travel"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 915,
+   "title": "Romeo and Juliet",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Indie Pop",
+    "Positive",
+    "Cello",
+    "Strings",
+    "Religion"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 916,
+   "title": "See You Next Christmas",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Children",
+    "Happy",
+    "Carefree",
+    "Bass",
+    "Bells",
+    "Modern Christmas",
+    "Traditional Christmas"
+   ],
+   "sources": [
+    "pop",
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 917,
+   "title": "This is what I'm Fighting for",
+   "artist": "Michael Ramir C.",
+   "duration": 126,
+   "tags": [
+    "Determined",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Relaxation",
+    "Travel"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 918,
+   "title": "Under God's Grace",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Atmospheric",
+    "Ethereal",
+    "Woodwinds",
+    "Religion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 919,
+   "title": "U n Me ( How Long Can I wait?)",
+   "artist": "Michael Ramir C.",
+   "duration": 119,
+   "tags": [
+    "Quirky",
+    "Positive",
+    "Brass",
+    "Parties"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 920,
+   "title": "We're All Guilty",
+   "artist": "Michael Ramir C.",
+   "duration": 117,
+   "tags": [
+    "Positive",
+    "Dreamy",
+    "Keyboard",
+    "Synth",
+    "Cinematic",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 921,
+   "title": "We Worship on Christmas",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Children",
+    "Fun",
+    "Bass",
+    "Bells",
+    "Cinematic",
+    "Modern Christmas"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 922,
+   "title": "What is Faith",
+   "artist": "Michael Ramir C.",
+   "duration": 156,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": true
+  },
+  {
+   "id": 923,
+   "title": "Yeah Yeah",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Uplifting",
+    "Confident",
+    "Synth",
+    "Cinematic",
+    "Youth"
+   ],
+   "sources": [
+    "pop",
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 924,
+   "title": "Years of Tears",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Ethereal",
+    "Positive",
+    "Woodwinds",
+    "Cinematic",
+    "Religion"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 925,
+   "title": "Christmas Around the World",
+   "artist": "Michael Ramir C.",
+   "duration": 171,
+   "tags": [
+    "Friendly",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Bass",
+    "Arabic",
+    "Motivational"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 927,
+   "title": "This Our Year! (Happy New Year!)",
+   "artist": "Michael Ramir C.",
+   "duration": 142,
+   "tags": [
+    "Disco",
+    "Fun",
+    "Confident",
+    "Bass",
+    "Brass",
+    "Parties",
+    "Workout"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 928,
+   "title": "You're Somewhere in Between",
+   "artist": "Michael Ramir C.",
+   "duration": 104,
+   "tags": [
+    "Disco",
+    "Electropop",
+    "Confident",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 932,
+   "title": "No Limits",
+   "artist": "Michael Ramir C.",
+   "duration": 94,
+   "tags": [
+    "Serious",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 934,
+   "title": "I Don't Know",
+   "artist": "Michael Ramir C.",
+   "duration": 153,
+   "tags": [
+    "Relaxed",
+    "Warm",
+    "Acoustic Guitar",
+    "Bass",
+    "Road Trip"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 935,
+   "title": "Disco Ain't Old School",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Disco",
+    "Confident",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Aerobics",
+    "Fashion"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 936,
+   "title": "I'm Alone",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Relaxed",
+    "Warm",
+    "Acoustic Guitar",
+    "Bass",
+    "Road Trip"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 937,
+   "title": "Lonely Time",
+   "artist": "Michael Ramir C.",
+   "duration": 148,
+   "tags": [
+    "Lighthearted",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Bass",
+    "Beach",
+    "Travel"
+   ],
+   "sources": [
+    "pop",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 938,
+   "title": "Wake Up Now",
+   "artist": "Michael Ramir C.",
+   "duration": 91,
+   "tags": [
+    "Traditional",
+    "Ethereal",
+    "Friendly",
+    "Woodwinds",
+    "Cinematic",
+    "Religion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 939,
+   "title": "Cowboots to Kick Yo' A$$",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 944,
+   "title": "Christmas Is For Kids!",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Country",
+    "Lively",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Travel"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 950,
+   "title": "Please Don't Leave Without Me",
+   "artist": "Michael Ramir C.",
+   "duration": 123,
+   "tags": [
+    "Lively",
+    "Cheerful",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Road Trip"
+   ],
+   "sources": [
+    "pop",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 951,
+   "title": "Don't You Know It's True",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "Powerful",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 952,
+   "title": "Dreaming of You",
+   "artist": "Michael Ramir C.",
+   "duration": 149,
+   "tags": [
+    "Film Score",
+    "Hopeful",
+    "Piano",
+    "Strings",
+    "Melodic",
+    "Relaxation"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 953,
+   "title": "Feel Alive",
+   "artist": "Michael Ramir C.",
+   "duration": 106,
+   "tags": [
+    "Soul",
+    "Carefree",
+    "Fun",
+    "Bass",
+    "Brass",
+    "Aerobics"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 954,
+   "title": "How Does it Feel",
+   "artist": "Michael Ramir C.",
+   "duration": 158,
+   "tags": [
+    "Classic Rock",
+    "Rock",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Cars"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 959,
+   "title": "It's Just you",
+   "artist": "Michael Ramir C.",
+   "duration": 183,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Road Trip"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": true
+  },
+  {
+   "id": 961,
+   "title": "I Wanna Know 2",
+   "artist": "Michael Ramir C.",
+   "duration": 138,
+   "tags": [
+    "Happy",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world",
+    "mood/happy",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 962,
+   "title": "Jihad",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Relaxed",
+    "Quirky",
+    "Banjo",
+    "Bass",
+    "Arabic",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 963,
+   "title": "Just Keep Walking",
+   "artist": "Michael Ramir C.",
+   "duration": 125,
+   "tags": [
+    "Indie Pop",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/uplifting",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 966,
+   "title": "Lust",
+   "artist": "Michael Ramir C.",
+   "duration": 129,
+   "tags": [
+    "EDM",
+    "Disco",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Parties"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 968,
+   "title": "Mrs. Bee Bebop",
+   "artist": "Michael Ramir C.",
+   "duration": 125,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": true
+  },
+  {
+   "id": 970,
+   "title": "Night Sky Hip Hop",
+   "artist": "Michael Ramir C.",
+   "duration": 257,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Beach"
+   ],
+   "sources": [
+    "pop",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 972,
+   "title": "One More Time",
+   "artist": "Michael Ramir C.",
+   "duration": 126,
+   "tags": [
+    "Motivating",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Showbiz"
+   ],
+   "sources": [
+    "house",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 973,
+   "title": "Positive Energy",
+   "artist": "Michael Ramir C.",
+   "duration": 91,
+   "tags": [
+    "EDM",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Workout"
+   ],
+   "sources": [
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 974,
+   "title": "Spanish Heart",
+   "artist": "Michael Ramir C.",
+   "duration": 107,
+   "tags": [
+    "Latin",
+    "Powerful",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Beach"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 977,
+   "title": "Wake Up",
+   "artist": "Michael Ramir C.",
+   "duration": 147,
+   "tags": [
+    "Country",
+    "Cheerful",
+    "Bass",
+    "Drums",
+    "Travel"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 978,
+   "title": "Wherever You Are",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "Friendly",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Travel",
+    "Beach"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 979,
+   "title": "Wo Ai Ni",
+   "artist": "Michael Ramir C.",
+   "duration": 147,
+   "tags": [
+    "Emotional",
+    "Friendly",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "Wedding"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 981,
+   "title": "A Rockin' Holiday!",
+   "artist": "Michael Ramir C.",
+   "duration": 153,
+   "tags": [
+    "Lighthearted",
+    "Cheerful",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Christmas"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 982,
+   "title": "An Eye Catcher",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Acoustic Guitar",
+    "Drums",
+    "Travel",
+    "Beach"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": true
+  },
+  {
+   "id": 983,
+   "title": "Cherry on Top",
+   "artist": "Michael Ramir C.",
+   "duration": 106,
+   "tags": [
+    "Lively",
+    "Cheerful",
+    "Bass",
+    "Brass",
+    "Travel"
+   ],
+   "sources": [
+    "funk",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 984,
+   "title": "Christmas Laughs",
+   "artist": "Michael Ramir C.",
+   "duration": 105,
+   "tags": [
+    "Folk Pop",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Fairytale"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 986,
+   "title": "City Of Sins",
+   "artist": "Michael Ramir C.",
+   "duration": 128,
+   "tags": [
+    "Determined",
+    "Dangerous",
+    "Bass",
+    "Brass",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 987,
+   "title": "Cristine",
+   "artist": "Michael Ramir C.",
+   "duration": 112,
+   "tags": [
+    "Warm",
+    "Positive",
+    "Piano",
+    "Nursery Rhymes"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 988,
+   "title": "Day Dreamin' with U",
+   "artist": "Michael Ramir C.",
+   "duration": 118,
+   "tags": [
+    "Chillout",
+    "Downtempo",
+    "Hopeful",
+    "Drums",
+    "Keyboard",
+    "Melodic",
+    "Reality TV"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 989,
+   "title": "Dirty Thinkin'",
+   "artist": "Michael Ramir C.",
+   "duration": 89,
+   "tags": [
+    "Jazz Funk",
+    "Motivating",
+    "Energetic",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Sports"
+   ],
+   "sources": [
+    "funk",
+    "mood/energetic",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 990,
+   "title": "East meets West",
+   "artist": "Michael Ramir C.",
+   "duration": 124,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": true
+  },
+  {
+   "id": 992,
+   "title": "Every 24th of August",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Relaxed",
+    "Friendly",
+    "Acoustic Guitar",
+    "Percussion",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 997,
+   "title": "Home Again",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Warm",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Melodic",
+    "Romantic Comedy"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 998,
+   "title": "Hooligans",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Rock",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Road Trip"
+   ],
+   "sources": [
+    "mood/energetic",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 999,
+   "title": "Horns of Dilemma",
+   "artist": "Michael Ramir C.",
+   "duration": 122,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "City",
+    "Lifestyle"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1000,
+   "title": "I Can Hear Your Heartbeat",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "Indie Pop",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Workout"
+   ],
+   "sources": [
+    "pop",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1001,
+   "title": "I Do!",
+   "artist": "Michael Ramir C.",
+   "duration": 128,
+   "tags": [
+    "EDM",
+    "Uplifting",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Aerobics",
+    "Beach"
+   ],
+   "sources": [
+    "house",
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 1003,
+   "title": "Keep the Funk ON",
+   "artist": "Michael Ramir C.",
+   "duration": 151,
+   "tags": [
+    "Relaxed",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Action"
+   ],
+   "sources": [
+    "funk",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1004,
+   "title": "Lets Paint the Town Red!",
+   "artist": "Michael Ramir C.",
+   "duration": 122,
+   "tags": [
+    "Rock",
+    "Propulsive",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic",
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1005,
+   "title": "Make some Noise this Christmas!",
+   "artist": "Michael Ramir C.",
+   "duration": 125,
+   "tags": [
+    "Children",
+    "Fun",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Christmas"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1007,
+   "title": "Move Your Body",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Children",
+    "Fun",
+    "Cheerful",
+    "Percussion",
+    "Melodic",
+    "Nursery Rhymes"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1010,
+   "title": "Super Strong",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "EDM",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Workout"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1011,
+   "title": "Suffocation",
+   "artist": "Michael Ramir C.",
+   "duration": 94,
+   "tags": [
+    "Powerful",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Action",
+    "Extreme Sports"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 1012,
+   "title": "Take this Higher",
+   "artist": "Michael Ramir C.",
+   "duration": 99,
+   "tags": [
+    "EDM",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Parties"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1016,
+   "title": "A Coward Knight",
+   "artist": "Michael Ramir C.",
+   "duration": 115,
+   "tags": [
+    "Reflective",
+    "Sentimental",
+    "Acoustic Guitar",
+    "Banjo",
+    "Travel",
+    "Western"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1020,
+   "title": "Between Two Evils",
+   "artist": "Michael Ramir C.",
+   "duration": 147,
+   "tags": [
+    "Serious",
+    "Insistent",
+    "Acoustic Guitar",
+    "Drums",
+    "Travel",
+    "Desert"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1021,
+   "title": "Christmas Jokes",
+   "artist": "Michael Ramir C.",
+   "duration": 68,
+   "tags": [
+    "Children",
+    "Humorous",
+    "Acoustic Guitar",
+    "Percussion",
+    "Christmas",
+    "Modern Christmas"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1023,
+   "title": "Crying Sea",
+   "artist": "Michael Ramir C.",
+   "duration": 140,
+   "tags": [
+    "Chillout",
+    "Corporate Music",
+    "Atmospheric",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Technology"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1024,
+   "title": "Delayed Flight",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Indie Pop",
+    "Confident",
+    "Positive",
+    "Bass",
+    "Drums",
+    "News"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1026,
+   "title": "El Embustero",
+   "artist": "Michael Ramir C.",
+   "duration": 95,
+   "tags": [
+    "Children",
+    "Carefree",
+    "Bass",
+    "Drums",
+    "Beach",
+    "Travel"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 1027,
+   "title": "Evolution",
+   "artist": "Michael Ramir C.",
+   "duration": 115,
+   "tags": [
+    "Determined",
+    "Dangerous",
+    "Bass",
+    "Drums",
+    "Action"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 1029,
+   "title": "Funky Martian",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Jazz Funk",
+    "Motivating",
+    "Lively",
+    "Bass",
+    "Drums",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "funk",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1030,
+   "title": "I Believe in Us",
+   "artist": "Michael Ramir C.",
+   "duration": 168,
+   "tags": [
+    "Uplifting",
+    "Warm",
+    "Piano",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop",
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 1031,
+   "title": "I'm Sorry Father",
+   "artist": "Michael Ramir C.",
+   "duration": 106,
+   "tags": [
+    "Folk Pop",
+    "Warm",
+    "Acoustic Guitar",
+    "Banjo",
+    "Travel"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 1032,
+   "title": "Life's Not Easy",
+   "artist": "Michael Ramir C.",
+   "duration": 123,
+   "tags": [
+    "Folk Pop",
+    "Carefree",
+    "Warm",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle",
+    "Road Trip"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1034,
+   "title": "Love and Trust",
+   "artist": "Michael Ramir C.",
+   "duration": 132,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Lifestyle",
+    "Travel"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1035,
+   "title": "Merry Christmas to you!",
+   "artist": "Michael Ramir C.",
+   "duration": 94,
+   "tags": [
+    "Indie Pop",
+    "Fun",
+    "Cheerful",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1037,
+   "title": "My Little Star",
+   "artist": "Michael Ramir C.",
+   "duration": 136,
+   "tags": [
+    "Children",
+    "Hopeful",
+    "Keyboard",
+    "Mallets",
+    "Documentary",
+    "Fairytale"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 1041,
+   "title": "She's a Thief",
+   "artist": "Michael Ramir C.",
+   "duration": 130,
+   "tags": [
+    "Motivating",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Sports"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 1042,
+   "title": "Simon Says",
+   "artist": "Michael Ramir C.",
+   "duration": 147,
+   "tags": [
+    "Lively",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Travel"
+   ],
+   "sources": [
+    "funk",
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 1044,
+   "title": "Thanks for another day",
+   "artist": "Michael Ramir C.",
+   "duration": 126,
+   "tags": [
+    "Disco",
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Beach"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": true
+  },
+  {
+   "id": 1047,
+   "title": "To the Next Round",
+   "artist": "Michael Ramir C.",
+   "duration": 126,
+   "tags": [
+    "Rhythmic Underscore",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Technology"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1048,
+   "title": "Turn This Up a Little Louder!",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Indie Pop",
+    "Carefree",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Youth"
+   ],
+   "sources": [
+    "pop",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1049,
+   "title": "A Cowboy's Heart",
+   "artist": "Michael Ramir C.",
+   "duration": 85,
+   "tags": [
+    "Country",
+    "Country Rock",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Western"
+   ],
+   "sources": [
+    "mood/lively",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1050,
+   "title": "A Love Affair",
+   "artist": "Michael Ramir C.",
+   "duration": 106,
+   "tags": [
+    "Serious",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "Slow",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1051,
+   "title": "A Peaceful World",
+   "artist": "Michael Ramir C.",
+   "duration": 107,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "Motivational"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1052,
+   "title": "Baby Yohan",
+   "artist": "Michael Ramir C.",
+   "duration": 95,
+   "tags": [
+    "Folk Pop",
+    "Folk",
+    "Carefree",
+    "Percussion",
+    "Plucked",
+    "Wedding",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 1054,
+   "title": "Blue Funk",
+   "artist": "Michael Ramir C.",
+   "duration": 143,
+   "tags": [
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "City"
+   ],
+   "sources": [
+    "funk",
+    "tag/motivational"
+   ],
+   "use": true
+  },
+  {
+   "id": 1057,
+   "title": "Cupcakes",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Carefree",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Beach"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 1059,
+   "title": "Everything's Gonna Be Alright",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Folk Pop",
+    "Carefree",
+    "Fun",
+    "Acoustic Guitar",
+    "Banjo",
+    "Road Trip",
+    "Romantic Comedy"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1060,
+   "title": "Five",
+   "artist": "Michael Ramir C.",
+   "duration": 106,
+   "tags": [
+    "Funk Rock",
+    "Motivating",
+    "Dynamic",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 1061,
+   "title": "Forbidden",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "EDM",
+    "Lively",
+    "Positive",
+    "Bass",
+    "Brass",
+    "Travel",
+    "Beach"
+   ],
+   "sources": [
+    "house",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 1062,
+   "title": "Friday Routine",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "EDM",
+    "Driving",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Parties"
+   ],
+   "sources": [
+    "house",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1063,
+   "title": "Fun at the Farm",
+   "artist": "Michael Ramir C.",
+   "duration": 106,
+   "tags": [
+    "Country",
+    "Folk",
+    "Friendly",
+    "Acoustic Guitar",
+    "Bass",
+    "Wedding",
+    "Travel"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 1064,
+   "title": "Goup the Wall",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Rock",
+    "Nu Metal",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1065,
+   "title": "Happy Chinese New Year!",
+   "artist": "Michael Ramir C.",
+   "duration": 153,
+   "tags": [
+    "Cheerful",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "Fashion"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1066,
+   "title": "Ima Fool for you",
+   "artist": "Michael Ramir C.",
+   "duration": 131,
+   "tags": [
+    "Relaxed",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Road Trip",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1067,
+   "title": "I'm Excited",
+   "artist": "Michael Ramir C.",
+   "duration": 131,
+   "tags": [
+    "Folk Pop",
+    "Lighthearted",
+    "Cheerful",
+    "Acoustic Guitar",
+    "Bass",
+    "Lifestyle"
+   ],
+   "sources": [
+    "tag/motivational",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 1068,
+   "title": "K.O.",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Rock",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Cars"
+   ],
+   "sources": [
+    "mood/energetic",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1069,
+   "title": "My Pride and Joy",
+   "artist": "Michael Ramir C.",
+   "duration": 129,
+   "tags": [
+    "Children",
+    "Carefree",
+    "Drums",
+    "Mallets",
+    "Melodic",
+    "Slow"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 1072,
+   "title": "Owies Ukulele",
+   "artist": "Michael Ramir C.",
+   "duration": 160,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Carefree",
+    "Acoustic Guitar",
+    "Drums",
+    "Melodic",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy",
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 1074,
+   "title": "Poquito",
+   "artist": "Michael Ramir C.",
+   "duration": 169,
+   "tags": [
+    "Relaxed",
+    "Friendly",
+    "Bass",
+    "Drums",
+    "Travel",
+    "Beach"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1075,
+   "title": "Shahada",
+   "artist": "Michael Ramir C.",
+   "duration": 145,
+   "tags": [
+    "Quirky",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Arabic",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 1076,
+   "title": "Smile",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "Children",
+    "Folk Pop",
+    "Fun",
+    "Acoustic Guitar",
+    "Bass",
+    "Soft",
+    "Lifestyle"
+   ],
+   "sources": [
+    "mood/happy"
+   ],
+   "use": false
+  },
+  {
+   "id": 1077,
+   "title": "Sounds Good",
+   "artist": "Michael Ramir C.",
+   "duration": 96,
+   "tags": [
+    "Funk Rock",
+    "Lively",
+    "Energetic",
+    "Bass",
+    "Drums",
+    "Sports"
+   ],
+   "sources": [
+    "funk",
+    "mood/energetic",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 1080,
+   "title": "This Love is Forever",
+   "artist": "Michael Ramir C.",
+   "duration": 160,
+   "tags": [
+    "Confident",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Reality TV",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1082,
+   "title": "Whoop Yo' A$$ Boy",
+   "artist": "Michael Ramir C.",
+   "duration": 123,
+   "tags": [
+    "Rock",
+    "Nu Metal",
+    "Propulsive",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Action",
+    "Chasing"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1083,
+   "title": "Tim Tom Tammy",
+   "artist": "Michael Ramir C.",
+   "duration": 128,
+   "tags": [
+    "Country",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Comedy"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1084,
+   "title": "Let's Play Africa",
+   "artist": "Michael Ramir C.",
+   "duration": 114,
+   "tags": [
+    "World",
+    "Happy",
+    "Lively",
+    "Acoustic Guitar",
+    "Brass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "discover/africa",
+    "world",
+    "mood/happy",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 1085,
+   "title": "I'm All Heart",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Rock",
+    "Funk Rock",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Cars",
+    "Racing"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1086,
+   "title": "A Sexy Assassin",
+   "artist": "Michael Ramir C.",
+   "duration": 105,
+   "tags": [
+    "Reggaeton",
+    "Latin Pop",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Beach"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 1087,
+   "title": "A Special Feeling",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Indie Pop",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Soft",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1089,
+   "title": "Bruh!",
+   "artist": "Michael Ramir C.",
+   "duration": 119,
+   "tags": [
+    "Quirky",
+    "Positive",
+    "Drums",
+    "Percussion",
+    "Travel",
+    "Parties"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1091,
+   "title": "Carry On",
+   "artist": "Michael Ramir C.",
+   "duration": 95,
+   "tags": [
+    "Rock",
+    "Classic Rock",
+    "Aggressive",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Sports"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1092,
+   "title": "Cold Coffee",
+   "artist": "Michael Ramir C.",
+   "duration": 131,
+   "tags": [
+    "Rock",
+    "Blues Rock",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Sports"
+   ],
+   "sources": [
+    "mood/energetic",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1093,
+   "title": "Complex Desire",
+   "artist": "Michael Ramir C.",
+   "duration": 131,
+   "tags": [
+    "Insistent",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1095,
+   "title": "Dance Like There's No Tomorrow",
+   "artist": "Michael Ramir C.",
+   "duration": 141,
+   "tags": [
+    "EDM",
+    "Lively",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Sports"
+   ],
+   "sources": [
+    "dance",
+    "mood/lively"
+   ],
+   "use": true
+  },
+  {
+   "id": 1097,
+   "title": "Gold",
+   "artist": "Michael Ramir C.",
+   "duration": 147,
+   "tags": [
+    "Driving",
+    "Lighthearted",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Travel"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1098,
+   "title": "Golem Dance",
+   "artist": "Michael Ramir C.",
+   "duration": 137,
+   "tags": [
+    "EDM",
+    "Mechanical",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "house",
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 1102,
+   "title": "King Paranoia",
+   "artist": "Michael Ramir C.",
+   "duration": 107,
+   "tags": [
+    "Trap",
+    "Disturbing",
+    "Ominous",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1103,
+   "title": "K.O. Games",
+   "artist": "Michael Ramir C.",
+   "duration": 93,
+   "tags": [
+    "Breakbeat",
+    "Lively",
+    "Bass",
+    "Drums",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1104,
+   "title": "Lazy Camel",
+   "artist": "Michael Ramir C.",
+   "duration": 138,
+   "tags": [
+    "Lively",
+    "Positive",
+    "Bass",
+    "Brass",
+    "Arabic",
+    "Travel"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1108,
+   "title": "Missing Jaco",
+   "artist": "Michael Ramir C.",
+   "duration": 117,
+   "tags": [
+    "Confident",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1109,
+   "title": "My Mind Goes Wah Wah",
+   "artist": "Michael Ramir C.",
+   "duration": 114,
+   "tags": [
+    "Funk Rock",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 1113,
+   "title": "Ocean of Love",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Relaxed",
+    "Warm",
+    "Acoustic Guitar",
+    "Percussion",
+    "Travel"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1114,
+   "title": "Our Anthem",
+   "artist": "Michael Ramir C.",
+   "duration": 116,
+   "tags": [
+    "Blues Rock",
+    "Country Rock",
+    "Insistent",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Western"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1115,
+   "title": "Party Like It's Your Birthday",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Indie Pop",
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1116,
+   "title": "Pick it Up",
+   "artist": "Michael Ramir C.",
+   "duration": 125,
+   "tags": [
+    "Rock",
+    "Propulsive",
+    "Bass",
+    "Drums",
+    "Chasing",
+    "Action"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1117,
+   "title": "Proud of You",
+   "artist": "Michael Ramir C.",
+   "duration": 104,
+   "tags": [
+    "Rock",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Cars"
+   ],
+   "sources": [
+    "mood/uplifting",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1119,
+   "title": "Shoot the Devil Tonight",
+   "artist": "Michael Ramir C.",
+   "duration": 112,
+   "tags": [
+    "EDM",
+    "Disco",
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Parties",
+    "Fashion"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1120,
+   "title": "Spooky Night",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Disturbing",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "City",
+    "Investigation"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 1122,
+   "title": "War Cry",
+   "artist": "Michael Ramir C.",
+   "duration": 117,
+   "tags": [
+    "Powerful",
+    "Serious",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1123,
+   "title": "We All Need A Fix",
+   "artist": "Michael Ramir C.",
+   "duration": 116,
+   "tags": [
+    "Disturbing",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1124,
+   "title": "You and Me",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Carefree",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Beach"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1127,
+   "title": "Are U Ready For This?",
+   "artist": "Michael Ramir C.",
+   "duration": 97,
+   "tags": [
+    "Relaxed",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 1128,
+   "title": "Asian Clown",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "Powerful",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "City",
+    "Fashion"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1129,
+   "title": "At Sixes and Sevens",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Funk Rock",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": true
+  },
+  {
+   "id": 1130,
+   "title": "At the Chicken Ranch",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Funk Rock",
+    "Determined",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Sports"
+   ],
+   "sources": [
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1131,
+   "title": "Bopper from Memphis",
+   "artist": "Michael Ramir C.",
+   "duration": 112,
+   "tags": [
+    "Corporate Music",
+    "Powerful",
+    "Determined",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Sports"
+   ],
+   "sources": [
+    "pop",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1132,
+   "title": "Carnival Corporate",
+   "artist": "Michael Ramir C.",
+   "duration": 120,
+   "tags": [
+    "Children",
+    "Lighthearted",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1133,
+   "title": "Caught on Tape",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Rock",
+    "Classic Rock",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Cars"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1135,
+   "title": "Dare Me",
+   "artist": "Michael Ramir C.",
+   "duration": 92,
+   "tags": [
+    "Rock",
+    "Indie Pop",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Cars"
+   ],
+   "sources": [
+    "mood/energetic",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1136,
+   "title": "Daylight Robbery",
+   "artist": "Michael Ramir C.",
+   "duration": 135,
+   "tags": [
+    "Disturbing",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "City",
+    "Reality TV"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1137,
+   "title": "Don't Fall Again",
+   "artist": "Michael Ramir C.",
+   "duration": 139,
+   "tags": [
+    "Rock",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Lifestyle"
+   ],
+   "sources": [
+    "pop",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1138,
+   "title": "Follow My Voice",
+   "artist": "Michael Ramir C.",
+   "duration": 119,
+   "tags": [
+    "Confident",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Beach"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1139,
+   "title": "For Larry",
+   "artist": "Michael Ramir C.",
+   "duration": 146,
+   "tags": [
+    "Country Rock",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Road Trip",
+    "Western"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1140,
+   "title": "Funkee Monkeee",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Disco",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "funk",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1141,
+   "title": "Funky Triplets",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Contemporary R&B",
+    "Relaxed",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Melodic",
+    "Lifestyle"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 1143,
+   "title": "Hidden Burden",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Serious",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "City"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 1144,
+   "title": "I Hear U Breathin'",
+   "artist": "Michael Ramir C.",
+   "duration": 113,
+   "tags": [
+    "Reflective",
+    "Emotional",
+    "Bass",
+    "Drums",
+    "Drama"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1145,
+   "title": "I Pity The Fool",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Indie Pop",
+    "Fun",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": true
+  },
+  {
+   "id": 1146,
+   "title": "I'm Not The Only One",
+   "artist": "Michael Ramir C.",
+   "duration": 98,
+   "tags": [
+    "Indie Pop",
+    "Fun",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1147,
+   "title": "Midnight Funk",
+   "artist": "Michael Ramir C.",
+   "duration": 107,
+   "tags": [
+    "Funk",
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Beach"
+   ],
+   "sources": [
+    "pop",
+    "funk"
+   ],
+   "use": true
+  },
+  {
+   "id": 1148,
+   "title": "My Father Tells Me",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Rhythmic Underscore",
+    "Friendly",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1151,
+   "title": "Oh My Joe",
+   "artist": "Michael Ramir C.",
+   "duration": 99,
+   "tags": [
+    "Rock",
+    "Funk Rock",
+    "Driving",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Extreme Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1152,
+   "title": "One Night Gamble",
+   "artist": "Michael Ramir C.",
+   "duration": 101,
+   "tags": [
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Travel"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 1154,
+   "title": "Reaching Out",
+   "artist": "Michael Ramir C.",
+   "duration": 104,
+   "tags": [
+    "Indie Pop",
+    "Confident",
+    "Bass",
+    "Drums",
+    "Cars",
+    "Youth"
+   ],
+   "sources": [
+    "mood/uplifting"
+   ],
+   "use": false
+  },
+  {
+   "id": 1156,
+   "title": "The Clique",
+   "artist": "Michael Ramir C.",
+   "duration": 110,
+   "tags": [
+    "Motivating",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Fashion",
+    "Travel"
+   ],
+   "sources": [
+    "house"
+   ],
+   "use": false
+  },
+  {
+   "id": 1157,
+   "title": "The Root",
+   "artist": "Michael Ramir C.",
+   "duration": 103,
+   "tags": [
+    "Rock",
+    "Indie Pop",
+    "Driving",
+    "Bass",
+    "Drums",
+    "Action",
+    "Cars"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1158,
+   "title": "Till The End",
+   "artist": "Michael Ramir C.",
+   "duration": 116,
+   "tags": [
+    "Contemporary R&B",
+    "Powerful",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "City"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1159,
+   "title": "Too Cool Too Crazy",
+   "artist": "Michael Ramir C.",
+   "duration": 106,
+   "tags": [
+    "EDM",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1162,
+   "title": "Where's Hope?",
+   "artist": "Michael Ramir C.",
+   "duration": 107,
+   "tags": [
+    "Determined",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Cinematic",
+    "Travel"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 1164,
+   "title": "It's A Cool Thing",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Motivating",
+    "Dynamic",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "pop",
+    "tag/motivational"
+   ],
+   "use": false
+  },
+  {
+   "id": 1166,
+   "title": "Chicken Out",
+   "artist": "Michael Ramir C.",
+   "duration": 120,
+   "tags": [
+    "Corporate Music",
+    "Determined",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Western",
+    "Cars"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1167,
+   "title": "Close Up",
+   "artist": "Michael Ramir C.",
+   "duration": 95,
+   "tags": [
+    "Corporate Music",
+    "Rhythmic Underscore",
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "corporate"
+   ],
+   "use": false
+  },
+  {
+   "id": 1168,
+   "title": "Coffee or Tea",
+   "artist": "Michael Ramir C.",
+   "duration": 125,
+   "tags": [
+    "Electronic",
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Technology",
+    "Industry"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 1173,
+   "title": "Free Us",
+   "artist": "Michael Ramir C.",
+   "duration": 142,
+   "tags": [
+    "Blues Rock",
+    "Determined",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Sports"
+   ],
+   "sources": [
+    "mood/energetic"
+   ],
+   "use": false
+  },
+  {
+   "id": 1175,
+   "title": "Give",
+   "artist": "Michael Ramir C.",
+   "duration": 123,
+   "tags": [
+    "Chillout",
+    "Carefree",
+    "Relaxed",
+    "Bass",
+    "Drums",
+    "Beach"
+   ],
+   "sources": [
+    "tag/summer"
+   ],
+   "use": false
+  },
+  {
+   "id": 1176,
+   "title": "Give It To Me Baby",
+   "artist": "Michael Ramir C.",
+   "duration": 123,
+   "tags": [
+    "Contemporary R&B",
+    "Sensual",
+    "Sexy",
+    "Bass",
+    "Drums",
+    "City",
+    "Beach"
+   ],
+   "sources": [
+    "hip-hop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1177,
+   "title": "I Still Believe",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Folk",
+    "Lively",
+    "Acoustic Guitar",
+    "Drums",
+    "Travel",
+    "Road Trip"
+   ],
+   "sources": [
+    "mood/energetic",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1178,
+   "title": "I'm a Rebel",
+   "artist": "Michael Ramir C.",
+   "duration": 100,
+   "tags": [
+    "Folk",
+    "Lively",
+    "Acoustic Guitar",
+    "Drums",
+    "Travel",
+    "Road Trip"
+   ],
+   "sources": [
+    "mood/energetic",
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1179,
+   "title": "I'm Married But...",
+   "artist": "Michael Ramir C.",
+   "duration": 156,
+   "tags": [
+    "Confident",
+    "Positive",
+    "Bass",
+    "Drums",
+    "Motivational",
+    "Fashion"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1180,
+   "title": "It's Because Of You",
+   "artist": "Michael Ramir C.",
+   "duration": 96,
+   "tags": [
+    "Emotional",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Love",
+    "Relaxation"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1183,
+   "title": "Karma",
+   "artist": "Michael Ramir C.",
+   "duration": 135,
+   "tags": [
+    "EDM",
+    "Dance-Pop",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Workout"
+   ],
+   "sources": [
+    "dance"
+   ],
+   "use": false
+  },
+  {
+   "id": 1184,
+   "title": "Let's Run Baby",
+   "artist": "Michael Ramir C.",
+   "duration": 155,
+   "tags": [
+    "Emotional",
+    "Positive",
+    "Acoustic Guitar",
+    "Bass",
+    "Travel",
+    "Lifestyle"
+   ],
+   "sources": [
+    "world"
+   ],
+   "use": false
+  },
+  {
+   "id": 1185,
+   "title": "Lies and More Lies",
+   "artist": "Michael Ramir C.",
+   "duration": 120,
+   "tags": [
+    "Disco",
+    "Confident",
+    "Powerful",
+    "Bass",
+    "Drums",
+    "Fashion"
+   ],
+   "sources": [
+    "pop"
+   ],
+   "use": false
+  },
+  {
+   "id": 1187,
+   "title": "Non Stop",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Breakbeat",
+    "Motivating",
+    "Bass",
+    "Drums",
+    "Sports",
+    "Showbiz"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1189,
+   "title": "Purple Roses",
+   "artist": "Michael Ramir C.",
+   "duration": 132,
+   "tags": [
+    "Folk",
+    "Passionate",
+    "Acoustic Guitar",
+    "Relaxation",
+    "Travel"
+   ],
+   "sources": [
+    "mood/lively"
+   ],
+   "use": false
+  },
+  {
+   "id": 1190,
+   "title": "Dude",
+   "artist": "Michael Ramir C.",
+   "duration": 109,
+   "tags": [
+    "Jazz Funk",
+    "Relaxed",
+    "Insistent",
+    "Bass",
+    "Drums",
+    "City"
+   ],
+   "sources": [
+    "funk"
+   ],
+   "use": false
+  },
+  {
+   "id": 1191,
+   "title": "Silver Lining",
+   "artist": "Michael Ramir C.",
+   "duration": 95,
+   "tags": [
+    "Positive",
+    "Futuristic",
+    "Bass",
+    "Drums",
+    "Youth"
+   ],
+   "sources": [
+    "electronica"
+   ],
+   "use": false
+  },
+  {
+   "id": 1201,
+   "title": "What What?! Wowow!",
+   "artist": "Michael Ramir C.",
+   "duration": 116,
+   "tags": [
+    "Humorous",
+    "Lively",
+    "Bass",
+    "Brass",
+    "Motivational",
+    "Travel"
+   ],
+   "sources": [
+    "world",
+    "mood/lively"
+   ],
+   "use": false
+  }
+ ]
+}

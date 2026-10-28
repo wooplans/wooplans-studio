@@ -1,0 +1,92 @@
+name: short-render
+# Shorts « rendus 3D » plein écran (9:16, ~20 s, sans voix ni plan coté) sur GitHub, un job par short, en parallèle.
+# Lancer : pousser shorts/jobs/<id>/RENDER (plusieurs jobs d'un coup possible), ou Actions > short-render > Run workflow.
+# Musique : celle du job (short.json « music ») sinon rotation dans la base Mixkit (assets/music/library.json),
+# attribuée ici pour tout le lot : deux shorts du même lot n'ont pas la même musique.
+# Sorties : shorts/out/<id>.mp4 + <id>_thumb.jpg + <id>.json (musique utilisée), commitées ; aucune publication.
+on:
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: "Jobs séparés par des espaces (dossiers shorts/jobs/<id>)"
+        required: true
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["shorts/jobs/*/RENDER"]
+permissions:
+  contents: write
+concurrency:
+  group: short-render-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      include: ${{ steps.p.outputs.include }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - id: p
+        env:
+          JOBS: ${{ github.event.inputs.jobs }}
+        run: |
+          if [ -z "$JOBS" ]; then JOBS=$(git diff --name-only HEAD^1 HEAD | grep -E '^shorts/jobs/[^/]+/RENDER$' | cut -d/ -f3 | tr '\n' ' '); fi
+          PYTHONPATH=. JOBS="$JOBS" python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          from pathlib import Path
+          from wooplans import music
+          used, rows = music.usage(), []
+          for job in os.environ["JOBS"].split():
+              cfg = json.loads(Path(f"shorts/jobs/{job}/short.json").read_text(encoding="utf-8"))
+              spec = cfg.get("music") or music.pick(job, used)
+              used[spec] += 1
+              rows.append({"job": job, "music": spec})
+          print("include=" + json.dumps(rows))
+          PY
+          cat "$GITHUB_OUTPUT"
+  render:
+    needs: plan
+    if: needs.plan.outputs.include != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.include) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r requirements.txt && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Rendu de ${{ matrix.job }} (musique ${{ matrix.music }})
+        env:
+          SHORT_MUSIC: ${{ matrix.music }}
+        run: |
+          J=${{ matrix.job }}
+          python tools/make_short.py "shorts/jobs/$J" "shorts/out/$J.mp4"
+          python tools/make_thumbnail.py "shorts/jobs/$J" "shorts/out/${J}_thumb.jpg"
+          ffprobe -v error -show_entries stream=codec_type,width,height,duration -of compact "shorts/out/$J.mp4"
+          ffmpeg -v error -i "shorts/out/$J.mp4" -vf "fps=1/2,scale=216:-1,tile=6x2" -frames:v 1 -y "shorts/out/${J}_contact.jpg"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ matrix.job }}
+          path: shorts/out/${{ matrix.job }}*
+          retention-days: 14
+  save:
+    needs: [plan, render]
+    if: always() && needs.plan.outputs.include != '[]'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: short-*
+          path: shorts/out
+          merge-multiple: true
+      - name: Enregistrer dans shorts/out/
+        run: |
+          rm -f shorts/out/*_contact.jpg
+          git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
+          git add -f shorts/out
+          git commit -m "shorts : vidéos rendues" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

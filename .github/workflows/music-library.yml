@@ -1,0 +1,50 @@
+name: music-library
+# Base de musiques libres Mixkit pour les shorts (assets/music/library.json) + analyse du tempo (tracks.json).
+# - pousser assets/music/library.json (ex. « force »: true/false posé à la main) : analyse les titres sélectionnés manquants ;
+# - Actions > music-library > Run workflow, ou le 1er de chaque mois : parcourt aussi Mixkit (nouveaux titres) puis analyse.
+# Les mp3 ne sont pas commités (téléchargés à la demande au rendu), seulement library.json et tracks.json.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 1 * *"
+  push:
+    branches: [main, "ccr-*"]
+    paths: ["assets/music/library.json"]
+permissions:
+  contents: write
+concurrency:
+  group: music-library-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q librosa numpy pillow
+      - name: Parcours de Mixkit
+        if: github.event_name != 'push'
+        run: python tools/mixkit_catalog.py crawl
+      - name: Analyse du tempo des titres sélectionnés
+        run: |
+          PYTHONPATH=. python3 - <<'PY'
+          import json, subprocess, sys
+          from wooplans import music
+          done = music.tracks()
+          todo = [t["id"] for t in music.library() if t.get("use") and music.file_name(t["id"]) not in done]
+          print(len(todo), "titre(s) à analyser")
+          for mid in todo:
+              try:
+                  f = music.ensure_file(mid)
+                  subprocess.run([sys.executable, "tools/analyze_music.py", str(f)], check=True, timeout=600)
+              except Exception as e:
+                  print("ÉCHEC", mid, e)
+          PY
+      - name: Enregistrer
+        run: |
+          git config user.name "wooplans-music"; git config user.email "music@users.noreply.github.com"
+          git add assets/music/library.json assets/music/tracks.json
+          git commit -m "musique : base Mixkit et tempos mis à jour" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"

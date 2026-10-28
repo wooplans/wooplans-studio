@@ -15,6 +15,7 @@ Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun c
 ## Production SANS le PC de Tao (tout est sur GitHub)
 - Rendu : workflow `visite-render` (pousser `visite_plan/jobs/<id>/RENDER`) → `visite_plan/out/<id>.mp4` + vignette. Modes détectés : `nf.json`, `bump.json`, sinon simple. Point d'entrée : `visite_plan/render_job.py`.
 - Publication : workflow `publish-zernio` (pousser `jobs/<id>/PUBLISH.json`, SEULEMENT après l'accord de Tao) → Facebook Reel + YouTube Short programmés. TikTok @wooplans est sur WoopSocial (connecteur), pas sur Zernio.
+- Shorts « rendus 3D » (9:16, ~20 s, musique seule) : workflow `short-render` (pousser `shorts/jobs/<id>/RENDER`) → `shorts/out/<id>.mp4` + vignette. Musique : rotation dans la base Mixkit (`assets/music/library.json`, workflow `music-library`). Procédure : `shorts/PIPELINE.md`.
 - YouTube « Présentation de plan » (16:9, ~8 min) : workflow `youtube-render` (pousser `youtube_plan/jobs/<id>/RENDER`) → artefact mp4 + planche-contact à contrôler. Procédure : `youtube_plan/PIPELINE.md`.
 - Vérification : workflow `check-setup`. Procédure complète : `visite_plan/PIPELINE.md`. Secrets : `SECRETS.md`.
 - Le PC de Tao n'est qu'un secours (`visite_plan/local/`).
