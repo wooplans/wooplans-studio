@@ -1,0 +1,7627 @@
+[
+ {
+  "code": "D4-001",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 532,
+  "land_area": 700,
+  "name": "Duplex D4-001",
+  "renders_online": 17,
+  "originals": 0,
+  "site_usable": 10,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": false,
+    "site": "public/d4-001/1792070401022-JHixieQE.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-001/1792070403324-djGOB5HN.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-001/1792070404896-sH2SS038.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-001/1792070406933-us7LmhwD.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-001/1792070408855-TliJDspO.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-001/1792070411102-lJ2R-8UA.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-001/1792070413545-oI6tcYA9.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": true,
+    "site": "public/d4-001/1792947870067-H_DQjbMp.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-001/1792947894689-h5wQph4u.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "public/d4-001/1792947922172-3jEKh1ht.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 11,
+    "cover": false,
+    "site": "public/d4-001/1792947956562-s-dYAQvp.png",
+    "original_width": null,
+    "site_width": 1674,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 12,
+    "cover": false,
+    "site": "public/d4-001/1792947990933-5VivJSJD.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 13,
+    "cover": false,
+    "site": "public/d4-001/1792948019820-YYB5mO7c.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 14,
+    "cover": false,
+    "site": "public/d4-001/1792948049009-w8XmU6-5.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 15,
+    "cover": false,
+    "site": "public/d4-001/1792948077833-84-DPglh.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 16,
+    "cover": false,
+    "site": "public/d4-001/1792948104881-6m1up46F.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 17,
+    "cover": false,
+    "site": "public/d4-001/1792948133110-M2Kj8dtw.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-002",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 204,
+  "land_area": 250,
+  "name": "Duplex D4-002",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-002/1792064008489-v6gY4RwK.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-002/1792064010164-psZtW-pa.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-002/1792064011639-scOGEKPU.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-002/1792064013089-gApXUr7a.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-002/1792064014519-Z4FIF0wL.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-002/1792064015841-j-x56ZHw.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-002/1792064017182-su-Bvb_C.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-002/1792064018526-1p1wLxu9.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-003",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 323,
+  "land_area": 350,
+  "name": "Duplex D4-003",
+  "renders_online": 12,
+  "originals": 12,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-003/1793181917532-zBDerLzw.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-003/1793181948831-rChKidtv.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-003/1793181971569-vjrU5-QZ.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-003/1793181979794-mOWX4yNN.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-003/1793182008436-HGy_TyhD.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-003/1793182028877-Rnxc36xq.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-003/1793182048592-6XhhKiE4.webp",
+    "original_width": 1774,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-003/1793182178013-3ZgsJz0k.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-003/1793182199047-x0HNfVVw.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "public/d4-003/1793182216840-oLNrY9xx.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 11,
+    "cover": false,
+    "site": "public/d4-003/1793182231395-q2ocJZBL.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 12,
+    "cover": false,
+    "site": "public/d4-003/1793182240933-6Yh2Rqw6.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-004",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 313,
+  "land_area": 350,
+  "name": "Duplex D4-004",
+  "renders_online": 10,
+  "originals": 10,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 3,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-004/1793181917372-9S2DKgkb.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-004/1793181945919-RQ86WbR3.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-004/1793181973381-E3hKP9hn.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-004/1793181995008-Nh9Q409w.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-004/1793182021212-K6O-wGCB.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-004/1793182044875-p9A7VO-s.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-004/1793182164533-DaHfBsRM.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-004/1793182191005-mS29u1yN.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-004/1793182209211-qiLildmb.webp",
+    "original_width": 1671,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "public/d4-004/1793182231743-NgXf2gZ2.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-005",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 212,
+  "land_area": 350,
+  "name": "Duplex D4-005",
+  "renders_online": 6,
+  "originals": 0,
+  "site_usable": 6,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-framer-959202bfa0f4d5a8a38e.jpg",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-framer-8d1c1def7ca77acdb8b4.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-framer-51e0a78298e455f71326.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-framer-78f1c1b30bdc1425cf68.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "upload-framer-9f351efbc1a6904e84cd.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "upload-framer-828607bc5bc0bb78eb0e.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D4-006",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 195,
+  "land_area": 250,
+  "name": "Duplex D4-006",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-006/1793181920038-1AVCrf6D.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-006/1793181949463-0vjFIrwP.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-006/1793181973083-_Tnxox1O.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-006/1793181999999-N3uT74sj.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-006/1793182021806-f91UA-uy.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-006/1793182043731-npPUDXqw.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-006/1793182166226-AcOMkRL0.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-006/1793182187719-4YMinsNS.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-006/1793182209607-yxsuy2zh.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-007",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 271,
+  "land_area": 350,
+  "name": "Duplex D4-007",
+  "renders_online": 10,
+  "originals": 0,
+  "site_usable": 10,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-007/1792949194162-h7QM68t6.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-007/1792949215970-28pHdQvX.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-007/1792949241805-7Z66N2I9.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-007/1792949288069--xP1oUTJ.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-007/1792949318226-HNmV3Zk5.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-007/1792949340367-mIg90U5D.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-007/1792949359742-rwFIPWlN.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-007/1792949383125-LBtBPMAC.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-007/1792949400421-ij_TNu7m.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "public/d4-007/1792949422269-Zr96GNRN.png",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-008",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 219,
+  "land_area": 250,
+  "name": "Duplex D4-008",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 5,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-framer-4184f2c40569c7af7e77.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-framer-3a3a1a0d22d23d3e7150.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-framer-1c33e363d397b485318b.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-framer-90cbd763cb23ea1b437d.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "upload-framer-e51432589be5f77fcd1b.webp",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D4-009",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 320,
+  "land_area": 300,
+  "name": "Duplex D4-009",
+  "renders_online": 10,
+  "originals": 10,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-009/1793181919281-ZyicrXk7.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-009/1793181946441-JxjlgH4W.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-009/1793181974352-pnZCAh1R.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-009/1793181996371-aJWx3xes.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-009/1793182022264-ZluJexAZ.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-009/1793182044510-IOUewz2y.webp",
+    "original_width": 1711,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-009/1793182166135-9JNUQ86y.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-009/1793182190320-DlEHU7YU.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-009/1793182208193-aRxVph-T.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "public/d4-009/1793182218480-AxKpR-0H.webp",
+    "original_width": 1711,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-010",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 201,
+  "land_area": 250,
+  "name": "Duplex D4-010",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-010/1793181916371-RD2TBoCF.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-010/1793181924307-F5sgfNGq.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-010/1793181953229-ezkyrxHR.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-010/1793181978219-Q94iqRzY.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-010/1793182005324-G37BNQSo.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-010/1793182028288-OPStXokv.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-010/1793182046556-YKcej-Yl.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-010/1793182167013-A32J9wIU.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-010/1793182196439-QMW-HnIX.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-011",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 500,
+  "land_area": 500,
+  "name": "Duplex D4-011",
+  "renders_online": 7,
+  "originals": 0,
+  "site_usable": 7,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-framer-219424c119aa9bc7498c.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-framer-fe854ba9d97274818592.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-framer-a9e2fce79e5ee75013bf.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-framer-4b5cea74b2a57d533c04.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "upload-framer-2f01b4f1b4029faa8b9b.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "upload-framer-11bd1342baa55f8a6c90.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "upload-framer-a42bf9d70d46699d30cb.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-012",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 195,
+  "land_area": 200,
+  "name": "Duplex D4-012",
+  "renders_online": 7,
+  "originals": 0,
+  "site_usable": 7,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-framer-57d7ddae1d67665ba5a3.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-framer-0d10ac38cb7746de2eb1.png",
+    "original_width": null,
+    "site_width": 1200,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-framer-5ca1e6e1778c96b9a1b3.jpg",
+    "original_width": null,
+    "site_width": 1200,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-framer-81852613c03792a999f5.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "upload-framer-1f96abc02711ab08b0e2.jpg",
+    "original_width": null,
+    "site_width": 1200,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "upload-framer-d9ebf03e64c1f581e218.jpg",
+    "original_width": null,
+    "site_width": 1920,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "upload-framer-bbfa9e8d78902d2664b0.jpg",
+    "original_width": null,
+    "site_width": 1200,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-013",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 324,
+  "land_area": 350,
+  "name": "Duplex D4-013",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-013/1793003444080-NvSvMu-W.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-013/1793003448592-6dkqWXrn.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-013/1793003453928-yk81zBi3.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-013/1793003457121-tq7UxMHn.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-013/1793003459818-2qA0JVaq.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-015",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 300,
+  "land_area": 350,
+  "name": "Duplex D4-015",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-framer-3bb9889b41b628ca1b58.jpeg",
+    "original_width": null,
+    "site_width": 1080,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-framer-78a99d9e23bf4825f470.webp",
+    "original_width": null,
+    "site_width": 1080,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-framer-a0fdb283fd877346f5ec.webp",
+    "original_width": null,
+    "site_width": 1080,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-framer-d9e0f05bd90a9b6ff32c.webp",
+    "original_width": null,
+    "site_width": 1080,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "upload-framer-07ff972fc5530e56450f.webp",
+    "original_width": null,
+    "site_width": 1080,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-016",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 287,
+  "land_area": 450,
+  "name": "Duplex D4-016",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-016/1793181920006-kAHPOQFG.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-016/1793181949228-EFqukqvB.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-016/1793181976824-3mZlT2bl.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-016/1793181999647-AupOMO_c.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-016/1793182026954-QELUoq8k.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D4-017",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 280,
+  "land_area": 300,
+  "name": "Duplex D4-017",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-017/1793188383499-sslE18wE.webp",
+    "original_width": 1620,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-017/1793188395070-mxcB7KVO.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-017/1793188407173-O5KcTTD1.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-017/1793188414750--P3BJznB.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-017/1793188420569-b8U9r5c5.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-017/1793188431876-LeyWKp04.webp",
+    "original_width": 1619,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-017/1793188437631-Z3F2xack.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-017/1793188443958-BiUkqqic.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-017/1793188449279-pIK3dhDE.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-018",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 304,
+  "land_area": 350,
+  "name": "Duplex D4-018",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-018/1793181921954-RANDstrG.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-018/1793181953440-izp1Pgvi.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-018/1793181978339-sXLnFcS4.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-018/1793182003390-HaYUlwim.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-018/1793182023901-ZriKTyUx.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-018/1793182039596-02LtOC1g.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-018/1793182172486-y5WrcfXd.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-019",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 338,
+  "land_area": 350,
+  "name": "Duplex D4-019",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-019/1793181921249-ilOZZwyJ.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-019/1793181951841-LdMsbk0-.webp",
+    "original_width": 1673,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-019/1793181978483-BWvOh2gj.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-019/1793182006261-3Hx2wjmi.webp",
+    "original_width": 1673,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-019/1793182037517-tgd0NHal.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-019/1793182171255-x2oWNoAz.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-019/1793182191228-EMhUUvxd.webp",
+    "original_width": 1673,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-019/1793182213172-4ErU0qBD.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-019/1793182223752-RH2t_GDq.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-020",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 266,
+  "land_area": 300,
+  "name": "Duplex D4-020",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-020/1793181094591-GRVMdEK-.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-020/1793181113322-olbF01ra.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-020/1793181122051-221UNdOq.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-020/1793181132788-YmPRZsg-.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-020/1793181150176-RYpagX_S.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-020/1793181175577-0DtuRUSn.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-020/1793181185592-1ojxNcDf.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-024",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 362,
+  "land_area": 500,
+  "name": "Duplex D4-024",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-024/1793181905705-fmmQmAMu.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-024/1793181912502-BSQZ0IHO.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-024/1793181918774-JPUFL6rP.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-024/1793181924528-LCpAvbs2.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-024/1793181932078-6LftSTd8.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D4-026",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 235,
+  "land_area": 300,
+  "name": "Duplex D4-026",
+  "renders_online": 10,
+  "originals": 0,
+  "site_usable": 10,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-026/1792952748289-oCXgZOHs.jpg",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-026/1792952754125-Rnz4XH43.jpg",
+    "original_width": null,
+    "site_width": 1254,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-026/1792952761372-LR_EmR2S.jpg",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-026/1792952767262-SsA3Dd2m.jpg",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-026/1792952773637-MZc-u6u6.jpg",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-026/1792952780074-r-i25tqO.jpg",
+    "original_width": null,
+    "site_width": 1254,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-026/1792952785564-NjNAh-Jw.jpg",
+    "original_width": null,
+    "site_width": 1254,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d4-026/1792952791987-qg7uEBAF.jpg",
+    "original_width": null,
+    "site_width": 1672,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d4-026/1792952799048-03_-ADO0.jpg",
+    "original_width": null,
+    "site_width": 1254,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "public/d4-026/1792952809474-nJYvWTpp.jpg",
+    "original_width": null,
+    "site_width": 1254,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-032",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 198,
+  "land_area": 300,
+  "name": "Duplex D4-032",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-032/1793181902059-TvIYpT-q.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-032/1793181910430-3DAZdoku.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-032/1793181917327-u6Gqpt-j.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-032/1793181925103-3WwYVdQx.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-032/1793181931820-_PdbQ5Fc.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D4-033",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 226,
+  "land_area": 250,
+  "name": "Duplex D4-033",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-033/1793182646009-grj22-AC.webp",
+    "original_width": 1666,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-033/1793182676919-CDGV92KV.webp",
+    "original_width": 1666,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-033/1793182700930-Rops2yB8.webp",
+    "original_width": 1666,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-033/1793182723696-eUZwob5t.webp",
+    "original_width": 1667,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-033/1793182748461-vDFGOn5B.webp",
+    "original_width": 1665,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D4-034",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 143,
+  "land_area": null,
+  "name": "Duplex D4-034",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-034/1793182644175-gwCmfMaj.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-034/1793182667154-9Mpeegxx.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-034/1793182687356-Yzfs4Q7K.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-034/1793182709574-2FpiGRPT.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-034/1793182727293-4BiApvSL.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-034/1793182748956-SoF9Rgol.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-034/1793182769083-EDD5Ztb3.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-035",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 140,
+  "land_area": 150,
+  "name": "Duplex D4-035",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-035/1793188381108-bqmxpcK9.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-035/1793188393766-PvxUsGRz.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-035/1793188406511-QXsGTJOB.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-035/1793188412085-DTj19_OS.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-035/1793188417992-mSHkbM2j.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-035/1793188424701-hVFO9Afa.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-035/1793188431652-Q2aksTtI.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-036",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 127,
+  "land_area": 200,
+  "name": "Duplex D4-036",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-036/1793188393720-c97Bv1u9.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-036/1793188417208-oyqWFcOI.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-036/1793188427561-NyJz_djV.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-036/1793188442262-Ylz6JaC4.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-036/1793188452070-v3Z2j6nA.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d4-036/1793188461245-ajFIGp3A.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d4-036/1793188469817-Q_wUWKkl.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D4-040",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 155,
+  "land_area": null,
+  "name": "Duplex D4-040",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d4-040/1793188392315-94I7UmDz.webp",
+    "original_width": 1673,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d4-040/1793188398288-LwbwUkbI.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d4-040/1793188415761-1GMRWaV3.webp",
+    "original_width": 1673,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d4-040/1793188423299-aJeDffZG.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d4-040/1793188432719-oUH9oKwF.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D4-043",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 318,
+  "land_area": 300,
+  "name": "Duplex D4-043",
+  "renders_online": 4,
+  "originals": 0,
+  "site_usable": 1,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-framer-a6e4c9d195cc07f1f752.webp",
+    "original_width": null,
+    "site_width": 1117,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-framer-c7a39720378b7c58bcee.webp",
+    "original_width": null,
+    "site_width": 736,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-framer-382ebe36b20a267e4de3.webp",
+    "original_width": null,
+    "site_width": 1250,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-framer-4eb46080a96390a84da2.webp",
+    "original_width": null,
+    "site_width": 1101,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-001",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 325,
+  "land_area": 400,
+  "name": "Duplex D5-001",
+  "renders_online": 9,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-001/1792070438630-7RHeARgU.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-001/1792070444849-UnH1LD_7.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-001/1792070446487-Z7xtMh1o.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-001/1792070448444-dccfEItZ.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-001/1792070450671-OBA_eNU7.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-001/1792070452149-gamoaWrn.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-001/1792070453778-W61ZCqzT.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d5-001/1792070455977-pX_RKCHa.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d5-001/1792070457945-fQ9jnbIM.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-002",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 490,
+  "land_area": 400,
+  "name": "Duplex D5-002",
+  "renders_online": 4,
+  "originals": 0,
+  "site_usable": 4,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-framer-0b691e1824a1c04c3428.jpg",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-framer-d105a891b5474bac6268.jpg",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-framer-286da28406d4a67c6ddb.jpg",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-framer-dbf61f1671823c979268.jpg",
+    "original_width": null,
+    "site_width": 1280,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D5-003",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 320,
+  "land_area": 400,
+  "name": "Duplex D5-003",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-003/1793182643474-7xX80SX7.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-003/1793182674968-l76JhW7O.webp",
+    "original_width": 1671,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-003/1793182698049-hy2BaE2I.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-003/1793182718797-WRfhlCUY.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-003/1793182737380-EdUe9u5k.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-003/1793182747140-KFCJmYcW.webp",
+    "original_width": 1671,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-003/1793182769796-3BsPhlVx.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d5-003/1793182795425-hNs-aL9G.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-005",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 512,
+  "land_area": 550,
+  "name": "Duplex D5-005",
+  "renders_online": 10,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-005/1792064020260-vhO3fWCh.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-005/1792064021814-LwbY-T2x.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-005/1792064023472-yHJ149fQ.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-005/1792064025523-Ptq3kde1.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-005/1792064027391-cQG8PtoU.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-005/1792064029514-dZjZC3bo.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-005/1792064031178-kqKWwG5v.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d5-005/1792064032557-ExcFtS2x.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d5-005/1792064034212-VPIkEUhm.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "public/d5-005/1792064035538-hBGM6mKY.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-011",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 326,
+  "land_area": 400,
+  "name": "Duplex D5-011",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-011/1793188396002-kv_AKyy8.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-011/1793188417209-moPRVMgj.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-011/1793188439920-3Ei5V6Uq.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-011/1793188446437-NSoZSLQM.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-011/1793188454025-BUe6mekE.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-011/1793188461025-V6O-x7Lf.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-011/1793188466860-Z4nu2dnl.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d5-011/1793188474363-1U2UrYGe.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d5-011/1793188481234-a62HoZA3.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-012",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 234,
+  "land_area": 300,
+  "name": "Duplex D5-012",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-012/1793182645813-yoMRRalX.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-012/1793182676244-DHzaMCHU.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-012/1793182694756-5j0v26_c.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-012/1793182705642-CSHFRvjd.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-012/1793182725126-DsWq_Zt5.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-012/1793182742273-x8y97Zks.webp",
+    "original_width": 1671,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-012/1793182750056-PlVR8x9x.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d5-012/1793182770951-x0QGxYLf.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-013",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 340,
+  "land_area": 400,
+  "name": "Duplex D5-013",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-013/1793191176861-GEyRRxXO.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-013/1793191188205-Ik2cH-bv.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-013/1793191210541-WswfUzq8.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-013/1793191232903-sit-saxt.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-013/1793191255407-BK6MtaaM.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-013/1793191263590-FEdrQM2E.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-013/1793191270032-5YW8-EHn.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d5-013/1793191276582-SmJoHr4_.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/d5-013/1793191283520-LaaY3tsy.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-014",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 364,
+  "land_area": 400,
+  "name": "Duplex D5-014",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-014/1793182645528-g-BOmBzn.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-014/1793182675208-dTOTq01F.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-014/1793182698588-WT54Ey5K.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-014/1793182717795-JjzZwny9.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-014/1793182729978-4rYchsUN.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D5-015",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 203,
+  "land_area": 250,
+  "name": "Duplex D5-015",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-015/1793182626219-2qsdbqo-.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-015/1793182633973-BcR9_3bO.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-015/1793182641158-lbYM3aM1.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-015/1793182647352-NBB6PUCG.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-015/1793182656127-1ZJLa8mb.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D5-016",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 219,
+  "land_area": 250,
+  "name": "Duplex D5-016",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-016/1793182646228-TKQutlEV.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-016/1793182671235-hdMx2ITc.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-016/1793182679844-GykoUxjw.webp",
+    "original_width": 1671,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-016/1793182699952-SZdrIjMA.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-016/1793182721683-yU3xcX8O.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-016/1793182742910-PmQoWmEp.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-016/1793182765823-N8spgyWJ.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-018",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 480,
+  "land_area": 400,
+  "name": "Duplex D5-018",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-018/1793188395131-6LVhO81c.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-018/1793188408297-SWRaIMFD.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-018/1793188426766-0vH21gB_.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-018/1793188434809-E14HY0it.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-018/1793188441071-iDScrXbT.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-018/1793188448630-LPrHQgGg.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-018/1793188457195-r1C6untE.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "D5-019",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 401,
+  "land_area": 350,
+  "name": "Duplex D5-019",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-019/1793182631167-L-Y3w3b4.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-019/1793182642245-XoQ41d35.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-019/1793182649463-C3uvpTg_.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-019/1793182662180-LPgWo7ut.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-019/1793182673964--w-KzCmt.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "D5-020",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 307,
+  "land_area": 400,
+  "name": "Duplex D5-020",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/d5-020/1793181099720-bqpdiik-.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/d5-020/1793181117962-oSCztmqc.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/d5-020/1793181127091-GFVOBduu.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/d5-020/1793181152126-U23Z_TUt.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/d5-020/1793181166082-aMCm_lXs.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/d5-020/1793181178528-kG-zd_jO.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/d5-020/1793181189582-45_k8wQ6.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/d5-020/1793181214887--f0ipFv_.webp",
+    "original_width": 1681,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V2-001",
+  "category": "villa",
+  "bedrooms": 2,
+  "levels": 1,
+  "surface": 89,
+  "land_area": 200,
+  "name": "Villa V2-001",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v2-001/1793183095472-vpuTexFF.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v2-001/1793183100306-VNUCpr20.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v2-001/1793183105596-qwfwp4fF.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v2-001/1793183111046-xzQCZUcO.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v2-001/1793183115779-nhil10ad.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V3-001",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 92,
+  "land_area": null,
+  "name": "Villa V3-001",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-001/1793180604145-GhEioffi.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-001/1793180613102-f9pyMkh4.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-001/1793180620945-pk-MSoLe.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-001/1793180629334-Ueh7fWfV.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-001/1793180645597-fQe8VHO6.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V3-002",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 98,
+  "land_area": null,
+  "name": "Villa V3-002",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-002/1793180669459-WASr-JXF.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-002/1793180679948-VWFiInvi.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-002/1793180688866-ha7fmBTM.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-002/1793180699027-FFM1GuBb.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-002/1793180707089-odsqXZpq.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-002/1793180713321-rNyoYAsb.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-002/1793180723101-lc8l51_-.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-002/1793180735415-X400E3BN.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-003",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 99,
+  "land_area": null,
+  "name": "Villa V3-003",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-003/1793180746567-y76Iw91B.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-003/1793180753853-wrrokCe2.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-003/1793180761862-H1XPQq_w.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-003/1793180769929-614WTcLz.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-003/1793180784756-CDdKCQMY.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-003/1793180791959-dM_rhZkn.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-003/1793180801985-xI4q7UpT.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-003/1793180809546-O1A97Bqh.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-004",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 110,
+  "land_area": null,
+  "name": "Villa V3-004",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-004/1793181098548-A8M01yrx.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-004/1793181119221-_HXNZuR1.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-004/1793181144410-YgJoKRAs.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-004/1793181162207-CKMclfcI.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-004/1793181188126-sMVHufB5.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-004/1793181198711-iyhiPwGl.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-004/1793181220613-iZJ3tal8.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-004/1793181271249-33tX0NXI.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-005",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 96,
+  "land_area": null,
+  "name": "Villa V3-005",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-005/1793181103332-_WC7hxoW.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-005/1793181135973-uKiAm-XD.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-005/1793181155859-Uq0kV8Lu.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-005/1793181172999-PqWIRIQj.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-005/1793181182840-z3YflEDb.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-005/1793181205317-pohZN7Or.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-005/1793181223265-CrqMDr6p.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-005/1793181271590-WBiGRyaX.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-006",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 107,
+  "land_area": 250,
+  "name": "Villa V3-006",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-006/1793181093619-NhEs-vtr.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-006/1793181114530-6DRZN2vo.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-006/1793181142898-x35ZfbKv.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-006/1793181155992-wUyXZp1W.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-006/1793181174968-zRUQY1zF.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-006/1793181195170-tuyCn9yC.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-006/1793181218087-_6rxNcFa.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-006/1793181268496-FH2DiL0i.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-007",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 149,
+  "land_area": 350,
+  "name": "Villa V3-007",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-007/1793183106706-V70d-r2d.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-007/1793183125100-kZvCdWeO.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-007/1793183145267-Pp1hNAlw.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-007/1793183156547-athz31gy.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-007/1793183168577-r7Z4ApJX.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V3-008",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 189,
+  "land_area": 400,
+  "name": "Villa V3-008",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-008/1793191462671-A6KdNO2d.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-008/1793191471450-UBj3rFzV.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-008/1793191481499-rTrtBWcj.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-008/1793191489044-mkdRvfj9.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-008/1793191505282-snxyf7YS.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-008/1793191513335-JlzsyusN.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-008/1793191520160-VvNmmNXg.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-008/1793191531024-W99-caYJ.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-009",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 127,
+  "land_area": 300,
+  "name": "Villa V3-009",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-009/1793191171852-Gso6BVeQ.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-009/1793191184247-xSra1Kqf.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-009/1793191191059-k2zbBGwK.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-009/1793191200164-40QsbhSy.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-009/1793191209255-Br11HVOE.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-009/1793191217427-x-sAmwcj.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-009/1793191224352-G0h32SVR.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-009/1793191239224-dxN9_ph6.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/v3-009/1793191246082-ie6tQtZR.webp",
+    "original_width": 1585,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-014",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 201,
+  "land_area": 400,
+  "name": "Villa V3-014",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-014/1793191174155-zZO5Px44.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-014/1793191185191-oW2pVaEp.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-014/1793191195283-Otdy19ch.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-014/1793191204641-PcAK3FLC.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-014/1793191223737-GIqyYfOu.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-014/1793191231918-rkQMCQSg.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-014/1793191240520-u0bn9LjZ.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-014/1793191250299-ZVRRliFx.webp",
+    "original_width": 1536,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-015",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 120,
+  "land_area": 300,
+  "name": "Villa V3-015",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-015/1793180132829-j0u_morc.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-015/1793180157382-_m1ICQuB.webp",
+    "original_width": 1671,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-015/1793180168183-hcNcm1ka.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-015/1793180176518-Xnga3MWj.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-015/1793180185962-eyMOIrW7.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-015/1793180482668-k1KYRNW1.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-015/1793180492423-P86Y2VDs.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-015/1793180502700-umwFopfR.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-017",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 120,
+  "land_area": 300,
+  "name": "Villa V3-017",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-017/1793180518015-jxLQQnzn.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-017/1793180527113-CjHuoX5p.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-017/1793180536027-lgD3GBln.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-017/1793180551183-cEfn-FsD.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-017/1793180567435-iymafRso.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-017/1793180583462-wBneRRV0.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-017/1793180591094-9KgSZ6BU.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-018",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 127,
+  "land_area": null,
+  "name": "Villa V3-018",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-018/1793188381476-4n0NfqVs.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-018/1793188392899-DKD0d5AM.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-018/1793188399905-wEm8DeVX.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-018/1793188407186-ISSSNt7n.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-018/1793188418241-cYPk_FwS.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V3-021",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 149,
+  "land_area": 350,
+  "name": "Villa V3-021",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-021/1793183097485-mULN_Sr2.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-021/1793183104191-alUKgryJ.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-021/1793183110225-TTUvMlR8.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-021/1793183121442-tDnZxze4.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-021/1793183129847-KiZv2AqH.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V3-022",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 89,
+  "land_area": 250,
+  "name": "Villa V3-022",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-022/1792422584456-aECHwtgJ.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-022/1792422587176-rnSu3c-J.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-022/1792422608463-PreZ5EYh.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-022/1792422631661-WDBJjkUl.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-022/1792422656889-B2cBBuQ1.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-022/1792422680249--s6XviEd.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-022/1792422713847-949xtHL2.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-022/1792422734304-zFvX74ws.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-025",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 108,
+  "land_area": 250,
+  "name": "Villa V3-025",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-025/1793181097770-nqjXxl-o.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-025/1793181117558-H1ggMSLA.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-025/1793181127733-25sDYeBL.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-025/1793181148724-FaPnU3-l.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-025/1793181161829-wjzVyWIx.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-025/1793181178703-2pLB_Ine.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-025/1793181196452-3iJJEeBu.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-025/1793181216456-x-3DK2kC.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/v3-025/1793181268195-TKXhe7oa.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-026",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 148,
+  "land_area": 300,
+  "name": "Villa V3-026",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-026/1793181240129-okC9UtFd.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-026/1793181270234-CRQO91IA.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-026/1793181290108-29O1_fNs.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-026/1793181302246-bj8cNUIF.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-026/1793181315106-BLuBGUzQ.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-026/1793181328656-vKsDupCs.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-026/1793181337225-Yyh1saC1.webp",
+    "original_width": 1584,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-026/1793181344059-YOGi3jDh.webp",
+    "original_width": 1584,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/v3-026/1793181352883-Au2UfRyU.webp",
+    "original_width": 1585,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-027",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 69,
+  "land_area": 200,
+  "name": "Villa V3-027",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-027/1793181089669-N63wDoh2.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-027/1793181109535-Sc34_aa1.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-027/1793181135984-_4ngr4qq.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-027/1793181155061-HMAOiv_9.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-027/1793181177550-bHPSWXCl.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-027/1793181201124-YpqTBBZ_.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-027/1793181220362-t8hx7UlC.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-027/1793181269189-FHoczGM0.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-028",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 119,
+  "land_area": 300,
+  "name": "Villa V3-028",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-028/1793196558131-AG4QLV-G.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-028/1793196567687-XkRDYj4B.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-028/1793196574982-pJZb-APK.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-028/1793196581739-Q0v7fRlg.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-028/1793196588147-kq_hipFJ.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-028/1793196598052-EGWqkSkS.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-028/1793196618961-AMuT-Oxg.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-028/1793196628424-x0spjxsI.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-029",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 215,
+  "land_area": 450,
+  "name": "Villa V3-029",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-029/1793183105737-i2_URV8D.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-029/1793183113331-V8fy5wWd.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-029/1793183137395-rnAZQ44Z.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-029/1793183150796-J3CaflI9.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-029/1793183160595-qjRd4gSE.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V3-030",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 144,
+  "land_area": 300,
+  "name": "Villa V3-030",
+  "renders_online": 8,
+  "originals": 8,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-030/1793191176239-kFdPzKMP.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-030/1793191212783-Vzxi8gG7.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-030/1793191220709-7-omQPVn.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-030/1793191228134-50qvNL2Z.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-030/1793191235063-nVTJ139O.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-030/1793191242655-H6czU1xE.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-030/1793191252118-RPRlsWXL.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-030/1793191261474-JFmHU4KN.webp",
+    "original_width": 1586,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-037",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 164,
+  "land_area": null,
+  "name": "Villa V3-037",
+  "renders_online": 11,
+  "originals": 0,
+  "site_usable": 10,
+  "ready": true,
+  "shorts_done": 1,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "upload-1776984367928-34baeffd67514b8780e6c2514e2923a2.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "upload-1776984383289-90dfbac0d27e4df786ba90eaabf7d80b.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "upload-1776984384810-491372e469a74de188aa32f77c269799.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "upload-1776984386404-635b16e955494c2ab97702d3ccf5f091.webp",
+    "original_width": null,
+    "site_width": 1400,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "upload-1776984387919-46f9eab705c14d4e900feb3e926737d4.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "upload-1776984389249-de06c6524691402e8d140b14917c395d.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "upload-1776984391194-091ee4a87cfa4169bf74cce21ef63338.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "upload-1776984392976-4956a88454ee4637aed556b97731711e.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "upload-1776984394395-76ef44b697bb404d9809f452134b292a.webp",
+    "original_width": null,
+    "site_width": 1202,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 10,
+    "cover": false,
+    "site": "upload-1776984397677-c6772c6574af47258dfd12c53d145f4d.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 11,
+    "cover": false,
+    "site": "upload-1776984399665-404b5e92b857404f98526c927399311a.webp",
+    "original_width": null,
+    "site_width": 1376,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-038",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 124,
+  "land_area": 300,
+  "name": "Villa V3-038",
+  "renders_online": 9,
+  "originals": 9,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-038/1793196353246-2vnC9URC.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-038/1793196362820-H6n24FQ_.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-038/1793196370934-HdF669YH.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-038/1793196378276-hexPks5r.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-038/1793196385727-FTtSp9_P.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-038/1793196393053-ajKiSgmE.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-038/1793196401996-l0lc1PNS.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v3-038/1793196412482-q88twGxt.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/v3-038/1793196422257-PvlHCWMI.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-039",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 122,
+  "land_area": 300,
+  "name": "Villa V3-039",
+  "renders_online": 7,
+  "originals": 7,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-039/1793196466522-koPiVcE1.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-039/1793196474181-MmCZV-2q.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-039/1793196482435-icTOMeFj.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-039/1793196495213-aukQEQ7p.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-039/1793196501960-CTbo1pqH.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v3-039/1793196511058-LZA45Aeu.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v3-039/1793196519744-rL0SLc_a.webp",
+    "original_width": 1672,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V3-043",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 144,
+  "land_area": 400,
+  "name": "Villa V3-043",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v3-043/1792592414751-2ZmrFjge.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v3-043/1792592410064-oKOWIhZR.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v3-043/1792592411991-o335zd1d.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v3-043/1792592418082-bRrmD6Rh.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v3-043/1792592421504-RtuWtS2s.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-001",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 116,
+  "land_area": 250,
+  "name": "Villa V4-001",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-001/1792070304985-IaVB69c3.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-001/1792070307133-fpgmB4-I.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-001/1792070308754-Gu2Ti_7x.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-001/1792070310829-tnsVpfOe.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-001/1792070312642-WGUdoir1.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-001/1792070314838-qAkL2nUC.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v4-001/1792070316907-V-pItMnC.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v4-001/1792070318834-D4r5C6lS.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-002",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 155,
+  "land_area": 350,
+  "name": "Villa V4-002",
+  "renders_online": 9,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-002/1792070350516-jXd5mw-5.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-002/1792070352965-Vizdu7al.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-002/1792070354795-1VjAXcCo.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-002/1792070356341-dxWrAezB.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-002/1792070358478-eKjWjO3U.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-002/1792070360246-kakXHoU3.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v4-002/1792070361952-THG46UwR.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v4-002/1792070364108-xwvNHP5W.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 9,
+    "cover": false,
+    "site": "public/v4-002/1792070366569-KankW4oI.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-003",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 144,
+  "land_area": 350,
+  "name": "Villa V4-003",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-003/1792094333415-inlfK5Uh.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-003/1792094334826-EQfsw4Cz.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-003/1792094336059-H7lqp_RO.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-003/1792094337410-nIi3bETW.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-003/1792094338640-T2vVIPVq.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-003/1792094340123-JLsOwm0P.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v4-003/1792094341581-j-ZxKuGQ.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v4-003/1792094343633-z-Wbcr4F.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-004",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 124,
+  "land_area": 300,
+  "name": "Villa V4-004",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-004/1792094345293-7nk7bEhp.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-004/1792094346700-lUKObNBS.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-004/1792094348014-OyAZcrBe.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-004/1792094349617-9sBiba6N.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-004/1792094350864-gJ55lIRL.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-004/1792094352077--r4IlYUl.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v4-004/1792094353520-I3rxDWbb.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v4-004/1792094355150-Dz-r5cM2.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-005",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 201,
+  "land_area": 450,
+  "name": "Villa V4-005",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-005/1792274272178--TgaDkj7.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-005/1792274277284-cy2iTvI8.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-005/1792274286487-Pez0Tndg.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-005/1792274290413-ue-w9EKt.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-005/1792274294642-FnuGkKzu.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-005/1792274297831-P5PrkyO2.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v4-005/1792274301492-vsYUzjXA.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v4-005/1792274305075-NQdbQq_m.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-006",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 120,
+  "land_area": 300,
+  "name": "Villa V4-006",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-006/1792274280693-5FC7LkKf.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-006/1792274319181-YGYXApzk.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-006/1792274322341-GjI6Md7y.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-006/1792274325513-AqMjpRKQ.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-006/1792274329018-LUrkzLWz.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-006/1792274332205-8jZnAUzP.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v4-006/1792274335726-CJmHd4Lq.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v4-006/1792274339147-O1w_gPIE.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-007",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 136,
+  "land_area": 300,
+  "name": "Villa V4-007",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-007/1793183095587-DmQf5bbO.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-007/1793183101502-CZczE1SH.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-007/1793183106517-YkxKsKXO.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-007/1793183112834-us_tbJBN.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-007/1793183119129-TO_r-y1s.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-008",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 128,
+  "land_area": 300,
+  "name": "Villa V4-008",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-008/1793183095409-1b91VADG.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-008/1793183101550-9p2mxAUE.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-008/1793183106399-cAUMqlQ8.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-008/1793183113016-XA-rDF44.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-008/1793183117731-oHX96w0c.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-009",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 184,
+  "land_area": 400,
+  "name": "Villa V4-009",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-009/1793183095504-TgppgbVE.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-009/1793183102621-ZO86HXF8.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-009/1793183107958-XDL3cGRT.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-009/1793183113374-lTEwpLGU.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-009/1793183120478-dAT6zTxr.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-010",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 148,
+  "land_area": 350,
+  "name": "Villa V4-010",
+  "renders_online": 6,
+  "originals": 6,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-010/1793188380503-PSWuulnS.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-010/1793188391882-wk8X80wP.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-010/1793188397237-JWreJtiN.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-010/1793188411257-x-YEMK65.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-010/1793188417707-mjlBim9z.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-010/1793188424223-h8KdVC1k.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-013",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 147,
+  "land_area": 400,
+  "name": "Villa V4-013",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-013/1793002281065-3hux2mxs.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-013/1793002282404-yyifDPPa.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-013/1793002283832-QEH2gznV.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-013/1793002285484-PSU1dCL6.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-013/1793002286998-GDcLfhX4.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-014",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 147,
+  "land_area": 300,
+  "name": "Villa V4-014",
+  "renders_online": 4,
+  "originals": 4,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-014/1793188380398-lzWTRvHY.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-014/1793188386541-pnZ70BIc.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-014/1793188391557-X4jxIrxy.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-014/1793188397129-MwSwOBIj.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-016",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 221,
+  "land_area": 450,
+  "name": "Villa V4-016",
+  "renders_online": 6,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-016/1792591816991-RmmHRnDz.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-016/1792591819228-LroUihIx.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-016/1792591821303-S2Olle7z.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-016/1792591822825-gwGqfzLZ.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-016/1792591824707-QGV0UC24.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-016/1792591827231-i177652z.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-019",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 158,
+  "land_area": 350,
+  "name": "Villa V4-019",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-019/1793002271004-larLokhf.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-019/1793002272593-VQUcsN4N.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-019/1793002274351-Xt4jIDpv.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-019/1793002275929-tzEkbmJn.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-019/1793002277992-dYZwbIv1.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-022",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 174,
+  "land_area": 350,
+  "name": "Villa V4-022",
+  "renders_online": 2,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-022/1793002266265-fBIdFP1M.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-022/1793002267730-DrXSIiS8.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-024",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 168,
+  "land_area": 400,
+  "name": "Villa V4-024",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-024/1793002256430-yPmshY4C.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-024/1793002257894-yhyzuiKu.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-024/1793002259250-8bre4r0S.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-024/1793002260572-qtHgurDl.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-024/1793002262250-3pLzOwxX.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-025",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 189,
+  "land_area": 400,
+  "name": "Villa V4-025",
+  "renders_online": 3,
+  "originals": 3,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-025/1793188380378-YqmENQe0.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-025/1793188387854-07y5qizI.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-025/1793188393426-dEasgokt.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-026",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 222,
+  "land_area": 450,
+  "name": "Villa V4-026",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-026/1793183097735-dwNRIqC8.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-026/1793183105176-kHTXoYYw.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-026/1793183110420-GYA3M850.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-026/1793183117335-V-L7aFVc.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-026/1793183125544-smYImG8E.webp",
+    "original_width": 1920,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-028",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 151,
+  "land_area": 350,
+  "name": "Villa V4-028",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-028/1793002235955-ZyikvUUf.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-028/1793002237343-tfUm_pja.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-028/1793002238969-v7BuVOPd.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-028/1793002240823-1h6L2DvO.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-028/1793002242199--NVrJ9fn.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-029",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 122,
+  "land_area": 250,
+  "name": "Villa V4-029",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-029/1793183095418-iZRWsjhV.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-029/1793183102781-w1-M8H71.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-029/1793183107774-ta-ZU1XH.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-029/1793183113200-Drfa2jwt.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-029/1793183118253-qXXAqSVC.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-030",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 132,
+  "land_area": 250,
+  "name": "Villa V4-030",
+  "renders_online": 6,
+  "originals": 6,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-030/1793188381508-8k9da0ew.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-030/1793188393492-bf7TCfOG.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-030/1793188400094-4sHtzQgR.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-030/1793188407528-iFWnVkS6.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-030/1793188414478-kqBKld3J.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-030/1793188421059-K0_OTR-i.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-032",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 177,
+  "land_area": 350,
+  "name": "Villa V4-032",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-032/1793002226807-TWSoamOk.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-032/1793002228133-qjM4W69L.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-032/1793002229485-hLuu5CjD.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-032/1793002231264-e-Bi5cac.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-032/1793002232741-skVfAuSe.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V4-034",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 146,
+  "land_area": 300,
+  "name": "Villa V4-034",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-034/1793188380922-jmV61YwR.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-034/1793188387027-EL4Z7xuw.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-034/1793188392049-CLGMD_vS.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-034/1793188396903-C3tuAqZo.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-034/1793188406187-W-_5nIH5.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-036",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 233,
+  "land_area": 400,
+  "name": "Villa V4-036",
+  "renders_online": 5,
+  "originals": 5,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-036/1793188381187-TJZaHL7t.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-036/1793188388237-pG6JKjYj.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-036/1793188393345-AXhmgi4u.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-036/1793188400993-5YTaxnTS.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-036/1793188406498-Qs1Eaarl.webp",
+    "original_width": 1600,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ },
+ {
+  "code": "V4-042",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 177,
+  "land_area": 400,
+  "name": "Villa V4-042",
+  "renders_online": 8,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v4-042/1792063698957-k0Sf40tv.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v4-042/1792063700944-rFD2HU6O.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v4-042/1792063702787-6eb69pe6.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v4-042/1792063704402-SaSfe0hN.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v4-042/1792063706477-Rw4PKvzz.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v4-042/1792063708944-HNCIjNTz.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 7,
+    "cover": false,
+    "site": "public/v4-042/1792063710559-5s-A_aNe.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 8,
+    "cover": false,
+    "site": "public/v4-042/1792063712046-3of8USYl.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V5-002",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 224,
+  "land_area": 450,
+  "name": "Villa V5-002",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v5-002/1793002206865-OuDV1LRm.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v5-002/1793002208846-yRKYon8Z.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v5-002/1793002210408-5r3H4XrU.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v5-002/1793002211782-xy8VC04O.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v5-002/1793002213464-kXxqLMq1.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V5-005",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 224,
+  "land_area": 450,
+  "name": "Villa V5-005",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v5-005/1793002196569-pe3TZ2i-.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v5-005/1793002198107-wFK7FDCt.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v5-005/1793002199689-kvogPOFp.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v5-005/1793002201541-ksZL7jHI.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v5-005/1793002203425-cWSJKBhG.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V5-006",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 253,
+  "land_area": 550,
+  "name": "Villa V5-006",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v5-006/1793002185378-y00z8AbC.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v5-006/1793002187732-RQcbpE2m.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v5-006/1793002189591-tR8Dla_D.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v5-006/1793002192102-6FVJjvrM.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v5-006/1793002193614-5xL9YaSV.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V5-007",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 157,
+  "land_area": 400,
+  "name": "Villa V5-007",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v5-007/1793002174806-wwgJu5xD.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v5-007/1793002177180-g5mNFrK6.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v5-007/1793002178604-rB9SyRv-.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v5-007/1793002180218-vFWEMoz3.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v5-007/1793002181949-1RwhA0kX.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V5-008",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 159,
+  "land_area": 400,
+  "name": "Villa V5-008",
+  "renders_online": 5,
+  "originals": 0,
+  "site_usable": 0,
+  "ready": false,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v5-008/1793002161522-gRiGAp94.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v5-008/1793002164106-_34LtTJw.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v5-008/1793002165702-uSO0gZIQ.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v5-008/1793002167207-BBBxS6KU.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v5-008/1793002168819-kTDQ-G6t.webp",
+    "original_width": null,
+    "site_width": 960,
+    "usable": false,
+    "chosen": false
+   }
+  ]
+ },
+ {
+  "code": "V5-009",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 152,
+  "land_area": 350,
+  "name": "Villa V5-009",
+  "renders_online": 6,
+  "originals": 6,
+  "site_usable": 0,
+  "ready": true,
+  "shorts_done": 0,
+  "renders": [
+   {
+    "position": 1,
+    "cover": true,
+    "site": "public/v5-009/1793188378835-1TmsDtaF.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 2,
+    "cover": false,
+    "site": "public/v5-009/1793188383554-OVAmK_8u.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 3,
+    "cover": false,
+    "site": "public/v5-009/1793188390515-jO0bh_Dz.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 4,
+    "cover": false,
+    "site": "public/v5-009/1793188395993-yXGWn8KX.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   },
+   {
+    "position": 5,
+    "cover": false,
+    "site": "public/v5-009/1793188404286-Ae97uSpO.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": false
+   },
+   {
+    "position": 6,
+    "cover": false,
+    "site": "public/v5-009/1793188409180-5kE-bY1j.webp",
+    "original_width": 1280,
+    "site_width": 960,
+    "usable": true,
+    "chosen": true
+   }
+  ]
+ }
+]

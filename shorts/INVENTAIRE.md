@@ -1,7 +1,7 @@
 # Inventaire des rendus pour les shorts
 
 Prêt = au moins 3 rendus exploitables (original R2 propre, ou ancienne image du site sans filigrane d'au moins 1200 px). Mis à jour par le workflow short-render (mot « inventaire »).
-**58 modèle(s) prêt(s).**
+**71 modèle(s) prêt(s).**
 
 
 | Modèle | Rendus en ligne | Originaux R2 | Anciennes images utilisables | Prêt | Shorts déjà faits |
@@ -9,7 +9,7 @@ Prêt = au moins 3 rendus exploitables (original R2 propre, ou ancienne image du
 | D4-001 | 17 | 0 | 10 | oui | 0 |
 | D4-002 | 8 | 0 | 0 | non | 0 |
 | D4-003 | 12 | 12 | 0 | oui | 0 |
-| D4-004 | 10 | 10 | 0 | oui | 2 |
+| D4-004 | 10 | 10 | 0 | oui | 3 |
 | D4-005 | 6 | 0 | 6 | oui | 0 |
 | D4-006 | 9 | 9 | 0 | oui | 0 |
 | D4-007 | 10 | 0 | 10 | oui | 0 |
@@ -21,7 +21,7 @@ Prêt = au moins 3 rendus exploitables (original R2 propre, ou ancienne image du
 | D4-013 | 5 | 0 | 0 | non | 0 |
 | D4-015 | 5 | 0 | 0 | non | 0 |
 | D4-016 | 5 | 5 | 0 | oui | 0 |
-| D4-017 | 9 | 0 | 9 | oui | 0 |
+| D4-017 | 9 | 9 | 0 | oui | 0 |
 | D4-018 | 7 | 7 | 0 | oui | 0 |
 | D4-019 | 9 | 9 | 0 | oui | 0 |
 | D4-020 | 7 | 7 | 0 | oui | 0 |
@@ -30,21 +30,21 @@ Prêt = au moins 3 rendus exploitables (original R2 propre, ou ancienne image du
 | D4-032 | 5 | 5 | 0 | oui | 0 |
 | D4-033 | 5 | 5 | 0 | oui | 0 |
 | D4-034 | 7 | 7 | 0 | oui | 0 |
-| D4-035 | 7 | 0 | 0 | non | 0 |
-| D4-036 | 7 | 0 | 0 | non | 0 |
-| D4-040 | 5 | 0 | 0 | non | 0 |
+| D4-035 | 7 | 7 | 0 | oui | 0 |
+| D4-036 | 7 | 7 | 0 | oui | 0 |
+| D4-040 | 5 | 5 | 0 | oui | 0 |
 | D4-043 | 4 | 0 | 1 | non | 0 |
 | D5-001 | 9 | 0 | 0 | non | 0 |
 | D5-002 | 4 | 0 | 4 | oui | 0 |
 | D5-003 | 8 | 8 | 0 | oui | 0 |
 | D5-005 | 10 | 0 | 0 | non | 0 |
-| D5-011 | 9 | 0 | 0 | non | 0 |
+| D5-011 | 9 | 9 | 0 | oui | 0 |
 | D5-012 | 8 | 8 | 0 | oui | 0 |
-| D5-013 | 5 | 5 | 0 | oui | 0 |
+| D5-013 | 9 | 9 | 0 | oui | 0 |
 | D5-014 | 5 | 5 | 0 | oui | 0 |
 | D5-015 | 5 | 5 | 0 | oui | 0 |
 | D5-016 | 7 | 7 | 0 | oui | 0 |
-| D5-018 | 7 | 0 | 0 | non | 0 |
+| D5-018 | 7 | 7 | 0 | oui | 0 |
 | D5-019 | 5 | 5 | 0 | oui | 0 |
 | D5-020 | 8 | 8 | 0 | oui | 0 |
 | V2-001 | 5 | 5 | 0 | oui | 0 |
@@ -55,23 +55,23 @@ Prêt = au moins 3 rendus exploitables (original R2 propre, ou ancienne image du
 | V3-005 | 8 | 8 | 0 | oui | 0 |
 | V3-006 | 8 | 8 | 0 | oui | 0 |
 | V3-007 | 5 | 5 | 0 | oui | 0 |
-| V3-008 | 5 | 5 | 0 | oui | 0 |
-| V3-009 | 5 | 0 | 0 | non | 0 |
-| V3-014 | 2 | 0 | 0 | non | 0 |
+| V3-008 | 8 | 8 | 0 | oui | 0 |
+| V3-009 | 9 | 9 | 0 | oui | 0 |
+| V3-014 | 8 | 8 | 0 | oui | 0 |
 | V3-015 | 8 | 8 | 0 | oui | 0 |
 | V3-017 | 7 | 7 | 0 | oui | 0 |
-| V3-018 | 5 | 0 | 4 | oui | 0 |
+| V3-018 | 5 | 5 | 0 | oui | 0 |
 | V3-021 | 5 | 5 | 0 | oui | 0 |
 | V3-022 | 8 | 0 | 0 | non | 0 |
 | V3-025 | 9 | 9 | 0 | oui | 0 |
 | V3-026 | 9 | 9 | 0 | oui | 0 |
 | V3-027 | 8 | 8 | 0 | oui | 0 |
-| V3-028 | 5 | 0 | 0 | non | 0 |
+| V3-028 | 8 | 8 | 0 | oui | 0 |
 | V3-029 | 5 | 5 | 0 | oui | 0 |
-| V3-030 | 5 | 0 | 0 | non | 0 |
-| V3-037 | 11 | 0 | 10 | oui | 0 |
-| V3-038 | 6 | 0 | 6 | oui | 0 |
-| V3-039 | 4 | 0 | 4 | oui | 0 |
+| V3-030 | 8 | 8 | 0 | oui | 0 |
+| V3-037 | 11 | 0 | 10 | oui | 1 |
+| V3-038 | 9 | 9 | 0 | oui | 0 |
+| V3-039 | 7 | 7 | 0 | oui | 0 |
 | V3-043 | 5 | 0 | 0 | non | 0 |
 | V4-001 | 8 | 0 | 0 | non | 0 |
 | V4-002 | 9 | 0 | 0 | non | 0 |
@@ -82,25 +82,25 @@ Prêt = au moins 3 rendus exploitables (original R2 propre, ou ancienne image du
 | V4-007 | 5 | 5 | 0 | oui | 0 |
 | V4-008 | 5 | 5 | 0 | oui | 0 |
 | V4-009 | 5 | 5 | 0 | oui | 0 |
-| V4-010 | 6 | 0 | 6 | oui | 0 |
+| V4-010 | 6 | 6 | 0 | oui | 0 |
 | V4-013 | 5 | 0 | 0 | non | 0 |
-| V4-014 | 4 | 0 | 0 | non | 0 |
+| V4-014 | 4 | 4 | 0 | oui | 0 |
 | V4-016 | 6 | 0 | 0 | non | 0 |
 | V4-019 | 5 | 0 | 0 | non | 0 |
 | V4-022 | 2 | 0 | 0 | non | 0 |
 | V4-024 | 5 | 0 | 0 | non | 0 |
-| V4-025 | 3 | 0 | 0 | non | 0 |
+| V4-025 | 3 | 3 | 0 | oui | 0 |
 | V4-026 | 5 | 5 | 0 | oui | 0 |
 | V4-028 | 5 | 0 | 0 | non | 0 |
 | V4-029 | 5 | 5 | 0 | oui | 0 |
-| V4-030 | 6 | 0 | 0 | non | 0 |
+| V4-030 | 6 | 6 | 0 | oui | 0 |
 | V4-032 | 5 | 0 | 0 | non | 0 |
-| V4-034 | 5 | 0 | 0 | non | 0 |
-| V4-036 | 5 | 0 | 3 | oui | 0 |
+| V4-034 | 5 | 5 | 0 | oui | 0 |
+| V4-036 | 5 | 5 | 0 | oui | 0 |
 | V4-042 | 8 | 0 | 0 | non | 0 |
 | V5-002 | 5 | 0 | 0 | non | 0 |
 | V5-005 | 5 | 0 | 0 | non | 0 |
 | V5-006 | 5 | 0 | 0 | non | 0 |
 | V5-007 | 5 | 0 | 0 | non | 0 |
 | V5-008 | 5 | 0 | 0 | non | 0 |
-| V5-009 | 6 | 0 | 6 | oui | 0 |
+| V5-009 | 6 | 6 | 0 | oui | 0 |
