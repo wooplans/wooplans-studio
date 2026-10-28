@@ -1,0 +1,40 @@
+name: youtube-voice
+# Génère les voix Gradium d'un job « Présentation de plan » (secret GRADIUM_API_KEY, aucun PC).
+# Lancer : Actions > youtube-voice > Run workflow (job = youtube_plan/jobs/<job>), ou pousser youtube_plan/jobs/<job>/VOICE.
+# Résultat : artefact « voix-<job> » (wav + chunks.json), conservé 14 jours. Rien n'est publié ici.
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Dossier du job (youtube_plan/jobs/<job>)"
+        required: true
+        default: "V3-007"
+  push:
+    branches: ["ccr-*"]
+    paths: ["youtube_plan/jobs/*/VOICE"]
+permissions:
+  contents: read
+jobs:
+  voice:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      GRADIUM_API_KEY: ${{ secrets.GRADIUM_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dépendances
+        run: |
+          sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q requests
+      - name: Voix (Gradium)
+        env:
+          YT_JOB: ${{ github.workspace }}/youtube_plan/jobs/${{ github.event.inputs.job || 'V3-007' }}
+        run: |
+          [ -n "$GRADIUM_API_KEY" ] || { echo "secret GRADIUM_API_KEY absent"; exit 1; }
+          python3 "$YT_JOB/code/gen_all.py"
+          ls -la "$YT_JOB/voix"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voix-${{ github.event.inputs.job || 'V3-007' }}
+          path: youtube_plan/jobs/${{ github.event.inputs.job || 'V3-007' }}/voix/*
+          retention-days: 14
