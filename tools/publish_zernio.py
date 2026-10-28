@@ -1,6 +1,6 @@
 """Programme une vidéo de visite sur les pages WooPlans via Zernio (lancé par le workflow publish-zernio).
 
-  python tools/publish_zernio.py visite_plan/jobs/<id>
+  python tools/publish_zernio.py visite_plan/jobs/<id>     (ou shorts/jobs/<id> : short « rendus 3D »)
 
 Lit <job>/PUBLISH.json :
   {"video": "visite_plan/out/<id>.mp4", "scheduled_for": "2026-10-19T19:00:00", "timezone": "Africa/Douala",
@@ -60,7 +60,10 @@ def main() -> int:
         print("Vidéo introuvable :", video)
         return 1
 
+    fmt = "S" if job.parent.parent.name == "shorts" else "A"   # short « rendus 3D » ou visite guidée
     thumb = job / "thumb.jpg"                              # vignette obligatoire
+    if fmt == "S" and (ROOT / "shorts" / "out" / f"{job.name}_thumb.jpg").exists():
+        thumb = ROOT / "shorts" / "out" / f"{job.name}_thumb.jpg"
     if not thumb.exists():
         subprocess.run([sys.executable, str(ROOT / "tools" / "make_thumbnail.py"), str(job), str(thumb)], check=True, cwd=ROOT)
 
@@ -80,9 +83,9 @@ def main() -> int:
         print("Aucun compte WooPlans connecté")
         return 1
     plan = job.name
-    if not claim("A", plan):                               # déjà réservée : ne reprogramme pas une vidéo déjà programmée
+    if not claim(fmt, plan):                               # déjà réservée : ne reprogramme pas une vidéo déjà programmée
         from wooplans.registry import _load, key, REGISTRY
-        if _load(REGISTRY).get(key("A", plan), {}).get("etat") == "programme":
+        if _load(REGISTRY).get(key(fmt, plan), {}).get("etat") == "programme":
             print(f"{plan} est déjà programmée (registre) : rien à faire")
             return 0
     media = {"type": "video", "url": client.upload_media(video, "video/mp4"),
@@ -94,7 +97,7 @@ def main() -> int:
     print(r.status_code, r.text[:1500])
     r.raise_for_status()
     post = r.json().get("post", r.json())
-    set_state("A", plan, "programme", post_id=post.get("_id") or post.get("id"), quand=cfg["scheduled_for"],
+    set_state(fmt, plan, "programme", post_id=post.get("_id") or post.get("id"), quand=cfg["scheduled_for"],
               fuseau=cfg["timezone"], plateformes=[p["platform"] for p in platforms])
     return 0
 

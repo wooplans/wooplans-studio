@@ -1,12 +1,13 @@
 name: publish-zernio
 # Programme une vidéo de visite sur les pages WooPlans (Facebook Reel + YouTube Shorts via Zernio ; TikTok si @wooplans est connecté à Zernio).
-# Déclenché par l'ajout / la modification de visite_plan/jobs/<job>/PUBLISH.json — à pousser SEULEMENT après l'accord explicite de Tao.
+# Déclenché par l'ajout / la modification de visite_plan/jobs/<job>/PUBLISH.json ou shorts/jobs/<job>/PUBLISH.json (plusieurs par push
+# possible) — à pousser SEULEMENT après l'accord explicite de Tao.
 # Aucun PC nécessaire : la vidéo (visite_plan/out/<job>.mp4) vient du workflow visite-render ; la publication est programmée chez Zernio.
 # Secrets requis : ZERNIO_API_KEY, ZERNIO_PROFILE_ID (voir SECRETS.md). Contrôle : workflow « check-setup ».
 on:
   push:
     branches: [main, "ccr-*"]
-    paths: ["visite_plan/jobs/*/PUBLISH.json"]
+    paths: ["visite_plan/jobs/*/PUBLISH.json", "shorts/jobs/*/PUBLISH.json"]
   workflow_dispatch:
     inputs:
       job:
@@ -38,9 +39,16 @@ jobs:
       - name: Programmation
         run: |
           JOB="${{ github.event.inputs.job }}"
-          if [ -n "$JOB" ]; then JOB="visite_plan/jobs/$JOB"; else JOB=$(git diff --name-only HEAD^1 HEAD | grep -E '^visite_plan/jobs/[^/]+/PUBLISH.json$' | head -1 | xargs dirname); fi
-          python tools/publish_zernio.py "$JOB"
+          if [ -n "$JOB" ]; then
+            [ -d "visite_plan/jobs/$JOB" ] && JOBS="visite_plan/jobs/$JOB" || JOBS="shorts/jobs/$JOB"
+          else
+            JOBS=$(git diff --name-only HEAD^1 HEAD | grep -E '^(visite_plan|shorts)/jobs/[^/]+/PUBLISH.json$' | xargs -r -n1 dirname)
+          fi
+          RC=0
+          for J in $JOBS; do echo "== $J"; python tools/publish_zernio.py "$J" || RC=1; done
+          exit $RC
       - name: Registre
+        if: always()
         run: |
           git config user.name "wooplans-publish"; git config user.email "publish@users.noreply.github.com"
           git add registry/videos.json
