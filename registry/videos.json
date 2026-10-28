@@ -414,5 +414,291 @@
       "facebook",
       "youtube"
     ]
+  },
+  "S:D4-001-S1:-": {
+    "format": "S",
+    "plan": "D4-001-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d113176ab1c4237ca6e",
+    "quand": "2026-10-29T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-003-S1:-": {
+    "format": "S",
+    "plan": "D4-003-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d193176ab1c4237cab4",
+    "quand": "2026-10-30T17:45:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-004-S4:-": {
+    "format": "S",
+    "plan": "D4-004-S4",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d203176ab1c4237cb22",
+    "quand": "2026-11-04T17:45:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-006-S1:-": {
+    "format": "S",
+    "plan": "D4-006-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d28c1872f54b6d6afd0",
+    "quand": "2026-10-31T17:45:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-007-S1:-": {
+    "format": "S",
+    "plan": "D4-007-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d2f3176ab1c4237cc05",
+    "quand": "2026-11-02T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-009-S1:-": {
+    "format": "S",
+    "plan": "D4-009-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d34c1872f54b6d6affb",
+    "quand": "2026-11-01T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-010-S1:-": {
+    "format": "S",
+    "plan": "D4-010-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d393176ab1c4237cc94",
+    "quand": "2026-11-03T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-011-S1:-": {
+    "format": "S",
+    "plan": "D4-011-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d403176ab1c4237ccf0",
+    "quand": "2026-10-29T17:45:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-012-S1:-": {
+    "format": "S",
+    "plan": "D4-012-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d4600208b604d3da680",
+    "quand": "2026-10-30T20:30:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-016-S1:-": {
+    "format": "S",
+    "plan": "D4-016-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d4c3176ab1c4237cd89",
+    "quand": "2026-11-01T17:45:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-017-S1:-": {
+    "format": "S",
+    "plan": "D4-017-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d533176ab1c4237ce04",
+    "quand": "2026-10-30T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-018-S1:-": {
+    "format": "S",
+    "plan": "D4-018-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d593176ab1c4237ce4e",
+    "quand": "2026-11-05T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-019-S1:-": {
+    "format": "S",
+    "plan": "D4-019-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d603176ab1c4237ce98",
+    "quand": "2026-10-31T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-020-S1:-": {
+    "format": "S",
+    "plan": "D4-020-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d663176ab1c4237cee1",
+    "quand": "2026-11-03T17:45:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-024-S1:-": {
+    "format": "S",
+    "plan": "D4-024-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d6e0ff6b765ff58b04f",
+    "quand": "2026-11-04T12:15:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-026-S1:-": {
+    "format": "S",
+    "plan": "D4-026-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d730ff6b765ff58b07f",
+    "quand": "2026-10-29T20:30:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-032-S1:-": {
+    "format": "S",
+    "plan": "D4-032-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d7a3176ab1c4237cf26",
+    "quand": "2026-11-02T17:45:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-033-S1:-": {
+    "format": "S",
+    "plan": "D4-033-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d800ff6b765ff58b119",
+    "quand": "2026-10-31T20:30:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-034-S1:-": {
+    "format": "S",
+    "plan": "D4-034-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d873176ab1c4237cf47",
+    "quand": "2026-11-02T20:30:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-035-S1:-": {
+    "format": "S",
+    "plan": "D4-035-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d8d0ff6b765ff58b18e",
+    "quand": "2026-11-04T20:30:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-036-S1:-": {
+    "format": "S",
+    "plan": "D4-036-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d940ff6b765ff58b1ec",
+    "quand": "2026-11-01T20:30:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:D4-040-S1:-": {
+    "format": "S",
+    "plan": "D4-040-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae20d9b0ff6b765ff58b24d",
+    "quand": "2026-11-03T20:30:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
   }
 }
