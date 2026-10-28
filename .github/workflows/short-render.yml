@@ -3,6 +3,7 @@ name: short-render
 # Lancer : Actions > short-render > Run workflow avec une SÉLECTION (« D4-004 V3-022 », « villa », « V4 », « duplex nouveaux »,
 # « tous ») : pour chaque modèle, un nouveau job <CODE>-S<n> ; les rendus d'origine sont pris directement dans R2 par le
 # serveur MCP du site (secret WOOPLANS_MCP_TOKEN) et la musique est choisie dans la base Mixkit (rotation).
+# Depuis une session Claude (pas de lancement manuel possible) : écrire la sélection dans shorts/BATCH.txt et pousser.
 # Ou pousser shorts/jobs/<id>/RENDER pour relancer des jobs existants (champ « jobs » en lancement manuel).
 # Sorties commitées : shorts/out/<id>.mp4 + <id>_thumb.jpg + <id>.json (musique), shorts/jobs/<id>/short.json. Aucune publication.
 on:
@@ -16,7 +17,7 @@ on:
         required: false
   push:
     branches: [main, "ccr-*"]
-    paths: ["shorts/jobs/*/RENDER"]
+    paths: ["shorts/jobs/*/RENDER", "shorts/BATCH.txt"]
 permissions:
   contents: write
 concurrency:
@@ -37,7 +38,9 @@ jobs:
           WOOPLANS_MCP_TOKEN: ${{ secrets.WOOPLANS_MCP_TOKEN }}
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            JOBS=$(git diff --name-only HEAD^1 HEAD | grep -E '^shorts/jobs/[^/]+/RENDER$' | cut -d/ -f3 | tr '\n' ' ')
+            CHANGED=$(git diff --name-only HEAD^1 HEAD)
+            JOBS=$(echo "$CHANGED" | grep -E '^shorts/jobs/[^/]+/RENDER$' | cut -d/ -f3 | tr '\n' ' ')
+            if echo "$CHANGED" | grep -qx 'shorts/BATCH.txt'; then SELECTION=$(sed 's/#.*//' shorts/BATCH.txt | tr '\n' ' '); fi
           fi
           echo "include=$(python3 tools/shorts_batch.py "$SELECTION" --jobs $JOBS)" >> "$GITHUB_OUTPUT"
           cat "$GITHUB_OUTPUT"

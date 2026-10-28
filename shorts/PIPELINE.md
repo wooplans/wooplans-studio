@@ -7,8 +7,9 @@ pendant 2 s, fin « Plans et devis de ce modèle sur wooplans.com ». Ni voix, n
 
 ## Produire (Tao donne seulement les codes ou le type)
 1. Tao, dans la conversation : « fais les shorts de D4-004 et V3-022 », « tous les V4 », « les duplex qui n'en ont pas ».
-2. Claude lance le workflow **`short-render`** (Run workflow, champ `selection` : `D4-004 V3-022`, `V4`, `villa`, `duplex`,
-   `tous`, + `nouveaux` = seulement les modèles sans short ; 40 shorts au plus par lot).
+2. Claude écrit la sélection dans **`shorts/BATCH.txt`** et pousse → workflow **`short-render`** (ou Actions > Run workflow,
+   champ `selection`) : `D4-004 V3-022`, `V4`, `villa`, `duplex`, `tous`, + `nouveaux` = seulement les modèles sans
+   short ; 40 shorts au plus par lot.
 3. Pour chaque modèle, en parallèle : nouveau job `shorts/jobs/<CODE>-S<n>/`, **rendus d'origine pris dans R2** par le
    serveur MCP du site (`list_plan_files` → couverture d'abord puis 3 rendus répartis sur la galerie ; originaux
    absents ou portant la pastille du site écartés), musique choisie dans la base Mixkit, vidéo + vignette.
