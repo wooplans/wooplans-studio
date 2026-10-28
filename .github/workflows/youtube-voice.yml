@@ -21,17 +21,6 @@ jobs:
     env:
       GRADIUM_API_KEY: ${{ secrets.GRADIUM_API_KEY }}
     steps:
-      - name: Diagnostic secrets (présence seulement)
-        env:
-          A: ${{ secrets.GRADIUM_API_KEY }}
-          B: ${{ secrets.GRADIUM }}
-          C: ${{ secrets.GRADIUM_KEY }}
-          D: ${{ secrets.GRADIUM_API }}
-          E: ${{ secrets.GRADIUM_TOKEN }}
-          F: ${{ secrets.GRADIUM_API_TOKEN }}
-          G: ${{ secrets.ELEVENLABS_API_KEY }}
-        run: |
-          for n in A B C D E F G; do if [ -n "${!n}" ]; then echo "$n présent"; else echo "$n absent"; fi; done
       - uses: actions/checkout@v4
       - name: Dépendances
         run: |
