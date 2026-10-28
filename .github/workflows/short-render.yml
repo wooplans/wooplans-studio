@@ -1,7 +1,8 @@
 name: short-render
 # Shorts « rendus 3D » plein écran (9:16, ~20 s, sans voix ni plan coté) sur GitHub, un job par short, en parallèle.
 # Lancer : Actions > short-render > Run workflow avec une SÉLECTION (« D4-004 V3-022 », « villa », « V4 », « duplex nouveaux »,
-# « tous ») : pour chaque modèle, un nouveau job <CODE>-S<n> ; les rendus d'origine sont pris directement dans R2 par le
+# « tous » ; « inventaire » = état de tout le catalogue dans shorts/INVENTAIRE.md) : pour chaque modèle prêt (3 rendus
+# exploitables au moins, sinon écarté avec la raison), un nouveau job <CODE>-S<n> ; les rendus d'origine sont pris dans R2 par le
 # serveur MCP du site (secret WOOPLANS_MCP_TOKEN) et la musique est choisie dans la base Mixkit (rotation).
 # Depuis une session Claude (pas de lancement manuel possible) : écrire la sélection dans shorts/BATCH.txt et pousser.
 # Ou pousser shorts/jobs/<id>/RENDER pour relancer des jobs existants (champ « jobs » en lancement manuel).
@@ -42,8 +43,13 @@ jobs:
             JOBS=$(echo "$CHANGED" | grep -E '^shorts/jobs/[^/]+/RENDER$' | cut -d/ -f3 | tr '\n' ' ')
             if echo "$CHANGED" | grep -qx 'shorts/BATCH.txt'; then SELECTION=$(sed 's/#.*//' shorts/BATCH.txt | tr '\n' ' '); fi
           fi
-          echo "include=$(python3 tools/shorts_batch.py "$SELECTION" --jobs $JOBS)" >> "$GITHUB_OUTPUT"
-          cat "$GITHUB_OUTPUT"
+          echo "include=$(python3 tools/shorts_batch.py "$SELECTION" --jobs $JOBS 2> batch.log)" >> "$GITHUB_OUTPUT"
+          cat batch.log "$GITHUB_OUTPUT"; { echo "### Lot de shorts"; sed 's/^/- /' batch.log; } >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$(git status --porcelain shorts/INVENTAIRE.md)" ]; then
+            git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
+            git add shorts/INVENTAIRE.md && git commit -m "shorts : inventaire des rendus R2"
+            git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"
+          fi
   render:
     needs: plan
     if: needs.plan.outputs.include != '[]'

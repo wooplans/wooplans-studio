@@ -42,13 +42,17 @@ def test_spread_keeps_cover_and_covers_gallery():
     assert picked[0] == 0 and len(picked) == 4 and len(set(picked)) == 4 and picked[-1] >= 7
 
 
-def test_original_renders_filters(monkeypatch):
+def test_usable_renders_filters():
+    big_clean = {"key": "s3", "watermarked": False, "width": 1376}
     index = {"renders": [
         {"position": 1, "cover": False, "original": {"key": "a", "watermarked": False}},
         {"position": 2, "cover": True, "original": {"key": "b", "watermarked": None}},
-        {"position": 3, "cover": False, "original": None},
+        {"position": 3, "cover": False, "original": None, "site": big_clean},
         {"position": 4, "cover": False, "original": {"key": "d", "watermarked": True}},
         {"position": 5, "cover": False, "original": {"key": "e", "missing": True}},
+        {"position": 6, "cover": False, "original": None, "site": {"key": "s6", "watermarked": True, "width": 1376}},
+        {"position": 7, "cover": False, "original": None, "site": {"key": "s7", "watermarked": False, "width": 960}},
     ]}
-    monkeypatch.setattr(site_api, "call", lambda tool, args=None: index)
-    assert [r["key"] for r in site_api.original_renders("X")] == ["b", "a"]
+    got = site_api.usable_renders("X", index)
+    assert [r["key"] for r in got] == ["b", "a", "s3"]
+    assert [r["source"] for r in got] == ["original", "original", "site"]

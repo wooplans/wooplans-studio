@@ -12,7 +12,10 @@ pendant 2 s, fin « Plans et devis de ce modèle sur wooplans.com ». Ni voix, n
    short ; 40 shorts au plus par lot.
 3. Pour chaque modèle, en parallèle : nouveau job `shorts/jobs/<CODE>-S<n>/`, **rendus d'origine pris dans R2** par le
    serveur MCP du site (`list_plan_files` → couverture d'abord puis 3 rendus répartis sur la galerie ; originaux
-   absents ou portant la pastille du site écartés), musique choisie dans la base Mixkit, vidéo + vignette.
+   absents ou portant la pastille du site écartés ; à défaut, anciennes images du site sans filigrane d'au moins
+   1200 px), musique choisie dans la base Mixkit, vidéo + vignette. Modèle avec moins de 3 rendus exploitables :
+   écarté, raison dans le résumé du run (ajouter ses originaux sur le site). Mot `inventaire` : état de tout le
+   catalogue dans `shorts/INVENTAIRE.md` (modèles prêts / non prêts).
    Secret GitHub requis : `WOOPLANS_MCP_TOKEN` (voir SECRETS.md).
 4. Sorties commitées : `shorts/out/<id>.mp4`, `<id>_thumb.jpg`, `<id>.json` (musique) et `shorts/jobs/<id>/short.json`
    (clés R2 des rendus utilisés). Claude contrôle et envoie les vidéos à Tao.

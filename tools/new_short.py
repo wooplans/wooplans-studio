@@ -1,8 +1,9 @@
 """Crée un job de short « rendus 3D » : python tools/new_short.py <CODE> [n° de série] [--images a.png b.png ...]
 
 Rendus d'origine (1920x1080 ou plus, sans filigrane du site) :
-- par défaut, pris DIRECTEMENT dans R2 par le site (wooplans/site_api.py, jeton WOOPLANS_MCP_TOKEN) : couverture en
-  premier (vue complète au début de la vidéo), puis 3 autres répartis sur la galerie (jour, nuit, autres angles) ;
+- par défaut, pris DIRECTEMENT dans R2 par le site (wooplans/site_api.py, jeton WOOPLANS_MCP_TOKEN) : originaux, sinon
+  anciennes images du site propres et assez grandes ; couverture en premier (vue complète au début de la vidéo), puis
+  3 autres répartis sur la galerie (jour, nuit, autres angles) ; 3 rendus exploitables au moins ;
 - sinon ceux de shorts/rendus/<CODE>/ (ordre des noms), ou la liste --images.
 Téléchargés dans shorts/rendus/<CODE>/ (non commités) ; les clés R2 sont notées dans short.json pour un nouveau rendu.
 Écrit shorts/jobs/<CODE>-S<n>/short.json (sans musique : rotation dans la base Mixkit au rendu).
@@ -16,6 +17,7 @@ sys.path.insert(0, str(ROOT))
 from wooplans import site_api  # noqa: E402
 
 MAX_IMAGES = 4
+MIN_IMAGES = 3
 EXT = {".png", ".jpg", ".jpeg", ".webp"}
 
 
@@ -29,16 +31,25 @@ def spread(items: list, n: int = MAX_IMAGES) -> list:
 
 
 def r2_images(code: str):
-    """Originaux R2 choisis et téléchargés : (chemins relatifs au dépôt, clés R2)."""
-    chosen = spread(site_api.original_renders(code))
+    """Rendus R2 choisis et téléchargés : (chemins relatifs au dépôt, clés R2). Un fichier illisible est remplacé par
+    le suivant de la galerie."""
+    usable = site_api.usable_renders(code)
     paths, keys = [], []
-    for k, r in enumerate(chosen, 1):
+    for r in spread(usable) + [u for u in usable if u not in spread(usable)]:
+        if len(paths) == MAX_IMAGES:
+            break
         ext = Path(r["key"]).suffix.lower() or ".png"
-        dest = ROOT / "shorts" / "rendus" / code / f"{k:02d}{ext}"
-        if not dest.exists():
+        dest = ROOT / "shorts" / "rendus" / code / f"{len(paths) + 1:02d}{ext}"
+        try:
             site_api.download(r["key"], dest)
+        except Exception as e:
+            print(f"  {r['key']} ignoré : {e}")
+            continue
         paths.append(str(dest.relative_to(ROOT)))
         keys.append(r["key"])
+    if len(paths) < MIN_IMAGES:
+        raise SystemExit(f"{code} : {len(paths)} rendu(s) exploitable(s) dans R2, {MIN_IMAGES} au moins "
+                         "(originaux absents : les ajouter sur le site)")
     return paths, keys
 
 

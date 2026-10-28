@@ -40,17 +40,29 @@ def published_plans() -> List[dict]:
     return call("list_plans", {"status": "published"})["items"]
 
 
-def original_renders(code: str) -> List[dict]:
-    """Originaux des rendus d'un modèle, dans l'ordre du site, couverture en premier. Écarte les originaux absents
-    et ceux qui portent déjà la pastille du site (watermarked true) ; `watermarked` null (indécidable) est gardé."""
-    index = call("list_plan_files", {"code": code})
+MIN_SITE_WIDTH = 1200              # anciennes images du site acceptées sans original : propres et assez grandes
+
+
+def plan_files(code: str) -> dict:
+    return call("list_plan_files", {"code": code})
+
+
+def usable_renders(code: str, index: Optional[dict] = None) -> List[dict]:
+    """Rendus exploitables pour un short, dans l'ordre du site, couverture en premier :
+    l'original R2 s'il existe et ne porte pas la pastille du site (watermarked null = indécidable, gardé) ;
+    sinon l'image du site si elle est sans filigrane et d'au moins MIN_SITE_WIDTH px (anciens envois en 1376 px) ;
+    sinon rien (les versions du site en 960 px filigranées ne servent jamais)."""
+    index = index or plan_files(code)
     renders = sorted(index.get("renders", []), key=lambda r: (not r.get("cover"), r.get("position", 0)))
     out = []
     for r in renders:
-        o = r.get("original")
+        o, s = r.get("original"), r.get("site") or {}
         if o and not o.get("missing") and o.get("watermarked") is not True:
-            out.append({"key": o["key"], "width": o.get("width"), "height": o.get("height"), "position": r.get("position")})
+            out.append({"key": o["key"], "width": o.get("width"), "source": "original"})
+        elif (not s.get("missing") and s.get("watermarked") is False and (s.get("width") or 0) >= MIN_SITE_WIDTH):
+            out.append({"key": s["key"], "width": s.get("width"), "source": "site"})
     return out
+
 
 
 def download(key: str, dest: Path) -> Path:
