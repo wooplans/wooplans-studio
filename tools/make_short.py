@@ -2,7 +2,7 @@
 
   python tools/make_short.py shorts/jobs/<id> [sortie.mp4]
 
-Inspiré des shorts « Small House Design » : la plus belle façade dès la 1re image, mouvement continu, coupes sur
+Inspiré des shorts « Small House Design » : la maison entière d'abord, puis zoom et travelling, mouvement continu, coupes sur
 le temps de la musique, texte réduit au minimum. Job : shorts/jobs/<id>/short.json
   {"code": "D4-004", "images": ["youtube_plan/jobs/D4-004/assets/R0.png", ...],
    "music": "assets/music/Africa_Arulo_mixkit-218.mp3", "beats": 8,
@@ -92,6 +92,44 @@ def clip(img: Path, k: int, dur: float, out: Path):
        "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-r", FPS, out)
 
 
+def intro_clip(img: Path, dur: float, out: Path, hold: float = 1.8, zoom: float = 1.6):
+    """1er rendu : la maison entière (largeur de l'écran, fond flou), puis zoom progressif jusqu'au plein écran
+    et travelling vers la droite. Images calculées une à une (position au sous-pixel : mouvement sans à-coups)."""
+    src = Image.open(img).convert("RGBA")
+    iw, ih = src.size
+    k = H / ih
+    bg = src.convert("RGB").resize((round(iw * k), H), Image.LANCZOS)
+    x0 = (bg.width - W) // 2
+    bg = bg.crop((x0, 0, x0 + W, H)).filter(ImageFilter.GaussianBlur(28))
+    bg = Image.alpha_composite(bg.convert("RGBA"), Image.new("RGBA", (W, H), (8, 40, 40, 90)))
+    s_fit, s_cover = W / iw, H / ih
+
+    def ease(u):
+        u = min(max(u, 0.0), 1.0)
+        return u * u * (3 - 2 * u)
+
+    proc = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                             "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16",
+                             "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)
+    for i in range(round(dur * FPS)):
+        t = i / FPS
+        if t < hold:                                     # vue complète, léger zoom avant
+            s = s_fit * (1 + 0.05 * t / hold)
+        else:                                            # zoom (échelle logarithmique) jusqu'au plein écran
+            a = s_fit * 1.05
+            s = a * (s_cover / a) ** ease((t - hold) / zoom)
+        sw, sh = s * iw, s * ih
+        f = 0.5 + 0.3 * ease((t - hold - zoom) / (dur - hold - zoom)) if t > hold + zoom else 0.5
+        left = (W - sw) * f
+        top = (H - sh) / 2
+        fg = src.transform((W, H), Image.AFFINE, (1 / s, 0, -left / s, 0, 1 / s, -top / s), Image.BICUBIC,
+                           fillcolor=(0, 0, 0, 0))
+        proc.stdin.write(Image.alpha_composite(bg, fg).convert("RGB").tobytes())
+    proc.stdin.close()
+    if proc.wait():
+        raise RuntimeError("ffmpeg a échoué (intro)")
+
+
 def main() -> int:
     job = Path(sys.argv[1])
     cfg = json.loads((job / "short.json").read_text(encoding="utf-8"))
@@ -110,30 +148,35 @@ def main() -> int:
     images = [ROOT / i for i in cfg["images"]]
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        clips = []
+        clips, durs = [], []
         for k, img in enumerate(images):
             c = tmp / f"c{k}.mp4"
-            clip(img, k, seg + XFADE, c)
+            if k == 0 and cfg.get("intro", True):         # maison entière d'abord, puis zoom
+                durs.append(2 * seg)
+                intro_clip(img, 2 * seg + XFADE, c)
+            else:
+                durs.append(seg)
+                clip(img, k, seg + XFADE, c)
             clips.append(c)
         overlay_png(tmp / "info.png", (title, facts))
         end_png(tmp / "end.png", images[-1], end_line)
         ff("-loop", "1", "-t", f"{END + XFADE:.3f}", "-i", tmp / "end.png", "-vf", f"fps={FPS},format=yuv420p",
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-r", FPS, tmp / "end.mp4")
         clips.append(tmp / "end.mp4")
-        total = (len(clips) - 1) * seg + END
+        total = sum(durs) + END
         # enchaînement : fondus entre rendus, puis carte de fin
         inputs, fc, last = [], "", "0:v"
         for c in clips:
             inputs += ["-i", c]
         for k in range(1, len(clips)):
-            fc += f"[{last}][{k}:v]xfade=transition=fade:duration={XFADE}:offset={k * seg:.3f}[x{k}];"
+            fc += f"[{last}][{k}:v]xfade=transition=fade:duration={XFADE}:offset={sum(durs[:k]):.3f}[x{k}];"
             last = f"x{k}"
         n = len(clips)
         inputs += ["-i", tmp / "info.png", "-i", BRAND / "wm_logo.png", "-i", BRAND / "wm_logo.png",
                    "-ss", f"{tr['best_start']:.3f}", "-i", music]
         fc += (f"[{n + 1}:v]format=rgba,scale=390:-1,colorchannelmixer=aa=0.62[w1];"
                f"[{n + 2}:v]format=rgba,scale=390:-1,colorchannelmixer=aa=0.62[w2];"
-               f"[{last}][{n}:v]overlay=0:0:enable='between(t,0.25,{seg * 1.5:.2f})'[i];"
+               f"[{last}][{n}:v]overlay=0:0:enable='between(t,0.25,2.2)'[i];"
                "[i][w1]overlay=x='(W-w)*(0.5+0.5*sin(0.53*t))':y='(H-h)*(0.5+0.5*sin(0.37*t+1.1))'[m];"
                "[m][w2]overlay=x='(W-w)*(0.5+0.5*sin(0.41*t+2.6))':y='(H-h)*(0.5+0.5*sin(0.29*t+4.0))',"
                f"trim=duration={total:.3f},format=yuv420p[v];"
