@@ -45,9 +45,9 @@ jobs:
           fi
           echo "include=$(python3 tools/shorts_batch.py "$SELECTION" --jobs $JOBS 2> batch.log)" >> "$GITHUB_OUTPUT"
           cat batch.log "$GITHUB_OUTPUT"; { echo "### Lot de shorts"; sed 's/^/- /' batch.log; } >> "$GITHUB_STEP_SUMMARY"
-          if [ -n "$(git status --porcelain shorts/INVENTAIRE.md)" ]; then
+          if [ -n "$(git status --porcelain shorts/INVENTAIRE.md shorts/INVENTAIRE.json)" ]; then
             git config user.name "wooplans-render"; git config user.email "render@users.noreply.github.com"
-            git add shorts/INVENTAIRE.md && git commit -m "shorts : inventaire des rendus R2"
+            git add shorts/INVENTAIRE.md shorts/INVENTAIRE.json && git commit -m "shorts : inventaire des rendus R2"
             git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"
           fi
   render:

@@ -3,7 +3,7 @@
 Sélection : codes, catégorie, type, « tous », « nouveaux » (voir wooplans/shorts.py). Chaque modèle reçoit un
 nouveau job <CODE>-S<n> (images prises dans R2 au moment du rendu) ; --jobs relance des jobs existants.
 Modèles sans 3 rendus exploitables dans R2 : écartés (raison sur stderr). Mot « inventaire » : écrit
-shorts/INVENTAIRE.md (état de tout le catalogue).
+shorts/INVENTAIRE.md + INVENTAIRE.json (état de tout le catalogue, rendus choisis par modèle).
 Musique attribuée ici pour tout le lot (rotation : jamais deux fois la même dans un lot).
 Sortie (stdout) : une ligne JSON [{"job", "code", "music", "new"}, ...].
 """
@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from tools.new_short import MIN_IMAGES  # noqa: E402
+from tools.new_short import MIN_IMAGES, spread  # noqa: E402
 from wooplans import music, shorts, site_api  # noqa: E402
 
 MAX_BATCH = 40                     # garde-fou : au-delà, découper la demande
@@ -39,7 +39,7 @@ def inventory() -> None:
              f"d'au moins {site_api.MIN_SITE_WIDTH} px). Mis à jour par le workflow short-render (mot « inventaire »).", "",
              "| Modèle | Rendus en ligne | Originaux R2 | Anciennes images utilisables | Prêt | Shorts déjà faits |",
              "|---|---|---|---|---|---|"]
-    ready = 0
+    ready, details = 0, []
     for p in shorts.catalogue():
         code = p["code"]
         try:
@@ -52,10 +52,23 @@ def inventory() -> None:
         ok = len(usable) >= MIN_IMAGES
         ready += ok
         done = len(list(shorts.JOBS.glob(f"{code}-S*/short.json")))
+        site_of = {(r.get("original") or {}).get("key") or (r.get("site") or {}).get("key"): (r.get("site") or {}).get("key")
+                   for r in idx.get("renders", [])}
+        chosen = {u["key"] for u in spread(usable)}
+        details.append({**p, "name": idx.get("name"), "renders_online": idx["summary"]["renders"], "originals": orig,
+                        "site_usable": len(usable) - orig, "ready": ok, "shorts_done": done,
+                        "renders": [{"position": r.get("position"), "cover": r.get("cover"),
+                                     "site": (r.get("site") or {}).get("key"),
+                                     "original_width": (r.get("original") or {}).get("width"),
+                                     "site_width": (r.get("site") or {}).get("width"),
+                                     "usable": any(u["key"] in ((r.get("original") or {}).get("key"), (r.get("site") or {}).get("key")) for u in usable),
+                                     "chosen": any(k in chosen for k in ((r.get("original") or {}).get("key"), (r.get("site") or {}).get("key")))}
+                                    for r in sorted(idx.get("renders", []), key=lambda r: r.get("position", 0))]})
         lines.append(f"| {code} | {idx['summary']['renders']} | {orig} | {len(usable) - orig} | {'oui' if ok else 'non'} | {done} |")
     lines.insert(3, f"**{ready} modèle(s) prêt(s).**")
     lines.insert(4, "")
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    REPORT.with_suffix(".json").write_text(json.dumps(details, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"inventaire : {ready} modèle(s) prêt(s) -> {REPORT.relative_to(ROOT)}", file=sys.stderr)
 
 
