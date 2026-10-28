@@ -41,6 +41,8 @@ def wrap(draw, text, size, max_w):
 
 def load_job(job: Path):
     cfg = {}
+    if (job / "short.json").exists():                    # short « rendus 3D » (tools/make_short.py)
+        cfg = json.loads((job / "short.json").read_text(encoding="utf-8")).get("thumbnail", {})
     if (job / "PUBLISH.json").exists():
         cfg = json.loads((job / "PUBLISH.json").read_text(encoding="utf-8")).get("thumbnail", {})
     bump = json.loads((job / "bump.json").read_text(encoding="utf-8")) if (job / "bump.json").exists() else {}
@@ -62,6 +64,8 @@ def main() -> int:
         return 1
     img = Image.new("RGB", (W, H), (255, 255, 255))
     src = job / "facade.png"
+    if (job / "short.json").exists():                    # short : 1er rendu de la liste
+        src = ROOT / json.loads((job / "short.json").read_text(encoding="utf-8"))["images"][0]
     if src.exists():
         bg = Image.open(src).convert("RGB")
         k = H / bg.height
@@ -92,8 +96,9 @@ def main() -> int:
         d.text((W / 2, by0 + 76), badge, font=f, fill="white", anchor="mm")
         y = by0 + 150
     if chip:                                                 # sous le centre, au-dessus de la bande du bas
-        f = fit_font(d, chip.upper(), 52, W - 160)
-        d.text((W // 2, 1610), chip.upper(), font=f, fill=(231, 195, 108), anchor="ma", stroke_width=4, stroke_fill=GREEN)
+        chip = chip.upper().replace("M²", "m²")
+        f = fit_font(d, chip, 52, W - 160)
+        d.text((W // 2, 1610), chip, font=f, fill=(231, 195, 108), anchor="ma", stroke_width=4, stroke_fill=GREEN)
     d.rectangle([0, 1730, W, H], fill=GREEN)                 # bande wooplans.com
     d.rectangle([0, 1730, W, 1738], fill=ORANGE)
     logo = ROOT / "assets" / "brand" / "logo_white.png"
