@@ -5,13 +5,12 @@ Logique pure (aucun réseau, ni ffmpeg) : calendrier calé sur les mesures de la
 Le rendu ffmpeg est dans tools/make_reel.py.
 
 Règles du projet : chiffres uniquement ceux de data/plans.json (chambres, surface, terrain, estimation indicative),
-prix actuel du catalogue 39 000 FCFA, jamais de formule d'urgence, lien wooplans.com dans la fin de vidéo.
+jamais le prix du catalogue, jamais de formule d'urgence, lien wooplans.com dans la fin de vidéo.
 """
 from dataclasses import dataclass, field
 from typing import List, Optional, Tuple
 
 from wooplans.guardrails import check_copy
-from wooplans.settings import OFFER_PRICE_FCFA
 
 W, H = 1080, 1920
 FPS = 30

@@ -87,7 +87,7 @@ Objectif : 2 à 3 posts images par jour sur la page Facebook WooPlans, sans trav
   Les rendus sont lus sur la fiche publique `https://www.wooplans.com/catalogue/<slug>` (dossier `/media/public/<code>/`), convertis en JPEG (côté long ≤ 1600 px). Ils portent déjà le filigrane `wooplans.com` du catalogue : aucun second filigrane n'est ajouté (`WATERMARK` dans `tools/image_batch.py`).
 - **Rythme** : 3 créneaux par jour (7 h 30, 12 h 30, 19 h, fuseau Africa/Douala) : 1 image, 1 album de 4 rendus, 1 image. Modifiable via `slots` dans `PLAN`.
 - **Variété** : les plans les moins publiés passent d'abord, alternance villa / duplex, jamais deux fois le même plan le même jour, un rendu n'est repris qu'après avoir fait le tour du plan, 6 modèles de légende (fiche, question, terrain, budget, enregistrer, partager).
-- **Garde-fous** : chaque légende passe par `check_copy` ; seuls les montants de `plans.json` et le prix actuel 39 000 FCFA sont autorisés (libellé « estimation indicative ») ; lien `https://wooplans.com/catalogue-premium` avec UTM `utm_medium=image_organique`, `utm_content=image_<code>`.
+- **Garde-fous** : chaque légende passe par `check_copy` ; seuls les montants de `plans.json` sont autorisés, jamais le prix du catalogue (libellé « estimation indicative ») ; lien `https://wooplans.com/catalogue-premium` avec UTM `utm_medium=image_organique`, `utm_content=image_<code>`.
 - **Procédure** (aucun PC nécessaire) :
   1. Pousser `batches/images/<lot>/PLAN` (`{"start": "2026-10-20", "days": 7, "seed": 1}`) → workflow `image-batch` : `batch.json`, `batch.md` (toutes les légendes), `apercu-N.jpg` (planches). **Rien n'est programmé.**
   2. Tao relit ; retirer un post = `"skip": true` dans `batch.json`, corriger une légende = éditer `caption`.
@@ -97,7 +97,7 @@ Objectif : 2 à 3 posts images par jour sur la page Facebook WooPlans, sans trav
 ## Format « rendus 3D en vidéo » (prototype du 20 oct. 2026, à valider par Tao)
 Reel 9:16 d'environ 24 s fait des rendus du catalogue : plein écran avec travelling lent, musique de fond, **sans voix off**, sous-titres animés (pop, mot clé orange, prix qui s'incrémente), fin « wooplans.com ».
 - **Commande** : `python tools/make_reel.py <code> sortie.mp4` (ex. `D4-026`), environ 3 min de calcul. Rendus lus sur la fiche publique ; textes et chiffres de `data/plans.json` (`check_copy`).
-- **Scénario** (`wooplans/reel3d.py`) : accroche « Cette maison coûte combien ? », type et chambres, surface et niveaux, terrain (si connu), plan complet + devis, suspense, **estimation indicative** (compteur), « tout est dans le Catalogue Premium », carte finale (prix actuel 39 000 FCFA, lien en description).
+- **Scénario** (`wooplans/reel3d.py`) : accroche « Cette maison coûte combien ? », type et chambres, surface et niveaux, terrain (si connu), plan complet + devis, suspense, **estimation indicative** (compteur), « tout est dans le Catalogue Premium », carte finale (« 50+ plans avec leurs vrais devis », lien en description ; jamais le prix du catalogue).
 - **Musique** : coupes calées sur les mesures (4 temps) de `assets/music/tracks.json`, produit par `tools/analyze_music.py` (librosa, une seule fois par morceau). Un seul morceau pour l'instant (Pop Two, Mixkit) ; pour en ajouter, déposer le MP3 dans `assets/music/`, lancer l'analyse, noter la licence.
 - Filigrane anti-piratage « wooplans.com » qui défile du début à la fin (comme les visites), badge en haut à gauche, bande de marque en bas.
 

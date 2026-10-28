@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFont
 from tools.image_batch import download, fetch_page_images
 from wooplans.image_posts import load_plans
 from wooplans.reel3d import (FPS, H, OVERLAP, W, assign_images, bar_length, build_ass, check_scenes, fcfa, n_bars, pan, scenes)
-from wooplans.settings import OFFER_PRICE_FCFA, ROOT
+from wooplans.settings import OFFER_PROMISE, ROOT
 
 BRAND = ROOT / "assets" / "brand"
 FONT = ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf"
@@ -80,7 +80,7 @@ def end_card_png(path: Path):
     d.rounded_rectangle((150, 1130, W - 150, 1290), radius=80, fill=(240, 138, 46, 255))
     centered("wooplans.com", 1165, 88, "white")
     centered("Catalogue Premium", 1345, 50, "white")
-    centered(f"prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA", 1410, 50, "white")
+    centered(OFFER_PROMISE, 1410, 50, "white")
     centered("Lien en description", 1505, 52, (240, 138, 46, 255))
     im.save(path)
 
@@ -103,7 +103,7 @@ def make_cover(plan: dict, facade: Path, tmp: Path) -> Path:
 
 def end_card_texts():
     return ["Plan complet", "+ devis détaillé", "wooplans.com", "Catalogue Premium",
-            f"prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA", "Lien en description"]
+            OFFER_PROMISE, "Lien en description"]
 
 
 def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None) -> Path:

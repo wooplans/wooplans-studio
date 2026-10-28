@@ -12,7 +12,7 @@ from typing import Callable, Dict, List, Optional, Set, Tuple
 
 from wooplans.guardrails import check_copy
 from wooplans.registry import REGISTRY, _load
-from wooplans.settings import OFFER_PRICE_FCFA, OFFER_PROMISE, ROOT
+from wooplans.settings import OFFER_PROMISE, ROOT
 from wooplans.utm import build_link
 
 PLANS = ROOT / "data" / "plans.json"
@@ -63,14 +63,14 @@ def _ctx(p: dict) -> dict:
         "name": p["name"], "type": p["category"],
         "this": "Cette villa" if p["category"] == "villa" else "Ce duplex", "it": "la" if p["category"] == "villa" else "le", "ch": p["bedrooms"], "surf": p["surface"],
         "land": p.get("land_area"), "est": fcfa(p["estimate_total"]), "link": _link(p), "tags": _tags(p),
-        "promise": OFFER_PROMISE, "price": fcfa(OFFER_PRICE_FCFA),
+        "promise": OFFER_PROMISE,
     }
 
 
 TEMPLATES = [
     ("fiche", False,
      "🏡 {name} · {ch} chambres · {surf} m²\nEstimation indicative : {est} FCFA.\n\n"
-     "📲 Plan complet + devis détaillé dans le Catalogue Premium ({promise}), prix actuel : {price} FCFA.\n👉 {link}\n\n{tags}"),
+     "📲 Plan complet + devis détaillé dans le Catalogue Premium ({promise}).\n👉 {link}\n\n{tags}"),
     ("question", False,
      "{this} de {ch} chambres, vous {it} construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\n"
      "{name} · {surf} m² · estimation indicative : {est} FCFA\n\n👉 Tous nos plans avec leurs vrais devis : {link}\n\n{tags}"),
@@ -79,7 +79,7 @@ TEMPLATES = [
      "Estimation indicative : {est} FCFA.\n\n👉 Le plan et son devis détaillé : {link}\n\n{tags}"),
     ("budget", False,
      "Un budget de construction autour de {est} FCFA ? 💰\n{name} : {ch} chambres, {surf} m² (estimation indicative).\n\n"
-     "Le devis détaillé est dans le Catalogue Premium, prix actuel : {price} FCFA.\n👉 {link}\n\n{tags}"),
+     "Le devis détaillé est dans le Catalogue Premium.\n👉 {link}\n\n{tags}"),
     ("enregistrer", False,
      "📌 Enregistrez ce plan pour votre futur projet !\n{name} · {ch} chambres · {surf} m²\n\n"
      "{promise} : {link}\n\n{tags}"),

@@ -4,7 +4,6 @@ from typing import Dict
 
 from wooplans.guardrails import check_copy
 from wooplans.reel3d import fcfa
-from wooplans.settings import OFFER_PRICE_FCFA
 from wooplans.utm import build_link
 
 TAGS = {"facebook": "#plandemaison #maison #construction #Cameroun #Afrique",
@@ -33,7 +32,7 @@ def captions(plan: dict) -> Dict[str, dict]:
         link = build_link(plat, "R", code)
         body = (f"Combien coûte {ce} de {plan['bedrooms']} chambres ? 🏠\n\n{plan['name']} : {facts(plan)}.\n"
                 f"Estimation indicative du budget pour construire : {est} FCFA.\n\n"
-                f"📘 Plan complet + devis détaillé dans le Catalogue Premium, prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA\n"
+                "📘 Plan complet + devis détaillé dans le Catalogue Premium\n"
                 f"👉 {link}\n\n{TAGS[plat]}")
         out[plat] = {"caption": body}
     out["youtube"] = {"title": f"{plan['name']} : {plan['bedrooms']} chambres, {plan['surface']} m² #shorts",

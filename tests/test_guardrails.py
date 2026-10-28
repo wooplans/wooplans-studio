@@ -4,7 +4,13 @@ from wooplans.guardrails import amounts, check_copy
 def test_expire_forbidden():
     assert check_copy("Attention, l'offre expire dans 3 heures !")
     assert check_copy("Plus que 2 heures pour en profiter")
-    assert not check_copy("Prix actuel : 39 000 FCFA.")
+
+
+def test_catalogue_price_forbidden():
+    assert check_copy("Prix actuel : 29 000 FCFA.")
+    assert check_copy("Le Catalogue Premium (prix actuel : 39 000 FCFA)")
+    assert check_copy("Catalogue Premium à 29 000 FCFA")
+    assert not check_copy("Découvrez le Catalogue Premium : plans cotés et devis détaillés.")
 
 
 def test_amounts_sourced():

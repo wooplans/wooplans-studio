@@ -9,8 +9,7 @@ from pathlib import Path
 from wooplans.guardrails import check_copy
 from wooplans.image_posts import load_plans
 from wooplans.reel_posts import captions, problems
-from wooplans.settings import OFFER_PRICE_FCFA, ROOT
-from wooplans.reel3d import fcfa
+from wooplans.settings import ROOT
 from wooplans.utm import build_link
 
 REELS = ["V3-001", "V4-004", "D4-006", "V4-010", "D5-016", "V3-025", "D4-026"]
@@ -30,7 +29,7 @@ def tour_caps(job: str) -> dict:
     for plat in ("facebook", "youtube", "tiktok"):
         link = build_link(plat, "A", job)
         out[plat] = {"caption": f"Visite guidée d'une villa {n} chambres 🏡\n{txt[0].upper() + txt[1:]}.\n\n"
-                                f"📘 Envie d'autres plans ? Catalogue Premium : plans complets + devis détaillés, prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA\n"
+                                "📘 Envie d'autres plans ? Catalogue Premium : plans complets + devis détaillés\n"
                                 f"👉 {link}\n\n{TAGS[plat]}"}
     out["youtube"] = {"title": f"Visite guidée : villa {n} chambres #shorts", "description": out["youtube"]["caption"]}
     return out
