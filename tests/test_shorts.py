@@ -56,3 +56,10 @@ def test_usable_renders_filters():
     got = site_api.usable_renders("X", index)
     assert [r["key"] for r in got] == ["b", "a", "s3"]
     assert [r["source"] for r in got] == ["original", "original", "site"]
+
+
+def test_usable_renders_skips_rejected(monkeypatch):
+    monkeypatch.setattr(site_api, "rejected", lambda: {"a": "filigrane"})
+    index = {"renders": [{"position": 1, "cover": True, "original": {"key": "a", "watermarked": False}},
+                         {"position": 2, "cover": False, "original": {"key": "b", "watermarked": False}}]}
+    assert [r["key"] for r in site_api.usable_renders("X", index)] == ["b"]

@@ -16,6 +16,9 @@ pendant 2 s, fin « Plans et devis de ce modèle sur wooplans.com ». Ni voix, n
    1200 px), musique choisie dans la base Mixkit, vidéo + vignette. Modèle avec moins de 3 rendus exploitables :
    écarté, raison dans le résumé du run (ajouter ses originaux sur le site). Mot `inventaire` : état de tout le
    catalogue dans `shorts/INVENTAIRE.md` (modèles prêts / non prêts).
+   Rendus refusés à la relecture (ex. anciennes images Framer avec un grand filigrane « wooplans.com » que la
+   détection du site ne voit pas) : `shorts/rendus_refuses.json` (clé R2 -> raison), jamais réutilisés ; les images
+   en double dans une galerie sont ignorées.
    Secret GitHub requis : `WOOPLANS_MCP_TOKEN` (voir SECRETS.md).
 4. Sorties commitées : `shorts/out/<id>.mp4`, `<id>_thumb.jpg`, `<id>.json` (musique) et `shorts/jobs/<id>/short.json`
    (clés R2 des rendus utilisés). Claude contrôle et envoie les vidéos à Tao.

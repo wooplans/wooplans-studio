@@ -8,6 +8,7 @@ Rendus d'origine (1920x1080 ou plus, sans filigrane du site) :
 Téléchargés dans shorts/rendus/<CODE>/ (non commités) ; les clés R2 sont notées dans short.json pour un nouveau rendu.
 Écrit shorts/jobs/<CODE>-S<n>/short.json (sans musique : rotation dans la base Mixkit au rendu).
 """
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -32,9 +33,9 @@ def spread(items: list, n: int = MAX_IMAGES) -> list:
 
 def r2_images(code: str):
     """Rendus R2 choisis et téléchargés : (chemins relatifs au dépôt, clés R2). Un fichier illisible est remplacé par
-    le suivant de la galerie."""
+    le suivant de la galerie ; une image en double aussi. Les rendus de shorts/rendus_refuses.json ne servent jamais."""
     usable = site_api.usable_renders(code)
-    paths, keys = [], []
+    paths, keys, seen = [], [], set()
     for r in spread(usable) + [u for u in usable if u not in spread(usable)]:
         if len(paths) == MAX_IMAGES:
             break
@@ -45,6 +46,12 @@ def r2_images(code: str):
         except Exception as e:
             print(f"  {r['key']} ignoré : {e}")
             continue
+        digest = hashlib.sha1(dest.read_bytes()).hexdigest()
+        if digest in seen:                                   # même image publiée deux fois dans la galerie
+            print(f"  {r['key']} ignoré : doublon")
+            dest.unlink()
+            continue
+        seen.add(digest)
         paths.append(str(dest.relative_to(ROOT)))
         keys.append(r["key"])
     if len(paths) < MIN_IMAGES:

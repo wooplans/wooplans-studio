@@ -43,6 +43,14 @@ def published_plans() -> List[dict]:
 MIN_SITE_WIDTH = 1200              # anciennes images du site acceptées sans original : propres et assez grandes
 
 
+REJECTED = Path(__file__).resolve().parents[1] / "shorts" / "rendus_refuses.json"
+
+
+def rejected() -> dict:
+    """Rendus refusés à la relecture (clé R2 -> raison) : filigrane que la détection du site ne voit pas, etc."""
+    return json.loads(REJECTED.read_text(encoding="utf-8")) if REJECTED.exists() else {}
+
+
 def plan_files(code: str) -> dict:
     return call("list_plan_files", {"code": code})
 
@@ -54,15 +62,17 @@ def usable_renders(code: str, index: Optional[dict] = None) -> List[dict]:
     sinon rien (les versions du site en 960 px filigranées ne servent jamais)."""
     index = index or plan_files(code)
     renders = sorted(index.get("renders", []), key=lambda r: (not r.get("cover"), r.get("position", 0)))
+    refused = rejected()
     out = []
     for r in renders:
         o, s = r.get("original"), r.get("site") or {}
+        if (o or {}).get("key") in refused or s.get("key") in refused:
+            continue
         if o and not o.get("missing") and o.get("watermarked") is not True:
             out.append({"key": o["key"], "width": o.get("width"), "source": "original"})
         elif (not s.get("missing") and s.get("watermarked") is False and (s.get("width") or 0) >= MIN_SITE_WIDTH):
             out.append({"key": s["key"], "width": s.get("width"), "source": "site"})
     return out
-
 
 
 def download(key: str, dest: Path) -> Path:
