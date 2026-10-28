@@ -34,5 +34,446 @@
   "max_drift_s": 0.027,
   "window_s": 26.0,
   "best_start": 31.479
+ },
+ "mixkit-14.mp3": {
+  "file": "mixkit-14.mp3",
+  "duration": 134.44,
+  "beat_interval": 0.5287,
+  "bpm": 113.5,
+  "max_drift_s": 0.256,
+  "window_s": 26.0,
+  "best_start": 26.338
+ },
+ "mixkit-45.mp3": {
+  "file": "mixkit-45.mp3",
+  "duration": 105.23,
+  "beat_interval": 0.4616,
+  "bpm": 130.0,
+  "max_drift_s": 0.014,
+  "window_s": 26.0,
+  "best_start": 72.042
+ },
+ "mixkit-61.mp3": {
+  "file": "mixkit-61.mp3",
+  "duration": 103.5,
+  "beat_interval": 0.5147,
+  "bpm": 116.6,
+  "max_drift_s": 0.248,
+  "window_s": 26.0,
+  "best_start": 5.441
+ },
+ "mixkit-77.mp3": {
+  "file": "mixkit-77.mp3",
+  "duration": 96.46,
+  "beat_interval": 0.4616,
+  "bpm": 130.0,
+  "max_drift_s": 0.014,
+  "window_s": 26.0,
+  "best_start": 16.196
+ },
+ "mixkit-158.mp3": {
+  "file": "mixkit-158.mp3",
+  "duration": 100.1,
+  "beat_interval": 0.5146,
+  "bpm": 116.6,
+  "max_drift_s": 0.249,
+  "window_s": 26.0,
+  "best_start": 10.488
+ },
+ "mixkit-181.mp3": {
+  "file": "mixkit-181.mp3",
+  "duration": 265.48,
+  "beat_interval": 0.4876,
+  "bpm": 123.0,
+  "max_drift_s": 0.0,
+  "window_s": 26.0,
+  "best_start": 90.349
+ },
+ "mixkit-186.mp3": {
+  "file": "mixkit-186.mp3",
+  "duration": 296.02,
+  "beat_interval": 0.5146,
+  "bpm": 116.6,
+  "max_drift_s": 0.264,
+  "window_s": 26.0,
+  "best_start": 224.496
+ },
+ "mixkit-327.mp3": {
+  "file": "mixkit-327.mp3",
+  "duration": 97.48,
+  "beat_interval": 0.5289,
+  "bpm": 113.4,
+  "max_drift_s": 0.256,
+  "window_s": 26.0,
+  "best_start": 37.23
+ },
+ "mixkit-468.mp3": {
+  "file": "mixkit-468.mp3",
+  "duration": 96.39,
+  "beat_interval": 0.4601,
+  "bpm": 130.4,
+  "max_drift_s": 0.236,
+  "window_s": 26.0,
+  "best_start": 64.194
+ },
+ "mixkit-474.mp3": {
+  "file": "mixkit-474.mp3",
+  "duration": 117.04,
+  "beat_interval": 0.4822,
+  "bpm": 124.4,
+  "max_drift_s": 0.235,
+  "window_s": 26.0,
+  "best_start": 70.342
+ },
+ "mixkit-483.mp3": {
+  "file": "mixkit-483.mp3",
+  "duration": 104.22,
+  "beat_interval": 0.5402,
+  "bpm": 111.1,
+  "max_drift_s": 0.284,
+  "window_s": 26.0,
+  "best_start": 33.029
+ },
+ "mixkit-636.mp3": {
+  "file": "mixkit-636.mp3",
+  "duration": 219.51,
+  "beat_interval": 0.5129,
+  "bpm": 117.0,
+  "max_drift_s": 0.017,
+  "window_s": 26.0,
+  "best_start": 90.322
+ },
+ "mixkit-661.mp3": {
+  "file": "mixkit-661.mp3",
+  "duration": 131.5,
+  "beat_interval": 1.0019,
+  "bpm": 59.9,
+  "max_drift_s": 0.108,
+  "window_s": 26.0,
+  "best_start": 36.542
+ },
+ "mixkit-668.mp3": {
+  "file": "mixkit-668.mp3",
+  "duration": 120.8,
+  "beat_interval": 0.7959,
+  "bpm": 75.4,
+  "max_drift_s": 0.305,
+  "window_s": 26.0,
+  "best_start": 10.12
+ },
+ "mixkit-696.mp3": {
+  "file": "mixkit-696.mp3",
+  "duration": 189.82,
+  "beat_interval": 0.5287,
+  "bpm": 113.5,
+  "max_drift_s": 0.255,
+  "window_s": 26.0,
+  "best_start": 135.449
+ },
+ "mixkit-702.mp3": {
+  "file": "mixkit-702.mp3",
+  "duration": 68.0,
+  "beat_interval": 0.3716,
+  "bpm": 161.5,
+  "max_drift_s": 0.078,
+  "window_s": 26.0,
+  "best_start": 40.039
+ },
+ "mixkit-738.mp3": {
+  "file": "mixkit-738.mp3",
+  "duration": 115.02,
+  "beat_interval": 0.639,
+  "bpm": 93.9,
+  "max_drift_s": 0.328,
+  "window_s": 26.0,
+  "best_start": 46.013
+ },
+ "mixkit-754.mp3": {
+  "file": "mixkit-754.mp3",
+  "duration": 102.06,
+  "beat_interval": 0.4599,
+  "bpm": 130.5,
+  "max_drift_s": 0.239,
+  "window_s": 26.0,
+  "best_start": 68.232
+ },
+ "mixkit-774.mp3": {
+  "file": "mixkit-774.mp3",
+  "duration": 257.59,
+  "beat_interval": 0.4876,
+  "bpm": 123.0,
+  "max_drift_s": 0.0,
+  "window_s": 26.0,
+  "best_start": 195.21
+ },
+ "mixkit-778.mp3": {
+  "file": "mixkit-778.mp3",
+  "duration": 145.63,
+  "beat_interval": 0.4825,
+  "bpm": 124.4,
+  "max_drift_s": 0.242,
+  "window_s": 26.0,
+  "best_start": 109.277
+ },
+ "mixkit-787.mp3": {
+  "file": "mixkit-787.mp3",
+  "duration": 80.25,
+  "beat_interval": 0.5999,
+  "bpm": 100.0,
+  "max_drift_s": 0.015,
+  "window_s": 26.0,
+  "best_start": 51.163
+ },
+ "mixkit-801.mp3": {
+  "file": "mixkit-801.mp3",
+  "duration": 109.96,
+  "beat_interval": 0.4187,
+  "bpm": 143.3,
+  "max_drift_s": 0.222,
+  "window_s": 26.0,
+  "best_start": 82.356
+ },
+ "mixkit-821.mp3": {
+  "file": "mixkit-821.mp3",
+  "duration": 90.88,
+  "beat_interval": 0.5331,
+  "bpm": 112.5,
+  "max_drift_s": 0.318,
+  "window_s": 26.0,
+  "best_start": 17.494
+ },
+ "mixkit-827.mp3": {
+  "file": "mixkit-827.mp3",
+  "duration": 93.39,
+  "beat_interval": 0.4669,
+  "bpm": 128.5,
+  "max_drift_s": 0.243,
+  "window_s": 26.0,
+  "best_start": 48.317
+ },
+ "mixkit-834.mp3": {
+  "file": "mixkit-834.mp3",
+  "duration": 96.63,
+  "beat_interval": 0.5287,
+  "bpm": 113.5,
+  "max_drift_s": 0.256,
+  "window_s": 26.0,
+  "best_start": 39.47
+ },
+ "mixkit-837.mp3": {
+  "file": "mixkit-837.mp3",
+  "duration": 99.13,
+  "beat_interval": 0.5146,
+  "bpm": 116.6,
+  "max_drift_s": 0.25,
+  "window_s": 26.0,
+  "best_start": 55.043
+ },
+ "mixkit-860.mp3": {
+  "file": "mixkit-860.mp3",
+  "duration": 111.46,
+  "beat_interval": 0.5148,
+  "bpm": 116.5,
+  "max_drift_s": 0.246,
+  "window_s": 26.0,
+  "best_start": 24.458
+ },
+ "mixkit-922.mp3": {
+  "file": "mixkit-922.mp3",
+  "duration": 156.25,
+  "beat_interval": 0.4614,
+  "bpm": 130.0,
+  "max_drift_s": 0.02,
+  "window_s": 26.0,
+  "best_start": 38.355
+ },
+ "mixkit-950.mp3": {
+  "file": "mixkit-950.mp3",
+  "duration": 122.5,
+  "beat_interval": 0.5144,
+  "bpm": 116.6,
+  "max_drift_s": 0.247,
+  "window_s": 26.0,
+  "best_start": 11.47
+ },
+ "mixkit-959.mp3": {
+  "file": "mixkit-959.mp3",
+  "duration": 182.78,
+  "beat_interval": 0.6665,
+  "bpm": 90.0,
+  "max_drift_s": 0.02,
+  "window_s": 26.0,
+  "best_start": 146.041
+ },
+ "mixkit-961.mp3": {
+  "file": "mixkit-961.mp3",
+  "duration": 138.2,
+  "beat_interval": 0.5066,
+  "bpm": 118.4,
+  "max_drift_s": 0.246,
+  "window_s": 26.0,
+  "best_start": 103.449
+ },
+ "mixkit-968.mp3": {
+  "file": "mixkit-968.mp3",
+  "duration": 124.77,
+  "beat_interval": 0.6669,
+  "bpm": 90.0,
+  "max_drift_s": 0.101,
+  "window_s": 26.0,
+  "best_start": 94.37
+ },
+ "mixkit-970.mp3": {
+  "file": "mixkit-970.mp3",
+  "duration": 257.14,
+  "beat_interval": 0.6666,
+  "bpm": 90.0,
+  "max_drift_s": 0.015,
+  "window_s": 26.0,
+  "best_start": 156.046
+ },
+ "mixkit-973.mp3": {
+  "file": "mixkit-973.mp3",
+  "duration": 90.59,
+  "beat_interval": 0.4445,
+  "bpm": 135.0,
+  "max_drift_s": 0.015,
+  "window_s": 26.0,
+  "best_start": 8.035
+ },
+ "mixkit-982.mp3": {
+  "file": "mixkit-982.mp3",
+  "duration": 108.52,
+  "beat_interval": 0.5063,
+  "bpm": 118.5,
+  "max_drift_s": 0.247,
+  "window_s": 26.0,
+  "best_start": 20.488
+ },
+ "mixkit-983.mp3": {
+  "file": "mixkit-983.mp3",
+  "duration": 105.5,
+  "beat_interval": 0.4616,
+  "bpm": 130.0,
+  "max_drift_s": 0.041,
+  "window_s": 26.0,
+  "best_start": 34.196
+ },
+ "mixkit-989.mp3": {
+  "file": "mixkit-989.mp3",
+  "duration": 89.15,
+  "beat_interval": 0.5149,
+  "bpm": 116.5,
+  "max_drift_s": 0.245,
+  "window_s": 26.0,
+  "best_start": 36.445
+ },
+ "mixkit-990.mp3": {
+  "file": "mixkit-990.mp3",
+  "duration": 124.36,
+  "beat_interval": 0.563,
+  "bpm": 106.6,
+  "max_drift_s": 0.276,
+  "window_s": 26.0,
+  "best_start": 86.076
+ },
+ "mixkit-1041.mp3": {
+  "file": "mixkit-1041.mp3",
+  "duration": 130.39,
+  "beat_interval": 0.4599,
+  "bpm": 130.5,
+  "max_drift_s": 0.231,
+  "window_s": 26.0,
+  "best_start": 83.102
+ },
+ "mixkit-1042.mp3": {
+  "file": "mixkit-1042.mp3",
+  "duration": 147.11,
+  "beat_interval": 0.5142,
+  "bpm": 116.7,
+  "max_drift_s": 0.269,
+  "window_s": 26.0,
+  "best_start": 79.497
+ },
+ "mixkit-1044.mp3": {
+  "file": "mixkit-1044.mp3",
+  "duration": 126.31,
+  "beat_interval": 0.5065,
+  "bpm": 118.5,
+  "max_drift_s": 0.262,
+  "window_s": 26.0,
+  "best_start": 79.453
+ },
+ "mixkit-1054.mp3": {
+  "file": "mixkit-1054.mp3",
+  "duration": 142.66,
+  "beat_interval": 0.5399,
+  "bpm": 111.1,
+  "max_drift_s": 0.288,
+  "window_s": 26.0,
+  "best_start": 80.414
+ },
+ "mixkit-1061.mp3": {
+  "file": "mixkit-1061.mp3",
+  "duration": 96.59,
+  "beat_interval": 0.4931,
+  "bpm": 121.7,
+  "max_drift_s": 0.258,
+  "window_s": 26.0,
+  "best_start": 60.135
+ },
+ "mixkit-1077.mp3": {
+  "file": "mixkit-1077.mp3",
+  "duration": 96.0,
+  "beat_interval": 0.5147,
+  "bpm": 116.6,
+  "max_drift_s": 0.252,
+  "window_s": 26.0,
+  "best_start": 44.451
+ },
+ "mixkit-1084.mp3": {
+  "file": "mixkit-1084.mp3",
+  "duration": 114.47,
+  "beat_interval": 0.5065,
+  "bpm": 118.5,
+  "max_drift_s": 0.249,
+  "window_s": 26.0,
+  "best_start": 15.307
+ },
+ "mixkit-1095.mp3": {
+  "file": "mixkit-1095.mp3",
+  "duration": 141.17,
+  "beat_interval": 0.4892,
+  "bpm": 122.7,
+  "max_drift_s": 0.256,
+  "window_s": 26.0,
+  "best_start": 98.07
+ },
+ "mixkit-1129.mp3": {
+  "file": "mixkit-1129.mp3",
+  "duration": 101.05,
+  "beat_interval": 0.5555,
+  "bpm": 108.0,
+  "max_drift_s": 0.014,
+  "window_s": 26.0,
+  "best_start": 54.483
+ },
+ "mixkit-1145.mp3": {
+  "file": "mixkit-1145.mp3",
+  "duration": 98.08,
+  "beat_interval": 0.6738,
+  "bpm": 89.1,
+  "max_drift_s": 0.018,
+  "window_s": 26.0,
+  "best_start": 62.406
+ },
+ "mixkit-1147.mp3": {
+  "file": "mixkit-1147.mp3",
+  "duration": 106.99,
+  "beat_interval": 0.5084,
+  "bpm": 118.0,
+  "max_drift_s": 0.015,
+  "window_s": 26.0,
+  "best_start": 74.023
  }
 }
