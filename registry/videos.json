@@ -388,5 +388,31 @@
     "post_id": "6ad729ff7ce022031060cc62",
     "quand": "2026-10-26T13:00:00",
     "fuseau": "Africa/Douala"
+  },
+  "S:D4-004-S3:-": {
+    "format": "S",
+    "plan": "D4-004-S3",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae1ecc09f37e7105254ba6a",
+    "quand": "2026-10-28T14:00:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
+  },
+  "S:V3-037-S1:-": {
+    "format": "S",
+    "plan": "V3-037-S1",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6ae1ecc59f37e7105254ba8a",
+    "quand": "2026-10-28T13:55:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
   }
 }
