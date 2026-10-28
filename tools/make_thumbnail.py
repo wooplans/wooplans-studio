@@ -42,7 +42,11 @@ def wrap(draw, text, size, max_w):
 def load_job(job: Path):
     cfg = {}
     if (job / "short.json").exists():                    # short « rendus 3D » (tools/make_short.py)
-        cfg = json.loads((job / "short.json").read_text(encoding="utf-8")).get("thumbnail", {})
+        short = json.loads((job / "short.json").read_text(encoding="utf-8"))
+        cfg = short.get("thumbnail") or {}
+        if not cfg:                                      # par défaut : « Duplex 4 chambres » / « 313 m² · terrain 350 m² »
+            from wooplans import shorts
+            cfg = dict(zip(("title", "chip"), shorts.texts(shorts.plan_info(short["code"]))))
     if (job / "PUBLISH.json").exists():
         cfg = json.loads((job / "PUBLISH.json").read_text(encoding="utf-8")).get("thumbnail", {})
     bump = json.loads((job / "bump.json").read_text(encoding="utf-8")) if (job / "bump.json").exists() else {}

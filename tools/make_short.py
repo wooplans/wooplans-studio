@@ -24,6 +24,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from wooplans import music as music_lib  # noqa: E402
+from wooplans import shorts  # noqa: E402
 from wooplans.guardrails import check_copy  # noqa: E402
 
 W, H, FPS = 1080, 1920, 30
@@ -39,18 +40,6 @@ def ff(*args):
     r = subprocess.run(["ffmpeg", "-loglevel", "error", "-y", *map(str, args)], capture_output=True, text=True)
     if r.returncode:
         raise RuntimeError(r.stderr[-1500:])
-
-
-def plan_info(code: str) -> dict:
-    plans = json.loads((ROOT / "data" / "plans.json").read_text(encoding="utf-8"))
-    return next(p for p in plans if p["code"] == code)
-
-
-def texts(p: dict):
-    kind = "Duplex" if p["category"] == "duplex" else "Villa"
-    title = f"{kind} {p['bedrooms']} chambres"
-    facts = f"{p['surface']} m²" + (f" · terrain {p['land_area']} m²" if p.get("land_area") else "")
-    return title, facts
 
 
 def overlay_png(path: Path, lines):
@@ -139,8 +128,10 @@ def main() -> int:
     job = Path(sys.argv[1])
     cfg = json.loads((job / "short.json").read_text(encoding="utf-8"))
     out = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "shorts" / "out" / f"{job.name}.mp4"
-    p = plan_info(cfg["code"])
-    title, facts = texts(p)
+    if cfg.get("r2"):                                       # images R2 absentes du disque : nouveau téléchargement
+        from tools.new_short import ensure_images
+        ensure_images(cfg)
+    title, facts = shorts.texts(shorts.plan_info(cfg["code"]))
     end_line = cfg.get("end_line", "Plans et devis de ce modèle sur")
     problems = check_copy(" ".join([title, facts, end_line]))
     if problems:

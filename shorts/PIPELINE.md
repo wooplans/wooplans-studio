@@ -5,15 +5,22 @@ plein écran, travelling lent sur 4 rendus d'origine, coupes sur le temps de la 
 pendant 2 s, fin « Plans et devis de ce modèle sur wooplans.com ». Ni voix, ni sous-titres, ni plan coté.
 2 logos semi-transparents qui se promènent du début à la fin.
 
-## Produire
-1. **Rendus d'origine** (1920x1080 ou plus, SANS le filigrane du site : les images de wooplans.com font 960 px et portent
-   déjà le motif) dans `shorts/rendus/<CODE>/`, la plus belle façade en premier (ordre des noms).
-2. `python tools/new_short.py <CODE> [n°]` → `shorts/jobs/<CODE>-S<n>/short.json` (ou `--images a.png b.png ...`).
-3. Créer `shorts/jobs/<id>/RENDER` (plusieurs jobs dans le même push = un lot) et pousser → workflow **`short-render`**
-   (un rendu par job, en parallèle) → `shorts/out/<id>.mp4`, `<id>_thumb.jpg` (vignette), `<id>.json` (musique utilisée).
-   En local : `python tools/make_short.py shorts/jobs/<id>`.
-4. Contrôle (planche-contact dans l'artefact du run), **Tao valide**, puis publication (Zernio pour Facebook + YouTube,
-   WoopSocial pour TikTok) seulement sur son ordre. Lien : https://wooplans.com/catalogue-premium avec UTM.
+## Produire (Tao donne seulement les codes ou le type)
+1. Tao, dans la conversation : « fais les shorts de D4-004 et V3-022 », « tous les V4 », « les duplex qui n'en ont pas ».
+2. Claude lance le workflow **`short-render`** (Run workflow, champ `selection` : `D4-004 V3-022`, `V4`, `villa`, `duplex`,
+   `tous`, + `nouveaux` = seulement les modèles sans short ; 40 shorts au plus par lot).
+3. Pour chaque modèle, en parallèle : nouveau job `shorts/jobs/<CODE>-S<n>/`, **rendus d'origine pris dans R2** par le
+   serveur MCP du site (`list_plan_files` → couverture d'abord puis 3 rendus répartis sur la galerie ; originaux
+   absents ou portant la pastille du site écartés), musique choisie dans la base Mixkit, vidéo + vignette.
+   Secret GitHub requis : `WOOPLANS_MCP_TOKEN` (voir SECRETS.md).
+4. Sorties commitées : `shorts/out/<id>.mp4`, `<id>_thumb.jpg`, `<id>.json` (musique) et `shorts/jobs/<id>/short.json`
+   (clés R2 des rendus utilisés). Claude contrôle et envoie les vidéos à Tao.
+5. **Tao valide**, puis publication (Zernio : Facebook + YouTube ; WoopSocial : TikTok) seulement sur son ordre.
+   Lien : https://wooplans.com/catalogue-premium avec UTM.
+
+Relancer un job (autre musique, correction) : pousser `shorts/jobs/<id>/RENDER` ou champ `jobs`. En local :
+`python tools/new_short.py <CODE>` (R2 si WOOPLANS_MCP_TOKEN dans .env, sinon `shorts/rendus/<CODE>/` ou `--images`)
+puis `python tools/make_short.py shorts/jobs/<id>`.
 
 ## Musique : base Mixkit
 - `assets/music/library.json` : ~600 titres Mixkit (licence gratuite, usage commercial, sans attribution), avec

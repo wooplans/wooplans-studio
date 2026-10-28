@@ -18,6 +18,7 @@ jobs:
       ZERNIO_PROFILE_ID: ${{ secrets.ZERNIO_PROFILE_ID }}
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
       POYO_API_KEY: ${{ secrets.POYO_API_KEY }}
+      WOOPLANS_MCP_TOKEN: ${{ secrets.WOOPLANS_MCP_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,10 +26,10 @@ jobs:
       - run: pip install -q -r requirements.txt pillow
       - name: Secrets (présence seulement)
         run: |
-          for n in ZERNIO_API_KEY ZERNIO_PROFILE_ID ELEVENLABS_API_KEY POYO_API_KEY; do
+          for n in ZERNIO_API_KEY ZERNIO_PROFILE_ID WOOPLANS_MCP_TOKEN ELEVENLABS_API_KEY POYO_API_KEY; do
             if [ -n "${!n}" ]; then echo "OK       $n"; else echo "MANQUANT $n"; fi
           done
-          echo "Requis pour publier : ZERNIO_API_KEY, ZERNIO_PROFILE_ID. Optionnels (génération hors Claude) : ELEVENLABS_API_KEY, POYO_API_KEY."
+          echo "Requis pour publier : ZERNIO_API_KEY, ZERNIO_PROFILE_ID. Requis pour les shorts (rendus R2) : WOOPLANS_MCP_TOKEN. Optionnels (génération hors Claude) : ELEVENLABS_API_KEY, POYO_API_KEY."
       - name: Comptes Zernio WooPlans
         if: env.ZERNIO_API_KEY != ''
         run: |
