@@ -202,3 +202,66 @@ def test_parse_gallery_both_storage_styles_and_ignores_suggested_plans():
 def test_parse_gallery_fallback_to_plan_folder():
     html = '<img src="/media/public/v4-001/z9.webp"><img src="/media/public/d5-011/x.webp">'
     assert image_batch.parse_gallery(html, "V4-001") == ["https://www.wooplans.com/media/public/v4-001/z9.webp"]
+
+
+# ---------- lot « 2 duplex + 2 villas par jour », images locales filigranées ----------
+
+CATS = ["duplex", "villa", "villa", "duplex"]
+PATS = ["single", "single", "album", "album"]
+SLOTS4 = ["07:30", "10:30", "16:30", "19:00"]
+
+
+
+def local_fixture(code):
+    return [f"media/{code}/{i + 1}.jpg" for i in range(4 if code.endswith(("1", "3", "5", "7", "9")) else 1)]
+
+
+def test_batch_two_duplex_two_villas_per_day_and_no_repeat():
+    posts = build_batch(PLANS, date(2026, 10, 30), 7, local_fixture, slots=SLOTS4, cats=CATS, patterns=PATS, seed=1)
+    assert len(posts) == 28 and len({p["code"] for p in posts}) == 28
+    by_code = {p["code"]: p for p in PLANS}
+    for d in {p["when"][:10] for p in posts}:
+        day = [p for p in posts if p["when"].startswith(d)]
+        assert [by_code[p["code"]]["category"] for p in day] == CATS
+        assert [p["kind"] for p in day] == PATS
+        assert [len(p["images"]) > 1 for p in day] == [False, False, True, True]
+
+
+def test_prepare_brand_watermark_two_marks_and_size():
+    from wooplans.image_tools import brand_watermark
+    src = png_bytes((2400, 1350), (90, 110, 140))
+    plain = Image.open(io.BytesIO(prepare_image(src, watermark=False)))
+    marked = Image.open(io.BytesIO(brand_watermark(src)))
+    assert marked.format == "JPEG" and marked.size == plain.size == (1600, 900)
+    w, h = marked.size
+    centre = (w // 2 - 20, h // 2 - 20, w // 2 + 20, h // 2 + 20)
+    corner = (w - 80, h - 60, w - 20, h - 20)
+    for box in (centre, corner):                                          # logo central ET pastille d'angle présents
+        assert marked.crop(box).tobytes() != plain.crop(box).tobytes()
+
+
+def test_local_media_plan_and_schedule(tmp_path):
+    lot = tmp_path / "lot"
+    plans = [p for p in PLANS if p["code"] in ("D4-003", "D4-004", "V3-002", "V3-003")]
+    for p in plans:
+        for i in range(4 if p["code"] in ("D4-004", "V3-003") else 1):
+            f = lot / "media" / p["code"] / f"{i + 1}.jpg"
+            f.parent.mkdir(parents=True, exist_ok=True)
+            Image.new("RGB", (160, 90), "gray").save(f, "JPEG")
+    (lot / "PLAN").write_text(json.dumps({"start": "2026-10-30", "days": 1, "slots": SLOTS4, "cats": CATS, "patterns": PATS,
+                                          "media": "local"}))
+    orig = image_batch.load_plans
+    image_batch.load_plans = lambda: plans
+    try:
+        assert image_batch.cmd_plan(lot) == 0
+    finally:
+        image_batch.load_plans = orig
+    b = json.loads((lot / "batch.json").read_text())["posts"]
+    assert [p["code"] for p in b] == ["D4-003", "V3-002", "V3-003", "D4-004"]
+    assert all(not u.startswith("http") for p in b for u in p["images"])
+    assert (lot / "apercu-1.jpg").is_file()
+    sent = []
+    c = FakeClient()
+    assert image_batch.schedule_batch(lot, c, "FB", fetch=lambda u: (_ for _ in ()).throw(AssertionError("pas de réseau")),
+                                      post=lambda cl, body, idem: sent.append(body) or {"_id": "x"}, registry=tmp_path / "r.json") == 0
+    assert len(sent) == 4 and [len(s["mediaItems"]) for s in sent] == [1, 1, 4, 4]

@@ -109,14 +109,21 @@ def caption(p: dict, start_index: int = 0) -> Tuple[str, str]:
 
 def build_batch(plans: List[dict], start: date, days: int, images_for: Callable[[str], List[str]],
                 usage: Optional[Dict[str, int]] = None, used_imgs: Optional[Dict[str, Set[str]]] = None,
-                slots: Optional[List[str]] = None, seed: int = 0) -> List[dict]:
+                slots: Optional[List[str]] = None, seed: int = 0,
+                cats: Optional[List[str]] = None, patterns: Optional[List[str]] = None) -> List[dict]:
     """Un post par créneau. Les plans les moins publiés passent d'abord ; on alterne villa/duplex ;
-    jamais deux fois le même plan le même jour ; un rendu déjà publié n'est repris qu'après avoir fait le tour du plan."""
+    jamais deux fois le même plan le même jour ; un rendu déjà publié n'est repris qu'après avoir fait le tour du plan.
+    `cats` impose la catégorie de chaque créneau (ex. 2 duplex + 2 villas par jour) et `patterns` le type de post
+    (single / album) ; avec `cats`, un créneau « album » exige au moins 2 images et chaque créneau prend de préférence
+    le plan dont le nombre d'images correspond (1 pour single, ALBUM_SIZE pour album) ; aucun plan n'est repris
+    tant qu'il en reste d'inédits dans le lot."""
     slots = slots or DEFAULT_SLOTS
+    patterns = patterns or PATTERNS
     rng = random.Random(seed)
     count = dict(usage or {})
     used = {k: set(v) for k, v in (used_imgs or {}).items()}
     cache: Dict[str, List[str]] = {}
+    here: Dict[str, int] = {}                     # posts déjà placés dans CE lot (avec `cats`, un plan inédit passe avant un plan déjà vu)
 
     def imgs(code: str) -> List[str]:
         if code not in cache:
@@ -130,13 +137,21 @@ def build_batch(plans: List[dict], start: date, days: int, images_for: Callable[
         day = start + timedelta(days=d)
         day_codes: Set[str] = set()
         for si, hhmm in enumerate(slots):
-            order = sorted(plans, key=lambda p: (count.get(p["code"], 0), rng.random()))
+            kind = patterns[si % len(patterns)]
+            cat = cats[si % len(cats)] if cats else None
+            want = ALBUM_SIZE if kind == "album" else 1
+            pool = [p for p in plans if cat is None or p["category"] == cat]
+            if cat:
+                order = sorted(pool, key=lambda p: (here.get(p["code"], 0), count.get(p["code"], 0),
+                                                    abs(len(imgs(p["code"])) - want), rng.random()))
+            else:
+                order = sorted(pool, key=lambda p: (count.get(p["code"], 0), rng.random()))
             choice = None
             for prefer_other in (True, False):
                 for p in order:
-                    if p["code"] in day_codes or (prefer_other and p["category"] == prev_cat):
+                    if p["code"] in day_codes or (prefer_other and not cat and p["category"] == prev_cat):
                         continue
-                    if imgs(p["code"]):
+                    if len(imgs(p["code"])) >= (2 if cat and kind == "album" else 1):
                         choice = p
                         break
                 if choice:
@@ -144,7 +159,6 @@ def build_batch(plans: List[dict], start: date, days: int, images_for: Callable[
             if not choice:
                 continue
             code = choice["code"]
-            kind = PATTERNS[si % len(PATTERNS)]
             urls = imgs(code)
             fresh = [u for u in urls if base(u) not in used.get(code, set())]
             if len(fresh) < (2 if kind == "album" else 1):
@@ -156,6 +170,7 @@ def build_batch(plans: List[dict], start: date, days: int, images_for: Callable[
                 kind, sel = "single", fresh[:1]
             used.setdefault(code, set()).update(base(u) for u in sel)
             count[code] = count.get(code, 0) + 1
+            here[code] = here.get(code, 0) + 1
             tname, text = caption(choice, start_index=n + seed)
             posts.append({
                 "id": f"{day.isoformat()}-{hhmm.replace(':', '')}", "when": f"{day.isoformat()}T{hhmm}:00",

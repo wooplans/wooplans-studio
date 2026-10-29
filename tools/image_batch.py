@@ -4,6 +4,9 @@
   python tools/image_batch.py schedule batches/images/<lot>    # lit <lot>/batch.json, programme sur Zernio (page Facebook WooPlans)
 
 <lot>/PLAN : {"start": "2026-10-20", "days": 7, "slots": ["07:30","12:30","19:00"], "seed": 1}   (slots, seed optionnels)
+  Options : "cats": ["duplex","villa","villa","duplex"] (catégorie de chaque créneau), "patterns": ["single","single","album","album"],
+  "media": "local" = images déjà filigranées (JPEG) rangées dans <lot>/media/<code>/1.jpg, 2.jpg… (originaux propres + filigranes WooPlans,
+  voir tools/brand_media.py) au lieu des rendus filigranés du site.
 `plan` ne programme RIEN. `schedule` n'est lancé (workflow image-batch, fichier <lot>/APPROVED) qu'après l'accord explicite de Tao.
 Pour retirer ou corriger un post avant l'accord : mettre "skip": true ou éditer "caption" dans batch.json.
 Les rendus viennent de la fiche publique du plan (https://www.wooplans.com/catalogue/<slug>) ; chaque légende passe par check_copy.
@@ -27,6 +30,18 @@ SITE = "https://www.wooplans.com"
 UA = {"User-Agent": "Mozilla/5.0 (compatible; WooPlansStudio/1.0)"}
 WATERMARK = False                                  # les rendus du catalogue portent déjà le filigrane wooplans.com : pas de second filigrane
 PAGE = 6                                           # posts par planche d'aperçu (3 colonnes × 2 lignes)
+
+
+def is_local(ref: str) -> bool:
+    return not ref.startswith("http")
+
+
+def local_images(lot: Path):
+    """Images prêtes à publier d'un lot « media: local » : code → ['media/<code>/1.jpg', …] (ordre des numéros)."""
+    def images_for(code: str) -> list:
+        d = lot / "media" / code
+        return [f"media/{code}/{f.name}" for f in sorted(d.glob("*.jpg"), key=lambda f: int(f.stem))] if d.is_dir() else []
+    return images_for
 
 
 def download(url: str) -> bytes:
@@ -57,6 +72,9 @@ def fetch_page_images(plan: dict) -> list:
 
 def cmd_plan(lot: Path, fetch_images=fetch_page_images, fetch=download) -> int:
     cfg = json.loads((lot / "PLAN").read_text(encoding="utf-8"))
+    if cfg.get("media") == "local":
+        fetch_images = lambda p: local_images(lot)(p["code"])
+        fetch = lambda ref: (lot / ref).read_bytes() if is_local(ref) else download(ref)
     plans = load_plans()
     by_code = {p["code"]: p for p in plans}
     count, used = usage_from_registry()
@@ -69,7 +87,8 @@ def cmd_plan(lot: Path, fetch_images=fetch_page_images, fetch=download) -> int:
             return []
 
     posts = build_batch(plans, date.fromisoformat(cfg["start"]), int(cfg.get("days", 7)), images_for,
-                        usage=count, used_imgs=used, slots=cfg.get("slots", DEFAULT_SLOTS), seed=int(cfg.get("seed", 0)))
+                        usage=count, used_imgs=used, slots=cfg.get("slots", DEFAULT_SLOTS), seed=int(cfg.get("seed", 0)),
+                        cats=cfg.get("cats"), patterns=cfg.get("patterns"))
     (lot / "batch.json").write_text(json.dumps({"timezone": TZ, "posts": posts}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     md = [f"# Lot du {cfg['start']} · {len(posts)} posts\n"]
@@ -112,7 +131,8 @@ def schedule_batch(lot: Path, client, fb_account: str, fetch=download, post=_pos
             with tempfile.TemporaryDirectory() as tmp:
                 for i, u in enumerate(p["images"]):
                     f = Path(tmp) / f"{p['id']}-{i}.jpg"
-                    f.write_bytes(prepare_image(fetch(u), watermark=WATERMARK))
+                    # image locale du lot : déjà en JPEG final avec les filigranes WooPlans, envoyée telle quelle
+                    f.write_bytes((lot / u).read_bytes() if is_local(u) else prepare_image(fetch(u), watermark=WATERMARK))
                     media.append({"type": "image", "url": client.upload_media(f, "image/jpeg")})
             body = {"content": p["caption"], "mediaItems": media, "scheduledFor": p["when"], "timezone": p["timezone"],
                     "platforms": [{"platform": "facebook", "accountId": fb_account}]}
