@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # Offre unique poussée (décision Tao, 10 oct. 2026)
 OFFER_URL = "https://wooplans.com/catalogue-premium"   # lien confirmé par Tao le 14 oct. (ancien : cpbook.wooplans.com/digital)
 OFFER_PRICE_FCFA = 39000
+FREE_CATALOGUE_URL = "https://wooplans.com/catalogue"          # catalogue gratuit : CTA des posts images (décision Tao, 29 oct.)
 OFFER_PROMISE = "50+ plans avec leurs vrais devis"
 PIXEL_ID = "1651374605332302"
 

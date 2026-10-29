@@ -4,6 +4,7 @@ Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun c
 
 ## Règles
 - Prix, surfaces, devis : uniquement ceux du PDF plans + devis (data/plans.json). Jamais inventés.
+- Posts images Facebook (décision de Tao, 29 oct.) : CTA = catalogue GRATUIT en lien court `https://wooplans.com/catalogue?utm_source=facebook` (`wooplans.utm.free_link`), jamais le prix du Catalogue Premium ; fourchette de budget du plan affichée (estimation ± 10 %, `budget_range`). Images : originaux propres + 2 filigranes WooPlans (`tools/brand_media.py`).
 - Dans les vidéos : jamais « l'offre expire dans X heures » ; dire « prix actuel : 39 000 FCFA ». Passer tout texte dans `wooplans.guardrails.check_copy`.
 - Lien du catalogue dans toutes les publications : https://wooplans.com/catalogue-premium (avec UTM : `wooplans/utm.py`). Jamais cpbook.wooplans.com. Adresse affichée dans les vidéos : wooplans.com.
 - Rien n'est programmé sans l'accord de Tao. Il relit la voix off et les scripts du format B avant GitHub. Une vignette est créée avant tout post (`tools/make_thumbnail.py`).

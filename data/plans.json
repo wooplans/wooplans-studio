@@ -440,6 +440,17 @@
   "estimate_total": 17280000
  },
  {
+  "code": "V3-026",
+  "slug": "villa-v3-026",
+  "name": "Villa V3-026",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 148,
+  "land_area": 300,
+  "estimate_total": 23680000
+ },
+ {
   "code": "V3-037",
   "slug": "villa-v3-037",
   "name": "Villa V3-037",

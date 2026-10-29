@@ -36,31 +36,60 @@ def test_plans_source_of_truth():
 
 
 def test_every_caption_passes_guardrails():
+    from wooplans.image_posts import budget_range
     for p in PLANS:
         for i in range(len(TEMPLATES)):
-            name, text = caption(p, i)
-            assert check_copy(text, [p["estimate_total"]]) == []
-            assert "https://wooplans.com/catalogue-premium?" in text
-            assert "utm_source=facebook" in text and "utm_medium=image_organique" in text and f"utm_content=image_{p['code']}" in text
-            assert "cpbook" not in text and "expire" not in text.lower()
+            for kind in ("single", "album"):
+                name, text = caption(p, i, kind)
+                low, high = budget_range(p)
+                assert check_copy(text, [p["estimate_total"], low, high]) == []
+                assert f"{fcfa(low)} – {fcfa(high)} FCFA" in text                     # fourchette de budget affichée
+                assert text.count("https://") == 1 and "https://wooplans.com/catalogue?utm_source=facebook" in text
+                assert "premium" not in text.lower() and "39 000" not in text and "utm_medium" not in text
+                assert "cpbook" not in text and "expire" not in text.lower()
+                assert ("Faites défiler" in text) == (kind == "album")
+
+
+def test_caption_structure():
+    p = next(p for p in PLANS if p["land_area"])
+    text = caption(p, 0)[1]
+    blocs = text.split("\n\n")
+    assert len(blocs) == 5                                                          # accroche, fiche, engagement, CTA, hashtags
+    assert blocs[1].splitlines()[0].startswith(f"🏠 {p['name']} · {p['bedrooms']} chambres")
+    assert f"Surface : {p['surface']} m²" in blocs[1] and f"Terrain prévu : {p['land_area']} m²" in blocs[1]
+    assert blocs[3].splitlines()[1] == "https://wooplans.com/catalogue?utm_source=facebook"
+
+
+def test_budget_range_matches_catalogue():
+    from wooplans.image_posts import budget_range
+    by = {p["code"]: p for p in PLANS}
+    assert budget_range(by["D4-001"]) == (86_200_000, 105_300_000)                   # fourchettes affichées sur le catalogue
+    assert budget_range(by["V3-002"]) == (11_300_000, 13_800_000)
+    assert budget_range(by["D4-004"]) == (50_700_000, 62_000_000)
 
 
 def test_guardrail_catches_a_wrong_amount():
     p = PLANS[0]
-    text = caption(p, 0)[1].replace(fcfa(p["estimate_total"]), "1 234 567")
+    text = caption(p, 0)[1].replace(fcfa(budget_range_high(p)), "1 234 567")
     assert check_copy(text, [p["estimate_total"]])                    # montant non sourcé → refusé
+
+
+def budget_range_high(p):
+    from wooplans.image_posts import budget_range
+    return budget_range(p)[1]
 
 
 def test_french_agreement():
     villa = next(p for p in PLANS if p["category"] == "villa")
     duplex = next(p for p in PLANS if p["category"] == "duplex")
-    assert "Cette villa de" in caption(villa, 1)[1] and "vous la construiriez" in caption(villa, 1)[1]
-    assert "Ce duplex de" in caption(duplex, 1)[1] and "vous le construiriez" in caption(duplex, 1)[1]
+    assert "Cette villa de" in caption(villa, 0)[1] and "une villa de" in caption(villa, 2)[1]
+    assert "Ce duplex de" in caption(duplex, 0)[1] and "un duplex de" in caption(duplex, 2)[1]
+    assert "de plain-pied" in caption(villa, 0)[1] and "2 niveaux" in caption(duplex, 0)[1]
 
 
-def test_terrain_template_skipped_without_land():
+def test_terrain_line_skipped_without_land():
     p = next(p for p in PLANS if not p["land_area"])
-    assert all(caption(p, i)[0] != "terrain" for i in range(len(TEMPLATES)))
+    assert all("Terrain prévu" not in caption(p, i)[1] for i in range(len(TEMPLATES)))
 
 
 def test_utm_image_medium_and_video_unchanged():

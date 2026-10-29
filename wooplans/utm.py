@@ -1,7 +1,7 @@
 """Liens de suivi : un lien par plateforme et par vidéo, lisible dans Chariow (sources de trafic)."""
 from urllib.parse import urlencode
 
-from wooplans.settings import OFFER_URL
+from wooplans.settings import FREE_CATALOGUE_URL, OFFER_URL
 
 PLATFORMS = ("facebook", "tiktok", "youtube")
 FORMATS = {"A": "visite", "B": "cout", "I": "image", "R": "reel3d"}
@@ -25,3 +25,10 @@ def build_link(platform: str, fmt: str, video_id: str, base: str = OFFER_URL) ->
 
 def all_links(fmt: str, video_id: str) -> dict:
     return {p: build_link(p, fmt, video_id) for p in PLATFORMS}
+
+
+def free_link(platform: str) -> str:
+    """Lien court vers le catalogue gratuit : seulement l'origine de la visite (ex. …/catalogue?utm_source=facebook)."""
+    if platform not in PLATFORMS:
+        raise ValueError(f"plateforme inconnue : {platform}")
+    return f"{FREE_CATALOGUE_URL}?utm_source={platform}"

@@ -12,8 +12,8 @@ from typing import Callable, Dict, List, Optional, Set, Tuple
 
 from wooplans.guardrails import check_copy
 from wooplans.registry import REGISTRY, _load
-from wooplans.settings import OFFER_PRICE_FCFA, OFFER_PROMISE, ROOT
-from wooplans.utm import build_link
+from wooplans.settings import ROOT
+from wooplans.utm import free_link
 
 PLANS = ROOT / "data" / "plans.json"
 FMT = "I"                                     # format « image » dans le registre anti-doublon
@@ -49,60 +49,64 @@ def usage_from_registry(path: Optional[Path] = None) -> Tuple[Dict[str, int], Di
 
 
 # ---------- légendes ----------
+# Format imposé par Tao (29 oct.) : accroche, fiche du plan (référence, chambres, niveaux, surface, terrain, budget en fourchette),
+# invitation à commenter / enregistrer / partager, puis CTA vers le catalogue GRATUIT (lien court + utm_source seulement).
+# Aucun prix du Catalogue Premium dans ces publications.
 
 def _tags(p: dict) -> str:
     return f"#plandemaison #{p['category']} #maison #construction #architecture #Afrique"
 
 
-def _link(p: dict) -> str:
-    return build_link("facebook", FMT, p["code"])
+def budget_range(p: dict) -> Tuple[int, int]:
+    """Fourchette de budget affichée sur le catalogue : estimation du devis ± 10 %, arrondie à 100 000 FCFA."""
+    est = p["estimate_total"]
+    return int(est * 0.9 / 100_000 + 0.5) * 100_000, int(est * 1.1 / 100_000 + 0.5) * 100_000
 
 
 def _ctx(p: dict) -> dict:
+    villa = p["category"] == "villa"
+    low, high = budget_range(p)
     return {
-        "name": p["name"], "type": p["category"],
-        "this": "Cette villa" if p["category"] == "villa" else "Ce duplex", "it": "la" if p["category"] == "villa" else "le", "ch": p["bedrooms"], "surf": p["surface"],
-        "land": p.get("land_area"), "est": fcfa(p["estimate_total"]), "link": _link(p), "tags": _tags(p),
-        "promise": OFFER_PROMISE, "price": fcfa(OFFER_PRICE_FCFA),
+        "name": p["name"], "type": p["category"], "This": "Cette villa" if villa else "Ce duplex", "un": "une villa" if villa else "un duplex",
+        "ch": p["bedrooms"], "niv": "de plain-pied" if p["levels"] == 1 else f"{p['levels']} niveaux", "surf": p["surface"],
+        "land": p.get("land_area"), "low": fcfa(low), "high": fcfa(high), "link": free_link("facebook"), "tags": _tags(p),
     }
 
 
-TEMPLATES = [
-    ("fiche", False,
-     "🏡 {name} · {ch} chambres · {surf} m²\nEstimation indicative : {est} FCFA.\n\n"
-     "📲 Plan complet + devis détaillé dans le Catalogue Premium ({promise}), prix actuel : {price} FCFA.\n👉 {link}\n\n{tags}"),
-    ("question", False,
-     "{this} de {ch} chambres, vous {it} construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\n"
-     "{name} · {surf} m² · estimation indicative : {est} FCFA\n\n👉 Tous nos plans avec leurs vrais devis : {link}\n\n{tags}"),
-    ("terrain", True,
-     "Quel plan pour un terrain de {land} m² ? 📐\n{name} : {ch} chambres, {surf} m², terrain prévu : {land} m².\n"
-     "Estimation indicative : {est} FCFA.\n\n👉 Le plan et son devis détaillé : {link}\n\n{tags}"),
-    ("budget", False,
-     "Un budget de construction autour de {est} FCFA ? 💰\n{name} : {ch} chambres, {surf} m² (estimation indicative).\n\n"
-     "Le devis détaillé est dans le Catalogue Premium, prix actuel : {price} FCFA.\n👉 {link}\n\n{tags}"),
-    ("enregistrer", False,
-     "📌 Enregistrez ce plan pour votre futur projet !\n{name} · {ch} chambres · {surf} m²\n\n"
-     "{promise} : {link}\n\n{tags}"),
-    ("partage", False,
-     "Quelqu'un prépare sa construction autour de vous ? Partagez-lui ce plan 👇\n"
-     "{name} · {ch} chambres · {surf} m² · estimation indicative : {est} FCFA\n\n"
-     "👉 {promise} : {link}\n\n{tags}"),
+HOOKS = [
+    ("coup-de-coeur", "😍 {This} de {ch} chambres : coup de cœur ou pas ?"),
+    ("tout-pour-plaire", "✨ {This} de {ch} chambres a tout pour plaire."),
+    ("projet", "🏗️ Vous préparez votre construction ? Découvrez {un} de {ch} chambres."),
+    ("future-maison", "🏡 Et si c'était votre future maison ?"),
 ]
+ENGAGE = [
+    "💬 Dites-nous en commentaire ce que vous en pensez.",
+    "📌 Enregistrez ce post pour votre futur projet.",
+    "🔁 Partagez-le à quelqu'un qui prépare sa construction.",
+]
+TEMPLATES = HOOKS                                 # un modèle de légende par accroche
 
 
-def caption(p: dict, start_index: int = 0) -> Tuple[str, str]:
-    """(nom du modèle de légende, texte). Passe par check_copy ; lève ValueError si un garde-fou refuse."""
+def caption(p: dict, start_index: int = 0, kind: str = "single") -> Tuple[str, str]:
+    """(nom de l'accroche, texte). Passe par check_copy ; lève ValueError si un garde-fou refuse."""
     ctx = _ctx(p)
-    for i in range(len(TEMPLATES)):
-        name, needs_land, text = TEMPLATES[(start_index + i) % len(TEMPLATES)]
-        if needs_land and not ctx["land"]:
-            continue
-        out = text.format(**ctx)
-        problems = check_copy(out, [p["estimate_total"]])
-        if problems:
-            raise ValueError(f"{p['code']} : {problems}")
-        return name, out
-    raise ValueError(f"{p['code']} : aucune légende applicable")
+    name, hook = HOOKS[start_index % len(HOOKS)]
+    lines = [hook.format(**ctx), "",
+             f"🏠 {ctx['name']} · {ctx['ch']} chambres · {ctx['niv']}",
+             f"📐 Surface : {ctx['surf']} m²"]
+    if ctx["land"]:
+        lines.append(f"🌿 Terrain prévu : {ctx['land']} m²")
+    lines += [f"💰 Budget de construction estimé : {ctx['low']} – {ctx['high']} FCFA", ""]
+    if kind == "album":
+        lines.append("➡️ Faites défiler pour voir toutes les vues.")
+    lines += [ENGAGE[start_index % len(ENGAGE)], "",
+              "👉 Voir ce plan et tous les autres dans notre catalogue gratuit :", ctx["link"], "", ctx["tags"]]
+    out = "\n".join(lines)
+    low, high = budget_range(p)
+    problems = check_copy(out, [p["estimate_total"], low, high])
+    if problems:
+        raise ValueError(f"{p['code']} : {problems}")
+    return name, out
 
 
 # ---------- lot de la semaine ----------
@@ -171,7 +175,7 @@ def build_batch(plans: List[dict], start: date, days: int, images_for: Callable[
             used.setdefault(code, set()).update(base(u) for u in sel)
             count[code] = count.get(code, 0) + 1
             here[code] = here.get(code, 0) + 1
-            tname, text = caption(choice, start_index=n + seed)
+            tname, text = caption(choice, start_index=n + seed, kind=kind)
             posts.append({
                 "id": f"{day.isoformat()}-{hhmm.replace(':', '')}", "when": f"{day.isoformat()}T{hhmm}:00",
                 "timezone": TZ, "code": code, "name": choice["name"], "kind": kind, "images": sel,
