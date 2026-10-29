@@ -1,0 +1,439 @@
+{
+ "timezone": "Africa/Douala",
+ "posts": [
+  {
+   "id": "2026-10-30-0730",
+   "when": "2026-10-30T07:30:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-016",
+   "name": "Duplex D4-016",
+   "kind": "single",
+   "images": [
+    "media/D4-016/1.jpg"
+   ],
+   "template": "question",
+   "caption": "Ce duplex de 4 chambres, vous le construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\nDuplex D4-016 · 287 m² · estimation indicative : 51 660 000 FCFA\n\n👉 Tous nos plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-016\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-10-30-1030",
+   "when": "2026-10-30T10:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-002",
+   "name": "Villa V3-002",
+   "kind": "single",
+   "images": [
+    "media/V3-002/1.jpg"
+   ],
+   "template": "budget",
+   "caption": "Un budget de construction autour de 12 544 000 FCFA ? 💰\nVilla V3-002 : 3 chambres, 98 m² (estimation indicative).\n\nLe devis détaillé est dans le Catalogue Premium, prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-002\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-10-30-1630",
+   "when": "2026-10-30T16:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-038",
+   "name": "Villa V3-038",
+   "kind": "album",
+   "images": [
+    "media/V3-038/1.jpg",
+    "media/V3-038/2.jpg",
+    "media/V3-038/3.jpg",
+    "media/V3-038/4.jpg"
+   ],
+   "template": "budget",
+   "caption": "Un budget de construction autour de 19 840 000 FCFA ? 💰\nVilla V3-038 : 3 chambres, 124 m² (estimation indicative).\n\nLe devis détaillé est dans le Catalogue Premium, prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-038\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-10-30-1900",
+   "when": "2026-10-30T19:00:00",
+   "timezone": "Africa/Douala",
+   "code": "D5-003",
+   "name": "Duplex D5-003",
+   "kind": "album",
+   "images": [
+    "media/D5-003/1.jpg",
+    "media/D5-003/2.jpg",
+    "media/D5-003/3.jpg",
+    "media/D5-003/4.jpg"
+   ],
+   "template": "enregistrer",
+   "caption": "📌 Enregistrez ce plan pour votre futur projet !\nDuplex D5-003 · 5 chambres · 320 m²\n\n50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D5-003\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-10-31-0730",
+   "when": "2026-10-31T07:30:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-019",
+   "name": "Duplex D4-019",
+   "kind": "single",
+   "images": [
+    "media/D4-019/1.jpg"
+   ],
+   "template": "partage",
+   "caption": "Quelqu'un prépare sa construction autour de vous ? Partagez-lui ce plan 👇\nDuplex D4-019 · 4 chambres · 338 m² · estimation indicative : 60 840 000 FCFA\n\n👉 50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-019\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-10-31-1030",
+   "when": "2026-10-31T10:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-018",
+   "name": "Villa V3-018",
+   "kind": "single",
+   "images": [
+    "media/V3-018/1.jpg"
+   ],
+   "template": "fiche",
+   "caption": "🏡 Villa V3-018 · 3 chambres · 127 m²\nEstimation indicative : 20 320 000 FCFA.\n\n📲 Plan complet + devis détaillé dans le Catalogue Premium (50+ plans avec leurs vrais devis), prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-018\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-10-31-1630",
+   "when": "2026-10-31T16:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-037",
+   "name": "Villa V3-037",
+   "kind": "album",
+   "images": [
+    "media/V3-037/1.jpg",
+    "media/V3-037/2.jpg",
+    "media/V3-037/3.jpg",
+    "media/V3-037/4.jpg"
+   ],
+   "template": "question",
+   "caption": "Cette villa de 3 chambres, vous la construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\nVilla V3-037 · 164 m² · estimation indicative : 26 240 000 FCFA\n\n👉 Tous nos plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-037\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-10-31-1900",
+   "when": "2026-10-31T19:00:00",
+   "timezone": "Africa/Douala",
+   "code": "D5-018",
+   "name": "Duplex D5-018",
+   "kind": "album",
+   "images": [
+    "media/D5-018/1.jpg",
+    "media/D5-018/2.jpg",
+    "media/D5-018/3.jpg",
+    "media/D5-018/4.jpg"
+   ],
+   "template": "terrain",
+   "caption": "Quel plan pour un terrain de 400 m² ? 📐\nDuplex D5-018 : 5 chambres, 480 m², terrain prévu : 400 m².\nEstimation indicative : 86 400 000 FCFA.\n\n👉 Le plan et son devis détaillé : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D5-018\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-01-0730",
+   "when": "2026-11-01T07:30:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-033",
+   "name": "Duplex D4-033",
+   "kind": "single",
+   "images": [
+    "media/D4-033/1.jpg"
+   ],
+   "template": "budget",
+   "caption": "Un budget de construction autour de 40 680 000 FCFA ? 💰\nDuplex D4-033 : 4 chambres, 226 m² (estimation indicative).\n\nLe devis détaillé est dans le Catalogue Premium, prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-033\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-01-1030",
+   "when": "2026-11-01T10:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V4-010",
+   "name": "Villa V4-010",
+   "kind": "single",
+   "images": [
+    "media/V4-010/1.jpg"
+   ],
+   "template": "enregistrer",
+   "caption": "📌 Enregistrez ce plan pour votre futur projet !\nVilla V4-010 · 4 chambres · 148 m²\n\n50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V4-010\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-01-1630",
+   "when": "2026-11-01T16:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V4-008",
+   "name": "Villa V4-008",
+   "kind": "album",
+   "images": [
+    "media/V4-008/1.jpg",
+    "media/V4-008/2.jpg",
+    "media/V4-008/3.jpg",
+    "media/V4-008/4.jpg"
+   ],
+   "template": "partage",
+   "caption": "Quelqu'un prépare sa construction autour de vous ? Partagez-lui ce plan 👇\nVilla V4-008 · 4 chambres · 128 m² · estimation indicative : 20 480 000 FCFA\n\n👉 50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V4-008\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-01-1900",
+   "when": "2026-11-01T19:00:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-004",
+   "name": "Duplex D4-004",
+   "kind": "album",
+   "images": [
+    "media/D4-004/1.jpg",
+    "media/D4-004/2.jpg",
+    "media/D4-004/3.jpg",
+    "media/D4-004/4.jpg"
+   ],
+   "template": "fiche",
+   "caption": "🏡 Duplex D4-004 · 4 chambres · 313 m²\nEstimation indicative : 56 340 000 FCFA.\n\n📲 Plan complet + devis détaillé dans le Catalogue Premium (50+ plans avec leurs vrais devis), prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-004\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-02-0730",
+   "when": "2026-11-02T07:30:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-003",
+   "name": "Duplex D4-003",
+   "kind": "single",
+   "images": [
+    "media/D4-003/1.jpg"
+   ],
+   "template": "question",
+   "caption": "Ce duplex de 4 chambres, vous le construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\nDuplex D4-003 · 323 m² · estimation indicative : 58 140 000 FCFA\n\n👉 Tous nos plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-003\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-02-1030",
+   "when": "2026-11-02T10:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V4-007",
+   "name": "Villa V4-007",
+   "kind": "single",
+   "images": [
+    "media/V4-007/1.jpg"
+   ],
+   "template": "terrain",
+   "caption": "Quel plan pour un terrain de 300 m² ? 📐\nVilla V4-007 : 4 chambres, 136 m², terrain prévu : 300 m².\nEstimation indicative : 21 760 000 FCFA.\n\n👉 Le plan et son devis détaillé : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V4-007\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-02-1630",
+   "when": "2026-11-02T16:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-003",
+   "name": "Villa V3-003",
+   "kind": "album",
+   "images": [
+    "media/V3-003/1.jpg",
+    "media/V3-003/2.jpg",
+    "media/V3-003/3.jpg",
+    "media/V3-003/4.jpg"
+   ],
+   "template": "budget",
+   "caption": "Un budget de construction autour de 15 840 000 FCFA ? 💰\nVilla V3-003 : 3 chambres, 99 m² (estimation indicative).\n\nLe devis détaillé est dans le Catalogue Premium, prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-003\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-02-1900",
+   "when": "2026-11-02T19:00:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-007",
+   "name": "Duplex D4-007",
+   "kind": "album",
+   "images": [
+    "media/D4-007/1.jpg",
+    "media/D4-007/2.jpg",
+    "media/D4-007/3.jpg",
+    "media/D4-007/4.jpg"
+   ],
+   "template": "enregistrer",
+   "caption": "📌 Enregistrez ce plan pour votre futur projet !\nDuplex D4-007 · 4 chambres · 271 m²\n\n50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-007\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-03-0730",
+   "when": "2026-11-03T07:30:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-017",
+   "name": "Duplex D4-017",
+   "kind": "single",
+   "images": [
+    "media/D4-017/1.jpg"
+   ],
+   "template": "partage",
+   "caption": "Quelqu'un prépare sa construction autour de vous ? Partagez-lui ce plan 👇\nDuplex D4-017 · 4 chambres · 280 m² · estimation indicative : 50 400 000 FCFA\n\n👉 50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-017\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-03-1030",
+   "when": "2026-11-03T10:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V4-009",
+   "name": "Villa V4-009",
+   "kind": "single",
+   "images": [
+    "media/V4-009/1.jpg"
+   ],
+   "template": "fiche",
+   "caption": "🏡 Villa V4-009 · 4 chambres · 184 m²\nEstimation indicative : 29 440 000 FCFA.\n\n📲 Plan complet + devis détaillé dans le Catalogue Premium (50+ plans avec leurs vrais devis), prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V4-009\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-03-1630",
+   "when": "2026-11-03T16:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-005",
+   "name": "Villa V3-005",
+   "kind": "album",
+   "images": [
+    "media/V3-005/1.jpg",
+    "media/V3-005/2.jpg",
+    "media/V3-005/3.jpg",
+    "media/V3-005/4.jpg"
+   ],
+   "template": "question",
+   "caption": "Cette villa de 3 chambres, vous la construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\nVilla V3-005 · 96 m² · estimation indicative : 12 288 000 FCFA\n\n👉 Tous nos plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-005\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-03-1900",
+   "when": "2026-11-03T19:00:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-012",
+   "name": "Duplex D4-012",
+   "kind": "album",
+   "images": [
+    "media/D4-012/1.jpg",
+    "media/D4-012/2.jpg",
+    "media/D4-012/3.jpg",
+    "media/D4-012/4.jpg"
+   ],
+   "template": "terrain",
+   "caption": "Quel plan pour un terrain de 200 m² ? 📐\nDuplex D4-012 : 4 chambres, 195 m², terrain prévu : 200 m².\nEstimation indicative : 35 100 000 FCFA.\n\n👉 Le plan et son devis détaillé : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-012\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-04-0730",
+   "when": "2026-11-04T07:30:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-010",
+   "name": "Duplex D4-010",
+   "kind": "single",
+   "images": [
+    "media/D4-010/1.jpg"
+   ],
+   "template": "budget",
+   "caption": "Un budget de construction autour de 36 180 000 FCFA ? 💰\nDuplex D4-010 : 4 chambres, 201 m² (estimation indicative).\n\nLe devis détaillé est dans le Catalogue Premium, prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-010\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-04-1030",
+   "when": "2026-11-04T10:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V4-036",
+   "name": "Villa V4-036",
+   "kind": "single",
+   "images": [
+    "media/V4-036/1.jpg"
+   ],
+   "template": "enregistrer",
+   "caption": "📌 Enregistrez ce plan pour votre futur projet !\nVilla V4-036 · 4 chambres · 233 m²\n\n50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V4-036\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-04-1630",
+   "when": "2026-11-04T16:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-039",
+   "name": "Villa V3-039",
+   "kind": "album",
+   "images": [
+    "media/V3-039/1.jpg",
+    "media/V3-039/2.jpg",
+    "media/V3-039/3.jpg",
+    "media/V3-039/4.jpg"
+   ],
+   "template": "partage",
+   "caption": "Quelqu'un prépare sa construction autour de vous ? Partagez-lui ce plan 👇\nVilla V3-039 · 3 chambres · 122 m² · estimation indicative : 19 520 000 FCFA\n\n👉 50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-039\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-04-1900",
+   "when": "2026-11-04T19:00:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-011",
+   "name": "Duplex D4-011",
+   "kind": "album",
+   "images": [
+    "media/D4-011/1.jpg",
+    "media/D4-011/2.jpg",
+    "media/D4-011/3.jpg",
+    "media/D4-011/4.jpg"
+   ],
+   "template": "fiche",
+   "caption": "🏡 Duplex D4-011 · 4 chambres · 500 m²\nEstimation indicative : 90 000 000 FCFA.\n\n📲 Plan complet + devis détaillé dans le Catalogue Premium (50+ plans avec leurs vrais devis), prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-011\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-05-0730",
+   "when": "2026-11-05T07:30:00",
+   "timezone": "Africa/Douala",
+   "code": "D4-009",
+   "name": "Duplex D4-009",
+   "kind": "single",
+   "images": [
+    "media/D4-009/1.jpg"
+   ],
+   "template": "question",
+   "caption": "Ce duplex de 4 chambres, vous le construiriez ? 😍\nDites-nous en commentaire ce que vous modifieriez.\n\nDuplex D4-009 · 320 m² · estimation indicative : 57 600 000 FCFA\n\n👉 Tous nos plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D4-009\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-05-1030",
+   "when": "2026-11-05T10:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-004",
+   "name": "Villa V3-004",
+   "kind": "single",
+   "images": [
+    "media/V3-004/1.jpg"
+   ],
+   "template": "budget",
+   "caption": "Un budget de construction autour de 17 600 000 FCFA ? 💰\nVilla V3-004 : 3 chambres, 110 m² (estimation indicative).\n\nLe devis détaillé est dans le Catalogue Premium, prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-004\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-05-1630",
+   "when": "2026-11-05T16:30:00",
+   "timezone": "Africa/Douala",
+   "code": "V3-025",
+   "name": "Villa V3-025",
+   "kind": "album",
+   "images": [
+    "media/V3-025/1.jpg",
+    "media/V3-025/2.jpg",
+    "media/V3-025/3.jpg",
+    "media/V3-025/4.jpg"
+   ],
+   "template": "budget",
+   "caption": "Un budget de construction autour de 17 280 000 FCFA ? 💰\nVilla V3-025 : 3 chambres, 108 m² (estimation indicative).\n\nLe devis détaillé est dans le Catalogue Premium, prix actuel : 39 000 FCFA.\n👉 https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_V3-025\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
+  },
+  {
+   "id": "2026-11-05-1900",
+   "when": "2026-11-05T19:00:00",
+   "timezone": "Africa/Douala",
+   "code": "D5-020",
+   "name": "Duplex D5-020",
+   "kind": "album",
+   "images": [
+    "media/D5-020/1.jpg",
+    "media/D5-020/2.jpg",
+    "media/D5-020/3.jpg",
+    "media/D5-020/4.jpg"
+   ],
+   "template": "enregistrer",
+   "caption": "📌 Enregistrez ce plan pour votre futur projet !\nDuplex D5-020 · 5 chambres · 307 m²\n\n50+ plans avec leurs vrais devis : https://wooplans.com/catalogue-premium?utm_source=facebook&utm_medium=image_organique&utm_campaign=wooplans_contenu&utm_content=image_D5-020\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
+  }
+ ]
+}
