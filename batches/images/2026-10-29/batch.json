@@ -2,34 +2,38 @@
  "timezone": "Africa/Douala",
  "posts": [
   {
-   "id": "2026-10-29-0900",
+   "id": "2026-10-29-0900a",
    "when": "2026-10-29T09:00:00",
    "timezone": "Africa/Douala",
    "code": "D4-016",
    "name": "Duplex D4-016",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/D4-016/1.jpg"
+    "media/D4-016/1.jpg",
+    "media/D4-016/2.jpg",
+    "media/D4-016/3.jpg",
+    "media/D4-016/4.jpg"
    ],
    "template": "tout-pour-plaire",
-   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-016 · 4 chambres · 2 niveaux\n📐 Surface : 287 m²\n🌿 Terrain prévu : 450 m²\n💰 Budget de construction estimé : 46 500 000 – 56 800 000 FCFA\n\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-016 · 4 chambres · 2 niveaux\n📐 Surface : 287 m²\n🌿 Terrain prévu : 450 m²\n💰 Budget de construction estimé : 46 500 000 – 56 800 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
-   "id": "2026-10-29-1030",
+   "id": "2026-10-29-1030a",
    "when": "2026-10-29T10:30:00",
    "timezone": "Africa/Douala",
    "code": "V4-007",
    "name": "Villa V4-007",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/V4-007/1.jpg"
+    "media/V4-007/1.jpg",
+    "media/V4-007/2.jpg",
+    "media/V4-007/3.jpg",
+    "media/V4-007/4.jpg"
    ],
    "template": "projet",
-   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-007 · 4 chambres · de plain-pied\n📐 Surface : 136 m²\n🌿 Terrain prévu : 300 m²\n💰 Budget de construction estimé : 19 600 000 – 23 900 000 FCFA\n\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-007 · 4 chambres · de plain-pied\n📐 Surface : 136 m²\n🌿 Terrain prévu : 300 m²\n💰 Budget de construction estimé : 19 600 000 – 23 900 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
    "id": "2026-10-29-1630",
@@ -68,34 +72,38 @@
    "etat": "programme"
   },
   {
-   "id": "2026-10-30-0730",
+   "id": "2026-10-30-0730a",
    "when": "2026-10-30T07:30:00",
    "timezone": "Africa/Douala",
    "code": "D4-003",
    "name": "Duplex D4-003",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/D4-003/1.jpg"
+    "media/D4-003/1.jpg",
+    "media/D4-003/2.jpg",
+    "media/D4-003/3.jpg",
+    "media/D4-003/4.jpg"
    ],
    "template": "tout-pour-plaire",
-   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-003 · 4 chambres · 2 niveaux\n📐 Surface : 323 m²\n🌿 Terrain prévu : 350 m²\n💰 Budget de construction estimé : 52 300 000 – 64 000 000 FCFA\n\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-003 · 4 chambres · 2 niveaux\n📐 Surface : 323 m²\n🌿 Terrain prévu : 350 m²\n💰 Budget de construction estimé : 52 300 000 – 64 000 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
-   "id": "2026-10-30-1030",
+   "id": "2026-10-30-1030a",
    "when": "2026-10-30T10:30:00",
    "timezone": "Africa/Douala",
    "code": "V4-036",
    "name": "Villa V4-036",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/V4-036/1.jpg"
+    "media/V4-036/1.jpg",
+    "media/V4-036/2.jpg",
+    "media/V4-036/3.jpg",
+    "media/V4-036/4.jpg"
    ],
    "template": "projet",
-   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-036 · 4 chambres · de plain-pied\n📐 Surface : 233 m²\n🌿 Terrain prévu : 400 m²\n💰 Budget de construction estimé : 33 600 000 – 41 000 000 FCFA\n\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-036 · 4 chambres · de plain-pied\n📐 Surface : 233 m²\n🌿 Terrain prévu : 400 m²\n💰 Budget de construction estimé : 33 600 000 – 41 000 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
    "id": "2026-10-30-1630",
@@ -134,34 +142,38 @@
    "etat": "programme"
   },
   {
-   "id": "2026-10-31-0730",
+   "id": "2026-10-31-0730a",
    "when": "2026-10-31T07:30:00",
    "timezone": "Africa/Douala",
    "code": "D4-017",
    "name": "Duplex D4-017",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/D4-017/1.jpg"
+    "media/D4-017/1.jpg",
+    "media/D4-017/2.jpg",
+    "media/D4-017/3.jpg",
+    "media/D4-017/4.jpg"
    ],
    "template": "tout-pour-plaire",
-   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-017 · 4 chambres · 2 niveaux\n📐 Surface : 280 m²\n🌿 Terrain prévu : 300 m²\n💰 Budget de construction estimé : 45 400 000 – 55 400 000 FCFA\n\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-017 · 4 chambres · 2 niveaux\n📐 Surface : 280 m²\n🌿 Terrain prévu : 300 m²\n💰 Budget de construction estimé : 45 400 000 – 55 400 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
-   "id": "2026-10-31-1030",
+   "id": "2026-10-31-1030a",
    "when": "2026-10-31T10:30:00",
    "timezone": "Africa/Douala",
    "code": "V3-002",
    "name": "Villa V3-002",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/V3-002/1.jpg"
+    "media/V3-002/1.jpg",
+    "media/V3-002/2.jpg",
+    "media/V3-002/3.jpg",
+    "media/V3-002/4.jpg"
    ],
    "template": "projet",
-   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 3 chambres.\n\n🏠 Villa V3-002 · 3 chambres · de plain-pied\n📐 Surface : 98 m²\n💰 Budget de construction estimé : 11 300 000 – 13 800 000 FCFA\n\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 3 chambres.\n\n🏠 Villa V3-002 · 3 chambres · de plain-pied\n📐 Surface : 98 m²\n💰 Budget de construction estimé : 11 300 000 – 13 800 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
    "id": "2026-10-31-1630",
@@ -200,34 +212,38 @@
    "etat": "programme"
   },
   {
-   "id": "2026-11-01-0730",
+   "id": "2026-11-01-0730a",
    "when": "2026-11-01T07:30:00",
    "timezone": "Africa/Douala",
    "code": "D4-010",
    "name": "Duplex D4-010",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/D4-010/1.jpg"
+    "media/D4-010/1.jpg",
+    "media/D4-010/2.jpg",
+    "media/D4-010/3.jpg",
+    "media/D4-010/4.jpg"
    ],
    "template": "tout-pour-plaire",
-   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-010 · 4 chambres · 2 niveaux\n📐 Surface : 201 m²\n🌿 Terrain prévu : 250 m²\n💰 Budget de construction estimé : 32 600 000 – 39 800 000 FCFA\n\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-010 · 4 chambres · 2 niveaux\n📐 Surface : 201 m²\n🌿 Terrain prévu : 250 m²\n💰 Budget de construction estimé : 32 600 000 – 39 800 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
-   "id": "2026-11-01-1030",
+   "id": "2026-11-01-1030a",
    "when": "2026-11-01T10:30:00",
    "timezone": "Africa/Douala",
    "code": "V3-018",
    "name": "Villa V3-018",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/V3-018/1.jpg"
+    "media/V3-018/1.jpg",
+    "media/V3-018/2.jpg",
+    "media/V3-018/3.jpg",
+    "media/V3-018/4.jpg"
    ],
    "template": "projet",
-   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 3 chambres.\n\n🏠 Villa V3-018 · 3 chambres · de plain-pied\n📐 Surface : 127 m²\n💰 Budget de construction estimé : 18 300 000 – 22 400 000 FCFA\n\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 3 chambres.\n\n🏠 Villa V3-018 · 3 chambres · de plain-pied\n📐 Surface : 127 m²\n💰 Budget de construction estimé : 18 300 000 – 22 400 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
    "id": "2026-11-01-1630",
@@ -266,34 +282,38 @@
    "etat": "programme"
   },
   {
-   "id": "2026-11-02-0730",
+   "id": "2026-11-02-0730a",
    "when": "2026-11-02T07:30:00",
    "timezone": "Africa/Douala",
    "code": "D4-033",
    "name": "Duplex D4-033",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/D4-033/1.jpg"
+    "media/D4-033/1.jpg",
+    "media/D4-033/2.jpg",
+    "media/D4-033/3.jpg",
+    "media/D4-033/4.jpg"
    ],
    "template": "tout-pour-plaire",
-   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-033 · 4 chambres · 2 niveaux\n📐 Surface : 226 m²\n🌿 Terrain prévu : 250 m²\n💰 Budget de construction estimé : 36 600 000 – 44 700 000 FCFA\n\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-033 · 4 chambres · 2 niveaux\n📐 Surface : 226 m²\n🌿 Terrain prévu : 250 m²\n💰 Budget de construction estimé : 36 600 000 – 44 700 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
-   "id": "2026-11-02-1030",
+   "id": "2026-11-02-1030a",
    "when": "2026-11-02T10:30:00",
    "timezone": "Africa/Douala",
    "code": "V4-010",
    "name": "Villa V4-010",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/V4-010/1.jpg"
+    "media/V4-010/1.jpg",
+    "media/V4-010/2.jpg",
+    "media/V4-010/3.jpg",
+    "media/V4-010/4.jpg"
    ],
    "template": "projet",
-   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-010 · 4 chambres · de plain-pied\n📐 Surface : 148 m²\n🌿 Terrain prévu : 350 m²\n💰 Budget de construction estimé : 21 300 000 – 26 000 000 FCFA\n\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-010 · 4 chambres · de plain-pied\n📐 Surface : 148 m²\n🌿 Terrain prévu : 350 m²\n💰 Budget de construction estimé : 21 300 000 – 26 000 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
    "id": "2026-11-02-1630",
@@ -332,34 +352,38 @@
    "etat": "programme"
   },
   {
-   "id": "2026-11-03-0730",
+   "id": "2026-11-03-0730a",
    "when": "2026-11-03T07:30:00",
    "timezone": "Africa/Douala",
    "code": "D4-019",
    "name": "Duplex D4-019",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/D4-019/1.jpg"
+    "media/D4-019/1.jpg",
+    "media/D4-019/2.jpg",
+    "media/D4-019/3.jpg",
+    "media/D4-019/4.jpg"
    ],
    "template": "tout-pour-plaire",
-   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-019 · 4 chambres · 2 niveaux\n📐 Surface : 338 m²\n🌿 Terrain prévu : 350 m²\n💰 Budget de construction estimé : 54 800 000 – 66 900 000 FCFA\n\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-019 · 4 chambres · 2 niveaux\n📐 Surface : 338 m²\n🌿 Terrain prévu : 350 m²\n💰 Budget de construction estimé : 54 800 000 – 66 900 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n💬 Dites-nous en commentaire ce que vous en pensez.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
-   "id": "2026-11-03-1030",
+   "id": "2026-11-03-1030a",
    "when": "2026-11-03T10:30:00",
    "timezone": "Africa/Douala",
    "code": "V4-009",
    "name": "Villa V4-009",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/V4-009/1.jpg"
+    "media/V4-009/1.jpg",
+    "media/V4-009/2.jpg",
+    "media/V4-009/3.jpg",
+    "media/V4-009/4.jpg"
    ],
    "template": "projet",
-   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-009 · 4 chambres · de plain-pied\n📐 Surface : 184 m²\n🌿 Terrain prévu : 400 m²\n💰 Budget de construction estimé : 26 500 000 – 32 400 000 FCFA\n\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 4 chambres.\n\n🏠 Villa V4-009 · 4 chambres · de plain-pied\n📐 Surface : 184 m²\n🌿 Terrain prévu : 400 m²\n💰 Budget de construction estimé : 26 500 000 – 32 400 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
    "id": "2026-11-03-1630",
@@ -398,34 +422,38 @@
    "etat": "programme"
   },
   {
-   "id": "2026-11-04-0730",
+   "id": "2026-11-04-0730a",
    "when": "2026-11-04T07:30:00",
    "timezone": "Africa/Douala",
    "code": "D4-009",
    "name": "Duplex D4-009",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/D4-009/1.jpg"
+    "media/D4-009/1.jpg",
+    "media/D4-009/2.jpg",
+    "media/D4-009/3.jpg",
+    "media/D4-009/4.jpg"
    ],
    "template": "tout-pour-plaire",
-   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-009 · 4 chambres · 2 niveaux\n📐 Surface : 320 m²\n🌿 Terrain prévu : 300 m²\n💰 Budget de construction estimé : 51 800 000 – 63 400 000 FCFA\n\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "✨ Ce duplex de 4 chambres a tout pour plaire.\n\n🏠 Duplex D4-009 · 4 chambres · 2 niveaux\n📐 Surface : 320 m²\n🌿 Terrain prévu : 300 m²\n💰 Budget de construction estimé : 51 800 000 – 63 400 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n📌 Enregistrez ce post pour votre futur projet.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #duplex #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
-   "id": "2026-11-04-1030",
+   "id": "2026-11-04-1030a",
    "when": "2026-11-04T10:30:00",
    "timezone": "Africa/Douala",
    "code": "V3-004",
    "name": "Villa V3-004",
-   "kind": "single",
+   "kind": "album",
    "images": [
-    "media/V3-004/1.jpg"
+    "media/V3-004/1.jpg",
+    "media/V3-004/2.jpg",
+    "media/V3-004/3.jpg",
+    "media/V3-004/4.jpg"
    ],
    "template": "projet",
-   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 3 chambres.\n\n🏠 Villa V3-004 · 3 chambres · de plain-pied\n📐 Surface : 110 m²\n💰 Budget de construction estimé : 15 800 000 – 19 400 000 FCFA\n\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
-   "skip": false,
-   "etat": "programme"
+   "caption": "🏗️ Vous préparez votre construction ? Découvrez une villa de 3 chambres.\n\n🏠 Villa V3-004 · 3 chambres · de plain-pied\n📐 Surface : 110 m²\n💰 Budget de construction estimé : 15 800 000 – 19 400 000 FCFA\n\n➡️ Faites défiler pour voir toutes les vues.\n🔁 Partagez-le à quelqu'un qui prépare sa construction.\n\n👉 Voir ce plan et tous les autres dans notre catalogue gratuit :\nhttps://wooplans.com/catalogue?utm_source=facebook\n\n#plandemaison #villa #maison #construction #architecture #Afrique",
+   "skip": false
   },
   {
    "id": "2026-11-04-1630",
