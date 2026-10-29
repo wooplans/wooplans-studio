@@ -6,7 +6,7 @@
 <lot>/PLAN : {"start": "2026-10-20", "days": 7, "slots": ["07:30","12:30","19:00"], "seed": 1}   (slots, seed optionnels)
   Options : "cats": ["duplex","villa","villa","duplex"] (catégorie de chaque créneau), "patterns": ["single","single","album","album"],
   "media": "local" = images déjà filigranées (JPEG) rangées dans <lot>/media/<code>/1.jpg, 2.jpg… (originaux propres + filigranes WooPlans,
-  voir tools/brand_media.py) au lieu des rendus filigranés du site.
+  voir tools/brand_media.py) au lieu des rendus filigranés du site. "first_time": "09:00" = heure du tout premier post (lot lancé en cours de journée).
 `plan` ne programme RIEN. `schedule` n'est lancé (workflow image-batch, fichier <lot>/APPROVED) qu'après l'accord explicite de Tao.
 Pour retirer ou corriger un post avant l'accord : mettre "skip": true ou éditer "caption" dans batch.json.
 Les rendus viennent de la fiche publique du plan (https://www.wooplans.com/catalogue/<slug>) ; chaque légende passe par check_copy.
@@ -89,6 +89,10 @@ def cmd_plan(lot: Path, fetch_images=fetch_page_images, fetch=download) -> int:
     posts = build_batch(plans, date.fromisoformat(cfg["start"]), int(cfg.get("days", 7)), images_for,
                         usage=count, used_imgs=used, slots=cfg.get("slots", DEFAULT_SLOTS), seed=int(cfg.get("seed", 0)),
                         cats=cfg.get("cats"), patterns=cfg.get("patterns"))
+    if cfg.get("first_time") and posts:                 # lot lancé en cours de journée : le 1er post part à cette heure-là
+        first = posts[0]
+        first["when"] = f"{first['when'][:10]}T{cfg['first_time']}:00"
+        first["id"] = f"{first['when'][:10]}-{cfg['first_time'].replace(':', '')}"
     (lot / "batch.json").write_text(json.dumps({"timezone": TZ, "posts": posts}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     md = [f"# Lot du {cfg['start']} · {len(posts)} posts\n"]

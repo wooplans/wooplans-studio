@@ -289,6 +289,15 @@ def test_local_media_plan_and_schedule(tmp_path):
     assert [p["code"] for p in b] == ["D4-003", "V3-002", "V3-003", "D4-004"]
     assert all(not u.startswith("http") for p in b for u in p["images"])
     assert (lot / "apercu-1.jpg").is_file()
+    (lot / "PLAN").write_text(json.dumps({"start": "2026-10-30", "days": 1, "slots": SLOTS4, "cats": CATS, "patterns": PATS,
+                                          "media": "local", "first_time": "09:00"}))
+    image_batch.load_plans = lambda: plans
+    try:
+        assert image_batch.cmd_plan(lot) == 0
+    finally:
+        image_batch.load_plans = orig
+    b = json.loads((lot / "batch.json").read_text())["posts"]
+    assert b[0]["when"] == "2026-10-30T09:00:00" and b[0]["id"] == "2026-10-30-0900" and b[1]["when"].endswith("10:30:00")
     sent = []
     c = FakeClient()
     assert image_batch.schedule_batch(lot, c, "FB", fetch=lambda u: (_ for _ in ()).throw(AssertionError("pas de réseau")),
