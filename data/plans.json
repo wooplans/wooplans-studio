@@ -205,8 +205,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 143,
-  "land_area": null,
-  "estimate_total": 25740000
+  "land_area": 250,
+  "estimate_total": 30888000
  },
  {
   "code": "D4-035",
@@ -238,8 +238,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 155,
-  "land_area": null,
-  "estimate_total": 27900000
+  "land_area": 250,
+  "estimate_total": 33480000
  },
  {
   "code": "D4-043",
@@ -447,7 +447,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 164,
-  "land_area": null,
+  "land_area": 400,
   "estimate_total": 26240000
  },
  {
@@ -603,5 +603,16 @@
   "surface": 177,
   "land_area": 400,
   "estimate_total": 28320000
+ },
+ {
+  "code": "V3-014",
+  "slug": "villa-v3-014",
+  "name": "Villa V3-014",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 201,
+  "land_area": 450,
+  "estimate_total": 32160000
  }
 ]

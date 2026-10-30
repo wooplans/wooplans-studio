@@ -1,0 +1,19 @@
+{
+  "_doc": "Accroches des publicités « plan et devis offert » (tools/make_reel.py --cadeau). Deux lignes par modèle ; les mots entre * * sont en orange. Chiffres : uniquement ceux de data/plans.json.",
+  "D4-040": [
+    "4 CHAMBRES SUR",
+    "*250 m²* DE TERRAIN"
+  ],
+  "D4-034": [
+    "4 CHAMBRES",
+    "+ UN *DRESSING*"
+  ],
+  "V3-037": [
+    "PLAIN-PIED AVEC",
+    "*GARAGE* INTÉGRÉ"
+  ],
+  "V3-014": [
+    "DE L'ESPACE",
+    "*SANS* ESCALIER"
+  ]
+}

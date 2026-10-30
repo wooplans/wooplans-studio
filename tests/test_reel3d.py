@@ -72,3 +72,20 @@ def test_ass_events_are_valid():
 
 def test_ts_format():
     assert ts(0) == "0:00:00.00" and ts(61.5) == "0:01:01.50" and ts(-3) == "0:00:00.00"
+
+
+def test_cadeau_ad_variant():
+    import json
+    from pathlib import Path
+    from wooplans.reel3d import scenes_cadeau
+    hooks = json.loads((Path(__file__).resolve().parents[1] / "data" / "pub_cadeau.json").read_text(encoding="utf-8"))
+    by_code = {p["code"]: p for p in PLANS}
+    for code, hook in hooks.items():
+        if code.startswith("_"):
+            continue
+        p = by_code[code]
+        sc = scenes_cadeau(p, hook)
+        assert check_scenes(sc, p) == []
+        txt = " ".join(l.text for s in sc for l in s.lines)
+        assert "GRATUITEMENT" in txt and "CATALOGUE" not in txt and sc[-1].end_card
+        assert any(s.count_to == p["estimate_total"] for s in sc)

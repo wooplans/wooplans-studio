@@ -72,6 +72,31 @@ def scenes(plan: dict) -> List[Scene]:
     return out
 
 
+def scenes_cadeau(plan: dict, hook: List[str]) -> List[Scene]:
+    """Variante « pub plan et devis offert » (publicité Meta) : accroche propre au modèle, chiffres de la fiche,
+    estimation indicative, puis le cadeau ; pas de prix du catalogue, la carte finale renvoie vers la fiche."""
+    cat = plan["category"].upper()
+    lv = "DE PLAIN-PIED" if plan["levels"] == 1 else f"SUR {plan['levels']} NIVEAUX"
+    Y1, Y2 = 1260, 1415
+    out = [
+        Scene(0, 1, [Line(hook[0], y=Y1, size=128), Line(hook[1], y=Y2, size=128, delay=0.6)]),
+        Scene(1, 1, [Line(cat, y=Y1, size=140), Line(f"*{plan['bedrooms']}* CHAMBRES", y=Y2, size=136, delay=0.6)]),
+        Scene(2, 1, [Line(f"*{plan['surface']} m²*", y=Y1, size=172), Line(lv, y=Y2, size=120, delay=0.6)]),
+    ]
+    if plan.get("land_area"):
+        out.append(Scene(len(out), 1, [Line("TERRAIN MINIMUM", y=Y1, size=112), Line(f"*{plan['land_area']} m²*", y=Y2, size=168, delay=0.6)]))
+    b = len(out)
+    out += [
+        Scene(b, 1, [Line("PLAN COTÉ", y=Y1, size=140), Line("+ *DEVIS* DÉTAILLÉ", y=Y2, size=124, delay=0.6)]),
+        Scene(b + 1, 2, [Line("ESTIMATION", y=1205, size=80), Line("{n}", y=1315, size=170, delay=0.0),
+                         Line("FCFA", y=1420, size=96), Line("estimation indicative", y=1495, size=48, delay=1.3)],
+              count_to=plan["estimate_total"]),
+        Scene(b + 3, 1, [Line("RECEVEZ-LES", y=Y1, size=140), Line("*GRATUITEMENT*", y=Y2, size=140, delay=0.6)]),
+        Scene(b + 4, 1, [], end_card=True),
+    ]
+    return out
+
+
 def n_bars(sc: List[Scene]) -> int:
     return max(s.bar + s.bars for s in sc)
 
