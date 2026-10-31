@@ -1,5 +1,5 @@
 {
- "total": 60.981,
+ "total": 61.319,
  "items": [
   {
    "name": "Terrasse 1",
@@ -13,128 +13,128 @@
   {
    "name": "Salle à manger",
    "zoom": true,
-   "start": 4.35,
-   "dur": 4.245,
+   "start": 4.441,
+   "dur": 4.597,
    "arrive": 5.434,
-   "zout_start": 7.395,
-   "end": 8.595
+   "zout_start": 7.838,
+   "end": 9.038
   },
   {
    "name": "Salon",
    "zoom": true,
-   "start": 8.929,
+   "start": 9.372,
    "dur": 4.64,
-   "arrive": 9.895,
-   "zout_start": 12.37,
-   "end": 13.57
+   "arrive": 10.338,
+   "zout_start": 12.812,
+   "end": 14.012
   },
   {
    "name": "Cuisine",
    "zoom": false,
-   "start": 13.72,
+   "start": 14.162,
    "dur": 3.746,
-   "arrive": 15.673,
-   "zout_start": 16.965,
-   "end": 17.465
+   "arrive": 16.115,
+   "zout_start": 17.408,
+   "end": 17.908
   },
   {
    "name": "Magasin",
    "zoom": true,
-   "start": 17.672,
+   "start": 18.115,
    "dur": 4.138,
-   "arrive": 18.765,
-   "zout_start": 20.611,
-   "end": 21.811
+   "arrive": 19.208,
+   "zout_start": 21.053,
+   "end": 22.253
   },
   {
    "name": "Terrasse 2",
    "zoom": false,
-   "start": 22.269,
+   "start": 22.711,
    "dur": 3.063,
-   "arrive": 23.111,
-   "zout_start": 24.832,
-   "end": 25.332
+   "arrive": 23.553,
+   "zout_start": 25.275,
+   "end": 25.775
   },
   {
    "name": "Couloir",
    "zoom": false,
-   "start": 26.232,
+   "start": 26.675,
    "dur": 1.926,
-   "arrive": 26.632,
-   "zout_start": 27.658,
-   "end": 28.158
+   "arrive": 27.075,
+   "zout_start": 28.101,
+   "end": 28.601
   },
   {
    "name": "WC visiteurs",
    "zoom": false,
-   "start": 28.324,
+   "start": 28.767,
    "dur": 2.304,
-   "arrive": 29.458,
-   "zout_start": 30.158,
-   "end": 30.628
+   "arrive": 29.901,
+   "zout_start": 30.601,
+   "end": 31.071
   },
   {
    "name": "Chambre 3",
    "zoom": true,
-   "start": 30.915,
+   "start": 31.358,
    "dur": 3.89,
-   "arrive": 31.958,
-   "zout_start": 33.605,
-   "end": 34.805
+   "arrive": 32.401,
+   "zout_start": 34.048,
+   "end": 35.248
   },
   {
    "name": "SDB 2",
    "zoom": false,
-   "start": 34.955,
+   "start": 35.398,
    "dur": 4.416,
-   "arrive": 37.945,
-   "zout_start": 38.872,
-   "end": 39.372
+   "arrive": 38.388,
+   "zout_start": 39.314,
+   "end": 39.814
   },
   {
    "name": "Chambre 2",
    "zoom": false,
-   "start": 40.272,
+   "start": 40.714,
    "dur": 3.566,
-   "arrive": 40.672,
-   "zout_start": 43.337,
-   "end": 43.837
+   "arrive": 41.114,
+   "zout_start": 43.78,
+   "end": 44.28
   },
   {
    "name": "Chambre parentale",
    "zoom": true,
-   "start": 43.987,
-   "dur": 3.411,
-   "arrive": 45.376,
-   "zout_start": 46.826,
-   "end": 47.398
+   "start": 44.43,
+   "dur": 3.205,
+   "arrive": 45.714,
+   "zout_start": 47.164,
+   "end": 47.635
   },
   {
    "name": "SDB 1",
    "zoom": false,
-   "start": 48.554,
+   "start": 48.892,
    "dur": 2.502,
-   "arrive": 49.326,
-   "zout_start": 50.556,
-   "end": 51.056
+   "arrive": 49.664,
+   "zout_start": 50.894,
+   "end": 51.394
   },
   {
    "name": "Dressing",
    "zoom": true,
-   "start": 51.691,
+   "start": 52.029,
    "dur": 2.935,
-   "arrive": 52.356,
-   "zout_start": 53.806,
-   "end": 54.627
+   "arrive": 52.694,
+   "zout_start": 54.144,
+   "end": 54.964
   },
   {
    "name": "Final",
-   "start": 55.006,
+   "start": 55.344,
    "dur": 4.975,
-   "end": 59.981,
+   "end": 60.319,
    "final": true,
-   "dim1": 57.162,
-   "dim2": 58.629
+   "dim1": 57.5,
+   "dim2": 58.967
   }
  ]
 }

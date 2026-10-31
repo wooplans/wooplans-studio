@@ -10,8 +10,8 @@
   "name": "Salle à manger",
   "zoom": true,
   "prefix": "On entre dans la salle à manger,",
-  "spoken": "On entre dans la salle à manger, vingt-deux mètres carrés, avec une table pour six.",
-  "sub": "On entre dans la salle à manger, 22 m², avec une table pour six."
+  "spoken": "On entre dans la salle à manger, vingt-trois mètres carrés, avec une table pour six.",
+  "sub": "On entre dans la salle à manger, 23 m², avec une table pour six."
  },
  {
   "name": "Salon",
@@ -80,8 +80,8 @@
   "name": "Chambre parentale",
   "zoom": true,
   "prefix": "Et voici la chambre parentale,",
-  "spoken": "Et voici la chambre parentale, vingt-quatre mètres carrés.",
-  "sub": "Et voici la chambre parentale, 24 m²."
+  "spoken": "Et voici la chambre parentale, vingt-trois mètres carrés.",
+  "sub": "Et voici la chambre parentale, 23 m²."
  },
  {
   "name": "SDB 1",

@@ -101,6 +101,44 @@ def make_body_silent(job: Path) -> None:
     (work / "concat_body.txt").write_text("\n".join(lines), encoding="utf-8")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(work / "concat_body.txt"),
                     "-c", "copy", str(job / "body_silent.mp4")], check=True)
+    facade_slider(job, job / "body_silent.mp4", segs[-1]["t1"])
+
+
+SLIDE_HOLD, SLIDE_X = 4.5, 0.7          # durée d'un rendu à l'écran, durée du glissement (s)
+
+
+def facade_slider(job: Path, video: Path, total: float) -> None:
+    """Rendus 3D qui défilent à la place de la façade fixe (jobs/<id>/facades/*.png|jpg, dans l'ordre des noms) :
+    glissement vers la gauche toutes les SLIDE_HOLD s, léger zoom lent sur chaque image, en boucle jusqu'à la fin."""
+    imgs = sorted(p for p in (job / "facades").glob("*") if p.suffix.lower() in (".png", ".jpg", ".jpeg")) \
+        if (job / "facades").is_dir() else []
+    if len(imgs) < 2:
+        return
+    meta = json.loads((job / "meta.json").read_text(encoding="utf-8"))
+    h = int(round(1080 * meta.get("facade_ratio", 0.5625)))
+    n = int(total // (SLIDE_HOLD - SLIDE_X)) + 2               # assez d'images pour couvrir le corps
+    seq = [imgs[k % len(imgs)] for k in range(n)]
+    d = SLIDE_HOLD + SLIDE_X
+    inputs, fc = [], []
+    for k, p in enumerate(seq):
+        inputs += ["-loop", "1", "-framerate", "30", "-t", f"{d:.3f}", "-i", str(p)]
+        fc.append(f"[{k}:v]scale=1188:{int(h * 1.1)}:force_original_aspect_ratio=increase,crop=1188:{int(h * 1.1)},"
+                  f"zoompan=z='min(1+0.0009*on,1.1)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1080x{h}:fps=30,"
+                  f"setsar=1,format=yuv420p[i{k}]")
+    last = "i0"
+    for k in range(1, n):
+        off = k * SLIDE_HOLD
+        fc.append(f"[{last}][i{k}]xfade=transition=slideleft:duration={SLIDE_X}:offset={off:.3f}[x{k}]")
+        last = f"x{k}"
+    tmp = video.with_name("facades.mp4")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(fc), "-map", f"[{last}]",
+                    "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
+                    str(tmp)], check=True)
+    out = video.with_name("body_slider.mp4")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(tmp), "-filter_complex",
+                    "[0:v][1:v]overlay=0:0:eof_action=pass[v]", "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast",
+                    "-crf", "18", "-pix_fmt", "yuv420p", "-an", str(out)], check=True)
+    out.replace(video)
 
 
 def local(job: Path, out: Path) -> None:
