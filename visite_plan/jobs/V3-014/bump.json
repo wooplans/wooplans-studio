@@ -34,23 +34,23 @@
   "items": [
    {
     "start": 0.6,
-    "dur": 5.536
+    "dur": 5.36
    },
    {
-    "start": 6.386,
+    "start": 6.21,
     "dur": 3.729
    }
   ],
-  "total": 10.235,
+  "total": 10.059,
   "cues": {
    "sheet": 0.0,
    "lab": 0.7,
    "count0": 1.1,
-   "count1": 4.05,
+   "count1": 3.9,
    "pill": 2.3,
    "bar": 3.0,
-   "impact": 4.15,
-   "note": 6.386
+   "impact": 4.0,
+   "note": 6.21
   }
  },
  "cta": {
@@ -74,7 +74,7 @@
  },
  "tag": "VILLA V3-014",
  "chip": "3 CHAMBRES · PLAIN-PIED",
- "target": 40290020,
- "gros": 18130510,
- "fin": 22159510
+ "target": 32160000,
+ "gros": 14472000,
+ "fin": 17688000
 }
