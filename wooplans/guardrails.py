@@ -25,7 +25,7 @@ def check_copy(text: str, allowed_amounts: Iterable[int] = ()) -> List[str]:
     """Liste de problèmes (vide = OK)."""
     problems = []
     if EXPIRE.search(text):
-        problems.append("urgence interdite : dire « prix actuel : 39 000 FCFA », jamais une expiration")
+        problems.append("urgence interdite : dire « prix actuel : 29 000 FCFA », jamais une expiration")
     ok = {OFFER_PRICE_FCFA, *allowed_amounts}
     for a in amounts(text):
         if a not in ok:

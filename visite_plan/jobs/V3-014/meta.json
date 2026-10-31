@@ -1,0 +1,17 @@
+{
+ "band": "Villa V3-014  ·  3 chambres",
+ "facade_ratio": 0.5625,
+ "walls": [
+  18,
+  1213,
+  82,
+  1097
+ ],
+ "dim_depth": "14,00 m",
+ "dim_front": "16,50 m",
+ "dims_first": "front",
+ "plan_px": [
+  1228,
+  1188
+ ]
+}

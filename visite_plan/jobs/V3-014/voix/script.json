@@ -1,0 +1,108 @@
+[
+ {
+  "name": "Terrasse 1",
+  "zoom": false,
+  "prefix": "On arrive par la terrasse,",
+  "spoken": "On arrive par la terrasse, onze mètres carrés à l'avant de la maison.",
+  "sub": "On arrive par la terrasse, 11 m² à l'avant de la maison."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": true,
+  "prefix": "On entre dans la salle à manger,",
+  "spoken": "On entre dans la salle à manger, vingt-deux mètres carrés, avec une table pour six.",
+  "sub": "On entre dans la salle à manger, 22 m², avec une table pour six."
+ },
+ {
+  "name": "Salon",
+  "zoom": true,
+  "prefix": "Elle est ouverte sur le salon,",
+  "spoken": "Elle est ouverte sur le salon, trente-neuf mètres carrés : la plus grande pièce de la maison.",
+  "sub": "Elle est ouverte sur le salon, 39 m² : la plus grande pièce de la maison."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": false,
+  "prefix": "Par le couloir, on rejoint la cuisine,",
+  "spoken": "Par le couloir, on rejoint la cuisine, quinze mètres carrés.",
+  "sub": "Par le couloir, on rejoint la cuisine, 15 m²."
+ },
+ {
+  "name": "Magasin",
+  "zoom": true,
+  "prefix": "Au fond, un magasin,",
+  "spoken": "Au fond, un magasin de neuf mètres carrés, pratique pour les provisions.",
+  "sub": "Au fond, un magasin de 9 m², pratique pour les provisions."
+ },
+ {
+  "name": "Terrasse 2",
+  "zoom": false,
+  "prefix": "Et une deuxième terrasse,",
+  "spoken": "Et une deuxième terrasse, à l'arrière, côté cuisine.",
+  "sub": "Et une deuxième terrasse, à l'arrière, côté cuisine."
+ },
+ {
+  "name": "Couloir",
+  "zoom": false,
+  "prefix": "Le couloir",
+  "spoken": "Le couloir dessert toutes les chambres.",
+  "sub": "Le couloir dessert toutes les chambres."
+ },
+ {
+  "name": "WC visiteurs",
+  "zoom": false,
+  "prefix": "Au bout, une toilette",
+  "spoken": "Au bout, une toilette pour les visiteurs.",
+  "sub": "Au bout, une toilette pour les visiteurs."
+ },
+ {
+  "name": "Chambre 3",
+  "zoom": true,
+  "prefix": "Voici la chambre trois,",
+  "spoken": "Voici la chambre trois, quinze mètres carrés, avec son placard.",
+  "sub": "Voici la chambre 3, 15 m², avec son placard."
+ },
+ {
+  "name": "SDB 2",
+  "zoom": false,
+  "prefix": "Juste à côté, la salle de bain,",
+  "spoken": "Juste à côté, la salle de bain, huit mètres carrés, avec douche.",
+  "sub": "Juste à côté, la salle de bain, 8 m², avec douche."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": false,
+  "prefix": "La chambre deux",
+  "spoken": "La chambre deux fait aussi quinze mètres carrés, avec placard.",
+  "sub": "La chambre 2 fait aussi 15 m², avec placard."
+ },
+ {
+  "name": "Chambre parentale",
+  "zoom": true,
+  "prefix": "Et voici la chambre parentale,",
+  "spoken": "Et voici la chambre parentale, vingt-quatre mètres carrés.",
+  "sub": "Et voici la chambre parentale, 24 m²."
+ },
+ {
+  "name": "SDB 1",
+  "zoom": false,
+  "prefix": "Avec sa salle de bain,",
+  "spoken": "Avec sa salle de bain, baignoire et double vasque,",
+  "sub": "Avec sa salle de bain, baignoire et double vasque,"
+ },
+ {
+  "name": "Dressing",
+  "zoom": true,
+  "prefix": "et son dressing,",
+  "spoken": "et son dressing, dix mètres carrés de rangement.",
+  "sub": "et son dressing, 10 m² de rangement."
+ },
+ {
+  "name": "Final",
+  "zoom": false,
+  "prefix": "La maison fait seize mètres cinquante de façade,",
+  "prefix2": "sur quatorze mètres",
+  "spoken": "La maison fait seize mètres cinquante de façade, sur quatorze mètres de profondeur.",
+  "sub": "La maison fait 16,50 m de façade, sur 14,00 m de profondeur."
+ }
+]

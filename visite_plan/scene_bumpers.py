@@ -18,7 +18,9 @@ PANEL_CY = (PANEL_TOP + PANEL_BOTTOM) / 2
 FACADE_SLOT_Y = FRAME_H / 2 - FACADE_H / 2
 BB_H = 190 / 135.0                      # bande basse (zone masquée par les interfaces des plateformes)
 BB_Y = -FRAME_H / 2 + BB_H / 2
-PLAN_W_PX, PLAN_H_PX = 1000, 1072
+_META = JOB / "meta.json"
+PLAN_W_PX, PLAN_H_PX = (json.loads(_META.read_text(encoding="utf-8")).get("plan_px", (1000, 1072))
+                        if _META.exists() else (1000, 1072))
 U = min(FRAME_W / PLAN_W_PX, PANEL_H / PLAN_H_PX)
 OUT = getattr(m, "ease_out_cubic", m.smooth)
 OUT_BACK = getattr(m, "ease_out_back", OUT)
