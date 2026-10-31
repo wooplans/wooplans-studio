@@ -47,6 +47,6 @@ ROOMS = [
     dict(name="Dressing", label="Dressing", poly=R(122, 628, 288, 940), label_xy=(205, 752), size=20, stop=(220, 860)),
 ]
 ORDER = ["Terrasse 1", "Salle à manger", "Salon", "Cuisine", "Magasin", "Terrasse 2", "Couloir", "WC visiteurs",
-         "Chambre 3", "SDB 2", "Chambre 2", "SDB 1", "Chambre parentale", "Dressing"]
+         "Chambre 3", "SDB 2", "Chambre 2", "Chambre parentale", "SDB 1", "Dressing"]
 run_job(HERE, src, ink, ROOMS, ORDER, (706, 1078), (90, 0, 1318, 1188), wall_px=10, keep_src=True, fp_close=300,
         closures=[(625, 934, 800, 960), (940, 178, 1050, 197)])   # fenêtres de la salle à manger et de la cuisine

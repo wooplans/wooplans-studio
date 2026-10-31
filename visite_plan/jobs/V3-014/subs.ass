@@ -1,0 +1,148 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Hormozi,Poppins,76,&HFFFFFF&,&HFFFFFF&,&H595B0F&,&H80000000&,-1,0,0,0,100,100,0,0,1,9,3,8,60,60,775,1
+Style: WM,Poppins,58,&H80595B0F,&H80595B0F,&HA0FFFFFF,&HFF000000,-1,0,0,0,100,100,2,0,1,3,0,5,0,0,0,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.40,0:00:00.58,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ON
+Dialogue: 0,0:00:00.53,0:00:00.92,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ARRIVE
+Dialogue: 0,0:00:00.92,0:00:01.11,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PAR
+Dialogue: 0,0:00:01.11,0:00:01.29,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:01.24,0:00:01.82,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TERRASSE
+Dialogue: 0,0:00:01.82,0:00:02.94,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}11 m²
+Dialogue: 0,0:00:02.94,0:00:03.12,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}À
+Dialogue: 0,0:00:03.06,0:00:03.48,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}L'AVANT
+Dialogue: 0,0:00:03.48,0:00:03.66,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:03.60,0:00:03.78,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:03.72,0:00:04.35,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAISON
+Dialogue: 0,0:00:04.35,0:00:04.53,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ON
+Dialogue: 0,0:00:04.45,0:00:04.71,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ENTRE
+Dialogue: 0,0:00:04.71,0:00:04.91,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DANS
+Dialogue: 0,0:00:04.91,0:00:05.09,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:05.02,0:00:05.27,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SALLE
+Dialogue: 0,0:00:05.27,0:00:05.45,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}À
+Dialogue: 0,0:00:05.38,0:00:05.73,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MANGER
+Dialogue: 0,0:00:05.73,0:00:07.31,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}22 m²
+Dialogue: 0,0:00:07.31,0:00:07.57,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AVEC
+Dialogue: 0,0:00:07.57,0:00:07.76,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}UNE
+Dialogue: 0,0:00:07.76,0:00:08.08,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TABLE
+Dialogue: 0,0:00:08.08,0:00:08.34,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}POUR
+Dialogue: 0,0:00:08.34,0:00:08.93,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SIX
+Dialogue: 0,0:00:08.93,0:00:09.13,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ELLE
+Dialogue: 0,0:00:09.13,0:00:09.31,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}EST
+Dialogue: 0,0:00:09.28,0:00:09.64,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}OUVERTE
+Dialogue: 0,0:00:09.64,0:00:09.82,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SUR
+Dialogue: 0,0:00:09.79,0:00:09.97,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LE
+Dialogue: 0,0:00:09.89,0:00:10.20,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SALON
+Dialogue: 0,0:00:10.20,0:00:11.51,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}39 m²
+Dialogue: 0,0:00:11.51,0:00:12.16,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}
+Dialogue: 0,0:00:12.16,0:00:12.34,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:12.26,0:00:12.46,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PLUS
+Dialogue: 0,0:00:12.46,0:00:12.77,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}GRANDE
+Dialogue: 0,0:00:12.77,0:00:13.02,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PIÈCE
+Dialogue: 0,0:00:13.02,0:00:13.20,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:13.12,0:00:13.30,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:13.22,0:00:13.72,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAISON
+Dialogue: 0,0:00:13.72,0:00:13.91,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PAR
+Dialogue: 0,0:00:13.91,0:00:14.09,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LE
+Dialogue: 0,0:00:14.04,0:00:14.93,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}COULOIR
+Dialogue: 0,0:00:14.93,0:00:15.11,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ON
+Dialogue: 0,0:00:15.04,0:00:15.43,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}REJOINT
+Dialogue: 0,0:00:15.43,0:00:15.61,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:15.53,0:00:15.97,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CUISINE
+Dialogue: 0,0:00:15.97,0:00:17.67,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}15 m²
+Dialogue: 0,0:00:17.67,0:00:17.85,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AU
+Dialogue: 0,0:00:17.80,0:00:18.54,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FOND
+Dialogue: 0,0:00:18.54,0:00:18.72,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}UN
+Dialogue: 0,0:00:18.66,0:00:19.07,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAGASIN
+Dialogue: 0,0:00:19.07,0:00:19.25,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:19.18,0:00:20.57,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}9 m²
+Dialogue: 0,0:00:20.57,0:00:20.95,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PRATIQUE
+Dialogue: 0,0:00:20.95,0:00:21.14,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}POUR
+Dialogue: 0,0:00:21.14,0:00:21.32,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LES
+Dialogue: 0,0:00:21.28,0:00:21.93,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PROVISIONS
+Dialogue: 0,0:00:22.27,0:00:22.45,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ET
+Dialogue: 0,0:00:22.37,0:00:22.55,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}UNE
+Dialogue: 0,0:00:22.53,0:00:22.94,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DEUXIÈME
+Dialogue: 0,0:00:22.94,0:00:23.71,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TERRASSE
+Dialogue: 0,0:00:23.71,0:00:23.89,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}À
+Dialogue: 0,0:00:23.81,0:00:24.62,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}L'ARRIÈRE
+Dialogue: 0,0:00:24.62,0:00:24.85,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CÔTÉ
+Dialogue: 0,0:00:24.85,0:00:25.45,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CUISINE
+Dialogue: 0,0:00:26.23,0:00:26.41,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LE
+Dialogue: 0,0:00:26.34,0:00:26.74,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}COULOIR
+Dialogue: 0,0:00:26.74,0:00:27.14,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DESSERT
+Dialogue: 0,0:00:27.14,0:00:27.48,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TOUTES
+Dialogue: 0,0:00:27.48,0:00:27.66,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LES
+Dialogue: 0,0:00:27.65,0:00:28.32,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CHAMBRES
+Dialogue: 0,0:00:28.32,0:00:28.50,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AU
+Dialogue: 0,0:00:28.45,0:00:29.20,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BOUT
+Dialogue: 0,0:00:29.20,0:00:29.38,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}UNE
+Dialogue: 0,0:00:29.35,0:00:29.76,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}TOILETTE
+Dialogue: 0,0:00:29.76,0:00:29.96,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}POUR
+Dialogue: 0,0:00:29.96,0:00:30.14,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LES
+Dialogue: 0,0:00:30.12,0:00:30.91,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}VISITEURS
+Dialogue: 0,0:00:30.91,0:00:31.25,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}VOICI
+Dialogue: 0,0:00:31.25,0:00:31.43,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:31.38,0:00:31.86,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CHAMBRE
+Dialogue: 0,0:00:31.86,0:00:32.55,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}3
+Dialogue: 0,0:00:32.55,0:00:33.93,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}15 m²
+Dialogue: 0,0:00:33.93,0:00:34.16,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AVEC
+Dialogue: 0,0:00:34.16,0:00:34.34,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SON
+Dialogue: 0,0:00:34.34,0:00:34.95,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PLACARD
+Dialogue: 0,0:00:34.95,0:00:35.31,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}JUSTE
+Dialogue: 0,0:00:35.31,0:00:35.49,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}À
+Dialogue: 0,0:00:35.46,0:00:36.25,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CÔTÉ
+Dialogue: 0,0:00:36.25,0:00:36.54,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:36.54,0:00:37.25,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SALLE
+Dialogue: 0,0:00:37.25,0:00:37.53,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:37.53,0:00:38.24,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BAIN
+Dialogue: 0,0:00:38.24,0:00:39.09,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}8 m²
+Dialogue: 0,0:00:39.09,0:00:39.27,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AVEC
+Dialogue: 0,0:00:39.19,0:00:39.49,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DOUCHE
+Dialogue: 0,0:00:40.27,0:00:40.45,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:40.38,0:00:40.76,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CHAMBRE
+Dialogue: 0,0:00:40.76,0:00:40.97,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}2
+Dialogue: 0,0:00:40.97,0:00:41.19,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FAIT
+Dialogue: 0,0:00:41.19,0:00:41.46,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AUSSI
+Dialogue: 0,0:00:41.46,0:00:43.04,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}15 m²
+Dialogue: 0,0:00:43.04,0:00:43.30,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AVEC
+Dialogue: 0,0:00:43.30,0:00:43.99,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PLACARD
+Dialogue: 0,0:00:43.99,0:00:44.17,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ET
+Dialogue: 0,0:00:44.12,0:00:44.44,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}VOICI
+Dialogue: 0,0:00:44.44,0:00:44.62,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:44.57,0:00:45.03,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}CHAMBRE
+Dialogue: 0,0:00:45.03,0:00:45.68,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PARENTALE
+Dialogue: 0,0:00:45.68,0:00:47.56,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}24 m²
+Dialogue: 0,0:00:48.55,0:00:48.79,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}AVEC
+Dialogue: 0,0:00:48.79,0:00:48.97,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SA
+Dialogue: 0,0:00:48.91,0:00:49.21,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SALLE
+Dialogue: 0,0:00:49.21,0:00:49.39,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:49.33,0:00:49.63,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BAIN
+Dialogue: 0,0:00:49.63,0:00:50.16,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}BAIGNOIRE
+Dialogue: 0,0:00:50.16,0:00:50.34,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ET
+Dialogue: 0,0:00:50.28,0:00:50.64,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DOUBLE
+Dialogue: 0,0:00:50.64,0:00:51.18,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}VASQUE
+Dialogue: 0,0:00:51.69,0:00:51.87,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}ET
+Dialogue: 0,0:00:51.83,0:00:52.04,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SON
+Dialogue: 0,0:00:52.04,0:00:52.66,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DRESSING
+Dialogue: 0,0:00:52.66,0:00:53.92,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}10 m²
+Dialogue: 0,0:00:53.92,0:00:54.10,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:54.04,0:00:55.01,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}RANGEMENT
+Dialogue: 0,0:00:55.01,0:00:55.19,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}LA
+Dialogue: 0,0:00:55.14,0:00:55.53,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}MAISON
+Dialogue: 0,0:00:55.53,0:00:55.80,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FAIT
+Dialogue: 0,0:00:55.80,0:00:57.12,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}16,50 M
+Dialogue: 0,0:00:57.12,0:00:57.30,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:57.25,0:00:58.13,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}FAÇADE
+Dialogue: 0,0:00:58.13,0:00:58.32,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}SUR
+Dialogue: 0,0:00:58.32,0:00:59.18,Hormozi,,0,0,0,,{\c&H2E8AF0&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}14,00 M
+Dialogue: 0,0:00:59.18,0:00:59.36,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}DE
+Dialogue: 0,0:00:59.30,0:01:00.28,Hormozi,,0,0,0,,{\c&HFFFFFF&\fscx92\fscy92\t(0,90,\fscx100\fscy100)}PROFONDEUR

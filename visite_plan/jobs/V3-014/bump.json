@@ -1,0 +1,80 @@
+{
+ "band": "Villa V3-014  ·  3 chambres",
+ "start_pos": [
+  616.0,
+  1078.0
+ ],
+ "body_cut": 0.0,
+ "body_end": 60.981,
+ "hook": {
+  "items": [
+   {
+    "start": 0.35,
+    "dur": 2.84
+   },
+   {
+    "start": 3.64,
+    "dur": 1.842
+   }
+  ],
+  "total": 6.082,
+  "cues": {
+   "facade": 0.0,
+   "tag": 0.45,
+   "w1": 0.8,
+   "w2": 1.15,
+   "w3": 1.95,
+   "chip": 2.75,
+   "pulse": 3.15,
+   "trans": 3.54,
+   "dot": 4.39
+  }
+ },
+ "estim": {
+  "items": [
+   {
+    "start": 0.6,
+    "dur": 5.36
+   },
+   {
+    "start": 6.21,
+    "dur": 3.729
+   }
+  ],
+  "total": 10.059,
+  "cues": {
+   "sheet": 0.0,
+   "lab": 0.7,
+   "count0": 1.1,
+   "count1": 3.9,
+   "pill": 2.3,
+   "bar": 3.0,
+   "impact": 4.0,
+   "note": 6.21
+  }
+ },
+ "cta": {
+  "items": [
+   {
+    "start": 0.2,
+    "dur": 1.819
+   }
+  ],
+  "total": 4.05,
+  "cues": {
+   "logo": 0.0,
+   "button": 0.1,
+   "cursor": 0.75,
+   "tap": 1.3,
+   "bar": 1.75,
+   "s1": 1.95,
+   "s2": 2.3,
+   "url": 2.75
+  }
+ },
+ "tag": "VILLA V3-014",
+ "chip": "3 CHAMBRES · PLAIN-PIED",
+ "target": 32160000,
+ "gros": 14472000,
+ "fin": 17688000
+}

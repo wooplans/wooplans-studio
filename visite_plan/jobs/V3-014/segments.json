@@ -1,0 +1,112 @@
+[
+ {
+  "rooms": [
+   "Terrasse 1",
+   "Salle à manger"
+  ],
+  "t0": 0.0,
+  "t1": 8.595,
+  "start_pos": [
+   616.0,
+   1078.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Salon",
+   "Cuisine"
+  ],
+  "t0": 8.595,
+  "t1": 17.465,
+  "start_pos": [
+   669.0,
+   879.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Magasin",
+   "Terrasse 2"
+  ],
+  "t0": 17.465,
+  "t1": 25.332,
+  "start_pos": [
+   849.0,
+   378.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Couloir",
+   "WC visiteurs"
+  ],
+  "t0": 25.332,
+  "t1": 30.658,
+  "start_pos": [
+   768.0,
+   135.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Chambre 3",
+   "SDB 2"
+  ],
+  "t0": 30.658,
+  "t1": 39.372,
+  "start_pos": [
+   1098.0,
+   504.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "Chambre 2",
+   "Chambre parentale"
+  ],
+  "t0": 39.372,
+  "t1": 48.026,
+  "start_pos": [
+   408.0,
+   318.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [
+   "SDB 1",
+   "Dressing"
+  ],
+  "t0": 48.026,
+  "t1": 55.006,
+  "start_pos": [
+   330.0,
+   819.0
+  ],
+  "final": false,
+  "level": 0
+ },
+ {
+  "rooms": [],
+  "t0": 55.006,
+  "t1": 60.981,
+  "start_pos": [
+   129.0,
+   858.0
+  ],
+  "final": true,
+  "level": 0,
+  "cta": false
+ }
+]

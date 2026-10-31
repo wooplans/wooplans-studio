@@ -1,0 +1,140 @@
+{
+ "total": 60.981,
+ "items": [
+  {
+   "name": "Terrasse 1",
+   "zoom": false,
+   "start": 0.4,
+   "dur": 3.734,
+   "arrive": 1.52,
+   "zout_start": 3.634,
+   "end": 4.134
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": true,
+   "start": 4.35,
+   "dur": 4.245,
+   "arrive": 5.434,
+   "zout_start": 7.395,
+   "end": 8.595
+  },
+  {
+   "name": "Salon",
+   "zoom": true,
+   "start": 8.929,
+   "dur": 4.64,
+   "arrive": 9.895,
+   "zout_start": 12.37,
+   "end": 13.57
+  },
+  {
+   "name": "Cuisine",
+   "zoom": false,
+   "start": 13.72,
+   "dur": 3.746,
+   "arrive": 15.673,
+   "zout_start": 16.965,
+   "end": 17.465
+  },
+  {
+   "name": "Magasin",
+   "zoom": true,
+   "start": 17.672,
+   "dur": 4.138,
+   "arrive": 18.765,
+   "zout_start": 20.611,
+   "end": 21.811
+  },
+  {
+   "name": "Terrasse 2",
+   "zoom": false,
+   "start": 22.269,
+   "dur": 3.063,
+   "arrive": 23.111,
+   "zout_start": 24.832,
+   "end": 25.332
+  },
+  {
+   "name": "Couloir",
+   "zoom": false,
+   "start": 26.232,
+   "dur": 1.926,
+   "arrive": 26.632,
+   "zout_start": 27.658,
+   "end": 28.158
+  },
+  {
+   "name": "WC visiteurs",
+   "zoom": false,
+   "start": 28.324,
+   "dur": 2.304,
+   "arrive": 29.458,
+   "zout_start": 30.158,
+   "end": 30.628
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": true,
+   "start": 30.915,
+   "dur": 3.89,
+   "arrive": 31.958,
+   "zout_start": 33.605,
+   "end": 34.805
+  },
+  {
+   "name": "SDB 2",
+   "zoom": false,
+   "start": 34.955,
+   "dur": 4.416,
+   "arrive": 37.945,
+   "zout_start": 38.872,
+   "end": 39.372
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": false,
+   "start": 40.272,
+   "dur": 3.566,
+   "arrive": 40.672,
+   "zout_start": 43.337,
+   "end": 43.837
+  },
+  {
+   "name": "Chambre parentale",
+   "zoom": true,
+   "start": 43.987,
+   "dur": 3.411,
+   "arrive": 45.376,
+   "zout_start": 46.826,
+   "end": 47.398
+  },
+  {
+   "name": "SDB 1",
+   "zoom": false,
+   "start": 48.554,
+   "dur": 2.502,
+   "arrive": 49.326,
+   "zout_start": 50.556,
+   "end": 51.056
+  },
+  {
+   "name": "Dressing",
+   "zoom": true,
+   "start": 51.691,
+   "dur": 2.935,
+   "arrive": 52.356,
+   "zout_start": 53.806,
+   "end": 54.627
+  },
+  {
+   "name": "Final",
+   "start": 55.006,
+   "dur": 4.975,
+   "end": 59.981,
+   "final": true,
+   "dim1": 57.162,
+   "dim2": 58.629
+  }
+ ]
+}
