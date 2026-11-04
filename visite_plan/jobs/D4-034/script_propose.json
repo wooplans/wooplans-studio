@@ -1,0 +1,79 @@
+[
+ {
+  "name": "Terrasse 1",
+  "zoom": false,
+  "prefix": "On arrive par la terrasse,",
+  "spoken": "On arrive par la terrasse, d'environ 6 m².",
+  "sub": "On arrive par la terrasse, d'environ 6 m²."
+ },
+ {
+  "name": "Salon",
+  "zoom": true,
+  "prefix": "Voici le salon,",
+  "spoken": "Voici le salon, d'environ 21 m², bien lumineux.",
+  "sub": "Voici le salon, d'environ 21 m², bien lumineux."
+ },
+ {
+  "name": "Entrée",
+  "zoom": false,
+  "prefix": "Au centre, l'entrée,",
+  "spoken": "Au centre, l'entrée, qui distribue le rez-de-chaussée.",
+  "sub": "Au centre, l'entrée, qui distribue le rez-de-chaussée."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "À côté, la salle à manger,",
+  "spoken": "À côté, la salle à manger, d'environ 10 m².",
+  "sub": "À côté, la salle à manger, d'environ 10 m²."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "La cuisine,",
+  "spoken": "La cuisine, d'environ 10 m², avec sa terrasse de service.",
+  "sub": "La cuisine, d'environ 10 m², avec sa terrasse de service."
+ },
+ {
+  "name": "Chambre V.",
+  "zoom": false,
+  "prefix": "Au rez-de-chaussée, une chambre d'amis,",
+  "spoken": "Au rez-de-chaussée, une chambre d'amis, avec sa salle d'eau.",
+  "sub": "Au rez-de-chaussée, une chambre d'amis, avec sa salle d'eau."
+ },
+ {
+  "name": "Escalier / Hall",
+  "zoom": false,
+  "prefix": "On monte à l'étage, le hall,",
+  "spoken": "On monte à l'étage, le hall, qui dessert les chambres.",
+  "sub": "On monte à l'étage, le hall, qui dessert les chambres."
+ },
+ {
+  "name": "Chambre 3",
+  "zoom": true,
+  "prefix": "La chambre trois,",
+  "spoken": "La chambre trois, d'environ 12 m².",
+  "sub": "La chambre trois, d'environ 12 m²."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": false,
+  "prefix": "La chambre deux,",
+  "spoken": "La chambre deux, d'environ 13 m², à côté d'une salle de bain.",
+  "sub": "La chambre deux, d'environ 13 m², à côté d'une salle de bain."
+ },
+ {
+  "name": "Chambre 1",
+  "zoom": true,
+  "prefix": "La chambre parentale,",
+  "spoken": "La chambre parentale, d'environ 18 m², avec sa salle de bain et un grand dressing.",
+  "sub": "La chambre parentale, d'environ 18 m², avec sa salle de bain et un grand dressing."
+ },
+ {
+  "name": "Terrasse étage",
+  "zoom": false,
+  "prefix": "Et pour finir, la terrasse de l'étage,",
+  "spoken": "Et pour finir, la terrasse de l'étage, d'environ 7 m².",
+  "sub": "Et pour finir, la terrasse de l'étage, d'environ 7 m²."
+ }
+]
