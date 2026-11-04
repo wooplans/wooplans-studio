@@ -29,7 +29,7 @@ LEVELS = {
                 dict(name="Chambre V.", label="Chambre V.", poly=[(135, 610), (442, 610), (442, 915), (365, 915), (365, 865), (205, 865), (205, 915), (135, 915)],
                      label_xy=(300, 650), size=20, stop=(350, 760)),
             ]),
-    1: dict(file="poyo_etage.png", out="plan_etage.png", start=(500, 420), order=["Hall", "Chambre 3", "Chambre 2", "Chambre 1", "Terrasse étage"],
+    1: dict(file="poyo_etage.png", out="plan_etage.png", start=(470, 470), order=["Hall", "Chambre 3", "Chambre 2", "Chambre 1", "Terrasse étage"],
             rooms=[
                 dict(name="Hall", label="Hall", poly=R(405, 325, 600, 505), label_xy=(502, 440), size=22, stop=(500, 420)),
                 dict(name="Chambre 3", label="Chambre 3", poly=R(80, 100, 480, 320), label_xy=(135, 285), size=18, stop=(300, 310)),
