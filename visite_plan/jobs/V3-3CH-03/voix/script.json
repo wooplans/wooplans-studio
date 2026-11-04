@@ -1,0 +1,85 @@
+[
+ {
+  "name": "Porche d'entrée",
+  "zoom": false,
+  "prefix": "On arrive par le porche d'entrée,",
+  "spoken": "On arrive par le porche d'entrée, qui ouvre sur le séjour.",
+  "sub": "On arrive par le porche d'entrée, qui ouvre sur le séjour."
+ },
+ {
+  "name": "Séjour",
+  "zoom": true,
+  "prefix": "On entre dans un grand séjour,",
+  "spoken": "On entre dans un grand séjour, avec plusieurs canapés et un meuble télé.",
+  "sub": "On entre dans un grand séjour, avec plusieurs canapés et un meuble télé."
+ },
+ {
+  "name": "Salle à manger",
+  "zoom": false,
+  "prefix": "Juste à côté, la salle à manger,",
+  "spoken": "Juste à côté, la salle à manger, avec une grande table.",
+  "sub": "Juste à côté, la salle à manger, avec une grande table."
+ },
+ {
+  "name": "Cuisine",
+  "zoom": true,
+  "prefix": "Puis la cuisine,",
+  "spoken": "Puis la cuisine, avec son plan de travail en L.",
+  "sub": "Puis la cuisine, avec son plan de travail en L."
+ },
+ {
+  "name": "Terrasse",
+  "zoom": false,
+  "prefix": "Une porte donne sur la terrasse,",
+  "spoken": "Une porte donne sur la terrasse, pour prendre l'air.",
+  "sub": "Une porte donne sur la terrasse, pour prendre l'air."
+ },
+ {
+  "name": "Hall",
+  "zoom": false,
+  "prefix": "Retour par le hall,",
+  "spoken": "Retour par le hall, qui dessert les chambres.",
+  "sub": "Retour par le hall, qui dessert les chambres."
+ },
+ {
+  "name": "SDB 1",
+  "zoom": true,
+  "prefix": "Une salle de bain,",
+  "spoken": "Une salle de bain, avec baignoire, juste à côté.",
+  "sub": "Une salle de bain, avec baignoire, juste à côté."
+ },
+ {
+  "name": "Chambre 1",
+  "zoom": false,
+  "prefix": "La première chambre,",
+  "spoken": "La première chambre, avec son placard.",
+  "sub": "La première chambre, avec son placard."
+ },
+ {
+  "name": "Chambre 2",
+  "zoom": true,
+  "prefix": "En face, la deuxième chambre,",
+  "spoken": "En face, la deuxième chambre, avec son placard aussi.",
+  "sub": "En face, la deuxième chambre, avec son placard aussi."
+ },
+ {
+  "name": "SDB 2",
+  "zoom": false,
+  "prefix": "Entre les deux, une salle de bain,",
+  "spoken": "Entre les deux, une salle de bain, avec toilette et lavabo.",
+  "sub": "Entre les deux, une salle de bain, avec toilette et lavabo."
+ },
+ {
+  "name": "Chambre parentale",
+  "zoom": true,
+  "prefix": "Enfin, la chambre parentale,",
+  "spoken": "Enfin, la chambre parentale, avec dressing et salle de bain privée.",
+  "sub": "Enfin, la chambre parentale, avec dressing et salle de bain privée."
+ },
+ {
+  "name": "CTA",
+  "prefix": "Envie",
+  "spoken": "Envie de découvrir d'autres plans ? Rendez-vous sur wooplans point com !",
+  "sub": ""
+ }
+]
