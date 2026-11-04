@@ -31,11 +31,26 @@ def words_of(text, d, ps):
             out.append((toks[k], round(t0 + (a - t0) * acc / s, 3), round(t0 + (a - t0) * (acc + x) / s, 3))); acc += x
         i0, t0 = i + 1, b
     return out
+def words_chunks(i, d, spoken):
+    """Mots calés d'après les repères Gradium (voix/raw/NN.chunks.json, décalés du début rogné dans voix/raw/NN.off) ; None si inutilisable."""
+    import os
+    fc = f"voix/raw/{i:02d}.chunks.json"
+    if not os.path.exists(fc): return None
+    off = float(open(f"voix/raw/{i:02d}.off").read()) if os.path.exists(f"voix/raw/{i:02d}.off") else 0.0
+    out = []
+    for c in json.load(open(fc, encoding="utf-8")):
+        toks = c["text"].replace(" :", ":").split()
+        if not toks: continue
+        tot = sum(len(t) + 1 for t in toks); t0 = c["start_s"] - off; span = c["stop_s"] - c["start_s"]; acc = 0
+        for t in toks:
+            a = t0 + span * acc / tot; acc += len(t) + 1
+            out.append((t, round(max(0.0, a), 3), round(min(d, t0 + span * acc / tot), 3)))
+    return out if len(out) == len(spoken.replace(" :", ":").split()) else None
 GAP, MIN_TRANSIT, NAME_BACK = 0.15, 1.3, 0.3
 words, items, S_prev_end, T_free = {}, [], 0.0, 0.0
 for i, s in enumerate(segs, 1):
     f = f"voix/sync/{i:02d}.wav"; d = dur(f)
-    ws = words_of(s["spoken"], d, pauses(f)); words[s["name"]] = ws
+    ws = words_chunks(i, d, s["spoken"]) or words_of(s["spoken"], d, pauses(f)); words[s["name"]] = ws
     np_ = len(s["prefix"].replace(" :", ":").split())
     p = ws[np_ - 1][2]                    # fin du préfixe (nom de la pièce)
     if s["name"] == "CTA":                                      # séquence CTA : enchaîne dès la fin du dernier zoom arrière

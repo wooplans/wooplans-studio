@@ -3,14 +3,14 @@
   "name": "Terrasse 1",
   "zoom": false,
   "prefix": "On arrive par la terrasse,",
-  "spoken": "On arrive par la terrasse, d'environ 6 m².",
+  "spoken": "On arrive par la terrasse, d'environ 6 mètres carrés.",
   "sub": "On arrive par la terrasse, d'environ 6 m²."
  },
  {
   "name": "Salon",
   "zoom": true,
   "prefix": "Voici le salon,",
-  "spoken": "Voici le salon, d'environ 21 m², bien lumineux.",
+  "spoken": "Voici le salon, d'environ 21 mètres carrés, bien lumineux.",
   "sub": "Voici le salon, d'environ 21 m², bien lumineux."
  },
  {
@@ -24,21 +24,21 @@
   "name": "Salle à manger",
   "zoom": false,
   "prefix": "À côté, la salle à manger,",
-  "spoken": "À côté, la salle à manger, d'environ 10 m².",
+  "spoken": "À côté, la salle à manger, d'environ 10 mètres carrés.",
   "sub": "À côté, la salle à manger, d'environ 10 m²."
  },
  {
   "name": "Cuisine",
   "zoom": true,
   "prefix": "La cuisine,",
-  "spoken": "La cuisine, d'environ 10 m², avec sa terrasse de service.",
+  "spoken": "La cuisine, d'environ 10 mètres carrés, avec sa terrasse de service.",
   "sub": "La cuisine, d'environ 10 m², avec sa terrasse de service."
  },
  {
   "name": "Chambre V.",
   "zoom": false,
   "prefix": "Au rez-de-chaussée, une chambre d'amis,",
-  "spoken": "Au rez-de-chaussée, une chambre d'amis, d'environ 11 m².",
+  "spoken": "Au rez-de-chaussée, une chambre d'amis, d'environ 11 mètres carrés.",
   "sub": "Au rez-de-chaussée, une chambre d'amis, d'environ 11 m²."
  },
  {
@@ -51,7 +51,7 @@
  {
   "name": "Hall",
   "zoom": false,
-  "prefix": "où le hall,",
+  "prefix": "où le hall",
   "spoken": "où le hall dessert toutes les chambres.",
   "sub": "où le hall dessert toutes les chambres."
  },
@@ -59,28 +59,35 @@
   "name": "Chambre 3",
   "zoom": true,
   "prefix": "La chambre trois,",
-  "spoken": "La chambre trois, d'environ 12 m².",
+  "spoken": "La chambre trois, d'environ 12 mètres carrés.",
   "sub": "La chambre trois, d'environ 12 m²."
  },
  {
   "name": "Chambre 2",
   "zoom": false,
   "prefix": "La chambre deux,",
-  "spoken": "La chambre deux, d'environ 13 m², à côté d'une salle de bain.",
+  "spoken": "La chambre deux, d'environ 13 mètres carrés, à côté d'une salle de bain.",
   "sub": "La chambre deux, d'environ 13 m², à côté d'une salle de bain."
  },
  {
   "name": "Chambre 1",
   "zoom": true,
   "prefix": "La chambre parentale,",
-  "spoken": "La chambre parentale, d'environ 18 m², avec sa salle de bain et un grand dressing.",
+  "spoken": "La chambre parentale, d'environ 18 mètres carrés, avec sa salle de bain et un grand dressing.",
   "sub": "La chambre parentale, d'environ 18 m², avec sa salle de bain et un grand dressing."
  },
  {
   "name": "Terrasse étage",
   "zoom": false,
   "prefix": "Et pour finir, la terrasse de l'étage,",
-  "spoken": "Et pour finir, la terrasse de l'étage, d'environ 7 m².",
+  "spoken": "Et pour finir, la terrasse de l'étage, d'environ 7 mètres carrés.",
   "sub": "Et pour finir, la terrasse de l'étage, d'environ 7 m²."
+ },
+ {
+  "name": "Final",
+  "prefix": "Au total, dix mètres de profondeur,",
+  "prefix2": "sur neuf mètres de façade.",
+  "spoken": "Au total, dix mètres de profondeur, sur neuf mètres de façade.",
+  "sub": "Au total, dix mètres de profondeur, sur neuf mètres de façade."
  }
 ]

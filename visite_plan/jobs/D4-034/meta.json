@@ -1,9 +1,18 @@
 {
  "band": "Duplex D4-034  ·  4 chambres",
- "facade": false,
+ "facade": true,
  "plan_px": [
-  1490,
-  1680
+  900,
+  970
  ],
- "bottom_px": 440
+ "bottom_px": 440,
+ "facade_ratio": 0.5625,
+ "walls": [
+  65,
+  840,
+  30,
+  875
+ ],
+ "dim_depth": "10 m",
+ "dim_front": "9 m"
 }

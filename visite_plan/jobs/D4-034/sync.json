@@ -1,0 +1,122 @@
+{
+ "total": 59.704,
+ "items": [
+  {
+   "name": "Terrasse 1",
+   "zoom": false,
+   "start": 0.4,
+   "dur": 3.48,
+   "arrive": 1.817,
+   "zout_start": 3.38,
+   "end": 3.88
+  },
+  {
+   "name": "Salon",
+   "zoom": true,
+   "start": 4.342,
+   "dur": 4.6,
+   "arrive": 5.18,
+   "zout_start": 7.742,
+   "end": 8.942
+  },
+  {
+   "name": "Entrée",
+   "zoom": false,
+   "start": 9.092,
+   "dur": 3.64,
+   "arrive": 10.251,
+   "zout_start": 12.232,
+   "end": 12.732
+  },
+  {
+   "name": "Salle à manger",
+   "zoom": false,
+   "start": 12.882,
+   "dur": 3.96,
+   "arrive": 14.567,
+   "zout_start": 16.342,
+   "end": 16.842
+  },
+  {
+   "name": "Cuisine",
+   "zoom": true,
+   "start": 17.742,
+   "dur": 4.76,
+   "arrive": 18.142,
+   "zout_start": 21.302,
+   "end": 22.502
+  },
+  {
+   "name": "Chambre V.",
+   "zoom": false,
+   "start": 22.652,
+   "dur": 4.68,
+   "arrive": 25.152,
+   "zout_start": 26.832,
+   "end": 27.332
+  },
+  {
+   "name": "Escalier",
+   "zoom": false,
+   "start": 27.482,
+   "dur": 1.579,
+   "arrive": 28.641,
+   "zout_start": 29.341,
+   "end": 29.061
+  },
+  {
+   "name": "Hall",
+   "zoom": false,
+   "start": 30.741,
+   "dur": 2.309,
+   "arrive": 31.141,
+   "zout_start": 32.55,
+   "end": 33.05
+  },
+  {
+   "name": "Chambre 3",
+   "zoom": true,
+   "start": 33.437,
+   "dur": 3.32,
+   "arrive": 34.35,
+   "zout_start": 35.8,
+   "end": 36.757
+  },
+  {
+   "name": "Chambre 2",
+   "zoom": false,
+   "start": 37.534,
+   "dur": 4.84,
+   "arrive": 38.3,
+   "zout_start": 41.874,
+   "end": 42.374
+  },
+  {
+   "name": "Chambre 1",
+   "zoom": true,
+   "start": 42.524,
+   "dur": 6.52,
+   "arrive": 43.883,
+   "zout_start": 47.844,
+   "end": 49.044
+  },
+  {
+   "name": "Terrasse étage",
+   "zoom": false,
+   "start": 49.194,
+   "dur": 4.76,
+   "arrive": 51.694,
+   "zout_start": 53.454,
+   "end": 53.954
+  },
+  {
+   "name": "Final",
+   "start": 54.104,
+   "dur": 4.6,
+   "end": 58.704,
+   "final": true,
+   "dim1": 56.046,
+   "dim2": 58.034
+  }
+ ]
+}
