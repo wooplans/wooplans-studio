@@ -8,7 +8,8 @@ Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun c
 - Lien du catalogue dans toutes les publications : https://wooplans.com/catalogue-premium (avec UTM : `wooplans/utm.py`). Jamais cpbook.wooplans.com. Adresse affichée dans les vidéos : wooplans.com.
 - Rien n'est programmé sans l'accord de Tao. Il relit la voix off et les scripts du format B avant GitHub. Une vignette est créée avant tout post (`tools/make_thumbnail.py`).
 - Clés API uniquement dans .env / secrets GitHub. Avant tout commit : `python tools/secret_scan.py` (« Aucune fuite »).
-- Voix : présentations avec 3D = ElevenLabs « John Mala » (MLsC4mBTBgYmNigbHkou, eleven_v4, décision de Tao du 14 oct.) ; visites sans 3D = « Diba » (CHivAFig5q0FuNMEEmFi, validée le 18 oct. tant que LeTao est refusée par l'abonnement) ; « LeTao » = voix de Tao. Aucune nouvelle voix perso (limite 10). Images : Poyo gpt-image 2.5, low, 1K.
+- **Voix off : Gradium** (décision de Tao du 4 nov. 2026, ElevenLabs n'ayant plus de quota) : `python tools/gradium_tts.py "texte" prefixe` (voix `TsRKBRWZGYldAeEI`, clé `GRADIUM_API_KEY`) → WAV + repères de mots (`.chunks.json`, sans Whisper). À utiliser pour toutes les voix off tant que Tao ne dit pas le contraire.
+- Anciennes voix ElevenLabs (historique) : présentations avec 3D = ElevenLabs « John Mala » (MLsC4mBTBgYmNigbHkou, eleven_v4, décision de Tao du 14 oct.) ; visites sans 3D = « Diba » (CHivAFig5q0FuNMEEmFi, validée le 18 oct. tant que LeTao est refusée par l'abonnement) ; « LeTao » = voix de Tao. Aucune nouvelle voix perso (limite 10). Images : Poyo gpt-image 2.5, low, 1K.
 - Filigranes anti-piratage : 2 logos semi-transparents qui se promènent en continu, du début à la fin (décision du 16 oct.).
 - Réponses à Tao en français, concises.
 
