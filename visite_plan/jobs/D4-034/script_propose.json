@@ -38,15 +38,22 @@
   "name": "Chambre V.",
   "zoom": false,
   "prefix": "Au rez-de-chaussée, une chambre d'amis,",
-  "spoken": "Au rez-de-chaussée, une chambre d'amis, avec sa salle d'eau.",
-  "sub": "Au rez-de-chaussée, une chambre d'amis, avec sa salle d'eau."
+  "spoken": "Au rez-de-chaussée, une chambre d'amis, d'environ 11 m².",
+  "sub": "Au rez-de-chaussée, une chambre d'amis, d'environ 11 m²."
  },
  {
-  "name": "Escalier / Hall",
+  "name": "Escalier",
   "zoom": false,
-  "prefix": "On monte à l'étage, le hall,",
-  "spoken": "On monte à l'étage, le hall, qui dessert les chambres.",
-  "sub": "On monte à l'étage, le hall, qui dessert les chambres."
+  "prefix": "Un escalier mène à l'étage,",
+  "spoken": "Un escalier mène à l'étage,",
+  "sub": "Un escalier mène à l'étage,"
+ },
+ {
+  "name": "Hall",
+  "zoom": false,
+  "prefix": "où le hall,",
+  "spoken": "où le hall dessert toutes les chambres.",
+  "sub": "où le hall dessert toutes les chambres."
  },
  {
   "name": "Chambre 3",
