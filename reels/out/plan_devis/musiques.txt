@@ -51,3 +51,5 @@ D4-043 estimation C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3
 V3-037 estimation D_Stay-With-Me_Michael-Ramir-C_mixkit-838.mp3
 V4-005 estimation B_Piano-Reflections_Ahjay-Stelino_mixkit-22.mp3
 V4-036 estimation Let-s-Play-Africa_Michael-Ramir-C_mixkit-x.mp3
+V3-014 estimation Africa_Arulo_mixkit-218.mp3
+V3-017 estimation Banjo-Man-in-Africa_Michael-Ramir-C_mixkit-x.mp3
