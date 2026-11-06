@@ -59,7 +59,7 @@ def test_french_agreement():
 
 
 def test_terrain_template_skipped_without_land():
-    p = next(p for p in PLANS if not p["land_area"])
+    p = dict(PLANS[0], land_area=None)                  # le site renseigne tous les terrains : cas fabriqué
     assert all(caption(p, i)[0] != "terrain" for i in range(len(TEMPLATES)))
 
 
