@@ -76,6 +76,13 @@ def end_card_png(path: Path, offer: str = "catalogue"):
         d.text(((W - d.textlength(text, font=fnt)) / 2, y), text, font=fnt, fill=fill)
 
     t = end_card_texts(offer)
+    if offer == "plan_devis":                      # carte épurée : 3 lignes (logo, promesse, prix, adresse)
+        centered(t[0], 900, 84, "white")
+        d.rounded_rectangle((170, 1090, W - 170, 1270), radius=90, fill=(240, 138, 46, 255))
+        centered(t[1], 1120, 104, "white")
+        centered(t[2], 1345, 64, "white")
+        im.save(path)
+        return
     centered(t[0], 880, 78, "white")
     centered(t[1], 975, 78, "white")
     d.rounded_rectangle((150, 1130, W - 150, 1290), radius=80, fill=(240, 138, 46, 255))
@@ -107,8 +114,7 @@ def make_cover(plan: dict, facade: Path, tmp: Path, offer: str = "catalogue") ->
 
 def end_card_texts(offer: str = "catalogue"):
     if offer == "plan_devis":
-        return ["Plan avec dimensions", "+ devis détaillé", "wooplans.com", f"Plan et devis : {fcfa(PLAN_DEVIS_PRICE_FCFA)} FCFA",
-                "Téléchargement instantané", "Appuyez sur « Télécharger »"]
+        return ["Plan + devis détaillé", f"{fcfa(PLAN_DEVIS_PRICE_FCFA)} FCFA", "wooplans.com"]
     return ["Plan complet", "+ devis détaillé", "wooplans.com", "Catalogue Premium",
             f"prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA", "Lien en description"]
 

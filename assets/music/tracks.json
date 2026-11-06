@@ -34,5 +34,23 @@
   "max_drift_s": 0.027,
   "window_s": 26.0,
   "best_start": 31.479
+ },
+ "B_Piano-Reflections_Ahjay-Stelino_mixkit-22.mp3": {
+  "file": "B_Piano-Reflections_Ahjay-Stelino_mixkit-22.mp3",
+  "duration": 198.86,
+  "beat_interval": 0.5147,
+  "bpm": 116.6,
+  "max_drift_s": 0.25,
+  "window_s": 26.0,
+  "best_start": 108.324
+ },
+ "D_Stay-With-Me_Michael-Ramir-C_mixkit-838.mp3": {
+  "file": "D_Stay-With-Me_Michael-Ramir-C_mixkit-838.mp3",
+  "duration": 127.5,
+  "beat_interval": 0.5065,
+  "bpm": 118.5,
+  "max_drift_s": 0.256,
+  "window_s": 26.0,
+  "best_start": 67.125
  }
 }
