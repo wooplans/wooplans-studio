@@ -109,7 +109,14 @@ def test_plan_devis_variants_same_facts_and_guardrails():
         for p in PLANS:
             sc = scenes(p, "plan_devis", v)
             txt = " ".join(l.text for s in sc for l in s.lines)
-            assert "TERRAIN PRÉVU" not in txt and "{n}" not in txt and "CATALOGUE" not in txt
+            assert "TERRAIN PRÉVU" not in txt and "CATALOGUE" not in txt
+            assert ("{n}" in txt) == (v == "estimation")
             assert fcfa(PLAN_DEVIS_PRICE_FCFA) in txt and str(p["surface"]) in txt and f"*{p['bedrooms']}*" in txt
             assert sc[-1].end_card and check_scenes(sc, p) == []
-            assert [s.bar for s in sc] == list(range(len(sc)))
+            assert all(a.bar + a.bars == b.bar for a, b in zip(sc, sc[1:]))      # mesures enchaînées sans trou
+
+
+def test_estimation_variant_counts_to_site_estimate():
+    for p in PLANS:
+        sc = scenes(p, "plan_devis", "estimation")
+        assert [s.count_to for s in sc if s.count_to] == [p["estimate_total"]]

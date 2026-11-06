@@ -14,7 +14,7 @@ from wooplans.guardrails import check_copy
 from wooplans.settings import OFFER_PRICE_FCFA, PLAN_DEVIS_PRICE_FCFA
 
 OFFERS = ("catalogue", "plan_devis")
-VARIANTS = ("budget", "terrain", "erreur", "contenu")      # accroches de l'offre plan_devis
+VARIANTS = ("budget", "terrain", "erreur", "contenu", "estimation")      # accroches de l'offre plan_devis
 
 W, H = 1080, 1920
 FPS = 30
@@ -83,8 +83,9 @@ def scenes(plan: dict, offer: str = "catalogue", variant: str = "budget") -> Lis
 
 
 def _scenes_plan_devis(plan: dict, variant: str = "budget") -> List[Scene]:
-    """4 accroches pour la même offre : budget (« combien ? »), terrain, erreur à éviter, contenu détaillé.
-    Mêmes faits partout (type, chambres, surface, prix de l'offre) ; aucun terrain ni estimation."""
+    """5 accroches pour la même offre : budget (« combien ? »), terrain, erreur à éviter, contenu détaillé,
+    estimation (montant du site qui s'incrémente). Mêmes faits partout (type, chambres, surface, prix de l'offre) ;
+    seule « estimation » montre un montant de construction (estimate_total, référence : le site)."""
     if variant not in VARIANTS:
         raise ValueError(f"variante inconnue : {variant}")
     cat = plan["category"].upper()
@@ -106,9 +107,20 @@ def _scenes_plan_devis(plan: dict, variant: str = "budget") -> List[Scene]:
         "contenu": [two("CE QUE VOUS", "*RECEVEZ*", 130, 160), two(ce, f"*{plan['bedrooms']}* CHAMBRES · {plan['surface']} m²", 130, 108),
                     two("1. PLAN AVEC", "LES *DIMENSIONS*", 130, 124), two("2. *DEVIS* DÉTAILLÉ", "POSTE PAR POSTE", 112, 118),
                     two("3. UN *ARCHITECTE*", "SUR WHATSAPP", 112, 124), price],
-    }[variant]
-    out = [Scene(i, 1, lines) for i, lines in enumerate(body)]
-    out.append(Scene(len(out), 1, [], end_card=True))
+    }.get(variant)
+    if variant == "estimation":
+        est = Scene(0, 2, [Line("ESTIMATION", y=1205, size=80), Line("{n}", y=1315, size=170, delay=0.0),
+                           Line("FCFA", y=1420, size=96), Line("estimation indicative", y=1495, size=48, delay=1.3)],
+                    count_to=plan["estimate_total"])
+        body = [two("CETTE MAISON", "COÛTE *COMBIEN* ?"), model, surface, two("ET LE *BUDGET*", "POUR CONSTRUIRE ?", 136, 122),
+                est, two("LE *DÉTAIL* POSTE", "PAR POSTE ?", 120, 130), price]
+    out, bar = [], 0
+    for item in body:
+        sc = item if isinstance(item, Scene) else Scene(0, 1, item)
+        sc.bar = bar
+        out.append(sc)
+        bar += sc.bars
+    out.append(Scene(bar, 1, [], end_card=True))
     return out
 
 

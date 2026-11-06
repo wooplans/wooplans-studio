@@ -1,6 +1,6 @@
 """Reel « rendus 3D » d'un plan du catalogue : musique de fond + sous-titres animés, sans voix off.
 
-  python tools/make_reel.py D4-026 sortie.mp4 [--music assets/music/<fichier>.mp3] [--keep dossier_de_travail] [--offre plan_devis [--variante budget|terrain|erreur|contenu]]
+  python tools/make_reel.py D4-026 sortie.mp4 [--music assets/music/<fichier>.mp3] [--keep dossier_de_travail] [--offre plan_devis [--variante budget|terrain|erreur|contenu|estimation]]
 
 Rendus pris sur la fiche publique du plan ; textes et chiffres : data/plans.json (check_copy appliqué) ;
 coupes calées sur les mesures de la musique (assets/music/tracks.json, produit par tools/analyze_music.py).
@@ -206,7 +206,7 @@ def main(argv=None) -> int:
     ap.add_argument("--offre", default="catalogue", choices=["catalogue", "plan_devis"],
                     help="fin de vidéo : Catalogue Premium (défaut) ou plan et devis du modèle (pubs de l'offre à l'unité)")
     ap.add_argument("--variante", default="budget", choices=list(VARIANTS),
-                    help="accroche de l'offre plan_devis : budget, terrain, erreur, contenu")
+                    help="accroche de l'offre plan_devis : budget, terrain, erreur, contenu, estimation")
     a = ap.parse_args(argv)
     build(a.code, Path(a.out), Path(a.music).resolve(), a.keep, a.offre, a.variante)
     return 0
