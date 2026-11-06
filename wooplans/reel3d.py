@@ -14,6 +14,7 @@ from wooplans.guardrails import check_copy
 from wooplans.settings import OFFER_PRICE_FCFA, PLAN_DEVIS_PRICE_FCFA
 
 OFFERS = ("catalogue", "plan_devis")
+VARIANTS = ("budget", "terrain", "erreur", "contenu")      # accroches de l'offre plan_devis
 
 W, H = 1080, 1920
 FPS = 30
@@ -48,7 +49,7 @@ class Scene:
     end_card: bool = False
 
 
-def scenes(plan: dict, offer: str = "catalogue") -> List[Scene]:
+def scenes(plan: dict, offer: str = "catalogue", variant: str = "budget") -> List[Scene]:
     """Scénario : accroche, type, surface, terrain (si connu), plan + devis, suspense, prix, catalogue, carte finale.
 
     offer="plan_devis" (pubs de l'offre à l'unité) : ni terrain ni estimation à l'écran, la réponse au « combien ? »
@@ -56,7 +57,7 @@ def scenes(plan: dict, offer: str = "catalogue") -> List[Scene]:
     if offer not in OFFERS:
         raise ValueError(f"offre inconnue : {offer}")
     if offer == "plan_devis":
-        return _scenes_plan_devis(plan)
+        return _scenes_plan_devis(plan, variant)
     cat = plan["category"].upper()
     ch = plan["bedrooms"]
     lv = "DE PLAIN-PIED" if plan["levels"] == 1 else f"SUR {plan['levels']} NIVEAUX"
@@ -81,19 +82,34 @@ def scenes(plan: dict, offer: str = "catalogue") -> List[Scene]:
     return out
 
 
-def _scenes_plan_devis(plan: dict) -> List[Scene]:
+def _scenes_plan_devis(plan: dict, variant: str = "budget") -> List[Scene]:
+    """4 accroches pour la même offre : budget (« combien ? »), terrain, erreur à éviter, contenu détaillé.
+    Mêmes faits partout (type, chambres, surface, prix de l'offre) ; aucun terrain ni estimation."""
+    if variant not in VARIANTS:
+        raise ValueError(f"variante inconnue : {variant}")
     cat = plan["category"].upper()
     lv = "DE PLAIN-PIED" if plan["levels"] == 1 else f"SUR {plan['levels']} NIVEAUX"
+    ce = "CETTE VILLA" if plan["category"].lower().startswith("villa") else "CE DUPLEX"
     Y1, Y2 = 1260, 1415
-    return [
-        Scene(0, 1, [Line("CETTE MAISON", y=Y1, size=136), Line("COÛTE *COMBIEN* ?", y=Y2, size=136, delay=0.6)]),
-        Scene(1, 1, [Line(cat, y=Y1, size=140), Line(f"*{plan['bedrooms']}* CHAMBRES", y=Y2, size=136, delay=0.6)]),
-        Scene(2, 1, [Line(f"*{plan['surface']} m²*", y=Y1, size=172), Line(lv, y=Y2, size=120, delay=0.6)]),
-        Scene(3, 1, [Line("PLAN AVEC", y=Y1, size=134), Line("LES *DIMENSIONS*", y=Y2, size=124, delay=0.6)]),
-        Scene(4, 1, [Line("+ *DEVIS* DÉTAILLÉ", y=Y1, size=124), Line("POSTE PAR POSTE", y=Y2, size=118, delay=0.6)]),
-        Scene(5, 1, [Line("TÉLÉCHARGEZ-LES", y=Y1, size=124), Line(f"*{fcfa(PLAN_DEVIS_PRICE_FCFA)} FCFA*", y=Y2, size=150, delay=0.6)]),
-        Scene(6, 1, [], end_card=True),
-    ]
+    two = lambda a, b, sa=136, sb=136: [Line(a, y=Y1, size=sa), Line(b, y=Y2, size=sb, delay=0.6)]
+    model = two(cat, f"*{plan['bedrooms']}* CHAMBRES", 140, 136)
+    surface = two(f"*{plan['surface']} m²*", lv, 172, 120)
+    price = two("TÉLÉCHARGEZ-LES", f"*{fcfa(PLAN_DEVIS_PRICE_FCFA)} FCFA*", 124, 150)
+    body = {
+        "budget": [two("CETTE MAISON", "COÛTE *COMBIEN* ?"), model, surface,
+                   two("PLAN AVEC", "LES *DIMENSIONS*", 134, 124), two("+ *DEVIS* DÉTAILLÉ", "POSTE PAR POSTE", 124, 118), price],
+        "terrain": [two("VOUS AVEZ UN", "*TERRAIN* ?", 136, 160), two("VOICI VOTRE", "*FUTURE MAISON*", 130, 136), model, surface,
+                    two("SON *PLAN* COTÉ", "+ SON *DEVIS*", 124, 136), price],
+        "erreur": [two("NE COMMENCEZ PAS", "SANS *PLAN* NI *DEVIS*", 120, 108), two("LE BUDGET PEUT", "*EXPLOSER*", 130, 160),
+                   model, surface, two("PLAN AVEC", "LES *DIMENSIONS*", 134, 124), two("+ *DEVIS* DÉTAILLÉ", "POSTE PAR POSTE", 124, 118),
+                   price],
+        "contenu": [two("CE QUE VOUS", "*RECEVEZ*", 130, 160), two(ce, f"*{plan['bedrooms']}* CHAMBRES · {plan['surface']} m²", 130, 108),
+                    two("1. PLAN AVEC", "LES *DIMENSIONS*", 130, 124), two("2. *DEVIS* DÉTAILLÉ", "POSTE PAR POSTE", 112, 118),
+                    two("3. UN *ARCHITECTE*", "SUR WHATSAPP", 112, 124), price],
+    }[variant]
+    out = [Scene(i, 1, lines) for i, lines in enumerate(body)]
+    out.append(Scene(len(out), 1, [], end_card=True))
+    return out
 
 
 def n_bars(sc: List[Scene]) -> int:

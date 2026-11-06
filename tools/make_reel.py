@@ -1,6 +1,6 @@
 """Reel « rendus 3D » d'un plan du catalogue : musique de fond + sous-titres animés, sans voix off.
 
-  python tools/make_reel.py D4-026 sortie.mp4 [--music assets/music/<fichier>.mp3] [--keep dossier_de_travail] [--offre plan_devis]
+  python tools/make_reel.py D4-026 sortie.mp4 [--music assets/music/<fichier>.mp3] [--keep dossier_de_travail] [--offre plan_devis [--variante budget|terrain|erreur|contenu]]
 
 Rendus pris sur la fiche publique du plan ; textes et chiffres : data/plans.json (check_copy appliqué) ;
 coupes calées sur les mesures de la musique (assets/music/tracks.json, produit par tools/analyze_music.py).
@@ -18,7 +18,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from tools.image_batch import download, fetch_page_images
 from wooplans.image_posts import load_plans
-from wooplans.reel3d import (FPS, H, OVERLAP, W, assign_images, bar_length, build_ass, check_scenes, fcfa, n_bars, pan, scenes)
+from wooplans.reel3d import (FPS, H, OVERLAP, VARIANTS, W, assign_images, bar_length, build_ass, check_scenes, fcfa, n_bars, pan, scenes)
 from wooplans.settings import OFFER_PRICE_FCFA, PLAN_DEVIS_PRICE_FCFA, ROOT
 
 BRAND = ROOT / "assets" / "brand"
@@ -113,12 +113,13 @@ def end_card_texts(offer: str = "catalogue"):
             f"prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA", "Lien en description"]
 
 
-def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None, offer: str = "catalogue") -> Path:
+def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None, offer: str = "catalogue",
+          variant: str = "budget") -> Path:
     from wooplans.guardrails import check_copy
     plan = next((p for p in load_plans() if p["code"] == code), None)
     if not plan:
         raise SystemExit(f"plan inconnu : {code}")
-    sc = scenes(plan, offer)
+    sc = scenes(plan, offer, variant)
     problems = check_scenes(sc, plan) + [x for t in end_card_texts(offer)
                                          for x in check_copy(t, [plan["estimate_total"], PLAN_DEVIS_PRICE_FCFA])]
     if problems:
@@ -198,8 +199,10 @@ def main(argv=None) -> int:
     ap.add_argument("--keep", default=None)
     ap.add_argument("--offre", default="catalogue", choices=["catalogue", "plan_devis"],
                     help="fin de vidéo : Catalogue Premium (défaut) ou plan et devis du modèle (pubs de l'offre à l'unité)")
+    ap.add_argument("--variante", default="budget", choices=list(VARIANTS),
+                    help="accroche de l'offre plan_devis : budget, terrain, erreur, contenu")
     a = ap.parse_args(argv)
-    build(a.code, Path(a.out), Path(a.music).resolve(), a.keep, a.offre)
+    build(a.code, Path(a.out), Path(a.music).resolve(), a.keep, a.offre, a.variante)
     return 0
 
 

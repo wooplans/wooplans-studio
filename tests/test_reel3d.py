@@ -100,3 +100,16 @@ def test_plan_devis_end_card_passes_guardrails():
     texts = end_card_texts("plan_devis")
     assert not any("Catalogue" in t or "gratuit" in t.lower() for t in texts)
     assert all(check_copy(t, [PLAN_DEVIS_PRICE_FCFA]) == [] for t in texts)
+
+
+def test_plan_devis_variants_same_facts_and_guardrails():
+    from wooplans.reel3d import VARIANTS
+    from wooplans.settings import PLAN_DEVIS_PRICE_FCFA
+    for v in VARIANTS:
+        for p in PLANS:
+            sc = scenes(p, "plan_devis", v)
+            txt = " ".join(l.text for s in sc for l in s.lines)
+            assert "TERRAIN PRÉVU" not in txt and "{n}" not in txt and "CATALOGUE" not in txt
+            assert fcfa(PLAN_DEVIS_PRICE_FCFA) in txt and str(p["surface"]) in txt and f"*{p['bedrooms']}*" in txt
+            assert sc[-1].end_card and check_scenes(sc, p) == []
+            assert [s.bar for s in sc] == list(range(len(sc)))
