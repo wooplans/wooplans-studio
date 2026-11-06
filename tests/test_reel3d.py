@@ -72,3 +72,31 @@ def test_ass_events_are_valid():
 
 def test_ts_format():
     assert ts(0) == "0:00:00.00" and ts(61.5) == "0:01:01.50" and ts(-3) == "0:00:00.00"
+
+
+# ---------- offre à l'unité : plan et devis du modèle ----------
+
+def test_plan_devis_scenes_have_no_land_nor_estimate():
+    from wooplans.settings import PLAN_DEVIS_PRICE_FCFA
+    for p in PLANS:
+        sc = scenes(p, "plan_devis")
+        txt = " ".join(l.text for s in sc for l in s.lines)
+        assert "TERRAIN" not in txt and "{n}" not in txt and not any(s.count_to for s in sc)
+        assert "CATALOGUE" not in txt and fcfa(PLAN_DEVIS_PRICE_FCFA) in txt
+        assert str(p["surface"]) in txt and f"*{p['bedrooms']}*" in txt
+        assert sc[-1].end_card and check_scenes(sc, p) == []
+
+
+def test_unknown_offer_is_refused():
+    import pytest
+    with pytest.raises(ValueError):
+        scenes(PLANS[0], "cadeau")
+
+
+def test_plan_devis_end_card_passes_guardrails():
+    from tools.make_reel import end_card_texts
+    from wooplans.guardrails import check_copy
+    from wooplans.settings import PLAN_DEVIS_PRICE_FCFA
+    texts = end_card_texts("plan_devis")
+    assert not any("Catalogue" in t or "gratuit" in t.lower() for t in texts)
+    assert all(check_copy(t, [PLAN_DEVIS_PRICE_FCFA]) == [] for t in texts)

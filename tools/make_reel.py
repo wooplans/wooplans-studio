@@ -1,6 +1,6 @@
 """Reel « rendus 3D » d'un plan du catalogue : musique de fond + sous-titres animés, sans voix off.
 
-  python tools/make_reel.py D4-026 sortie.mp4 [--music assets/music/<fichier>.mp3] [--keep dossier_de_travail]
+  python tools/make_reel.py D4-026 sortie.mp4 [--music assets/music/<fichier>.mp3] [--keep dossier_de_travail] [--offre plan_devis]
 
 Rendus pris sur la fiche publique du plan ; textes et chiffres : data/plans.json (check_copy appliqué) ;
 coupes calées sur les mesures de la musique (assets/music/tracks.json, produit par tools/analyze_music.py).
@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFont
 from tools.image_batch import download, fetch_page_images
 from wooplans.image_posts import load_plans
 from wooplans.reel3d import (FPS, H, OVERLAP, W, assign_images, bar_length, build_ass, check_scenes, fcfa, n_bars, pan, scenes)
-from wooplans.settings import OFFER_PRICE_FCFA, ROOT
+from wooplans.settings import OFFER_PRICE_FCFA, PLAN_DEVIS_PRICE_FCFA, ROOT
 
 BRAND = ROOT / "assets" / "brand"
 FONT = ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf"
@@ -62,7 +62,7 @@ def gradient_png(path: Path, h: int = 900):
     im.save(path)
 
 
-def end_card_png(path: Path):
+def end_card_png(path: Path, offer: str = "catalogue"):
     f = lambda s: ImageFont.truetype(str(FONT), s)
     im = Image.new("RGBA", (W, H), (15, 91, 89, 214))
     d = ImageDraw.Draw(im)
@@ -75,44 +75,52 @@ def end_card_png(path: Path):
         fnt = f(size)
         d.text(((W - d.textlength(text, font=fnt)) / 2, y), text, font=fnt, fill=fill)
 
-    centered("Plan complet", 880, 78, "white")
-    centered("+ devis détaillé", 975, 78, "white")
+    t = end_card_texts(offer)
+    centered(t[0], 880, 78, "white")
+    centered(t[1], 975, 78, "white")
     d.rounded_rectangle((150, 1130, W - 150, 1290), radius=80, fill=(240, 138, 46, 255))
-    centered("wooplans.com", 1165, 88, "white")
-    centered("Catalogue Premium", 1345, 50, "white")
-    centered(f"prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA", 1410, 50, "white")
-    centered("Lien en description", 1505, 52, (240, 138, 46, 255))
+    centered(t[2], 1165, 88, "white")
+    centered(t[3], 1345, 50, "white")
+    centered(t[4], 1410, 50, "white")
+    centered(t[5], 1505, 52, (240, 138, 46, 255))
     im.save(path)
 
 
-def make_cover(plan: dict, facade: Path, tmp: Path) -> Path:
+def make_cover(plan: dict, facade: Path, tmp: Path, offer: str = "catalogue") -> Path:
     """Vignette 9:16 (tools/make_thumbnail.py) qui sert aussi de PREMIER FRAME de la vidéo : les plateformes
     qui prennent le premier frame comme vignette (YouTube Shorts, TikTok, aperçus) affichent ainsi la bonne image."""
     job = tmp / "cover_job"
     job.mkdir(exist_ok=True)
     shutil.copy(facade, job / "facade.png")
     kind = "cette villa" if plan["category"].lower().startswith("villa") else "ce duplex"
-    (job / "bump.json").write_text(json.dumps({"target": plan["estimate_total"]}), encoding="utf-8")
+    amount = PLAN_DEVIS_PRICE_FCFA if offer == "plan_devis" else plan["estimate_total"]     # seul montant autorisé sur la vignette
+    (job / "bump.json").write_text(json.dumps({"target": amount}), encoding="utf-8")
+    badge = fcfa(amount) + " FCFA"
+    title = f"Plan et devis de {kind}" if offer == "plan_devis" else f"Combien coûte {kind} ?"
     (job / "PUBLISH.json").write_text(json.dumps({"thumbnail": {
-        "title": f"Combien coûte {kind} ?", "badge": fcfa(plan["estimate_total"]) + " FCFA",
+        "title": title, "badge": badge,
         "chip": f"{plan['bedrooms']} chambres · {plan['surface']} m²"}}), encoding="utf-8")
     out = tmp / "cover.jpg"
     run([sys.executable, str(ROOT / "tools" / "make_thumbnail.py"), str(job), str(out)])
     return out
 
 
-def end_card_texts():
+def end_card_texts(offer: str = "catalogue"):
+    if offer == "plan_devis":
+        return ["Plan avec dimensions", "+ devis détaillé", "wooplans.com", f"Plan et devis : {fcfa(PLAN_DEVIS_PRICE_FCFA)} FCFA",
+                "Téléchargement instantané", "Appuyez sur « Télécharger »"]
     return ["Plan complet", "+ devis détaillé", "wooplans.com", "Catalogue Premium",
             f"prix actuel : {fcfa(OFFER_PRICE_FCFA)} FCFA", "Lien en description"]
 
 
-def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None) -> Path:
+def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None, offer: str = "catalogue") -> Path:
     from wooplans.guardrails import check_copy
     plan = next((p for p in load_plans() if p["code"] == code), None)
     if not plan:
         raise SystemExit(f"plan inconnu : {code}")
-    sc = scenes(plan)
-    problems = check_scenes(sc, plan) + [x for t in end_card_texts() for x in check_copy(t, [plan["estimate_total"]])]
+    sc = scenes(plan, offer)
+    problems = check_scenes(sc, plan) + [x for t in end_card_texts(offer)
+                                         for x in check_copy(t, [plan["estimate_total"], PLAN_DEVIS_PRICE_FCFA])]
     if problems:
         raise SystemExit(f"texte refusé : {problems}")
     tracks = json.loads((ROOT / "assets" / "music" / "tracks.json").read_text(encoding="utf-8"))
@@ -135,7 +143,7 @@ def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None) 
         sizes.append(im.size)
     plan_imgs = assign_images(nb, sizes)
     best = max(range(len(imgs)), key=lambda i: sizes[i][0] * sizes[i][1])        # rendu le plus net pour la vignette
-    cover = make_cover(plan, imgs[best], tmp)
+    cover = make_cover(plan, imgs[best], tmp, offer)
 
     clips = []
     for k in range(nb):
@@ -157,7 +165,7 @@ def build(code: str, out: Path, music: Path = DEFAULT_MUSIC, keep: Path = None) 
 
     grad, card = tmp / "grad.png", tmp / "card.png"
     gradient_png(grad)
-    end_card_png(card)
+    end_card_png(card, offer)
     (tmp / "reel.ass").write_text(build_ass(sc, plan, bar_s, total), encoding="utf-8")
     shutil.copytree(ROOT / "visite_plan" / "fonts", tmp / "fonts", dirs_exist_ok=True)
     t_end = (nb - 1) * bar_s + 0.05
@@ -188,8 +196,10 @@ def main(argv=None) -> int:
     ap.add_argument("out")
     ap.add_argument("--music", default=str(DEFAULT_MUSIC))
     ap.add_argument("--keep", default=None)
+    ap.add_argument("--offre", default="catalogue", choices=["catalogue", "plan_devis"],
+                    help="fin de vidéo : Catalogue Premium (défaut) ou plan et devis du modèle (pubs de l'offre à l'unité)")
     a = ap.parse_args(argv)
-    build(a.code, Path(a.out), Path(a.music).resolve(), a.keep)
+    build(a.code, Path(a.out), Path(a.music).resolve(), a.keep, a.offre)
     return 0
 
 

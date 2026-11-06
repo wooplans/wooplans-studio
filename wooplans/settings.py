@@ -16,6 +16,10 @@ OFFER_PRICE_FCFA = 39000
 OFFER_PROMISE = "50+ plans avec leurs vrais devis"
 PIXEL_ID = "1651374605332302"
 
+# Offre à l'unité (décision Tao, 6 nov. 2026) : plan et devis d'un modèle, téléchargé sur sa fiche
+PLAN_DEVIS_PRICE_FCFA = 14900
+PLAN_DEVIS_UTM_CAMPAIGN = "plan_devis_14900"
+
 # Pages sociales WooPlans (distinctes de Kilabi et de « Secrets D'ébène Studios »)
 PAGES = {
     "facebook": "https://www.facebook.com/wooplanscatalogue",

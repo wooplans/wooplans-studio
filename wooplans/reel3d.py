@@ -11,7 +11,9 @@ from dataclasses import dataclass, field
 from typing import List, Optional, Tuple
 
 from wooplans.guardrails import check_copy
-from wooplans.settings import OFFER_PRICE_FCFA
+from wooplans.settings import OFFER_PRICE_FCFA, PLAN_DEVIS_PRICE_FCFA
+
+OFFERS = ("catalogue", "plan_devis")
 
 W, H = 1080, 1920
 FPS = 30
@@ -46,8 +48,15 @@ class Scene:
     end_card: bool = False
 
 
-def scenes(plan: dict) -> List[Scene]:
-    """Scénario : accroche, type, surface, terrain (si connu), plan + devis, suspense, prix, catalogue, carte finale."""
+def scenes(plan: dict, offer: str = "catalogue") -> List[Scene]:
+    """Scénario : accroche, type, surface, terrain (si connu), plan + devis, suspense, prix, catalogue, carte finale.
+
+    offer="plan_devis" (pubs de l'offre à l'unité) : ni terrain ni estimation à l'écran, la réponse au « combien ? »
+    est dans le plan et devis du modèle, vendu sur sa fiche."""
+    if offer not in OFFERS:
+        raise ValueError(f"offre inconnue : {offer}")
+    if offer == "plan_devis":
+        return _scenes_plan_devis(plan)
     cat = plan["category"].upper()
     ch = plan["bedrooms"]
     lv = "DE PLAIN-PIED" if plan["levels"] == 1 else f"SUR {plan['levels']} NIVEAUX"
@@ -72,6 +81,21 @@ def scenes(plan: dict) -> List[Scene]:
     return out
 
 
+def _scenes_plan_devis(plan: dict) -> List[Scene]:
+    cat = plan["category"].upper()
+    lv = "DE PLAIN-PIED" if plan["levels"] == 1 else f"SUR {plan['levels']} NIVEAUX"
+    Y1, Y2 = 1260, 1415
+    return [
+        Scene(0, 1, [Line("CETTE MAISON", y=Y1, size=136), Line("COÛTE *COMBIEN* ?", y=Y2, size=136, delay=0.6)]),
+        Scene(1, 1, [Line(cat, y=Y1, size=140), Line(f"*{plan['bedrooms']}* CHAMBRES", y=Y2, size=136, delay=0.6)]),
+        Scene(2, 1, [Line(f"*{plan['surface']} m²*", y=Y1, size=172), Line(lv, y=Y2, size=120, delay=0.6)]),
+        Scene(3, 1, [Line("PLAN AVEC", y=Y1, size=134), Line("LES *DIMENSIONS*", y=Y2, size=124, delay=0.6)]),
+        Scene(4, 1, [Line("+ *DEVIS* DÉTAILLÉ", y=Y1, size=124), Line("POSTE PAR POSTE", y=Y2, size=118, delay=0.6)]),
+        Scene(5, 1, [Line("TÉLÉCHARGEZ-LES", y=Y1, size=124), Line(f"*{fcfa(PLAN_DEVIS_PRICE_FCFA)} FCFA*", y=Y2, size=150, delay=0.6)]),
+        Scene(6, 1, [], end_card=True),
+    ]
+
+
 def n_bars(sc: List[Scene]) -> int:
     return max(s.bar + s.bars for s in sc)
 
@@ -85,7 +109,7 @@ def check_scenes(sc: List[Scene], plan: dict) -> List[str]:
     """Garde-fous : texte à l'écran sans formule d'urgence ni montant non sourcé."""
     problems = []
     for t in all_texts(sc, plan):
-        problems += check_copy(t, [plan["estimate_total"]])
+        problems += check_copy(t, [plan["estimate_total"], PLAN_DEVIS_PRICE_FCFA])
     return problems
 
 
