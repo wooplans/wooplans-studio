@@ -1,0 +1,32 @@
+name: youtube-voix
+# Génère les voix Gradium (voice TsRKBRWZGYldAeEI) d'un job YouTube à partir de youtube_plan/jobs/<job>/voix_script.json,
+# puis commit les .wav + .chunks.json dans le dépôt. Besoin du secret GRADIUM_API_KEY (voir SECRETS.md). AUCUNE publication.
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Dossier du job (youtube_plan/jobs/<job>)"
+        required: true
+        default: "D4-040"
+permissions:
+  contents: write
+jobs:
+  voix:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dépendances
+        run: sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Voix Gradium
+        env:
+          GRADIUM_API_KEY: ${{ secrets.GRADIUM_API_KEY }}
+        run: python3 youtube_plan/engine/gen_voix.py "${{ github.event.inputs.job }}"
+      - name: Commit des voix
+        run: |
+          git config user.name "wooplans-bot"
+          git config user.email "noreply@wooplans.com"
+          git add "youtube_plan/jobs/${{ github.event.inputs.job }}/voix"
+          git diff --cached --quiet && { echo "rien à committer"; exit 0; }
+          git commit -m "voix ${{ github.event.inputs.job }} (Gradium)"
+          git push

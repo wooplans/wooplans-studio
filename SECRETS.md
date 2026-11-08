@@ -5,6 +5,7 @@ Aucune valeur dans le dépôt. Noms seulement. Vérification : workflow **check-
 |---|---|---|
 | ZERNIO_API_KEY | **oui (publication)** | Zernio : programmation Facebook / YouTube |
 | ZERNIO_PROFILE_ID | **oui (publication)** | profil Zernio « WooPlans » = `6aca547f2791f56cd0b63f4a` (pas le profil Default de Kilabi) |
+| GRADIUM_API_KEY | **oui (voix YouTube sur GitHub)** | workflow `youtube-voix` : voix Gradium TsRKBRWZGYldAeEI, hors PC de Tao |
 | ELEVENLABS_API_KEY | non | génération de voix hors session Claude (Claude utilise le connecteur ElevenLabs) |
 | POYO_API_KEY | non | génération d'images hors session Claude (Claude utilise le connecteur Poyo) |
 | R2_*, TELEGRAM_* | non | seulement si on ajoute stockage / notifications ; bucket et bot **dédiés à WooPlans** (jamais ceux de Kilabi) |

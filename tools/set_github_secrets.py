@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 REPO = "wooplans/wooplans-studio"
-FROM_ENV = ["ZERNIO_API_KEY"]                                    # indispensable pour publier
+FROM_ENV = ["ZERNIO_API_KEY", "GRADIUM_API_KEY"]                 # publier + voix YouTube sur GitHub
 OPTIONAL = ["ELEVENLABS_API_KEY", "POYO_API_KEY"]                # avec --all (génération hors session Claude)
 # R2 / Telegram du .env sont ceux de Kilabi : NE PAS les copier (bucket et bot dédiés WooPlans si besoin un jour)
 FIXED = {"ZERNIO_PROFILE_ID": "6aca547f2791f56cd0b63f4a"}
