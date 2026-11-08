@@ -6,8 +6,11 @@ on:
     inputs:
       job:
         description: "Dossier du job (youtube_plan/jobs/<job>)"
-        required: true
-        default: "D4-040"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths: ["youtube_plan/jobs/*/VOIX"]
 permissions:
   contents: write
 jobs:
@@ -16,17 +19,22 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
       - name: Dépendances
         run: sudo apt-get install -y -qq ffmpeg >/dev/null
       - name: Voix Gradium
         env:
           GRADIUM_API_KEY: ${{ secrets.GRADIUM_API_KEY }}
-        run: python3 youtube_plan/engine/gen_voix.py "${{ github.event.inputs.job }}"
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD^1 HEAD | grep -E '^youtube_plan/jobs/[^/]+/VOIX$' | head -1 | cut -d/ -f3); fi
+          echo "JOB=$JOB" >> "$GITHUB_ENV"
+          python3 youtube_plan/engine/gen_voix.py "$JOB"
       - name: Commit des voix
         run: |
           git config user.name "wooplans-bot"
           git config user.email "noreply@wooplans.com"
-          git add "youtube_plan/jobs/${{ github.event.inputs.job }}/voix"
+          git add "youtube_plan/jobs/$JOB/voix"
           git diff --cached --quiet && { echo "rien à committer"; exit 0; }
-          git commit -m "voix ${{ github.event.inputs.job }} (Gradium)"
+          git commit -m "voix $JOB (Gradium)"
           git push
