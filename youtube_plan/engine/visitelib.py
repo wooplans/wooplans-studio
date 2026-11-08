@@ -6,7 +6,7 @@ PX, PY, PWD, PHT = 1236, 128, 644, 470
 PW, PH = 1024, 768
 
 
-def make(voice, durkey, plan_file, ROOMS, WAY, head, intro_title, intro_big, intro_sub, big_size=150, rb_start=0):
+def make(voice, durkey, plan_file, ROOMS, WAY, head, intro_title, intro_big, intro_sub, big_size=150, rb_start=0, notes=None):
     PLAN = Image.open(A + plan_file).convert('RGB')
     words = words_of(voice)
     TOKS = caption_tokens(words)
@@ -126,7 +126,7 @@ def make(voice, durkey, plan_file, ROOMS, WAY, head, intro_title, intro_big, int
             off = int((1 - clamp(p, 0, 1.2)) * 40)
             text(d, (PX + 44, PY + 165 - off), name, 54 if len(name) < 17 else 46, DARK, 'lm')
             if surf is None:
-                text(d, (PX + 44, PY + 290), "vers l'étage", int(80 * (0.7 + 0.3 * clamp(p, 0, 1.15))), ORANGE, 'lm')
+                text(d, (PX + 44, PY + 290), (notes or {}).get(name, "vers l'étage"), int(80 * (0.7 + 0.3 * clamp(p, 0, 1.15))), ORANGE, 'lm')
             else:
                 s = int(130 * (0.7 + 0.3 * clamp(p, 0, 1.15)))
                 text(d, (PX + 44, PY + 290), f'{surf}', s, ORANGE, 'lm')

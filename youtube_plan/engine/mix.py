@@ -2,7 +2,7 @@ import sys, subprocess, math, wave, random, os, glob
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np
 from common import D, ORDER, FPS, A, V, OUTDIR
-import seq_intro, seq_chiffres, seq_visite, seq_visite2, seq_invit, seq_rendus, seq_catalogue, seq_terrain, seq_devis, seq_fin
+import seq_intro, seq_chiffres, seq_visite, seq_invit, seq_rendus, seq_catalogue, seq_terrain, seq_devis, seq_fin
 FR = {k: int(round(D[k] * FPS)) for k in ORDER}; FR['jingle'] = 120
 OFF = {}; acc = 0
 for k in ORDER: OFF[k] = acc / 30.0; acc += FR[k]
@@ -34,7 +34,9 @@ def at(seq, ts, y, g=1.0):
 Ti = seq_intro
 at('intro', Ti.SFX_TIMES if hasattr(Ti, 'SFX_TIMES') else [Ti.T['chamb1'], Ti.T['cine1'], Ti.T['gar1'], Ti.T['plan'], Ti.T['angles'], Ti.T['terrain'], Ti.T['budget']] + [c[2] - 0.1 for c in Ti.CHIPS], P, 0.45); at('intro', [Ti.T_SUB - 0.2], P, 0.5); at('intro', [Ti.T_SUB + 1.3], C, 0.6); at('intro', [D['intro'] - 1.9], Wh, 0.8)
 at('chiffres', [seq_chiffres.T149 - 0.5, seq_chiffres.TNIV - 1.2, seq_chiffres.TSEIZE - 1.0], P, 0.4)
-at('visite', seq_visite.ARR, P, 0.35); at('visite2', seq_visite2.ARR, P, 0.35)
+at('visite', seq_visite.ARR, P, 0.35)
+if 'visite2' in ORDER:
+    import seq_visite2; at('visite2', seq_visite2.ARR, P, 0.35)
 at('invit', [seq_invit.TCOM - 0.3, seq_invit.TSHARE - 0.3, seq_invit.TAIDE - 0.2], P, 0.5); at('invit', [seq_invit.TAIDE + 1.3], C, 0.6)
 at('rendus', seq_rendus.BOUNDS[1:-1], Wh, 0.55)
 at('catalogue', [s[0] for s in seq_catalogue.STEPS], P, 0.45); at('catalogue', [5.6, 32.0], Wh, 0.7); at('catalogue', [32.3], P, 0.6)
