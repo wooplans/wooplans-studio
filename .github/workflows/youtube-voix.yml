@@ -1,0 +1,53 @@
+name: youtube-voix
+# Génère les voix Gradium d'un job YouTube (youtube_plan/jobs/<job>/code/script.py -> voix/*.wav + *.chunks.json) avec le secret GRADIUM_API_KEY,
+# puis les commit dans la branche. Lancer : pousser youtube_plan/jobs/<job>/VOIX (changer son contenu) ou Actions > youtube-voix > Run workflow.
+# Les voix déjà présentes (wav) ne sont pas regénérées : supprimer le wav pour refaire une séquence.
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Dossier du job (youtube_plan/jobs/<job>)"
+        required: true
+  push:
+    branches: ["ccr-*"]
+    paths: ["youtube_plan/jobs/*/VOIX"]
+permissions:
+  contents: write
+concurrency:
+  group: youtube-voix-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  voix:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      GRADIUM_API_KEY: ${{ secrets.GRADIUM_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - id: j
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD^1 HEAD | grep -E '^youtube_plan/jobs/[^/]+/VOIX$' | head -1 | cut -d/ -f3); fi
+          [ -n "$JOB" ] && [ -d "youtube_plan/jobs/$JOB" ] || { echo "job introuvable"; exit 1; }
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"
+      - name: Dépendances
+        run: |
+          sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q requests
+      - name: Présence du secret (nom seulement)
+        run: |
+          if [ -n "$GRADIUM_API_KEY" ]; then echo "OK GRADIUM_API_KEY"; else echo "MANQUANT GRADIUM_API_KEY"; exit 1; fi
+      - name: Génération des voix
+        env:
+          YT_JOB: ${{ github.workspace }}/youtube_plan/jobs/${{ steps.j.outputs.job }}
+        run: python3 youtube_plan/jobs/${{ steps.j.outputs.job }}/code/gen_all.py
+      - name: Durées (contrôle)
+        run: |
+          for f in youtube_plan/jobs/${{ steps.j.outputs.job }}/voix/*.wav; do echo "$f $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f")"; done
+      - name: Commit des voix
+        run: |
+          git config user.name "wooplans-bot"; git config user.email "bot@wooplans.com"
+          git add youtube_plan/jobs/${{ steps.j.outputs.job }}/voix
+          git commit -m "voix ${{ steps.j.outputs.job }} (Gradium)" || { echo "rien à commiter"; exit 0; }
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"
