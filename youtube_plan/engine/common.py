@@ -11,6 +11,11 @@ V = JOB + '/voix/'
 OUTDIR = os.environ.get('YT_OUT', '/tmp/yt_out')
 os.makedirs(OUTDIR, exist_ok=True)
 if JOB + '/code' not in sys.path: sys.path.insert(0, JOB + '/code')
+try:
+    _JI = json.load(open(JOB + '/JOB.json', encoding='utf-8'))
+except Exception:
+    _JI = {}
+CODE = _JI.get('code', 'D4-004'); HEAD_RIGHT = _JI.get('head_right', '4 chambres · 2 niveaux · 314 m²')
 GREEN = (15, 91, 89); ORANGE = (240, 138, 46); DARK = (30, 41, 51); LIGHT = (245, 247, 249)
 GOLD = (231, 195, 108); GREY = (107, 114, 128); WHITE = (255, 255, 255); TERRA = (199, 91, 58)
 
@@ -174,10 +179,11 @@ def render(path, dur, fn, start=0):
     wr.close()
 
 
-def header(base, title_right='4 chambres · 2 niveaux · 314 m²'):
+def header(base, title_right=None):
+    title_right = title_right or HEAD_RIGHT
     d = ImageDraw.Draw(base)
     d.rectangle((0, 0, W, 104), fill=GREEN)
-    text(d, (48, 52), 'DUPLEX D4-004', 44, WHITE, 'lm')
+    text(d, (48, 52), 'DUPLEX ' + CODE, 44, WHITE, 'lm')
     text(d, (W - 250, 52), title_right, 32, GOLD, 'rm')
     lg = img('logo_white.png').copy(); lg.thumbnail((190, 90)); base.alpha_composite(lg, (W - 30 - lg.width, 52 - lg.height // 2))
 
@@ -215,8 +221,10 @@ def finish(im, tg, wm=True, alpha=1.0):
 
 # ---- boîte de rendus qui défilent (maison toujours visible)
 _RS = {}
+import glob as _glob
+NR = len(_glob.glob(A + 'R[0-9].png')) or 10
 def rsrc(i):
-    i %= 10
+    i %= NR
     if i not in _RS:
         _RS[i] = Image.open(A + f'R{i}.png').convert('RGB').resize((1280, 720), Image.LANCZOS)
     return _RS[i]
