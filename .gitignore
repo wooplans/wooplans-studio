@@ -26,3 +26,4 @@ media/
 !assets/**
 !batches/images/**
 !youtube_plan/jobs/**
+__pycache__/
