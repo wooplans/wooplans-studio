@@ -10,14 +10,14 @@ def _rows(spec):
         tr = find(words, 'environ', 0, tw_) + 0.9
         out.append((lab, amt, t0, tr))
     return out
-GO_ROWS = _rows([('Fondation', 5400000, 'fondation'), ('Élévation RDC', 4000000, 'rez-de-chaussée'), ('Dalle', 7600000, 'dalle'), ('Élévation étage', 4500000, "l'étage"), ('Charpente et toiture', 6800000, 'charpente')])
-FIN_ROWS = _rows([('Crépissage et antivols', 8300000, 'crépissage'), ('Portes et fenêtres', 6200000, 'portes'), ('Plomberie et électricité', 5200000, 'plomberie'), ('Plafond et peinture', 7300000, 'plafond'), ('Carrelage', 7600000, 'carrelage')])
-GO = 28300000; FIN = 34600000; RMIN, RMAX = 57800000, 67800000
+GO_ROWS = _rows([('Fondation', 2862500, 'fondation'), ('Élévation RDC', 2109200, 'rez-de-chaussée'), ('Dalle', 4067800, 'dalle'), ('Élévation étage', 2410600, "l'étage"), ('Charpente et toiture', 3615800, 'charpente')])
+FIN_ROWS = _rows([('Crépissage et antivols', 4419400, 'crépissage'), ('Portes et fenêtres', 3314500, 'portes'), ('Plomberie et électricité', 2762100, 'plomberie'), ('Plafond et peinture', 3866900, 'plafond'), ('Carrelage', 4051200, 'carrelage')])
+GO = 15066000; FIN = 18414000; RMIN, RMAX = 30100000, 36800000
 f = lambda p, n=0: find(words, p, n)
 T_PAYS = f('pays'); T_TERR = f('terrain'); T_TECH = f('techniciens'); T_ENTRE = f('entre'); T_VOY = f('voyons'); T_GROS = f('gros', 0)
 T_PLUS = f('poste'); T_TOT = f('total'); T_PASS = f('passons'); T_PESENT = f('pèsent'); T_MOIT = f('moitié'); T_ATT = f('attention')
 T_SOL = f('sol'); T_QUAL = f('qualité'); T_MAT = f('matériaux', 1); T_VRAIS = f('vrais'); T_SELON = f('selon', 1); T_CAT = f('catalogue')
-MAXV = 8300000
+MAXV = 4500000
 GO_END = T_PASS - 0.6; FIN_END = T_ATT - 0.3; CEND = T_VRAIS - 0.6
 _bg = None
 

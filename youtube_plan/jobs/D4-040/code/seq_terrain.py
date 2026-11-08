@@ -2,17 +2,17 @@ from common import *
 
 words = words_of('terrain')
 DUR = D['terrain']
-S = 31.0
-PLW, PLH = 18.55 * S, 20.80 * S           # terrain
-HW, HH = 15.55 * S, 13.80 * S             # emprise
-PLX = 300; PLY = 190
+S = 40.0
+PLW, PLH = 13.45 * S, 16.15 * S           # terrain
+HW, HH = 10.45 * S, 9.15 * S              # emprise
+PLX = 430; PLY = 190
 HX = PLX + 1.5 * S; HY = PLY + 2.0 * S
 ROAD_Y = PLY + PLH + 3; ROAD_H = 3 * S
 f = lambda p, n=0: find(words, p, n)
-T_MAIS = f('maison'); T_SEIZE = f('quinze'); T_TREIZE = f('treize'); T_AUTOUR = f('autour')
-T_COTE = f('côté'); T_150 = f('comptez'); T_AVANT = f("l'avant"); T_CINQ = f('cinq'); T_ARR = f("l'arrière"); T_DEUX = f('deux')
-T_DIX = f('dix-huit'); T_VINGT = f('vingt'); T_C1 = f('cents', 0); T_C2 = T_C1
-T_ROUTE = f('route', 0); T_ROUTE2 = f('route', 1); T_ENTREE = f("l'entrée", 1); T_CONSEIL = f('conseil'); T_LARG = f('largeur'); T_ETROIT = f('étroit'); T_REP = f('repères')
+T_MAIS = f('maison'); T_SEIZE = f('dix'); T_TREIZE = f('neuf'); T_AUTOUR = f('autour')
+T_COTE = f('côté'); T_150 = f('mètre'); T_AVANT = f("l'avant"); T_CINQ = f('cinq'); T_ARR = f("l'arrière"); T_DEUX = f('deux')
+T_DIX = f('treize'); T_VINGT = f('seize'); T_217 = f('dix-sept'); T_C1 = f('cinquante', 2); T_C2 = T_C1
+T_ROUTE = f('route', 0); T_ROUTE2 = f('route', 1); T_ENTREE = f("l'entrée", 0); T_CONSEIL = f('conseil'); T_LARG = f('largeur'); T_ETROIT = 1e9; T_REP = 1e9
 def dash_rect(d, box, color, width=4, dash=16, gap=10):
     x0, y0, x1, y1 = box
     def hl(y, xa, xb):
@@ -111,12 +111,12 @@ def frame(t):
         a = int(255 * e_out(kh))
         ov = Image.new('RGBA', (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
         od.rectangle((HX, HY, HX + HW, HY + HH), fill=(255, 255, 255, a), outline=DARK + (a,), width=10)
-        od.text((HX + HW * 0.30, HY + HH / 2 + 20), 'DUPLEX D4-004', font=font(28), fill=GREEN + (a,), anchor='mm')
-        od.text((HX + HW * 0.30, HY + HH / 2 + 54), '314 m² · 4 chambres', font=font(20), fill=GREY + (a,), anchor='mm')
+        od.text((HX + HW * 0.42, HY + HH / 2 + 20), 'DUPLEX D4-040', font=font(28), fill=GREEN + (a,), anchor='mm')
+        od.text((HX + HW * 0.42, HY + HH / 2 + 54), '155 m² · 4 chambres', font=font(20), fill=GREY + (a,), anchor='mm')
         base.alpha_composite(ov); d = ImageDraw.Draw(base)
     # cotes maison (dans la maison)
-    dim_h(d, HX + 40, HX + HW - 40, HY + 60, '15,55 m', clamp((t - T_SEIZE) / 0.8), GREEN)
-    dim_v(d, HX + HW - 60, HY + 100, HY + HH - 40, '13,80 m', clamp((t - T_TREIZE) / 0.8), GREEN)
+    dim_h(d, HX + 40, HX + HW - 40, HY + 60, '10,45 m', clamp((t - T_SEIZE) / 0.8), GREEN)
+    dim_v(d, HX + HW - 60, HY + 100, HY + HH - 40, '9,15 m', clamp((t - T_TREIZE) / 0.8), GREEN)
     # étiquettes de marges
     if k1 > 0.9 and t > T_150 - 0.5: pill(d, (PLX + 25, HY + HH * 0.25), '1,50 m', 26, ORANGE, WHITE)
     if k2 > 0.9 and t > T_150 - 0.5: pill(d, (PLX + PLW - 25, HY + HH * 0.25), '1,50 m', 26, ORANGE, WHITE)
@@ -127,8 +127,8 @@ def frame(t):
             text(d, (PLX + 125, HY + HH + 60), 'COUR · ACCÈS', 24, ORANGE, 'mm'); text(d, (PLX + 125, HY + HH + 92), 'STATIONNEMENT', 24, ORANGE, 'mm')
     if k4 > 0.9 and t > T_DEUX - 0.3: pill(d, (PLX + PLW / 2, PLY + 33), '2 m', 26, ORANGE, WHITE)
     # cotes terrain
-    dim_h(d, PLX, PLX + PLW, PLY - 40, '18,55 m', clamp((t - T_DIX) / 0.8), ORANGE)
-    dim_v(d, PLX - 56, PLY, PLY + PLH, '20,80 m', clamp((t - T_VINGT) / 0.8), ORANGE)
+    dim_h(d, PLX, PLX + PLW, PLY - 40, '13,45 m', clamp((t - T_DIX) / 0.8), ORANGE)
+    dim_v(d, PLX - 56, PLY, PLY + PLH, '16,15 m', clamp((t - T_VINGT) / 0.8), ORANGE)
     # entrée + vue des rendus
     ke = e_out((t - T_ROUTE2) / 0.6)
     if ke > 0:
@@ -158,10 +158,10 @@ def frame(t):
         od.text((gx + 72, gy + gh + 40), 'mais trop étroit', font=font(22), fill=(220, 38, 38, int(255 * a)), anchor='mm')
         base.alpha_composite(ov); d = ImageDraw.Draw(base)
     # cartes à droite
-    card(base, 128, 'EMPRISE AU SOL DE LA MAISON', '15,55 × 13,80 m', t, T_SEIZE - 0.5, GREEN)
+    card(base, 128, 'EMPRISE AU SOL DE LA MAISON', '10,45 × 9,15 m', t, T_SEIZE - 0.5, GREEN)
     card(base, 254, 'MARGES À PRÉVOIR', 'côtés 1,5 · avant 5 · arrière 2 m', t, T_150, ORANGE, vs=32)
-    card(base, 380, 'TERRAIN À PRÉVOIR', '18,55 × 20,80 m', t, T_DIX, ORANGE)
-    card(base, 506, 'TERRAIN MINIMUM · arrondi à 50 m²', '400 m²', t, T_C1 - 0.2, ORANGE, h=130, vs=64)
+    card(base, 380, 'TERRAIN À PRÉVOIR', '13,45 × 16,15 m = 217 m²' if t > T_217 - 0.2 else '13,45 × 16,15 m', t, T_DIX, ORANGE, vs=36)
+    card(base, 506, 'TERRAIN MINIMUM · arrondi à 50 m²', '250 m²', t, T_C1 - 0.2, ORANGE, h=130, vs=64)
     render_box(base, (1236, 660, 1880, 900), t, start=2)
     if t > T_CONSEIL:
         a = e_out((t - T_CONSEIL) / 0.5)

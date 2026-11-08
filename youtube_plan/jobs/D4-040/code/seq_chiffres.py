@@ -1,9 +1,9 @@
 from common import *
 from widgets import *
-PLAN = Image.open(A + 'rdc3d.png').convert('RGB')
+PLAN = Image.open(A + 'pl_rdc.png').convert('RGB')
 words = words_of('chiffres'); TOKS = caption_tokens(words)
 DUR = D['chiffres']
-T149 = find(words, 'trois'); TNIV = find(words, 'niveaux'); TSEIZE = find(words, 'quinze'); TTREIZE = find(words, 'treize'); TENTRE = find(words, 'maintenant') - 0.5
+T149 = find(words, 'cinquante-cinq') - 0.3; TNIV = find(words, 'niveaux'); TSEIZE = find(words, 'dix'); TTREIZE = find(words, 'neuf'); TENTRE = find(words, 'maintenant') - 0.5
 CY0, CY1 = 135, 625
 _bg = None
 
@@ -31,10 +31,10 @@ def frame(t):
         box = (60, CY0, 400, CY1); off = card(base, box, pa); d = ImageDraw.Draw(base)
         text(d, (230, 205 + off), 'SURFACE TOTALE', 26, GREY, 'mm')
         s = int(150 * (0.7 + 0.3 * clamp(pa, 0, 1.1)))
-        text(d, (230, 350 + off), '314', s, ORANGE, 'mm')
+        text(d, (230, 350 + off), '155', s, ORANGE, 'mm')
         text(d, (230, 465 + off), 'm²', 70, ORANGE, 'mm')
-        text(d, (230, 540 + off), 'terrasses et', 30, DARK, 'mm')
-        text(d, (230, 578 + off), 'garage compris', 30, DARK, 'mm')
+        text(d, (230, 540 + off), 'répartis sur', 30, DARK, 'mm')
+        text(d, (230, 578 + off), 'deux niveaux', 30, DARK, 'mm')
     # carte B : un seul niveau
     pb = e_back((t - (TNIV - 1.2)) / 0.5)
     if pb > 0.02:
@@ -65,7 +65,7 @@ def frame(t):
             xe = px0 + int(pw * wa)
             d.line((px0, yb, xe, yb), fill=ORANGE, width=6)
             d.line((px0, yb - 14, px0, yb + 14), fill=ORANGE, width=6); d.line((xe, yb - 14, xe, yb + 14), fill=ORANGE, width=6)
-            if wa >= 0.99: text(d, (px0 + pw // 2, yb + 52), '15,55 m', 40, ORANGE, 'mm')
+            if wa >= 0.99: text(d, (px0 + pw // 2, yb + 52), '10,45 m', 40, ORANGE, 'mm')
         ha = e_out((t - TTREIZE + 0.1) / 0.7)
         xb = px0 + pw + 36
         if ha > 0:
@@ -73,7 +73,7 @@ def frame(t):
             d.line((xb, py0, xb, ye), fill=GREEN, width=6)
             d.line((xb - 14, py0, xb + 14, py0), fill=GREEN, width=6); d.line((xb - 14, ye, xb + 14, ye), fill=GREEN, width=6)
             if ha >= 0.99:
-                tx = Image.new('RGBA', (300, 80), (0, 0, 0, 0)); ImageDraw.Draw(tx).text((150, 40), '13,80 m', font=font(36), fill=GREEN, anchor='mm')
+                tx = Image.new('RGBA', (300, 80), (0, 0, 0, 0)); ImageDraw.Draw(tx).text((150, 40), '9,15 m', font=font(36), fill=GREEN, anchor='mm')
                 tx = tx.rotate(-90, expand=True); base.alpha_composite(tx, (xb + 6, py0 + ph // 2 - 150))
     render_box(base, (1236, 190, 1880, 800), t, start=0, pan=0.04)
     if ex > 0:

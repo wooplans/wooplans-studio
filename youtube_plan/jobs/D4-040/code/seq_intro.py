@@ -2,10 +2,10 @@ from common import *
 from widgets import fa, icon
 
 def L(n): return Image.open(A + n).convert('RGB')
-R = [L(f'R{i}.png') for i in range(10)]
+R = [L(f'R{i}.png') for i in range(5)]
 TH = Image.open(A + 'thumb_1920.png').convert('RGB')
-PL1 = Image.open(A + 'rdc3d.png').convert('RGB')
-PL2 = Image.open(A + 'et3d.png').convert('RGB')
+PL1 = Image.open(A + 'pl_rdc.png').convert('RGB')
+PL2 = Image.open(A + 'pl_et.png').convert('RGB')
 DUR = D['intro']
 words = words_of('intro')
 f = lambda p, n=0: find(words, p, n)
@@ -34,33 +34,29 @@ def K(i, z0, z1, p0, p1):
     return lambda t, d: kb(R[i], t, d, z0, z1, p0, p1)
 
 T = dict(
-    chamb1=f('quatre', 0), cine1=f('cinéma', 0), gar1=f('garage', 0), decouv=f('découvrir'), mais=f('mais'), regardez=f('regardez-le'),
-    facade=f('façade'), volumes=f('volumes'), pierre=f('pierre'), deux=f('deux', 3), salons=f('salons'), manger=f('manger'), cine2=f('cinéma', 1), gar2=f('garage', 1),
-    dans=f('dans'), plan=f('plan'), niv=f('niveau', 1) if False else f('niveau'), maison=f('maison'), angles=f('angles'), terrain=f('terrain'), budget=f('budget'), poste=f('poste'),
+    chamb1=f('quatre', 0), decouv=f('découvrir'), mais=f('mais'), regardez=f('regardez-le'),
+    niveaux=f('niveaux'), chamb2=f('chambres', 1), salons=f('salons'), suite=f('suite'), dressing=f('dressing'), terrasses=f('terrasses'),
+    dans=f('dans'), plan=f('plan'), maison=f('maison'), angles=f('angles'), terrain=f('terrain'), budget=f('budget'), poste=f('poste'),
     alors=f('alors'), abo=f('abonnez-vous'), parti=f("c'est"))
 T_SUB = T['abo'] - 0.4
 T_END = DUR
 SHOTS = [
     (0.0, T['chamb1'], lambda t, d: kb(TH, t, d, 1.0, 1.10, (0.5, 0.5), (0.5, 0.46))),
-    (T['chamb1'], T['cine1'], K(4, 1.0, 1.3, (0.5, 0.5), (0.45, 0.35))),
-    (T['cine1'], T['gar1'], K(6, 1.0, 1.25, (0.5, 0.5), (0.4, 0.55))),
-    (T['gar1'], T['decouv'] - 0.2, K(2, 1.3, 1.9, (0.7, 0.62), (0.76, 0.6))),
-    (T['decouv'] - 0.2, T['mais'] + 0.0, K(3, 1.0, 1.25, (0.5, 0.5), (0.5, 0.55))),
-    (T['mais'], T['facade'], K(1, 1.0, 1.35, (0.5, 0.5), (0.5, 0.55))),
-    (T['facade'], T['volumes'], K(0, 1.0, 1.3, (0.5, 0.5), (0.5, 0.45))),
-    (T['volumes'], T['pierre'], K(0, 1.7, 1.7, (0.28, 0.45), (0.74, 0.45))),
-    (T['pierre'], T['deux'] - 0.3, K(0, 2.3, 2.7, (0.46, 0.5), (0.46, 0.45))),
-    (T['deux'] - 0.3, T['salons'], K(5, 1.0, 1.25, (0.5, 0.5), (0.45, 0.45))),
-    (T['salons'], T['manger'], K(6, 1.0, 1.3, (0.5, 0.5), (0.4, 0.55))),
-    (T['manger'], T['gar2'] - 0.2, K(7, 1.0, 1.3, (0.5, 0.5), (0.45, 0.55))),
-    (T['gar2'] - 0.2, T['dans'], K(2, 1.5, 2.1, (0.74, 0.62), (0.78, 0.6))),
-    (T['dans'], T['plan'], K(8, 1.0, 1.3, (0.5, 0.5), (0.55, 0.5))),
+    (T['chamb1'], T['decouv'] - 0.2, K(0, 1.0, 1.3, (0.5, 0.5), (0.45, 0.45))),
+    (T['decouv'] - 0.2, T['mais'], K(3, 1.0, 1.25, (0.5, 0.5), (0.5, 0.55))),
+    (T['mais'], T['niveaux'] - 0.2, K(1, 1.0, 1.3, (0.5, 0.5), (0.5, 0.5))),
+    (T['niveaux'] - 0.2, T['chamb2'], K(1, 1.5, 1.9, (0.4, 0.3), (0.42, 0.3))),
+    (T['chamb2'], T['salons'], K(2, 1.0, 1.3, (0.5, 0.5), (0.55, 0.45))),
+    (T['salons'], T['suite'], K(4, 1.0, 1.3, (0.5, 0.5), (0.45, 0.5))),
+    (T['suite'], T['terrasses'], K(0, 1.7, 1.9, (0.3, 0.38), (0.34, 0.4))),
+    (T['terrasses'], T['dans'], K(1, 1.7, 2.1, (0.45, 0.33), (0.5, 0.33))),
+    (T['dans'], T['plan'], K(3, 1.0, 1.3, (0.5, 0.5), (0.55, 0.5))),
     (T['plan'], T['plan'] + 1.15, mk_plan(PL1)),
     (T['plan'] + 1.15, T['maison'], mk_plan(PL2)),
-    (T['maison'], T['terrain'] - 0.1, K(9, 1.0, 1.3, (0.5, 0.5), (0.5, 0.58))),
+    (T['maison'], T['terrain'] - 0.1, K(2, 1.0, 1.3, (0.5, 0.5), (0.5, 0.55))),
     (T['terrain'] - 0.1, T['budget'] - 0.1, K(3, 1.0, 1.35, (0.5, 0.5), (0.5, 0.58))),
     (T['budget'] - 0.1, T['alors'], K(1, 1.5, 2.0, (0.72, 0.5), (0.74, 0.52))),
-    (T['alors'], T_SUB + 2.0, K(2, 1.0, 1.25, (0.5, 0.5), (0.58, 0.5))),
+    (T['alors'], T_SUB + 2.0, K(4, 1.0, 1.25, (0.5, 0.5), (0.58, 0.5))),
     (T_SUB + 2.0, DUR, K(0, 1.2, 1.0, (0.6, 0.5), (0.5, 0.5))),
 ]
 XF = 0.28
@@ -78,12 +74,13 @@ def base(t):
 
 CH = [('Visite du plan', T['plan']), ('Les rendus', T['angles']), ('Le terrain', T['terrain']), ('Le budget', T['budget'])]
 # puces animées : carte de présentation (début) + liste des espaces (milieu)
-BUL = [('', '4 chambres', T['chamb1'], ORANGE), ('', 'Salle de cinéma', T['cine1'] - 0.2, GREEN), ('', 'Garage 2 voitures', T['gar1'] - 0.2, ORANGE)]
-CHIPS = [('', '2 niveaux', f('niveaux', 0)), ('', '4 chambres', f('chambres', 1)), ('', '2 salons', T['salons']), ('', '1 bureau', f('bureau')),
-         ('', 'Salle à manger', T['manger']), ('', 'Salle de cinéma', T['cine2']), ('', 'Garage 2 voitures', T['gar2'])]
+BUL = [('', '4 chambres', T['chamb1'], ORANGE), ('', '2 niveaux', T['decouv'] - 0.2, GREEN), ('', '155 m²', T['regardez'], ORANGE)]
+CHIPS = [('', '2 niveaux', T['niveaux']), ('', '4 chambres', T['chamb2']), ('', '2 salons', T['salons']), ('', 'Suite parentale', T['suite']),
+         ('', 'Dressing', T['dressing']), ('', 'Terrasses', T['terrasses'])]
 CHIP_END = T['dans'] - 0.2
-SLIDE_OUT = T['mais'] + 0.5
+SLIDE_OUT = T['niveaux'] - 0.2
 POPS = [b[2] for b in BUL] + [c[2] - 0.1 for c in CHIPS]
+SFX_TIMES = [T['chamb1'], T['decouv'], T['regardez'], T['plan'], T['angles'], T['terrain'], T['budget']] + [c[2] - 0.1 for c in CHIPS]
 
 def fade_(ov, a):
     if a < 1: ov.putalpha(ov.getchannel('A').point(lambda v: int(v * clamp(a))))
@@ -100,8 +97,8 @@ def slide_card(im, t):
     d = ImageDraw.Draw(ov)
     d.rounded_rectangle((x0 + off, y0, x1 + off, y1), 26, fill=(10, 60, 58, 135))
     d.rounded_rectangle((x0 + off, y0, x0 + off + 18, y1), 9, fill=ORANGE)
-    text(d, (x0 + 50 + off, y0 + 52), 'DUPLEX D4-004', 38, WHITE, 'lm')
-    text(d, (x0 + 50 + off, y0 + 98), '2 niveaux · 314 m²', 26, (225, 238, 235), 'lm')
+    text(d, (x0 + 50 + off, y0 + 52), 'DUPLEX D4-040', 38, WHITE, 'lm')
+    text(d, (x0 + 50 + off, y0 + 98), '2 niveaux · 155 m²', 26, (225, 238, 235), 'lm')
     for i, (ch, lab, tt, col) in enumerate(BUL):
         p = e_back((t - tt) / 0.38)
         if p <= 0.02: continue

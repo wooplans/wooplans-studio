@@ -1,6 +1,6 @@
 from common import *
 from widgets import *
-P1 = Image.open(A + 'rdc3d.png').convert('RGB'); P2 = Image.open(A + 'et3d.png').convert('RGB')
+P1 = Image.open(A + 'pl_rdc.png').convert('RGB'); P2 = Image.open(A + 'pl_et.png').convert('RGB')
 words = words_of('invit'); TOKS = caption_tokens(words)
 DUR = D['invit']
 TCOM = find(words, 'commentaire'); TSHARE = find(words, r'partagez-lui'); TAIDE = find(words, 'aide')

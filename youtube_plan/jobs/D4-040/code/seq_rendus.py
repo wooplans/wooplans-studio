@@ -2,20 +2,15 @@ from common import *
 from seq_intro import kb
 
 SH = [  # t0, label, fichier, z0, z1, p0, p1, night
- (0.0, 'Façade principale', 'R0.png', 1.0, 1.10, (0.5, 0.55), (0.5, 0.5), 0),
- (7.1, 'Volume principal', 'R0.png', 1.5, 1.9, (0.28, 0.5), (0.30, 0.52), 0),
- (11.8, 'Garage deux voitures', 'R0.png', 1.5, 2.0, (0.74, 0.58), (0.76, 0.6), 0),
- (16.6, 'Pierre apparente', 'R0.png', 1.8, 2.4, (0.46, 0.45), (0.46, 0.40), 0),
- (22.5, 'Vue trois quarts', 'R4.png', 1.0, 1.2, (0.5, 0.5), (0.45, 0.5), 0),
- (28.5, 'Garage intégré', 'R2.png', 1.0, 1.25, (0.45, 0.55), (0.40, 0.55), 0),
- (31.0, 'Vue du ciel', 'R3.png', 1.0, 1.25, (0.5, 0.45), (0.5, 0.55), 0),
- (36.5, "Côté entrée", 'R1.png', 1.0, 1.25, (0.5, 0.5), (0.45, 0.55), 0),
- (41.0, 'Façade latérale', 'R5.png', 1.0, 1.3, (0.5, 0.5), (0.45, 0.5), 0),
- (47.9, 'Le soir tombe', 'R6.png', 1.0, 1.25, (0.5, 0.5), (0.4, 0.55), 0),
- (55.2, 'Lumière chaude', 'R6.png', 1.5, 2.0, (0.45, 0.45), (0.48, 0.5), 0),
- (56.4, 'Côté garage', 'R8.png', 1.0, 1.2, (0.5, 0.5), (0.55, 0.5), 0),
- (59.7, 'Vue arrière', 'R9.png', 1.0, 1.25, (0.5, 0.5), (0.5, 0.55), 0),
- (64.3, 'Vue du soir', 'R7.png', 1.0, 1.15, (0.5, 0.5), (0.5, 0.52), 0),
+ (0.0, 'Vue de face', 'R1.png', 1.0, 1.10, (0.5, 0.52), (0.5, 0.5), 0),
+ (5.2, 'Balcon vitré', 'R1.png', 1.7, 1.95, (0.42, 0.42), (0.40, 0.42), 0),
+ (10.5, 'Entrée et fenêtres', 'R1.png', 1.7, 1.9, (0.36, 0.7), (0.42, 0.7), 0),
+ (13.4, 'Pierre apparente', 'R1.png', 2.0, 2.4, (0.78, 0.4), (0.78, 0.55), 0),
+ (18.0, 'Vue de gauche', 'R0.png', 1.0, 1.25, (0.5, 0.5), (0.45, 0.5), 0),
+ (24.5, "L'autre côté", 'R2.png', 1.0, 1.2, (0.5, 0.5), (0.55, 0.5), 0),
+ (26.3, "Fenêtres d'angle", 'R2.png', 1.5, 1.8, (0.7, 0.52), (0.7, 0.5), 0),
+ (29.0, 'Un peu plus haut', 'R3.png', 1.0, 1.25, (0.5, 0.5), (0.5, 0.55), 0),
+ (34.1, "Depuis l'autre côté", 'R4.png', 1.0, 1.2, (0.5, 0.5), (0.45, 0.5), 0),
 ]
 words = words_of('rendus')
 DUR = D['rendus']
@@ -81,9 +76,9 @@ def frame(t):
         x = W - 70 - (NS - 1 - k) * 40
         d.ellipse((x - 11, 1000 - 11, x + 11, 1000 + 11), fill=WHITE + (255,) if k <= i else (255, 255, 255, 90))
     # note « hors devis »
-    na = clamp((t - 67.6) / 0.4) * clamp((DUR - 0.4 - t) / 0.4)
+    na = clamp((t - 37.0) / 0.4) * clamp((DUR - 0.4 - t) / 0.4)
     if na > 0.02:
-        msg = 'Dalles, plantes, voitures, personnages : décor, hors devis'
+        msg = 'Plantes, voiture, décor : hors devis'
         wn = int(tw(msg, 40) + 80)
         ov = Image.new('RGBA', (wn, 90), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
         od.rounded_rectangle((0, 0, wn - 1, 89), 45, fill=WHITE + (int(240 * na),))
