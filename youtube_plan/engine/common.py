@@ -15,7 +15,7 @@ try:
     _JI = json.load(open(JOB + '/JOB.json', encoding='utf-8'))
 except Exception:
     _JI = {}
-CODE = _JI.get('code', 'D4-004'); HEAD_RIGHT = _JI.get('head_right', '4 chambres · 2 niveaux · 314 m²')
+CODE = _JI.get('code', 'D4-004'); HEAD_RIGHT = _JI.get('head_right', '4 chambres · 2 niveaux · 314 m²'); LABEL = _JI.get('label', 'DUPLEX')
 GREEN = (15, 91, 89); ORANGE = (240, 138, 46); DARK = (30, 41, 51); LIGHT = (245, 247, 249)
 GOLD = (231, 195, 108); GREY = (107, 114, 128); WHITE = (255, 255, 255); TERRA = (199, 91, 58)
 
@@ -183,7 +183,7 @@ def header(base, title_right=None):
     title_right = title_right or HEAD_RIGHT
     d = ImageDraw.Draw(base)
     d.rectangle((0, 0, W, 104), fill=GREEN)
-    text(d, (48, 52), 'DUPLEX ' + CODE, 44, WHITE, 'lm')
+    text(d, (48, 52), LABEL + ' ' + CODE, 44, WHITE, 'lm')
     text(d, (W - 250, 52), title_right, 32, GOLD, 'rm')
     lg = img('logo_white.png').copy(); lg.thumbnail((190, 90)); base.alpha_composite(lg, (W - 30 - lg.width, 52 - lg.height // 2))
 
@@ -193,9 +193,11 @@ import wave as _wave
 def _wd(k):
     w = _wave.open(V + k + '.wav'); return w.getnframes() / w.getframerate()
 _TAIL = dict(intro=0.6, chiffres=0.6, visite=1.0, visite2=1.0, invit=0.24, rendus=1.0, terrain=1.0, devis=1.0, fin=6.0)
-D = {k: math.ceil((_wd(k) + t) * FPS) / FPS for k, t in _TAIL.items()}
+D = {k: math.ceil((_wd(k) + t) * FPS) / FPS for k, t in _TAIL.items() if k != 'visite2' or os.path.exists(V + 'visite2.wav')}
 D['jingle'] = 4.011; D['catalogue'] = 35.8
 ORDER = ['intro', 'jingle', 'chiffres', 'visite', 'visite2', 'invit', 'rendus', 'catalogue', 'terrain', 'devis', 'fin']
+HAS_V2 = os.path.exists(V + 'visite2.wav')
+if not HAS_V2: ORDER.remove('visite2')
 OFF = {}
 _acc = 0.0
 for _k in ORDER:
