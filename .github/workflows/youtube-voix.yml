@@ -37,4 +37,5 @@ jobs:
           git add "youtube_plan/jobs/$JOB/voix"
           git diff --cached --quiet && { echo "rien à committer"; exit 0; }
           git commit -m "voix $JOB (Gradium)"
-          git push
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && exit 0; sleep 5; done
+          exit 1
