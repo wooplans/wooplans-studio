@@ -2,12 +2,75 @@
   "_source": "Fiches publiées du catalogue WooPlans (get_plan, 9 nov. 2026) : chambres, salles de bain (affichées « douches »), surface. Prix du plan et devis : 14 900 FCFA (produit Chariow « Plan et devis »). Rendus : versions publiques du site (déjà filigranées), jamais les originaux.",
   "price_fcfa": 14900,
   "plans": [
-    {"code": "D4-043", "name": "Duplex D4-043", "kind": "DUPLEX", "bedrooms": 4, "bathrooms": 3, "surface": 318, "render": "src/D4-043_0.webp"},
-    {"code": "V4-036", "name": "Villa V4-036", "kind": "VILLA",  "bedrooms": 4, "bathrooms": 2, "surface": 233, "render": "src/V4-036_0.webp"},
-    {"code": "V3-017", "name": "Villa V3-017", "kind": "VILLA",  "bedrooms": 3, "bathrooms": 2, "surface": 120, "render": "src/V3-017_1.webp"},
-    {"code": "V4-005", "name": "Villa V4-005", "kind": "VILLA",  "bedrooms": 4, "bathrooms": 3, "surface": 201, "render": "src/V4-005_0.webp"},
-    {"code": "D4-026", "name": "Duplex D4-026", "kind": "DUPLEX", "bedrooms": 4, "bathrooms": 3, "surface": 235, "render": "src/D4-026_0.webp"},
-    {"code": "V3-014", "name": "Villa V3-014", "kind": "VILLA",  "bedrooms": 3, "bathrooms": 2, "surface": 201, "render": "src/V3-014_0.webp"},
-    {"code": "V3-037", "name": "Villa V3-037", "kind": "VILLA",  "bedrooms": 3, "bathrooms": 2, "surface": 164, "render": "src/V3-037_0.webp"}
+    {
+      "code": "D4-043",
+      "name": "Duplex D4-043",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 318,
+      "render": "src/D4-043_0.webp",
+      "url": "https://www.wooplans.com/media/upload-framer-a6e4c9d195cc07f1f752.webp"
+    },
+    {
+      "code": "V4-036",
+      "name": "Villa V4-036",
+      "kind": "VILLA",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "surface": 233,
+      "render": "src/V4-036_0.webp",
+      "url": "https://www.wooplans.com/media/public/v4-036/1793197388472-724fEdhG.webp"
+    },
+    {
+      "code": "V3-017",
+      "name": "Villa V3-017",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 120,
+      "render": "src/V3-017_1.webp",
+      "url": "https://www.wooplans.com/media/public/v3-017/1793180518015-jxLQQnzn.webp"
+    },
+    {
+      "code": "V4-005",
+      "name": "Villa V4-005",
+      "kind": "VILLA",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 201,
+      "render": "src/V4-005_0.webp",
+      "url": "https://www.wooplans.com/media/public/v4-005/1792274272178--TgaDkj7.webp"
+    },
+    {
+      "code": "D4-026",
+      "name": "Duplex D4-026",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 235,
+      "render": "src/D4-026_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-026/1793787259635-BMToe2En.webp"
+    },
+    {
+      "code": "V3-014",
+      "name": "Villa V3-014",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 201,
+      "render": "src/V3-014_0.webp",
+      "url": "https://www.wooplans.com/media/public/v3-014/1793191223737-GIqyYfOu.webp"
+    },
+    {
+      "code": "V3-037",
+      "name": "Villa V3-037",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 164,
+      "render": "src/V3-037_0.webp",
+      "url": "https://www.wooplans.com/media/upload-1776984367928-34baeffd67514b8780e6c2514e2923a2.webp"
+    }
   ]
 }

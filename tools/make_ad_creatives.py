@@ -9,6 +9,8 @@ import json
 import sys
 from pathlib import Path
 
+import requests
+
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 from wooplans.guardrails import check_copy
@@ -51,7 +53,13 @@ def make(p: dict, root: Path, price: int) -> Path:
     problems = check_copy(" | ".join(lines_for(p, price)), allowed_amounts=[price])
     if problems:
         raise SystemExit(f"{p['code']} : {problems}")
-    im = ImageOps.exif_transpose(Image.open(root / p["render"])).convert("RGB")
+    src = root / p["render"]
+    if not src.is_file():                           # les images ne sont pas dans git : on retélécharge le rendu public
+        src.parent.mkdir(parents=True, exist_ok=True)
+        r = requests.get(p["url"], headers={"User-Agent": "Mozilla/5.0 (compatible; WooPlansStudio/1.0)"}, timeout=60)
+        r.raise_for_status()
+        src.write_bytes(r.content)
+    im = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
     h = round(W * im.height / im.width)
     im = im.resize((W, h), Image.LANCZOS)
     max_h = H - BOTTOM - TOP_MIN
