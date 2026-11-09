@@ -1,6 +1,7 @@
 """Visuels publicitaires 4:5 (1080×1350) : rendu du modèle + chambres, douches, surface, prix du plan et devis, CTA.
 
-  python tools/make_ad_creatives.py creatives/top7          # lit spec.json, écrit <code>_4x5.jpg + apercu.jpg
+  python tools/make_ad_creatives.py creatives/top7 [--price 39000]   # lit spec.json, écrit <code>_4x5.jpg + apercu.jpg
+  --price : variante dont SEUL le montant change (fichiers suffixés _<montant>)
 
 Règles : textes passés dans check_copy (prix 14 900 FCFA autorisé, jamais d'urgence) ; rendus publics déjà filigranés
 (jamais les originaux propres) ; adresse affichée : wooplans.com. Aucun envoi vers Meta : l'accord de Tao vient d'abord.
@@ -49,7 +50,7 @@ def lines_for(p: dict, price: int) -> list:
             "TÉLÉCHARGER MAINTENANT", "wooplans.com"]
 
 
-def make(p: dict, root: Path, price: int) -> Path:
+def make(p: dict, root: Path, price: int, suffix: str = "") -> Path:
     problems = check_copy(" | ".join(lines_for(p, price)), allowed_amounts=[price])
     if problems:
         raise SystemExit(f"{p['code']} : {problems}")
@@ -101,7 +102,7 @@ def make(p: dict, root: Path, price: int) -> Path:
     # adresse
     centered(d, (W // 2, by + bh + 38), "wooplans.com", font(32), SOFT)
 
-    out = root / f"{p['code']}_4x5.jpg"
+    out = root / f"{p['code']}_4x5{suffix}.jpg"
     canvas.save(out, "JPEG", quality=92, optimize=True)
     return out
 
@@ -117,15 +118,24 @@ def sheet(paths, out_path, cols: int = 4, cell_w: int = 360) -> None:
     img.save(out_path, "JPEG", quality=85, optimize=True)
 
 
-def main(root: Path) -> None:
+def main(root: Path, price: int = None) -> None:
     spec = json.loads((root / "spec.json").read_text(encoding="utf-8"))
+    suffix = ""
+    if price and price != spec["price_fcfa"]:
+        spec["price_fcfa"], suffix = price, f"_{price}"
     outs = []
     for p in spec["plans"]:
-        outs.append(make(p, root, spec["price_fcfa"]))
+        outs.append(make(p, root, spec["price_fcfa"], suffix))
         print("OK", outs[-1])
-    sheet(outs, root / "apercu.jpg")
-    print("OK", root / "apercu.jpg")
+    sheet(outs, root / f"apercu{suffix}.jpg")
+    print("OK", root / f"apercu{suffix}.jpg")
 
 
 if __name__ == "__main__":
-    main(Path(sys.argv[1]))
+    args = sys.argv[1:]
+    price = None
+    if "--price" in args:
+        i = args.index("--price")
+        price = int(args[i + 1])
+        del args[i:i + 2]
+    main(Path(args[0]), price)
