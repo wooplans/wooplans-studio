@@ -43,18 +43,10 @@ def centered(d, xy_center, text, f, fill):
     d.text((cx, cy), text, font=f, fill=fill, anchor="mm")
 
 
-# Prix du plan et devis seul ; tout autre prix est une offre « plan et devis + Catalogue Premium offert » (site : offres 39k, 29k, 19k).
-PLAN_ONLY_PRICE = 14900
-
-
-def offer_label(price: int) -> str:
-    return "Plan + devis du modèle" if price == PLAN_ONLY_PRICE else "Plan + devis + Catalogue Premium offert"
-
-
 def lines_for(p: dict, price: int) -> list:
     ch = f"{p['bedrooms']} chambres"
     dou = f"{p['bathrooms']} douches"
-    return [p["name"].upper(), ch, dou, f"{p['surface']} m²", offer_label(price), f"{price:,}".replace(",", " ") + " FCFA",
+    return [p["name"].upper(), ch, dou, f"{p['surface']} m²", "Plan + devis du modèle", f"{price:,}".replace(",", " ") + " FCFA",
             "TÉLÉCHARGER MAINTENANT", "wooplans.com"]
 
 
@@ -95,7 +87,7 @@ def make(p: dict, root: Path, price: int, suffix: str = "") -> Path:
         if i:
             d.line([(col * i, y0 + 26), (col * i, y0 + 150)], fill=SOFT, width=2)
     # prix
-    centered(d, (W // 2, y0 + 205), offer_label(price), font(32), GOLD if price != PLAN_ONLY_PRICE else SOFT)
+    centered(d, (W // 2, y0 + 205), "Plan + devis du modèle", font(32), SOFT)
     price_txt = f"{price:,}".replace(",", " ")
     fp, fc = font(104), font(46)
     wp = d.textlength(price_txt, font=fp)
