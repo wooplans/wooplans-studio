@@ -1,6 +1,7 @@
 """2 vidéos pub 9:16 (1080×1920) qui enchaînent les 7 modèles du top 7, coupes calées sur le tempo de la musique.
 
-  python tools/make_ad_videos.py creatives/top7 [dossier_sortie]     # lit spec.json, écrit video_A_regulier.mp4, video_B_acceleration.mp4
+  python tools/make_ad_videos.py creatives/top7 [dossier_sortie] [--price 39000]   # lit spec.json, écrit video_A_regulier.mp4, video_B_acceleration.mp4
+  --price : variante dont SEUL le montant change (fichiers suffixés _<montant>)
 
 A « régulier »  : 7 modèles × 4 temps (Africa Arulo, 124 bpm), puis carte finale.
 B « accélération » : 8, 6, 4, 4, 2, 2, 2 temps (Pop Two, 100 bpm) : les 3 meilleurs restent plus longtemps, les autres défilent en rafale.
@@ -125,7 +126,7 @@ def still(layout: Path, frames: int, out: Path) -> None:
          "-vf", "format=yuv420p", "-r", FPS, "-c:v", "libx264", "-crf", "17", "-preset", "veryfast", "-frames:v", frames, out])
 
 
-def render(spec: dict, root: Path, v: dict, tmp: Path, out_dir: Path) -> Path:
+def render(spec: dict, root: Path, v: dict, tmp: Path, out_dir: Path, suffix: str = "") -> Path:
     price = spec["price_fcfa"]
     plans = spec["plans"]
     tracks = json.loads((MUSIC / "tracks.json").read_text(encoding="utf-8"))
@@ -171,24 +172,33 @@ def render(spec: dict, root: Path, v: dict, tmp: Path, out_dir: Path) -> Path:
     silent = tmp / f"{v['id']}_silent.mp4"
     run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent])
     total = cuts[-1] / FPS
-    out = out_dir / f"video_{v['id']}.mp4"
+    out = out_dir / f"video_{v['id']}{suffix}.mp4"
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", silent, "-ss", f"{tr['best_start']:.3f}", "-t", f"{total:.3f}", "-i", MUSIC / v["track"],
          "-filter_complex", f"[1:a]afade=t=in:d=0.15,afade=t=out:st={total - 1.4:.3f}:d=1.4,volume=0.9[a]",
          "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", out])
     # premier frame = vignette : la plateforme l'affiche tant que la vidéo ne tourne pas
-    run(["ffmpeg", "-y", "-loglevel", "error", "-i", out, "-frames:v", "1", "-q:v", "2", out_dir / f"video_{v['id']}_cover.jpg"])
+    run(["ffmpeg", "-y", "-loglevel", "error", "-i", out, "-frames:v", "1", "-q:v", "2", out_dir / f"video_{v['id']}{suffix}_cover.jpg"])
     print(f"OK {out.name} : {total:.1f} s, coupes tous les {v['beats']} temps ({tr['bpm']} bpm)")
     return out
 
 
-def main(root: Path, out_dir: Path) -> None:
+def main(root: Path, out_dir: Path, price: int = None) -> None:
     spec = json.loads((root / "spec.json").read_text(encoding="utf-8"))
+    suffix = ""
+    if price and price != spec["price_fcfa"]:
+        spec["price_fcfa"], suffix = price, f"_{price}"
     out_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="adv-") as t:
         for v in VIDEOS:
-            render(spec, root, v, Path(t), out_dir)
+            render(spec, root, v, Path(t), out_dir, suffix)
 
 
 if __name__ == "__main__":
-    r = Path(sys.argv[1])
-    main(r, Path(sys.argv[2]) if len(sys.argv) > 2 else r / "video")
+    args = [a for a in sys.argv[1:]]
+    price = None
+    if "--price" in args:
+        i = args.index("--price")
+        price = int(args[i + 1])
+        del args[i:i + 2]
+    r = Path(args[0])
+    main(r, Path(args[1]) if len(args) > 1 else r / "video", price)
