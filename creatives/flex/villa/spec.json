@@ -81,6 +81,26 @@
       "surface": 164,
       "render": "src/V3-037_0.webp",
       "url": "https://www.wooplans.com/media/upload-1776984367928-34baeffd67514b8780e6c2514e2923a2.webp"
+    },
+    {
+      "code": "V3-008",
+      "name": "Villa V3-008",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 189,
+      "render": "src/V3-008_0.webp",
+      "url": "https://www.wooplans.com/media/public/v3-008/1793191462671-A6KdNO2d.webp"
+    },
+    {
+      "code": "V4-001",
+      "name": "Villa V4-001",
+      "kind": "VILLA",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 116,
+      "render": "src/V4-001_0.webp",
+      "url": "https://www.wooplans.com/media/public/v4-001/1792070304985-IaVB69c3.webp"
     }
   ]
 }

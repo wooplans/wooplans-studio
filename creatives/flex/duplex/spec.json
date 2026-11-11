@@ -81,6 +81,26 @@
       "surface": 235,
       "render": "src/D4-026_0.webp",
       "url": "https://www.wooplans.com/media/public/d4-026/1793787259635-BMToe2En.webp"
+    },
+    {
+      "code": "D4-035",
+      "name": "Duplex D4-035",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 140,
+      "render": "src/D4-035_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-035/1793188381108-bqmxpcK9.webp"
+    },
+    {
+      "code": "D5-020",
+      "name": "Duplex D5-020",
+      "kind": "DUPLEX",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "surface": 307,
+      "render": "src/D5-020_0.webp",
+      "url": "https://www.wooplans.com/media/public/d5-020/1793181099720-bqpdiik-.webp"
     }
   ]
 }
