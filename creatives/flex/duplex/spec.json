@@ -1,0 +1,86 @@
+{
+  "_source": "Top 8 par catégorie (10 nov. 2026) : ventes, puis paiements démarrés, puis visiteurs de la fiche (30 jours). Caractéristiques : fiches publiées du catalogue. Rendus : versions publiques déjà filigranées, jamais les originaux. Pas de prix sur les visuels (le prix selon le pays est dans le texte de la pub).",
+  "price_fcfa": 0,
+  "plans": [
+    {
+      "code": "D5-012",
+      "name": "Duplex D5-012",
+      "kind": "DUPLEX",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "surface": 234,
+      "render": "src/D5-012_0.webp",
+      "url": "https://www.wooplans.com/media/public/d5-012/1793182645813-yoMRRalX.webp"
+    },
+    {
+      "code": "D4-034",
+      "name": "Duplex D4-034",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 143,
+      "render": "src/D4-034_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-034/1793182644175-gwCmfMaj.webp"
+    },
+    {
+      "code": "D4-043",
+      "name": "Duplex D4-043",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 318,
+      "render": "src/D4-043_0.webp",
+      "url": "https://www.wooplans.com/media/upload-framer-a6e4c9d195cc07f1f752.webp"
+    },
+    {
+      "code": "D4-019",
+      "name": "Duplex D4-019",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 338,
+      "render": "src/D4-019_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-019/1793181921249-ilOZZwyJ.webp"
+    },
+    {
+      "code": "D4-020",
+      "name": "Duplex D4-020",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "surface": 266,
+      "render": "src/D4-020_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-020/1793181094591-GRVMdEK-.webp"
+    },
+    {
+      "code": "D4-033",
+      "name": "Duplex D4-033",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 226,
+      "render": "src/D4-033_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-033/1793182723696-eUZwob5t.webp"
+    },
+    {
+      "code": "D4-040",
+      "name": "Duplex D4-040",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 155,
+      "render": "src/D4-040_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-040/1793188392315-94I7UmDz.webp"
+    },
+    {
+      "code": "D4-026",
+      "name": "Duplex D4-026",
+      "kind": "DUPLEX",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 235,
+      "render": "src/D4-026_0.webp",
+      "url": "https://www.wooplans.com/media/public/d4-026/1793787259635-BMToe2En.webp"
+    }
+  ]
+}

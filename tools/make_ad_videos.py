@@ -2,6 +2,7 @@
 
   python tools/make_ad_videos.py creatives/top7 [dossier_sortie] [--price 39000]   # lit spec.json, écrit video_A_regulier.mp4, video_B_acceleration.mp4
   --price : variante dont SEUL le montant change (fichiers suffixés _<montant>)
+  --no-price : variante sans prix, le bouton « TÉLÉCHARGER PLAN ET DEVIS » prend sa place (fichiers suffixés _sansprix)
 
 A « régulier »  : 7 modèles × 4 temps (Africa Arulo, 124 bpm), puis carte finale.
 B « accélération » : 8, 6, 4, 4, 2, 2, 2 temps (Pop Two, 100 bpm) : les 3 meilleurs restent plus longtemps, les autres défilent en rafale.
@@ -27,10 +28,18 @@ MAX_SLOT = 690
 MUSIC = ROOT / "assets" / "music"
 BRAND = ROOT / "assets" / "brand"
 
-VIDEOS = [
-    {"id": "A_regulier", "track": "Africa_Arulo_mixkit-218.mp3", "beats": [4] * 7, "end_beats": 8},
-    {"id": "B_acceleration", "track": "C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3", "beats": [8, 6, 4, 4, 2, 2, 2], "end_beats": 6},
-]
+def videos_for(n: int) -> list:
+    """Deux montages : A « régulier » (4 temps par modèle) et B « accélération » (les 4 premiers restent plus longtemps)."""
+    return [
+        {"id": "A_regulier", "track": "Africa_Arulo_mixkit-218.mp3", "beats": [4] * n, "end_beats": 8},
+        {"id": "B_acceleration", "track": "C_Pop-Two_Grigoriy-Nuzhny_mixkit-697.mp3", "beats": ([8, 6, 4, 4] + [2] * max(0, n - 4))[:n], "end_beats": 6},
+    ]
+
+
+VIDEOS = videos_for(7)  # top 7 d'origine ; main() recalcule selon le nombre de modèles du spec
+
+CTA_NO_PRICE = "TÉLÉCHARGER PLAN ET DEVIS"
+SUBLINE_NO_PRICE = "Plan coté + devis détaillé du modèle"
 
 
 def run(cmd):
@@ -48,6 +57,9 @@ def centered(d, xy, text, f, fill):
 
 
 def texts(p: dict, price: int) -> list:
+    if not price:
+        return ["Quel modèle choisissez-vous ?", p["name"].upper(), f"{p['bedrooms']} chambres", f"{p['bathrooms']} douches", f"{p['surface']} m²",
+                SUBLINE_NO_PRICE, CTA_NO_PRICE, "wooplans.com"]
     return ["Quel modèle choisissez-vous ?", p["name"].upper(), f"{p['bedrooms']} chambres", f"{p['bathrooms']} douches", f"{p['surface']} m²",
             "Plan + devis du modèle", f"{fcfa(price)} FCFA", "TÉLÉCHARGER MAINTENANT", "wooplans.com"]
 
@@ -71,17 +83,26 @@ def layout_png(p: dict, price: int, idx: int, n: int, slot_h: int, out: Path) ->
         centered(d, (cx, y0 + 144), lab, font(36), WHITE)
         if i:
             d.line([(col * i, y0 + 30), (col * i, y0 + 160)], fill=SOFT, width=2)
-    centered(d, (W // 2, y0 + 225), "Plan + devis du modèle", font(34), SOFT)
-    ptxt = fcfa(price)
-    fp, fc = font(112), font(48)
-    wp, wc = d.textlength(ptxt, font=fp), d.textlength(" FCFA", font=fc)
-    x = (W - (wp + wc)) / 2
-    d.text((x, y0 + 292), ptxt, font=fp, fill=WHITE, anchor="lm")
-    d.text((x + wp, y0 + 310), " FCFA", font=fc, fill=WHITE, anchor="lm")
-    by = y0 + 365
-    d.rounded_rectangle([(W - 800) // 2, by, (W + 800) // 2, by + 104], radius=52, fill=ORANGE)
-    centered(d, (W // 2, by + 50), "TÉLÉCHARGER MAINTENANT", font(44), TEAL_D)
-    centered(d, (W // 2, by + 150), "wooplans.com", font(34), SOFT)
+    if not price:
+        # Sans prix : le bouton « TÉLÉCHARGER PLAN ET DEVIS » prend la place du prix
+        centered(d, (W // 2, y0 + 232), SUBLINE_NO_PRICE, font(35), SOFT)
+        by = y0 + 290
+        d.rounded_rectangle([(W - 920) // 2, by, (W + 920) // 2, by + 130], radius=65, fill=ORANGE)
+        centered(d, (W // 2, by + 62), CTA_NO_PRICE, font(50), TEAL_D)
+        centered(d, (W // 2, by + 190), "wooplans.com", font(36), SOFT)
+        by += 25  # repères de progression un peu plus bas pour rester au même endroit que la version avec prix
+    else:
+        centered(d, (W // 2, y0 + 225), "Plan + devis du modèle", font(34), SOFT)
+        ptxt = fcfa(price)
+        fp, fc = font(112), font(48)
+        wp, wc = d.textlength(ptxt, font=fp), d.textlength(" FCFA", font=fc)
+        x = (W - (wp + wc)) / 2
+        d.text((x, y0 + 292), ptxt, font=fp, fill=WHITE, anchor="lm")
+        d.text((x + wp, y0 + 310), " FCFA", font=fc, fill=WHITE, anchor="lm")
+        by = y0 + 365
+        d.rounded_rectangle([(W - 800) // 2, by, (W + 800) // 2, by + 104], radius=52, fill=ORANGE)
+        centered(d, (W // 2, by + 50), "TÉLÉCHARGER MAINTENANT", font(44), TEAL_D)
+        centered(d, (W // 2, by + 150), "wooplans.com", font(34), SOFT)
     # repères de progression : un point par modèle
     gap, r = 38, 9
     x0 = (W - gap * (n - 1)) // 2
@@ -99,15 +120,20 @@ def end_card_png(price: int, out: Path) -> None:
     im.paste(logo, ((W - lw) // 2, 330), logo)
     centered(d, (W // 2, 860), "Votre plan + devis", font(78), WHITE)
     centered(d, (W // 2, 960), "dès aujourd'hui", font(78), WHITE)
-    ptxt = fcfa(price)
-    fp, fc = font(116), font(50)
-    wp, wc = d.textlength(ptxt, font=fp), d.textlength(" FCFA", font=fc)
-    x = (W - (wp + wc)) / 2
-    d.text((x, 1110), ptxt, font=fp, fill=GOLD, anchor="lm")
-    d.text((x + wp, 1128), " FCFA", font=fc, fill=GOLD, anchor="lm")
-    d.rounded_rectangle([(W - 800) // 2, 1220, (W + 800) // 2, 1330], radius=55, fill=ORANGE)
-    centered(d, (W // 2, 1275), "TÉLÉCHARGER MAINTENANT", font(46), TEAL_D)
-    centered(d, (W // 2, 1400), "wooplans.com", font(44), SOFT)
+    if not price:
+        d.rounded_rectangle([(W - 920) // 2, 1110, (W + 920) // 2, 1250], radius=70, fill=ORANGE)
+        centered(d, (W // 2, 1180), CTA_NO_PRICE, font(52), TEAL_D)
+        centered(d, (W // 2, 1340), "wooplans.com", font(46), SOFT)
+    else:
+        ptxt = fcfa(price)
+        fp, fc = font(116), font(50)
+        wp, wc = d.textlength(ptxt, font=fp), d.textlength(" FCFA", font=fc)
+        x = (W - (wp + wc)) / 2
+        d.text((x, 1110), ptxt, font=fp, fill=GOLD, anchor="lm")
+        d.text((x + wp, 1128), " FCFA", font=fc, fill=GOLD, anchor="lm")
+        d.rounded_rectangle([(W - 800) // 2, 1220, (W + 800) // 2, 1330], radius=55, fill=ORANGE)
+        centered(d, (W // 2, 1275), "TÉLÉCHARGER MAINTENANT", font(46), TEAL_D)
+        centered(d, (W // 2, 1400), "wooplans.com", font(44), SOFT)
     im.save(out)
 
 
@@ -159,7 +185,8 @@ def render(spec: dict, root: Path, v: dict, tmp: Path, out_dir: Path, suffix: st
         parts.append(part)
     end_lay = tmp / f"{v['id']}_end.png"
     end_card_png(price, end_lay)
-    for t in ["Votre plan + devis", "dès aujourd'hui", f"{fcfa(price)} FCFA", "TÉLÉCHARGER MAINTENANT", "wooplans.com"]:
+    end_texts = ["Votre plan + devis", "dès aujourd'hui", CTA_NO_PRICE, "wooplans.com"] if not price else ["Votre plan + devis", "dès aujourd'hui", f"{fcfa(price)} FCFA", "TÉLÉCHARGER MAINTENANT", "wooplans.com"]
+    for t in end_texts:
         pb = check_copy(t, allowed_amounts=[price])
         if pb:
             raise SystemExit(f"carte finale : {pb}")
@@ -182,23 +209,28 @@ def render(spec: dict, root: Path, v: dict, tmp: Path, out_dir: Path, suffix: st
     return out
 
 
-def main(root: Path, out_dir: Path, price: int = None) -> None:
+def main(root: Path, out_dir: Path, price: int = None, no_price: bool = False) -> None:
     spec = json.loads((root / "spec.json").read_text(encoding="utf-8"))
     suffix = ""
-    if price and price != spec["price_fcfa"]:
+    if no_price:
+        spec["price_fcfa"], suffix = 0, "_sansprix"
+    elif price and price != spec["price_fcfa"]:
         spec["price_fcfa"], suffix = price, f"_{price}"
     out_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="adv-") as t:
-        for v in VIDEOS:
+        for v in videos_for(len(spec["plans"])):
             render(spec, root, v, Path(t), out_dir, suffix)
 
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:]]
     price = None
+    no_price = "--no-price" in args
+    if no_price:
+        args.remove("--no-price")
     if "--price" in args:
         i = args.index("--price")
         price = int(args[i + 1])
         del args[i:i + 2]
     r = Path(args[0])
-    main(r, Path(args[1]) if len(args) > 1 else r / "video", price)
+    main(r, Path(args[1]) if len(args) > 1 else r / "video", price, no_price)

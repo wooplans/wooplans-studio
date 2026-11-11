@@ -1,0 +1,86 @@
+{
+  "_source": "Top 8 par catégorie (10 nov. 2026) : ventes, puis paiements démarrés, puis visiteurs de la fiche (30 jours). Caractéristiques : fiches publiées du catalogue. Rendus : versions publiques déjà filigranées, jamais les originaux. Pas de prix sur les visuels (le prix selon le pays est dans le texte de la pub).",
+  "price_fcfa": 0,
+  "plans": [
+    {
+      "code": "V3-017",
+      "name": "Villa V3-017",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 120,
+      "render": "src/V3-017_0.webp",
+      "url": "https://www.wooplans.com/media/public/v3-017/1793180527113-CjHuoX5p.webp"
+    },
+    {
+      "code": "V4-005",
+      "name": "Villa V4-005",
+      "kind": "VILLA",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 201,
+      "render": "src/V4-005_0.webp",
+      "url": "https://www.wooplans.com/media/public/v4-005/1792274272178--TgaDkj7.webp"
+    },
+    {
+      "code": "V4-036",
+      "name": "Villa V4-036",
+      "kind": "VILLA",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "surface": 233,
+      "render": "src/V4-036_0.webp",
+      "url": "https://www.wooplans.com/media/public/v4-036/1793197388472-724fEdhG.webp"
+    },
+    {
+      "code": "V3-018",
+      "name": "Villa V3-018",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 127,
+      "render": "src/V3-018_0.webp",
+      "url": "https://www.wooplans.com/media/public/v3-018/1793188381476-4n0NfqVs.webp"
+    },
+    {
+      "code": "V4-032",
+      "name": "Villa V4-032",
+      "kind": "VILLA",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surface": 177,
+      "render": "src/V4-032_0.webp",
+      "url": "https://www.wooplans.com/media/public/v4-032/1793974239916-KfgJrFyI.webp"
+    },
+    {
+      "code": "V3-009",
+      "name": "Villa V3-009",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 127,
+      "render": "src/V3-009_0.webp",
+      "url": "https://www.wooplans.com/media/public/v3-009/1793191171852-Gso6BVeQ.webp"
+    },
+    {
+      "code": "V3-014",
+      "name": "Villa V3-014",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 201,
+      "render": "src/V3-014_0.webp",
+      "url": "https://www.wooplans.com/media/public/v3-014/1793191223737-GIqyYfOu.webp"
+    },
+    {
+      "code": "V3-037",
+      "name": "Villa V3-037",
+      "kind": "VILLA",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surface": 164,
+      "render": "src/V3-037_0.webp",
+      "url": "https://www.wooplans.com/media/upload-1776984367928-34baeffd67514b8780e6c2514e2923a2.webp"
+    }
+  ]
+}

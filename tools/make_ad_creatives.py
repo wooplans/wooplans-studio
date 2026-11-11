@@ -2,6 +2,7 @@
 
   python tools/make_ad_creatives.py creatives/top7 [--price 39000]   # lit spec.json, écrit <code>_4x5.jpg + apercu.jpg
   --price : variante dont SEUL le montant change (fichiers suffixés _<montant>)
+  --no-price : variante sans prix (bouton « TÉLÉCHARGER PLAN ET DEVIS »), fichiers suffixés _sansprix
 
 Règles : textes passés dans check_copy (prix 14 900 FCFA autorisé, jamais d'urgence) ; rendus publics déjà filigranés
 (jamais les originaux propres) ; adresse affichée : wooplans.com. Aucun envoi vers Meta : l'accord de Tao vient d'abord.
@@ -43,9 +44,15 @@ def centered(d, xy_center, text, f, fill):
     d.text((cx, cy), text, font=f, fill=fill, anchor="mm")
 
 
+CTA_NO_PRICE = "TÉLÉCHARGER PLAN ET DEVIS"
+SUBLINE_NO_PRICE = "Plan coté + devis détaillé du modèle"
+
+
 def lines_for(p: dict, price: int) -> list:
     ch = f"{p['bedrooms']} chambres"
     dou = f"{p['bathrooms']} douches"
+    if not price:  # variante sans prix : le prix est dans le texte de la pub et sur la fiche, selon le pays
+        return [p["name"].upper(), ch, dou, f"{p['surface']} m²", SUBLINE_NO_PRICE, CTA_NO_PRICE, "wooplans.com"]
     return [p["name"].upper(), ch, dou, f"{p['surface']} m²", "Plan + devis du modèle", f"{price:,}".replace(",", " ") + " FCFA",
             "TÉLÉCHARGER MAINTENANT", "wooplans.com"]
 
@@ -86,21 +93,29 @@ def make(p: dict, root: Path, price: int, suffix: str = "") -> Path:
         centered(d, (cx, y0 + 132), lab, font(34), WHITE)
         if i:
             d.line([(col * i, y0 + 26), (col * i, y0 + 150)], fill=SOFT, width=2)
-    # prix
-    centered(d, (W // 2, y0 + 205), "Plan + devis du modèle", font(32), SOFT)
-    price_txt = f"{price:,}".replace(",", " ")
-    fp, fc = font(104), font(46)
-    wp = d.textlength(price_txt, font=fp)
-    wc = d.textlength(" FCFA", font=fc)
-    x = (W - (wp + wc)) / 2
-    d.text((x, y0 + 270), price_txt, font=fp, fill=WHITE, anchor="lm")
-    d.text((x + wp, y0 + 286), " FCFA", font=fc, fill=WHITE, anchor="lm")
-    # CTA
-    bw, bh, by = 800, 100, y0 + 340
-    d.rounded_rectangle([(W - bw) // 2, by, (W + bw) // 2, by + bh], radius=50, fill=ORANGE)
-    centered(d, (W // 2, by + bh // 2 - 2), "TÉLÉCHARGER MAINTENANT", font(42), TEAL_D)
-    # adresse
-    centered(d, (W // 2, by + bh + 38), "wooplans.com", font(32), SOFT)
+    if not price:
+        # Sans prix : le bouton « TÉLÉCHARGER PLAN ET DEVIS » prend la place du prix (plus grand, bien visible)
+        centered(d, (W // 2, y0 + 215), SUBLINE_NO_PRICE, font(33), SOFT)
+        bw, bh, by = 900, 124, y0 + 262
+        d.rounded_rectangle([(W - bw) // 2, by, (W + bw) // 2, by + bh], radius=62, fill=ORANGE)
+        centered(d, (W // 2, by + bh // 2 - 2), CTA_NO_PRICE, font(47), TEAL_D)
+        centered(d, (W // 2, by + bh + 42), "wooplans.com", font(32), SOFT)
+    else:
+        # prix
+        centered(d, (W // 2, y0 + 205), "Plan + devis du modèle", font(32), SOFT)
+        price_txt = f"{price:,}".replace(",", " ")
+        fp, fc = font(104), font(46)
+        wp = d.textlength(price_txt, font=fp)
+        wc = d.textlength(" FCFA", font=fc)
+        x = (W - (wp + wc)) / 2
+        d.text((x, y0 + 270), price_txt, font=fp, fill=WHITE, anchor="lm")
+        d.text((x + wp, y0 + 286), " FCFA", font=fc, fill=WHITE, anchor="lm")
+        # CTA
+        bw, bh, by = 800, 100, y0 + 340
+        d.rounded_rectangle([(W - bw) // 2, by, (W + bw) // 2, by + bh], radius=50, fill=ORANGE)
+        centered(d, (W // 2, by + bh // 2 - 2), "TÉLÉCHARGER MAINTENANT", font(42), TEAL_D)
+        # adresse
+        centered(d, (W // 2, by + bh + 38), "wooplans.com", font(32), SOFT)
 
     out = root / f"{p['code']}_4x5{suffix}.jpg"
     canvas.save(out, "JPEG", quality=92, optimize=True)
@@ -118,10 +133,12 @@ def sheet(paths, out_path, cols: int = 4, cell_w: int = 360) -> None:
     img.save(out_path, "JPEG", quality=85, optimize=True)
 
 
-def main(root: Path, price: int = None) -> None:
+def main(root: Path, price: int = None, no_price: bool = False) -> None:
     spec = json.loads((root / "spec.json").read_text(encoding="utf-8"))
     suffix = ""
-    if price and price != spec["price_fcfa"]:
+    if no_price:
+        spec["price_fcfa"], suffix = 0, "_sansprix"
+    elif price and price != spec["price_fcfa"]:
         spec["price_fcfa"], suffix = price, f"_{price}"
     outs = []
     for p in spec["plans"]:
@@ -134,8 +151,11 @@ def main(root: Path, price: int = None) -> None:
 if __name__ == "__main__":
     args = sys.argv[1:]
     price = None
+    no_price = "--no-price" in args
+    if no_price:
+        args.remove("--no-price")
     if "--price" in args:
         i = args.index("--price")
         price = int(args[i + 1])
         del args[i:i + 2]
-    main(Path(args[0]), price)
+    main(Path(args[0]), price, no_price)
