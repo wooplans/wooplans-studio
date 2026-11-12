@@ -184,3 +184,28 @@ def test_skip_plans_override():
     m = C.model_data(snap(), {"D4-004": {"skip_plans": [3]}}, plans=plans, renders=[])
     assert m["plans"] == plans[:2]
     assert C.model_data(snap(), {}, plans=plans, renders=[])["plans"] == plans
+
+
+def test_render_sources_prefers_r2_originals(tmp_path):
+    cache, hires, orig = tmp_path / "cache", tmp_path / "hires", tmp_path / "orig"
+    renders = [f"/media/public/d4-001/r{i}.webp" for i in range(1, 7)]
+    (orig / "D4-001").mkdir(parents=True)
+    for i in (1, 4, 5, 6):                                    # originaux pour 1 (couverture), 4, 5, 6 seulement
+        (orig / "D4-001" / f"r{i}.jpg").write_bytes(b"x")
+    got = C.render_sources(snap("D4-001", renders=renders), {}, cache, hires, orig)
+    assert got == [orig / "D4-001" / "r1.jpg", orig / "D4-001" / "r4.jpg", orig / "D4-001" / "r5.jpg"]      # 3 premiers qui ont un original
+    (orig / "D4-001" / "r4.jpg").unlink(); (orig / "D4-001" / "r5.jpg").unlink(); (orig / "D4-001" / "r6.jpg").unlink()
+    got = C.render_sources(snap("D4-001", renders=renders), {}, cache, hires, orig)
+    assert got == [orig / "D4-001" / "r1.jpg", cache / "D4-001" / "r2.webp", cache / "D4-001" / "r3.webp"]    # complété par le public
+
+
+def test_ingest_originals_and_orig_path():
+    s = C.ingest_payload({"code": "V3-001", "total": 1, "lots": [["A", 1]], "plans": [], "originals": {"1793.webp": "private/v3-001/rendus/x.png"}})
+    assert s["originals"] == {"1793.webp": "private/v3-001/rendus/x.png"}
+    assert C.orig_path("V3-001", "/media/public/v3-001/1793-ab.webp", Path("/o")) == Path("/o/V3-001/1793-ab.jpg")
+
+
+def test_partial_ingest_keeps_devis_and_plans():
+    s = snap(floor_plans=["k1"])
+    out = C.ingest_payload({"code": "D4-004", "originals": {"a.webp": "private/x.png"}}, s)
+    assert out["originals"] == {"a.webp": "private/x.png"} and out["floor_plans"] == ["k1"] and len(out["estimate_lots"]) == 2 and out["estimate_total"] == 300

@@ -22,7 +22,7 @@ from typing import Dict, Iterable, List, Optional, Tuple
 SITE = "https://www.wooplans.com"
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "catalogue_a3"
-DATA, PLANS, CACHE, HIRES, OUT = (BASE / n for n in ("data", "plans", "cache", "hires", "out"))
+DATA, PLANS, CACHE, HIRES, OUT, ORIG = (BASE / n for n in ("data", "plans", "cache", "hires", "out", "orig"))
 OVERRIDES = BASE / "overrides.json"
 CATEGORIES = (("duplex", "Duplex"), ("villa", "Villa"))
 NB = " "
@@ -264,10 +264,13 @@ def ingest_payload(payload: dict, snap: Optional[dict] = None) -> dict:
     {code, description, total, lots, plans} (lots : montants seuls si les libellés sont les standards)."""
     snap = snap or {"code": payload["code"], "slug": payload.get("slug"), "category": payload.get("category")}
     prem = payload.get("premium") or {}
-    snap["estimate_lots"] = _lots(prem.get("estimate_lots", payload.get("estimate_lots", payload.get("lots"))) or [])
-    snap["estimate_total"] = int(prem.get("estimate_total", payload.get("estimate_total", payload.get("total"))) or 0)
-    plans = prem.get("floor_plans", payload.get("floor_plans", payload.get("plans"))) or []
-    snap["floor_plans"] = [p if isinstance(p, str) else p["key"] for p in plans]
+    if prem or any(k in payload for k in ("lots", "estimate_lots", "total", "estimate_total", "plans", "floor_plans")):   # sinon : mise à jour partielle (ex. originaux seuls)
+        snap["estimate_lots"] = _lots(prem.get("estimate_lots", payload.get("estimate_lots", payload.get("lots"))) or [])
+        snap["estimate_total"] = int(prem.get("estimate_total", payload.get("estimate_total", payload.get("total"))) or 0)
+        plans = prem.get("floor_plans", payload.get("floor_plans", payload.get("plans"))) or []
+        snap["floor_plans"] = [p if isinstance(p, str) else p["key"] for p in plans]
+    if payload.get("originals") is not None:               # {nom du rendu public : clé R2 de l'original}
+        snap["originals"] = dict(payload["originals"])
     if payload.get("description") is not None:
         snap["description"] = payload["description"]
     for k in ("name", "slug", "category", "summary", "bedrooms", "bathrooms", "levels", "surface_total"):
@@ -291,21 +294,36 @@ def load_overrides(path: Path = OVERRIDES) -> dict:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
-def render_sources(snap: dict, overrides: Optional[dict] = None, cache: Path = CACHE, hires: Path = HIRES) -> List[Path]:
-    """Trois rendus : originaux locaux (catalogue_a3/hires/<code>/<n>.*) s'ils existent, sinon rendus publics du site
-    (couverture, puis les rendus 2 et 3 dans l'ordre du site ; `render_picks` pour en choisir d'autres)."""
+def orig_path(code: str, media_path: str, orig: Path = ORIG) -> Path:
+    """Original sans filigrane (R2) d'un rendu public, s'il a été récupéré : orig/<code>/<nom du rendu public>.jpg."""
+    return orig / code / (media_path.rsplit("/", 1)[-1].rsplit(".", 1)[0] + ".jpg")
+
+
+def render_sources(snap: dict, overrides: Optional[dict] = None, cache: Path = CACHE, hires: Path = HIRES, orig: Path = ORIG) -> List[Path]:
+    """Trois rendus pour la fiche, par ordre de préférence :
+    1. `hires/<code>/<n>.*` (choix manuels) ; `cover_file` d'`overrides.json` pour la couverture ;
+    2. les originaux R2 (orig/<code>/) : les trois premiers rendus du site (couverture d'abord) qui ont un original ;
+       `render_picks` force d'autres positions du site ;
+    3. à défaut, les rendus publics du site (960 px, filigranés)."""
     code = snap["code"]
     ov = (overrides or {}).get(code, {})
     renders = snap.get("renders") or []
+    if ov.get("render_picks"):
+        order, picks = renders, ov["render_picks"][:3]
+    else:
+        have = [r for r in renders if orig_path(code, r, orig).exists()][:3]
+        order, picks = have + [r for r in renders if r not in have], [1, 2, 3]
     out: List[Path] = []
-    for slot, pos in enumerate((ov.get("render_picks") or [1, 2, 3])[:3], start=1):
+    for slot, pos in enumerate(picks, start=1):
         local = sorted((hires / code).glob(f"{slot}.*")) if (hires / code).is_dir() else []
         if local:
             out.append(local[0])
         elif slot == 1 and ov.get("cover_file"):
             out.append(ROOT / ov["cover_file"])
-        elif 0 < pos <= len(renders):
-            out.append(cache_path(code, renders[pos - 1], cache))
+        elif 0 < pos <= len(order):
+            r = order[pos - 1]
+            op = orig_path(code, r, orig)
+            out.append(op if op.exists() else cache_path(code, r, cache))
     return out
 
 

@@ -58,6 +58,11 @@
  "land_width": 12,
  "levels": 2,
  "name": "Duplex D4-006",
+ "originals": {
+  "1793181920038-1AVCrf6D.webp": "private/d4-006/rendus/1793181916845-NrAbm5eG.png",
+  "1793181949463-0vjFIrwP.webp": "private/d4-006/rendus/1793181945872-iwjr1pqN.png",
+  "1793181973083-_Tnxox1O.webp": "private/d4-006/rendus/1793181970087-0GUPFIRd.png"
+ },
  "renders": [
   "/media/public/d4-006/1793181920038-1AVCrf6D.webp",
   "/media/public/d4-006/1793181949463-0vjFIrwP.webp",

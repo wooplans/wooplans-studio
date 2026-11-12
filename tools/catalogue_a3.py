@@ -4,6 +4,7 @@
 Usage :
   python tools/catalogue_a3.py sync-public [--discover] [--codes D4-004,V4-002]   # champs publics du site (sans secret)
   python tools/catalogue_a3.py ingest <fichier.json|->                            # champs Premium (connecteur wooplans)
+  python tools/catalogue_a3.py fetch-originals <fichier|->                        # originaux R2 (liens du connecteur) → orig/
   python tools/catalogue_a3.py build [--part all|duplex|villa] [--out f.pdf] [--include-incomplete]
   python tools/catalogue_a3.py check [--strict]                                   # instantanés à jour avec le site ?
 
@@ -109,6 +110,31 @@ def cmd_ingest(args) -> int:
     return 0
 
 
+# ---------------------------------------------------------------- originaux R2
+
+def cmd_fetch_originals(args) -> int:
+    """Lignes « code<TAB>nom du rendu public<TAB>lien de téléchargement » (liens temporaires du connecteur wooplans) :
+    chaque original est téléchargé, converti en JPEG et rangé dans catalogue_a3/orig/<code>/ (non versionné)."""
+    import io
+    from PIL import Image
+    ok = bad = 0
+    for line in (sys.stdin if args.file == "-" else Path(args.file).open(encoding="utf-8")):
+        if not line.strip():
+            continue
+        code, name, url = [x.strip() for x in line.rstrip("\n").split("\t")]
+        dst = C.orig_path(code, name)
+        try:
+            img = Image.open(io.BytesIO(get(url).content)).convert("RGB")
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            img.save(dst, "JPEG", quality=90, optimize=True)
+            ok += 1
+        except Exception as e:                                  # lien expiré, fichier illisible…
+            print(f"! {code} {name} : {e}")
+            bad += 1
+    print(f"{ok} originaux enregistrés, {bad} en échec")
+    return 1 if bad else 0
+
+
 # ---------------------------------------------------------------- build
 
 def fetch_renders(models: list) -> None:
@@ -122,7 +148,7 @@ def fetch_renders(models: list) -> None:
             path.write_bytes(get(C.SITE + by_name[path.name]).content)
 
 
-def as_jpeg(p: Path, code: str, quality: int = 90) -> Path:
+def as_jpeg(p: Path, code: str, quality: int = 88) -> Path:
     """Chromium recopie les JPEG tels quels dans le PDF, mais ré-encode WebP et PNG sans perte (PDF 5 à 10 fois plus lourd)."""
     if p.suffix.lower() in (".jpg", ".jpeg"):
         return p
@@ -254,6 +280,9 @@ def main(argv) -> int:
     p = sub.add_parser("ingest")
     p.add_argument("file")
     p.set_defaults(fn=cmd_ingest)
+    p = sub.add_parser("fetch-originals")
+    p.add_argument("file")
+    p.set_defaults(fn=cmd_fetch_originals)
     p = sub.add_parser("build")
     p.add_argument("--part", choices=["all", "duplex", "villa"], default="all")
     p.add_argument("--out")
