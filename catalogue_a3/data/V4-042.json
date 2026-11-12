@@ -1,0 +1,66 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 12.5,
+ "building_width": 18,
+ "category": "villa",
+ "code": "V4-042",
+ "description": "Un plan de maison de plain-pied, spacieux et bien distribué, pensé pour les familles qui veulent de la place et du confort sur un seul niveau. Cette villa compte 4 chambres, dont une suite parentale avec dressing.",
+ "estimate_lots": [
+  {
+   "amount": 3568300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 5225000,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3950600,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3738200,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2803700,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2336400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3271000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3426800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 28320000,
+ "floor_plans": [
+  "private/v4-042/1792050972324-5IdmlGF8.jpg",
+  "private/v4-042/1792050974039-VaeeLTgR.jpg"
+ ],
+ "land_area": 450,
+ "land_depth": 19.5,
+ "land_width": 21,
+ "levels": 1,
+ "name": "Villa V4-042",
+ "renders": [
+  "/media/public/v4-042/1792063698957-k0Sf40tv.webp",
+  "/media/public/v4-042/1792063700944-rFD2HU6O.webp",
+  "/media/public/v4-042/1792063702787-6eb69pe6.webp",
+  "/media/public/v4-042/1792063704402-SaSfe0hN.webp",
+  "/media/public/v4-042/1792063706477-Rw4PKvzz.webp",
+  "/media/public/v4-042/1792063708944-HNCIjNTz.webp",
+  "/media/public/v4-042/1792063710559-5s-A_aNe.webp",
+  "/media/public/v4-042/1792063712046-3of8USYl.webp"
+ ],
+ "slug": "villa-v4-042",
+ "summary": "Découvrez le plan de cette villa de plain-pied de 4 chambres et 3 douches, avec grand salon et dressing.",
+ "surface_total": 177
+}

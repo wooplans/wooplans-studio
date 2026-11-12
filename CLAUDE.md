@@ -4,6 +4,7 @@ Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun c
 
 ## Règles
 - Prix, surfaces, devis : uniquement ceux du PDF plans + devis (data/plans.json). Jamais inventés.
+- Exception (décision de Tao, 12 nov.) : pour le catalogue A3 imprimable (« modèle A »), terrain et devis = données du **site wooplans.com** (`catalogue_a3/`), pas le PDF. Jamais inventés non plus.
 - Dans les vidéos : jamais « l'offre expire dans X heures » ; dire « prix actuel : 39 000 FCFA ». Passer tout texte dans `wooplans.guardrails.check_copy`.
 - Lien du catalogue dans toutes les publications : https://wooplans.com/catalogue-premium (avec UTM : `wooplans/utm.py`). Jamais cpbook.wooplans.com. Adresse affichée dans les vidéos : wooplans.com.
 - Rien n'est programmé sans l'accord de Tao. Il relit la voix off et les scripts du format B avant GitHub. Une vignette est créée avant tout post (`tools/make_thumbnail.py`).
@@ -17,6 +18,7 @@ Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun c
 - Publication : workflow `publish-zernio` (pousser `jobs/<id>/PUBLISH.json`, SEULEMENT après l'accord de Tao) → Facebook Reel + YouTube Short programmés. TikTok @wooplans est sur WoopSocial (connecteur), pas sur Zernio.
 - YouTube « Présentation de plan » (16:9, ~8 min) : workflow `youtube-render` (pousser `youtube_plan/jobs/<id>/RENDER`) → artefact mp4 + planche-contact à contrôler. Procédure : `youtube_plan/PIPELINE.md`.
 - Vérification : workflow `check-setup`. Procédure complète : `visite_plan/PIPELINE.md`. Secrets : `SECRETS.md`.
+- Catalogue A3 imprimable (« modèle A » : fiches A3, sommaire, pages numérotées, parties Duplex et Villas) : `python tools/catalogue_a3.py` ou workflow `catalogue-a3` → PDF + `RAPPORT-<partie>.md` à relire par Tao. « Régénère le catalogue A3 » = resynchroniser le site (`sync-public`, puis `ingest` des devis/plans via le connecteur wooplans) et générer (`build`). Procédure : `catalogue_a3/README.md`.
 - Le PC de Tao n'est qu'un secours (`visite_plan/local/`).
 
 Tests : `python -m pytest -q tests`.

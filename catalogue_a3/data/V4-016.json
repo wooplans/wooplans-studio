@@ -1,0 +1,63 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 14.44,
+ "building_width": 20.07,
+ "category": "villa",
+ "code": "V4-016",
+ "description": "Villa de plain-pied de 221 m² habitables sur une emprise de 20,07 m x 14,44 m. Composition : 01 salon, 01 salle à manger, 01 cuisine, 01 chambre principale avec dressing, 03 chambres, 03 salles de bain, 01 toilette visiteurs, 01 bureau, 01 coin bar, 01 réserve, 01 magasin, 01 hall et un porche.",
+ "estimate_lots": [
+  {
+   "amount": 4455400,
+   "label": "Fondation"
+  },
+  {
+   "amount": 6523900,
+   "label": "Élévations"
+  },
+  {
+   "amount": 4932700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 4667500,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 3500600,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2917200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 4084100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 4278600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 35360000,
+ "floor_plans": [
+  "private/v4-016/1793334345251-y1flWGKi.png"
+ ],
+ "land_area": 500,
+ "land_depth": 21.44,
+ "land_width": 23.07,
+ "levels": 1,
+ "name": "Villa V4-016",
+ "renders": [
+  "/media/public/v4-016/1792591816991-RmmHRnDz.webp",
+  "/media/public/v4-016/1792591819228-LroUihIx.webp",
+  "/media/public/v4-016/1792591821303-S2Olle7z.webp",
+  "/media/public/v4-016/1792591822825-gwGqfzLZ.webp",
+  "/media/public/v4-016/1792591824707-QGV0UC24.webp",
+  "/media/public/v4-016/1792591827231-i177652z.webp"
+ ],
+ "slug": "villa-v4-016",
+ "summary": "Villa moderne plain-pied de 4 chambres et 221 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 32 – 39 millions FCFA. Terrain conseillé : 500 m².",
+ "surface_total": 221
+}

@@ -1,0 +1,71 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 14,
+ "building_width": 18.45,
+ "category": "duplex",
+ "code": "D4-016",
+ "description": "Bienvenue dans l'univers du Duplex D4-016, un plan de maison moderne et spacieux conçu sur deux niveaux pour offrir un cadre de vie exceptionnel. Ce duplex de luxe à 4 chambres va vous séduire.",
+ "estimate_lots": [
+  {
+   "amount": 5300300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3905500,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 7532000,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4463400,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 6695100,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 8182900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6137200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5114300,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7160100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 7501200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 61992000,
+ "floor_plans": [
+  "private/d4-016/1792046541584-np8xjC5d.png",
+  "private/d4-016/1792046544846-0M3y1eZg.png"
+ ],
+ "land_area": 500,
+ "land_depth": 21,
+ "land_width": 21.45,
+ "levels": 2,
+ "name": "Duplex D4-016",
+ "renders": [
+  "/media/public/d4-016/1793181920006-kAHPOQFG.webp",
+  "/media/public/d4-016/1793181949228-EFqukqvB.webp",
+  "/media/public/d4-016/1793181976824-3mZlT2bl.webp",
+  "/media/public/d4-016/1793181999647-AupOMO_c.webp",
+  "/media/public/d4-016/1793182026954-QELUoq8k.webp"
+ ],
+ "slug": "duplex-d4-016",
+ "summary": "Avec son allure imposante et son style, venez découvrir le beauté de ce magnifique duplex de 4 chambres",
+ "surface_total": 287
+}

@@ -1,0 +1,62 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 15,
+ "building_width": 11,
+ "category": "villa",
+ "code": "V4-008",
+ "description": "Cette magnifique villa propose une architecture ultra contemporaine. Elle est dotée de 128.38 m² de superficie. Elle est composée de: 01 salon + salle à manger, 04 chambres, 03 salles de bains et enfin 01 toilette pour visiteurs. La suite principale offre des commodités pour parfaire au bien être parentale.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living+Dining (Salon+SAM)\n- 01 Kitchen (Cuisine)\n- 01 Master's Bedroom (Chambre Principale)\n- 03 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n- 01 Guest toilet (Toilette visiteur)",
+ "estimate_lots": [
+  {
+   "amount": 2580500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3778600,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2857000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2703400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2027500,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1689600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2365400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2478000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 20480000,
+ "floor_plans": [
+  "private/v4-008/1792047189775-ELrP3sUY.png"
+ ],
+ "land_area": 350,
+ "land_depth": 22,
+ "land_width": 14,
+ "levels": 1,
+ "name": "Villa V4-008",
+ "renders": [
+  "/media/public/v4-008/1793183095409-1b91VADG.webp",
+  "/media/public/v4-008/1793183101550-9p2mxAUE.webp",
+  "/media/public/v4-008/1793183106399-cAUMqlQ8.webp",
+  "/media/public/v4-008/1793183113016-XA-rDF44.webp",
+  "/media/public/v4-008/1793183117731-oHX96w0c.webp"
+ ],
+ "slug": "villa-v4-008",
+ "summary": "Cette magnifique villa propose une architecture ultra contemporaine. Elle est dotée de 128.38 m² de superficie.",
+ "surface_total": 128
+}

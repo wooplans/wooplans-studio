@@ -1,0 +1,62 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 10,
+ "building_width": 16,
+ "category": "villa",
+ "code": "V4-007",
+ "description": "Cette somptueuse villa contemporaine s’étend sur 136 m² de superficie avec 4 chambres et 3 douches. Son plan offre: 01 salon + salle à manger, 04 chambres, 04 salles de bain, 01 bureau et enfin un magasin pour rangement. La suite principale dispose d’une salle d'eau et d’un placard.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living (Salon)\n- 01 Dining (SAM)\n- 01Kitchen (Cuisine)\n- 01 Store (Magasin)\n- 01 Master's Bedroom (Chambre Principale)\n- 03 Bathrooms (Salle de Bain)\n- 02 Bedrooms (Chambres)\n- 01 Office (Bureau)",
+ "estimate_lots": [
+  {
+   "amount": 2741800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4014700,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3035500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2872300,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2154200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1795200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2513300,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2633000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 21760000,
+ "floor_plans": [
+  "private/v4-007/1792047182989-5laide6e.png"
+ ],
+ "land_area": 350,
+ "land_depth": 17,
+ "land_width": 19,
+ "levels": 1,
+ "name": "Villa V4-007",
+ "renders": [
+  "/media/public/v4-007/1793183095587-DmQf5bbO.webp",
+  "/media/public/v4-007/1793183101502-CZczE1SH.webp",
+  "/media/public/v4-007/1793183106517-YkxKsKXO.webp",
+  "/media/public/v4-007/1793183112834-us_tbJBN.webp",
+  "/media/public/v4-007/1793183119129-TO_r-y1s.webp"
+ ],
+ "slug": "villa-v4-007",
+ "summary": "Cette somptueuse villa contemporaine s’étend sur 136 m² de superficie avec 4 chambres et 3 douches.",
+ "surface_total": 136
+}

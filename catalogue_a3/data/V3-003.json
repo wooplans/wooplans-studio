@@ -1,0 +1,65 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 11.6,
+ "building_width": 10.6,
+ "category": "villa",
+ "code": "V3-003",
+ "description": "Villa moderne de plain-pied offrant un agencement fonctionnel avec 3 chambres dont une suite parentale et un vaste espace de vie ouvert. Design contemporain avec terrasses couvertes pour profiter pleinement de l'extérieur.",
+ "estimate_lots": [
+  {
+   "amount": 1995800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2922500,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2209700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2090900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1568200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1306800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 1829500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 1916600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 15840000,
+ "floor_plans": [
+  "upload-1777470144417-dad512cc263d4d00bfd271468fe1eb61.webp"
+ ],
+ "land_area": 300,
+ "land_depth": 18.6,
+ "land_width": 13.6,
+ "levels": 1,
+ "name": "Villa V3-003",
+ "renders": [
+  "/media/public/v3-003/1793180746567-y76Iw91B.webp",
+  "/media/public/v3-003/1793180753853-wrrokCe2.webp",
+  "/media/public/v3-003/1793180761862-H1XPQq_w.webp",
+  "/media/public/v3-003/1793180769929-614WTcLz.webp",
+  "/media/public/v3-003/1793180784756-CDdKCQMY.webp",
+  "/media/public/v3-003/1793180791959-dM_rhZkn.webp",
+  "/media/public/v3-003/1793180801985-xI4q7UpT.webp",
+  "/media/public/v3-003/1793180809546-O1A97Bqh.webp"
+ ],
+ "slug": "villa-v3-003",
+ "summary": "Villa moderne plain-pied de 3 chambres et 99 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 14 – 17 millions FCFA. Terrain conseillé : 300 m².",
+ "surface_total": 99
+}

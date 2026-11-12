@@ -1,0 +1,70 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 14,
+ "building_width": 17,
+ "category": "duplex",
+ "code": "D5-002",
+ "description": "De style contemporain, ce duplex de 05 chambres est structuré sur 490m2. Son plan bien agencé comporte: Au rez-de-chaussée 02 spacieux salons séparés + salle à manger, 02 spacieuse chambres pour visiteur, 01 douche, 01 WC pour visiteur, 01 réserve pouvant servir de magasin ou buanderie, 01 cuisine. A l’étage nous avons 03 chambres, et enfin 02 salles de bain La chambre principale est dotée d’une salle d’eau et d’un dressing assez spacieux .\n\nCaractéristiques :\n- RDC :\n- 02 salons\n- 01 Salle à Manger\n- 01 Garage\n- 01 Cuisine\n- 02 Chambres\n- ETAGE :\n- 01 Suite Parentale\n- 02 Chambres Secondaires",
+ "estimate_lots": [
+  {
+   "amount": 9049300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 6667900,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 12859600,
+   "label": "Dalle"
+  },
+  {
+   "amount": 7620500,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 11430700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 13970900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 10478200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 8731800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 12224500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 12806600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 105840000,
+ "floor_plans": [
+  "private/d5-002/1792046884418-Qvppc7E7.png",
+  "private/d5-002/1792046887986-ivtCyrmZ.png"
+ ],
+ "land_area": 450,
+ "land_depth": 21,
+ "land_width": 20,
+ "levels": 2,
+ "name": "Duplex D5-002",
+ "renders": [
+  "/media/upload-framer-0b691e1824a1c04c3428.jpg",
+  "/media/upload-framer-d105a891b5474bac6268.jpg",
+  "/media/upload-framer-286da28406d4a67c6ddb.jpg",
+  "/media/upload-framer-dbf61f1671823c979268.jpg"
+ ],
+ "slug": "duplex-d5-002",
+ "summary": "Bienvenue dans l'univers du Duplex D5-001, un plan de maison moderne et fonctionnel conçu pour offrir un cadre de vie confortable et optimisé.",
+ "surface_total": 490
+}

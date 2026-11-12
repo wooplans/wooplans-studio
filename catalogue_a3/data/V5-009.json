@@ -1,0 +1,63 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 5,
+ "building_depth": 12.43,
+ "building_width": 16.7,
+ "category": "villa",
+ "code": "V5-009",
+ "description": "Villa de plain-pied (RDC) de 16,70 m x 12,43 m. Elle comprend un salon, une salle à manger, une cuisine, une chambre principale, 4 autres chambres et 3 salles de bain, avec une terrasse en façade et une terrasse latérale.",
+ "estimate_lots": [
+  {
+   "amount": 3064300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4487000,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3392600,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3210200,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2407700,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2006400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2809000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2942800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 24320000,
+ "floor_plans": [
+  "private/v5-009/1793334427722-_U7lDXdE.png"
+ ],
+ "land_area": 400,
+ "land_depth": 19.43,
+ "land_width": 19.7,
+ "levels": 1,
+ "name": "Villa V5-009",
+ "renders": [
+  "/media/public/v5-009/1793188378835-1TmsDtaF.webp",
+  "/media/public/v5-009/1793188383554-OVAmK_8u.webp",
+  "/media/public/v5-009/1793188390515-jO0bh_Dz.webp",
+  "/media/public/v5-009/1793188395993-yXGWn8KX.webp",
+  "/media/public/v5-009/1793188404286-Ae97uSpO.webp",
+  "/media/public/v5-009/1793188409180-5kE-bY1j.webp"
+ ],
+ "slug": "villa-v5-009",
+ "summary": "Villa moderne plain-pied de 5 chambres et 152 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 22 – 27 millions FCFA. Terrain conseillé : 400 m².",
+ "surface_total": 152
+}

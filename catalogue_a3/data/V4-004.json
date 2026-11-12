@@ -1,0 +1,65 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 10,
+ "building_width": 16,
+ "category": "villa",
+ "code": "V4-004",
+ "description": "Cette magnifique villa contemporaine est dotée de 4 chambres, 3 douches. Elle offre une magnifique pièce de vie qui s’ouvre sur une spacieuse terrasse, 04chambres, 02 salles de bain, 01 WC pour visiteur, et enfin 01 cuisine. La suite principale dispose d’01 dressing assez commode et une salle d’eau.",
+ "estimate_lots": [
+  {
+   "amount": 2499800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3660500,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2767700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2618900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1964200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1636800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2291500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2400600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 19840000,
+ "floor_plans": [
+  "private/v4-004/1792047162067-VIfRcdyY.png"
+ ],
+ "land_area": 350,
+ "land_depth": 17,
+ "land_width": 19,
+ "levels": 1,
+ "name": "Villa V4-004",
+ "renders": [
+  "/media/public/v4-004/1792094345293-7nk7bEhp.webp",
+  "/media/public/v4-004/1792094346700-lUKObNBS.webp",
+  "/media/public/v4-004/1792094348014-OyAZcrBe.webp",
+  "/media/public/v4-004/1792094349617-9sBiba6N.webp",
+  "/media/public/v4-004/1792094350864-gJ55lIRL.webp",
+  "/media/public/v4-004/1792094352077--r4IlYUl.webp",
+  "/media/public/v4-004/1792094353520-I3rxDWbb.webp",
+  "/media/public/v4-004/1792094355150-Dz-r5cM2.webp"
+ ],
+ "slug": "villa-v4-004",
+ "summary": "Cette magnifique villa contemporaine est dotée de 4 chambres, 3 douches.",
+ "surface_total": 124
+}

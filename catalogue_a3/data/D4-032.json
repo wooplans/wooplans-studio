@@ -1,0 +1,71 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 12.18,
+ "building_width": 14.2,
+ "category": "duplex",
+ "code": "D4-032",
+ "description": "Le Duplex D4-032 est un modèle familial sur deux niveaux. Composition : 02 salons, salle à manger, 01 cuisine, 01 chambre principale, 03 chambres, 03 salles de bain, SAS d'entrée et terrasses. Emprise 14,20 m x 12,18 m.",
+ "estimate_lots": [
+  {
+   "amount": 3656700,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2694400,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5196300,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3079300,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 4618900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 5645400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4234000,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3528400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 4939700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5174900,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 42768000,
+ "floor_plans": [
+  "private/d4-032/1793334231353-g9JZ7RC9.png",
+  "private/d4-032/1793334233209-ls7l3nYV.png"
+ ],
+ "land_area": 350,
+ "land_depth": 19.18,
+ "land_width": 17.2,
+ "levels": 2,
+ "name": "Duplex D4-032",
+ "renders": [
+  "/media/public/d4-032/1793181902059-TvIYpT-q.webp",
+  "/media/public/d4-032/1793181910430-3DAZdoku.webp",
+  "/media/public/d4-032/1793181917327-u6Gqpt-j.webp",
+  "/media/public/d4-032/1793181925103-3WwYVdQx.webp",
+  "/media/public/d4-032/1793181931820-_PdbQ5Fc.webp"
+ ],
+ "slug": "duplex-d4-032",
+ "summary": "Duplex moderne R+1 de 4 chambres et 198 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 39 – 47 millions FCFA. Terrain conseillé : 350 m².",
+ "surface_total": 198
+}

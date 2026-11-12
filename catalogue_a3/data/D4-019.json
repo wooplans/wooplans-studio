@@ -1,0 +1,75 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 14,
+ "building_width": 15,
+ "category": "duplex",
+ "code": "D4-019",
+ "description": "Ce Duplex contemporain tient compte de toutes vos envies pour le confort et la joie de vivre. Conçu sur 338m2 de superficie, son plan nous offre: Au rez-de-chaussée: 01 spacieux salon + salle à manger, 01 chambre pour ami dotée d’un placard et d’une salle d’eau, 01 bureau, 01 magasin pour stockage ensuite 01 cuisine et enfin 01 garage sur mesure pour contenir 02 véhicules. A l’étage nous avons 01 grand salon, 03 chambres et 02 douches, 01 WC pour visiteur et enfin 01 bureau. La suite principale dispose d’01 dressing assez large et 01 salle de bain pouvant contenir 01 baignoire.\n\nCaractéristiques :\n- 02 Living (02 Salons)\n- 03 Bedrooms (03 Chambres)\n- 03 Baths (Salle de Bains)\n- 01 Garage\n- 01 Office (Bureau)\n- 01 Master's Bedroom ( Suite parentale)",
+ "estimate_lots": [
+  {
+   "amount": 6242200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4599500,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8870500,
+   "label": "Dalle"
+  },
+  {
+   "amount": 5256600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7884900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9637100,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 7227800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 6023200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 8432400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8833800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 73008000,
+ "floor_plans": [
+  "private/d4-019/1792046561600-v_KyeoeU.png",
+  "private/d4-019/1792046564924-rgzlttNO.png"
+ ],
+ "land_area": 400,
+ "land_depth": 21,
+ "land_width": 18,
+ "levels": 2,
+ "name": "Duplex D4-019",
+ "renders": [
+  "/media/public/d4-019/1793181921249-ilOZZwyJ.webp",
+  "/media/public/d4-019/1793181951841-LdMsbk0-.webp",
+  "/media/public/d4-019/1793181978483-BWvOh2gj.webp",
+  "/media/public/d4-019/1793182006261-3Hx2wjmi.webp",
+  "/media/public/d4-019/1793182037517-tgd0NHal.webp",
+  "/media/public/d4-019/1793182171255-x2oWNoAz.webp",
+  "/media/public/d4-019/1793182191228-EMhUUvxd.webp",
+  "/media/public/d4-019/1793182213172-4ErU0qBD.webp",
+  "/media/public/d4-019/1793182223752-RH2t_GDq.webp"
+ ],
+ "slug": "duplex-d4-019",
+ "summary": "Construite sur une surface de 338 m2, ce duplex est imposant et captivant",
+ "surface_total": 338
+}

@@ -1,0 +1,71 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 9,
+ "building_width": 10.4,
+ "category": "duplex",
+ "code": "D4-040",
+ "description": "Magnifique duplex moderne de 155m² offrant un excellent équilibre entre espaces de vie généreux et intimité familiale. Avec ses 4 chambres, 3 salles de bain et ses terrasses, ce plan optimise parfaitement chaque mètre carré pour un confort de vie exceptionnel.",
+ "estimate_lots": [
+  {
+   "amount": 2862500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2109200,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 4067800,
+   "label": "Dalle"
+  },
+  {
+   "amount": 2410600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 3615800,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 4419400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 3314500,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2762100,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3866900,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 4051200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 33480000,
+ "floor_plans": [
+  "upload-1777297686715-d338b525b2c549e2aceae02b20971f40.webp",
+  "upload-1777297685657-fe1a924869c54961af849d8151dfbdbe.webp"
+ ],
+ "land_area": 250,
+ "land_depth": 16,
+ "land_width": 13.4,
+ "levels": 2,
+ "name": "Duplex D4-040",
+ "renders": [
+  "/media/public/d4-040/1793188392315-94I7UmDz.webp",
+  "/media/public/d4-040/1793188398288-LwbwUkbI.webp",
+  "/media/public/d4-040/1793188415761-1GMRWaV3.webp",
+  "/media/public/d4-040/1793188423299-aJeDffZG.webp",
+  "/media/public/d4-040/1793188432719-oUH9oKwF.webp"
+ ],
+ "slug": "duplex-d4-040",
+ "summary": "Duplex moderne R+1 de 4 chambres et 155 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 30 – 37 millions FCFA. Terrain conseillé : 250 m².",
+ "surface_total": 155
+}

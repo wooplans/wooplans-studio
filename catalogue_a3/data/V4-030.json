@@ -1,0 +1,66 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 4,
+ "building_depth": 11.11,
+ "building_width": 13.55,
+ "category": "villa",
+ "code": "V4-030",
+ "description": "Villa de plain-pied de 132 m² habitables sur une emprise de 11,11 m x 13,55 m. Composition : 01 salon, 01 salle à manger, 01 cuisine, 04 chambres, 02 salles de bain, 01 dressing, un couloir et deux terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 2661100,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3896600,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2946200,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2787800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2090900,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1742400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2439400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2555600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 21120000,
+ "floor_plans": [
+  "private/v4-030/1793334413904-FILkzqsM.png"
+ ],
+ "land_area": 300,
+ "land_depth": 18.11,
+ "land_width": 16.55,
+ "levels": 1,
+ "name": "Villa V4-030",
+ "renders": [
+  "/media/public/v4-030/1793973124745-LbnyrfzV.webp",
+  "/media/public/v4-030/1793973147954-PfjIP-ko.webp",
+  "/media/public/v4-030/1793973175319-bKh1lRPp.webp",
+  "/media/public/v4-030/1793973198804-dYA3rCuf.webp",
+  "/media/public/v4-030/1793973226515-VsVbaqYx.webp",
+  "/media/public/v4-030/1793973340054-Ha9XH9lE.webp",
+  "/media/public/v4-030/1793973363367-_Ot2qNKS.webp",
+  "/media/public/v4-030/1793973388495-l1X0Hp79.webp",
+  "/media/public/v4-030/1793973804849-kSm4sb5P.webp"
+ ],
+ "slug": "villa-v4-030",
+ "summary": "Villa moderne plain-pied de 4 chambres et 132 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 19 – 23 millions FCFA. Terrain conseillé : 300 m².",
+ "surface_total": 132
+}

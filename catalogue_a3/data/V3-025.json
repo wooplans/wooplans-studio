@@ -1,0 +1,66 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 10,
+ "building_width": 12.5,
+ "category": "villa",
+ "code": "V3-025",
+ "description": "Villa de plain-pied de 108 m² sur une emprise de 12,50 m × 10,00 m. Elle comprend un salon, une salle à manger, une cuisine, trois chambres, deux salles de bain, un couloir et deux terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 2177300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3188200,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2410600,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2281000,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1710700,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1425600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 1995800,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2090800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 17280000,
+ "floor_plans": [
+  "private/v3-025/1792424217278-uU6p4aEJ.jpg"
+ ],
+ "land_area": 300,
+ "land_depth": 17,
+ "land_width": 15.5,
+ "levels": 1,
+ "name": "Villa V3-025",
+ "renders": [
+  "/media/public/v3-025/1793181097770-nqjXxl-o.webp",
+  "/media/public/v3-025/1793181117558-H1ggMSLA.webp",
+  "/media/public/v3-025/1793181127733-25sDYeBL.webp",
+  "/media/public/v3-025/1793181148724-FaPnU3-l.webp",
+  "/media/public/v3-025/1793181161829-wjzVyWIx.webp",
+  "/media/public/v3-025/1793181178703-2pLB_Ine.webp",
+  "/media/public/v3-025/1793181196452-3iJJEeBu.webp",
+  "/media/public/v3-025/1793181216456-x-3DK2kC.webp",
+  "/media/public/v3-025/1793181268195-TKXhe7oa.webp"
+ ],
+ "slug": "villa-v3-025",
+ "summary": "Villa plain-pied de 108 m² avec 3 chambres, 2 salles de bain et deux terrasses. Plans cotés et devis détaillé pour construire au Cameroun.",
+ "surface_total": 108
+}

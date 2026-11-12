@@ -1,0 +1,65 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 12,
+ "building_width": 17,
+ "category": "villa",
+ "code": "V4-003",
+ "description": "Cette villa contemporaine est très charmante et luxueuse, dotée de 144.2 m², elle comporte 01 spacieux salon + salle à manger avec une vaste terrasse pour passer des moment convivial en famille, 04 chambres, 03 salles de bain, 01 WC pour visiteurs. Cette villa met également à votre disposition une chambre principale dotée d’une salle d’eau, un placard et une terrasse pour des petits moments de détente.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living+Dinin (Salon+SAM)\n- 01 Kitchen (Cuisine)\n- 01 Dressing\n- 01 Master's Bedroom (Chambre Principale)\n- 03 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n- 01 Guest toilet (Toilette visiteur)",
+ "estimate_lots": [
+  {
+   "amount": 2903000,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4250900,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3214100,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3041300,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2281000,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1900800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2661100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2787800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 23040000,
+ "floor_plans": [
+  "private/v4-003/1792047154695-kj6lQLvK.png"
+ ],
+ "land_area": 400,
+ "land_depth": 19,
+ "land_width": 20,
+ "levels": 1,
+ "name": "Villa V4-003",
+ "renders": [
+  "/media/public/v4-003/1792094333415-inlfK5Uh.webp",
+  "/media/public/v4-003/1792094334826-EQfsw4Cz.webp",
+  "/media/public/v4-003/1792094336059-H7lqp_RO.webp",
+  "/media/public/v4-003/1792094337410-nIi3bETW.webp",
+  "/media/public/v4-003/1792094338640-T2vVIPVq.webp",
+  "/media/public/v4-003/1792094340123-JLsOwm0P.webp",
+  "/media/public/v4-003/1792094341581-j-ZxKuGQ.webp",
+  "/media/public/v4-003/1792094343633-z-Wbcr4F.webp"
+ ],
+ "slug": "villa-v4-003",
+ "summary": "Cette villa contemporaine est très charmante et luxueuse, dotée de 144.2 m², elle comporte",
+ "surface_total": 144
+}

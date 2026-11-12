@@ -1,0 +1,76 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 13.5,
+ "building_width": 12.5,
+ "category": "duplex",
+ "code": "D4-026",
+ "description": "Bienvenue dans l'univers du Duplex D4-026, un plan de maison moderne pour offrir un cadre de vie exceptionnel. Ce duplex de luxe à 4 chambres et est la solution idéale pour les familles recherchant un design unique.",
+ "estimate_lots": [
+  {
+   "amount": 4340000,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3197900,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 6167300,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3654700,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 5482100,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 6700300,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 5025200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 4187700,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5862800,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 6142000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 50760000,
+ "floor_plans": [
+  "private/d4-026/1792046691220-hkh6slph.png",
+  "private/d4-026/1792046694314-no11Omna.png"
+ ],
+ "land_area": 350,
+ "land_depth": 20.5,
+ "land_width": 15.5,
+ "levels": 2,
+ "name": "Duplex D4-026",
+ "renders": [
+  "/media/public/d4-026/1793787259635-BMToe2En.webp",
+  "/media/public/d4-026/1793787265118-9VCvwVyZ.webp",
+  "/media/public/d4-026/1793787270282-5iSVw8j6.webp",
+  "/media/public/d4-026/1793787277834-LpMaCo9S.webp",
+  "/media/public/d4-026/1793787283164-lTMu5sRV.webp",
+  "/media/public/d4-026/1793787288210-lIcnjqIb.webp",
+  "/media/public/d4-026/1793787293210-EhobD-T-.webp",
+  "/media/public/d4-026/1793787299209-Ey1uaJvK.webp",
+  "/media/public/d4-026/1793787309531-vxawvUNe.webp",
+  "/media/public/d4-026/1793787314184-n98_Xc7n.webp"
+ ],
+ "slug": "duplex-d4-026",
+ "summary": "Avec ça grande terrasse à l'étage et son design moderne, vous allez adorer vivre dans ce magnifique bijou architectural",
+ "surface_total": 235
+}

@@ -1,0 +1,65 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 10,
+ "building_width": 16.5,
+ "category": "villa",
+ "code": "V3-030",
+ "description": "Villa de plain-pied de 144 m² habitables sur une emprise de 16,50 m x 10,00 m. Composition : 01 salon, 01 salle à manger, 01 cuisine, 03 chambres, 02 salles de bain, 01 dressing, 01 magasin, 01 garage et deux terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 2903000,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4250900,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3214100,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3041300,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2281000,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1900800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2661100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2787800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 23040000,
+ "floor_plans": [
+  "private/v3-030/1793334337741-5L2wVrFi.png"
+ ],
+ "land_area": 350,
+ "land_depth": 17,
+ "land_width": 19.5,
+ "levels": 1,
+ "name": "Villa V3-030",
+ "renders": [
+  "/media/public/v3-030/1793191176239-kFdPzKMP.webp",
+  "/media/public/v3-030/1793191212783-Vzxi8gG7.webp",
+  "/media/public/v3-030/1793191220709-7-omQPVn.webp",
+  "/media/public/v3-030/1793191228134-50qvNL2Z.webp",
+  "/media/public/v3-030/1793191235063-nVTJ139O.webp",
+  "/media/public/v3-030/1793191242655-H6czU1xE.webp",
+  "/media/public/v3-030/1793191252118-RPRlsWXL.webp",
+  "/media/public/v3-030/1793191261474-JFmHU4KN.webp"
+ ],
+ "slug": "villa-v3-030",
+ "summary": "Villa moderne plain-pied de 3 chambres et 144 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 21 – 25 millions FCFA. Terrain conseillé : 350 m².",
+ "surface_total": 144
+}

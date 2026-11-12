@@ -1,0 +1,74 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 14,
+ "building_width": 10,
+ "category": "duplex",
+ "code": "D4-002",
+ "description": "Spacieux et contemporain, ce duplex conçu sur 204m2 est composée de : Au rez-de-chaussée son plan offre: 01 salon, 01 chambre pour visiteur dotée d’un placard et d’01 salle d’eau, 01 cuisine 01 WC visiteur et enfin 01 garage. A l’étage nous avons 01 salon, 03 chambres, 02 douches et enfin 01 salle pour étude. La suite principale dispose d’un spacieux dressing et d’une douche pouvant contenir 01 baignoire.\n\nCaractéristiques :\n- 02 Living (02 Salons)\n- 01 Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 03 Baths (03 Salle de Bains)\n- 01Study (salle d'etude)\n- 01 Kitchen (Cuisine)\n- 01 Garage\n\nGros œuvre : à partir de 18 344 700 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 3767500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2776000,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5353800,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3172600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 4758900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 5816400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4362300,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3635300,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5089400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5331800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 44064000,
+ "floor_plans": [
+  "private/d4-002/1792046205530-A5cGNUZP.jpg",
+  "private/d4-002/1792046208832-Ln3bxoNX.jpg"
+ ],
+ "land_area": 300,
+ "land_depth": 21,
+ "land_width": 13,
+ "levels": 2,
+ "name": "Duplex D4-002",
+ "renders": [
+  "/media/public/d4-002/1792064008489-v6gY4RwK.webp",
+  "/media/public/d4-002/1792064010164-psZtW-pa.webp",
+  "/media/public/d4-002/1792064011639-scOGEKPU.webp",
+  "/media/public/d4-002/1792064013089-gApXUr7a.webp",
+  "/media/public/d4-002/1792064014519-Z4FIF0wL.webp",
+  "/media/public/d4-002/1792064015841-j-x56ZHw.webp",
+  "/media/public/d4-002/1792064017182-su-Bvb_C.webp",
+  "/media/public/d4-002/1792064018526-1p1wLxu9.webp"
+ ],
+ "slug": "duplex-d4-002",
+ "summary": "Spacieux et contemporain, ce duplex conçu sur 204m2 est composée de : Au rez-de-chaussée son plan offre:",
+ "surface_total": 204
+}

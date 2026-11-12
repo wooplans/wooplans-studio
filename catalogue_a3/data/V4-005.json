@@ -1,0 +1,65 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 15,
+ "building_width": 18,
+ "category": "villa",
+ "code": "V4-005",
+ "description": "Cette remarquable villa contemporaine s’étale sur 201,12 m² de superficie. Elle est dotée de 02 halls d’entrées, 01 grand salon, 04 chambres, 01 cuisine, 02 salles de bain et un WC pour visiteur, enfin 01 réserve pour stocker vos outils. La chambre parentale dispose de 02 placards et 01 vaste salle d’eau.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living (Salon)\n- 01 Dining (SAM)\n- 01Kitchen (Cuisine)\n- 01 Store (Magasin)\n- 01 Master's Bedroom (Chambre Principale)\n- 03Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n- 01 Guest toilet (Toilette visiteur)",
+ "estimate_lots": [
+  {
+   "amount": 4052200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 5933500,
+   "label": "Élévations"
+  },
+  {
+   "amount": 4486300,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 4245100,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 3183800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2653200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3714500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3891400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 32160000,
+ "floor_plans": [
+  "private/v4-005/1792047168739-hNa8PXYb.png"
+ ],
+ "land_area": 500,
+ "land_depth": 22,
+ "land_width": 21,
+ "levels": 1,
+ "name": "Villa V4-005",
+ "renders": [
+  "/media/public/v4-005/1792274272178--TgaDkj7.webp",
+  "/media/public/v4-005/1792274277284-cy2iTvI8.webp",
+  "/media/public/v4-005/1792274286487-Pez0Tndg.webp",
+  "/media/public/v4-005/1792274290413-ue-w9EKt.webp",
+  "/media/public/v4-005/1792274294642-FnuGkKzu.webp",
+  "/media/public/v4-005/1792274297831-P5PrkyO2.webp",
+  "/media/public/v4-005/1792274301492-vsYUzjXA.webp",
+  "/media/public/v4-005/1792274305075-NQdbQq_m.webp"
+ ],
+ "slug": "villa-v4-005",
+ "summary": "Cette remarquable villa contemporaine s’étale sur 201 m² de superficie avec 4 chambres et 3 douches..",
+ "surface_total": 201
+}

@@ -1,0 +1,83 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 20,
+ "building_width": 23,
+ "category": "duplex",
+ "code": "D4-001",
+ "description": "Ce plan de duplex fonctionnel, spacieux et contemporain de 04 chambres dispose toute les caractéristiques dont vous avez besoin. Conçu sur 532m2 son plan nous offre: Au rez-de-chaussée 01 spacieux salon, 02 salles à manger, 01 chambre pour visiteur dotée d’un placard et d’une salle d’eau, 01 buanderie pour, 01 bureau et enfin 01 cuisine. A l’étage nous avons 02 salons, 03 chambres et 02 douches. La suite principale est munie d’un spacieux dressing et d’01 salle d’eau.\n\nCaractéristiques :\n- 03 Living (03 Salons)\n- 04 Bedrooms (04 Chambres\n- 03 Baths (03 Salle de Bains\n- 01 Laundry (Buanderie)\n- 01 Kitchen (Cuisine)\n- 01 office (Bureau)\n\nGros œuvre : à partir de 47 853 900 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 9825000,
+   "label": "Fondation"
+  },
+  {
+   "amount": 7239500,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 13961800,
+   "label": "Dalle"
+  },
+  {
+   "amount": 8273700,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 12410500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 15168400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 11376300,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 9480200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 13272300,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 13904300,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 114912000,
+ "floor_plans": [
+  "private/d4-001/1792046195900-oKaB8_9W.png",
+  "private/d4-001/1792046199301-qf9D118d.png"
+ ],
+ "land_area": 750,
+ "land_depth": 27,
+ "land_width": 26,
+ "levels": 2,
+ "name": "Duplex D4-001",
+ "renders": [
+  "/media/public/d4-001/1793791572299-YpcbJcne.webp",
+  "/media/public/d4-001/1792070401022-JHixieQE.webp",
+  "/media/public/d4-001/1792070403324-djGOB5HN.webp",
+  "/media/public/d4-001/1792070404896-sH2SS038.webp",
+  "/media/public/d4-001/1792070406933-us7LmhwD.webp",
+  "/media/public/d4-001/1792070408855-TliJDspO.webp",
+  "/media/public/d4-001/1792070411102-lJ2R-8UA.webp",
+  "/media/public/d4-001/1792070413545-oI6tcYA9.webp",
+  "/media/public/d4-001/1793791579719-UaouHGAD.webp",
+  "/media/public/d4-001/1793791588939-n_BVuMwa.webp",
+  "/media/public/d4-001/1793791597810-b-Xuum2p.webp",
+  "/media/public/d4-001/1793791604130-Z8tfpeRb.webp",
+  "/media/public/d4-001/1793791610838-TgUp7WxM.webp",
+  "/media/public/d4-001/1793791617267-IhdMgwqQ.webp",
+  "/media/public/d4-001/1793791623033-Pseo-1Yf.webp",
+  "/media/public/d4-001/1793791628411-QSpMNqmN.webp",
+  "/media/public/d4-001/1793791634584-bU4Wf2BW.webp"
+ ],
+ "slug": "duplex-d4-001",
+ "summary": "Ce plan de duplex fonctionnel, spacieux et contemporain de 04 chambres dispose toute les caractéristiques dont vous avez besoin.",
+ "surface_total": 532
+}

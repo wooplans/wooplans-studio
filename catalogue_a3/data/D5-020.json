@@ -1,0 +1,74 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 13.5,
+ "building_width": 17,
+ "category": "duplex",
+ "code": "D5-020",
+ "description": "Ce chef d’œuvre de nature contemporain de 307m2 de superficie dispose assez d’espace pour tous le monde. Son plan joliment conçu offre: Au rez-de-chaussée 01 spacieux salon + salle à manger qui s’ouvre sur une large terrasse, 02 spacieuses chambres dotées chacune d’un placard et d’une salle d’eau, 01 WC pour visiteur, 01 magasin, et enfin 01 cuisine. A l’étage nous avons 01 salon, 01 bureau, 03 chambres, et enfin 03 salles de bain La suite principale offre un dressing assez spacieux et 01 salle de bain pouvant contenir une baignoire.\n\nCaractéristiques :\n- 02 Living (Salons)\n- 04 Bedrooms (Chambres)\n- 05 Baths (Salle de Bains)\n- 01 Guest toilet ( WC visiteur)\n- 01 Master's Bedroom ( Suite parentale)\n- 01 Office (Bureau)\n- 01 Store (Reserve)\n- 01 Dressing",
+ "estimate_lots": [
+  {
+   "amount": 5669700,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4177700,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8056900,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4774500,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7161700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 8753200,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6564900,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5470700,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7659000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8023700,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 66312000,
+ "floor_plans": [
+  "private/d5-020/1792046924692-k3zu8yCU.png",
+  "private/d5-020/1792046928486-jYO5pbdK.png"
+ ],
+ "land_area": 450,
+ "land_depth": 20.5,
+ "land_width": 20,
+ "levels": 2,
+ "name": "Duplex D5-020",
+ "renders": [
+  "/media/public/d5-020/1793181099720-bqpdiik-.webp",
+  "/media/public/d5-020/1793181117962-oSCztmqc.webp",
+  "/media/public/d5-020/1793181127091-GFVOBduu.webp",
+  "/media/public/d5-020/1793181152126-U23Z_TUt.webp",
+  "/media/public/d5-020/1793181166082-aMCm_lXs.webp",
+  "/media/public/d5-020/1793181178528-kG-zd_jO.webp",
+  "/media/public/d5-020/1793181189582-45_k8wQ6.webp",
+  "/media/public/d5-020/1793181214887--f0ipFv_.webp"
+ ],
+ "slug": "duplex-d5-020",
+ "summary": "Un style majestueux, venez découvrir le beauté de ce magnifique duplex de 5 chambres",
+ "surface_total": 307
+}

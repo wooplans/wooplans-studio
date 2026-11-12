@@ -1,0 +1,76 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 13,
+ "building_width": 15,
+ "category": "duplex",
+ "code": "D4-004",
+ "description": "De type contemporain et très élégant, ce plan de 314m2 a été conçu pour accueillir 01 grande famille. Son plan bien élaboré nous offre: Au RDC : 01 spacieux salon accompagné d’un coin pour bar, 01 salle à manger, 01 espace réservé pour salle de cinéma, 01 chambre pour accueillir vos visiteurs, 01 cuisine, 01 WC pour visiteurs et enfin 01 garage qui laisse place à 02 véhicules. A ETAGE : 01 salon, 01 bureau qui s’ouvre sur 01 large terrasse, 03 chambres et 02 douches. La chambre principale est dotée d’une salle d’eau et 01 spacieux dressing.\n\nCaractéristiques :\n- 02 Living (02 Salons)\n- 01 Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres\n- 03 Baths (03 Salle de Bains)\n- 01 Office (Bureau)\n- 01 Kitchen (Cuisine)\n- 01 Cinema\n\nGros œuvre : à partir de 28 274 410 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 5780500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4259300,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8214400,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4867800,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7301700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 8924300,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6693200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5577700,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7808700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8180400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 67608000,
+ "floor_plans": [
+  "private/d4-004/1792046226165-HP_0q2Wz.jpg",
+  "private/d4-004/1792046229655-0_dZ1Kfl.jpg"
+ ],
+ "land_area": 400,
+ "land_depth": 20,
+ "land_width": 18,
+ "levels": 2,
+ "name": "Duplex D4-004",
+ "renders": [
+  "/media/public/d4-004/1793181917372-9S2DKgkb.webp",
+  "/media/public/d4-004/1793181945919-RQ86WbR3.webp",
+  "/media/public/d4-004/1793181973381-E3hKP9hn.webp",
+  "/media/public/d4-004/1793181995008-Nh9Q409w.webp",
+  "/media/public/d4-004/1793182021212-K6O-wGCB.webp",
+  "/media/public/d4-004/1793182044875-p9A7VO-s.webp",
+  "/media/public/d4-004/1793182164533-DaHfBsRM.webp",
+  "/media/public/d4-004/1793182191005-mS29u1yN.webp",
+  "/media/public/d4-004/1793182209211-qiLildmb.webp",
+  "/media/public/d4-004/1793182231743-NgXf2gZ2.webp"
+ ],
+ "slug": "duplex-d4-004",
+ "summary": "De type contemporain et très élégant, ce plan de 314m2 a été conçu pour accueillir 01 grande famille.",
+ "surface_total": 313
+}

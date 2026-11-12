@@ -1,0 +1,72 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 15,
+ "building_width": 13,
+ "category": "duplex",
+ "code": "D4-005",
+ "description": "Ce duplex propose une architecture ultra contemporaine. Conçu sur 213m2 de surface son plan nous offre: Au RDC : 01 salon + salle à manger, 01 chambre pour ami dotée d’un placard et d’une salle d’eau, 01 cuisine, 01 magasin pour stockage, 01 bureau et enfin 01 garage pouvant contenir 02 véhicules. A l’étage : 01 salons, 03 chambres, 03 dressing pour rangement et enfin 03 douches. La chambre principale s’ouvre sur 01 spacieuse terrasse et est dotée d’une salle d’eau et un spacieux dressing pour rangement.\n\nCaractéristiques :\n- 02 Living (02 Salons)\n- 01Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 04 Baths (04 Salle de Bains)\n- 01Office (Bureau)\n- 01 Kitchen (Cuisine)\n- 01 Store (Magasin)\n- 01 Garage\n\nGros œuvre : à partir de 19 161 900 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 3915200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2884900,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5563700,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3297000,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 4945500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 6044500,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4533400,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3777800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5289000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5541000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 45792000,
+ "floor_plans": [
+  "private/d4-005/1792046337056-og9tI_pk.png",
+  "private/d4-005/1792046340737--wp5h44f.png"
+ ],
+ "land_area": 400,
+ "land_depth": 22,
+ "land_width": 16,
+ "levels": 2,
+ "name": "Duplex D4-005",
+ "renders": [
+  "/media/upload-framer-959202bfa0f4d5a8a38e.jpg",
+  "/media/upload-framer-8d1c1def7ca77acdb8b4.webp",
+  "/media/upload-framer-51e0a78298e455f71326.webp",
+  "/media/upload-framer-78f1c1b30bdc1425cf68.webp",
+  "/media/upload-framer-9f351efbc1a6904e84cd.webp",
+  "/media/upload-framer-828607bc5bc0bb78eb0e.webp"
+ ],
+ "slug": "duplex-d4-005",
+ "summary": "Ce duplex propose une architecture ultra contemporaine. Conçu sur 213m2 de surface son plan nous offre:",
+ "surface_total": 212
+}

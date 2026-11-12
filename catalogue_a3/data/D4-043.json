@@ -1,0 +1,70 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 15.25,
+ "building_width": 12.55,
+ "category": "duplex",
+ "code": "D4-043",
+ "description": "Bienvenue dans l'univers du Duplex D4-043 , un plan de maison moderne et spacieux conçu pour offrir un cadre de vie exceptionnel. Ce duplex de luxe à 4 chambres est la solution idéale pour les familles recherchant un design contemporain.",
+ "estimate_lots": [
+  {
+   "amount": 5872800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4327300,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8345600,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4945500,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7418300,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9066800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6800100,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5666800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7933500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8311300,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 68688000,
+ "floor_plans": [
+  "private/d4-043/1792046735195-g7xybeh_.png",
+  "private/d4-043/1792046738371-WnD9AgLS.png"
+ ],
+ "land_area": 350,
+ "land_depth": 22.25,
+ "land_width": 15.55,
+ "levels": 2,
+ "name": "Duplex D4-043",
+ "renders": [
+  "/media/upload-framer-a6e4c9d195cc07f1f752.webp",
+  "/media/upload-framer-c7a39720378b7c58bcee.webp",
+  "/media/upload-framer-382ebe36b20a267e4de3.webp",
+  "/media/upload-framer-4eb46080a96390a84da2.webp"
+ ],
+ "slug": "duplex-d4-043",
+ "summary": "Laissez vous séduire par ce duplex au design épuré et moderne , avec ces 4 chambres et ça grande terrasse à l'étage.",
+ "surface_total": 318
+}

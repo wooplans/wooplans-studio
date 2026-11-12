@@ -1,0 +1,69 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 10.6,
+ "building_width": 18.35,
+ "category": "villa",
+ "code": "V3-037",
+ "description": "Villa moderne de plain-pied offrant un agencement fonctionnel avec 3 chambres et de beaux espaces de vie. Le plan propose un grand salon ouvert sur une cuisine moderne, un garage intégré et deux terrasses pour profiter de l'extérieur.",
+ "estimate_lots": [
+  {
+   "amount": 3306200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4841300,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3660500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3463700,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2597800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2164800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3030700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3175000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 26240000,
+ "floor_plans": [
+  "upload-1776984416984-001ce7222fe949a49b0f29e1a9f6043c.webp",
+  "upload-1776984407117-89c675b813294b78bc8b78c60ebdf66a.webp"
+ ],
+ "land_area": 400,
+ "land_depth": 17.6,
+ "land_width": 21.35,
+ "levels": 1,
+ "name": "Villa V3-037",
+ "renders": [
+  "/media/upload-1776984367928-34baeffd67514b8780e6c2514e2923a2.webp",
+  "/media/upload-1776984383289-90dfbac0d27e4df786ba90eaabf7d80b.webp",
+  "/media/upload-1776984384810-491372e469a74de188aa32f77c269799.webp",
+  "/media/upload-1776984386404-635b16e955494c2ab97702d3ccf5f091.webp",
+  "/media/upload-1776984387919-46f9eab705c14d4e900feb3e926737d4.webp",
+  "/media/upload-1776984389249-de06c6524691402e8d140b14917c395d.webp",
+  "/media/upload-1776984391194-091ee4a87cfa4169bf74cce21ef63338.webp",
+  "/media/upload-1776984392976-4956a88454ee4637aed556b97731711e.webp",
+  "/media/upload-1776984394395-76ef44b697bb404d9809f452134b292a.webp",
+  "/media/upload-1776984397677-c6772c6574af47258dfd12c53d145f4d.webp",
+  "/media/upload-1776984399665-404b5e92b857404f98526c927399311a.webp"
+ ],
+ "slug": "villa-v3-037",
+ "summary": "Villa moderne plain-pied de 3 chambres et 164 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 24 – 29 millions FCFA. Terrain conseillé : 400 m².",
+ "surface_total": 164
+}

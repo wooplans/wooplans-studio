@@ -1,0 +1,65 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 12,
+ "building_width": 14,
+ "category": "villa",
+ "code": "V4-006",
+ "description": "De style contemporain, cette villa comporte 4 chambres et 3 douches Cette magnifique villa dispose 01 salon + salle à manger, 04 chambres. L’une dotée d’un placard et d’un dressing pour intimité parentale. Ensuite 03 salles de bain et un WC pour visiteur et enfin 01 cuisine.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living+Dining (Salon+SAM)\n- 01 Kitchen (Cuisine)\n- 01 Guest toilet (Toilette visiteur)\n- 01 Master's Bedroom (Chambre Principale)\n- 03 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)",
+ "estimate_lots": [
+  {
+   "amount": 2419200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3542400,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2678400,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2534400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1900800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1584000,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2217600,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2323200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 19200000,
+ "floor_plans": [
+  "private/v4-006/1792047175454-V7iwD_xc.png"
+ ],
+ "land_area": 350,
+ "land_depth": 19,
+ "land_width": 17,
+ "levels": 1,
+ "name": "Villa V4-006",
+ "renders": [
+  "/media/public/v4-006/1792274280693-5FC7LkKf.webp",
+  "/media/public/v4-006/1792274319181-YGYXApzk.webp",
+  "/media/public/v4-006/1792274322341-GjI6Md7y.webp",
+  "/media/public/v4-006/1792274325513-AqMjpRKQ.webp",
+  "/media/public/v4-006/1792274329018-LUrkzLWz.webp",
+  "/media/public/v4-006/1792274332205-8jZnAUzP.webp",
+  "/media/public/v4-006/1792274335726-CJmHd4Lq.webp",
+  "/media/public/v4-006/1792274339147-O1w_gPIE.webp"
+ ],
+ "slug": "villa-v4-006",
+ "summary": "De style contemporain, cette villa comporte 4 chambres et 3 douches",
+ "surface_total": 120
+}

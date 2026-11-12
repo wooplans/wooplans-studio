@@ -1,0 +1,75 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 11.5,
+ "building_width": 18.7,
+ "category": "duplex",
+ "code": "D5-001",
+ "description": "Ce duplex moderne a été conçu avec soin et répond parfaitement aux critères de plusieurs famille. Dotée de 321.21m2, Son plan est composée:\n\nAu rez-de-chaussée 02 spacieux salons + salle à manger qui s’ouvre sur 01 remarquable terrasse en forme de L, 01 spacieuse chambre pour visiteur offrant 01 placard et 01 salle d’eau, 01 seconde chambre avec 01 douche commune accompagnée d’01 WC pour visiteurs, 01 cuisine et enfin 01 garage sur mesure pouvant contenir 03 voitures. A l’étage nous avons également 01 salon, 03 chambres, et enfin 02 salles de bain La chambre principale est assez commode pour répondre à vos besoins.\n\nCaractéristiques :\n- RDC :\n- 02 salons\n- 01 Salle à Manger\n- 01 Garage\n- 01 Cuisine\n- 02 Chambres\n- ETAGE :\n- 01 Suite Parentale\n- 02 Chambres Secondaires\n- 01 Salon",
+ "estimate_lots": [
+  {
+   "amount": 6002100,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4422600,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8529300,
+   "label": "Dalle"
+  },
+  {
+   "amount": 5054400,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7581600,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9266400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6949800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5791500,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 8108100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8494200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 70200000,
+ "floor_plans": [
+  "private/d5-001/1792046874373-RDps3NY3.png",
+  "private/d5-001/1792046877533-z8FbNVb-.png"
+ ],
+ "land_area": 450,
+ "land_depth": 18.5,
+ "land_width": 21.7,
+ "levels": 2,
+ "name": "Duplex D5-001",
+ "renders": [
+  "/media/public/d5-001/1792070438630-7RHeARgU.webp",
+  "/media/public/d5-001/1792070444849-UnH1LD_7.webp",
+  "/media/public/d5-001/1792070446487-Z7xtMh1o.webp",
+  "/media/public/d5-001/1792070448444-dccfEItZ.webp",
+  "/media/public/d5-001/1792070450671-OBA_eNU7.webp",
+  "/media/public/d5-001/1792070452149-gamoaWrn.webp",
+  "/media/public/d5-001/1792070453778-W61ZCqzT.webp",
+  "/media/public/d5-001/1792070455977-pX_RKCHa.webp",
+  "/media/public/d5-001/1792070457945-fQ9jnbIM.webp"
+ ],
+ "slug": "duplex-d5-001",
+ "summary": "Bienvenue dans l'univers du Duplex D5-001, un plan de maison moderne et fonctionnel conçu pour offrir un cadre de vie confortable et optimisé.",
+ "surface_total": 325
+}

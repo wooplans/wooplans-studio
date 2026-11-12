@@ -1,0 +1,65 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 14.33,
+ "building_width": 17.3,
+ "category": "villa",
+ "code": "V3-008",
+ "description": "La Villa V3-008 est une villa de plain-pied de 3 chambres dont une suite parentale. Composition : 02 salons, 01 salle à manger, 01 cuisine, 01 chambre principale, 02 chambres, 02 salles de bain, 01 toilette visiteur, 01 dressing, 01 magasin. Emprise 17,30 m x 14,33 m.",
+ "estimate_lots": [
+  {
+   "amount": 3810200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 5579300,
+   "label": "Élévations"
+  },
+  {
+   "amount": 4218500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3991700,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2993800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2494800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3492700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3659000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 30240000,
+ "floor_plans": [
+  "private/v3-008/1793334320071-5Pox_BXY.png"
+ ],
+ "land_area": 450,
+ "land_depth": 21.33,
+ "land_width": 20.3,
+ "levels": 1,
+ "name": "Villa V3-008",
+ "renders": [
+  "/media/public/v3-008/1793191462671-A6KdNO2d.webp",
+  "/media/public/v3-008/1793191471450-UBj3rFzV.webp",
+  "/media/public/v3-008/1793191481499-rTrtBWcj.webp",
+  "/media/public/v3-008/1793191489044-mkdRvfj9.webp",
+  "/media/public/v3-008/1793191505282-snxyf7YS.webp",
+  "/media/public/v3-008/1793191513335-JlzsyusN.webp",
+  "/media/public/v3-008/1793191520160-VvNmmNXg.webp",
+  "/media/public/v3-008/1793191531024-W99-caYJ.webp"
+ ],
+ "slug": "villa-v3-008",
+ "summary": "Villa moderne plain-pied de 3 chambres et 189 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 27 – 33 millions FCFA. Terrain conseillé : 450 m².",
+ "surface_total": 189
+}

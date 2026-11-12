@@ -1,0 +1,73 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 10,
+ "building_width": 8,
+ "category": "duplex",
+ "code": "D4-035",
+ "description": "Ce Duplex tient compte de toutes vos envies pour le confort et la joie de vivre. Conçu sur 140 m2 de superficie. C'est le plan parfait si vous avez un petit terrain et un petit budget.\n\nCaractéristiques :\n- 02 Living (02 Salons)\n- 01 Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 03 Baths (03 Salle de Bains)\n- 01 Kitchen (Cuisine)\n- 01 Guest's toilet (WC Visiteur)",
+ "estimate_lots": [
+  {
+   "amount": 2585500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 1905100,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 3674200,
+   "label": "Dalle"
+  },
+  {
+   "amount": 2177300,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 3265900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3991700,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2993800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2494800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3492700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3659000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 30240000,
+ "floor_plans": [
+  "private/d4-035/1792046714688-9tEB73tQ.png",
+  "private/d4-035/1792046718479-hdz2LMBA.png"
+ ],
+ "land_area": 200,
+ "land_depth": 17,
+ "land_width": 11,
+ "levels": 2,
+ "name": "Duplex D4-035",
+ "renders": [
+  "/media/public/d4-035/1793188381108-bqmxpcK9.webp",
+  "/media/public/d4-035/1793188393766-PvxUsGRz.webp",
+  "/media/public/d4-035/1793188406511-QXsGTJOB.webp",
+  "/media/public/d4-035/1793188412085-DTj19_OS.webp",
+  "/media/public/d4-035/1793188417992-mSHkbM2j.webp",
+  "/media/public/d4-035/1793188424701-hVFO9Afa.webp",
+  "/media/public/d4-035/1793188431652-Q2aksTtI.webp"
+ ],
+ "slug": "duplex-d4-035",
+ "summary": "Construit sur 140 m2, ce duplex est imposant et captivant",
+ "surface_total": 140
+}

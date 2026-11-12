@@ -1,0 +1,71 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 11.5,
+ "building_width": 13,
+ "category": "duplex",
+ "code": "D4-033",
+ "description": "Le Duplex D4-033 est un plan de maison moderne et spacieux, réparti sur deux étages .\n\nCe modèle est conçu pour offrir un cadre de vie confortable avec des espaces bien définis.",
+ "estimate_lots": [
+  {
+   "amount": 4173800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3075400,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5931100,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3514800,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 5272100,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 6443700,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4832800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 4027300,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5638200,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5906800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 48816000,
+ "floor_plans": [
+  "private/d4-033/1792046704503-9Zf9AL3b.png",
+  "private/d4-033/1792046707706-kJuHX1QW.png"
+ ],
+ "land_area": 300,
+ "land_depth": 18.5,
+ "land_width": 16,
+ "levels": 2,
+ "name": "Duplex D4-033",
+ "renders": [
+  "/media/public/d4-033/1793182723696-eUZwob5t.webp",
+  "/media/public/d4-033/1793182646009-grj22-AC.webp",
+  "/media/public/d4-033/1793182676919-CDGV92KV.webp",
+  "/media/public/d4-033/1793182700930-Rops2yB8.webp",
+  "/media/public/d4-033/1793182748461-vDFGOn5B.webp"
+ ],
+ "slug": "duplex-d4-033",
+ "summary": "Avec ça grande terrasse à l'étage et son design moderne, vous allez adorer vivre dans ce magnifique bijou architectural",
+ "surface_total": 226
+}

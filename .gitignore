@@ -27,3 +27,10 @@ media/
 !batches/images/**
 !youtube_plan/jobs/**
 __pycache__/
+
+# catalogue A3 : instantanés du site (data/) et plans versionnés ; rendus, originaux et PDF générés non versionnés
+!catalogue_a3/assets/**
+!catalogue_a3/plans/**
+catalogue_a3/out/
+catalogue_a3/cache/
+catalogue_a3/hires/

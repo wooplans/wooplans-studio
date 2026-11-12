@@ -1,0 +1,71 @@
+{
+ "bathrooms": 5,
+ "bedrooms": 5,
+ "building_depth": 13.84,
+ "building_width": 18.1,
+ "category": "duplex",
+ "code": "D5-014",
+ "description": "Le Duplex D5-014 est un modèle familial sur deux niveaux. Composition : 03 salons, salle à manger, 01 cuisine, 01 magasin, toilette visiteurs, 01 chambre principale, 04 chambres, 05 salles de bain et dressing. Emprise 18,10 m x 13,84 m.",
+ "estimate_lots": [
+  {
+   "amount": 6722400,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4953300,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 9552800,
+   "label": "Dalle"
+  },
+  {
+   "amount": 5660900,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 8491400,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 10378400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 7783800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 6486500,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 9081100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 9513400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 78624000,
+ "floor_plans": [
+  "private/d5-014/1793334243367-hYjBGHSR.png",
+  "private/d5-014/1793334245465-EBK_g2lF.png"
+ ],
+ "land_area": 450,
+ "land_depth": 20.84,
+ "land_width": 21.1,
+ "levels": 2,
+ "name": "Duplex D5-014",
+ "renders": [
+  "/media/public/d5-014/1793182645528-g-BOmBzn.webp",
+  "/media/public/d5-014/1793182675208-dTOTq01F.webp",
+  "/media/public/d5-014/1793182698588-WT54Ey5K.webp",
+  "/media/public/d5-014/1793182717795-JjzZwny9.webp",
+  "/media/public/d5-014/1793182729978-4rYchsUN.webp"
+ ],
+ "slug": "duplex-d5-014",
+ "summary": "Duplex moderne R+1 de 5 chambres et 364 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 71 – 87 millions FCFA. Terrain conseillé : 450 m².",
+ "surface_total": 364
+}

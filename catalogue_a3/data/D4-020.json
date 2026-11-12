@@ -1,0 +1,73 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 4,
+ "building_depth": 12.15,
+ "building_width": 13.35,
+ "category": "duplex",
+ "code": "D4-020",
+ "description": "Duplex R+1 de 265,95 m² sur une emprise indiquée de 13,35 m × 12,15 m. Le RDC regroupe séjour, salle à manger, cuisine, chambre, cellier, magasin, sas, sanitaires et terrasses. L’étage accueille la suite parentale avec dressing, deux chambres, trois salles d’eau, hall, entrée et terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 4912500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3619700,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 6980900,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4136800,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 6205200,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 7584200,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 5688100,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 4740100,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 6636200,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 6952300,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 57456000,
+ "floor_plans": [
+  "private/d4-020/1793181526997-7VOFjFaT.png",
+  "private/d4-020/1793181531015-wIBv0acX.png"
+ ],
+ "land_area": 350,
+ "land_depth": 19.15,
+ "land_width": 16.35,
+ "levels": 2,
+ "name": "Duplex D4-020",
+ "renders": [
+  "/media/public/d4-020/1793181094591-GRVMdEK-.webp",
+  "/media/public/d4-020/1793181113322-olbF01ra.webp",
+  "/media/public/d4-020/1793181122051-221UNdOq.webp",
+  "/media/public/d4-020/1793181132788-YmPRZsg-.webp",
+  "/media/public/d4-020/1793181150176-RYpagX_S.webp",
+  "/media/public/d4-020/1793181175577-0DtuRUSn.webp",
+  "/media/public/d4-020/1793181185592-1ojxNcDf.webp"
+ ],
+ "slug": "duplex-d4-020",
+ "summary": "Découvrez le Duplex D4-020 : 4 chambres, 4 salles d’eau, 265,95 m², séjour, cuisine, terrasses et plans de distribution sur deux niveaux.",
+ "surface_total": 266
+}

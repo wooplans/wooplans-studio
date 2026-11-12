@@ -1,0 +1,74 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 10,
+ "building_width": 9,
+ "category": "duplex",
+ "code": "D4-034",
+ "description": "Duplex moderne de 142m² sur 2 niveaux, offrant 4 chambres confortables et 3 salles de bains. Conception optimisée avec terrasses, espaces de vie généreux et agencement fonctionnel pour une famille.",
+ "estimate_lots": [
+  {
+   "amount": 2640900,
+   "label": "Fondation"
+  },
+  {
+   "amount": 1945900,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 3752900,
+   "label": "Dalle"
+  },
+  {
+   "amount": 2223900,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 3335900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 4077200,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 3057900,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2548300,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3567600,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3737500,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 30888000,
+ "floor_plans": [
+  "upload-1776984499272-866080024ae0412287dca1b196b6ea3a.webp",
+  "upload-1776984514688-0713e2502a79409eae5f239b9cc504d7.webp",
+  "upload-1776984488841-52a9c4b8f31946d8b83cdfa924ee3992.webp"
+ ],
+ "land_area": 250,
+ "land_depth": 17,
+ "land_width": 12,
+ "levels": 2,
+ "name": "Duplex D4-034",
+ "renders": [
+  "/media/public/d4-034/1793182644175-gwCmfMaj.webp",
+  "/media/public/d4-034/1793182667154-9Mpeegxx.webp",
+  "/media/public/d4-034/1793182687356-Yzfs4Q7K.webp",
+  "/media/public/d4-034/1793182709574-2FpiGRPT.webp",
+  "/media/public/d4-034/1793182727293-4BiApvSL.webp",
+  "/media/public/d4-034/1793182748956-SoF9Rgol.webp",
+  "/media/public/d4-034/1793182769083-EDD5Ztb3.webp"
+ ],
+ "slug": "duplex-d4-034",
+ "summary": "Duplex moderne R+1 de 4 chambres et 143 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 28 – 34 millions FCFA. Terrain conseillé : 250 m².",
+ "surface_total": 143
+}

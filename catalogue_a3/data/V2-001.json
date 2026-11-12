@@ -1,0 +1,62 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 2,
+ "building_depth": 10,
+ "building_width": 11,
+ "category": "villa",
+ "code": "V2-001",
+ "description": "La Villa V2-001 est un modèle familial de 2 chambres en plain-pied. Composition : 01 salon, 01 salle à manger, 01 cuisine, 01 magasin, 2 chambres, 2 salles de bain. Emprise 11,00 m x 10,00 m.",
+ "estimate_lots": [
+  {
+   "amount": 1794200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2627300,
+   "label": "Élévations"
+  },
+  {
+   "amount": 1986500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 1879700,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1409800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1174800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 1644700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 1723000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 14240000,
+ "floor_plans": [
+  "private/v2-001/1793334254380-yGf_mN1M.png"
+ ],
+ "land_area": 250,
+ "land_depth": 17,
+ "land_width": 14,
+ "levels": 1,
+ "name": "Villa V2-001",
+ "renders": [
+  "/media/public/v2-001/1793183095472-vpuTexFF.webp",
+  "/media/public/v2-001/1793183100306-VNUCpr20.webp",
+  "/media/public/v2-001/1793183105596-qwfwp4fF.webp",
+  "/media/public/v2-001/1793183111046-xzQCZUcO.webp",
+  "/media/public/v2-001/1793183115779-nhil10ad.webp"
+ ],
+ "slug": "villa-v2-001",
+ "summary": "Villa moderne plain-pied de 2 chambres et 89 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 13 – 16 millions FCFA. Terrain conseillé : 250 m².",
+ "surface_total": 89
+}

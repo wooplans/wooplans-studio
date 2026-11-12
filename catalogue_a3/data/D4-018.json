@@ -1,0 +1,70 @@
+{
+ "bathrooms": 5,
+ "bedrooms": 5,
+ "building_depth": 13.25,
+ "building_width": 14.95,
+ "category": "duplex",
+ "code": "D4-018",
+ "description": "Modèle de duplex contemporain sur deux niveaux, conçu autour d'espaces de vie lumineux, de deux suites principales, de trois chambres, de terrasses et d'un garage. Les rendus présentent une interprétation architecturale moderne et paysagée du modèle D4-018.",
+ "estimate_lots": [
+  {
+   "amount": 5614300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4136800,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 7978200,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4727800,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7091700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 8667600,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6500700,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5417300,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7584200,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 7945400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 65664000,
+ "floor_plans": [],
+ "land_area": 400,
+ "land_depth": 20.25,
+ "land_width": 17.95,
+ "levels": 2,
+ "name": "Duplex D4-018",
+ "renders": [
+  "/media/public/d4-018/1793181921954-RANDstrG.webp",
+  "/media/public/d4-018/1793181953440-izp1Pgvi.webp",
+  "/media/public/d4-018/1793181978339-sXLnFcS4.webp",
+  "/media/public/d4-018/1793182003390-HaYUlwim.webp",
+  "/media/public/d4-018/1793182023901-ZriKTyUx.webp",
+  "/media/public/d4-018/1793182039596-02LtOC1g.webp",
+  "/media/public/d4-018/1793182172486-y5WrcfXd.webp"
+ ],
+ "slug": "duplex-d4-018",
+ "summary": "Découvrez le plan de duplex D4-018 : 5 chambres, 5 salles de bain, terrasses, garage et architecture contemporaine sur deux niveaux.",
+ "surface_total": 304
+}

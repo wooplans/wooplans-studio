@@ -1,0 +1,42 @@
+name: catalogue-a3
+# Génère le catalogue A3 « modèle A » (couverture, sommaire, parties Duplex et Villas, pages numérotées) sans le PC de Tao.
+# Données publiques : relues sur wooplans.com à chaque lancement. Devis et plans (Premium) : ceux enregistrés dans catalogue_a3/
+# (rafraîchis par Claude avec le connecteur wooplans). Procédure : catalogue_a3/README.md.
+# Lancer : Actions > catalogue-a3 > Run workflow. Résultat : artefact « catalogue-a3 » (PDF + RAPPORT-<partie>.md), conservé 14 jours.
+# AUCUNE publication ici : le PDF est relu par Tao avant impression.
+on:
+  workflow_dispatch:
+    inputs:
+      part:
+        description: "Partie à générer"
+        required: true
+        default: all
+        type: choice
+        options: [all, duplex, villa]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-catalogue.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Données publiques à jour (nouveaux modèles inclus)
+        run: python tools/catalogue_a3.py sync-public --discover
+      - name: Génération du PDF
+        run: python tools/catalogue_a3.py build --part "${{ github.event.inputs.part }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catalogue-a3
+          path: |
+            catalogue_a3/out/*.pdf
+            catalogue_a3/out/RAPPORT-*.md
+          retention-days: 14

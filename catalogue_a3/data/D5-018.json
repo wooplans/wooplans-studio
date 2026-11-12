@@ -1,0 +1,73 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 15.5,
+ "building_width": 15.8,
+ "category": "duplex",
+ "code": "D5-018",
+ "description": "Ce duplex de luxe à cinq chambres est la solution idéale pour les familles recherchant un design contemporain, des espaces de vie généreux, et un confort optimal.",
+ "estimate_lots": [
+  {
+   "amount": 8864600,
+   "label": "Fondation"
+  },
+  {
+   "amount": 6531800,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 12597100,
+   "label": "Dalle"
+  },
+  {
+   "amount": 7465000,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 11197400,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 13685800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 10264300,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 8553600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 11975000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 12545400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 103680000,
+ "floor_plans": [
+  "private/d5-018/1792046915281-3SGs9sqV.png",
+  "private/d5-018/1792046918340-UMR0pclI.png"
+ ],
+ "land_area": 450,
+ "land_depth": 22.5,
+ "land_width": 18.8,
+ "levels": 2,
+ "name": "Duplex D5-018",
+ "renders": [
+  "/media/public/d5-018/1793188395131-6LVhO81c.webp",
+  "/media/public/d5-018/1793188408297-SWRaIMFD.webp",
+  "/media/public/d5-018/1793188426766-0vH21gB_.webp",
+  "/media/public/d5-018/1793188434809-E14HY0it.webp",
+  "/media/public/d5-018/1793188441071-iDScrXbT.webp",
+  "/media/public/d5-018/1793188448630-LPrHQgGg.webp",
+  "/media/public/d5-018/1793188457195-r1C6untE.webp"
+ ],
+ "slug": "duplex-d5-018",
+ "summary": "Un style majestueux, venez découvrir le beauté de ce magnifique duplex de 5 chambres",
+ "surface_total": 480
+}

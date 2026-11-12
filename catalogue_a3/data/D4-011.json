@@ -1,0 +1,73 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 16,
+ "building_width": 19,
+ "category": "duplex",
+ "code": "D4-011",
+ "description": "Ce joyau architectural impressionnant conçu sur 550m2 son plan nous offre: Au rez-de-chaussée: 02 salons + salle à manger, 01 buanderie pour dédié pour la propreté de vos vêtements, 01 local technique + salle de sport pour recueillir un générateur en cas de délestage électrique et faire du sport constamment, 01 chambre pour visiteurs pour accueillir vos invités, 01 WC pour visiteurs, 01 cuisine, 01 magasin pour stockage et enfin 01 garage pouvant contenir 02 véhicules. A l’étage: 01 salon, 03 chambres, 03 douches, 02 dressings pour la propreté et le rangement de vos affaires et enfin une salle d’étude pour permettre à vos enfants d’atteindre les objectifs académiques.\n\nCaractéristiques :\n- 01 Living (Salon)\n- 01 Dining(SAM)\n- 01 Kitchen (Cuisine)\n- 01 Master's Bedroom (Chambre Principale)\n- 04 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n- 01 Guest Toilet (Toilette visiteur)\n- 01 Store (Magasin)\n- 01 Garage\n- 02 Dressing",
+ "estimate_lots": [
+  {
+   "amount": 9234000,
+   "label": "Fondation"
+  },
+  {
+   "amount": 6804000,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 13122000,
+   "label": "Dalle"
+  },
+  {
+   "amount": 7776000,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 11664000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 14256000,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 10692000,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 8910000,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 12474000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 13068000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 108000000,
+ "floor_plans": [
+  "private/d4-011/1792046514119-3qM4Q38J.png",
+  "private/d4-011/1792046517461-itoLDWiJ.png"
+ ],
+ "land_area": 550,
+ "land_depth": 23,
+ "land_width": 22,
+ "levels": 2,
+ "name": "Duplex D4-011",
+ "renders": [
+  "/media/upload-framer-219424c119aa9bc7498c.jpg",
+  "/media/upload-framer-fe854ba9d97274818592.jpg",
+  "/media/upload-framer-a9e2fce79e5ee75013bf.jpg",
+  "/media/upload-framer-4b5cea74b2a57d533c04.jpg",
+  "/media/upload-framer-2f01b4f1b4029faa8b9b.jpg",
+  "/media/upload-framer-11bd1342baa55f8a6c90.jpg",
+  "/media/upload-framer-a42bf9d70d46699d30cb.jpg"
+ ],
+ "slug": "duplex-d4-011",
+ "summary": "Construite sur une surface de 202 m2, ce duplex captive et attire. Son plan offre:",
+ "surface_total": 500
+}

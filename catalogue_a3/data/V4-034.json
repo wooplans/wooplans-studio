@@ -1,0 +1,62 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 11.35,
+ "building_width": 16,
+ "category": "villa",
+ "code": "V4-034",
+ "description": "La Villa V4-034 est un modèle familial de 4 chambres en plain-pied. Composition : 01 salon / espace de vie, 04 chambres dont suite parentale, 03 douches / salles de bains. Emprise 16,00 m x 11,35 m.",
+ "estimate_lots": [
+  {
+   "amount": 2943400,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4309900,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3258700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3083500,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2312600,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1927200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2698100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2826600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 23360000,
+ "floor_plans": [
+  "private/v4-034/1793334415787-aXJz_JfR.png"
+ ],
+ "land_area": 350,
+ "land_depth": 18.35,
+ "land_width": 19,
+ "levels": 1,
+ "name": "Villa V4-034",
+ "renders": [
+  "/media/public/v4-034/1793188380922-jmV61YwR.webp",
+  "/media/public/v4-034/1793188387027-EL4Z7xuw.webp",
+  "/media/public/v4-034/1793188392049-CLGMD_vS.webp",
+  "/media/public/v4-034/1793188396903-C3tuAqZo.webp",
+  "/media/public/v4-034/1793188406187-W-_5nIH5.webp"
+ ],
+ "slug": "villa-v4-034",
+ "summary": "Villa moderne plain-pied de 4 chambres et 146 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 21 – 26 millions FCFA. Terrain conseillé : 350 m².",
+ "surface_total": 146
+}

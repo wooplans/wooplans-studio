@@ -1,0 +1,71 @@
+{
+ "bathrooms": 5,
+ "bedrooms": 5,
+ "building_depth": 11.58,
+ "building_width": 18,
+ "category": "duplex",
+ "code": "D5-019",
+ "description": "Le Duplex D5-019 est un modèle familial sur deux niveaux. Composition : 02 salons, salle à manger, 01 cuisine, 02 toilettes visiteurs, 01 chambre principale, 04 chambres, 05 salles de bain, dressing et terrasses. Emprise 18,00 m x 11,58 m.",
+ "estimate_lots": [
+  {
+   "amount": 7405700,
+   "label": "Fondation"
+  },
+  {
+   "amount": 5456800,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 10523800,
+   "label": "Dalle"
+  },
+  {
+   "amount": 6236400,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 9354500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 11433300,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 8575000,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 7145800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 10004100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 10480600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 86616000,
+ "floor_plans": [
+  "private/d5-019/1793334250549-6QYP5EJC.png",
+  "private/d5-019/1793334252201-j6xzDMDU.png"
+ ],
+ "land_area": 400,
+ "land_depth": 18.58,
+ "land_width": 21,
+ "levels": 2,
+ "name": "Duplex D5-019",
+ "renders": [
+  "/media/public/d5-019/1793182631167-L-Y3w3b4.webp",
+  "/media/public/d5-019/1793182642245-XoQ41d35.webp",
+  "/media/public/d5-019/1793182649463-C3uvpTg_.webp",
+  "/media/public/d5-019/1793182662180-LPgWo7ut.webp",
+  "/media/public/d5-019/1793182673964--w-KzCmt.webp"
+ ],
+ "slug": "duplex-d5-019",
+ "summary": "Duplex moderne R+1 de 5 chambres et 401 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 78 – 95 millions FCFA. Terrain conseillé : 400 m².",
+ "surface_total": 401
+}

@@ -1,0 +1,73 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 7,
+ "building_width": 14,
+ "category": "duplex",
+ "code": "D4-036",
+ "description": "Si vous appréciez à la fois la nature et le design ultra moderne cette maison sera idéale pour vous! La polyvalence est définie par cette maison. Entrez dans les magnifiques espaces et vous trouverez tout ce dont vous pourriez avoir besoin. Son plan est composée de: Au rez-de-chaussée 01 spacieux séjour + salle à manger, 01 cuisine, 01 chambre pour visiteurs enfin 01 douche commune. A l’étage nous avons 02 chambres avec 01 douche commune, enfin 01 suite parentale dotée d’une salle de bain.\n\nCaractéristiques :\n- 01 Living (01 Salon)\n- 01 Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 03 Baths (03 Salle de Bains)\n- 01 Kitchen (Cuisine)",
+ "estimate_lots": [
+  {
+   "amount": 2345400,
+   "label": "Fondation"
+  },
+  {
+   "amount": 1728200,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 3333000,
+   "label": "Dalle"
+  },
+  {
+   "amount": 1975100,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 2962700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3621000,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2715800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2263100,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3168400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3319300,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 27432000,
+ "floor_plans": [
+  "private/d4-036/1793334235477-Jvroxora.png",
+  "private/d4-036/1793334237316-zqr9IyXS.png"
+ ],
+ "land_area": 250,
+ "land_depth": 14,
+ "land_width": 17,
+ "levels": 2,
+ "name": "Duplex D4-036",
+ "renders": [
+  "/media/public/d4-036/1793188393720-c97Bv1u9.webp",
+  "/media/public/d4-036/1793188417208-oyqWFcOI.webp",
+  "/media/public/d4-036/1793188427561-NyJz_djV.webp",
+  "/media/public/d4-036/1793188442262-Ylz6JaC4.webp",
+  "/media/public/d4-036/1793188452070-v3Z2j6nA.webp",
+  "/media/public/d4-036/1793188461245-ajFIGp3A.webp",
+  "/media/public/d4-036/1793188469817-Q_wUWKkl.webp"
+ ],
+ "slug": "duplex-d4-036",
+ "summary": "Avec son allure imposante et son style, venez découvrir le beauté de ce magnifique duplex de 4 chambres",
+ "surface_total": 127
+}

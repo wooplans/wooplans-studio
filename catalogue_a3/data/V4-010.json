@@ -1,0 +1,67 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 12,
+ "building_width": 16,
+ "category": "villa",
+ "code": "V4-010",
+ "description": "Vous êtes à la recherche d’une maison abordable et pratique pour votre famille, ce plan est un excellent choix pour vous ! Conçue sur 148,15m2, son plan offre 01 spacieux magasin pour stocker vos matériaux, 01 chambre parentale dotée d’une salle d’eau et d’un dressing pour parfaire son intimité et ensuite 01 spacieux salon + salle à manger pour recueillir vos invités, 03 chambres, 03 Salles de bain et enfin 01 cuisine.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living (Salon)\n- 01 Dining (Salle à Manger)\n- 01 Kitchen (Cuisine)\n- 01 Store (Magasin)\n- 03 Bathrooms (Salles de Bain)\n- 04 Bedrooms (Chambres)",
+ "estimate_lots": [
+  {
+   "amount": 2983700,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4369000,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3303400,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3125800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2344300,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1953600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2735000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2865200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 23680000,
+ "floor_plans": [
+  "private/v4-010/1792047204067-ZfBPf25T.png"
+ ],
+ "land_area": 400,
+ "land_depth": 19,
+ "land_width": 19,
+ "levels": 1,
+ "name": "Villa V4-010",
+ "renders": [
+  "/media/public/v4-010/1793974239199-PsmaZSFr.webp",
+  "/media/public/v4-010/1793974283216-J3Hi4Sur.webp",
+  "/media/public/v4-010/1793974323182-JG6H-eD5.webp",
+  "/media/public/v4-010/1793974375324-7JFSLRco.webp",
+  "/media/public/v4-010/1793974418760-__nnamg5.webp",
+  "/media/public/v4-010/1793974461049-FHi4NCN7.webp",
+  "/media/public/v4-010/1793974503416-NYAZPu0D.webp",
+  "/media/public/v4-010/1793974530282-FhN4vtmQ.webp",
+  "/media/public/v4-010/1793974553337-Tb5QR3Ie.webp",
+  "/media/public/v4-010/1793974595178-MV71IL-b.webp"
+ ],
+ "slug": "villa-v4-010",
+ "summary": "Vous êtes à la recherche d’une maison abordable et pratique pour votre famille, ce plan est un excellent choix pour vous !",
+ "surface_total": 148
+}

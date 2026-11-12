@@ -1,0 +1,71 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 13,
+ "building_width": 11,
+ "category": "duplex",
+ "code": "D4-008",
+ "description": "De style contemporain et conçu sur 219m2. Son plan minutieusement pensé offre: Au RDC : 01 spacieux salon + salle à manger, 01 spacieuse chambre pour visiteur avec salle d’eau est en place pour répondre aux besoins formellement intime, 01 cuisine et enfin 01 buanderie destinée au lavage des vêtements. A l’étage : nous avons 01 salon, 03 chambres, et enfin 03 salles de bain La chambre principale est assez commode pour répondre pour répondre à vos besoins.\n\nCaractéristiques :\n- 02 Living (Salons)\n- 01Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 04 Baths (Salle de Bains)\n- 01 Kitchen (Cuisine)\n- 01 Laundry (Buanderie)\n- 01 Guest Toilet(WC V.)",
+ "estimate_lots": [
+  {
+   "amount": 4044500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2980200,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5747400,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3405900,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 5108800,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 6244100,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4683100,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3902600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5463600,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5723800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 47304000,
+ "floor_plans": [
+  "private/d4-008/1792046369037-deezFTTU.png",
+  "private/d4-008/1792046372478-Q7dOkER0.png"
+ ],
+ "land_area": 300,
+ "land_depth": 20,
+ "land_width": 14,
+ "levels": 2,
+ "name": "Duplex D4-008",
+ "renders": [
+  "/media/upload-framer-4184f2c40569c7af7e77.webp",
+  "/media/upload-framer-3a3a1a0d22d23d3e7150.webp",
+  "/media/upload-framer-1c33e363d397b485318b.webp",
+  "/media/upload-framer-90cbd763cb23ea1b437d.webp",
+  "/media/upload-framer-e51432589be5f77fcd1b.webp"
+ ],
+ "slug": "duplex-d4-008",
+ "summary": "De style contemporain et conçu sur 219m2. Son plan minutieusement pensé offre:",
+ "surface_total": 219
+}

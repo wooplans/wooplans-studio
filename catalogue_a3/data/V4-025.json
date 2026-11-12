@@ -1,0 +1,60 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 4,
+ "building_depth": 14.7,
+ "building_width": 17,
+ "category": "villa",
+ "code": "V4-025",
+ "description": "Villa de plain-pied de 189 m² habitables sur une emprise de 17,00 m x 14,70 m. Composition : 01 salon, 01 salle à manger, 01 cuisine, 01 chambre principale avec dressing, 03 chambres, 04 salles de bain, 01 parking, 01 dressing et deux terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 3810200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 5579300,
+   "label": "Élévations"
+  },
+  {
+   "amount": 4218500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3991700,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2993800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2494800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3492700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3659000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 30240000,
+ "floor_plans": [
+  "private/v4-025/1793334406904-oCjvIV1P.png"
+ ],
+ "land_area": 450,
+ "land_depth": 21.7,
+ "land_width": 20,
+ "levels": 1,
+ "name": "Villa V4-025",
+ "renders": [
+  "/media/public/v4-025/1793188380378-YqmENQe0.webp",
+  "/media/public/v4-025/1793188387854-07y5qizI.webp",
+  "/media/public/v4-025/1793188393426-dEasgokt.webp"
+ ],
+ "slug": "villa-v4-025",
+ "summary": "Villa moderne plain-pied de 4 chambres et 189 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 27 – 33 millions FCFA. Terrain conseillé : 450 m².",
+ "surface_total": 189
+}

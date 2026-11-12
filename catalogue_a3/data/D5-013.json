@@ -1,0 +1,75 @@
+{
+ "bathrooms": 5,
+ "bedrooms": 5,
+ "building_depth": 15.85,
+ "building_width": 16.15,
+ "category": "duplex",
+ "code": "D5-013",
+ "description": "Le Duplex D5-013 est un modèle familial sur deux niveaux. Composition : 02 salons, salle à manger, 01 cuisine, 01 magasin, toilette visiteurs, 01 chambre principale, 04 chambres, 05 salles de bain, dressing et terrasses. Emprise 16,15 m x 15,85 m.",
+ "estimate_lots": [
+  {
+   "amount": 6279100,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4626700,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8923000,
+   "label": "Dalle"
+  },
+  {
+   "amount": 5287700,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7931500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9694100,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 7270600,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 6058800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 8482300,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8886200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 73440000,
+ "floor_plans": [
+  "private/d5-013/1793334239103-nyfii9Vd.png",
+  "private/d5-013/1793334241096-l2gtsTXX.png"
+ ],
+ "land_area": 450,
+ "land_depth": 22.85,
+ "land_width": 19.15,
+ "levels": 2,
+ "name": "Duplex D5-013",
+ "renders": [
+  "/media/public/d5-013/1793191176861-GEyRRxXO.webp",
+  "/media/public/d5-013/1793191188205-Ik2cH-bv.webp",
+  "/media/public/d5-013/1793191210541-WswfUzq8.webp",
+  "/media/public/d5-013/1793191232903-sit-saxt.webp",
+  "/media/public/d5-013/1793191255407-BK6MtaaM.webp",
+  "/media/public/d5-013/1793191263590-FEdrQM2E.webp",
+  "/media/public/d5-013/1793191270032-5YW8-EHn.webp",
+  "/media/public/d5-013/1793191276582-SmJoHr4_.webp",
+  "/media/public/d5-013/1793191283520-LaaY3tsy.webp"
+ ],
+ "slug": "duplex-d5-013",
+ "summary": "Duplex moderne R+1 de 5 chambres et 340 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 66 – 81 millions FCFA. Terrain conseillé : 450 m².",
+ "surface_total": 340
+}

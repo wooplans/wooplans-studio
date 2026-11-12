@@ -1,0 +1,76 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 12,
+ "building_width": 15,
+ "category": "duplex",
+ "code": "D4-009",
+ "description": "De style contemporain, ce duplex est imposant et impressionnant. Bâti sur 321m2, Son plan minutieusement élaboré offre au RDC : 02 salons + salle à manger, 01 chambre pour visiteur dotée d’un placard et d’un dressing pour rangement, 01 buanderie destinée pour laver les vêtements, 01 WC pour visiteurs, 01 magasin, et enfin 01 cuisine. A l'étage : 01 salon, 03 chambres, 01 bureau et enfin 02 douches. La suite principale est munie d’une salle d’eau et d’un dressing.\n\nCaractéristiques :\n- 03 Living (03 Salons)\n- 01Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 03 Baths (03 Salles de Bains)\n- 01Office (Bureau)\n- 01 Kitchen (Cuisine)\n- 01 Laundry (Buanderie)\n- 01 Guest Toilet(WC V.)\n- 01 Store ( Magasin)",
+ "estimate_lots": [
+  {
+   "amount": 5909800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4354600,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8398100,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4976600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7465000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9123800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6842900,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5702400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7983400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8363400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 69120000,
+ "floor_plans": [
+  "private/d4-009/1792046379385-JYoA615A.webp",
+  "private/d4-009/1792046382494-1hRgilQO.webp"
+ ],
+ "land_area": 350,
+ "land_depth": 19,
+ "land_width": 18,
+ "levels": 2,
+ "name": "Duplex D4-009",
+ "renders": [
+  "/media/public/d4-009/1793181919281-ZyicrXk7.webp",
+  "/media/public/d4-009/1793181946441-JxjlgH4W.webp",
+  "/media/public/d4-009/1793181974352-pnZCAh1R.webp",
+  "/media/public/d4-009/1793181996371-aJWx3xes.webp",
+  "/media/public/d4-009/1793182022264-ZluJexAZ.webp",
+  "/media/public/d4-009/1793182044510-IOUewz2y.webp",
+  "/media/public/d4-009/1793182166135-9JNUQ86y.webp",
+  "/media/public/d4-009/1793182190320-DlEHU7YU.webp",
+  "/media/public/d4-009/1793182208193-aRxVph-T.webp",
+  "/media/public/d4-009/1793182218480-AxKpR-0H.webp"
+ ],
+ "slug": "duplex-d4-009",
+ "summary": "De style contemporain, ce duplex est imposant et impressionnant. Bâti sur 321m2, Son plan minutieusement élaboré offre",
+ "surface_total": 320
+}

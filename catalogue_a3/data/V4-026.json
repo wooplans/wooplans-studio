@@ -1,0 +1,62 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 13.4,
+ "building_width": 20.5,
+ "category": "villa",
+ "code": "V4-026",
+ "description": "La Villa V4-026 est un modèle familial de 4 chambres en plain-pied. Composition : 02 salons, 01 salle à manger, 01 cuisine, 4 chambres dont suite parentale, 3 salles de bains, bureau, dressing, SAS d'entrée, magasin, garage, terrasses. Emprise 20,50 m x 13,40 m.",
+ "estimate_lots": [
+  {
+   "amount": 4475500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 6553400,
+   "label": "Élévations"
+  },
+  {
+   "amount": 4955000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 4688600,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 3516500,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2930400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 4102600,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 4298000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 35520000,
+ "floor_plans": [
+  "private/v4-026/1793334408461-didrmJpY.png"
+ ],
+ "land_area": 500,
+ "land_depth": 20.4,
+ "land_width": 23.5,
+ "levels": 1,
+ "name": "Villa V4-026",
+ "renders": [
+  "/media/public/v4-026/1793183097735-dwNRIqC8.webp",
+  "/media/public/v4-026/1793183105176-kHTXoYYw.webp",
+  "/media/public/v4-026/1793183110420-GYA3M850.webp",
+  "/media/public/v4-026/1793183117335-V-L7aFVc.webp",
+  "/media/public/v4-026/1793183125544-smYImG8E.webp"
+ ],
+ "slug": "villa-v4-026",
+ "summary": "Villa moderne plain-pied de 4 chambres et 222 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 32 – 39 millions FCFA. Terrain conseillé : 500 m².",
+ "surface_total": 222
+}

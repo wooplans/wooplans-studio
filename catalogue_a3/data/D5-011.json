@@ -1,0 +1,75 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 14,
+ "building_width": 16.3,
+ "category": "duplex",
+ "code": "D5-011",
+ "description": "Duplex sur deux niveaux, emprise de 16,30 m × 14,00 m, pour une surface totale de 326 m². Le rez-de-chaussée comprend un grand salon, une salle à manger, une cuisine, une chambre avec salle de bain, un WC visiteur, un garage, un magasin et une terrasse. L'étage compte trois chambres, dont une avec salle de bain, un dressing, un salon et une terrasse.",
+ "estimate_lots": [
+  {
+   "amount": 6020600,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4436200,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8555500,
+   "label": "Dalle"
+  },
+  {
+   "amount": 5070000,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7604900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9294900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6971200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5809300,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 8133000,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8520400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 70416000,
+ "floor_plans": [
+  "private/d5-011/1792424148921-W_Rf_jBj.jpg",
+  "private/d5-011/1792424173154-xCKDsGLs.jpg"
+ ],
+ "land_area": 450,
+ "land_depth": 21,
+ "land_width": 19.3,
+ "levels": 2,
+ "name": "Duplex D5-011",
+ "renders": [
+  "/media/public/d5-011/1793188396002-kv_AKyy8.webp",
+  "/media/public/d5-011/1793188417209-moPRVMgj.webp",
+  "/media/public/d5-011/1793188439920-3Ei5V6Uq.webp",
+  "/media/public/d5-011/1793188446437-NSoZSLQM.webp",
+  "/media/public/d5-011/1793188454025-BUe6mekE.webp",
+  "/media/public/d5-011/1793188461025-V6O-x7Lf.webp",
+  "/media/public/d5-011/1793188466860-Z4nu2dnl.webp",
+  "/media/public/d5-011/1793188474363-1U2UrYGe.webp",
+  "/media/public/d5-011/1793188481234-a62HoZA3.webp"
+ ],
+ "slug": "duplex-d5-011",
+ "summary": "Duplex R+1 de 326 m² avec 5 chambres, 4 salles de bain et garage. Plans cotés et devis détaillé pour construire au Cameroun.",
+ "surface_total": 326
+}

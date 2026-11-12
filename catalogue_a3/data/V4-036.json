@@ -1,0 +1,62 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 4,
+ "building_depth": 16.4,
+ "building_width": 14.25,
+ "category": "villa",
+ "code": "V4-036",
+ "description": "Villa contemporaine de plain-pied alliant élégance et fonctionnalité dans un cadre tropical. Cette maison moderne offre de généreux espaces de vie avec de grandes baies vitrées, une façade sophistiquée mêlant pierre naturelle et bois, parfaite pour un style de vie confortable et raffiné.",
+ "estimate_lots": [
+  {
+   "amount": 4697300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 6878200,
+   "label": "Élévations"
+  },
+  {
+   "amount": 5200600,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 4921000,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 3690700,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3075600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 4305800,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 4510800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 37280000,
+ "floor_plans": [
+  "upload-1777057538958-0796216c285a49db8756f0e56c1800c9.webp"
+ ],
+ "land_area": 450,
+ "land_depth": 23.4,
+ "land_width": 17.25,
+ "levels": 1,
+ "name": "Villa V4-036",
+ "renders": [
+  "/media/public/v4-036/1793197388472-724fEdhG.webp",
+  "/media/public/v4-036/1793197394636-1scXuWm2.webp",
+  "/media/public/v4-036/1793197400163-xssVbyyv.webp",
+  "/media/public/v4-036/1793197405776-N1TCRVZA.webp",
+  "/media/public/v4-036/1793197411773-emyTDTl8.webp"
+ ],
+ "slug": "villa-v4-036",
+ "summary": "Villa moderne plain-pied de 4 chambres et 233 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 34 – 41 millions FCFA. Terrain conseillé : 450 m².",
+ "surface_total": 233
+}

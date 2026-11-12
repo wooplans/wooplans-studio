@@ -1,0 +1,71 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 15,
+ "building_width": 13,
+ "category": "duplex",
+ "code": "D4-015",
+ "description": "Impressionnant et contemporain, ce magnifique duplex a été conçu avec soin. Structuré sur 303,59m2, son plan bien élaboré offre: Au rez-de-chaussée 01 spacieux salon, 02 salles à manger, 01 chambre pour visiteur dotée d’un dressing et d’01 salle d’eau, 01 WC pour visiteur, 01 magasin pour stockage et enfin 01 cuisine. A l’étage 01 salon, 03 chambres, 02 douches. La suite principe a été conçu avec soin pour vous isoler dans la maison.\n\nCaractéristiques :\n- 02 Living (Salon)\n- 01 Dining (SAM)\n- 01 Kitchen (Cuisine)\n- 02 Master's Bedroom (Chambre Principale)\n- 05 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n- 01 Garage\n- 01 Guest Toilet (Toilettes)\n- 01 Dressing",
+ "estimate_lots": [
+  {
+   "amount": 5540400,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4082400,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 7873200,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4665600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 6998400,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 8553600,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6415200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5346000,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7484400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 7840800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 64800000,
+ "floor_plans": [
+  "private/d4-015/1792046531357-TnN52n6d.png",
+  "private/d4-015/1792046534686-Mr3xqBIQ.png"
+ ],
+ "land_area": 400,
+ "land_depth": 22,
+ "land_width": 16,
+ "levels": 2,
+ "name": "Duplex D4-015",
+ "renders": [
+  "/media/upload-framer-3bb9889b41b628ca1b58.jpeg",
+  "/media/upload-framer-78a99d9e23bf4825f470.webp",
+  "/media/upload-framer-a0fdb283fd877346f5ec.webp",
+  "/media/upload-framer-d9e0f05bd90a9b6ff32c.webp",
+  "/media/upload-framer-07ff972fc5530e56450f.webp"
+ ],
+ "slug": "duplex-d4-015",
+ "summary": "Construite sur une surface de 202 m2, ce duplex captive et attire. Son plan offre:",
+ "surface_total": 300
+}

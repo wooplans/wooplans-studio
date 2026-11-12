@@ -1,0 +1,66 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 12,
+ "building_width": 13,
+ "category": "villa",
+ "code": "V3-038",
+ "description": "Un plan de maison simple et compact conçu pour offrir un cadre de vie harmonieux et fonctionnel. Cette villa à 3 chambres sur un seul niveau est la solution idéale pour les familles ou couples recherchant des espaces bien agencés et un confort quotidien sans superflu.",
+ "estimate_lots": [
+  {
+   "amount": 2499800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3660500,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2767700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2618900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1964200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1636800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2291500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2400600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 19840000,
+ "floor_plans": [
+  "private/v3-038/1792046939452-Ag-4Df_r.jpg"
+ ],
+ "land_area": 350,
+ "land_depth": 19,
+ "land_width": 16,
+ "levels": 1,
+ "name": "Villa V3-038",
+ "renders": [
+  "/media/public/v3-038/1793196353246-2vnC9URC.webp",
+  "/media/public/v3-038/1793196362820-H6n24FQ_.webp",
+  "/media/public/v3-038/1793196370934-HdF669YH.webp",
+  "/media/public/v3-038/1793196378276-hexPks5r.webp",
+  "/media/public/v3-038/1793196385727-FTtSp9_P.webp",
+  "/media/public/v3-038/1793196393053-ajKiSgmE.webp",
+  "/media/public/v3-038/1793196401996-l0lc1PNS.webp",
+  "/media/public/v3-038/1793196412482-q88twGxt.webp",
+  "/media/public/v3-038/1793196422257-PvlHCWMI.webp"
+ ],
+ "slug": "villa-v3-038",
+ "summary": "Découvrez le plan et devis de ce bijou architectural de 3 chambres et 2 douches.",
+ "surface_total": 124
+}

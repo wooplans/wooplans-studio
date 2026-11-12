@@ -1,0 +1,78 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 13,
+ "building_width": 15.2,
+ "category": "duplex",
+ "code": "D4-003",
+ "description": "Découvrez le magnifique Duplex D4-003 , un plan de maison moderne et fonctionnel conçu pour offrir un cadre de vie confortable et optimisé.\n\nAvec 3 salons, bénéficier d'une intimité totale pour les moments en famille et entre amis.\n\nCaractéristiques :\n- RDC :\n- 02 Salons\n- 01 Salle à Manger\n- 01 Garage\n- 01 Cuisine\n- 01 Chambre (Visiteur)\n- ETAGE :\n- 01 Suite Parentale\n- 02 Chambres Secondaires\n- 01 Salon\n- 01 Bureau\n\nGros œuvre : à partir de 29 081 700 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 5965200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4395400,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8476800,
+   "label": "Dalle"
+  },
+  {
+   "amount": 5023300,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7534900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9209400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6907000,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5755900,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 8058200,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8441900,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 69768000,
+ "floor_plans": [
+  "private/d4-003/1792046215965-S_OrXVbq.png",
+  "private/d4-003/1792046219648-RTDIkA6I.png"
+ ],
+ "land_area": 400,
+ "land_depth": 20,
+ "land_width": 18.2,
+ "levels": 2,
+ "name": "Duplex D4-003",
+ "renders": [
+  "/media/public/d4-003/1793181917532-zBDerLzw.webp",
+  "/media/public/d4-003/1793181948831-rChKidtv.webp",
+  "/media/public/d4-003/1793181971569-vjrU5-QZ.webp",
+  "/media/public/d4-003/1793181979794-mOWX4yNN.webp",
+  "/media/public/d4-003/1793182008436-HGy_TyhD.webp",
+  "/media/public/d4-003/1793182028877-Rnxc36xq.webp",
+  "/media/public/d4-003/1793182048592-6XhhKiE4.webp",
+  "/media/public/d4-003/1793182178013-3ZgsJz0k.webp",
+  "/media/public/d4-003/1793182199047-x0HNfVVw.webp",
+  "/media/public/d4-003/1793182216840-oLNrY9xx.webp",
+  "/media/public/d4-003/1793182231395-q2ocJZBL.webp",
+  "/media/public/d4-003/1793182240933-6Yh2Rqw6.webp"
+ ],
+ "slug": "duplex-d4-003",
+ "summary": "Bienvenue dans l'univers du Duplex D4-003, un plan de maison moderne et fonctionnel conçu pour offrir un cadre de vie confortable et optimisé.",
+ "surface_total": 323
+}

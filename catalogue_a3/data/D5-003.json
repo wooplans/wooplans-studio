@@ -1,0 +1,74 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 13,
+ "building_width": 17,
+ "category": "duplex",
+ "code": "D5-003",
+ "description": "Contemporain et sécurisé par une clôture, ce duplex remarquable de 155m2 sera parfait et spécialement conçu pour préserver vote intimité. Son plan offre:\n\nAu rez-de-chaussée 01 spacieux salon + salle à manger qui s’ouvre sur 01 terrasse, 02 spacieuse chambre, 01 douche, 01 WC pour visiteur, 01 cuisine, 01 garage, et enfin 01 buanderie destinée au lavage des vêtements. A l’étage nous avons également 01 spacieux salon, 03 chambres, 03 salles de bain et enfin 01 bureau. La chambre principale dispose d’01 dressing assez spacieux et 01 salle de bain pouvant contenir 01 baignoire.\n\nCaractéristiques :\n- RDC :\n- 01 salon\n- 01 Salle à Manger\n- 01 Garage\n- 01 Cuisine\n- 02 Chambres\n- ETAGE :\n- 01 Suite Parentale\n- 01 Bureau\n- 01 Salon\n- 02 Chambres Secondaires",
+ "estimate_lots": [
+  {
+   "amount": 5909800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4354600,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 8398100,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4976600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 7465000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 9123800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 6842900,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 5702400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 7983400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 8363400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 69120000,
+ "floor_plans": [
+  "private/d5-003/1792046895155-8vCUaXkG.png",
+  "private/d5-003/1792046898398-L9oW-xYG.png"
+ ],
+ "land_area": 400,
+ "land_depth": 20,
+ "land_width": 20,
+ "levels": 2,
+ "name": "Duplex D5-003",
+ "renders": [
+  "/media/public/d5-003/1793182643474-7xX80SX7.webp",
+  "/media/public/d5-003/1793182674968-l76JhW7O.webp",
+  "/media/public/d5-003/1793182698049-hy2BaE2I.webp",
+  "/media/public/d5-003/1793182718797-WRfhlCUY.webp",
+  "/media/public/d5-003/1793182737380-EdUe9u5k.webp",
+  "/media/public/d5-003/1793182747140-KFCJmYcW.webp",
+  "/media/public/d5-003/1793182769796-3BsPhlVx.webp",
+  "/media/public/d5-003/1793182795425-hNs-aL9G.webp"
+ ],
+ "slug": "duplex-d5-003",
+ "summary": "Bienvenue dans l'univers du Duplex D5-003, un plan de maison moderne et fonctionnel conçu pour offrir un cadre de vie confortable et optimisé.",
+ "surface_total": 320
+}

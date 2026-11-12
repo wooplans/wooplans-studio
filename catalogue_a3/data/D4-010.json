@@ -1,0 +1,75 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 10,
+ "building_width": 12,
+ "category": "duplex",
+ "code": "D4-010",
+ "description": "Construite sur une surface de 202 m2, ce duplex captive et attire. Son plan offre: Au RDC 01 spacieux salon + salle à manger munie d’une petite cuisine, 01 chambre pour ami dotée d’un placard et 01 salle d’eau enfin 01 WC pour visiteurs. A l’étage 01 spacieux salon, 03 chambres avec 02 douches. La chambre parentale est munie d’un dressing et 01 salle d’eau.\n\nCaractéristiques :\n- 02 Living (Salons)\n- 01Dining (Salle à Manger)\n- 04 Bedrooms (Chambres)\n- 03 Baths (Salles de Bains)\n- 01 Kitchenette\n- 01 Guest Toilet(WC V.)",
+ "estimate_lots": [
+  {
+   "amount": 3712100,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2735200,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5275000,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3126000,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 4688900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 5730900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4298200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3581800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5014500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5253400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 43416000,
+ "floor_plans": [
+  "private/d4-010/1792046389306-pccOMqPs.webp",
+  "private/d4-010/1792046392390-JFSYoKZp.webp"
+ ],
+ "land_area": 300,
+ "land_depth": 17,
+ "land_width": 15,
+ "levels": 2,
+ "name": "Duplex D4-010",
+ "renders": [
+  "/media/public/d4-010/1793181916371-RD2TBoCF.webp",
+  "/media/public/d4-010/1793181924307-F5sgfNGq.webp",
+  "/media/public/d4-010/1793181953229-ezkyrxHR.webp",
+  "/media/public/d4-010/1793181978219-Q94iqRzY.webp",
+  "/media/public/d4-010/1793182005324-G37BNQSo.webp",
+  "/media/public/d4-010/1793182028288-OPStXokv.webp",
+  "/media/public/d4-010/1793182046556-YKcej-Yl.webp",
+  "/media/public/d4-010/1793182167013-A32J9wIU.webp",
+  "/media/public/d4-010/1793182196439-QMW-HnIX.webp"
+ ],
+ "slug": "duplex-d4-010",
+ "summary": "Construite sur une surface de 202 m2, ce duplex captive et attire. Son plan offre:",
+ "surface_total": 201
+}

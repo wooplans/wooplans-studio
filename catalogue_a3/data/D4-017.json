@@ -1,0 +1,75 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 14,
+ "building_width": 13,
+ "category": "duplex",
+ "code": "D4-017",
+ "description": "De type contemporain ce modeste duplex duplex conçu sur 280m2, son plan minutieusement conçu offre: Au rez-de-chaussée 02 salons assez spacieux, 01 salle à manger, 01 chambre pour ami, 01 bureau, 01 WC pour visiteur , 01 douche et enfin 01 cuisine. A l’étage 01 salon, 03 chambres, 02 douches et enfin 01 salle d’étude pour isoler vos enfants pendant les heures d’apprentissage.\n\nCaractéristiques :\n- 03 Living (03 Salons)\n- 01 Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 03 Baths (03 Salle de Bains)\n- 01 Office (Bureau)\n- 01 Kitchen (Cuisine)\n- 01 Study (Salle d'etude)\n- 01 Guest Toilet (WC V.)",
+ "estimate_lots": [
+  {
+   "amount": 5171000,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3810200,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 7348300,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4354600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 6531800,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 7983400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 5987500,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 4989600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 6985400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 7318200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 60480000,
+ "floor_plans": [
+  "private/d4-017/1792046551598-1UFcKwBr.png",
+  "private/d4-017/1792046554748-LLtVip1t.png"
+ ],
+ "land_area": 350,
+ "land_depth": 21,
+ "land_width": 16,
+ "levels": 2,
+ "name": "Duplex D4-017",
+ "renders": [
+  "/media/public/d4-017/1793188383499-sslE18wE.webp",
+  "/media/public/d4-017/1793188395070-mxcB7KVO.webp",
+  "/media/public/d4-017/1793188407173-O5KcTTD1.webp",
+  "/media/public/d4-017/1793188414750--P3BJznB.webp",
+  "/media/public/d4-017/1793188420569-b8U9r5c5.webp",
+  "/media/public/d4-017/1793188431876-LeyWKp04.webp",
+  "/media/public/d4-017/1793188437631-Z3F2xack.webp",
+  "/media/public/d4-017/1793188443958-BiUkqqic.webp",
+  "/media/public/d4-017/1793188449279-pIK3dhDE.webp"
+ ],
+ "slug": "duplex-d4-017",
+ "summary": "Avec son allure imposante et son style, venez découvrir le beauté de ce magnifique duplex de 4 chambres",
+ "surface_total": 280
+}

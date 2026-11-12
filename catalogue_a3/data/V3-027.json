@@ -1,0 +1,65 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 9.25,
+ "building_width": 9.35,
+ "category": "villa",
+ "code": "V3-027",
+ "description": "La Villa V3-027 est un modèle familial compact de 3 chambres en plain-pied. Composition : 01 salon / salle à manger, 01 cuisine, 3 chambres dont suite parentale, 2 salles de bains, terrasse. Emprise 9,35 m x 9,25 m.",
+ "estimate_lots": [
+  {
+   "amount": 1391000,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2036900,
+   "label": "Élévations"
+  },
+  {
+   "amount": 1540100,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 1457300,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1093000,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 910800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 1275100,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 1335800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 11040000,
+ "floor_plans": [
+  "private/v3-027/1793334332011-s44UHPNZ.png"
+ ],
+ "land_area": 250,
+ "land_depth": 16.25,
+ "land_width": 12.35,
+ "levels": 1,
+ "name": "Villa V3-027",
+ "renders": [
+  "/media/public/v3-027/1793181089669-N63wDoh2.webp",
+  "/media/public/v3-027/1793181109535-Sc34_aa1.webp",
+  "/media/public/v3-027/1793181135984-_4ngr4qq.webp",
+  "/media/public/v3-027/1793181155061-HMAOiv_9.webp",
+  "/media/public/v3-027/1793181177550-bHPSWXCl.webp",
+  "/media/public/v3-027/1793181201124-YpqTBBZ_.webp",
+  "/media/public/v3-027/1793181220362-t8hx7UlC.webp",
+  "/media/public/v3-027/1793181269189-FHoczGM0.webp"
+ ],
+ "slug": "villa-v3-027",
+ "summary": "Villa moderne plain-pied de 3 chambres et 69 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 9,9 – 12 millions FCFA. Terrain conseillé : 250 m².",
+ "surface_total": 69
+}

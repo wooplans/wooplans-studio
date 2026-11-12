@@ -1,0 +1,65 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 13,
+ "building_width": 10,
+ "category": "villa",
+ "code": "V4-001",
+ "description": "cette villa de type contemporaine s’étend sur une superficie de 116.25 m². Spacieuse et lumineuse, elle offre: 01 salon + salle à manger, 04 chambres, 02 douches, 01cuisine, et enfin 01 magasin pour stocker vos outils. A l’extérieur nous avons une splendide terrasse pour profiter d’un moment de détente.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living+Dining (Salon+SAM)\n- 01 Kitchen (Cuisine)\n- 01 Master's Bedroom (Chambre Principale)\n- 02 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n- 01 Store (Magasin)",
+ "estimate_lots": [
+  {
+   "amount": 2338600,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3424300,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2589100,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2449900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1837400,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1531200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2143700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2245800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 18560000,
+ "floor_plans": [
+  "private/v4-001/1792046016329-CiJVkd2N.png"
+ ],
+ "land_area": 300,
+ "land_depth": 20,
+ "land_width": 13,
+ "levels": 1,
+ "name": "Villa V4-001",
+ "renders": [
+  "/media/public/v4-001/1792070304985-IaVB69c3.webp",
+  "/media/public/v4-001/1792070307133-fpgmB4-I.webp",
+  "/media/public/v4-001/1792070308754-Gu2Ti_7x.webp",
+  "/media/public/v4-001/1792070310829-tnsVpfOe.webp",
+  "/media/public/v4-001/1792070312642-WGUdoir1.webp",
+  "/media/public/v4-001/1792070314838-qAkL2nUC.webp",
+  "/media/public/v4-001/1792070316907-V-pItMnC.webp",
+  "/media/public/v4-001/1792070318834-D4r5C6lS.webp"
+ ],
+ "slug": "villa-v4-001",
+ "summary": "Découvrez le plan et devis de ce bijou architectural de 4 chambres et 3 douches.",
+ "surface_total": 116
+}

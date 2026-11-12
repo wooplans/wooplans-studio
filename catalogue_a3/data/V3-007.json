@@ -1,0 +1,62 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 13.04,
+ "building_width": 16.81,
+ "category": "villa",
+ "code": "V3-007",
+ "description": "Une villa de plain-pied de 3 chambres pensée pour la vie de famille : un grand séjour, une salle à manger, une cuisine reliée à sa terrasse et une partie nuit organisée autour d'un couloir central.\n\nCaractéristiques :\n- Séjour : espace de 32,33 m² ouvert sur une large terrasse d'entrée de 15,42 m²\n- Salle à manger de 13,77 m² et cuisine de 9,46 m² avec terrasse\n- Chambre principale de 13,49 m² avec dressing de 9,20 m² et salle d'eau attenante\n- 2 chambres secondaires (12,67 m² et 12,66 m²) avec une salle d'eau\n- Magasin de 4,88 m² pour le rangement\n- Emprise au sol : 16,81 m x 13,04 m\n\nComme dans nos rendus 3D, la façade associe toiture à quatre pentes, colonnes blanches et parements en pierre.",
+ "estimate_lots": [
+  {
+   "amount": 3003800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4398500,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3325700,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3146900,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2360200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1966800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2753500,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2884600,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 23840000,
+ "floor_plans": [
+  "private/v3-007/1793334318003-ifxPBffO.png"
+ ],
+ "land_area": 400,
+ "land_depth": 20.04,
+ "land_width": 19.81,
+ "levels": 1,
+ "name": "Villa V3-007",
+ "renders": [
+  "/media/public/v3-007/1793183106706-V70d-r2d.webp",
+  "/media/public/v3-007/1793183125100-kZvCdWeO.webp",
+  "/media/public/v3-007/1793183145267-Pp1hNAlw.webp",
+  "/media/public/v3-007/1793183156547-athz31gy.webp",
+  "/media/public/v3-007/1793183168577-r7Z4ApJX.webp"
+ ],
+ "slug": "villa-v3-007",
+ "summary": "Plan de villa de plain-pied de 3 chambres, 2 salles d'eau et dressing, avec rendus 3D et devis estimatif clé en main pour construire au Cameroun et en Afrique.",
+ "surface_total": 149
+}

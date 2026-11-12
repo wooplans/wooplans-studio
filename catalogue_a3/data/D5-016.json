@@ -1,0 +1,73 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 11.11,
+ "building_width": 13.55,
+ "category": "duplex",
+ "code": "D5-016",
+ "description": "Duplex sur deux niveaux, emprise de 13,55 m × 11,11 m, pour une surface totale de 219 m². Le rez-de-chaussée comprend un salon, une salle à manger, une cuisine, une chambre visiteur avec salle de bain, un bureau et une terrasse. L'étage accueille la suite parentale, deux chambres, un dressing, un salon et des terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 4044500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2980200,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5747400,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3405900,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 5108800,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 6244100,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4683100,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3902600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5463600,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5723800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 47304000,
+ "floor_plans": [
+  "private/d5-016/1792424201697-GH4bvk1w.jpg",
+  "private/d5-016/1792424204801-XyfKFsks.jpg"
+ ],
+ "land_area": 300,
+ "land_depth": 18.11,
+ "land_width": 16.55,
+ "levels": 2,
+ "name": "Duplex D5-016",
+ "renders": [
+  "/media/public/d5-016/1793182646228-TKQutlEV.webp",
+  "/media/public/d5-016/1793182671235-hdMx2ITc.webp",
+  "/media/public/d5-016/1793182679844-GykoUxjw.webp",
+  "/media/public/d5-016/1793182699952-SZdrIjMA.webp",
+  "/media/public/d5-016/1793182721683-yU3xcX8O.webp",
+  "/media/public/d5-016/1793182742910-PmQoWmEp.webp",
+  "/media/public/d5-016/1793182765823-N8spgyWJ.webp"
+ ],
+ "slug": "duplex-d5-016",
+ "summary": "Duplex R+1 de 219 m² avec suite parentale, chambre visiteur et bureau. Plans cotés et devis détaillé pour construire au Cameroun.",
+ "surface_total": 219
+}

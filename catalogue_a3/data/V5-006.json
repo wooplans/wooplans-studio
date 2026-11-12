@@ -1,0 +1,62 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 17.95,
+ "building_width": 19.59,
+ "category": "villa",
+ "code": "V5-006",
+ "description": "La Villa V5-006 est un modèle familial de 5 chambres en plain-pied. Composition : 01 salon / espace de vie, 01 salle à manger, 01 cuisine, 5 chambres dont suite parentale, 4 douches / salles de bains, dressing, WC visiteurs, terrasse / véranda. Emprise 19,59 m x 17,95 m.",
+ "estimate_lots": [
+  {
+   "amount": 5100500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 7468600,
+   "label": "Élévations"
+  },
+  {
+   "amount": 5647000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 5343400,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4007500,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3339600,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 4675400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 4898000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 40480000,
+ "floor_plans": [
+  "private/v5-006/1793334422059-zlLlQfwG.png"
+ ],
+ "land_area": 600,
+ "land_depth": 24.95,
+ "land_width": 22.59,
+ "levels": 1,
+ "name": "Villa V5-006",
+ "renders": [
+  "/media/public/v5-006/1793002185378-y00z8AbC.webp",
+  "/media/public/v5-006/1793002187732-RQcbpE2m.webp",
+  "/media/public/v5-006/1793002189591-tR8Dla_D.webp",
+  "/media/public/v5-006/1793002192102-6FVJjvrM.webp",
+  "/media/public/v5-006/1793002193614-5xL9YaSV.webp"
+ ],
+ "slug": "villa-v5-006",
+ "summary": "Villa moderne plain-pied de 5 chambres et 253 m² : rendus 3D de la façade, surfaces et budget de construction indicatif de 36 – 45 millions FCFA. Terrain conseillé : 600 m².",
+ "surface_total": 253
+}

@@ -1,0 +1,75 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 14,
+ "building_width": 9,
+ "category": "duplex",
+ "code": "D4-006",
+ "description": "L’architecture et la disposition des pièces sont de style contemporain. Structuré sur 195m2, Son plan bien élaboré nous nous propose: Au RD : 01 salon + salle à manger, 01 chambre pour ami avec douche et placard, 01 buanderie dédié au lavage de vêtements, 01 cuisine et enfin 01 WC pour visiteur. A l’étage : Nous avons 03 chambres et 02 douches. La suite principale est munie d’un dressing et 01 salle d’eau.\n\nCaractéristiques :\n- 01 Living (01 Salon)\n- 01Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 03 Baths (03 Salle de Bains)\n- 01Laundry (Buanderie)\n- 01 Kitchen (Cuisine)\n- 01 Guest Toilet(WC V.)\n\nGros œuvre : à partir de 17 593 200 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 3601300,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2653600,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 5117600,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3032600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 4549000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 5559800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 4169900,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 3474900,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 4864900,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 5096400,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 42120000,
+ "floor_plans": [
+  "private/d4-006/1792046347184-FBycF3eK.webp",
+  "private/d4-006/1792046350397-1XDrXsLS.webp"
+ ],
+ "land_area": 300,
+ "land_depth": 21,
+ "land_width": 12,
+ "levels": 2,
+ "name": "Duplex D4-006",
+ "renders": [
+  "/media/public/d4-006/1793181920038-1AVCrf6D.webp",
+  "/media/public/d4-006/1793181949463-0vjFIrwP.webp",
+  "/media/public/d4-006/1793181973083-_Tnxox1O.webp",
+  "/media/public/d4-006/1793181999999-N3uT74sj.webp",
+  "/media/public/d4-006/1793182021806-f91UA-uy.webp",
+  "/media/public/d4-006/1793182043731-npPUDXqw.webp",
+  "/media/public/d4-006/1793182166226-AcOMkRL0.webp",
+  "/media/public/d4-006/1793182187719-4YMinsNS.webp",
+  "/media/public/d4-006/1793182209607-yxsuy2zh.webp"
+ ],
+ "slug": "duplex-d4-006",
+ "summary": "L’architecture et la disposition des pièces sont de style contemporain. Structuré sur 195m2, Son plan bien élaboré nous nous propose:",
+ "surface_total": 195
+}

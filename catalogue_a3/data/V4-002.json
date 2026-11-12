@@ -1,0 +1,66 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 14,
+ "building_width": 15,
+ "category": "villa",
+ "code": "V4-002",
+ "description": "Cette villa propose une architecture ultra contemporaine dotée d’une superficie de 155,88m², cette villa offre: 01 salon+ salle à manger, 04 chambres spacieuses. La chambre principale est munie d’une salle d’eau et d’un dressing pour rangement. Ensuite 02 douches, 01 Cuisine et enfin une réserve pouvant servir de magasin pour stockage.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living (Salon)\n- 01 Dining (SAM)\n- 01 Kitchen (Cuisine)\n- 01 Store (Magasin)\n- 01 Master's Bedroom (Chambre Principale)\n- 02 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n\nGros œuvre : à partir de 14 026 510 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 3124800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 4575600,
+   "label": "Élévations"
+  },
+  {
+   "amount": 3459600,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3273600,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2455200,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2046000,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2864400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3000800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 24800000,
+ "floor_plans": [
+  "private/v4-002/1792047147485--_6CvuGM.png"
+ ],
+ "land_area": 400,
+ "land_depth": 21,
+ "land_width": 18,
+ "levels": 1,
+ "name": "Villa V4-002",
+ "renders": [
+  "/media/public/v4-002/1792070350516-jXd5mw-5.webp",
+  "/media/public/v4-002/1792070352965-Vizdu7al.webp",
+  "/media/public/v4-002/1792070354795-1VjAXcCo.webp",
+  "/media/public/v4-002/1792070356341-dxWrAezB.webp",
+  "/media/public/v4-002/1792070358478-eKjWjO3U.webp",
+  "/media/public/v4-002/1792070360246-kakXHoU3.webp",
+  "/media/public/v4-002/1792070361952-THG46UwR.webp",
+  "/media/public/v4-002/1792070364108-xwvNHP5W.webp",
+  "/media/public/v4-002/1792070366569-KankW4oI.webp"
+ ],
+ "slug": "villa-v4-002",
+ "summary": "Cette villa propose une architecture ultra contemporaine dotée d’une superficie de 155,88m², cette villa offre:",
+ "surface_total": 155
+}

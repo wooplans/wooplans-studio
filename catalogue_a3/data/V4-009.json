@@ -1,0 +1,62 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 15,
+ "building_width": 16,
+ "category": "villa",
+ "code": "V4-009",
+ "description": "Cette modeste villa s’étend sur 184 m² de superficie. Faite de matériaux contemporains, elle offre un standing assez commun. Son plan comporte: 01 salon + salle à manger, 04 chambres, 03 salles de bain, 01 magasin pour stocker vos outils et 01 toilette pour visiteurs.\n\nCaractéristiques :\n- COMPOSITION :\n- 01 Living (Salon)\n- 01 Dining (SAM)\n- 01 Kitchen (Cuisine)\n- 01 Store (Magasin)\n- 01 Master's Bedroom (Chambre Principale)\n- 03 Bathrooms (Salle de Bain)\n- 03 Bedrooms (Chambres)\n- 01 Guest toilet (Toilette visiteur)",
+ "estimate_lots": [
+  {
+   "amount": 3709400,
+   "label": "Fondation"
+  },
+  {
+   "amount": 5431700,
+   "label": "Élévations"
+  },
+  {
+   "amount": 4106900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 3886100,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 2914600,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 2428800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 3400300,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 3562200,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 29440000,
+ "floor_plans": [
+  "private/v4-009/1792047196461-jGY2e1K3.png"
+ ],
+ "land_area": 450,
+ "land_depth": 22,
+ "land_width": 19,
+ "levels": 1,
+ "name": "Villa V4-009",
+ "renders": [
+  "/media/public/v4-009/1793183095504-TgppgbVE.webp",
+  "/media/public/v4-009/1793183102621-ZO86HXF8.webp",
+  "/media/public/v4-009/1793183107958-XDL3cGRT.webp",
+  "/media/public/v4-009/1793183113374-lTEwpLGU.webp",
+  "/media/public/v4-009/1793183120478-dAT6zTxr.webp"
+ ],
+ "slug": "villa-v4-009",
+ "summary": "Cette modeste villa s’étend sur 184 m² de superficie. Faite de matériaux contemporains, elle offre un standing assez commun.",
+ "surface_total": 184
+}

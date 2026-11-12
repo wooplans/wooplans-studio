@@ -1,0 +1,65 @@
+{
+ "bathrooms": 2,
+ "bedrooms": 3,
+ "building_depth": 8.45,
+ "building_width": 19.5,
+ "category": "villa",
+ "code": "V3-039",
+ "description": "Un plan de maison de plain-pied, simple et fonctionnel, conçu pour offrir un cadre de vie agréable au quotidien. Cette villa à 3 chambres convient aux familles qui recherchent des espaces bien agencés, sans superflu.",
+ "estimate_lots": [
+  {
+   "amount": 2459500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3601400,
+   "label": "Élévations"
+  },
+  {
+   "amount": 2723000,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 2576600,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1932500,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1610400,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 2254600,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 2362000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 19520000,
+ "floor_plans": [
+  "private/v3-039/1792050485038-3Fe-SXIS.jpg",
+  "private/v3-039/1792050486518-tyhTK_PE.jpg"
+ ],
+ "land_area": 350,
+ "land_depth": 15.45,
+ "land_width": 22.5,
+ "levels": 1,
+ "name": "Villa V3-039",
+ "renders": [
+  "/media/public/v3-039/1793196466522-koPiVcE1.webp",
+  "/media/public/v3-039/1793196474181-MmCZV-2q.webp",
+  "/media/public/v3-039/1793196482435-icTOMeFj.webp",
+  "/media/public/v3-039/1793196495213-aukQEQ7p.webp",
+  "/media/public/v3-039/1793196501960-CTbo1pqH.webp",
+  "/media/public/v3-039/1793196511058-LZA45Aeu.webp",
+  "/media/public/v3-039/1793196519744-rL0SLc_a.webp"
+ ],
+ "slug": "villa-v3-039",
+ "summary": "Découvrez le plan de cette villa de plain-pied de 3 chambres et 2 toilettes, simple, compacte et fonctionnelle.",
+ "surface_total": 122
+}

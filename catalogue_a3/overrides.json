@@ -1,0 +1,32 @@
+{
+  "D4-004": {
+    "render_picks": [
+      1,
+      2,
+      8
+    ],
+    "note": "choix validé par Tao (12 nov.) : façade, vue de la rue, vue latérale avec garage ; originaux dans hires/ si présents"
+  },
+  "V4-002": {
+    "cover_file": "visite_plan/jobs/V4-002-cloud/facade.png",
+    "note": "couverture validée par Tao : façade propre de la visite (sans filigrane)"
+  },
+  "D4-034": {
+    "skip_plans": [
+      3
+    ],
+    "note": "3e fichier de plan = image « Devis Duplex D4-043 » (mauvais modèle, autres montants) : écarté. À corriger sur le site."
+  },
+  "V3-018": {
+    "skip_plans": [
+      2
+    ],
+    "note": "2e fichier de plan = image « Devis Villa V4-032 » (mauvais modèle) : écarté. À corriger sur le site."
+  },
+  "V3-037": {
+    "skip_plans": [
+      2
+    ],
+    "note": "2e fichier de plan = image « Devis Villa V4-032 » (mauvais modèle, identique à V3-018) : écarté. À corriger sur le site."
+  }
+}

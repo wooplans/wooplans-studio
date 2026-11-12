@@ -1,0 +1,76 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 4,
+ "building_depth": 13,
+ "building_width": 15,
+ "category": "duplex",
+ "code": "D4-007",
+ "description": "construit sur une surface de 271.94m² , ce duplex au style contemporain est beau. Tout est soigneusement délimité pour montrer le volume des espaces, son plan est composée de: Au RDC 02 spacieux salon, 01 salle à manger, 01 chambre pou ami avec salle d’eau et dressing, 01 buanderie dédiée au lavage des vêtements, 01 WC pour visiteurs et enfin 01 cuisine. A l’étage: 01 salon, 03 chambres et enfin 02 douches. La suite parentale est dotée d’un placard et d’une salle d’eau.\n\nCaractéristiques :\n- 03 Living (03 Salons)\n- 01Dining (Salle à Manger)\n- 04 Bedrooms (04 Chambres)\n- 03 Baths (03 Salle de Bains)\n- 01 Kitchen (Cuisine)\n- 01 Laundry (Buanderie)\n- 01 Guest Toilet(WC V.)\n\nGros œuvre : à partir de 24 474 590 FCFA (estimation indicative).",
+ "estimate_lots": [
+  {
+   "amount": 5004800,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3687800,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 7112100,
+   "label": "Dalle"
+  },
+  {
+   "amount": 4214600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 6321900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 7726800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 5795100,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 4829200,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 6760900,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 7082800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 58536000,
+ "floor_plans": [
+  "private/d4-007/1792046357104-DmHuAt3g.png",
+  "private/d4-007/1792046360776-o63TzB0A.png"
+ ],
+ "land_area": 400,
+ "land_depth": 20,
+ "land_width": 18,
+ "levels": 2,
+ "name": "Duplex D4-007",
+ "renders": [
+  "/media/public/d4-007/1793791480199-QBnoxKj7.webp",
+  "/media/public/d4-007/1793791489625-nKr8iaBM.webp",
+  "/media/public/d4-007/1793791495829-9oDwdqhZ.webp",
+  "/media/public/d4-007/1793791506601-a-ZH0Yn8.webp",
+  "/media/public/d4-007/1793791515157-oSLhn8FI.webp",
+  "/media/public/d4-007/1793791521391-9hmvvWWr.webp",
+  "/media/public/d4-007/1793791527531-YFFlQSSf.webp",
+  "/media/public/d4-007/1793791535743-_plfdoAw.webp",
+  "/media/public/d4-007/1793791541195-SkHF87L1.webp",
+  "/media/public/d4-007/1793791546475-ZzczmTMi.webp"
+ ],
+ "slug": "duplex-d4-007",
+ "summary": "construit sur une surface de 271.94m², ce duplex au style contemporain est beau. Tout est soigneusement délimité pour montrer le volume des espaces.",
+ "surface_total": 271
+}

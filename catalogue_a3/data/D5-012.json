@@ -1,0 +1,74 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 5,
+ "building_depth": 13,
+ "building_width": 14,
+ "category": "duplex",
+ "code": "D5-012",
+ "description": "Duplex sur deux niveaux, emprise de 14,00 m × 13,00 m, pour une surface totale de 234 m². Il compte deux salons, une salle à manger, une cuisine, un bureau, une réserve, un garage, un WC visiteur et une chambre d'amis. L'étage regroupe trois chambres, dont une suite parentale, et trois terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 4321500,
+   "label": "Fondation"
+  },
+  {
+   "amount": 3184300,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 6141100,
+   "label": "Dalle"
+  },
+  {
+   "amount": 3639200,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 5458800,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 6671800,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 5003900,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 4169900,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 5837800,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 6115700,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 50544000,
+ "floor_plans": [
+  "private/d5-012/1792424179379-vx4_Iemj.jpg",
+  "private/d5-012/1792424192999-WvI_SEiq.jpg"
+ ],
+ "land_area": 350,
+ "land_depth": 20,
+ "land_width": 17,
+ "levels": 2,
+ "name": "Duplex D5-012",
+ "renders": [
+  "/media/public/d5-012/1793182645813-yoMRRalX.webp",
+  "/media/public/d5-012/1793182676244-DHzaMCHU.webp",
+  "/media/public/d5-012/1793182694756-5j0v26_c.webp",
+  "/media/public/d5-012/1793182705642-CSHFRvjd.webp",
+  "/media/public/d5-012/1793182725126-DsWq_Zt5.webp",
+  "/media/public/d5-012/1793182742273-x8y97Zks.webp",
+  "/media/public/d5-012/1793182750056-PlVR8x9x.webp",
+  "/media/public/d5-012/1793182770951-x0QGxYLf.webp"
+ ],
+ "slug": "duplex-d5-012",
+ "summary": "Duplex R+1 de 234 m² avec suite parentale, bureau et garage. Plans cotés et devis détaillé pour construire au Cameroun.",
+ "surface_total": 234
+}

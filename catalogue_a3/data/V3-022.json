@@ -1,0 +1,65 @@
+{
+ "bathrooms": 3,
+ "bedrooms": 3,
+ "building_depth": 10.36,
+ "building_width": 12.21,
+ "category": "villa",
+ "code": "V3-022",
+ "description": "Villa de plain-pied de 89 m² sur une emprise de 12,21 m × 10,36 m. Elle comprend un salon, une salle à manger, une cuisine, une suite parentale avec salle de bain, deux chambres, deux autres salles de bain, une entrée et des terrasses.",
+ "estimate_lots": [
+  {
+   "amount": 1794200,
+   "label": "Fondation"
+  },
+  {
+   "amount": 2627300,
+   "label": "Élévations"
+  },
+  {
+   "amount": 1986500,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 1879700,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 1409800,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 1174800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 1644700,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 1723000,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 14240000,
+ "floor_plans": [
+  "private/v3-022/1792424211135-gMLgzo_W.jpg"
+ ],
+ "land_area": 300,
+ "land_depth": 17.36,
+ "land_width": 15.21,
+ "levels": 1,
+ "name": "Villa V3-022",
+ "renders": [
+  "/media/public/v3-022/1792422584456-aECHwtgJ.webp",
+  "/media/public/v3-022/1792422587176-rnSu3c-J.webp",
+  "/media/public/v3-022/1792422608463-PreZ5EYh.webp",
+  "/media/public/v3-022/1792422631661-WDBJjkUl.webp",
+  "/media/public/v3-022/1792422656889-B2cBBuQ1.webp",
+  "/media/public/v3-022/1792422680249--s6XviEd.webp",
+  "/media/public/v3-022/1792422713847-949xtHL2.webp",
+  "/media/public/v3-022/1792422734304-zFvX74ws.webp"
+ ],
+ "slug": "villa-v3-022",
+ "summary": "Villa plain-pied de 89 m² avec suite parentale et 3 salles de bain. Plans cotés et devis détaillé pour construire au Cameroun.",
+ "surface_total": 89
+}

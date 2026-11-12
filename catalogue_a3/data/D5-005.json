@@ -1,0 +1,76 @@
+{
+ "bathrooms": 4,
+ "bedrooms": 5,
+ "building_depth": 17.35,
+ "building_width": 20.9,
+ "category": "duplex",
+ "code": "D5-005",
+ "description": "Contemporain de par sa nature, ce fabuleux duplex de 512m2 de superficie est assez confortable. Son plan nous propose:\n\nAu rez-de-chaussée 02 spacieux salons + salle à manger, 02 spacieuse chambres, 02 douches, 01 WC pour visiteurs 01 cuisine, 01 bureau et enfin 01 garage sur mesure pour 02 voitures. A l’étage nous avons également 01 spacieux salon, 03 chambres, et enfin 03 salles de bain La chambre principale est assez spacieux et contient 01 dressing et 01 salle de bain pouvant recueillir 01 baignoire.\n\nCaractéristiques :\n- RDC :\n- 02 salons\n- 01 Salle à Manger\n- 01 Garage\n- 01 Cuisine\n- 01 : Bureau\n- 01 Suite parentale\n- 01 Chambre\n- ETAGE :\n- 01 Salon\n- 03 Chambres",
+ "estimate_lots": [
+  {
+   "amount": 9455600,
+   "label": "Fondation"
+  },
+  {
+   "amount": 6967300,
+   "label": "Élévation RDC"
+  },
+  {
+   "amount": 13436900,
+   "label": "Dalle"
+  },
+  {
+   "amount": 7962600,
+   "label": "Élévation étage"
+  },
+  {
+   "amount": 11943900,
+   "label": "Charpente et toiture"
+  },
+  {
+   "amount": 14598100,
+   "label": "Crépissage et antivols"
+  },
+  {
+   "amount": 10948600,
+   "label": "Portes et fenêtres"
+  },
+  {
+   "amount": 9123800,
+   "label": "Plomberie et électricité"
+  },
+  {
+   "amount": 12773400,
+   "label": "Plafond et peinture"
+  },
+  {
+   "amount": 13381800,
+   "label": "Carrelage"
+  }
+ ],
+ "estimate_total": 110592000,
+ "floor_plans": [
+  "private/d5-005/1792046905137-tRN4N_z9.png",
+  "private/d5-005/1792046908565-Wo5NkHdQ.png"
+ ],
+ "land_area": 600,
+ "land_depth": 24.35,
+ "land_width": 23.9,
+ "levels": 2,
+ "name": "Duplex D5-005",
+ "renders": [
+  "/media/public/d5-005/1792064020260-vhO3fWCh.webp",
+  "/media/public/d5-005/1792064021814-LwbY-T2x.webp",
+  "/media/public/d5-005/1792064023472-yHJ149fQ.webp",
+  "/media/public/d5-005/1792064025523-Ptq3kde1.webp",
+  "/media/public/d5-005/1792064027391-cQG8PtoU.webp",
+  "/media/public/d5-005/1792064029514-dZjZC3bo.webp",
+  "/media/public/d5-005/1792064031178-kqKWwG5v.webp",
+  "/media/public/d5-005/1792064032557-ExcFtS2x.webp",
+  "/media/public/d5-005/1792064034212-VPIkEUhm.webp",
+  "/media/public/d5-005/1792064035538-hBGM6mKY.webp"
+ ],
+ "slug": "duplex-d5-005",
+ "summary": "Bienvenue dans l'univers du Duplex D5-005, un plan de maison moderne et fonctionnel conçu pour offrir un cadre de vie confortable et optimisé.",
+ "surface_total": 512
+}
