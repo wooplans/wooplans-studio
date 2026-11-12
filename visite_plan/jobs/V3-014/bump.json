@@ -1,0 +1,92 @@
+{
+ "band": "Villa V3-014  ·  3 chambres",
+ "tag": "VILLA V3-014",
+ "chip": "3 CHAMBRES · PLAIN-PIED",
+ "range": [
+  28900000,
+  35400000
+ ],
+ "target": 32160000,
+ "gros": 14472000,
+ "fin": 17688000,
+ "split": [
+  45,
+  55
+ ],
+ "hook_w3": "CETTE VILLA ?",
+ "start_pos": [
+  500.0,
+  888.0
+ ],
+ "body_cut": 0.0,
+ "body_end": 62.818,
+ "hook": {
+  "items": [
+   {
+    "start": 0.35,
+    "dur": 2.861
+   },
+   {
+    "start": 3.661,
+    "dur": 1.663
+   }
+  ],
+  "total": 5.924,
+  "cues": {
+   "facade": 0.0,
+   "tag": 0.3,
+   "w1": 0.4,
+   "w2": 0.99,
+   "w3": 1.75,
+   "chip": 2.411,
+   "pulse": 3.261,
+   "trans": 3.561,
+   "dot": 4.411
+  }
+ },
+ "estim": {
+  "items": [
+   {
+    "start": 0.6,
+    "dur": 9.362
+   },
+   {
+    "start": 10.262,
+    "dur": 3.967
+   }
+  ],
+  "total": 14.349,
+  "cues": {
+   "sheet": 0.0,
+   "lab": 0.7,
+   "count0": 2.9,
+   "count1": 4.4,
+   "count2": 4.7,
+   "count3": 8.34,
+   "pill": 9.4,
+   "split": 10.4,
+   "bar": 10.4,
+   "impact": 8.44,
+   "note": 10.262
+  }
+ },
+ "cta": {
+  "items": [
+   {
+    "start": 0.2,
+    "dur": 2.257
+   }
+  ],
+  "total": 4.05,
+  "cues": {
+   "logo": 0.0,
+   "button": 0.1,
+   "cursor": 0.75,
+   "tap": 1.3,
+   "bar": 1.75,
+   "s1": 1.95,
+   "s2": 2.3,
+   "url": 2.75
+  }
+ }
+}
