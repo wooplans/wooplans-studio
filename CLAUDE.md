@@ -20,3 +20,10 @@ Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun c
 - Le PC de Tao n'est qu'un secours (`visite_plan/local/`).
 
 Tests : `python -m pytest -q tests`.
+
+## Pubs Meta : envoyer une vidéo (méthode décidée par Tao le 12 nov. 2026)
+L'envoi direct de fichiers vers Meta (`ads_create_upload_url`) n'est pas ouvert sur le compte publicitaire : ne pas le redemander à Tao, passer par le site.
+1. Copier le `.mp4` dans `public/ads/` du dépôt `wooplans/wooplans` (nom sans espaces), pousser, ouvrir la PR et la fusionner une fois le contrôle `check` réussi (accord donné par Tao pour cette méthode). Après le déploiement, le fichier est servi sur `https://www.wooplans.com/ads/<fichier>.mp4` : vérifier 200 et `video/mp4`.
+2. Envoyer à Meta depuis cette adresse : `ads_creative_upload_media` avec `upload_source=URL`, `media_type=VIDEO`. Attendre le statut `ready` (`ads_get_ad_videos`), puis créer le créatif (vignette = un visuel du compte, `image_hash`) et l'annonce.
+3. Retirer les fichiers de `public/ads/` par une seconde PR dès que la vidéo est `ready` chez Meta.
+Les annonces sont créées en pause ; on ne les active qu'avec l'accord explicite de Tao.
