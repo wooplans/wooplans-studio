@@ -94,6 +94,13 @@ def main() -> int:
     print(r.status_code, r.text[:1500])
     r.raise_for_status()
     post = r.json().get("post", r.json())
+    if cfg.get("facebook_story") and "facebook" in acc:      # Story Facebook : même vidéo, sans légende (post séparé)
+        sbody = {"content": "", "mediaItems": [media], "scheduledFor": cfg["scheduled_for"], "timezone": cfg["timezone"],
+                 "platforms": [{"platform": "facebook", "accountId": acc["facebook"], "platformSpecificData": {"contentType": "story"}}]}
+        sh = dict(client.headers, **{"Idempotency-Key": f"wooplans-{plan}-story"})
+        rs = requests.post(f"{client.api_url}/posts", json=sbody, headers=sh, timeout=120)
+        print("story", rs.status_code, rs.text[:800])
+        rs.raise_for_status()
     set_state("A", plan, "programme", post_id=post.get("_id") or post.get("id"), quand=cfg["scheduled_for"],
               fuseau=cfg["timezone"], plateformes=[p["platform"] for p in platforms])
     return 0
