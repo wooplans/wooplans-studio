@@ -388,5 +388,18 @@
     "post_id": "6ad729ff7ce022031060cc62",
     "quand": "2026-10-26T13:00:00",
     "fuseau": "Africa/Douala"
+  },
+  "A:V3-014:-": {
+    "format": "A",
+    "plan": "V3-014",
+    "angle": "",
+    "etat": "programme",
+    "post_id": "6af5eea4ce47a4ba50ace587",
+    "quand": "2026-11-12T18:10:00",
+    "fuseau": "Africa/Douala",
+    "plateformes": [
+      "facebook",
+      "youtube"
+    ]
   }
 }
