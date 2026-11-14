@@ -54,3 +54,11 @@ Lien : `{URL_CHARIOW}` avec `?utm_source=facebook&utm_medium=paid&utm_campaign=g
 ## Produit Chariow `prd_cyvad4d0` : à corriger avant d'activer
 - Nom « Guide 1 » → « Quelle maison construire avec votre budget ? (guide PDF) » ; description avec faute (« choisir ça maison ») ; type **service**, aucun fichier joint ; bouton « Hire service » ; `redirect_url` vide.
 - Redirection à saisir : `https://www.wooplans.com/guide-merci` (après fusion de la PR #85 du dépôt du site).
+
+## Changement d'architecture (14 nov., demandé par Tao) : checkout du site, Chariow n'encaisse que le paiement
+- Les 4 pubs créées plus haut pointent vers la page produit Chariow : **à remplacer** (création Meta non modifiable) par des pubs vers `https://www.wooplans.com/guide-budget`, une fois la PR #85 de `wooplans/wooplans` fusionnée.
+- Le site a déjà ce parcours pour « Plan et devis » : intention d'achat, paiement par l'API Chariow, webhook, `/merci`, CRM, API de conversion Meta. Le guide y est branché (PR #85, branche `ccr-97a6d86d-lrpkla`).
+- Ce que Chariow ignorait : le webhook du site classe tout produit inconnu en `ignored_product` : un achat par la page produit Chariow n'aurait été ni dans le CRM ni dans le résumé d'activité.
+- **Le produit Chariow ne doit pas être de type « service »** : l'API de paiement de Chariow ne l'accepte pas (repli sur la boutique, sans métadonnées). Créer un produit téléchargeable ou licence, puis renseigner son identifiant dans `CHARIOW_GUIDE_PRODUCT_ID` (wrangler.jsonc du site).
+- Page de vente hébergée : `python tools/build_page_vente.py --site <dépôt du site>` génère `public/lp/guide-budget.html`.
+- Prix du Catalogue Premium : le site affiche `src/config/catalogue.json` (29 000 FCFA) ; le guide PDF et mes textes disaient 39 000 FCFA : à aligner.
