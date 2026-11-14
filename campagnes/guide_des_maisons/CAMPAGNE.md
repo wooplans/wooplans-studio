@@ -57,3 +57,18 @@ seule et le budget peut monter sans perte.
 « Vous avez le guide. Voici le catalogue complet. » Tao feuillette le livre, ouvre un modèle : rendus, plan
 coté, devis poste par poste. Il précise que l'acheteur reçoit **la version numérique** (espace en ligne + fiches PDF).
 Prix plein : 29 000 FCFA, sans réduction ni compte à rebours.
+
+## Visuels prêts (dossier `creas/`, 1080×1350, Poyo gpt-image-2.6-fixed)
+
+| Fichier | Angle |
+|---|---|
+| crea-1-budget.jpg | Budget (V3-027 : 69 m², 9,9 à 12,1 M FCFA) |
+| crea-2-terrain-300.jpg | Terrain 300 m² (D4-002 : 204 m²) |
+| crea-3-villa-ou-duplex.jpg | Villa V5-006 ou duplex D4-002, même budget |
+| crea-4-guide-telephone.jpg | 100 maisons dans votre téléphone |
+| crea-5-avant-architecte.jpg | Avant de payer un architecte |
+| crea-6-budget-grille.jpg | Une maison par tranche de budget |
+| video-guide-reels-9x16.mp4 | Défilement réel du guide (vidéo de Tao), accroche et prix incrustés, 24 s, sans son |
+
+Les maisons des visuels sont les rendus réels des fiches (images de référence). Deux textes mal écrits par le
+générateur ont été corrigés à la main (« Terrain conseillé », « 40 à 70 M »).
