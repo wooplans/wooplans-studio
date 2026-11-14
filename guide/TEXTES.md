@@ -45,6 +45,7 @@ Moins de 20 millions FCFA : 5 modèles, de 11 à 19,8 millions FCFA
 De 20 à 40 millions FCFA : 5 modèles, de 20,3 à 30,9 millions FCFA
 De 40 à 60 millions FCFA : 5 modèles, de 42,1 à 58,5 millions FCFA
 Plus de 60 millions FCFA : 5 modèles, de 60,5 à 114,9 millions FCFA
+Étape suivante : plans cotés et devis détaillés dans le Catalogue Premium, pages 29 et 30
 
 ## Intercalaire 1
 
@@ -294,58 +295,35 @@ Un duplex sur 2 niveaux de 4 chambres, d'une surface de 532 m², prévu pour un 
 
 Retrouvez ce modèle sur wooplans.com
 
-## 25 · Choisir selon votre terrain et votre famille
+## 29 · Fin du guide, étape suivante
 
-**Quatre vérifications simples**
+**Vous avez repéré vos modèles. Voici l'étape suivante.**
 
-Terrain : chaque modèle indique le terrain prévu. Votre terrain doit être au moins aussi grand, avec de la place pour les accès.
+Fin du guide.
+Une fois le modèle choisi, il vous faut le dossier complet. Exemple avec le Duplex D4-006 :
+- le plan de distribution du rez-de-chaussée, avec ses dimensions ;
+- le plan de distribution de l'étage ;
+- le devis détaillé par lots : fondation, élévation rdc, dalle, élévation étage, charpente et toiture… ;
+Les plans et les montants complets sont dans le Catalogue Premium.
 
-Famille : comptez les chambres dont vous avez besoin aujourd'hui, et celles dont vous aurez besoin dans 5 à 10 ans.
+Comparer des modèles du guide, côte à côte :
+V4-010 : 4 chambres · 148 m² · terrain 400 m² · environ 23,7 millions FCFA
+D4-006 : 4 chambres · 195 m² · terrain 300 m² · environ 42,1 millions FCFA
+D4-003 : 4 chambres · 323 m² · terrain 400 m² · environ 69,8 millions FCFA
 
-Plain-pied ou duplex : le plain-pied demande plus de surface au sol ; le duplex en demande moins, sur deux niveaux.
+## 30 · Catalogue Premium
 
-Budget : gardez une marge au-dessus de l'estimation, pour les imprévus et les finitions.
+**Catalogue Premium WooPlans**
 
-## 26 · Cinq questions avant de construire
-
-**Avant de poser la première pierre**
-
-1. Quel est mon budget total, terrain et frais compris ?
-2. Mon terrain a-t-il un titre foncier ou un document à jour ?
-3. Quelles autorisations faut-il dans ma commune ? Renseignez-vous auprès du service d'urbanisme.
-4. De combien de chambres et de quelle surface ai-je vraiment besoin ?
-5. Qui va construire, et sur la base de quel devis ?
-
-## 27 · Ce que ce guide ne montre pas
-
-**Il vous aide à choisir. Il ne remplace pas le dossier du modèle.**
-
-Ce guide ne contient pas :
-- les plans de distribution cotés, pièce par pièce ;
-- le devis détaillé du modèle ;
-- la comparaison des modèles entre eux, avec leurs coûts.
-
-Ces éléments sont dans le Catalogue Premium WooPlans.
-
-## 28 · Page catalogue
-
-**Vous avez fait le premier pas.**
-
-Ce guide vous a montré 20 maisons et leur coût de construction estimé. Pour passer de l'idée au projet, il vous faut les plans et les chiffres détaillés.
+Du choix de la maison au dossier complet.
 
 Le Catalogue Premium WooPlans vous donne :
-- l'accès aux modèles du catalogue ;
-- les plans de distribution cotés ;
-- les devis détaillés ;
-- la possibilité de comparer les modèles et leurs coûts de construction.
+- les plans de distribution cotés, niveau par niveau ;
+- le devis détaillé par lots (fondation, dalle, charpente et toiture, plomberie et électricité, carrelage…) ;
+- la comparaison des modèles et de leurs coûts de construction ;
+- l'accès aux modèles du catalogue.
 
 Prix actuel : 39 000 FCFA
 
 Bouton : Découvrir le Catalogue Premium
 Lien : https://wooplans.com/catalogue-premium?utm_source=guide_pdf&utm_medium=guide&utm_campaign=guide_budget&utm_content=page28
-
-## 29 · Contact
-
-**Une question sur votre projet ?**
-
-Retrouvez-nous sur wooplans.com

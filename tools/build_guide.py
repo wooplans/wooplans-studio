@@ -30,6 +30,10 @@ TRANCHES = [
     ("Plus de 60 millions FCFA", "Les grandes maisons", "60 M +", ["D4-017", "D4-003", "D5-019", "D5-018", "D4-001"]),
 ]
 COVER_CODE = "D4-003"
+COMPARE_CODES = ["V4-010", "D4-006", "D4-003"]
+# Devis par lots du Duplex D4-006 (catalogue en ligne) : seule la ligne « Fondation » est montrée avec son montant, le reste est masqué.
+LOTS_EXEMPLE = [("Fondation", 3601300), ("Élévation RDC", None), ("Dalle", None), ("Élévation étage", None), ("Charpente et toiture", None),
+                ("Crépissage et antivols", None), ("Portes et fenêtres", None), ("Plomberie et électricité", None), ("Plafond et peinture", None), ("Carrelage", None)]
 
 
 def millions(n: int) -> str:
@@ -48,7 +52,8 @@ def pages(plans: dict, whatsapp: str = None) -> list:
         dict(kind="text", nav="3 · Ce que veut dire « estimation »", title="Une estimation, pas un prix ferme",
              body="Chaque montant de ce guide est l'estimation du devis WooPlans du modèle, arrondie au dixième de million de FCFA.\n\nLe coût réel d'une construction dépend de votre ville, de l'accès au terrain, de la nature du sol, des finitions que vous choisissez et du moment où vous construisez.\n\nCes montants servent à comparer les modèles entre eux et à situer votre budget. Pour votre projet, demandez toujours un devis local à des professionnels."),
         dict(kind="toc", nav="4 · Sommaire", title="Choisissez votre tranche de budget",
-             body="\n".join(f"{t} : {len(c)} modèles, de {rng(c)[0]} à {rng(c)[1]} millions FCFA" for t, _, _, c in TRANCHES)),
+             body="\n".join(f"{t} : {len(c)} modèles, de {rng(c)[0]} à {rng(c)[1]} millions FCFA" for t, _, _, c in TRANCHES)
+             + "\nÉtape suivante : plans cotés et devis détaillés dans le Catalogue Premium, pages 29 et 30"),
     ]
     for i, (t, sub, badge, codes) in enumerate(TRANCHES):
         lo, hi = rng(codes)
@@ -66,17 +71,22 @@ def pages(plans: dict, whatsapp: str = None) -> list:
             body = (f"{' · '.join(chips)}\nEstimation du devis : {est}\n\n{sent}\n\nRetrouvez ce modèle sur wooplans.com")
             P.append(dict(kind="model", nav=f"Modèle {c}", title=f"{'Villa' if villa else 'Duplex'} {c}", code=c, chips=chips,
                           estimate=est, sentence=sent, body=body))
+    lots = LOTS_EXEMPLE
+    cmp_rows = [plans[c] for c in COMPARE_CODES]
+    cmp_txt = "\n".join(f"{r['code']} : {r['bedrooms']} chambres · {r['surface']} m² · terrain {r['land_area']} m² · environ {millions(r['estimate_total'])} millions FCFA" for r in cmp_rows)
     P += [
-        dict(kind="text", nav="25 · Choisir selon votre terrain et votre famille", title="Quatre vérifications simples",
-             body="Terrain : chaque modèle indique le terrain prévu. Votre terrain doit être au moins aussi grand, avec de la place pour les accès.\n\nFamille : comptez les chambres dont vous avez besoin aujourd'hui, et celles dont vous aurez besoin dans 5 à 10 ans.\n\nPlain-pied ou duplex : le plain-pied demande plus de surface au sol ; le duplex en demande moins, sur deux niveaux.\n\nBudget : gardez une marge au-dessus de l'estimation, pour les imprévus et les finitions."),
-        dict(kind="text", nav="26 · Cinq questions avant de construire", title="Avant de poser la première pierre",
-             body="1. Quel est mon budget total, terrain et frais compris ?\n2. Mon terrain a-t-il un titre foncier ou un document à jour ?\n3. Quelles autorisations faut-il dans ma commune ? Renseignez-vous auprès du service d'urbanisme.\n4. De combien de chambres et de quelle surface ai-je vraiment besoin ?\n5. Qui va construire, et sur la base de quel devis ?"),
-        dict(kind="text", nav="27 · Ce que ce guide ne montre pas", title="Il vous aide à choisir. Il ne remplace pas le dossier du modèle.",
-             body="Ce guide ne contient pas :\n- les plans de distribution cotés, pièce par pièce ;\n- le devis détaillé du modèle ;\n- la comparaison des modèles entre eux, avec leurs coûts.\n\nCes éléments sont dans le Catalogue Premium WooPlans."),
-        dict(kind="catalogue", nav="28 · Page catalogue", title="Vous avez fait le premier pas.", link=link,
-             body="Ce guide vous a montré 20 maisons et leur coût de construction estimé. Pour passer de l'idée au projet, il vous faut les plans et les chiffres détaillés.\n\nLe Catalogue Premium WooPlans vous donne :\n- l'accès aux modèles du catalogue ;\n- les plans de distribution cotés ;\n- les devis détaillés ;\n- la possibilité de comparer les modèles et leurs coûts de construction.\n\nPrix actuel : 39 000 FCFA\n\nBouton : Découvrir le Catalogue Premium\nLien : " + link),
-        dict(kind="contact", nav="29 · Contact", title="Une question sur votre projet ?",
-             body=(f"Écrivez-nous sur WhatsApp : {whatsapp}\nwooplans.com" if whatsapp else "Retrouvez-nous sur wooplans.com")),
+        dict(kind="cat1", nav="29 · Fin du guide, étape suivante", title="Vous avez repéré vos modèles. Voici l'étape suivante.", lots=lots, cmp=cmp_rows,
+             body=("Fin du guide.\nUne fois le modèle choisi, il vous faut le dossier complet. Exemple avec le Duplex D4-006 :\n"
+                   "- le plan de distribution du rez-de-chaussée, avec ses dimensions ;\n- le plan de distribution de l'étage ;\n"
+                   "- le devis détaillé par lots : " + ", ".join(l[0].lower() for l in lots[:5]) + "… ;\n"
+                   "Les plans et les montants complets sont dans le Catalogue Premium.\n\n"
+                   "Comparer des modèles du guide, côte à côte :\n" + cmp_txt)),
+        dict(kind="cat2", nav="30 · Catalogue Premium", title="Catalogue Premium WooPlans", link=link,
+             body=("Du choix de la maison au dossier complet.\n\nLe Catalogue Premium WooPlans vous donne :\n"
+                   "- les plans de distribution cotés, niveau par niveau ;\n"
+                   "- le devis détaillé par lots (fondation, dalle, charpente et toiture, plomberie et électricité, carrelage…) ;\n"
+                   "- la comparaison des modèles et de leurs coûts de construction ;\n- l'accès aux modèles du catalogue.\n\n"
+                   "Prix actuel : 39 000 FCFA\n\nBouton : Découvrir le Catalogue Premium\nLien : " + link)),
     ]
     return P
 
@@ -120,8 +130,8 @@ h1,h2,h3,.big{font-family:'Poppins','Inter',sans-serif;font-weight:700;line-heig
 .band .bar{width:18mm;height:1.5mm;background:var(--o);margin-top:5mm}
 .body{padding:11mm 12mm;font-size:13pt;line-height:1.6}.body p{margin-bottom:5mm}
 .body .li{display:flex;gap:3.5mm;margin-bottom:4mm}.body .li b{color:var(--o);min-width:6mm;font-family:Poppins;font-size:15pt}
-.toc .card{margin:0 12mm 7mm;font-size:12pt;background:#fff;border-left:2.2mm solid var(--o);padding:7mm 7mm;border-radius:1.5mm;box-shadow:0 .3mm 1.2mm rgba(0,0,0,.08)}
-.toc .card b{font-family:Poppins;font-size:15pt;margin-bottom:1.5mm;color:var(--g);display:block}
+.toc .card{margin:0 12mm 4.5mm;font-size:10.6pt;background:#fff;border-left:2.2mm solid var(--o);padding:4.6mm 6mm;border-radius:1.5mm;box-shadow:0 .3mm 1.2mm rgba(0,0,0,.08)}
+.toc .card b{font-family:Poppins;font-size:12.8pt;margin-bottom:1mm;color:var(--g);display:block}
 .div{background:var(--g);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:0 14mm}
 .div .badge{font-family:Poppins;font-weight:700;font-size:46pt;color:var(--o);line-height:1}
 .div h2{font-size:24pt;margin:7mm 0 5mm}.div p{font-size:14pt;color:#e4efee}
@@ -132,14 +142,27 @@ h1,h2,h3,.big{font-family:'Poppins','Inter',sans-serif;font-weight:700;line-heig
 .est small{display:block;font-size:9.5pt;margin-bottom:1mm;opacity:.95;text-transform:uppercase;letter-spacing:.6pt}
 .est b{font-family:Poppins;font-size:19pt}
 .model .sent{font-size:12.6pt;line-height:1.55}.model .site{margin-top:4mm;color:#6b7a7a;font-size:10pt}
-.cat{background:var(--g);color:#fff}.cat .in{padding:17mm 12mm;font-size:12.6pt}.cat h2{font-size:26pt;color:#fff}
-.cat .bar{width:20mm;height:1.6mm;background:var(--o);margin:5mm 0}
-.cat p{margin-bottom:4mm;color:#e9f2f1;line-height:1.55}.cat ul{margin:3mm 0 8mm 6mm}.cat li{margin-bottom:3mm}
-.price{display:inline-block;background:#fff;color:var(--g);border-radius:2mm;padding:4mm 6mm;font-family:Poppins;font-weight:700;font-size:16pt;margin:2mm 0 8mm}
-.btn{display:block;background:var(--o);color:#fff;text-decoration:none;text-align:center;border-radius:2mm;padding:5.5mm;font-family:Poppins;font-weight:700;font-size:14pt}
-.cat .u{margin-top:5mm;text-align:center;font-size:10.5pt;color:#cfe3e1}
-.contact{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--g);color:#fff}
-.contact h2{font-size:24pt;padding:0 14mm}.contact p{margin-top:7mm;font-size:15pt}
+.toc .card.next{background:var(--g);color:#fff;border-left-color:var(--o)}.toc .card.next b{color:#fff}
+.c1{background:var(--bg)}.c1 .top{background:var(--g);color:#fff;padding:8mm 12mm 5mm}
+.tag{display:inline-block;background:var(--o);color:#fff;font-family:Poppins;font-weight:700;font-size:8.5pt;letter-spacing:1pt;padding:1.2mm 3mm;border-radius:1mm;margin-bottom:3mm}
+.c1 h2{font-size:17.5pt}.c1 .top p{margin-top:2.5mm;font-size:10.5pt;color:#e4efee;line-height:1.45}
+.plans{display:flex;gap:4mm;padding:3.5mm 12mm 0}.plans figure{flex:1;background:#fff;border:.3mm solid #d8dede;border-radius:1.5mm;padding:2mm;text-align:center}
+.plans img{width:100%;height:33mm;object-fit:contain}.plans figcaption{font-size:8pt;font-weight:600;color:var(--g);margin-top:1mm}
+.lock{margin:2.5mm 12mm 0;background:#fff3e6;border:.3mm dashed var(--o);color:#8a4a0f;border-radius:1.5mm;padding:2mm 3mm;font-size:8.8pt;font-weight:600;text-align:center}
+.devis{margin:3mm 12mm 0;background:#fff;border-radius:1.5mm;padding:3mm 5mm;box-shadow:0 .3mm 1.2mm rgba(0,0,0,.08)}
+.devis h3,.cmp h3{font-size:10.5pt;color:var(--g);margin-bottom:2mm}
+.lots{display:grid;grid-template-columns:1fr 1fr;column-gap:6mm}.lot{display:flex;justify-content:space-between;align-items:center;font-size:8.2pt;padding:.8mm 0;border-bottom:.2mm solid #eef1f1}.lot b{color:var(--g)}
+.mask{display:inline-block;width:13mm;height:2.6mm;background:linear-gradient(90deg,#c9d3d3,#e6ecec);border-radius:1mm}
+.devis .note{margin-top:1.8mm;font-size:7.8pt;color:#6b7a7a;text-align:right}
+.cmp{margin:3mm 12mm 0}.cmp table{width:100%;border-collapse:collapse;font-size:8.8pt;background:#fff}.cmp td{padding:1.1mm 2mm;border-bottom:.2mm solid #eef1f1}.cmp td.e{color:var(--o);font-weight:700;text-align:right}.cmp td b{color:var(--g)}
+.c2{background:var(--g);color:#fff}.c2 .strip{display:flex;height:50mm}.c2 .strip div{flex:1;background-size:cover;background-position:center;border-right:.8mm solid var(--g)}
+.c2 .in{padding:8mm 12mm}.c2 h2{font-size:23pt;color:#fff}.c2 .bar{width:20mm;height:1.6mm;background:var(--o);margin:4mm 0}
+.c2 .lead{font-size:12pt;color:#e4efee;margin-bottom:5mm}
+.c2 .row{display:flex;gap:4mm;align-items:flex-start;margin-bottom:3.2mm}.c2 .ic{background:#fff;border-radius:2mm;width:10mm;height:10mm;display:flex;align-items:center;justify-content:center;font-size:13pt;flex:none}
+.c2 .row b{display:block;font-size:11.5pt}.c2 .row small{display:block;font-size:9.2pt;color:#cfe3e1;line-height:1.35}
+.price{display:inline-block;background:#fff;color:var(--g);border-radius:2mm;padding:3mm 6mm;font-family:Poppins;font-weight:700;font-size:15pt;margin:2mm 0 5mm}
+.btn{display:block;background:var(--o);color:#fff;text-decoration:none;text-align:center;border-radius:2mm;padding:5mm;font-family:Poppins;font-weight:700;font-size:14pt}
+.c2 .u{margin-top:3mm;text-align:center;font-size:10pt;color:#cfe3e1}
 """
 
 
@@ -147,7 +170,7 @@ def esc(s): return html.escape(s)
 
 
 def render_html(P: list, imgs: dict, whatsapp: str = None) -> str:
-    css = CSS % {"font": str(ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf")}
+    css = CSS.replace("%(font)s", str(ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf"))
     out = []
     n = 0
     for p in P:
@@ -160,7 +183,7 @@ def render_html(P: list, imgs: dict, whatsapp: str = None) -> str:
                        f'<div class="url">wooplans.com</div></div></section>')
         elif k in ("text", "toc"):
             if k == "toc":
-                inner = "".join(f'<div class="card"><b>{esc(l.split(" : ")[0])}</b>{esc(l.split(" : ", 1)[1])}</div>' for l in p["body"].split("\n"))
+                inner = "".join(f'<div class="card{" next" if l.startswith("Étape") else ""}"><b>{esc(l.split(" : ")[0])}</b>{esc(l.split(" : ", 1)[1])}</div>' for l in p["body"].split("\n"))
                 out.append(f'<section class="pg toc"><div class="band"><h2>{esc(p["title"])}</h2><div class="bar"></div></div><div style="height:9mm"></div>{inner}{foot}</section>')
             else:
                 inner = ""
@@ -185,15 +208,41 @@ def render_html(P: list, imgs: dict, whatsapp: str = None) -> str:
             out.append(f'<section class="pg model"><div class="ph" style="background-image:url(\'{imgs[p["code"]]}\')"></div><div class="in"><h2>{esc(p["title"])}</h2>'
                        f'<div class="chips">{chips}</div><div class="est"><small>Estimation du devis</small><b>{esc(p["estimate"])}</b></div>'
                        f'<p class="sent">{esc(p["sentence"])}</p><p class="site">Retrouvez ce modèle sur wooplans.com</p></div>{foot}</section>')
-        elif k == "catalogue":
-            lis = "".join(f"<li>{esc(l[2:])}</li>" for l in p["body"].split("\n") if l.startswith("- "))
-            out.append(f'<section class="pg cat"><div class="in"><h2>{esc(p["title"])}</h2><div class="bar"></div>'
-                       f'<p>Ce guide vous a montré 20 maisons et leur coût de construction estimé. Pour passer de l\'idée au projet, il vous faut les plans et les chiffres détaillés.</p>'
-                       f'<p><b>Le Catalogue Premium WooPlans vous donne :</b></p><ul>{lis}</ul><div class="price">Prix actuel : 39 000 FCFA</div>'
+        elif k == "cat1":
+            lots = "".join(f'<div class="lot"><span>{esc(l)}</span>' + (f'<b>{a:,} FCFA</b>'.replace(",", " ") if a else '<i class="mask"></i>') + "</div>" for l, a in p["lots"])
+            rows = "".join(f'<tr><td><b>{esc(r["code"])}</b></td><td>{r["bedrooms"]} ch.</td><td>{r["surface"]} m²</td><td>{r["land_area"]} m²</td><td class="e">{millions(r["estimate_total"])} M</td></tr>' for r in p["cmp"])
+            out.append(f'<section class="pg c1"><div class="top"><span class="tag">FIN DU GUIDE</span><h2>{esc(p["title"])}</h2>'
+                       f'<p>Une fois le modèle choisi, il vous faut le dossier complet. Exemple avec le <b>Duplex D4-006</b> :</p></div>'
+                       f'<div class="plans"><figure><img src="{imgs["plan_rdc"]}"><figcaption>Plan de distribution · RDC</figcaption></figure>'
+                       f'<figure><img src="{imgs["plan_etage"]}"><figcaption>Plan de distribution · étage</figcaption></figure></div>'
+                       f'<div class="lock">🔒 Dimensions et détails lisibles dans le Catalogue Premium</div>'
+                       f'<div class="devis"><h3>Devis détaillé par lots</h3><div class="lots">{lots}</div><div class="note">Montants complets dans le Catalogue Premium</div></div>'
+                       f'<div class="cmp"><h3>Comparez des modèles du guide, côte à côte</h3><table>{rows}</table></div>{foot}</section>')
+        elif k == "cat2":
+            lis = [("📐", "Plans de distribution cotés", "niveau par niveau"), ("🧾", "Devis détaillé par lots", "fondation, dalle, charpente et toiture, plomberie et électricité, carrelage…"),
+                   ("⚖️", "Comparaison des modèles", "et de leurs coûts de construction"), ("🏠", "Accès aux modèles du catalogue", "villas et duplex")]
+            rows = "".join(f'<div class="row"><span class="ic">{i}</span><div><b>{esc(t)}</b><small>{esc(d)}</small></div></div>' for i, t, d in lis)
+            strip = "".join(f'<div style="background-image:url(\'{imgs[c]}\')"></div>' for c in ("D4-006", "D5-018", "V4-010"))
+            out.append(f'<section class="pg c2"><div class="strip">{strip}</div><div class="in"><h2>{esc(p["title"])}</h2><div class="bar"></div>'
+                       f'<p class="lead">Du choix de la maison au dossier complet.</p>{rows}<div class="price">Prix actuel : 39 000 FCFA</div>'
                        f'<a class="btn" href="{esc(p["link"])}">Découvrir le Catalogue Premium</a><div class="u">wooplans.com/catalogue-premium</div></div></section>')
-        elif k == "contact":
-            out.append(f'<section class="pg contact"><h2>{esc(p["title"])}</h2><p>{esc(p["body"]).replace(chr(10), "<br>")}</p></section>')
     return f"<!doctype html><html lang='fr'><head><meta charset='utf-8'><title>{esc(TITLE)}</title><style>{css}</style></head><body>{''.join(out)}</body></html>"
+
+
+def prepare_plans(plans_dir: Path, out: Path) -> dict:
+    """Plans de distribution de l'exemple (D4-006) floutés : formes lisibles, cotes illisibles."""
+    from PIL import Image, ImageFilter
+    res = {}
+    for key, name in (("plan_rdc", "rdc"), ("plan_etage", "etage")):
+        f = next(iter(sorted(plans_dir.glob(f"{name}.*"))), None)
+        if f is None:
+            raise SystemExit(f"plan manquant : {name} dans {plans_dir}")
+        im = Image.open(f).convert("RGB")
+        im.thumbnail((700, 700))
+        dest = out / f"{key}.jpg"
+        im.filter(ImageFilter.GaussianBlur(4)).save(dest, quality=88)
+        res[key] = f"img/{dest.name}"
+    return res
 
 
 def prepare_images(src: Path, out: Path, codes: list) -> dict:
@@ -219,6 +268,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src")
     ap.add_argument("--out", default=str(ROOT / "guide" / "out"))
+    ap.add_argument("--plans", help="dossier avec rdc.webp et etage.webp (plans du D4-006, R2 premium)")
     ap.add_argument("--whatsapp")
     ap.add_argument("--texts", action="store_true")
     a = ap.parse_args()
@@ -237,6 +287,9 @@ def main():
     codes = [c for *_, cs in TRANCHES for c in cs]
     imgs = prepare_images(Path(a.src), out / "img", codes)
     imgs = {c: f"img/{n}" for c, n in imgs.items()}
+    if not a.plans:
+        raise SystemExit("--plans requis (plans du D4-006)")
+    imgs.update(prepare_plans(Path(a.plans), out / "img"))
     (out / "guide.html").write_text(render_html(P, imgs, a.whatsapp), encoding="utf-8")
     js = out / "_pdf.js"
     js.write_text(PDF_JS)

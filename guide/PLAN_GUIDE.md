@@ -33,22 +33,21 @@ Sélection proposée : **5 modèles par tranche = 20 modèles**, choisis pour va
 
 Chaque modèle = 1 page : rendu de façade (image principale), code, nombre de chambres, niveaux, surface, terrain minimum (si renseigné dans `plans.json`, sinon omis), estimation du devis, une phrase de description. Pas de plan coté, pas de détail de devis.
 
-## 4. Structure (environ 30 pages, format PDF vertical)
+## 4. Structure (30 pages, format A5 vertical)
 
 | Pages | Contenu |
 |---|---|
-| 1 | Couverture : titre, rendu fort, wooplans.com |
-| 2 | À qui s'adresse ce guide / comment l'utiliser (3 lignes) |
-| 3 | « Ce que veut dire une estimation » : ce qu'elle inclut, pourquoi elle varie (explication prudente, sans chiffre inventé) |
-| 4 | Sommaire par tranche de budget |
-| 5–24 | Les 20 modèles, 5 par tranche, avec un intercalaire de tranche |
-| 25 | Comment choisir selon la taille du terrain et la famille (check-list) |
-| 26 | Les 5 questions à se poser avant de construire (budget total, terrain, titre foncier, autorisation, phasage) |
-| 27 | Ce que ce guide ne montre pas : plans cotés, devis détaillé, comparaison |
-| 28 | **Page catalogue** : « Vous avez fait le premier pas » + ce que contient le Catalogue Premium + prix actuel 39 000 FCFA + lien |
-| 29 | Contact / WhatsApp |
+| 1 | Couverture : titre, façade, wooplans.com |
+| 2 | Comment utiliser ce guide |
+| 3 | « Une estimation, pas un prix ferme » |
+| 4 | Sommaire par tranche de budget, avec une 5e carte « Étape suivante : Catalogue Premium, pages 29 et 30 » |
+| 5–28 | 4 intercalaires de tranche + 20 modèles (5 par tranche) |
+| 29 | **Fin du guide, étape suivante** : plans de distribution floutés et extrait du devis par lots du Duplex D4-006, comparaison de 3 modèles du guide |
+| 30 | **Catalogue Premium WooPlans** : ce qu'il contient, « Prix actuel : 39 000 FCFA », bouton avec lien UTM |
 
-Page 28 : lien `https://wooplans.com/catalogue-premium` avec UTM (`wooplans/utm.py`), source `guide`. Jamais « l'offre expire dans X heures ».
+Retirées après relecture de Tao (14 nov.) : pages de conseils (4 vérifications, 5 questions, « ce que ce guide ne montre pas ») et page de contact. Le guide se termine par deux pages dédiées au catalogue.
+
+Lien du bouton : `wooplans/utm.py` (`build_guide_link`), source `guide_pdf`.
 
 ## 5. Page de vente et paiement
 
