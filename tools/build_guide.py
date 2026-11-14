@@ -30,7 +30,6 @@ TRANCHES = [
     ("Plus de 60 millions FCFA", "Les grandes maisons", "60 M +", ["D4-017", "D4-003", "D5-019", "D5-018", "D4-001"]),
 ]
 COVER_CODE = "D4-003"
-COMPARE_CODES = ["V4-010", "D4-006", "D4-003"]
 # Devis par lots du Duplex D4-006 (catalogue en ligne) : seule la ligne « Fondation » est montrée avec son montant, le reste est masqué.
 LOTS_EXEMPLE = [("Fondation", 3601300), ("Élévation RDC", None), ("Dalle", None), ("Élévation étage", None), ("Charpente et toiture", None),
                 ("Crépissage et antivols", None), ("Portes et fenêtres", None), ("Plomberie et électricité", None), ("Plafond et peinture", None), ("Carrelage", None)]
@@ -53,7 +52,7 @@ def pages(plans: dict, whatsapp: str = None) -> list:
              body="Chaque montant de ce guide est l'estimation du devis WooPlans du modèle, arrondie au dixième de million de FCFA.\n\nLe coût réel d'une construction dépend de votre ville, de l'accès au terrain, de la nature du sol, des finitions que vous choisissez et du moment où vous construisez.\n\nCes montants servent à comparer les modèles entre eux et à situer votre budget. Pour votre projet, demandez toujours un devis local à des professionnels."),
         dict(kind="toc", nav="4 · Sommaire", title="Choisissez votre tranche de budget",
              body="\n".join(f"{t} : {len(c)} modèles, de {rng(c)[0]} à {rng(c)[1]} millions FCFA" for t, _, _, c in TRANCHES)
-             + "\nÉtape suivante : plans cotés et devis détaillés dans le Catalogue Premium, pages 29 et 30"),
+             + "\nLe Catalogue Premium : près de 100 modèles, avec plan de distribution et devis de la fondation aux finitions, pages 29 et 30"),
     ]
     for i, (t, sub, badge, codes) in enumerate(TRANCHES):
         lo, hi = rng(codes)
@@ -72,20 +71,13 @@ def pages(plans: dict, whatsapp: str = None) -> list:
             P.append(dict(kind="model", nav=f"Modèle {c}", title=f"{'Villa' if villa else 'Duplex'} {c}", code=c, chips=chips,
                           estimate=est, sentence=sent, body=body))
     lots = LOTS_EXEMPLE
-    cmp_rows = [plans[c] for c in COMPARE_CODES]
-    cmp_txt = "\n".join(f"{r['code']} : {r['bedrooms']} chambres · {r['surface']} m² · terrain {r['land_area']} m² · environ {millions(r['estimate_total'])} millions FCFA" for r in cmp_rows)
     P += [
-        dict(kind="cat1", nav="29 · Fin du guide, étape suivante", title="Vous avez repéré vos modèles. Voici l'étape suivante.", lots=lots, cmp=cmp_rows,
-             body=("Fin du guide.\nUne fois le modèle choisi, il vous faut le dossier complet. Exemple avec le Duplex D4-006 :\n"
-                   "- le plan de distribution du rez-de-chaussée, avec ses dimensions ;\n- le plan de distribution de l'étage ;\n"
-                   "- le devis détaillé par lots : " + ", ".join(l[0].lower() for l in lots[:5]) + "… ;\n"
-                   "Les plans et les montants complets sont dans le Catalogue Premium.\n\n"
-                   "Comparer des modèles du guide, côte à côte :\n" + cmp_txt)),
-        dict(kind="cat2", nav="30 · Catalogue Premium", title="Catalogue Premium WooPlans", link=link,
-             body=("Du choix de la maison au dossier complet.\n\nLe Catalogue Premium WooPlans vous donne :\n"
-                   "- les plans de distribution cotés, niveau par niveau ;\n"
-                   "- le devis détaillé par lots (fondation, dalle, charpente et toiture, plomberie et électricité, carrelage…) ;\n"
-                   "- la comparaison des modèles et de leurs coûts de construction ;\n- l'accès aux modèles du catalogue.\n\n"
+        dict(kind="cat1", nav="29 · Le catalogue", title="Nous avons réuni près de 100 modèles de plans dans un catalogue.", lots=lots,
+             body=("Le Catalogue Premium WooPlans.\nPour chacun de ces modèles, vous pouvez consulter le plan de distribution et le devis, de la fondation jusqu'aux finitions.\n\n"
+                   "Exemple avec le Duplex D4-006 :\n- le plan de distribution du rez-de-chaussée, avec ses dimensions ;\n- le plan de distribution de l'étage ;\n"
+                   "- le devis par lots : " + ", ".join(l[0].lower() for l in lots) + ".\n\nLes plans et les montants complets sont dans le Catalogue Premium.")),
+        dict(kind="cat2", nav="30 · Catalogue Premium", title="Le Catalogue Premium WooPlans", link=link,
+             body=("Près de 100 modèles de villas et de duplex.\nPour chacun : le plan de distribution et le devis, de la fondation aux finitions.\n\n"
                    "Prix actuel : 39 000 FCFA\n\nBouton : Découvrir le Catalogue Premium\nLien : " + link)),
     ]
     return P
@@ -145,24 +137,21 @@ h1,h2,h3,.big{font-family:'Poppins','Inter',sans-serif;font-weight:700;line-heig
 .toc .card.next{background:var(--g);color:#fff;border-left-color:var(--o)}.toc .card.next b{color:#fff}
 .c1{background:var(--bg)}.c1 .top{background:var(--g);color:#fff;padding:8mm 12mm 5mm}
 .tag{display:inline-block;background:var(--o);color:#fff;font-family:Poppins;font-weight:700;font-size:8.5pt;letter-spacing:1pt;padding:1.2mm 3mm;border-radius:1mm;margin-bottom:3mm}
-.c1 h2{font-size:17.5pt}.c1 .top p{margin-top:2.5mm;font-size:10.5pt;color:#e4efee;line-height:1.45}
-.plans{display:flex;gap:4mm;padding:3.5mm 12mm 0}.plans figure{flex:1;background:#fff;border:.3mm solid #d8dede;border-radius:1.5mm;padding:2mm;text-align:center}
-.plans img{width:100%;height:33mm;object-fit:contain}.plans figcaption{font-size:8pt;font-weight:600;color:var(--g);margin-top:1mm}
-.lock{margin:2.5mm 12mm 0;background:#fff3e6;border:.3mm dashed var(--o);color:#8a4a0f;border-radius:1.5mm;padding:2mm 3mm;font-size:8.8pt;font-weight:600;text-align:center}
-.devis{margin:3mm 12mm 0;background:#fff;border-radius:1.5mm;padding:3mm 5mm;box-shadow:0 .3mm 1.2mm rgba(0,0,0,.08)}
-.devis h3,.cmp h3{font-size:10.5pt;color:var(--g);margin-bottom:2mm}
-.lots{display:grid;grid-template-columns:1fr 1fr;column-gap:6mm}.lot{display:flex;justify-content:space-between;align-items:center;font-size:8.2pt;padding:.8mm 0;border-bottom:.2mm solid #eef1f1}.lot b{color:var(--g)}
-.mask{display:inline-block;width:13mm;height:2.6mm;background:linear-gradient(90deg,#c9d3d3,#e6ecec);border-radius:1mm}
-.devis .note{margin-top:1.8mm;font-size:7.8pt;color:#6b7a7a;text-align:right}
-.cmp{margin:3mm 12mm 0}.cmp table{width:100%;border-collapse:collapse;font-size:8.8pt;background:#fff}.cmp td{padding:1.1mm 2mm;border-bottom:.2mm solid #eef1f1}.cmp td.e{color:var(--o);font-weight:700;text-align:right}.cmp td b{color:var(--g)}
-.c2{background:var(--g);color:#fff}.c2 .strip{display:flex;height:50mm}.c2 .strip div{flex:1;background-size:cover;background-position:center;border-right:.8mm solid var(--g)}
-.c2 .in{padding:8mm 12mm}.c2 h2{font-size:23pt;color:#fff}.c2 .bar{width:20mm;height:1.6mm;background:var(--o);margin:4mm 0}
-.c2 .lead{font-size:12pt;color:#e4efee;margin-bottom:5mm}
-.c2 .row{display:flex;gap:4mm;align-items:flex-start;margin-bottom:3.2mm}.c2 .ic{background:#fff;border-radius:2mm;width:10mm;height:10mm;display:flex;align-items:center;justify-content:center;font-size:13pt;flex:none}
-.c2 .row b{display:block;font-size:11.5pt}.c2 .row small{display:block;font-size:9.2pt;color:#cfe3e1;line-height:1.35}
-.price{display:inline-block;background:#fff;color:var(--g);border-radius:2mm;padding:3mm 6mm;font-family:Poppins;font-weight:700;font-size:15pt;margin:2mm 0 5mm}
-.btn{display:block;background:var(--o);color:#fff;text-decoration:none;text-align:center;border-radius:2mm;padding:5mm;font-family:Poppins;font-weight:700;font-size:14pt}
-.c2 .u{margin-top:3mm;text-align:center;font-size:10pt;color:#cfe3e1}
+.c1 h2{font-size:17pt}.c1 .top p{margin-top:3mm;font-size:10.6pt;color:#e4efee;line-height:1.5}.c1 .top b{color:#fff}
+.ex{margin:3.5mm 12mm 0;font-family:Poppins;font-weight:700;font-size:9.5pt;color:var(--o);letter-spacing:.6pt;text-transform:uppercase}
+.plans{display:flex;gap:4mm;padding:2mm 12mm 0}.plans figure{flex:1;background:#fff;border:.3mm solid #d8dede;border-radius:1.5mm;padding:2mm;text-align:center}
+.plans img{width:100%;height:35mm;object-fit:contain}.plans figcaption{font-size:8pt;font-weight:600;color:var(--g);margin-top:1mm}
+.devis{margin:3.5mm 12mm 0;background:#fff;border-radius:1.5mm;padding:3mm 5mm;box-shadow:0 .3mm 1.2mm rgba(0,0,0,.08)}
+.devis h3{font-size:10.5pt;color:var(--g);margin-bottom:2mm}
+.lot{display:flex;align-items:center;gap:2.5mm;font-size:8.8pt;padding:.75mm 0;border-bottom:.2mm solid #eef1f1}.lot i{font-style:normal;font-family:Poppins;font-weight:700;color:var(--o);width:5mm;font-size:9pt}.lot span{flex:1}.lot b{color:var(--g)}
+.mask{display:inline-block;width:24mm;height:2.6mm;background:linear-gradient(90deg,#c9d3d3,#e6ecec);border-radius:1mm}
+.devis .note{margin-top:2.2mm;font-size:8pt;color:#8a4a0f;text-align:center}
+.c2{background:radial-gradient(ellipse at 50% 28%,#13706d 0,var(--g) 62%);color:#fff}.c2 .bookbox{height:112mm;display:flex;justify-content:center;align-items:center;padding:8mm 0 2mm}.c2 .bookbox img{max-height:100mm;max-width:118mm}
+.c2 .in{padding:0 12mm;text-align:center}.c2 h2{font-size:21pt;color:#fff}.c2 .bar{width:20mm;height:1.6mm;background:var(--o);margin:3mm auto}
+.c2 .lead{font-size:11.2pt;color:#e4efee;line-height:1.5;margin-bottom:4mm}
+.price{display:inline-block;background:#fff;color:var(--g);border-radius:2mm;padding:2.6mm 6mm;font-family:Poppins;font-weight:700;font-size:14pt;margin:0 0 4mm}
+.btn{display:block;background:var(--o);color:#fff;text-decoration:none;text-align:center;border-radius:2mm;padding:4.6mm;font-family:Poppins;font-weight:700;font-size:13.5pt}
+.c2 .u{margin-top:2.6mm;text-align:center;font-size:9.5pt;color:#cfe3e1}
 """
 
 
@@ -183,7 +172,7 @@ def render_html(P: list, imgs: dict, whatsapp: str = None) -> str:
                        f'<div class="url">wooplans.com</div></div></section>')
         elif k in ("text", "toc"):
             if k == "toc":
-                inner = "".join(f'<div class="card{" next" if l.startswith("Étape") else ""}"><b>{esc(l.split(" : ")[0])}</b>{esc(l.split(" : ", 1)[1])}</div>' for l in p["body"].split("\n"))
+                inner = "".join(f'<div class="card{" next" if l.startswith("Le Catalogue") else ""}"><b>{esc(l.split(" : ")[0])}</b>{esc(l.split(" : ", 1)[1])}</div>' for l in p["body"].split("\n"))
                 out.append(f'<section class="pg toc"><div class="band"><h2>{esc(p["title"])}</h2><div class="bar"></div></div><div style="height:9mm"></div>{inner}{foot}</section>')
             else:
                 inner = ""
@@ -209,22 +198,17 @@ def render_html(P: list, imgs: dict, whatsapp: str = None) -> str:
                        f'<div class="chips">{chips}</div><div class="est"><small>Estimation du devis</small><b>{esc(p["estimate"])}</b></div>'
                        f'<p class="sent">{esc(p["sentence"])}</p><p class="site">Retrouvez ce modèle sur wooplans.com</p></div>{foot}</section>')
         elif k == "cat1":
-            lots = "".join(f'<div class="lot"><span>{esc(l)}</span>' + (f'<b>{a:,} FCFA</b>'.replace(",", " ") if a else '<i class="mask"></i>') + "</div>" for l, a in p["lots"])
-            rows = "".join(f'<tr><td><b>{esc(r["code"])}</b></td><td>{r["bedrooms"]} ch.</td><td>{r["surface"]} m²</td><td>{r["land_area"]} m²</td><td class="e">{millions(r["estimate_total"])} M</td></tr>' for r in p["cmp"])
-            out.append(f'<section class="pg c1"><div class="top"><span class="tag">FIN DU GUIDE</span><h2>{esc(p["title"])}</h2>'
-                       f'<p>Une fois le modèle choisi, il vous faut le dossier complet. Exemple avec le <b>Duplex D4-006</b> :</p></div>'
+            lots = "".join(f'<div class="lot"><i>{n}</i><span>{esc(l)}</span>' + (f'<b>{a:,} FCFA</b>'.replace(",", " ") if a else '<em class="mask"></em>') + "</div>" for n, (l, a) in enumerate(p["lots"], 1))
+            out.append(f'<section class="pg c1"><div class="top"><span class="tag">LE CATALOGUE</span><h2>{esc(p["title"])}</h2>'
+                       f'<p>Pour chacun de ces modèles, vous pouvez consulter <b>le plan de distribution</b> et <b>le devis, de la fondation jusqu\'aux finitions</b>.</p></div>'
+                       f'<div class="ex">Exemple : Duplex D4-006</div>'
                        f'<div class="plans"><figure><img src="{imgs["plan_rdc"]}"><figcaption>Plan de distribution · RDC</figcaption></figure>'
                        f'<figure><img src="{imgs["plan_etage"]}"><figcaption>Plan de distribution · étage</figcaption></figure></div>'
-                       f'<div class="lock">🔒 Dimensions et détails lisibles dans le Catalogue Premium</div>'
-                       f'<div class="devis"><h3>Devis détaillé par lots</h3><div class="lots">{lots}</div><div class="note">Montants complets dans le Catalogue Premium</div></div>'
-                       f'<div class="cmp"><h3>Comparez des modèles du guide, côte à côte</h3><table>{rows}</table></div>{foot}</section>')
+                       f'<div class="devis"><h3>Devis par lots, de la fondation aux finitions</h3>{lots}<div class="note">🔒 Plans lisibles et montants complets dans le Catalogue Premium</div></div>{foot}</section>')
         elif k == "cat2":
-            lis = [("📐", "Plans de distribution cotés", "niveau par niveau"), ("🧾", "Devis détaillé par lots", "fondation, dalle, charpente et toiture, plomberie et électricité, carrelage…"),
-                   ("⚖️", "Comparaison des modèles", "et de leurs coûts de construction"), ("🏠", "Accès aux modèles du catalogue", "villas et duplex")]
-            rows = "".join(f'<div class="row"><span class="ic">{i}</span><div><b>{esc(t)}</b><small>{esc(d)}</small></div></div>' for i, t, d in lis)
-            strip = "".join(f'<div style="background-image:url(\'{imgs[c]}\')"></div>' for c in ("D4-006", "D5-018", "V4-010"))
-            out.append(f'<section class="pg c2"><div class="strip">{strip}</div><div class="in"><h2>{esc(p["title"])}</h2><div class="bar"></div>'
-                       f'<p class="lead">Du choix de la maison au dossier complet.</p>{rows}<div class="price">Prix actuel : 39 000 FCFA</div>'
+            out.append(f'<section class="pg c2"><div class="bookbox"><img src="{imgs["book"]}"></div><div class="in"><h2>{esc(p["title"])}</h2><div class="bar"></div>'
+                       f'<p class="lead">Près de 100 modèles de villas et de duplex.<br>Pour chacun : le plan de distribution et le devis, de la fondation aux finitions.</p>'
+                       f'<div class="price">Prix actuel : 39 000 FCFA</div>'
                        f'<a class="btn" href="{esc(p["link"])}">Découvrir le Catalogue Premium</a><div class="u">wooplans.com/catalogue-premium</div></div></section>')
     return f"<!doctype html><html lang='fr'><head><meta charset='utf-8'><title>{esc(TITLE)}</title><style>{css}</style></head><body>{''.join(out)}</body></html>"
 
@@ -243,6 +227,69 @@ def prepare_plans(plans_dir: Path, out: Path) -> dict:
         im.filter(ImageFilter.GaussianBlur(4)).save(dest, quality=88)
         res[key] = f"img/{dest.name}"
     return res
+
+
+BOOK_HTML = r'''<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'Poppins';font-weight:700;src:url('%FONT%')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:transparent;width:1000px;height:820px;font-family:'Inter',sans-serif}
+.scene{width:1000px;height:820px;perspective:2400px;position:relative}
+.shadow{position:absolute;left:230px;top:650px;width:600px;height:70px;background:radial-gradient(ellipse at center,rgba(0,0,0,.55),rgba(0,0,0,0) 70%);filter:blur(10px)}
+.book{position:absolute;left:290px;top:120px;width:380px;height:540px;transform-style:preserve-3d;transform:rotateX(-7deg) rotateY(26deg)}
+.face{position:absolute;backface-visibility:hidden}
+.front{inset:0;transform:translateZ(30px);background:#0F5B59;border-radius:3px 8px 8px 3px;overflow:hidden;box-shadow:inset 6px 0 10px rgba(0,0,0,.25)}
+.front .photo{position:absolute;left:0;right:0;top:212px;height:170px;background:url(cover.jpg) center/cover}
+.front .top{position:absolute;left:0;right:0;top:0;height:150px;padding:30px 30px 0;color:#fff}
+.front .logo{width:92px;height:auto;display:block;opacity:.95}
+.front .kick{margin-top:20px;font-family:Poppins;font-weight:700;font-size:12.5px;letter-spacing:3px;color:#F08A2E}
+.front .title{margin-top:6px;font-family:Poppins;font-weight:700;font-size:38px;line-height:1.02;color:#fff}
+.front .bot{position:absolute;left:0;right:0;top:382px;bottom:0;padding:18px 30px;color:#fff}
+.front .bot .sub{font-size:14.5px;line-height:1.4;color:#e4efee}
+.front .bot .badge{position:absolute;right:26px;bottom:20px;background:#F08A2E;color:#fff;font-family:Poppins;font-weight:700;font-size:13px;padding:7px 12px;border-radius:4px}
+.front .bot .url{position:absolute;left:30px;bottom:24px;font-size:13px;letter-spacing:.6px;color:#cfe3e1}
+.front:after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(255,255,255,.14) 0,rgba(255,255,255,0) 22%,rgba(0,0,0,0) 70%,rgba(0,0,0,.18));pointer-events:none}
+.back{inset:0;transform:translateZ(-30px) rotateY(180deg);background:#0b4a48}
+.spine{left:-30px;top:0;width:60px;height:540px;transform:rotateY(-90deg);background:linear-gradient(90deg,#0a4745,#0F5B59 40%,#0c504e);border-radius:3px 0 0 3px;display:flex;align-items:center;justify-content:center}
+.spine span{transform:rotate(90deg);white-space:nowrap;font-family:Poppins;font-weight:700;font-size:15px;letter-spacing:2px;color:#fff}
+.spine i{position:absolute;left:0;right:0;top:34px;height:3px;background:#F08A2E}
+.pages{right:-30px;top:6px;width:60px;height:528px;transform:rotateY(90deg);background:repeating-linear-gradient(90deg,#fbfaf7 0 2px,#e4e1d8 2px 3px)}
+.topf{left:0;top:-30px;width:380px;height:60px;transform:rotateX(90deg);background:repeating-linear-gradient(0deg,#fbfaf7 0 2px,#e4e1d8 2px 3px)}
+.botf{left:0;bottom:-30px;width:380px;height:60px;transform:rotateX(-90deg);background:#d9d6cc}
+</style></head><body><div class="scene"><div class="shadow"></div>
+<div class="book">
+<div class="face back"></div><div class="face pages"></div><div class="face topf"></div><div class="face botf"></div>
+<div class="face spine"><i></i><span>CATALOGUE PREMIUM · WOOPLANS</span></div>
+<div class="face front"><div class="top"><img class="logo" src="logo.png"><div class="kick">CATALOGUE PREMIUM</div><div class="title">Villas<br>&amp; Duplex</div></div>
+<div class="photo"></div><div class="bot"><div class="sub">Plans de distribution et devis,<br>de la fondation aux finitions</div><div class="url">wooplans.com</div><div class="badge">Près de 100 modèles</div></div></div>
+</div></div></body></html>
+'''
+
+BOOK_JS = """const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1000,height:820},deviceScaleFactor:2});
+await p.goto('file://'+process.argv[2]);await p.waitForLoadState('networkidle');
+await p.screenshot({path:process.argv[3],omitBackground:true});await b.close();})()"""
+
+
+def make_book(out: Path, cover_jpg: Path) -> str:
+    """Visuel « livre » du Catalogue Premium (PNG transparent) : couverture dessinée en HTML, rendue en 3D par Chromium."""
+    import os
+    import shutil
+    work = out / "_book"
+    work.mkdir(parents=True, exist_ok=True)
+    shutil.copy(cover_jpg, work / "cover.jpg")
+    shutil.copy(ROOT / "assets" / "brand" / "logo_white.png", work / "logo.png")
+    (work / "book.html").write_text(BOOK_HTML.replace("%FONT%", "file://" + str(ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf")), encoding="utf-8")
+    (work / "shot.js").write_text(BOOK_JS)
+    dest = out / "img" / "book.png"
+    subprocess.run(["node", str(work / "shot.js"), str((work / "book.html").resolve()), str(dest.resolve())], check=True,
+                   env={**os.environ, "NODE_PATH": "/opt/node22/lib/node_modules"})
+    shutil.rmtree(work)
+    from PIL import Image
+    im = Image.open(dest)
+    box = im.getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()
+    pad = 24
+    im.crop((max(0, box[0] - pad), max(0, box[1] - pad), min(im.width, box[2] + pad), min(im.height, box[3] + pad))).save(dest)
+    return "img/book.png"
 
 
 def prepare_images(src: Path, out: Path, codes: list) -> dict:
@@ -290,6 +337,7 @@ def main():
     if not a.plans:
         raise SystemExit("--plans requis (plans du D4-006)")
     imgs.update(prepare_plans(Path(a.plans), out / "img"))
+    imgs["book"] = make_book(out, out / "img" / "D5-018.jpg")
     (out / "guide.html").write_text(render_html(P, imgs, a.whatsapp), encoding="utf-8")
     js = out / "_pdf.js"
     js.write_text(PDF_JS)

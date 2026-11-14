@@ -40,10 +40,10 @@ Chaque modèle = 1 page : rendu de façade (image principale), code, nombre de c
 | 1 | Couverture : titre, façade, wooplans.com |
 | 2 | Comment utiliser ce guide |
 | 3 | « Une estimation, pas un prix ferme » |
-| 4 | Sommaire par tranche de budget, avec une 5e carte « Étape suivante : Catalogue Premium, pages 29 et 30 » |
+| 4 | Sommaire par tranche de budget, avec une 5e carte « Le Catalogue Premium : près de 100 modèles… pages 29 et 30 » |
 | 5–28 | 4 intercalaires de tranche + 20 modèles (5 par tranche) |
-| 29 | **Fin du guide, étape suivante** : plans de distribution floutés et extrait du devis par lots du Duplex D4-006, comparaison de 3 modèles du guide |
-| 30 | **Catalogue Premium WooPlans** : ce qu'il contient, « Prix actuel : 39 000 FCFA », bouton avec lien UTM |
+| 29 | **Le catalogue** : « Nous avons réuni près de 100 modèles de plans dans un catalogue » ; pour chacun, plan de distribution et devis de la fondation aux finitions. Exemple du Duplex D4-006 : plans floutés et devis par lots (une seule ligne chiffrée) |
+| 30 | **Le Catalogue Premium WooPlans présenté comme un livre** (visuel 3D généré par `tools/build_guide.py`), « Prix actuel : 39 000 FCFA », bouton avec lien UTM |
 
 Retirées après relecture de Tao (14 nov.) : pages de conseils (4 vérifications, 5 questions, « ce que ce guide ne montre pas ») et page de contact. Le guide se termine par deux pages dédiées au catalogue.
 

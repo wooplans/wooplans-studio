@@ -45,7 +45,7 @@ Moins de 20 millions FCFA : 5 modèles, de 11 à 19,8 millions FCFA
 De 20 à 40 millions FCFA : 5 modèles, de 20,3 à 30,9 millions FCFA
 De 40 à 60 millions FCFA : 5 modèles, de 42,1 à 58,5 millions FCFA
 Plus de 60 millions FCFA : 5 modèles, de 60,5 à 114,9 millions FCFA
-Étape suivante : plans cotés et devis détaillés dans le Catalogue Premium, pages 29 et 30
+Le Catalogue Premium : près de 100 modèles, avec plan de distribution et devis de la fondation aux finitions, pages 29 et 30
 
 ## Intercalaire 1
 
@@ -295,33 +295,26 @@ Un duplex sur 2 niveaux de 4 chambres, d'une surface de 532 m², prévu pour un 
 
 Retrouvez ce modèle sur wooplans.com
 
-## 29 · Fin du guide, étape suivante
+## 29 · Le catalogue
 
-**Vous avez repéré vos modèles. Voici l'étape suivante.**
+**Nous avons réuni près de 100 modèles de plans dans un catalogue.**
 
-Fin du guide.
-Une fois le modèle choisi, il vous faut le dossier complet. Exemple avec le Duplex D4-006 :
+Le Catalogue Premium WooPlans.
+Pour chacun de ces modèles, vous pouvez consulter le plan de distribution et le devis, de la fondation jusqu'aux finitions.
+
+Exemple avec le Duplex D4-006 :
 - le plan de distribution du rez-de-chaussée, avec ses dimensions ;
 - le plan de distribution de l'étage ;
-- le devis détaillé par lots : fondation, élévation rdc, dalle, élévation étage, charpente et toiture… ;
-Les plans et les montants complets sont dans le Catalogue Premium.
+- le devis par lots : fondation, élévation rdc, dalle, élévation étage, charpente et toiture, crépissage et antivols, portes et fenêtres, plomberie et électricité, plafond et peinture, carrelage.
 
-Comparer des modèles du guide, côte à côte :
-V4-010 : 4 chambres · 148 m² · terrain 400 m² · environ 23,7 millions FCFA
-D4-006 : 4 chambres · 195 m² · terrain 300 m² · environ 42,1 millions FCFA
-D4-003 : 4 chambres · 323 m² · terrain 400 m² · environ 69,8 millions FCFA
+Les plans et les montants complets sont dans le Catalogue Premium.
 
 ## 30 · Catalogue Premium
 
-**Catalogue Premium WooPlans**
+**Le Catalogue Premium WooPlans**
 
-Du choix de la maison au dossier complet.
-
-Le Catalogue Premium WooPlans vous donne :
-- les plans de distribution cotés, niveau par niveau ;
-- le devis détaillé par lots (fondation, dalle, charpente et toiture, plomberie et électricité, carrelage…) ;
-- la comparaison des modèles et de leurs coûts de construction ;
-- l'accès aux modèles du catalogue.
+Près de 100 modèles de villas et de duplex.
+Pour chacun : le plan de distribution et le devis, de la fondation aux finitions.
 
 Prix actuel : 39 000 FCFA
 
