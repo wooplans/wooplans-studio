@@ -33,7 +33,7 @@ def b64(path: Path, w: int, fmt="JPEG") -> str:
     return f"data:image/{fmt.lower()};base64," + base64.b64encode(buf.getvalue()).decode()
 
 
-def build(img: Path, download_url: str) -> str:
+def build(img: Path, download_url: str, pixel: str = "") -> str:
     e = html.escape
     link = build_guide_link("merci")
     book = b64(COUVERTURE, 620)
@@ -48,8 +48,15 @@ def build(img: Path, download_url: str) -> str:
     if bad:
         raise SystemExit(f"check_copy : {bad}")
     st = "".join(f"<li><b>{i}</b><span>{e(s)}</span></li>" for i, s in enumerate(steps, 1))
+    head_extra = ""
+    if pixel:
+        head_extra = ('<meta name="robots" content="noindex,nofollow"><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};'
+                      "if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src='https://connect.facebook.net/en_US/fbevents.js';"
+                      f"s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}}(window,document,'script');fbq('init','{pixel}');fbq('track','PageView');"
+                      "fbq('track','Purchase',{value:1900,currency:'XAF',content_name:'Guide Quelle maison construire avec votre budget'});</script>"
+                      f'<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={pixel}&ev=PageView&noscript=1"></noscript>')
     return f"""<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Merci · Votre guide WooPlans est prêt</title>
+<title>Merci · Votre guide WooPlans est prêt</title>{head_extra}
 <style>
 @font-face{{font-family:'Poppins';font-weight:700;src:url(data:font/ttf;base64,{font}) format('truetype')}}
 :root{{--g:#0F5B59;--o:#F08A2E;--bg:#FAF8F4;--ink:#1d2b2b;--mut:#5c6b6b}}
@@ -97,11 +104,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--img", required=True)
     ap.add_argument("--download-url", default="#")
+    ap.add_argument("--pixel", default="", help="ID du pixel Meta : ajoute le pixel, l'événement Purchase (1 900 XAF) et noindex")
     ap.add_argument("--out", default=str(ROOT / "guide" / "page_merci" / "index.html"))
     a = ap.parse_args()
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(build(Path(a.img), a.download_url), encoding="utf-8")
+    out.write_text(build(Path(a.img), a.download_url, a.pixel), encoding="utf-8")
     print("Page de remerciement :", out, f"{out.stat().st_size / 1e3:.0f} Ko")
 
 

@@ -33,3 +33,10 @@ Lien : `{URL_CHARIOW}` avec `?utm_source=facebook&utm_medium=paid&utm_campaign=g
 2. Événement d'achat du pixel vérifié sur le checkout Chariow.
 3. Accord de Tao sur les 4 aperçus de pub. Activation : campagne `52618106921693`.
 4. « 100 modèles » : le catalogue en ligne en publie 98.
+
+## Page de remerciement hébergée (dépôt `wooplans/wooplans`, branche `ccr-97a6d86d-lrpkla`)
+- URL de redirection Chariow, **une fois la branche fusionnée dans `main` et déployée** : `https://www.wooplans.com/guide-merci` (domaine canonique www).
+- Fichiers : `public/lp/guide-merci.html`, `public/lp/guide-maison-budget-520563a29f24.pdf` (nom non devinable), `src/app/guide-merci/route.ts` (sans index), `src/app/robots.ts`, `tests/guide-merci.test.ts`.
+- La page envoie le pixel Meta : PageView + Purchase 1 900 XAF (pixel `1127775973645411`). Régénération : `python tools/build_page_merci.py --img <out/img> --download-url /lp/<pdf> --pixel 1127775973645411 --out <wooplans>/public/lp/guide-merci.html`.
+- Le déploiement en production ne se fait que depuis `main`, `master` et `ccr-03cfaad2-40szss` (`deploy.yml`) : pousser ma branche ne change pas le site.
+- Numéro WhatsApp : le site configure `237694327885` (wrangler.jsonc), la page affiche `+237 6 94 32 77 85` (numéro donné par Tao). Un des deux est faux.
