@@ -43,6 +43,8 @@ Les plans de distribution cotés et les devis détaillés. Ils sont dans le Cata
 
 ## C. Page de remerciement
 
+*Version construite : `guide/page_merci/index.html` (générée par `tools/build_page_merci.py`, avec `--download-url` pour le lien de téléchargement Chariow).*
+
 **Titre** : Merci. Votre guide est prêt.
 Téléchargez-le avec le bouton ci-dessous. Vous allez aussi le retrouver dans votre messagerie.
 
