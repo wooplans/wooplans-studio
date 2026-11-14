@@ -30,6 +30,7 @@ TRANCHES = [
     ("Plus de 60 millions FCFA", "Les grandes maisons", "60 M +", ["D4-017", "D4-003", "D5-019", "D5-018", "D4-001"]),
 ]
 COVER_CODE = "D4-003"
+COVER_GRID = ["V4-010", "D4-003", "V3-025", "D4-006"]      # rendus 16:9 : jamais rognés dans leurs vignettes
 NB_MODELES = 100          # chiffre de la couverture validée ; le catalogue en ligne en publie 98 au 14 nov. (voir avertissement au build)
 # Devis par lots du Duplex D4-006 (catalogue en ligne) : seule la ligne « Fondation » est montrée avec son montant, le reste est masqué.
 LOTS_EXEMPLE = [("Fondation", 3601300), ("Élévation RDC", None), ("Dalle", None), ("Élévation étage", None), ("Charpente et toiture", None),
@@ -46,7 +47,8 @@ def pages(plans: dict, whatsapp: str = None) -> list:
     link = build_guide_link("page28")
     rng = lambda codes: (millions(min(plans[c]["estimate_total"] for c in codes)), millions(max(plans[c]["estimate_total"] for c in codes)))
     P = [
-        dict(kind="cover", nav="1 · Couverture", title=TITLE, body="20 modèles classés par coût de construction\nwooplans.com"),
+        dict(kind="cover", nav="1 · Couverture", title=TITLE,
+             body="Le guide en images pour choisir votre maison selon votre budget.\n20 modèles de villas et de duplex, classés par coût de construction.\nwooplans.com"),
         dict(kind="text", nav="2 · Comment utiliser ce guide", title="Vous avez un terrain. Quelle maison pour votre budget ?",
              body="C'est toujours la première question. Ce guide y répond en images.\n\nLes 20 modèles sont classés en quatre tranches de budget, des plus accessibles aux plus ambitieux. Pour chacun : une façade, le nombre de chambres, la surface, le terrain prévu et l'estimation du devis.\n\nComment s'en servir :\n1. Repérez la tranche qui correspond à votre budget total.\n2. Regardez les modèles de cette tranche, puis ceux de la tranche voisine.\n3. Notez les 2 ou 3 qui vous plaisent.\n4. Vérifiez que votre terrain a la surface prévue."),
         dict(kind="text", nav="3 · Ce que veut dire « estimation »", title="Une estimation, pas un prix ferme",
@@ -113,12 +115,14 @@ html{font-family:'Inter',sans-serif;color:var(--ink);font-size:10.2pt;line-heigh
 .pg{width:148mm;height:210mm;position:relative;overflow:hidden;page-break-after:always;background:var(--bg)}
 h1,h2,h3,.big{font-family:'Poppins','Inter',sans-serif;font-weight:700;line-height:1.15}
 .foot{position:absolute;left:12mm;right:12mm;bottom:7mm;display:flex;justify-content:space-between;font-size:9pt;color:#6b7a7a}
-.cover{background:var(--g)}
-.cover .ph{position:absolute;inset:0 0 auto 0;height:128mm;background-size:cover;background-position:center}
-.cover .pan{position:absolute;left:0;right:0;bottom:0;height:82mm;background:var(--g);padding:11mm 12mm;color:#fff}
-.cover h1{font-size:27pt}.cover .sub{margin-top:4mm;font-size:14pt;color:#f6d3b0}
-.cover .bar{width:22mm;height:1.6mm;background:var(--o);margin:5mm 0}
-.cover .url{position:absolute;left:12mm;bottom:9mm;font-size:10pt;letter-spacing:.5pt}
+.cover{background:var(--bg)}
+.cover .head{background:var(--g);color:#fff;padding:9mm 12mm 7mm;text-align:center}
+.cover .logo{width:36mm;height:auto;display:block;margin:0 auto 5mm}
+.cover .kick{display:inline-block;background:var(--o);font-family:Poppins;font-weight:700;font-size:8.5pt;letter-spacing:2pt;padding:1.3mm 4mm;border-radius:1mm}
+.cover h1{font-size:25pt;margin-top:5mm;line-height:1.12}.cover .bar{width:22mm;height:1.6mm;background:var(--o);margin:5mm auto}
+.cover .obj{font-size:12.2pt;line-height:1.45;color:#fff;font-weight:600}.cover .obj2{margin-top:2mm;font-size:10.4pt;color:#cfe3e1;line-height:1.45}
+.cover .grid{display:grid;grid-template-columns:1fr 1fr;gap:3mm;padding:6mm 12mm 0}.cover .t{aspect-ratio:16/9;background-size:100% 100%;border-radius:1.5mm;box-shadow:0 .3mm 1.2mm rgba(0,0,0,.18)}
+.cover .strip{position:absolute;left:0;right:0;bottom:0;background:var(--g);color:#e4efee;text-align:center;font-size:10.5pt;padding:4.4mm 0;letter-spacing:.3pt}.cover .strip b{color:var(--o);font-family:Poppins;font-size:12pt}
 .band{background:var(--g);color:#fff;padding:16mm 12mm 10mm}.band h2{font-size:21pt}
 .band .bar{width:18mm;height:1.5mm;background:var(--o);margin-top:5mm}
 .body{padding:11mm 12mm;font-size:13pt;line-height:1.6}.body p{margin-bottom:5mm}
@@ -168,9 +172,11 @@ def render_html(P: list, imgs: dict, whatsapp: str = None) -> str:
         foot = f'<div class="foot"><span>wooplans.com</span><span>{n}</span></div>'
         k = p["kind"]
         if k == "cover":
-            out.append(f'<section class="pg cover"><div class="ph" style="background-image:url(\'{imgs[COVER_CODE]}\')"></div>'
-                       f'<div class="pan"><h1>{esc(p["title"])}</h1><div class="bar"></div><div class="sub">20 modèles classés par coût de construction</div>'
-                       f'<div class="url">wooplans.com</div></div></section>')
+            tiles = "".join(f'<div class="t" style="background-image:url(\'{imgs[c]}\')"></div>' for c in COVER_GRID)
+            lines = p["body"].split("\n")
+            out.append(f'<section class="pg cover"><div class="head"><img class="logo" src="{imgs["logo"]}"><span class="kick">GUIDE EN IMAGES</span>'
+                       f'<h1>{esc(p["title"])}</h1><div class="bar"></div><p class="obj">{esc(lines[0])}</p><p class="obj2">{esc(lines[1])}</p></div>'
+                       f'<div class="grid">{tiles}</div><div class="strip"><b>20</b> modèles · <b>4</b> tranches de budget · wooplans.com</div></section>')
         elif k in ("text", "toc"):
             if k == "toc":
                 inner = "".join(f'<div class="card{" next" if l.startswith("Le Catalogue") else ""}"><b>{esc(l.split(" : ")[0])}</b>{esc(l.split(" : ", 1)[1])}</div>' for l in p["body"].split("\n"))
@@ -300,6 +306,11 @@ def main():
     if not a.plans:
         raise SystemExit("--plans requis (plans du D4-006)")
     imgs.update(prepare_plans(Path(a.plans), out / "img"))
+    from PIL import Image
+    logo = Image.open(ROOT / "assets" / "brand" / "logo_white.png")
+    logo.thumbnail((700, 700))
+    logo.save(out / "img" / "logo.png")
+    imgs["logo"] = "img/logo.png"
     imgs["book"], imgs["book_bg"] = prepare_book(out)
     (out / "guide.html").write_text(render_html(P, imgs, a.whatsapp), encoding="utf-8")
     js = out / "_pdf.js"

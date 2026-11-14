@@ -10,7 +10,8 @@ Lien page 28 : `https://wooplans.com/catalogue-premium?utm_source=guide_pdf&utm_
 
 **Quelle maison construire avec votre budget ?**
 
-20 modèles classés par coût de construction
+Le guide en images pour choisir votre maison selon votre budget.
+20 modèles de villas et de duplex, classés par coût de construction.
 wooplans.com
 
 ## 2 · Comment utiliser ce guide

@@ -54,7 +54,7 @@ Le Catalogue Premium WooPlans réunit les plans de distribution cotés, les devi
 Prix actuel : 39 000 FCFA
 **Bouton** : Découvrir le Catalogue Premium → `https://wooplans.com/catalogue-premium?utm_source=guide_pdf&utm_medium=guide&utm_campaign=guide_budget&utm_content=merci`
 
-Une question sur un modèle ? Écrivez-nous sur WhatsApp : [numéro WhatsApp WooPlans à renseigner]
+Une question sur un modèle ? Écrivez-nous sur WhatsApp : +237 6 94 32 77 85 (https://wa.me/237694327785)
 
 ## D. Suivi après achat
 
@@ -72,7 +72,7 @@ Bonjour, avant de choisir votre maison : votre budget total, votre terrain, vos 
 **Email J+10** · Objet : Où en est votre projet ?
 Bonjour, où en est votre projet de construction ? Si vous hésitez entre deux modèles, le Catalogue Premium permet de les comparer avec leurs plans cotés et leurs devis détaillés. Prix actuel : 39 000 FCFA. https://wooplans.com/catalogue-premium?utm_source=guide_pdf&utm_medium=guide&utm_campaign=guide_budget&utm_content=email_j10
 
-Décision de Tao : qui répond aux messages WhatsApp et aux réponses par email, et sous quel délai. Les messages J+1 et J+2 promettent une réponse sur la fiche du modèle.
+Numéro WhatsApp WooPlans : +237 6 94 32 77 85. Décision de Tao : qui répond aux messages WhatsApp et aux réponses par email, et sous quel délai. Les messages J+1 et J+2 promettent une réponse sur la fiche du modèle.
 
 ## E. Publicités du test (3 variantes)
 
