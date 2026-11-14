@@ -3,7 +3,7 @@ Dépôt du pipeline de contenu WooPlans (Facebook, TikTok, YouTube Shorts → Ca
 Séparé de Kilabi : aucun fichier, compte, voix ni registre Kilabi ici. Aucun contenu WooPlans sur les comptes Kilabi / Secrets D'ébène.
 
 ## Règles
-- Prix, surfaces, devis : uniquement ceux du PDF plans + devis (data/plans.json). Jamais inventés.
+- Prix, surfaces, devis : uniquement ceux du catalogue en ligne (wooplans.com), synchronisés dans data/plans.json (décision de Tao du 14 nov. : les prix en ligne font foi, pas ceux des PDF). Jamais inventés.
 - Dans les vidéos : jamais « l'offre expire dans X heures » ; dire « prix actuel : 39 000 FCFA ». Passer tout texte dans `wooplans.guardrails.check_copy`.
 - Lien du catalogue dans toutes les publications : https://wooplans.com/catalogue-premium (avec UTM : `wooplans/utm.py`). Jamais cpbook.wooplans.com. Adresse affichée dans les vidéos : wooplans.com.
 - Rien n'est programmé sans l'accord de Tao. Il relit la voix off et les scripts du format B avant GitHub. Une vignette est créée avant tout post (`tools/make_thumbnail.py`).

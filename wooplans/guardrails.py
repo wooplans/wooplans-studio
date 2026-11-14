@@ -1,7 +1,7 @@
 """Garde-fous de contenu, appliqués à toute voix off, légende ou texte à l'écran avant envoi.
 
 Règles du projet : jamais « l'offre expire dans X heures » (le minuteur de la page se réinitialise) ;
-aucun prix qui ne vienne pas de la source de vérité (PDF plans + devis, via data/plans.json) ou du prix actuel du catalogue.
+aucun prix qui ne vienne pas de la source de vérité (catalogue en ligne, synchronisé dans data/plans.json) ou du prix actuel du catalogue.
 """
 import re
 from typing import Iterable, List

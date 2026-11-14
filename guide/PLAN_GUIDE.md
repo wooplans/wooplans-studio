@@ -85,7 +85,7 @@ Page 28 : lien `https://wooplans.com/catalogue-premium` avec UTM (`wooplans/utm.
 
 ## 9. Points ouverts
 
-1. **Écart de prix à confirmer par Tao** : après synchronisation, les estimations de **tous les duplex** sont 20 % plus hautes qu'avant (ex. D4-001 : 95 760 000 → 114 912 000 FCFA ; D4-034 : 25 → 30,9 M), et le terrain de nombreux modèles a augmenté (souvent +50 m²). Ce sont les valeurs du catalogue en ligne. Les anciennes vidéos publiées citent peut-être les anciens montants. Ne produire aucun contenu avec les montants des duplex avant confirmation.
+1. **Écart de prix résolu (Tao, 14 nov.)** : les prix du catalogue en ligne font foi, pas ceux des PDF. Après synchronisation, les estimations de **tous les duplex** sont 20 % plus hautes qu'avant (ex. D4-001 : 95 760 000 → 114 912 000 FCFA ; D4-034 : 25 → 30,9 M), et le terrain de nombreux modèles a augmenté (souvent +50 m²). Ce sont les valeurs du catalogue en ligne, validées. Les anciennes vidéos publiées citent peut-être les anciens montants : à vérifier si l'on y revient.
 2. Les ventes de WooPlans passent par le compte pub « MyMusika » : confirmer que cela respecte la séparation avec Kilabi.
 3. Décider si l'estimation est affichée en millions arrondis ou au montant exact du devis.
 4. Vérifier que les rendus des 20 modèles retenus sont propres (originaux sans filigrane).
