@@ -12,3 +12,5 @@ Références : 4 rendus publics du site (V4-010, D4-003, D5-018, V3-025), dans c
 Contrôle : texte exact (accent de MODÈLES compris) sur les trois. Les 4 maisons sont entières sur A et C ; sur B, la maison en haut à droite est légèrement rognée.
 
 Le chiffre « 100 » est celui demandé par Tao. Le catalogue en ligne compte 98 modèles publiés le 14 nov. : publier les 2 suivants avant la mise en vente, ou régénérer avec « 98 ».
+
+**Décision de Tao (14 nov.) : proposition A retenue**, intégrée à la page 30 du guide (`tools/build_guide.py`, fonction `prepare_book`).

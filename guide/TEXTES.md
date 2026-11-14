@@ -45,7 +45,7 @@ Moins de 20 millions FCFA : 5 modèles, de 11 à 19,8 millions FCFA
 De 20 à 40 millions FCFA : 5 modèles, de 20,3 à 30,9 millions FCFA
 De 40 à 60 millions FCFA : 5 modèles, de 42,1 à 58,5 millions FCFA
 Plus de 60 millions FCFA : 5 modèles, de 60,5 à 114,9 millions FCFA
-Le Catalogue Premium : près de 100 modèles, avec plan de distribution et devis de la fondation aux finitions, pages 29 et 30
+Le Catalogue Premium : 100 modèles, avec plan de distribution et devis de la fondation aux finitions, pages 29 et 30
 
 ## Intercalaire 1
 
@@ -297,7 +297,7 @@ Retrouvez ce modèle sur wooplans.com
 
 ## 29 · Le catalogue
 
-**Nous avons réuni près de 100 modèles de plans dans un catalogue.**
+**Nous avons réuni 100 modèles de plans dans un catalogue.**
 
 Le Catalogue Premium WooPlans.
 Pour chacun de ces modèles, vous pouvez consulter le plan de distribution et le devis, de la fondation jusqu'aux finitions.
@@ -313,7 +313,7 @@ Les plans et les montants complets sont dans le Catalogue Premium.
 
 **Le Catalogue Premium WooPlans**
 
-Près de 100 modèles de villas et de duplex.
+100 modèles de villas et de duplex.
 Pour chacun : le plan de distribution et le devis, de la fondation aux finitions.
 
 Prix actuel : 39 000 FCFA

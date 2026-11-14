@@ -30,6 +30,7 @@ TRANCHES = [
     ("Plus de 60 millions FCFA", "Les grandes maisons", "60 M +", ["D4-017", "D4-003", "D5-019", "D5-018", "D4-001"]),
 ]
 COVER_CODE = "D4-003"
+NB_MODELES = 100          # chiffre de la couverture validée ; le catalogue en ligne en publie 98 au 14 nov. (voir avertissement au build)
 # Devis par lots du Duplex D4-006 (catalogue en ligne) : seule la ligne « Fondation » est montrée avec son montant, le reste est masqué.
 LOTS_EXEMPLE = [("Fondation", 3601300), ("Élévation RDC", None), ("Dalle", None), ("Élévation étage", None), ("Charpente et toiture", None),
                 ("Crépissage et antivols", None), ("Portes et fenêtres", None), ("Plomberie et électricité", None), ("Plafond et peinture", None), ("Carrelage", None)]
@@ -52,7 +53,7 @@ def pages(plans: dict, whatsapp: str = None) -> list:
              body="Chaque montant de ce guide est l'estimation du devis WooPlans du modèle, arrondie au dixième de million de FCFA.\n\nLe coût réel d'une construction dépend de votre ville, de l'accès au terrain, de la nature du sol, des finitions que vous choisissez et du moment où vous construisez.\n\nCes montants servent à comparer les modèles entre eux et à situer votre budget. Pour votre projet, demandez toujours un devis local à des professionnels."),
         dict(kind="toc", nav="4 · Sommaire", title="Choisissez votre tranche de budget",
              body="\n".join(f"{t} : {len(c)} modèles, de {rng(c)[0]} à {rng(c)[1]} millions FCFA" for t, _, _, c in TRANCHES)
-             + "\nLe Catalogue Premium : près de 100 modèles, avec plan de distribution et devis de la fondation aux finitions, pages 29 et 30"),
+             + "\nLe Catalogue Premium : 100 modèles, avec plan de distribution et devis de la fondation aux finitions, pages 29 et 30"),
     ]
     for i, (t, sub, badge, codes) in enumerate(TRANCHES):
         lo, hi = rng(codes)
@@ -72,12 +73,12 @@ def pages(plans: dict, whatsapp: str = None) -> list:
                           estimate=est, sentence=sent, body=body))
     lots = LOTS_EXEMPLE
     P += [
-        dict(kind="cat1", nav="29 · Le catalogue", title="Nous avons réuni près de 100 modèles de plans dans un catalogue.", lots=lots,
+        dict(kind="cat1", nav="29 · Le catalogue", title="Nous avons réuni 100 modèles de plans dans un catalogue.", lots=lots,
              body=("Le Catalogue Premium WooPlans.\nPour chacun de ces modèles, vous pouvez consulter le plan de distribution et le devis, de la fondation jusqu'aux finitions.\n\n"
                    "Exemple avec le Duplex D4-006 :\n- le plan de distribution du rez-de-chaussée, avec ses dimensions ;\n- le plan de distribution de l'étage ;\n"
                    "- le devis par lots : " + ", ".join(l[0].lower() for l in lots) + ".\n\nLes plans et les montants complets sont dans le Catalogue Premium.")),
         dict(kind="cat2", nav="30 · Catalogue Premium", title="Le Catalogue Premium WooPlans", link=link,
-             body=("Près de 100 modèles de villas et de duplex.\nPour chacun : le plan de distribution et le devis, de la fondation aux finitions.\n\n"
+             body=("100 modèles de villas et de duplex.\nPour chacun : le plan de distribution et le devis, de la fondation aux finitions.\n\n"
                    "Prix actuel : 39 000 FCFA\n\nBouton : Découvrir le Catalogue Premium\nLien : " + link)),
     ]
     return P
@@ -146,7 +147,7 @@ h1,h2,h3,.big{font-family:'Poppins','Inter',sans-serif;font-weight:700;line-heig
 .lot{display:flex;align-items:center;gap:2.5mm;font-size:8.8pt;padding:.75mm 0;border-bottom:.2mm solid #eef1f1}.lot i{font-style:normal;font-family:Poppins;font-weight:700;color:var(--o);width:5mm;font-size:9pt}.lot span{flex:1}.lot b{color:var(--g)}
 .mask{display:inline-block;width:24mm;height:2.6mm;background:linear-gradient(90deg,#c9d3d3,#e6ecec);border-radius:1mm}
 .devis .note{margin-top:2.2mm;font-size:8pt;color:#8a4a0f;text-align:center}
-.c2{background:radial-gradient(ellipse at 50% 28%,#13706d 0,var(--g) 62%);color:#fff}.c2 .bookbox{height:112mm;display:flex;justify-content:center;align-items:center;padding:8mm 0 2mm}.c2 .bookbox img{max-height:100mm;max-width:118mm}
+.c2{background:var(--g);color:#fff}.c2 .bookbox{height:118mm;display:flex;justify-content:center;align-items:center;padding:4mm 0 0}.c2 .bookbox img{height:114mm;width:auto}
 .c2 .in{padding:0 12mm;text-align:center}.c2 h2{font-size:21pt;color:#fff}.c2 .bar{width:20mm;height:1.6mm;background:var(--o);margin:3mm auto}
 .c2 .lead{font-size:11.2pt;color:#e4efee;line-height:1.5;margin-bottom:4mm}
 .price{display:inline-block;background:#fff;color:var(--g);border-radius:2mm;padding:2.6mm 6mm;font-family:Poppins;font-weight:700;font-size:14pt;margin:0 0 4mm}
@@ -206,8 +207,8 @@ def render_html(P: list, imgs: dict, whatsapp: str = None) -> str:
                        f'<figure><img src="{imgs["plan_etage"]}"><figcaption>Plan de distribution · étage</figcaption></figure></div>'
                        f'<div class="devis"><h3>Devis par lots, de la fondation aux finitions</h3>{lots}<div class="note">🔒 Plans lisibles et montants complets dans le Catalogue Premium</div></div>{foot}</section>')
         elif k == "cat2":
-            out.append(f'<section class="pg c2"><div class="bookbox"><img src="{imgs["book"]}"></div><div class="in"><h2>{esc(p["title"])}</h2><div class="bar"></div>'
-                       f'<p class="lead">Près de 100 modèles de villas et de duplex.<br>Pour chacun : le plan de distribution et le devis, de la fondation aux finitions.</p>'
+            out.append(f'<section class="pg c2" style="background:{imgs["book_bg"]}"><div class="bookbox"><img src="{imgs["book"]}"></div><div class="in"><h2>{esc(p["title"])}</h2><div class="bar"></div>'
+                       f'<p class="lead">100 modèles de villas et de duplex.<br>Pour chacun : le plan de distribution et le devis, de la fondation aux finitions.</p>'
                        f'<div class="price">Prix actuel : 39 000 FCFA</div>'
                        f'<a class="btn" href="{esc(p["link"])}">Découvrir le Catalogue Premium</a><div class="u">wooplans.com/catalogue-premium</div></div></section>')
     return f"<!doctype html><html lang='fr'><head><meta charset='utf-8'><title>{esc(TITLE)}</title><style>{css}</style></head><body>{''.join(out)}</body></html>"
@@ -229,67 +230,27 @@ def prepare_plans(plans_dir: Path, out: Path) -> dict:
     return res
 
 
-BOOK_HTML = r'''<!doctype html><html><head><meta charset="utf-8"><style>
-@font-face{font-family:'Poppins';font-weight:700;src:url('%FONT%')}
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{background:transparent;width:1000px;height:820px;font-family:'Inter',sans-serif}
-.scene{width:1000px;height:820px;perspective:2400px;position:relative}
-.shadow{position:absolute;left:230px;top:650px;width:600px;height:70px;background:radial-gradient(ellipse at center,rgba(0,0,0,.55),rgba(0,0,0,0) 70%);filter:blur(10px)}
-.book{position:absolute;left:290px;top:120px;width:380px;height:540px;transform-style:preserve-3d;transform:rotateX(-7deg) rotateY(26deg)}
-.face{position:absolute;backface-visibility:hidden}
-.front{inset:0;transform:translateZ(30px);background:#0F5B59;border-radius:3px 8px 8px 3px;overflow:hidden;box-shadow:inset 6px 0 10px rgba(0,0,0,.25)}
-.front .photo{position:absolute;left:0;right:0;top:212px;height:170px;background:url(cover.jpg) center/cover}
-.front .top{position:absolute;left:0;right:0;top:0;height:150px;padding:30px 30px 0;color:#fff}
-.front .logo{width:92px;height:auto;display:block;opacity:.95}
-.front .kick{margin-top:20px;font-family:Poppins;font-weight:700;font-size:12.5px;letter-spacing:3px;color:#F08A2E}
-.front .title{margin-top:6px;font-family:Poppins;font-weight:700;font-size:38px;line-height:1.02;color:#fff}
-.front .bot{position:absolute;left:0;right:0;top:382px;bottom:0;padding:18px 30px;color:#fff}
-.front .bot .sub{font-size:14.5px;line-height:1.4;color:#e4efee}
-.front .bot .badge{position:absolute;right:26px;bottom:20px;background:#F08A2E;color:#fff;font-family:Poppins;font-weight:700;font-size:13px;padding:7px 12px;border-radius:4px}
-.front .bot .url{position:absolute;left:30px;bottom:24px;font-size:13px;letter-spacing:.6px;color:#cfe3e1}
-.front:after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(255,255,255,.14) 0,rgba(255,255,255,0) 22%,rgba(0,0,0,0) 70%,rgba(0,0,0,.18));pointer-events:none}
-.back{inset:0;transform:translateZ(-30px) rotateY(180deg);background:#0b4a48}
-.spine{left:-30px;top:0;width:60px;height:540px;transform:rotateY(-90deg);background:linear-gradient(90deg,#0a4745,#0F5B59 40%,#0c504e);border-radius:3px 0 0 3px;display:flex;align-items:center;justify-content:center}
-.spine span{transform:rotate(90deg);white-space:nowrap;font-family:Poppins;font-weight:700;font-size:15px;letter-spacing:2px;color:#fff}
-.spine i{position:absolute;left:0;right:0;top:34px;height:3px;background:#F08A2E}
-.pages{right:-30px;top:6px;width:60px;height:528px;transform:rotateY(90deg);background:repeating-linear-gradient(90deg,#fbfaf7 0 2px,#e4e1d8 2px 3px)}
-.topf{left:0;top:-30px;width:380px;height:60px;transform:rotateX(90deg);background:repeating-linear-gradient(0deg,#fbfaf7 0 2px,#e4e1d8 2px 3px)}
-.botf{left:0;bottom:-30px;width:380px;height:60px;transform:rotateX(-90deg);background:#d9d6cc}
-</style></head><body><div class="scene"><div class="shadow"></div>
-<div class="book">
-<div class="face back"></div><div class="face pages"></div><div class="face topf"></div><div class="face botf"></div>
-<div class="face spine"><i></i><span>CATALOGUE PREMIUM · WOOPLANS</span></div>
-<div class="face front"><div class="top"><img class="logo" src="logo.png"><div class="kick">CATALOGUE PREMIUM</div><div class="title">Villas<br>&amp; Duplex</div></div>
-<div class="photo"></div><div class="bot"><div class="sub">Plans de distribution et devis,<br>de la fondation aux finitions</div><div class="url">wooplans.com</div><div class="badge">Près de 100 modèles</div></div></div>
-</div></div></body></html>
-'''
-
-BOOK_JS = """const {chromium}=require('playwright');
-(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1000,height:820},deviceScaleFactor:2});
-await p.goto('file://'+process.argv[2]);await p.waitForLoadState('networkidle');
-await p.screenshot({path:process.argv[3],omitBackground:true});await b.close();})()"""
+COUVERTURE = ROOT / "guide" / "couvertures" / "A_vert_or.png"       # proposition A, validée par Tao le 14 nov. (Poyo gpt-image-2.6-fixed)
 
 
-def make_book(out: Path, cover_jpg: Path) -> str:
-    """Visuel « livre » du Catalogue Premium (PNG transparent) : couverture dessinée en HTML, rendue en 3D par Chromium."""
-    import os
-    import shutil
-    work = out / "_book"
-    work.mkdir(parents=True, exist_ok=True)
-    shutil.copy(cover_jpg, work / "cover.jpg")
-    shutil.copy(ROOT / "assets" / "brand" / "logo_white.png", work / "logo.png")
-    (work / "book.html").write_text(BOOK_HTML.replace("%FONT%", "file://" + str(ROOT / "visite_plan" / "fonts" / "Poppins-Bold.ttf")), encoding="utf-8")
-    (work / "shot.js").write_text(BOOK_JS)
-    dest = out / "img" / "book.png"
-    subprocess.run(["node", str(work / "shot.js"), str((work / "book.html").resolve()), str(dest.resolve())], check=True,
-                   env={**os.environ, "NODE_PATH": "/opt/node22/lib/node_modules"})
-    shutil.rmtree(work)
+def prepare_book(out: Path) -> tuple:
+    """Couverture validée : bords fondus dans une couleur unie (celle des bords de l'image) pour se fondre dans la page, livre jamais rogné."""
     from PIL import Image
-    im = Image.open(dest)
-    box = im.getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()
-    pad = 24
-    im.crop((max(0, box[0] - pad), max(0, box[1] - pad), min(im.width, box[2] + pad), min(im.height, box[3] + pad))).save(dest)
-    return "img/book.png"
+    import numpy as np
+    im = Image.open(COUVERTURE).convert("RGB")
+    a = np.asarray(im).astype(int)
+    edge = np.concatenate([a[:6].reshape(-1, 3), a[-6:].reshape(-1, 3), a[:, :6].reshape(-1, 3), a[:, -6:].reshape(-1, 3)])
+    bg = tuple(int(v) for v in np.median(edge, axis=0))
+    w, h = im.size
+    feather = 70
+    yy, xx = np.mgrid[0:h, 0:w]
+    d = np.minimum(np.minimum(xx, w - 1 - xx), np.minimum(yy, h - 1 - yy)) / feather
+    t = np.clip(d, 0, 1)
+    alpha = (t * t * (3 - 2 * t))[..., None]
+    canvas = np.array(bg)[None, None, :] * (1 - alpha) + a * alpha
+    dest = out / "img" / "book.jpg"
+    Image.fromarray(canvas.astype("uint8")).save(dest, quality=92)
+    return "img/book.jpg", "#%02x%02x%02x" % bg
 
 
 def prepare_images(src: Path, out: Path, codes: list) -> dict:
@@ -321,6 +282,8 @@ def main():
     a = ap.parse_args()
     plans = {p["code"]: p for p in json.load(open(ROOT / "data" / "plans.json"))}
     P = pages(plans, a.whatsapp)
+    if NB_MODELES > len(plans):
+        print(f"ATTENTION : le guide annonce {NB_MODELES} modèles, le catalogue en publie {len(plans)} (data/plans.json). Ne pas vendre avant d'en publier {NB_MODELES - len(plans)} de plus.", file=sys.stderr)
     bad = check(P)
     if bad:
         raise SystemExit(f"check_copy : {bad}")
@@ -337,7 +300,7 @@ def main():
     if not a.plans:
         raise SystemExit("--plans requis (plans du D4-006)")
     imgs.update(prepare_plans(Path(a.plans), out / "img"))
-    imgs["book"] = make_book(out, out / "img" / "D5-018.jpg")
+    imgs["book"], imgs["book_bg"] = prepare_book(out)
     (out / "guide.html").write_text(render_html(P, imgs, a.whatsapp), encoding="utf-8")
     js = out / "_pdf.js"
     js.write_text(PDF_JS)
