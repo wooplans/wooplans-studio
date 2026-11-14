@@ -58,17 +58,26 @@ seule et le budget peut monter sans perte.
 coté, devis poste par poste. Il précise que l'acheteur reçoit **la version numérique** (espace en ligne + fiches PDF).
 Prix plein : 29 000 FCFA, sans réduction ni compte à rebours.
 
-## Visuels prêts (dossier `creas/`, 1080×1350, Poyo gpt-image-2.6-fixed)
+## Visuels prêts (dossier `creas/`, 1080×1350, Poyo gpt-image-2.6-fixed, logo officiel incrusté)
+
+Modèles retenus (chiffres du site, 14 nov. 2026) : les plus achetés (D5-012 ×3, V4-005 ×2, V3-017 ×2, V4-036,
+V4-032, D4-034…) puis les plus vus en organique (V3-037, V4-036, V3-014, V4-032, D4-040…).
 
 | Fichier | Angle |
 |---|---|
-| crea-1-budget.jpg | Budget (V3-027 : 69 m², 9,9 à 12,1 M FCFA) |
-| crea-2-terrain-300.jpg | Terrain 300 m² (D4-002 : 204 m²) |
-| crea-3-villa-ou-duplex.jpg | Villa V5-006 ou duplex D4-002, même budget |
-| crea-4-guide-telephone.jpg | 100 maisons dans votre téléphone |
-| crea-5-avant-architecte.jpg | Avant de payer un architecte |
-| crea-6-budget-grille.jpg | Une maison par tranche de budget |
-| video-guide-reels-9x16.mp4 | Défilement réel du guide (vidéo de Tao), accroche et prix incrustés, 24 s, sans son |
+| crea-1-budget.jpg | Budget (V3-017 : 120 m², 17,3 à 21,1 M FCFA) |
+| crea-2-terrain-350.jpg | Terrain 350 m² (D5-012 : 5 chambres, 234 m²) |
+| crea-3-villa-ou-duplex.jpg | Villa V4-036 ou duplex D4-040, même budget |
+| crea-4-guide-telephone.jpg | 100 maisons dans votre téléphone (V3-037, V4-005, D5-012, V4-032) |
+| crea-5-avant-architecte.jpg | Avant de payer un architecte (V4-005) |
+| crea-6-preferees-clients.jpg | Les maisons préférées de nos clients, avec leur budget |
+| video-guide-9x16-voix.mp4 | 28 s : accroche, V3-017, D5-012, guide sur le téléphone, montage, écran final ; voix « John Mala », musique Mixkit, sous-titres, 2 filigranes animés (`tools/make_guide_ad.py`) |
 
-Les maisons des visuels sont les rendus réels des fiches (images de référence). Deux textes mal écrits par le
-générateur ont été corrigés à la main (« Terrain conseillé », « 40 à 70 M »).
+Le logo n'est jamais dessiné par le générateur : le logo officiel (assets/brand/logo_white.png, mis à l'horizontale
+comme sur le site) est incrusté ensuite. Textes mal écrits par le générateur corrigés à la main.
+
+Voix off (à valider par Tao) : « Avec votre budget… quelle maison pouvez-vous vraiment construire ? Cette villa de
+trois chambres : environ dix-sept à vingt et un millions de francs CFA. Ce duplex de cinq chambres tient sur un terrain
+de trois cent cinquante mètres carrés. J'ai rangé cent villas et duplex dans un seul guide : classés par budget, avec
+la surface et le terrain qu'il faut. Ouvrez-le sur votre téléphone, et trouvez la maison à votre portée. Le guide est
+à mille neuf cents francs CFA, sur wooplans point com. »
