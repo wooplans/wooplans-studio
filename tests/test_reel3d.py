@@ -6,7 +6,7 @@ from wooplans.reel3d import (OVERLAP, assign_images, bar_length, build_ass, chec
 
 PLANS = load_plans()
 WITH_LAND = next(p for p in PLANS if p.get("land_area") and p["levels"] == 2)
-NO_LAND = next(p for p in PLANS if not p.get("land_area"))
+NO_LAND = {**next(p for p in PLANS if p["levels"] == 1), "land_area": None}   # cas « terrain inconnu » : tous les modèles en ligne ont maintenant un terrain
 VILLA = next(p for p in PLANS if p["levels"] == 1 and p.get("land_area"))
 
 

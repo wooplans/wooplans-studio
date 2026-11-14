@@ -7,8 +7,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 532,
-  "land_area": 700,
-  "estimate_total": 95760000
+  "land_area": 750,
+  "estimate_total": 114912000
  },
  {
   "code": "D4-002",
@@ -18,8 +18,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 204,
-  "land_area": 250,
-  "estimate_total": 36720000
+  "land_area": 300,
+  "estimate_total": 44064000
  },
  {
   "code": "D4-003",
@@ -29,8 +29,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 323,
-  "land_area": 350,
-  "estimate_total": 58140000
+  "land_area": 400,
+  "estimate_total": 69768000
  },
  {
   "code": "D4-004",
@@ -40,8 +40,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 313,
-  "land_area": 350,
-  "estimate_total": 56340000
+  "land_area": 400,
+  "estimate_total": 67608000
  },
  {
   "code": "D4-005",
@@ -51,8 +51,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 212,
-  "land_area": 350,
-  "estimate_total": 38160000
+  "land_area": 400,
+  "estimate_total": 45792000
  },
  {
   "code": "D4-006",
@@ -62,8 +62,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 195,
-  "land_area": 250,
-  "estimate_total": 35100000
+  "land_area": 300,
+  "estimate_total": 42120000
  },
  {
   "code": "D4-007",
@@ -73,8 +73,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 271,
-  "land_area": 350,
-  "estimate_total": 48780000
+  "land_area": 400,
+  "estimate_total": 58536000
  },
  {
   "code": "D4-008",
@@ -84,8 +84,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 219,
-  "land_area": 250,
-  "estimate_total": 39420000
+  "land_area": 300,
+  "estimate_total": 47304000
  },
  {
   "code": "D4-009",
@@ -95,8 +95,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 320,
-  "land_area": 300,
-  "estimate_total": 57600000
+  "land_area": 350,
+  "estimate_total": 69120000
  },
  {
   "code": "D4-010",
@@ -106,8 +106,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 201,
-  "land_area": 250,
-  "estimate_total": 36180000
+  "land_area": 300,
+  "estimate_total": 43416000
  },
  {
   "code": "D4-011",
@@ -117,8 +117,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 500,
-  "land_area": 500,
-  "estimate_total": 90000000
+  "land_area": 550,
+  "estimate_total": 108000000
  },
  {
   "code": "D4-012",
@@ -128,8 +128,19 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 195,
-  "land_area": 200,
-  "estimate_total": 35100000
+  "land_area": 250,
+  "estimate_total": 42120000
+ },
+ {
+  "code": "D4-013",
+  "slug": "duplex-d4-013",
+  "name": "Duplex D4-013",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 324,
+  "land_area": 400,
+  "estimate_total": 69984000
  },
  {
   "code": "D4-015",
@@ -139,8 +150,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 300,
-  "land_area": 350,
-  "estimate_total": 54000000
+  "land_area": 400,
+  "estimate_total": 64800000
  },
  {
   "code": "D4-016",
@@ -150,8 +161,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 287,
-  "land_area": 450,
-  "estimate_total": 51660000
+  "land_area": 500,
+  "estimate_total": 61992000
  },
  {
   "code": "D4-017",
@@ -161,8 +172,19 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 280,
-  "land_area": 300,
-  "estimate_total": 50400000
+  "land_area": 350,
+  "estimate_total": 60480000
+ },
+ {
+  "code": "D4-018",
+  "slug": "duplex-d4-018",
+  "name": "Duplex D4-018",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 304,
+  "land_area": 400,
+  "estimate_total": 65664000
  },
  {
   "code": "D4-019",
@@ -172,8 +194,30 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 338,
+  "land_area": 400,
+  "estimate_total": 73008000
+ },
+ {
+  "code": "D4-020",
+  "slug": "duplex-d4-020",
+  "name": "Duplex D4-020",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 266,
   "land_area": 350,
-  "estimate_total": 60840000
+  "estimate_total": 57456000
+ },
+ {
+  "code": "D4-024",
+  "slug": "duplex-d4-024",
+  "name": "Duplex D4-024",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 362,
+  "land_area": 550,
+  "estimate_total": 78192000
  },
  {
   "code": "D4-026",
@@ -183,8 +227,19 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 235,
-  "land_area": 300,
-  "estimate_total": 42300000
+  "land_area": 350,
+  "estimate_total": 50760000
+ },
+ {
+  "code": "D4-032",
+  "slug": "duplex-d4-032",
+  "name": "Duplex D4-032",
+  "category": "duplex",
+  "bedrooms": 4,
+  "levels": 2,
+  "surface": 198,
+  "land_area": 350,
+  "estimate_total": 42768000
  },
  {
   "code": "D4-033",
@@ -194,8 +249,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 226,
-  "land_area": 250,
-  "estimate_total": 40680000
+  "land_area": 300,
+  "estimate_total": 48816000
  },
  {
   "code": "D4-034",
@@ -205,8 +260,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 143,
-  "land_area": null,
-  "estimate_total": 25740000
+  "land_area": 250,
+  "estimate_total": 30888000
  },
  {
   "code": "D4-035",
@@ -215,9 +270,9 @@
   "category": "duplex",
   "bedrooms": 4,
   "levels": 2,
-  "surface": 210,
-  "land_area": 150,
-  "estimate_total": 37800000
+  "surface": 140,
+  "land_area": 200,
+  "estimate_total": 30240000
  },
  {
   "code": "D4-036",
@@ -227,8 +282,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 127,
-  "land_area": 200,
-  "estimate_total": 22860000
+  "land_area": 250,
+  "estimate_total": 27432000
  },
  {
   "code": "D4-040",
@@ -238,8 +293,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 155,
-  "land_area": null,
-  "estimate_total": 27900000
+  "land_area": 250,
+  "estimate_total": 33480000
  },
  {
   "code": "D4-043",
@@ -249,8 +304,8 @@
   "bedrooms": 4,
   "levels": 2,
   "surface": 318,
-  "land_area": 300,
-  "estimate_total": 57240000
+  "land_area": 350,
+  "estimate_total": 68688000
  },
  {
   "code": "D5-001",
@@ -260,8 +315,8 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 325,
-  "land_area": 400,
-  "estimate_total": 58500000
+  "land_area": 450,
+  "estimate_total": 70200000
  },
  {
   "code": "D5-002",
@@ -271,8 +326,8 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 490,
-  "land_area": 400,
-  "estimate_total": 88200000
+  "land_area": 450,
+  "estimate_total": 105840000
  },
  {
   "code": "D5-003",
@@ -283,7 +338,7 @@
   "levels": 2,
   "surface": 320,
   "land_area": 400,
-  "estimate_total": 57600000
+  "estimate_total": 69120000
  },
  {
   "code": "D5-005",
@@ -293,8 +348,8 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 512,
-  "land_area": 550,
-  "estimate_total": 92160000
+  "land_area": 600,
+  "estimate_total": 110592000
  },
  {
   "code": "D5-011",
@@ -304,8 +359,8 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 326,
-  "land_area": 400,
-  "estimate_total": 58680000
+  "land_area": 450,
+  "estimate_total": 70416000
  },
  {
   "code": "D5-012",
@@ -315,8 +370,41 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 234,
-  "land_area": 300,
+  "land_area": 350,
   "estimate_total": 50544000
+ },
+ {
+  "code": "D5-013",
+  "slug": "duplex-d5-013",
+  "name": "Duplex D5-013",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 340,
+  "land_area": 450,
+  "estimate_total": 73440000
+ },
+ {
+  "code": "D5-014",
+  "slug": "duplex-d5-014",
+  "name": "Duplex D5-014",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 364,
+  "land_area": 450,
+  "estimate_total": 78624000
+ },
+ {
+  "code": "D5-015",
+  "slug": "duplex-d5-015",
+  "name": "Duplex D5-015",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 203,
+  "land_area": 300,
+  "estimate_total": 43848000
  },
  {
   "code": "D5-016",
@@ -326,8 +414,8 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 219,
-  "land_area": 250,
-  "estimate_total": 39420000
+  "land_area": 300,
+  "estimate_total": 47304000
  },
  {
   "code": "D5-018",
@@ -337,8 +425,19 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 480,
+  "land_area": 450,
+  "estimate_total": 103680000
+ },
+ {
+  "code": "D5-019",
+  "slug": "duplex-d5-019",
+  "name": "Duplex D5-019",
+  "category": "duplex",
+  "bedrooms": 5,
+  "levels": 2,
+  "surface": 401,
   "land_area": 400,
-  "estimate_total": 86400000
+  "estimate_total": 86616000
  },
  {
   "code": "D5-020",
@@ -348,8 +447,19 @@
   "bedrooms": 5,
   "levels": 2,
   "surface": 307,
-  "land_area": 400,
-  "estimate_total": 55260000
+  "land_area": 450,
+  "estimate_total": 66312000
+ },
+ {
+  "code": "V2-001",
+  "slug": "villa-v2-001",
+  "name": "Villa V2-001",
+  "category": "villa",
+  "bedrooms": 2,
+  "levels": 1,
+  "surface": 89,
+  "land_area": 250,
+  "estimate_total": 14240000
  },
  {
   "code": "V3-001",
@@ -359,7 +469,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 92,
-  "land_area": null,
+  "land_area": 250,
   "estimate_total": 11776000
  },
  {
@@ -370,7 +480,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 98,
-  "land_area": null,
+  "land_area": 300,
   "estimate_total": 12544000
  },
  {
@@ -381,7 +491,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 99,
-  "land_area": null,
+  "land_area": 300,
   "estimate_total": 15840000
  },
  {
@@ -392,7 +502,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 110,
-  "land_area": null,
+  "land_area": 300,
   "estimate_total": 17600000
  },
  {
@@ -403,8 +513,85 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 96,
-  "land_area": null,
+  "land_area": 250,
   "estimate_total": 12288000
+ },
+ {
+  "code": "V3-006",
+  "slug": "villa-v3-006",
+  "name": "Villa V3-006",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 107,
+  "land_area": 300,
+  "estimate_total": 17120000
+ },
+ {
+  "code": "V3-007",
+  "slug": "villa-v3-007",
+  "name": "Villa V3-007",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 149,
+  "land_area": 400,
+  "estimate_total": 23840000
+ },
+ {
+  "code": "V3-008",
+  "slug": "villa-v3-008",
+  "name": "Villa V3-008",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 189,
+  "land_area": 450,
+  "estimate_total": 30240000
+ },
+ {
+  "code": "V3-009",
+  "slug": "villa-v3-009",
+  "name": "Villa V3-009",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 127,
+  "land_area": 350,
+  "estimate_total": 20320000
+ },
+ {
+  "code": "V3-014",
+  "slug": "villa-v3-014",
+  "name": "Villa V3-014",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 201,
+  "land_area": 450,
+  "estimate_total": 32160000
+ },
+ {
+  "code": "V3-015",
+  "slug": "villa-v3-015",
+  "name": "Villa V3-015",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 120,
+  "land_area": 350,
+  "estimate_total": 19200000
+ },
+ {
+  "code": "V3-017",
+  "slug": "villa-v3-017",
+  "name": "Villa V3-017",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 120,
+  "land_area": 350,
+  "estimate_total": 19200000
  },
  {
   "code": "V3-018",
@@ -414,8 +601,19 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 127,
-  "land_area": null,
+  "land_area": 350,
   "estimate_total": 20320000
+ },
+ {
+  "code": "V3-021",
+  "slug": "villa-v3-021",
+  "name": "Villa V3-021",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 149,
+  "land_area": 400,
+  "estimate_total": 23840000
  },
  {
   "code": "V3-022",
@@ -425,7 +623,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 89,
-  "land_area": 250,
+  "land_area": 300,
   "estimate_total": 14240000
  },
  {
@@ -436,8 +634,63 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 108,
-  "land_area": 250,
+  "land_area": 300,
   "estimate_total": 17280000
+ },
+ {
+  "code": "V3-026",
+  "slug": "villa-v3-026",
+  "name": "Villa V3-026",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 148,
+  "land_area": 350,
+  "estimate_total": 23680000
+ },
+ {
+  "code": "V3-027",
+  "slug": "villa-v3-027",
+  "name": "Villa V3-027",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 69,
+  "land_area": 250,
+  "estimate_total": 11040000
+ },
+ {
+  "code": "V3-028",
+  "slug": "villa-v3-028",
+  "name": "Villa V3-028",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 119,
+  "land_area": 350,
+  "estimate_total": 19040000
+ },
+ {
+  "code": "V3-029",
+  "slug": "villa-v3-029",
+  "name": "Villa V3-029",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 215,
+  "land_area": 500,
+  "estimate_total": 34400000
+ },
+ {
+  "code": "V3-030",
+  "slug": "villa-v3-030",
+  "name": "Villa V3-030",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 144,
+  "land_area": 350,
+  "estimate_total": 23040000
  },
  {
   "code": "V3-037",
@@ -447,7 +700,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 164,
-  "land_area": null,
+  "land_area": 400,
   "estimate_total": 26240000
  },
  {
@@ -458,7 +711,7 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 124,
-  "land_area": 300,
+  "land_area": 350,
   "estimate_total": 19840000
  },
  {
@@ -469,8 +722,19 @@
   "bedrooms": 3,
   "levels": 1,
   "surface": 122,
-  "land_area": 300,
+  "land_area": 350,
   "estimate_total": 19520000
+ },
+ {
+  "code": "V3-043",
+  "slug": "villa-v3-043",
+  "name": "Villa V3-043",
+  "category": "villa",
+  "bedrooms": 3,
+  "levels": 1,
+  "surface": 144,
+  "land_area": 450,
+  "estimate_total": 23040000
  },
  {
   "code": "V4-001",
@@ -480,7 +744,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 116,
-  "land_area": 250,
+  "land_area": 300,
   "estimate_total": 18560000
  },
  {
@@ -491,7 +755,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 155,
-  "land_area": 350,
+  "land_area": 400,
   "estimate_total": 24800000
  },
  {
@@ -502,7 +766,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 144,
-  "land_area": 350,
+  "land_area": 400,
   "estimate_total": 23040000
  },
  {
@@ -513,7 +777,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 124,
-  "land_area": 300,
+  "land_area": 350,
   "estimate_total": 19840000
  },
  {
@@ -524,7 +788,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 201,
-  "land_area": 450,
+  "land_area": 500,
   "estimate_total": 32160000
  },
  {
@@ -535,7 +799,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 120,
-  "land_area": 300,
+  "land_area": 350,
   "estimate_total": 19200000
  },
  {
@@ -546,7 +810,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 136,
-  "land_area": 300,
+  "land_area": 350,
   "estimate_total": 21760000
  },
  {
@@ -557,7 +821,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 128,
-  "land_area": 300,
+  "land_area": 350,
   "estimate_total": 20480000
  },
  {
@@ -568,7 +832,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 184,
-  "land_area": 400,
+  "land_area": 450,
   "estimate_total": 29440000
  },
  {
@@ -579,8 +843,151 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 148,
-  "land_area": 350,
+  "land_area": 400,
   "estimate_total": 23680000
+ },
+ {
+  "code": "V4-013",
+  "slug": "villa-v4-013",
+  "name": "Villa V4-013",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 147,
+  "land_area": 450,
+  "estimate_total": 23520000
+ },
+ {
+  "code": "V4-014",
+  "slug": "villa-v4-014",
+  "name": "Villa V4-014",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 147,
+  "land_area": 350,
+  "estimate_total": 23520000
+ },
+ {
+  "code": "V4-016",
+  "slug": "villa-v4-016",
+  "name": "Villa V4-016",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 221,
+  "land_area": 500,
+  "estimate_total": 35360000
+ },
+ {
+  "code": "V4-019",
+  "slug": "villa-v4-019",
+  "name": "Villa V4-019",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 158,
+  "land_area": 400,
+  "estimate_total": 25280000
+ },
+ {
+  "code": "V4-022",
+  "slug": "villa-v4-022",
+  "name": "Villa V4-022",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 174,
+  "land_area": 400,
+  "estimate_total": 27840000
+ },
+ {
+  "code": "V4-024",
+  "slug": "villa-v4-024",
+  "name": "Villa V4-024",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 168,
+  "land_area": 450,
+  "estimate_total": 26880000
+ },
+ {
+  "code": "V4-025",
+  "slug": "villa-v4-025",
+  "name": "Villa V4-025",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 189,
+  "land_area": 450,
+  "estimate_total": 30240000
+ },
+ {
+  "code": "V4-026",
+  "slug": "villa-v4-026",
+  "name": "Villa V4-026",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 222,
+  "land_area": 500,
+  "estimate_total": 35520000
+ },
+ {
+  "code": "V4-028",
+  "slug": "villa-v4-028",
+  "name": "Villa V4-028",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 151,
+  "land_area": 400,
+  "estimate_total": 24160000
+ },
+ {
+  "code": "V4-029",
+  "slug": "villa-v4-029",
+  "name": "Villa V4-029",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 122,
+  "land_area": 300,
+  "estimate_total": 19520000
+ },
+ {
+  "code": "V4-030",
+  "slug": "villa-v4-030",
+  "name": "Villa V4-030",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 132,
+  "land_area": 300,
+  "estimate_total": 21120000
+ },
+ {
+  "code": "V4-032",
+  "slug": "villa-v4-032",
+  "name": "Villa V4-032",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 177,
+  "land_area": 400,
+  "estimate_total": 28320000
+ },
+ {
+  "code": "V4-034",
+  "slug": "villa-v4-034",
+  "name": "Villa V4-034",
+  "category": "villa",
+  "bedrooms": 4,
+  "levels": 1,
+  "surface": 146,
+  "land_area": 350,
+  "estimate_total": 23360000
  },
  {
   "code": "V4-036",
@@ -590,7 +997,7 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 233,
-  "land_area": 400,
+  "land_area": 450,
   "estimate_total": 37280000
  },
  {
@@ -601,7 +1008,73 @@
   "bedrooms": 4,
   "levels": 1,
   "surface": 177,
-  "land_area": 400,
+  "land_area": 450,
   "estimate_total": 28320000
+ },
+ {
+  "code": "V5-002",
+  "slug": "villa-v5-002",
+  "name": "Villa V5-002",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 224,
+  "land_area": 500,
+  "estimate_total": 35840000
+ },
+ {
+  "code": "V5-005",
+  "slug": "villa-v5-005",
+  "name": "Villa V5-005",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 224,
+  "land_area": 500,
+  "estimate_total": 35840000
+ },
+ {
+  "code": "V5-006",
+  "slug": "villa-v5-006",
+  "name": "Villa V5-006",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 253,
+  "land_area": 600,
+  "estimate_total": 40480000
+ },
+ {
+  "code": "V5-007",
+  "slug": "villa-v5-007",
+  "name": "Villa V5-007",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 157,
+  "land_area": 450,
+  "estimate_total": 25120000
+ },
+ {
+  "code": "V5-008",
+  "slug": "villa-v5-008",
+  "name": "Villa V5-008",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 159,
+  "land_area": 450,
+  "estimate_total": 25440000
+ },
+ {
+  "code": "V5-009",
+  "slug": "villa-v5-009",
+  "name": "Villa V5-009",
+  "category": "villa",
+  "bedrooms": 5,
+  "levels": 1,
+  "surface": 152,
+  "land_area": 400,
+  "estimate_total": 24320000
  }
 ]

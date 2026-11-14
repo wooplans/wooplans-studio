@@ -1,36 +1,33 @@
 # Guide d'entrée payant (tripwire) : plan de production
 
-Statut : **proposition, rien n'est produit, programmé ni publié**. Validation de Tao requise avant toute étape.
+Statut : **titre et prix décidés (14 nov.), rien n'est produit, programmé ni publié**. Validation de Tao requise avant toute étape de production.
+
+Décisions : titre n°1 ; prix du guide **1 900 FCFA** (un seul prix, pas de test 1 500 / 2 000).
 
 ## 1. Rôle du guide dans l'entonnoir
 
-Pub Facebook → page de vente du guide → achat (1 500 ou 2 000 FCFA, test) → page de remerciement avec offre catalogue → suivi WhatsApp/email → Catalogue Premium 39 000 FCFA (ou plan et devis d'un modèle).
+Pub Facebook → page de vente du guide → achat (1 900 FCFA) → page de remerciement avec offre catalogue → suivi WhatsApp/email → Catalogue Premium 39 000 FCFA (ou plan et devis d'un modèle).
 
 Le guide **inspire et oriente** (« quelle maison pour mon budget »). Il ne remplace pas le catalogue : plans cotés, devis détaillés et comparaison restent dans le Catalogue Premium.
 
-## 2. Thème et titre (à tester en pub)
+## 2. Thème et titre
 
-Thème retenu : **le budget**, car c'est la première question de quelqu'un qui a un terrain.
+Thème : **le budget**, première question de quelqu'un qui a un terrain.
 
-Titres candidats (à passer dans `wooplans.guardrails.check_copy`) :
-1. « Quelle maison construire avec votre budget ? 20 modèles classés par coût de construction »
-2. « J'ai un terrain : quelle maison puis-je construire ? Le guide en images »
-3. « 20 maisons, 20 budgets : trouvez la vôtre avant de construire »
-
-Recommandation : titre 1, le plus concret (le chiffre et le budget sont dans le titre).
+Titre retenu : **« Quelle maison construire avec votre budget ? 20 modèles classés par coût de construction »** (passe `check_copy`).
 
 ## 3. Contenu : 20 modèles classés par tranche de budget
 
 Source unique : `data/plans.json` (champ `estimate_total`, issu du devis du PDF). **Aucune fourchette inventée** : on affiche « environ X millions FCFA (estimation du devis) », jamais une plage calculée.
 
-Répartition actuelle de `plans.json` (55 modèles) :
+Répartition de `plans.json` après synchronisation avec le catalogue en ligne (98 modèles publiés) :
 
 | Tranche | Modèles disponibles | Types | Estimation min–max |
 |---|---|---|---|
-| Moins de 20 M FCFA | 12 | villas 3 et 4 chambres | 11,8 – 19,8 M |
-| 20 à 40 M FCFA | 22 | villas 3/4 ch., duplex 4/5 ch. | 20,3 – 39,4 M |
-| 40 à 60 M FCFA | 15 | duplex 4 et 5 chambres | 40,7 – 58,7 M |
-| Plus de 60 M FCFA | 6 | duplex 4 et 5 chambres | 60,8 – 95,8 M |
+| Moins de 20 M FCFA | 19 | villas 2, 3 et 4 chambres | 11,0 – 19,8 M |
+| 20 à 40 M FCFA | 41 | villas 3, 4 et 5 ch., duplex 4 ch. | 20,3 – 37,3 M |
+| 40 à 60 M FCFA | 15 | duplex 4 et 5 ch., villa 5 ch. | 40,5 – 58,5 M |
+| Plus de 60 M FCFA | 23 | duplex 4 et 5 chambres | 60,5 – 114,9 M |
 
 Sélection proposée : **5 modèles par tranche = 20 modèles**, choisis pour varier chambres, surface et type. La sélection finale se fait parmi les modèles qui ont de beaux rendus propres (à vérifier avec `list_plan_files`, originaux sans filigrane).
 
@@ -56,7 +53,7 @@ Page 28 : lien `https://wooplans.com/catalogue-premium` avec UTM (`wooplans/utm.
 ## 5. Page de vente et paiement
 
 - Page de vente dédiée (hors page catalogue), avec 4 à 6 aperçus de pages, le prix, le bouton de paiement (Chariow).
-- Prix testés : 1 500 et 2 000 FCFA. Vérifier les frais Chariow et mobile money à ce montant.
+- Prix : **1 900 FCFA**. Vérifier les frais Chariow et mobile money à ce montant.
 - Collecter à l'achat : **numéro WhatsApp** (en plus de l'email).
 - Page de remerciement : téléchargement du guide **et** offre catalogue immédiate (à vérifier : offre complémentaire Chariow au paiement).
 
@@ -72,8 +69,8 @@ Page 28 : lien `https://wooplans.com/catalogue-premium` avec UTM (`wooplans/utm.
 
 - Réparer le suivi des liens (ventes « non tracées ») avant de lancer.
 - Événement d'achat Meta actif pour la campagne guide.
-- Critères : coût par achat du guide inférieur ou égal à son prix (seuil à 2 000 FCFA : au moins 1,7 % des clics) ; au moins 3 % des acheteurs passent à un achat supérieur en 30 jours.
-- Budget test : environ 35 $ par prix.
+- Critères : coût par achat du guide inférieur ou égal à son prix (seuil à 1 900 FCFA : au moins 1,8 % des clics, avec un clic à environ 34 FCFA) ; au moins 3 % des acheteurs passent à un achat supérieur en 30 jours.
+- Budget test : environ 35 $ à 70 $ (1 000 à 2 000 clics) pour un seul prix.
 
 ## 8. Production (si Tao valide)
 
@@ -88,7 +85,7 @@ Page 28 : lien `https://wooplans.com/catalogue-premium` avec UTM (`wooplans/utm.
 
 ## 9. Points ouverts
 
-1. `data/plans.json` ne contient pas tous les modèles vendus (absents : V3-009, V3-014, V3-017, V4-032, D4-020…). À synchroniser avec le catalogue avant de choisir les 20 modèles.
+1. **Écart de prix à confirmer par Tao** : après synchronisation, les estimations de **tous les duplex** sont 20 % plus hautes qu'avant (ex. D4-001 : 95 760 000 → 114 912 000 FCFA ; D4-034 : 25 → 30,9 M), et le terrain de nombreux modèles a augmenté (souvent +50 m²). Ce sont les valeurs du catalogue en ligne. Les anciennes vidéos publiées citent peut-être les anciens montants. Ne produire aucun contenu avec les montants des duplex avant confirmation.
 2. Les ventes de WooPlans passent par le compte pub « MyMusika » : confirmer que cela respecte la séparation avec Kilabi.
 3. Décider si l'estimation est affichée en millions arrondis ou au montant exact du devis.
-4. Choix du titre et du prix de départ (1 500 ou 2 000 FCFA).
+4. Vérifier que les rendus des 20 modèles retenus sont propres (originaux sans filigrane).
