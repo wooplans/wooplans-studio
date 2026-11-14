@@ -60,7 +60,7 @@ Les premières maisons.
 3 chambres · plain-pied · 69 m² · terrain prévu : 250 m²
 Estimation du devis : environ 11 millions FCFA
 
-Une villa de plain-pied de 3 chambres, d'une surface de 69 m², prévu pour un terrain de 250 m².
+Une villa de plain-pied de 3 chambres, d'une surface de 69 m², prévue pour un terrain de 250 m².
 
 Retrouvez ce modèle sur wooplans.com
 
@@ -71,7 +71,7 @@ Retrouvez ce modèle sur wooplans.com
 3 chambres · plain-pied · 98 m² · terrain prévu : 300 m²
 Estimation du devis : environ 12,5 millions FCFA
 
-Une villa de plain-pied de 3 chambres, d'une surface de 98 m², prévu pour un terrain de 300 m².
+Une villa de plain-pied de 3 chambres, d'une surface de 98 m², prévue pour un terrain de 300 m².
 
 Retrouvez ce modèle sur wooplans.com
 
@@ -82,7 +82,7 @@ Retrouvez ce modèle sur wooplans.com
 3 chambres · plain-pied · 99 m² · terrain prévu : 300 m²
 Estimation du devis : environ 15,8 millions FCFA
 
-Une villa de plain-pied de 3 chambres, d'une surface de 99 m², prévu pour un terrain de 300 m².
+Une villa de plain-pied de 3 chambres, d'une surface de 99 m², prévue pour un terrain de 300 m².
 
 Retrouvez ce modèle sur wooplans.com
 
@@ -93,7 +93,7 @@ Retrouvez ce modèle sur wooplans.com
 3 chambres · plain-pied · 108 m² · terrain prévu : 300 m²
 Estimation du devis : environ 17,3 millions FCFA
 
-Une villa de plain-pied de 3 chambres, d'une surface de 108 m², prévu pour un terrain de 300 m².
+Une villa de plain-pied de 3 chambres, d'une surface de 108 m², prévue pour un terrain de 300 m².
 
 Retrouvez ce modèle sur wooplans.com
 
@@ -104,7 +104,7 @@ Retrouvez ce modèle sur wooplans.com
 3 chambres · plain-pied · 124 m² · terrain prévu : 350 m²
 Estimation du devis : environ 19,8 millions FCFA
 
-Une villa de plain-pied de 3 chambres, d'une surface de 124 m², prévu pour un terrain de 350 m².
+Une villa de plain-pied de 3 chambres, d'une surface de 124 m², prévue pour un terrain de 350 m².
 
 Retrouvez ce modèle sur wooplans.com
 
@@ -122,7 +122,7 @@ Villas plus grandes et premiers duplex.
 3 chambres · plain-pied · 127 m² · terrain prévu : 350 m²
 Estimation du devis : environ 20,3 millions FCFA
 
-Une villa de plain-pied de 3 chambres, d'une surface de 127 m², prévu pour un terrain de 350 m².
+Une villa de plain-pied de 3 chambres, d'une surface de 127 m², prévue pour un terrain de 350 m².
 
 Retrouvez ce modèle sur wooplans.com
 
@@ -133,7 +133,7 @@ Retrouvez ce modèle sur wooplans.com
 4 chambres · plain-pied · 148 m² · terrain prévu : 400 m²
 Estimation du devis : environ 23,7 millions FCFA
 
-Une villa de plain-pied de 4 chambres, d'une surface de 148 m², prévu pour un terrain de 400 m².
+Une villa de plain-pied de 4 chambres, d'une surface de 148 m², prévue pour un terrain de 400 m².
 
 Retrouvez ce modèle sur wooplans.com
 
@@ -144,7 +144,7 @@ Retrouvez ce modèle sur wooplans.com
 5 chambres · plain-pied · 159 m² · terrain prévu : 450 m²
 Estimation du devis : environ 25,4 millions FCFA
 
-Une villa de plain-pied de 5 chambres, d'une surface de 159 m², prévu pour un terrain de 450 m².
+Une villa de plain-pied de 5 chambres, d'une surface de 159 m², prévue pour un terrain de 450 m².
 
 Retrouvez ce modèle sur wooplans.com
 
