@@ -24,4 +24,4 @@ Prix : 29 000 FCFA, paiement unique, par Mobile Money : https://wooplans.com/cat
 ## Message 5 : pour un terrain et un démarrage sous 6 mois
 Quand votre modèle est choisi, nos architectes l'adaptent à votre terrain : plans complets à prix fixe, 99 000 FCFA pour une villa, 199 000 FCFA pour un duplex. Vous voulez qu'on en parle ?
 
-Rappels : pas de fausse urgence ni de compte à rebours, prix plein du catalogue, aucune réduction.
+Rappels : pas de fausse urgence, prix plein du catalogue, aucune réduction.
