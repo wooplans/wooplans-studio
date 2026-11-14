@@ -40,3 +40,17 @@ Lien : `{URL_CHARIOW}` avec `?utm_source=facebook&utm_medium=paid&utm_campaign=g
 - La page envoie le pixel Meta : PageView + Purchase 1 900 XAF (pixel `1127775973645411`). Régénération : `python tools/build_page_merci.py --img <out/img> --download-url /lp/<pdf> --pixel 1127775973645411 --out <wooplans>/public/lp/guide-merci.html`.
 - Le déploiement en production ne se fait que depuis `main`, `master` et `ccr-03cfaad2-40szss` (`deploy.yml`) : pousser ma branche ne change pas le site.
 - Numéro WhatsApp : le site configure `237694327885` (wrangler.jsonc), la page affiche `+237 6 94 32 77 85` (numéro donné par Tao). Un des deux est faux.
+
+## Pubs créées (14 nov., toutes en PAUSE ; lien Chariow `https://wooplans.mychariow.shop/prd_cyvad4d0`, UTM v1 à v4)
+| Pub | ID pub | ID création |
+|---|---|---|
+| Pub 1 · budget · image | `52618116859093` | `1165902085788189` |
+| Pub 2 · grille · image | `52618116864293` | `1908196117262288` |
+| Pub 3 · tranche · image | `52618116869293` | `1130582602888603` |
+| Pub 4 · carrousel (5 cartes) | `52618116874693` | `1181893604349143` |
+
+État Meta : « en cours de traitement » (revue), statut PAUSED. Activation = campagne `52618106921693`, après accord de Tao.
+
+## Produit Chariow `prd_cyvad4d0` : à corriger avant d'activer
+- Nom « Guide 1 » → « Quelle maison construire avec votre budget ? (guide PDF) » ; description avec faute (« choisir ça maison ») ; type **service**, aucun fichier joint ; bouton « Hire service » ; `redirect_url` vide.
+- Redirection à saisir : `https://www.wooplans.com/guide-merci` (après fusion de la PR #85 du dépôt du site).
