@@ -1,8 +1,8 @@
 # Guide : textes des pages
 
-Statut : **à relire par Tao**. Titre n°1 retenu, prix du guide 1 900 FCFA. Tous les textes passent `wooplans.guardrails.check_copy`. Chiffres : catalogue en ligne (`data/plans.json`), arrondis au dixième de million.
+Statut : **à relire par Tao**. Titre n°1 retenu, prix du guide 1 900 FCFA. Tous les textes passent `wooplans.guardrails.check_copy`. Chiffres : catalogue en ligne (`data/plans.json`), arrondis au dixième de million. Fichier généré par `tools/build_guide.py --texts`.
 
-Points à confirmer par Tao : (1) le contenu exact du Catalogue Premium listé page 28 ; (2) le numéro WhatsApp page 29 ; (3) l'affichage des estimations en millions arrondis.
+Points à confirmer par Tao : (1) le contenu exact du Catalogue Premium listé page 28 ; (2) le numéro WhatsApp page 29 (option `--whatsapp` du script ; sans numéro, la page indique seulement wooplans.com) ; (3) l'affichage des estimations en millions arrondis.
 
 Lien page 28 : `https://wooplans.com/catalogue-premium?utm_source=guide_pdf&utm_medium=guide&utm_campaign=guide_budget&utm_content=page28`
 
@@ -348,5 +348,4 @@ Lien : https://wooplans.com/catalogue-premium?utm_source=guide_pdf&utm_medium=gu
 
 **Une question sur votre projet ?**
 
-Écrivez-nous sur WhatsApp : [numéro WhatsApp WooPlans à renseigner]
-wooplans.com
+Retrouvez-nous sur wooplans.com
