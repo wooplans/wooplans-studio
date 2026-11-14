@@ -25,3 +25,12 @@ def build_link(platform: str, fmt: str, video_id: str, base: str = OFFER_URL) ->
 
 def all_links(fmt: str, video_id: str) -> dict:
     return {p: build_link(p, fmt, video_id) for p in PLATFORMS}
+
+
+GUIDE_CAMPAIGN = "guide_budget"
+
+
+def build_guide_link(content: str, base: str = OFFER_URL) -> str:
+    """Lien du catalogue depuis le guide PDF d'entrée (content = page ou bouton, ex. « page28 »)."""
+    params = {"utm_source": "guide_pdf", "utm_medium": "guide", "utm_campaign": GUIDE_CAMPAIGN, "utm_content": content}
+    return f"{base}?{urlencode(params)}"

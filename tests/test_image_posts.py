@@ -202,3 +202,11 @@ def test_parse_gallery_both_storage_styles_and_ignores_suggested_plans():
 def test_parse_gallery_fallback_to_plan_folder():
     html = '<img src="/media/public/v4-001/z9.webp"><img src="/media/public/d5-011/x.webp">'
     assert image_batch.parse_gallery(html, "V4-001") == ["https://www.wooplans.com/media/public/v4-001/z9.webp"]
+
+
+def test_guide_link_goes_to_catalogue_with_guide_utm():
+    from wooplans.utm import build_guide_link
+    from wooplans.settings import OFFER_URL
+    link = build_guide_link("page28")
+    assert link.startswith(OFFER_URL + "?") and "cpbook" not in link
+    assert "utm_source=guide_pdf" in link and "utm_content=page28" in link
