@@ -81,3 +81,15 @@ trois chambres : environ dix-sept à vingt et un millions de francs CFA. Ce dupl
 de trois cent cinquante mètres carrés. J'ai rangé cent villas et duplex dans un seul guide : classés par budget, avec
 la surface et le terrain qu'il faut. Ouvrez-le sur votre téléphone, et trouvez la maison à votre portée. Le guide est
 à mille neuf cents francs CFA, sur wooplans point com. »
+
+## Variantes du visuel gagnant (15 nov., après le jour 1)
+
+« crea-6-preferees-clients » a pris 91 % du budget le jour 1 (CTR 8,7 %, 1,30 $ par vente). Déclinaisons du même angle :
+
+| Fichier | Accroche |
+|---|---|
+| crea-7-plus-demandees.jpg | Les 6 maisons les plus demandées (V3-018, V3-009, V3-037, V3-014, D4-040, D4-043) |
+| crea-8-combien-coute.jpg | Combien coûte la maison de nos clients ? (D5-012, V4-005, V3-017, V4-036) |
+| crea-9-preferees-story-9x16.jpg | Les maisons préférées de nos clients, format Story / Reels |
+
+À ajouter dans le même ensemble de publicités après le jour 2 (pas avant, pour ne pas relancer l'apprentissage).
