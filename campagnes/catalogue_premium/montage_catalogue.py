@@ -122,10 +122,13 @@ def end_card(path):
         d.line([(176, y + 2), (192, y + 18), (222, y - 16)], fill=YELLOW, width=9, joint="curve")
         d.text((250, y), t, font=font(600, 48), fill="white", anchor="lm"); y += 84
     y += 60
-    d.rounded_rectangle((120, y, W - 120, y + 200), 40, fill="white")
-    d.text((W // 2, y + 62), "Prix actuel", font=font(600, 44), fill=GREEN, anchor="mm")
-    d.text((W // 2, y + 140), "29 000 FCFA", font=font(800, 84), fill=GREEN, anchor="mm")
-    y += 250
+    d.rounded_rectangle((120, y, W - 120, y + 250), 40, fill="white")
+    d.text((W // 2, y + 55), "Prix actuel", font=font(600, 44), fill=GREEN, anchor="mm")
+    fo = font(700, 54); tw = d.textlength("60 000 FCFA", font=fo)
+    d.text((W // 2, y + 120), "60 000 FCFA", font=fo, fill=(150, 150, 150), anchor="mm")
+    d.line([(W // 2 - tw / 2 - 8, y + 122), (W // 2 + tw / 2 + 8, y + 122)], fill=(200, 40, 40), width=6)
+    d.text((W // 2, y + 195), "29 000 FCFA", font=font(800, 84), fill=GREEN, anchor="mm")
+    y += 300
     d.text((W // 2, y + 20), "Version numérique : espace en ligne + fiches PDF", font=font(600, 38), fill="white", anchor="mm")
     d.rounded_rectangle((170, y + 90, W - 170, y + 230), 70, fill=ORANGE)
     d.text((W // 2, y + 160), "wooplans.com", font=font(800, 70), fill="white", anchor="mm")
@@ -146,6 +149,7 @@ WrapStyle: 0
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Montserrat Thin ExtraBold,68,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,3,18,0,2,90,90,330,1
 Style: Label,Montserrat Thin ExtraBold,50,&H00000000,&H00FFFFFF,&H0050C8F5,&H0050C8F5,0,0,0,0,100,100,0,0,3,16,0,7,70,70,150,1
+Style: Hook,Montserrat Thin ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00575C0F,&H00575C0F,0,0,0,0,100,100,0,0,3,26,0,8,60,60,330,1
 Style: Name,Montserrat Thin ExtraBold,54,&H00FFFFFF,&H00FFFFFF,&H00575C0F,&H00575C0F,0,0,0,0,100,100,0,0,3,16,0,8,70,70,170,1
 
 [Events]
@@ -167,55 +171,74 @@ def sub_chunks(text, a, b, maxw=22):
     return out
 
 # ---------------------------------------------------------------- rendu
-def main():
-    parts, events, t = [], [], 0.0
-    for i, (src, a, b, label, sub) in enumerate(CLIPS):
-        p = WORK / f"c{i:02d}.mp4"; d = cut(src, a, b, p, i); parts.append(p)
-        if i == 0:
-            events.append((t, t + d, "Label", "LE CATALOGUE PREMIUM WOOPLANS"))
-        elif label != CLIPS[i - 1][3]:
-            j = i; e = t + d
-            while j + 1 < len(CLIPS) and CLIPS[j + 1][3] == label: j += 1; e += CLIPS[j][2] - CLIPS[j][1]
-            events.append((t, e, "Label", label.upper()))
-        for x, y, c in sub_chunks(sub, t + 0.05, t + d - 0.05): events.append((x, y, "Sub", c))
-        t += d
-    # témoignages : intro (voix de Tao) puis 3 clients
+# Séquences : ("c", i) plan de CLIPS, ("ti",) intro témoignages, ("t", k) témoignage, ("fin",) carte prix.
+FULL = [("c", i) for i in range(len(CLIPS))] + [("ti",), ("t", 0), ("t", 1), ("t", 2), ("fin",)]
+VARIANTES = {   # pubs de reciblage (visiteurs du site) : accroche différente, même fin (prix + wooplans.com)
+    "pub-1-devis": ("Combien coûte vraiment\\Nvotre maison ?", [("c", 4), ("c", 3), ("c", 0), ("c", 11), ("fin",)]),
+    "pub-2-temoignage": ("« J'ai galéré pendant des mois\\Nà trouver des plans »", [("t", 0), ("c", 0), ("c", 4), ("c", 8), ("fin",)]),
+    "pub-3-100-plans": ("100 villas et duplex\\Navec plan coté et devis", [("c", 0), ("c", 1), ("c", 2), ("c", 3), ("c", 8), ("c", 12), ("fin",)]),
+}
+FIN_D = 10.0
+
+def prepare():
+    """Découpe chaque plan une fois (réutilisé par toutes les versions)."""
+    seg = {}
+    for i, (src, a, b, *_r) in enumerate(CLIPS):
+        p = WORK / f"c{i:02d}.mp4"; seg[("c", i)] = (p, cut(src, a, b, p, i))
     card = WORK / "temo.jpg"; testimonials_card(card)
-    p = WORK / "t_intro.mp4"; d = 7.3; card_video(card, MEDIA / "9020c555.wav", p, d); parts.append(p)
-    for x, y, c in sub_chunks("Voici quelques témoignages de personnes qui ont acheté notre Catalogue Premium", t + 0.8, t + 7.2):
-        events.append((x, y, "Sub", c))
-    t += d
-    for k, (f, a, b, name, pays, sub) in enumerate(TEMO):
-        p = WORK / f"t{k}.mp4"; d = cut(MEDIA / "temoignages" / f, a, b, p, k, blur_bg=True); parts.append(p)
-        events.append((t, t + d, "Name", f"{name} · {pays}"))
-        for x, y, c in sub_chunks(sub, t + 0.05, t + d - 0.05): events.append((x, y, "Sub", c))
-        t += d
-    # prix (voix de Tao, deux extraits) + carte de fin
-    pa = WORK / "prix.wav"
-    ff("-i", MEDIA / "10d75772.wav", "-filter_complex",
-       "[0:a]atrim=0.86:2.72,asetpts=N/SR/TB,afade=t=out:st=1.8:d=0.06[x];[0:a]atrim=3.50:6.20,asetpts=N/SR/TB,afade=t=in:d=0.05[y];"
-       "[x][y]concat=n=2:v=0:a=1[a]", "-map", "[a]", pa)
+    p = WORK / "t_intro.mp4"; card_video(card, MEDIA / "9020c555.wav", p, 7.3); seg[("ti",)] = (p, 7.3)
+    for k, (f, a, b, *_r) in enumerate(TEMO):
+        p = WORK / f"t{k}.mp4"; seg[("t", k)] = (p, cut(MEDIA / "temoignages" / f, a, b, p, k, blur_bg=True))
+    # prix, voix de Tao : « notre catalogue est actuellement en promotion au prix de 29 000 francs, au lieu de 60 000 francs »
+    # (60 000 = prix d'ancrage de la page officielle, src/config/catalogue.json « priceBefore »). Sans « promotion limitée ».
+    pa = WORK / "prix.wav"; ff("-i", MEDIA / "10d75772.wav", "-af", "atrim=0.86:9.15,asetpts=N/SR/TB,afade=t=out:st=8.2:d=0.08", pa)
     endc = WORK / "fin.jpg"; end_card(endc)
-    p = WORK / "fin.mp4"; d = 8.0; card_video(endc, pa, p, d); parts.append(p)
-    # pas de sous-titre sur la carte de fin : le prix y est écrit
-    t += d
+    p = WORK / "fin.mp4"; card_video(endc, pa, p, FIN_D); seg[("fin",)] = (p, FIN_D)
+    return seg
+
+def render(name, seq, seg, hook=None):
+    parts, events, t, prev = [], [], 0.0, None
+    for key in seq:
+        p, d = seg[key]; parts.append(p)
+        if key[0] == "c":
+            _s, _a, _b, label, sub = CLIPS[key[1]]
+            if label != prev:
+                e = t + d; j = seq.index(key)
+                while j + 1 < len(seq) and seq[j + 1][0] == "c" and CLIPS[seq[j + 1][1]][3] == label: j += 1; e += seg[seq[j]][1]
+                events.append((t, e, "Label", label.upper()))
+            prev = label
+            events += [(x, y, "Sub", c) for x, y, c in sub_chunks(sub, t + 0.05, t + d - 0.05)]
+        elif key[0] == "ti":
+            prev = None
+            events += [(x, y, "Sub", c) for x, y, c in sub_chunks("Voici quelques témoignages de personnes qui ont acheté notre Catalogue Premium", t + 0.8, t + 7.2)]
+        elif key[0] == "t":
+            prev = None; f, _a, _b, nom, pays, sub = TEMO[key[1]]
+            events.append((t, t + d, "Name", f"{nom} · {pays}"))
+            events += [(x, y, "Sub", c) for x, y, c in sub_chunks(sub, t + 0.05, t + d - 0.05)]
+        t += d   # carte de fin : pas de sous-titre, le prix y est écrit
+    if hook:
+        events = [e for e in events if not (e[2] == "Label" and e[0] < 3.2)] + [(0.0, 3.2, "Hook", hook)]
     total = t
-    lst = WORK / "list.txt"; lst.write_text("".join(f"file '{p}'\n" for p in parts))
-    mid = WORK / "mid.mp4"; ff("-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", mid)
-    ass = WORK / "subs.ass"; build_ass(events, ass)
-    out = OUT / "catalogue-premium-9x16.mp4"
-    fc = (f"[0:v]subtitles={ass}:fontsdir={FONTS}[s];"
-          "[1:v]format=rgba,scale=390:-1,colorchannelmixer=aa=0.45[w1];[2:v]format=rgba,scale=390:-1,colorchannelmixer=aa=0.45[w2];"
-          "[s][w1]overlay=x='(W-w)*(0.5+0.5*sin(0.53*t))':y='(H-h)*(0.5+0.5*sin(0.37*t+1.1))'[b];"
-          "[b][w2]overlay=x='(W-w)*(0.5+0.5*sin(0.41*t+2.6))':y='(H-h)*(0.5+0.5*sin(0.29*t+4.0))'[v];"
-          f"[3:a]atrim=20:{20+total:.2f},asetpts=N/SR/TB,volume=0.09,afade=t=in:d=1.5,afade=t=out:st={total-2.5:.2f}:d=2.5[m];"
+    lst = WORK / f"{name}.txt"; lst.write_text("".join(f"file '{p}'\n" for p in parts))
+    mid = WORK / f"{name}-mid.mp4"; ff("-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", mid)
+    ass = WORK / f"{name}.ass"; build_ass(events, ass)
+    out = OUT / f"{name}.mp4"
+    # Pas de filigrane qui défile sur cette vidéo (décision de Tao, 16 nov.).
+    fc = (f"[0:v]subtitles={ass}:fontsdir={FONTS}[v];"
+          f"[1:a]atrim=20:{20+total:.2f},asetpts=N/SR/TB,volume=0.09,afade=t=in:d=1.5,afade=t=out:st={total-2.5:.2f}:d=2.5[m];"
           "[0:a][m]amix=inputs=2:duration=first:normalize=0[a]")
-    ff("-i", mid, "-loop", "1", "-i", WM, "-loop", "1", "-i", WM, "-stream_loop", "-1", "-i", MUSIC, "-filter_complex", fc,
+    ff("-i", mid, "-stream_loop", "-1", "-i", MUSIC, "-filter_complex", fc,
        "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "medium", "-crf", "21",
        "-pix_fmt", "yuv420p", "-r", FPS, "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart",
        "-metadata", "comment=© WooPlans - wooplans.com", out)
-    (OUT / "montage.json").write_text(json.dumps({"duree_s": round(total, 1), "sous_titres": [e[3] for e in events if e[2] == "Sub"]}, ensure_ascii=False, indent=1))
-    print("OK", out, round(total, 1), "s")
+    print("OK", out, round(total, 1), "s", flush=True)
+    return out, total
+
+def main():
+    seg = prepare()
+    res = {"catalogue-premium-9x16": render("catalogue-premium-9x16", FULL, seg)[1]}
+    for name, (hook, seq) in VARIANTES.items(): res[name] = render(name, seq, seg, hook)[1]
+    (OUT / "montage.json").write_text(json.dumps({k: round(v, 1) for k, v in res.items()}, indent=1))
 
 if __name__ == "__main__":
     main()
