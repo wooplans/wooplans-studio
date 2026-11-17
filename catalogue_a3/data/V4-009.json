@@ -49,6 +49,11 @@
  "land_width": 19,
  "levels": 1,
  "name": "Villa V4-009",
+ "originals": {
+  "1793183095504-TgppgbVE.webp": "private/v4-009/rendus/1793183093363-dVK-ynsa.jpg",
+  "1793183102621-ZO86HXF8.webp": "private/v4-009/rendus/1793183100161-lL37q0Pb.jpg",
+  "1793183107958-XDL3cGRT.webp": "private/v4-009/rendus/1793183105339-jaktHM7l.jpg"
+ },
  "renders": [
   "/media/public/v4-009/1793183095504-TgppgbVE.webp",
   "/media/public/v4-009/1793183102621-ZO86HXF8.webp",

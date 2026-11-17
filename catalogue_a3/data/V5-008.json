@@ -49,6 +49,11 @@
  "land_width": 20.8,
  "levels": 1,
  "name": "Villa V5-008",
+ "originals": {
+  "1793977063142-58_Q0MBj.webp": "private/v5-008/rendus/1793977060324-vox5KTXD.png",
+  "1793977105879-IwqF4bJJ.webp": "private/v5-008/rendus/1793977101979-g6O9xzXE.png",
+  "1793977168570-qitqCy7b.webp": "private/v5-008/rendus/1793977164402-4KLIXNvP.png"
+ },
  "renders": [
   "/media/public/v5-008/1793977063142-58_Q0MBj.webp",
   "/media/public/v5-008/1793977105879-IwqF4bJJ.webp",
