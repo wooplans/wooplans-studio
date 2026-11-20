@@ -35,6 +35,9 @@ CREAS = {
     "831TILISP0V1NAMM.png": ("catalogue-2-plan-et-devis.jpg", (690, 790, 1000, 1085)),
     "A19FUAX5DFHT8ZL3.png": ("catalogue-4-villa-4-chambres.jpg", (725, 805, 975, 1095)),
     "F58MLFMW15U07W9B.png": ("catalogue-5-villa-3-chambres.jpg", (728, 790, 995, 1090)),
+    "RPAI5WX85KV7O6L9.png": ("catalogue-6-duplex-4-chambres.jpg", (705, 755, 965, 1090)),
+    "BX6VBI0TYXIFY8X7.png": ("catalogue-7-villa-4-chambres-moderne.jpg", (725, 780, 985, 1085)),
+    "4A6KR2VOEFUGMY9H.png": ("catalogue-8-villa-4-chambres-choisissez.jpg", (715, 810, 985, 1105)),
 }
 
 
