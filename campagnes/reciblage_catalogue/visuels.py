@@ -30,10 +30,11 @@ LOGO_H = 70  # bande du logo en haut
 BAND_TOP = 1128  # haut du bandeau du bas
 
 # base Poyo -> (nom, zone à flouter en px de la base redimensionnée en 1080 x 1350, ou None)
+# Toutes dans le style validé par Tao le 20 nov. : rendu 3D + plan coté + devis (montants floutés).
 CREAS = {
-    "EH7IWWCE7TIO362R.png": ("catalogue-1-plans-et-devis.jpg", None),
     "831TILISP0V1NAMM.png": ("catalogue-2-plan-et-devis.jpg", (690, 790, 1000, 1085)),
-    "NHNEF5TQXMS9JRLY.png": ("catalogue-3-quelle-maison.jpg", None),
+    "A19FUAX5DFHT8ZL3.png": ("catalogue-4-villa-4-chambres.jpg", (725, 805, 975, 1095)),
+    "F58MLFMW15U07W9B.png": ("catalogue-5-villa-3-chambres.jpg", (728, 790, 995, 1090)),
 }
 
 
