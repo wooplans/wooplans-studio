@@ -1,1 +1,1 @@
-{"action":"convert","embedding_id":"vox_emb_KRDHdmCA2XD4isMp","name":"WooPlans VSL (voix 2)"}
+{"action":"tts","voice_id":"YRp6KNCGQ8lesu0r","script":"campagnes/vsl_catalogue/voix_script.json"}
