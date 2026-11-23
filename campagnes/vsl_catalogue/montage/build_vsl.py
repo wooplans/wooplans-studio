@@ -25,10 +25,11 @@ TEMO = [
         (10.4, 15.5, "Et quand je l'ai obtenu, j'ai tout simplement été émerveillé."),
     ]),
     ("bassirou_a", "Mamadou Bassirou", "Sénégal", [
-        (0.0, 9.0, "Dès que j'ai fait le paiement, j'ai eu immédiatement les accès pour consulter tous les plans."),
+        (0.0, 5.0, "Ce qui est bien, c'est que dès que je fais le paiement,"),
+        (5.0, 13.5, "j'ai eu immédiatement, instantanément, les accès pour consulter tous les plans."),
     ]),
     ("bassirou_b", "Mamadou Bassirou", "Sénégal", [
-        (0.0, 11.0, "Je confirme honnêtement que ce sont de beaux plans, faits par de véritables professionnels."),
+        (0.0, 9.1, "Je confirme honnêtement que ce sont de beaux plans, faits par de véritables professionnels."),
     ]),
     ("francis_a", "Francis Bilong", "Cameroun", [
         (0.0, 4.0, "Bonjour à tous, j'espère que vous allez bien."),
@@ -123,6 +124,7 @@ def caption_groups():
                 continue
             span = (c["stop_s"] - c["start_s"]) / len(ws)
             for i, w in enumerate(ws):
+                w = w.replace("Mobaïle", "Mobile")
                 words.append((w, c["start_s"] + i * span, c["start_s"] + (i + 1) * span))
         for w, a, b in words:
             if not cur:
@@ -178,15 +180,23 @@ def seg_end(s):
     return round(T[s][0] + T[s][1] + GAP, 2)
 
 
+HOOK = ["hook/h01-d4-019.jpg", "hook/h03-d5-019.jpg", "hook/h05-d5-018.jpg", "hook/h04-d4-017.jpg", "hook/h07-d4-016.jpg",
+        "hook/h08-d4-009.jpg", "hook/h10-d4-001.jpg", "hook/h02-d4-019n.jpg", "hook/h09-d4-009n.jpg",
+        "hook/h04-d4-017.jpg", "rendu1.jpg"]
+
+
 def build_shots():
-    # Accroche : 5 belles maisons en coupes rapides, puis la question.
-    s = "s00"; a = 0.0; e = seg_end(s)
-    pics = ["rendu1.jpg", "rendu3.jpg", "rendu2.jpg", "rendu4.jpg", "maison-abidjan-d4-001.png"]
-    step = (e - 3.2) / len(pics)
-    for i, p in enumerate(pics):
-        img(a + i * step, a + (i + 1) * step, p, "kb-fast")
-    shots.append((e - 3.2, 3.2, "black", None, None))
-    texts.append((e - 3.1, 3.1, "Et si vous choisissiez<br><em>la mauvaise maison&nbsp;?</em>", "hook"))
+    # Accroche (refaite, remarque de Tao) : nos plus beaux duplex. 1) trois maisons empilées qui défilent,
+    # 2) coupes rapides plein écran avec zoom, 3) la question sur une façade de nuit.
+    s = "s00"; e = seg_end(s)
+    q = e - 3.0
+    shots.append((0.0, 3.4, "tri", None, HOOK[:9]))
+    PUNCH = ["hook/h10-d4-001.jpg", "hook/h02-d4-019n.jpg", "hook/h05-d5-018.jpg", "hook/h09-d4-009n.jpg"]
+    step = (q - 3.4) / len(PUNCH)
+    for i, p in enumerate(PUNCH):
+        img(3.4 + i * step, 3.4 + (i + 1) * step, p, "kb-punch")
+    img(q, e, "hook/h06-d5-018n.jpg", "kb-in dim")
+    texts.append((q + 0.05, e - q - 0.05, "Et si vous choisissiez<br><em>la mauvaise maison&nbsp;?</em>", "hook"))
     # Preuve : catalogue de Tao + compteurs.
     s = "s01"; a = seg_end("s00"); e = seg_end(s)
     vid(a, at(s, "Plus"), "c00.mp4")
@@ -276,11 +286,23 @@ def html():
         if kind == "img":
             parts.append(f'<div {common}><img class="bg {ex}" src="assets/{src}"></div>')
             cls = ex.split()[0]
-            fr, to = {"kb-in": (1.0, 1.12), "kb-out": (1.14, 1.0), "kb-fast": (1.0, 1.18)}.get(cls, (1.0, 1.1))
+            fr, to = {"kb-in": (1.0, 1.12), "kb-out": (1.14, 1.0), "kb-fast": (1.0, 1.18), "kb-punch": (1.28, 1.05)}.get(cls, (1.0, 1.1))
             js.append(f'tl.fromTo("#{sid} .bg",{{scale:{fr}}},{{scale:{to},duration:{d:.2f},ease:"none"}},{a:.2f});')
-            js.append(f'tl.fromTo("#{sid}",{{opacity:0}},{{opacity:1,duration:0.25}},{a:.2f});')
+            js.append(f'tl.fromTo("#{sid}",{{opacity:0}},{{opacity:1,duration:{0.06 if cls == "kb-punch" else 0.25}}},{a:.2f});')
+            if cls == "kb-punch":
+                js.append(f'tl.fromTo("#{sid} .bg",{{filter:"brightness(2.2)"}},{{filter:"brightness(1)",duration:0.22}},{a:.2f});')
         elif kind == "vid":
             parts.append(f'<video {common} class="clip shot vid" src="assets/{src}" data-media-start="{ex}" muted playsinline></video>'.replace(f'class="clip shot" ', ""))
+        elif kind == "tri":
+            pics = ex
+            rows = "".join(f'<div class="row r{r}">' + "".join(f'<img src="assets/{pics[r*3+k]}">' for k in range(3)) + "</div>" for r in range(3))
+            parts.append(f'<div {common} style="background:#000"><div class="tri">{rows}</div></div>')
+            for r in range(3):
+                sign = -1 if r % 2 == 0 else 1
+                for k in range(3):
+                    t0 = a + r * 0.12 + k * 1.05
+                    js.append(f'tl.fromTo("#{sid} .r{r} img:nth-child({k+1})",{{xPercent:{-100*sign},scale:1.15}},{{xPercent:0,scale:1,duration:0.38,ease:"expo.out"}},{t0:.2f});')
+            js.append(f'tl.fromTo("#{sid} .tri",{{scale:1}},{{scale:1.06,duration:{d:.2f},ease:"none"}},{a:.2f});')
         elif kind == "black":
             parts.append(f'<div {common} style="background:#050807"></div>')
         elif kind == "steps":
@@ -302,18 +324,17 @@ def html():
         elif kind in ("offer", "offer-end"):
             end = kind == "offer-end"
             parts.append(f'''<div {common} style="background:{'rgba(5,8,7,.78)' if end else 'var(--ground)'}"><div class="offer">
-<div class="o-kicker">{'Il ne reste qu’une étape' if end else 'Votre prix réservé'}</div>
+<div class="o-kicker">Votre prix réservé</div>
 <div class="o-old">Prix public&nbsp;: <s>39&nbsp;000 FCFA</s></div>
 <div class="o-new">29&nbsp;000 <i>FCFA</i></div>
-<div class="o-when">Valable 7 jours après votre achat de l'extrait<br><small>La date exacte est sur votre page</small></div>
-<div class="o-btn">Obtenir le Catalogue Premium</div>
-<div class="o-pay">Mobile Money ou carte · accès immédiat · remboursé sous 7 jours</div></div></div>''')
+<div class="o-when">Réduction valable 7 jours</div>
+<div class="o-pay">Mobile Money ou carte · accès immédiat</div></div></div>''')
             base = a + 0.2
-            seq = [(".o-kicker", 0), (".o-old", 0.5), (".o-new", 1.6), (".o-when", 3.0), (".o-btn", 4.2), (".o-pay", 4.8)] if not end else [(".o-kicker", 0), (".o-old", 0.2), (".o-new", 0.4), (".o-when", 0.7), (".o-btn", 1.0), (".o-pay", 1.2)]
+            seq = [(".o-kicker", 0), (".o-old", 0.5), (".o-new", 1.6), (".o-when", 4.6), (".o-pay", 7.0)] if not end else [(".o-kicker", 0), (".o-old", 0.2), (".o-new", 0.4), (".o-when", 0.7), (".o-pay", 1.0)]
             for sel, off in seq:
                 js.append(f'tl.fromTo("#{sid} {sel}",{{opacity:0,y:40}},{{opacity:1,y:0,duration:0.45,ease:"power3.out"}},{base+off:.2f});')
             js.append(f'tl.fromTo("#{sid} .o-old s",{{"--strike":"0%"}},{{"--strike":"100%",duration:0.5}},{base+(1.2 if not end else 0.5):.2f});')
-            js.append(f'tl.to("#{sid} .o-btn",{{scale:1.06,duration:0.6,yoyo:true,repeat:{int(d//1.2)},ease:"sine.inOut"}},{base+(5 if not end else 1.5):.2f});')
+            js.append(f'tl.to("#{sid} .o-new",{{scale:1.05,duration:0.6,yoyo:true,repeat:{max(1, int((d - 3) // 1.2))},ease:"sine.inOut"}},{base+2.4:.2f});')
         elif kind == "temo":
             who, country = ex
             parts.append(f'<video id="{sid}" class="clip vid" src="assets/{src}.mp4" data-start="{a:.2f}" data-duration="{d:.2f}" data-media-start="0" muted playsinline></video>')
@@ -349,18 +370,7 @@ def html():
         js.append(f'tl.fromTo("#{tid} .inner",{{opacity:0,y:30,scale:.96}},{{opacity:1,y:0,scale:1,duration:0.45,ease:"power3.out"}},{a:.2f});')
     for i, (a, b, x) in enumerate(caps):
         parts.append(f'<div class="clip cap" data-start="{a:.2f}" data-duration="{b-a:.2f}"><span>{x}</span></div>')
-    # Filigranes : 2 logos qui se promènent du début à la fin (chemins déterministes).
-    for w, (fx, fy, ph) in enumerate([(0.071, 0.053, 0.0), (0.047, 0.083, 2.1)]):
-        frames = []
-        n = int(TOTAL // 2)
-        for k in range(n + 1):
-            tt = k * 2
-            x = 80 + 620 * (0.5 + 0.5 * math.sin(fx * tt * 2 + ph))
-            y = 220 + 1350 * (0.5 + 0.5 * math.sin(fy * tt * 2 + ph * 1.3))
-            frames.append({"x": round(x), "y": round(y), "duration": 2})
-        parts.append(f'<img id="wm{w}" class="clip wm" src="assets/wm_logo.png" data-start="0" data-duration="{TOTAL}">')
-        js.append(f'tl.set("#wm{w}",{{x:{frames[0]["x"]},y:{frames[0]["y"]}}},0);')
-        js.append(f'tl.to("#wm{w}",{{keyframes:{json.dumps(frames[1:])},ease:"none"}},0);')
+    # Filigranes mobiles retirés (demande de Tao, 23 nov.).
     parts.append(f'<audio id="voixmix" class="clip" src="assets/mix.m4a" data-start="0" data-duration="{TOTAL}" data-has-audio="true"></audio>')
     return TEMPLATE.replace("{{TOTAL}}", str(TOTAL)).replace("{{BODY}}", "\n".join(parts)).replace("{{JS}}", "\n".join(js))
 
@@ -394,6 +404,9 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--ground)}
 .bg.gray{filter:grayscale(1) brightness(.75)}
 .bg.blur{filter:blur(14px) brightness(.6)}
 .bg.dim{filter:brightness(.45)}
+.tri{position:absolute;inset:0;display:flex;flex-direction:column;gap:12px;padding:0;background:#000}
+.tri .row{position:relative;flex:1;overflow:hidden}
+.tri .row img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 video.vid{width:1080px;height:1920px;object-fit:cover}
 .shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%);pointer-events:none}
 .overlay{display:flex;justify-content:center;pointer-events:none}
@@ -431,7 +444,7 @@ video.vid{width:1080px;height:1920px;object-fit:cover}
 .o-old s{text-decoration:none;position:relative;--strike:0%}
 .o-old s::after{content:"";position:absolute;left:0;top:52%;height:7px;width:var(--strike);background:#ff5b4b}
 .o-new{font-size:190px;font-weight:800;line-height:1;color:#fff}.o-new i{font-style:normal;font-size:80px;color:var(--accent)}
-.o-when{font-size:46px;font-weight:700;line-height:1.3}.o-when small{font-size:36px;color:rgba(255,255,255,.75);font-weight:600}
+.o-when{font-size:58px;font-weight:800;line-height:1.2;background:var(--accent);color:#111;padding:22px 40px;border-radius:999px}.o-when small{font-size:36px;color:rgba(255,255,255,.75);font-weight:600}
 .o-btn{background:var(--accent);color:#111;font-size:56px;font-weight:800;padding:40px 56px;border-radius:999px;box-shadow:0 14px 50px rgba(243,154,30,.45)}
 .o-pay{font-size:34px;font-weight:600;color:rgba(255,255,255,.8)}
 .tv-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(30px) brightness(.5);transform:scale(1.2)}
