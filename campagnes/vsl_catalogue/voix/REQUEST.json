@@ -1,10 +1,1 @@
-{
- "action": "audition",
- "ids": [
-  "vox_emb_Yot7peXQsQCx7zZL",
-  "vox_emb_KRDHdmCA2XD4isMp",
-  "vox_emb_WJ93qmQ56kun6gHh",
-  "vox_emb_kgnHmjcJUfIzPf6V"
- ],
- "line": "Avant de construire, choisissez la bonne maison. Le Catalogue Premium vous le permet."
-}
+{"action":"convert","embedding_id":"vox_emb_KRDHdmCA2XD4isMp","name":"WooPlans VSL (voix 2)"}
