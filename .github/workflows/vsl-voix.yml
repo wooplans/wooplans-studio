@@ -1,0 +1,30 @@
+name: vsl-voix
+# Voix Gradium de la VSL du Catalogue Premium : campagnes/vsl_catalogue/gradium.py lit voix/REQUEST.json
+# (design de voix, conversion, ou génération du script), puis commit les fichiers audio sur la même branche. AUCUNE publication.
+on:
+  push:
+    branches: [main, "claude/**"]
+    paths: ["campagnes/vsl_catalogue/voix/REQUEST.json"]
+permissions:
+  contents: write
+jobs:
+  voix:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dépendances
+        run: sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Voix Gradium
+        env:
+          GRADIUM_API_KEY: ${{ secrets.GRADIUM_API_KEY }}
+        run: python3 campagnes/vsl_catalogue/gradium.py
+      - name: Commit
+        run: |
+          git config user.name "wooplans-bot"
+          git config user.email "noreply@wooplans.com"
+          git add campagnes/vsl_catalogue/voix
+          git diff --cached --quiet && { echo "rien à committer"; exit 0; }
+          git commit -m "vsl-voix : $(jq -r .action campagnes/vsl_catalogue/voix/REQUEST.json) (Gradium)"
+          for i in 1 2 3 4 5; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep 5; done
+          exit 1
