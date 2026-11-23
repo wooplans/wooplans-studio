@@ -50,6 +50,16 @@ def design(req):
     (out / "candidats.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1))
 
 
+def audition(req):
+    """Réécoute de candidats déjà créés (ids donnés), sans nouveau design."""
+    out = VOIX / "candidats"
+    out.mkdir(parents=True, exist_ok=True)
+    for eid in req["ids"]:
+        audio = call("POST", "/speech/tts", {"text": req["line"][:100], "voice_id": eid, "model_name": "default", "output_format": "wav", "only_audio": True}, raw=True)
+        wav(out / f"{eid}.wav", audio)
+        print("candidate", eid)
+
+
 def convert(req):
     res = call("POST", "/voices/from-embedding", {"voxium_embedding_id": req["embedding_id"], "name": req.get("name", "WooPlans VSL"), "description": "Narrateur VSL WooPlans"})
     (VOIX / "voice.json").write_text(json.dumps(res, ensure_ascii=False, indent=1))
@@ -91,7 +101,7 @@ def main():
         print("MANQUANT : secret GRADIUM_API_KEY")
         return 2
     req = json.loads((VOIX / "REQUEST.json").read_text(encoding="utf-8"))
-    {"design": design, "convert": convert, "tts": tts}[req["action"]](req)
+    {"design": design, "audition": audition, "convert": convert, "tts": tts}[req["action"]](req)
     return 0
 
 

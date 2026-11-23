@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "wooplans-bot"
           git config user.email "noreply@wooplans.com"
-          git add campagnes/vsl_catalogue/voix
+          git add -f campagnes/vsl_catalogue/voix
           git diff --cached --quiet && { echo "rien à committer"; exit 0; }
           git commit -m "vsl-voix : $(jq -r .action campagnes/vsl_catalogue/voix/REQUEST.json) (Gradium)"
           for i in 1 2 3 4 5; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep 5; done
