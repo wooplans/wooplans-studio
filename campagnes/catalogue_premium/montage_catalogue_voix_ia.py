@@ -1,7 +1,7 @@
 """Vidéo « Catalogue Premium » (9:16) avec une voix ElevenLabs à la place de la voix de Tao (demande de Tao, 23 nov. 2026).
 
 Mêmes images que montage_catalogue.py (plans de Tao déjà découpés dans MEDIA/work), mêmes témoignages (voix des clients
-gardées), carte de fin SANS prix (le prix est affiché sur chaque page : 39 000 public, 29 000 réservé).
+gardées), carte de fin SANS prix ni adresse du site (décisions de Tao, 22-23 nov. : le prix est affiché sur chaque page).
 Voix : ElevenLabs « Gerome - Casual » (Sn8JtaVEizNFwv6xaCCV, eleven_v4), choisie par Tao pour la VSL ; fichiers dans MEDIA/voix.
 La voix de Tao est retirée des plans (piste remplacée par la voix générée, la musique reste).
 
@@ -35,8 +35,8 @@ GROUPES = [
     ([12], "Nouveaux plans inclus", "Nous ajoutons régulièrement de nouveaux plans, et vous y avez accès, sans rien payer de plus."),
 ]
 INTRO = "Voici quelques témoignages de personnes qui ont acheté notre Catalogue Premium."
-FIN = "Le Catalogue Premium : paiement unique, accès à vie. Rendez-vous sur wooplans.com."
-FIN_D = 7.0
+FIN = "Le Catalogue Premium : paiement unique, accès à vie."  # « Rendez-vous sur wooplans.com » retiré (Tao, 23 nov.)
+FIN_D = 5.0
 # Texte du sous-titre de la carte « témoignages », tel que montage_catalogue.render() l'écrit.
 INTRO_SUB = "Voici quelques témoignages de personnes qui ont acheté notre Catalogue Premium"
 
@@ -80,7 +80,7 @@ def main():
     p = W / "ia_intro.mp4"; m.card_video(W / "temo.jpg", VOIX / "intro.mp3", p, 6.0); seg[("ti",)] = (p, 6.0)
     for k in range(len(m.TEMO)):
         t = W / f"t{k}.mp4"; seg[("t", k)] = (t, duree(t))
-    p = W / "ia_fin.mp4"; m.card_video(W / "fin-sans-prix.jpg", VOIX / "fin.mp3", p, FIN_D); seg[("fin",)] = (p, FIN_D)
+    p = W / "ia_fin.mp4"; m.card_video(W / "fin-sans-prix-sans-site.jpg", VOIX / "fin-court.mp3", p, FIN_D); seg[("fin",)] = (p, FIN_D)
     seq = [("c", g) for g in range(len(GROUPES))] + [("ti",)] + [("t", k) for k in range(len(m.TEMO))] + [("fin",)]
     m.render("catalogue-premium-voix-ia", seq, seg)
 
