@@ -45,25 +45,24 @@ des pubs v4 « Démarre ton chantier » (données du site). Aucun prix affiché.
 
 **Texte principal 1**
 > Vous avez un terrain, mais pas encore de plan ?
-> Dites-nous où se trouve votre terrain, combien de chambres vous voulez et votre budget. Un architecte WooPlans vous répond sur WhatsApp avec des maisons qui tiennent sur votre terrain, et le budget de construction de chacune.
+> Nous avons 100 modèles de villas et de duplex. Dites-nous où se trouve votre terrain, combien de chambres vous voulez et votre budget : un architecte WooPlans choisit pour vous ceux qui vont sur votre terrain, avec le budget de construction de chacun, et vous les envoie sur WhatsApp.
 > 👇 Quelques questions rapides, puis WhatsApp
 
 **Texte principal 2**
 > Avant de poser la première brique, choisissez la bonne maison pour votre terrain.
-> Villa ou duplex, 3, 4 ou 5 chambres : nos architectes vous proposent des modèles adaptés à votre terrain et à votre budget. Ensuite, on vous prépare les plans complets pour le chantier.
+> Parmi nos 100 modèles, villas et duplex de 3 à 5 chambres, nos architectes vous proposent ceux qui vont sur votre terrain et dans votre budget. Ensuite, on prépare les plans complets pour votre chantier.
 > 👇 Recevez vos propositions sur WhatsApp
 
 **Texte principal 3**
 > Votre terrain attend. Votre maison aussi.
-> 12 ans de chantiers, plus de 150 chantiers suivis (chiffres de la VSL validée). Dites-nous où en est votre projet et recevez des propositions de plans pour votre terrain, sur WhatsApp.
+> 12 ans de chantiers, plus de 150 chantiers suivis, 100 modèles de maisons. Dites-nous où en est votre projet : on vous propose les modèles qui vont sur votre terrain, sur WhatsApp.
 
 **Titres** : « Vous avez un terrain ? » · « Des plans pour votre terrain » · « Recevez vos propositions de plans »
 **Bouton** : En savoir plus
 
 ## À trancher par Tao
 
-1. **Compte pub** : BUSNESSTAO est bloqué (paiement). Sur quel compte lancer ? (les campagnes de l'extrait n'apparaissent
+1. **Compte pub** : Mymusika (choix de Tao, 25 nov.). BUSNESSTAO est bloqué (paiement). (les campagnes de l'extrait n'apparaissent
    dans aucun compte accessible à Claude : à couper toi-même dans le Gestionnaire de publicités.)
-2. **La promesse** : « propositions de plans pour votre terrain ». Combien de modèles proposez-vous par dossier, et sous
-   quel délai ? Je l'écris dans la pub dès que c'est fixé (ex. « 3 modèles sous 24 h »).
+2. Promesse (réponse de Tao, 25 nov.) : les propositions sont choisies parmi les 100 modèles du catalogue.
 3. Budget et date de lancement.
