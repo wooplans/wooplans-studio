@@ -44,3 +44,16 @@ CI + GN, hommes de 35 ans et plus, 15 $/jour, 7 visuels pour voir lesquels conve
 7 pubs dans l'ensemble 52620342543293 : V3-017, V4-005, D5-012, V4-036, V4-032, D4-034, D4-026.
 Visuels servis par le site : https://www.wooplans.com/assets/pubs/catalogue/catalogue-<modèle>.jpg (PR wooplans #155).
 Bouton « Acheter maintenant », 3 textes et 3 titres par pub (Meta choisit).
+
+## Pubs vidéo « 100 plans » (25 nov. 2026, publiées avec l'accord de Tao)
+
+Anciennes vidéos C et D (présentateur avec le livre) : phrases « 50 plans » coupées, couverture passée à « 100 PLANS DE MAISON »
+plan par plan sur Runware (P-Video-Edit avec la couverture en référence, FLUX Video Edit fast sur les plans difficiles), ≈ 2,1 $.
+« en promotion » gardé à la fin (choix de Tao).
+
+| Pub | Ad ID | Vidéo Meta | Lien |
+|---|---|---|---|
+| Vidéo C · 100 plans (17 s) | 52620379131493 | 2199725954272600 | `utm_content=video-C` |
+| Vidéo D · 100 plans (25 s) | 52620379140493 | 3966461393492939 | `utm_content=video-D` |
+
+Même ensemble de pubs (52620342543293), mêmes 3 textes et 3 titres, bouton « Acheter », vignette = image du livre « 100 ».
