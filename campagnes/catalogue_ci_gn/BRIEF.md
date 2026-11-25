@@ -53,7 +53,10 @@ plan par plan sur Runware (P-Video-Edit avec la couverture en référence, FLUX 
 
 | Pub | Ad ID | Vidéo Meta | Lien |
 |---|---|---|---|
-| Vidéo C · 100 plans (17 s) | 52620379131493 | 2199725954272600 | `utm_content=video-C` |
-| Vidéo D · 100 plans (25 s) | 52620379140493 | 3966461393492939 | `utm_content=video-D` |
+| Vidéo C · 100 plans · sous-titrée (17 s) | 52620381717093 | 1493448875994256 | `utm_content=video-C` |
+| Vidéo D · 100 plans · sous-titrée (25 s) | 52620381724693 | 1683704220124194 | `utm_content=video-D` |
 
-Même ensemble de pubs (52620342543293), mêmes 3 textes et 3 titres, bouton « Acheter », vignette = image du livre « 100 ».
+Sous-titres style Hormozi incrustés (Inter Display Black, majuscules, contour noir, mot prononcé en jaune), demande de Tao :
+« le sous titre est important dans les vidéo de pub ». Les 2 premières versions sans sous-titres (52620379131493, 52620379140493)
+ont été supprimées à sa demande. Même ensemble de pubs (52620342543293), mêmes 3 textes et 3 titres, bouton « Acheter »,
+vignette = image du livre « 100 ».
