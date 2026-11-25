@@ -38,3 +38,9 @@ CI + GN, hommes de 35 ans et plus, 15 $/jour, 7 visuels pour voir lesquels conve
   `vsl_close` (secondes réellement regardées, % max), `vsl_cta` (bouton d'achat en fin de vidéo).
 - Base du site : table `video_events`, vidéo `vsl-public` (open, play, half, end, cta).
 - Pixel Meta : `VSL_50` et `VSL_95` → audiences de reciblage « a regardé la moitié / la fin de la VSL ».
+
+## Brouillons (25 nov. 2026, non publiés)
+
+7 pubs dans l'ensemble 52620342543293 : V3-017, V4-005, D5-012, V4-036, V4-032, D4-034, D4-026.
+Visuels servis par le site : https://www.wooplans.com/assets/pubs/catalogue/catalogue-<modèle>.jpg (PR wooplans #155).
+Bouton « Acheter maintenant », 3 textes et 3 titres par pub (Meta choisit).
