@@ -45,3 +45,10 @@ Sous-titres style Hormozi sur toute la vidéo. Deux logos WooPlans semi-transpar
 | **Total** | **≈ 2,2 à 4,5 $** |
 
 Avant le reste : une séquence test de 20 s (scènes 1 à 3) pour juger le style.
+
+## Production v1 (25 nov. 2026)
+
+Voix clonée du présentateur (Qwen3-TTS, Runware), présentateur animé sur sa voix (P-Video-2), 9 plans IA (P-Video-2),
+musique (ACE-Step), animations maison (`outils/motion.py`), sous-titres Hormozi (`outils/ass_from_words.py`),
+montage (`outils/assemble_vsl.py`). Sans filigrane (demande de Tao). Durée 2 min 01. Coût Runware ≈ 2,0 $.
+Devis et terrain à l'écran : vrais chiffres du duplex D5-012 (data du site).
