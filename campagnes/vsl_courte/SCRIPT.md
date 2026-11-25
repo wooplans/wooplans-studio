@@ -52,3 +52,10 @@ Voix clonée du présentateur (Qwen3-TTS, Runware), présentateur animé sur sa 
 musique (ACE-Step), animations maison (`outils/motion.py`), sous-titres Hormozi (`outils/ass_from_words.py`),
 montage (`outils/assemble_vsl.py`). Sans filigrane (demande de Tao). Durée 2 min 01. Coût Runware ≈ 2,0 $.
 Devis et terrain à l'écran : vrais chiffres du duplex D5-012 (data du site).
+
+## v2 en ligne (25 nov. 2026, accord de Tao)
+
+Corrections de Tao : plan des maçons refait (tenues bleues, plus de blouses blanches) ; « Mobile Money » prononcé
+« Mobaïle Money » (phrase régénérée et recollée au même endroit). En héro de https://wooplans.com/catalogue-premium
+(PR wooplans #156) : `vsl-courte.mp4` (540×960, 11 Mo), bouton « 2 min », mesure `vsl-public` inchangée.
+Coût Runware total ≈ 2,1 $.
