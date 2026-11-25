@@ -66,3 +66,13 @@ des pubs v4 « Démarre ton chantier » (données du site). Aucun prix affiché.
    dans aucun compte accessible à Claude : à couper toi-même dans le Gestionnaire de publicités.)
 2. Promesse (réponse de Tao, 25 nov.) : les propositions sont choisies parmi les 100 modèles du catalogue.
 3. Budget et date de lancement.
+
+## Brouillons créés sur Mymusika (25 nov. 2026, non publiés)
+
+| | Campagne | Ensemble de pubs | Pubs |
+|---|---|---|---|
+| CI | 52620289944493 · 10 $/jour | 52620289966693 · CI, 30-65 ans (suggestion), Advantage+ Audience | V3-017, D4-034, D4-026 |
+| GN | 52620289950293 · 10 $/jour | 52620289967493 · GN, 30-65 ans (suggestion), Advantage+ Audience | V3-017, D4-034, D4-026 |
+
+Objectif Ventes, optimisé sur CompleteRegistration (pixel du site), page WooPlans, bouton « Obtenir un devis »,
+3 textes et 3 titres par pub (Meta choisit). Campagnes de l'extrait (CI et Afrique de l'Ouest) en pause.
