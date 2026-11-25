@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:J;src:url(/home/user/wooplans/video/vsl/fonts/PlusJakartaSans-latin.woff2)}
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1350px;background:#0B3B3A;font-family:J,sans-serif;color:#fff;overflow:hidden;position:relative}
+.top{height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.logo{height:32px}
+h1{font-size:80px;font-weight:800;color:#E7C36C;letter-spacing:-1px;line-height:1;white-space:nowrap}
+.sub{font-size:38px;font-weight:700}
+.img{position:relative;height:590px;background-size:cover;background-position:center}
+.tag{position:absolute;left:36px;top:22px;background:rgba(11,59,58,.92);border-radius:14px;padding:10px 20px;font-size:30px;font-weight:700}
+.box{padding:30px 64px 0}
+.box h2{font-size:44px;font-weight:800;line-height:1.15;margin-bottom:14px}
+.box h2 em{font-style:normal;color:#E7C36C}
+li{list-style:none;font-size:33px;margin:7px 0;display:flex;gap:16px}
+li b{color:#E7C36C}
+.row{display:flex;align-items:center;justify-content:space-between;margin-top:24px;gap:24px}
+.price{font-size:30px;line-height:1.2}.price b{display:block;font-size:52px;font-weight:800}
+.cta{flex:1;height:96px;border-radius:48px;background:#F08A2E;color:#1b1b1b;font-size:40px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.vid{margin-top:26px;text-align:center;font-size:31px;font-weight:700;color:#E7C36C}
+.foot{position:absolute;bottom:22px;width:100%;text-align:center;font-size:26px;opacity:.7}
+</style></head><body>
+<div class="top"><img class="logo" src="/home/user/wooplans/public/assets/wooplans-logo-white.png"><h1>VOUS AVEZ UN TERRAIN ?</h1><div class="sub">Choisissez la maison qui va dessus</div></div>
+<div class="img" id="img"><div class="tag" id="tag"></div></div>
+<div class="box"><h2>Le <em>Catalogue Premium</em> : 100 villas et duplex</h2>
+<ul><li><b>✓</b>Le plan coté de chaque maison</li><li><b>✓</b>Le devis de construction, poste par poste</li><li><b>✓</b>La taille de terrain qu'il faut</li></ul>
+<div class="row"><div class="price">Prix actuel<b>39 000 FCFA</b></div><div class="cta">Voir le catalogue →</div></div>
+<div class="vid">▶ Sur la page, regardez la vidéo de 5 min</div></div>
+<div class="foot">Accès immédiat sur votre téléphone · wooplans.com</div>
+<script>function set(m){document.getElementById('img').style.backgroundImage='url('+m.img+')';document.getElementById('tag').textContent='Modèle '+m.code+' · '+m.type+' · '+m.ch+' chambres · '+m.m2+' m²';}</script>
+</body></html>

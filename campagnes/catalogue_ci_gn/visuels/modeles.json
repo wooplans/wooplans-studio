@@ -1,0 +1,9 @@
+[
+ {"code":"V3-017","type":"Villa","ch":3,"m2":120,"img":"render-v3-017.webp"},
+ {"code":"V4-005","type":"Villa","ch":4,"m2":201,"img":"render-v4-005.webp"},
+ {"code":"D5-012","type":"Duplex","ch":5,"m2":234,"img":"render-d5-012.webp"},
+ {"code":"V4-036","type":"Villa","ch":4,"m2":233,"img":"render-v4-036.webp"},
+ {"code":"V4-032","type":"Villa","ch":4,"m2":177,"img":"render-v4-032.webp"},
+ {"code":"D4-034","type":"Duplex","ch":4,"m2":143,"img":"render-d4-034.webp"},
+ {"code":"D4-026","type":"Duplex","ch":4,"m2":235,"img":"render-d4-026.webp"}
+]
