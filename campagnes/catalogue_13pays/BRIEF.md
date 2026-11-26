@@ -21,4 +21,4 @@ Contrôle avant lancement : le pixel reçoit bien les achats (7, 31, 19, 3 Purch
 - Préparer 3-4 nouvelles vidéos (présentateur + sous-titres) pour remplacer celles qui s'usent.
 - À faire par Tao : vérification du compte publicitaire, moyen de paiement solide sur Mymusika.
 
-Ancienne campagne CI + GN (52620342537693, 15 $/jour) : toujours active, à couper ou garder selon la décision de Tao.
+Ancienne campagne CI + GN (52620342537693, 15 $/jour) : mise en pause le 26 nov. à la demande de Tao.
