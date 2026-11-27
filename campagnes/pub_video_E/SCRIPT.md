@@ -33,3 +33,11 @@ Sous-titres style Hormozi (`ass_from_words.py`, MarginV 300). Coût Runware ≈ 
 - Première apparition du présentateur régénérée (ton calme, visage naturel).
 - Prix actuel 1,5 s, puis comparaison 19,1-21,7 s : brouette et catalogue côte à côte, « = », « 39 000 FCFA » en grand,
   « (une brouette ≈ 35 000 FCFA) ». Coût total Runware ≈ 0,52 $.
+
+## v3 (27 nov., retours de Tao)
+
+- 2,6-5,9 s (« et vous n'avez pas encore un plan qui vous intéresse ? ») : homme découragé qui froisse des croquis de maisons (IA),
+  au lieu du présentateur ; « SANS UN PLAN / QUI VOUS PLAÎT ? » gardé.
+- 26,0-30,4 s (« Cliquez sur le bouton… ») : couple heureux devant sa villa neuve (IA), « CLIQUEZ SUR LE BOUTON »,
+  panneau Catalogue Premium · 100 plans + devis · 39 000 FCFA · wooplans.com, flèche vers le bouton.
+- Le présentateur n'apparaît plus que pour la garantie (21,7-26,0 s). Coût total Runware ≈ 0,72 $.

@@ -92,12 +92,12 @@ def hook2():
 
 # ---- 3. présentateur : « ... pas encore un plan qui vous intéresse ? » (2.6 -> 5.85) ----
 def hook3():
-    fr = frames(E + 'PA2.mp4', 0.15, 3.25)
+    fr = frames(E + 'H3.mp4', 0.1, 3.25, speed=1.15)
     out = []
     for i, im in enumerate(fr):
         t = i / FPS
         z = 1.0 + 0.03 * t if t < 1.72 else 1.12 + 0.02 * (t - 1.72)   # coup de zoom sur « plan »
-        im = vignette(zoom(im, z, 0.5, 0.2), 90)
+        im = vignette(zoom(im, z, 0.5, 0.55), 110)
         if 1.72 <= t < 1.79: im = Image.blend(im, Image.new('RGB', (W, H), WHITE), 0.35)
         im = slam(im, 'SANS UN PLAN', t, 1.72, 190, 84, fill=WHITE, stroke=(200, 40, 40))
         im = slam(im, 'QUI VOUS PLAÎT ?', t, 1.95, 300, 70, fill=GOLD, stroke=(0, 0, 0), sw=6)
@@ -276,6 +276,33 @@ def compare():
 def cover_img(im, w, h, cy=0.5):
     s = max(w / im.width, h / im.height); r = im.resize((int(im.width * s) + 1, int(im.height * s) + 1), Image.LANCZOS)
     x = (r.width - w) // 2; y = int((r.height - h) * cy); return r.crop((x, y, x + w, y + h))
+
+def cta2():
+    """couple devant sa villa + panneau d'achat (25.97 -> 30.43)"""
+    M.catalogue(0, 1); cov = M.COVER.copy(); cov.thumbnail((210, 300))
+    fr = frames(E + 'C1.mp4', 0.0, 4.47, speed=0.9)
+    out = []
+    for i, im in enumerate(fr):
+        t = i / FPS
+        im = vignette(zoom(im, 1.08 + 0.02 * t, 0.5, 0.45), 90).convert('RGBA')
+        im = pill(im, 'CLIQUEZ SUR LE BOUTON', 190, t, 0.05, fill=ORANGE, size=50)
+        k = ease((t - 1.3) / 0.45)
+        if k > 0:
+            pan = Image.new('RGBA', (680, 360), (0, 0, 0, 0)); pd = ImageDraw.Draw(pan)
+            pd.rounded_rectangle((0, 0, 679, 359), 40, fill=(7, 46, 45, 238))
+            pan.paste(cov, (30, (360 - cov.height) // 2), cov)
+            x0 = 270
+            pd.text((x0, 40), 'CATALOGUE PREMIUM', font=F(BLACK, 34), fill=GOLD)
+            pd.text((x0, 84), '100 plans + devis', font=F(BOLD, 30), fill=WHITE)
+            pd.rounded_rectangle((x0 - 6, 140, 660, 230), 28, fill=ORANGE)
+            w = pd.textlength('39 000 FCFA', font=F(BLACK, 58)); pd.text((x0 - 6 + (666 - x0 - w) / 2, 152), '39 000 FCFA', font=F(BLACK, 58), fill=WHITE)
+            pd.text((x0, 262), 'wooplans.com', font=F(BOLD, 34), fill=WHITE)
+            im.alpha_composite(pan, (20, int(820 + (1 - k) * 500)))
+        if t > 1.7:
+            d = ImageDraw.Draw(im); y = 1205 + int(16 * abs(math.sin((t - 1.7) * 5)))
+            d.polygon([(W / 2 - 46, y - 36), (W / 2 + 46, y - 36), (W / 2, y + 18)], fill=ORANGE)
+        out.append(im)
+    write('11_cta', out)
 
 if __name__ == '__main__':
     random.seed(4)
