@@ -26,3 +26,10 @@
 
 Voix : clone Qwen (référence pubs C/D), accélérée ×1,07. Lip-sync P-Video 2 (720p). Musique de la VSL courte, effets (impact, souffle).
 Sous-titres style Hormozi (`ass_from_words.py`, MarginV 300). Coût Runware ≈ 0,42 $.
+
+## v2 (27 nov., retours de Tao)
+
+- Sous-titres retirés (ils cachaient les mots clés à l'écran).
+- Première apparition du présentateur régénérée (ton calme, visage naturel).
+- Prix actuel 1,5 s, puis comparaison 19,1-21,7 s : brouette et catalogue côte à côte, « = », « 39 000 FCFA » en grand,
+  « (une brouette ≈ 35 000 FCFA) ». Coût total Runware ≈ 0,52 $.

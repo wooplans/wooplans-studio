@@ -92,7 +92,7 @@ def hook2():
 
 # ---- 3. présentateur : « ... pas encore un plan qui vous intéresse ? » (2.6 -> 5.85) ----
 def hook3():
-    fr = frames(E + 'PA.mp4', 0.15, 3.25)
+    fr = frames(E + 'PA2.mp4', 0.15, 3.25)
     out = []
     for i, im in enumerate(fr):
         t = i / FPS
@@ -179,7 +179,7 @@ def phone():
 
 # ---- 8. prix (17.55 -> 19.65) ----
 def prix():
-    out = [M.prix(i / FPS, 2.1) for i in range(int(2.1 * FPS))]
+    out = [M.prix(i / FPS, 1.5) for i in range(int(1.5 * FPS))]
     write('08_prix', out)
 
 # ---- 9. rappel du hook : brouette de billets vs 1 brouette (19.65 -> 21.65) ----
@@ -236,6 +236,46 @@ def cta():
             d.polygon([(W / 2 - 50, y - 40), (W / 2 + 50, y - 40), (W / 2, y + 20)], fill=ORANGE)
         out.append(im)
     write('11_cta', out)
+
+def compare():
+    """brouette et catalogue côte à côte, 39 000 FCFA en grand (19.07 -> 21.67)"""
+    M.catalogue(0, 1); cov = M.COVER
+    bro = frames(V + 'B_brouette.mp4', 0.3, 2.6)
+    out = []
+    CW, CH = 320, 470
+    for i, fr in enumerate(bro):
+        t = i / FPS
+        im = M.base(); d = ImageDraw.Draw(im)
+        ctext(d, 120, "LE PRIX D'UNE BROUETTE", F(BLACK, 54), WHITE)
+        ctext(d, 190, 'pour choisir votre maison', F(BOLD, 34), (220, 235, 233))
+        b = cover_img(fr, CW, CH, 0.45)
+        c = Image.new('RGB', (CW, CH), (236, 240, 238)); cs = cov.copy(); cs.thumbnail((CW - 30, CH - 20))
+        c.paste(cs, ((CW - cs.width) // 2, (CH - cs.height) // 2), cs)
+        for img, x, k in [(b, 25, ease(t / 0.35)), (c, 375, ease((t - 0.2) / 0.35))]:
+            if k <= 0: continue
+            m = Image.new('L', (CW, CH), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, CW - 1, CH - 1), 28, fill=255)
+            im.paste(img, (x, 280 + int((1 - k) * 90)), m)
+        d = ImageDraw.Draw(im)
+        for txt, cx in [('1 brouette', 185), ('le catalogue', 535)]:
+            w = d.textlength(txt, font=F(BLACK, 38)); d.text((cx - w / 2, 770), txt, font=F(BLACK, 38), fill=GOLD)
+        k = (t - 0.35) / 0.3
+        if k > 0:
+            eq = Image.new('RGBA', (110, 110), (0, 0, 0, 0)); e = ImageDraw.Draw(eq)
+            e.ellipse((0, 0, 109, 109), fill=GOLD); w = e.textlength('=', font=F(BLACK, 90)); e.text((55 - w / 2, -4), '=', font=F(BLACK, 90), fill=TEAL_XDK)
+            paste_scaled(im, eq, W / 2, 515, pop(k))
+        k = (t - 0.6) / 0.4
+        if k > 0:
+            pr = Image.new('RGBA', (640, 190), (0, 0, 0, 0)); pd = ImageDraw.Draw(pr)
+            pd.rounded_rectangle((0, 0, 639, 189), 40, fill=ORANGE)
+            w = pd.textlength('39 000 FCFA', font=F(BLACK, 96)); pd.text((320 - w / 2, 38), '39 000 FCFA', font=F(BLACK, 96), fill=WHITE)
+            paste_scaled(im, pr, W / 2, 940, pop(k) * (1 + 0.015 * math.sin(t * 6)))
+            d = ImageDraw.Draw(im); ctext(d, 1060, '(une brouette ≈ 35 000 FCFA)', F(BOLD, 30), (200, 220, 218))
+        out.append(im)
+    write('09_callback', out)
+
+def cover_img(im, w, h, cy=0.5):
+    s = max(w / im.width, h / im.height); r = im.resize((int(im.width * s) + 1, int(im.height * s) + 1), Image.LANCZOS)
+    x = (r.width - w) // 2; y = int((r.height - h) * cy); return r.crop((x, y, x + w, y + h))
 
 if __name__ == '__main__':
     random.seed(4)
