@@ -22,3 +22,12 @@ Contrôle avant lancement : le pixel reçoit bien les achats (7, 31, 19, 3 Purch
 - À faire par Tao : vérification du compte publicitaire, moyen de paiement solide sur Mymusika.
 
 Ancienne campagne CI + GN (52620342537693, 15 $/jour) : mise en pause le 26 nov. à la demande de Tao.
+
+## Vidéo E · brouette de billets (27 nov. 2026, publiée avec l'accord de Tao)
+
+| Pub | ID pub | Vidéo | Créa | Suivi |
+|---|---|---|---|---|
+| Vidéo E · brouette de billets (30 s) | 52620723046693 | 30063607206565140 | 2660891327766840 | `utm_content=video-E` |
+
+Même ensemble (52620521379693), mêmes 3 textes et 3 titres, bouton « Acheter ». Vignette : image du hook (« DES MILLIONS »).
+Script et montage : `campagnes/pub_video_E/`. Statut à la publication : ACTIVE, en examen par Meta.
