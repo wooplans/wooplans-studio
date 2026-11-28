@@ -31,3 +31,12 @@ Ancienne campagne CI + GN (52620342537693, 15 $/jour) : mise en pause le 26 nov.
 
 Même ensemble (52620521379693), mêmes 3 textes et 3 titres, bouton « Acheter ». Vignette : image du hook (« DES MILLIONS »).
 Script et montage : `campagnes/pub_video_E/`. Statut à la publication : ACTIVE, en examen par Meta.
+
+## Test à 29 000 FCFA (décision de Tao, 28 nov. 2026, ~2 h UTC)
+
+- Pubs inchangées (elles annoncent 39 000). Page de vente : « Offre du jour » ~~39 000~~ **29 000 FCFA**, compte à rebours
+  jusqu'à minuit (heure du visiteur), jauge 20 % → 5 % sur la journée (PR wooplans #161).
+- Produits Chariow : CP 29K `prd_uso1ketx` (29 000) ; Afrique de l'Ouest `prd_9cbatg` à 28 155 (≈ 29 000 XOF au paiement).
+- VSL : passages du prix revoicés (« vingt-neuf mille francs », « moins que le prix d'une brouette »).
+- Budget campagne : 40 $ → **50 $/jour** (+25 %).
+- Point de comparaison à 39 000 (25-28 nov.) : 58 $ dépensés, 2 ventes, ~29 $ par vente. Durée du test : 7 jours.
